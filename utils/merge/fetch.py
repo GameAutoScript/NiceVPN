@@ -822,13 +822,14 @@ def main():
     with open("config.yml", encoding="utf-8") as f:
         conf: Dict[str, Any] = yaml.full_load(f)
     
+    print("读取config.yml完成！")
     rules: Dict[str, str] = {}
     if DEBUG_NO_ADBLOCK:
         # !!! JUST FOR DEBUGING !!!
         print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
     else:
-        # merge_adblock(conf['proxy-groups'][-2]['name'], rules)
-        print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
+        merge_adblock(conf['proxy-groups'][-2]['name'], rules)
+        # print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
 
     snip_conf: Dict[str, Dict[str, Any]] = {}
     ctg_nodes: Dict[str, List[Node.DATA_TYPE]] = {}
