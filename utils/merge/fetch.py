@@ -827,7 +827,8 @@ def main():
         # !!! JUST FOR DEBUGING !!!
         print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
     else:
-        merge_adblock(conf['proxy-groups'][-2]['name'], rules)
+        # merge_adblock(conf['proxy-groups'][-2]['name'], rules)
+        print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
 
     snip_conf: Dict[str, Dict[str, Any]] = {}
     ctg_nodes: Dict[str, List[Node.DATA_TYPE]] = {}
