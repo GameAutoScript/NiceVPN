@@ -805,7 +805,9 @@ def main():
             if p.supports_ray():
                 txt += p.url + '\n'
             else: unsupports += 1
-        except: traceback.print_exc()
+        except: 
+            pass
+            # traceback.print_exc()
     for p in unknown:
         txt += p+'\n'
     print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
