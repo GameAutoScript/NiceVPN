@@ -48,7 +48,7 @@ if __name__ == '__main__':
         #print("Today is: " + current_date)
         start = time.time() #time start
         config = 'config.yaml'
-        with open(config, 'r') as reader:
+        with open(config, 'r', encoding='utf-8') as reader:
             config = yaml.load(reader, Loader=SafeLoader)
             subscribe_links = config['sub']
             subscribe_files = config['local']
