@@ -78,7 +78,7 @@ ABFURLS = (
 FAKE_IPS = "8.8.8.8; 8.8.4.4; 1.1.1.1; 1.0.0.1; 4.2.2.2; 4.2.2.1; 114.114.114.114; 127.0.0.1".split('; ')
 FAKE_DOMAINS = ".google.com .github.com".split()
 
-FETCH_TIMEOUT = (6, 5)
+FETCH_TIMEOUT = (2, 5)
 
 BANNED_WORDS = b64decodes('5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8=').split()
 
