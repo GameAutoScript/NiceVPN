@@ -11,7 +11,7 @@ def init():
 
     config = 'config/config.yaml'
     # read from config file
-    with open(config, 'r') as reader:
+    with open(config, 'r', encoding='utf-8') as reader:
         config = yaml.load(reader, Loader=SafeLoader)
         http_port = config['http-port']
         api_port = config['api-port']
@@ -26,7 +26,7 @@ def init():
     elif source.startswith('https://'):
         proxyconfig = yaml.load(requests.get(source).text, Loader=SafeLoader)
     else:
-        with open(source, 'r') as reader:
+        with open(source, 'r', encoding='utf-8') as reader:
             proxyconfig = yaml.load(reader, Loader=SafeLoader)
 
     # set clash api url

@@ -11,7 +11,7 @@ headers = {'Accept': '*/*', 'Accept-Encoding': 'gzip', 'Connection': 'Keep-Alive
 
 def local(proxy_list, file):
     try:
-        with open(file, 'r') as reader:
+        with open(file, 'r', encoding='utf-8') as reader:
             working = yaml.safe_load(reader)
         data_out = []
         for x in working['proxies']:
