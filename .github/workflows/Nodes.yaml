@@ -56,7 +56,7 @@ jobs:
       run: echo -e "\033[31mFailed to pull clashcheck file.\033[0m"; rm utils/clashcheck/data/check.yaml
     - name: move clashcheck to clash2base64 #input ./utils/clashcheck/data/check.yaml
       if: ${{ success() }}
-      run: mv ./utils/clashcheck/data/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
+      run: cp ./utils/clashcheck/data/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
     - name: clash2base64 #input ./utils/subconverter/check.yaml
       if: ${{ success() }}
       run: ./utils/subconverter/subconverter -g --artifact "clash2base64"; rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
