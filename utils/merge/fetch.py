@@ -828,13 +828,14 @@ def main():
         # !!! JUST FOR DEBUGING !!!
         print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
     else:
-        merge_adblock(conf['proxy-groups'][-2]['name'], rules)
-        # print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
-
+        # merge_adblock(conf['proxy-groups'][-2]['name'], rules)
+        print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
+    print("merge_adblock完成！")
     snip_conf: Dict[str, Dict[str, Any]] = {}
     ctg_nodes: Dict[str, List[Node.DATA_TYPE]] = {}
     categories: Dict[str, List[str]] = {}
     try:
+        print("open snippets config")
         with open("snippets/_config.yml", encoding="utf-8") as f:
             snip_conf = yaml.full_load(f)
     except (OSError, yaml.error.YAMLError):
