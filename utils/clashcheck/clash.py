@@ -56,7 +56,7 @@ def push_parse(bar,clash,countrify,info):
 
 
 def push(list, outfile):
-    print("push clash")
+    print("push clash len:" + len(list))
     global count, country_count
     count = 1
     country_count = {}
