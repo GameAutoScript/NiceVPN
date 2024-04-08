@@ -66,8 +66,19 @@ def w1770946466():
                 subs.add(sub)
     return subs
 
+def collectSub():
+    if LOCAL: return
+    res = session.get(raw2fastly("https://raw.githubusercontent.com/GameAutoScript/collectSub/main/sub/sub_all_sub_store.txt")).text
+    subs = set()
+    for line in res.strip().split('\n'):
+        if line.startswith("http"):
+            sub = line.strip().strip('`')
+            subs.add(sub)
+                
+    return subs
 
-AUTOURLS = [w1770946466]
+
+AUTOURLS = [w1770946466,collectSub]
 # AUTOFETCH = [kkzui, sharkdoor]
 AUTOFETCH = [sharkdoor]
 
