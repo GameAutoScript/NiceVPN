@@ -32,7 +32,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,61,62,65,226,227,237|21| _US_美国->🇩🇪_DE_德国 #1'
+  name: '0,61,62,65,226,227,237|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: '80'
   server: 104.21.225.68
@@ -58,7 +58,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '0,61,62,65,226,227,237|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #3'
+  name: '0,61,62,65,226,227,237|21| _US_美国->_DE_国 #3'
   network: ws
   port: '80'
   server: 104.21.225.187
@@ -427,7 +427,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 0,61,62,65,226,227,237|21|🇷 _CN_中国->🇫🇷_FR_法国
+  name: 0,61,62,65,226,227,237|21|🇷 _CN_国->🇷_FR_法国
   network: ws
   port: '16645'
   server: yes.cnmjcn.net
@@ -1319,6 +1319,15 @@ proxies:
     headers:
       Host: ''
     path: /?ed=2048
+- alterId: 2
+  cipher: aes-128-gcm
+  name: '55,124|[🏁]t.me/ConfigsHub #5'
+  network: tcp
+  port: 1002
+  server: 183.236.48.169
+  tls: false
+  type: vmess
+  uuid: 229ccd44-c56c-3947-88de-849dd70c180d
 - alterId: 0
   cipher: auto
   name: 68|_CY_塞浦路斯->🇺🇸_US_美国
@@ -4631,20 +4640,6 @@ proxies:
     headers:
       host: V104.bgpnet.top
     path: /admin
-- alterId: 0
-  cipher: auto
-  name: '252|🇺🇸_US_美国->🇹🇷_TR_土耳其 #1'
-  network: ws
-  port: 2095
-  server: tu.mahilu.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      host: tu.mahilu.site
-    path: /
 - alterId: 0
   cipher: auto
   name: 292|:美国-vmess-arm.ptuu.gq:443-可用-中...
