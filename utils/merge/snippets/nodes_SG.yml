@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|新加坡|广州移动|Polo|1x
+  network: tcp
+  port: '17162'
+  server: gdcm.r1u.cn
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: 14,15,481|新加坡_0408004
   network: ws
   port: '2052'
@@ -28,23 +37,23 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 16,226,227,233|🇸🇬SG_08
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
+  name: 16,226,233|🇸🇬SG_07
+  password: rNBfNuuANFCAk7KB
+  port: 9056
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  country: 🇬SG
-  name: 16,226,233|🇬SG_06
+  country: 🇸🇬SG
+  name: 16,226|🇬SG_22 |12.27Mb
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 16,226,227,233|🇸🇬SG_07
-  password: rNBfNuuANFCAk7KB
-  port: 9056
+  country: 🇬SG
+  name: 16,226,233|🇬SG_06
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
   server: 103.172.116.103
   type: ss
 - alterId: 0
@@ -76,13 +85,14 @@ proxies:
     path: /stream
 - alterId: 0
   cipher: auto
-  country: 🇸🇬SG
+  country: SG
   h2-opts: {}
   http-opts: {}
-  name: 78,232|Relay_🇸SG |12.00Mb
+  name: '78,467,475|رایگان | VMESS | @oneclickvpnk... #8'
   network: tcp
-  port: 8443
+  port: '8443'
   server: sg2-v2ray.ipracevpn.com
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -628,46 +638,6 @@ proxies:
   port: 9044
   server: 103.172.116.79
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 120,381,427,435,481|美国_0408122
-  network: ws
-  port: '26012'
-  server: 146.190.84.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 695bc422-4dc8-4d8c-8457-26e18c2421b4
-  ws-opts:
-    headers:
-      Host: tiktok.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '120|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #1'
-  network: ws
-  port: '443'
-  server: sg2-full.privateip.net
-  tls: true
-  type: vmess
-  uuid: a96be740-d28f-45df-8d73-297461597efe
-  ws-opts:
-    headers:
-      Host: ''
-    path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  name: '120|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #2'
-  network: ws
-  port: '443'
-  server: sg3-full.privateip.net
-  tls: true
-  type: vmess
-  uuid: cd37e48f-b356-4bc2-9104-c4ed5b4abe8c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /RACEVPN
 - alterId: '0'
   cipher: auto
   name: 133|[🇸🇬]43.156.76.54:43127(2d957a0...
@@ -802,79 +772,19 @@ proxies:
   server: 13.250.35.165
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 227|🇸🇬SG_25
-  password: f8npKgNzdkss2ytn
-  port: 9088
-  server: 103.172.116.90
+- cipher: aes-128-gcm
+  country: SG
+  delay: 1289
+  name: 226,478|HK_speednode_0014
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    tls: false
+  port: 443
+  server: 8.210.33.152
   type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 227|🇸🇬SG_26
-  password: bf7v334KKDV3YDhH
-  port: 9070
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 227|🇸🇬SG_27
-  password: UWZQeLRWnkqgkseq
-  port: 9032
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 227|🇸🇬SG_28
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 103.172.116.94
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 227|🇸🇬SG_29
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 227|🇸🇬SG_30
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 227|🇸🇬SG_31
-  password: c3NtHJ5ujV2tGDfj
-  port: 9084
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 227|🇸🇬SG_32
-  password: BejrQvtu9sqUeNuZ
-  port: 9024
-  server: 103.172.116.94
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇸SG
-  h2-opts: {}
-  http-opts: {}
-  name: 232|Relay_🇬SG |175.47Mb
-  network: ws
-  port: 2052
-  server: hk.wish.ml
-  servername: us7.wish.ml
-  skip-cert-verify: true
-  type: vmess
-  uuid: d396f102-c26b-4f1a-b7bc-f66e5b16bb75
-  ws-opts:
-    headers:
-      HOST: us7.wish.ml
-    path: /
 - alterId: 0
   cipher: auto
   name: 237|SG_youtube@资源分享师_38
@@ -1531,67 +1441,11 @@ proxies:
   name: 279|🇸🇬 SG 10 → tg@nicevpn123
   password: amazonskr05
   port: 443
-  server: 13.228.23.150
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 279,337|🇸🇬-SG-009
-  password: amazonskr05
-  port: 443
-  server: 54.169.147.64
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 279,337|🇸🇬-SG-013
-  password: amazonskr05
-  port: 443
-  server: 18.142.56.221
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 279|🇸🇬 SG 13 → tg@nicevpn123
-  password: amazonskr05
-  port: 443
-  server: 13.229.57.68
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 279,337|🇸🇬-SG-011
-  password: amazonskr05
-  port: 443
-  server: 18.141.207.80
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 279|🇸🇬 SG 15 → tg@nicevpn123
-  password: amazonskr05
-  port: 443
-  server: 13.229.184.181
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 279|🇸🇬 SG 2 → tg@nicevpn123
-  password: amazonskr05
-  port: 443
-  server: 54.179.101.194
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 279,337|🇸🇬-SG-012
-  password: amazonskr05
-  port: 443
-  server: 13.250.63.15
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 279|🇸🇬 SG 4 → tg@nicevpn123
-  password: amazonskr05
-  port: 443
   server: 3.0.50.219
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 279|🇸🇬 SG 5 → tg@nicevpn123
+  name: 279|🇸🇬 SG 11 → tg@nicevpn123
   password: amazonskr05
   port: 443
   server: 52.221.231.138
@@ -1599,7 +1453,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 279|🇸🇬 SG 6 → tg@nicevpn123
+  name: 279|🇸🇬 SG 12 → tg@nicevpn123
   network: ws
   port: 80
   server: sg5g.xn--vhq70hxyat50h6wk.com
@@ -1621,7 +1475,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 279|🇸🇬 SG 8 → tg@nicevpn123
+  name: 279|🇸🇬 SG 14 → tg@nicevpn123
   network: ws
   port: 34237
   server: 8.218.136.67
@@ -1637,6 +1491,62 @@ proxies:
   password: amazonskr05
   port: 443
   server: 13.250.61.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 279|🇸🇬 SG 2 → tg@nicevpn123
+  password: amazonskr05
+  port: 443
+  server: 13.228.23.150
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 279,337|🇸🇬-SG-009
+  password: amazonskr05
+  port: 443
+  server: 54.169.147.64
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 279,337|🇸🇬-SG-013
+  password: amazonskr05
+  port: 443
+  server: 18.142.56.221
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 279|🇸🇬 SG 5 → tg@nicevpn123
+  password: amazonskr05
+  port: 443
+  server: 13.229.57.68
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 279,337|🇸🇬-SG-011
+  password: amazonskr05
+  port: 443
+  server: 18.141.207.80
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 279|🇸🇬 SG 7 → tg@nicevpn123
+  password: amazonskr05
+  port: 443
+  server: 13.229.184.181
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 279|🇸🇬 SG 8 → tg@nicevpn123
+  password: amazonskr05
+  port: 443
+  server: 54.179.101.194
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 279,337|🇸🇬-SG-012
+  password: amazonskr05
+  port: 443
+  server: 13.250.63.15
   type: ss
   udp: true
 - alterId: 0
@@ -2098,7 +2008,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: cab944b4-d967-464f-b176-7a65b73ff446
+  uuid: 9917b4f6-939c-4edd-b1b6-481b6b6e52d1
 - alterId: 0
   cipher: auto
   name: 299|🇸🇬新加坡05
@@ -2108,7 +2018,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: cab944b4-d967-464f-b176-7a65b73ff446
+  uuid: 9917b4f6-939c-4edd-b1b6-481b6b6e52d1
 - alterId: 0
   cipher: auto
   name: 299|🇸🇬新加坡06
@@ -2118,7 +2028,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: cab944b4-d967-464f-b176-7a65b73ff446
+  uuid: 9917b4f6-939c-4edd-b1b6-481b6b6e52d1
 - alterId: 1
   cipher: auto
   name: '300,464|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #84'
@@ -2330,6 +2240,12 @@ proxies:
   port: 443
   server: 54.254.167.160
   type: ss
+- cipher: aes-256-cfb
+  name: 337|🇬-SG-014
+  password: amazonskr05
+  port: 443
+  server: 13.229.182.149
+  type: ss
 - alterId: 64
   cipher: auto
   name: 342|TG:@hkaa0|新加坡
@@ -2460,7 +2376,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 81d0c4f9-0385-4f3e-86ca-bb5ad296f3ca
+  uuid: 1cbd62ed-b96c-4844-b277-d2b1c5730c04
 - alterId: 0
   cipher: auto
   name: 384|【BGP】新加坡 05 | 1x SG
@@ -2470,7 +2386,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 81d0c4f9-0385-4f3e-86ca-bb5ad296f3ca
+  uuid: 1cbd62ed-b96c-4844-b277-d2b1c5730c04
 - alterId: 0
   cipher: auto
   name: 384|【BGP】新加坡 06 | 1x SG
@@ -2480,7 +2396,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 81d0c4f9-0385-4f3e-86ca-bb5ad296f3ca
+  uuid: 1cbd62ed-b96c-4844-b277-d2b1c5730c04
 - alterId: 0
   cipher: auto
   name: 387|新加坡【YouTube @Play实验室】
@@ -3360,7 +3276,7 @@ proxies:
   name: 576|新加坡02-高速｜x1
   network: ws
   port: '443'
-  server: 18.167.208.181
+  server: 20.255.72.139
   servername: sg.pddf.buzz
   tls: true
   type: vmess
