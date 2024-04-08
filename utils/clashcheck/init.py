@@ -39,7 +39,7 @@ def init():
     config = {'port': http_port, 'external-controller': baseurl, 'mode': 'global',
               'log-level': 'silent', 'proxies': proxyconfig['proxies']}
 
-    with open('./temp/working.yaml', 'w') as file:
+    with open('./temp/working.yaml', 'w', encoding='utf-8') as file:
         file = yaml.dump(config, file)
 
     # return all variables
