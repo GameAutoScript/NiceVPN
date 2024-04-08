@@ -316,6 +316,8 @@ class Node:
         # TODO: Fake UUID
         if self.type == 'vmess' and len(self.data['uuid']) != len(DEFAULT_UUID):
             return True
+        if self.type == 'hysteria2':
+            return True
         return False
 
     @property
