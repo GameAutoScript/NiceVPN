@@ -91,7 +91,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '49,252,253,301,309,384|加拿大 008 #2'
+  name: '49,252,253,301,309|加拿大 008 #1'
   network: ws
   port: 8880
   server: 104.16.60.8
@@ -111,7 +111,7 @@ proxies:
   delay: 2438
   h2-opts: {}
   http-opts: {}
-  name: 49,229,235,252,253,301,309,384,397,481|CA_speednode_0010
+  name: 49,235,252,253,301,309,397,481|CA_speednode_0010
   network: ws
   port: 443
   server: 158.51.121.36
@@ -129,7 +129,7 @@ proxies:
   delay: 2545
   h2-opts: {}
   http-opts: {}
-  name: 49,229,235,252,253,301,309,384,397,481|CA_speednode_0006
+  name: 49,235,252,253,301,309,384,397,481|CA_speednode_0006
   network: ws
   port: 443
   server: 158.51.123.111
@@ -390,7 +390,7 @@ proxies:
   delay: 1236
   h2-opts: {}
   http-opts: {}
-  name: 49,229,235,252,253,301,309,384,481|CA_speednode_0009
+  name: 49,235,252,253,301,309,384,481|CA_speednode_0009
   network: ws
   port: 443
   server: 23.162.200.227
@@ -686,8 +686,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '49,114,252,253,279,301,309,384,430,438|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.60....
-    #1'
+  name: '49,252,253,301,309,384,430,438|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.60.... #2'
   network: ws
   port: '2083'
   server: 104.16.60.8
@@ -782,7 +781,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '49,309|加拿大 048 #1'
+  name: '49,252,253,301,309|加拿大 048 #1'
   network: ws
   port: 2053
   server: 104.17.79.72
@@ -798,7 +797,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '49,309|加拿大 049 #1'
+  name: '49,252,253,301,309|加拿大 049 #1'
   network: ws
   port: 2053
   server: 104.17.170.124
@@ -814,7 +813,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '49,309|加拿大 050 #1'
+  name: '49,252,253,301,309|加拿大 050 #1'
   network: ws
   port: 2053
   server: 104.19.131.62
@@ -830,7 +829,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '49,309|加拿大 051 #1'
+  name: '49,252,253,301,309|加拿大 051 #1'
   network: ws
   port: 2053
   server: 104.17.91.56
@@ -846,12 +845,14 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 49,309,384|21|加拿大 077
+  name: '49,252,253,301,309,384|🇨🇦 加拿大 052 #2'
   network: ws
-  port: 443
+  port: '443'
   server: 172.67.158.126
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -859,13 +860,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 49,114,244,245,249,278,279,309,384,463|🏁RELAY-104.21.12.173-0114
+  name: 49,114,244,245,249,252,253,278,279,301,309,384,463|🏁RELAY-104.21.12.173-0114
   network: ws
   port: 443
   server: meroiy.icu
   servername: meroiy.icu
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -873,30 +876,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '49,114,279,309,384,430,438|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.61.... #1'
+  name: '49,252,253,301,309,384,430,438|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.61.... #1'
   network: ws
   port: '8443'
   server: 104.16.61.8
   servername: xxxxx73cream-073cxxxxxxxx.cogoni7748.workers.dev
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
       Host: xxxxx73cream-073cxxxxxxxx.cogoni7748.workers.dev
     path: /kellie.makeup/linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 77|🇨🇦CA-134.195.196.178-0631 | 15...
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 134.195.196.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 77|🇨🇦CA-134.195.196.178-0636 | 12...
-  password: G!yBwPWH3Vao
-  port: 811
-  server: 134.195.196.178
-  type: ss
 - alterId: 0
   cipher: auto
   name: 87|🇨🇦 加拿大 | V1 | 01
@@ -988,11 +981,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  country: ZZ
+  country: 🏁ZZ
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_ZZ-🇩🇪DE_192 |21.62Mb
+  name: 113,235|Relay_🏁ZZ-🇩🇪DE_202 |21.62Mb
   network: ws
   port: 443
   server: auth.speedtest.net
@@ -1010,7 +1003,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|1bdd66ec98444d3d9034d2defa16f8...
+  name: 113|5664a8ad427b4923a7f5a33d00c2b5...
   network: ws
   port: 443
   server: 104.21.4.6
@@ -1026,11 +1019,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  country: ZZ
+  country: 🏁ZZ
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🏁ZZ-🇸US_216
+  name: 113,235|Relay_ZZ-🇺🇸US_222
   network: ws
   port: 443
   server: 104.21.15.36
@@ -1051,7 +1044,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🇺🇸US-🇧GB_173
+  name: 113,235|Relay_🇺🇸US-🇬🇧GB_153
   network: ws
   port: 443
   server: 172.67.170.13
@@ -1069,7 +1062,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|a5d7efa370df430abba81ca15c8d5c...
+  name: 113|b40967be79964d3896d3be0ed3896f...
   network: grpc
   port: 8443
   server: zula.ir
@@ -1082,7 +1075,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|3995ae9a22f34d4eb58e1a4d39c8b9...
+  name: 113|6d9839f653184767a20b672ff3d899...
   network: ws
   port: 443
   server: 172.67.71.160
@@ -1102,7 +1095,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🏁ZZ-🇩🇪DE_203 |26.58Mb
+  name: 113,235|Relay_ZZ-🇩🇪DE_201 |26.58Mb
   network: ws
   port: 443
   server: 198.41.196.0
@@ -1136,7 +1129,7 @@ proxies:
   cipher: aes-128-gcm
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|46952cb69eb7401583a5ed990966cb...
+  name: 113|c187c75a3a8749ab91adbfb4d7eec6...
   network: ws
   port: 80
   server: cfcdn3.sanfencdn9.com
@@ -1150,7 +1143,7 @@ proxies:
   cipher: aes-128-gcm
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|ed5a9936e7624895b8a21788b19b38...
+  name: 113|cd156c0dab2b462ca092969b638b22...
   network: ws
   port: 2052
   server: cfcdn2.sanfencdn9.com
@@ -1164,7 +1157,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|c927aef6a73242d6a3a13167ba01b5...
+  name: 113|dd967012c223493598c9850f7da841...
   network: ws
   port: 443
   server: 104.17.231.69
@@ -1181,7 +1174,7 @@ proxies:
   cipher: auto
   client-fingerprint: randomized
   fingerprint: ''
-  name: 113|d2a83864142f4cdf8ae420cdee02b7...
+  name: 113|e36a17bf42e8406cb74f5b2197a8f5...
   network: ws
   port: 443
   server: 104.21.95.137
@@ -1198,7 +1191,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|977b4908975d43449179f218710d79...
+  name: 113|67df5f7102954d2e8f3bc916c185d2...
   network: ws
   port: 443
   server: 172.64.35.226
@@ -1215,7 +1208,7 @@ proxies:
   cipher: auto
   client-fingerprint: randomized
   fingerprint: ''
-  name: 113|9b03781f6f9b4b13b792d8741a9476...
+  name: 113|7c84cc5c70b9478c8b3a7944cab58b...
   network: ws
   port: 443
   server: 104.22.75.105
@@ -1232,7 +1225,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|3576befab8034ac0a7d6e1a6dfaa48...
+  name: 113|5a09235ded6644f48ab1846f959443...
   network: ws
   port: 443
   server: 162.159.1.94
@@ -1249,7 +1242,7 @@ proxies:
   cipher: auto
   client-fingerprint: randomized
   fingerprint: ''
-  name: 113|e717c1493b67458585005f1c003cc3...
+  name: 113|c05108219d364c35ab7beebc3b3401...
   network: ws
   port: 443
   server: 104.21.101.2
@@ -1269,7 +1262,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🏁ZZ-🇬🇧GB_197
+  name: 113,235|Relay_🏁ZZ-🇬🇧GB_191
   network: ws
   port: 443
   server: 104.21.15.212
@@ -1287,7 +1280,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|db17da1ea0a2404089484d1622a682...
+  name: 113|70810f1845954fef9c81283e02d39f...
   network: ws
   port: 443
   server: 172.67.196.16
@@ -1304,7 +1297,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|cc00bfca0d1f417e84a1383549ce21...
+  name: 113|f0c8cfedf23d46aa868c50fd04e6c2...
   network: ws
   port: 443
   server: hms02opi.fxiaomi.sbs
@@ -1321,7 +1314,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|00a3c3aab3b446c6ab79972da2662f...
+  name: 113|229f415d4af341e8bd067345a536cb...
   network: ws
   port: 443
   server: 172.67.131.108
@@ -1338,7 +1331,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|15941623d3cd44488db9d2453dbc2c...
+  name: 113|9f3ce472f50f4d41aad763ddf50827...
   network: ws
   port: 443
   server: 172.67.201.200
@@ -1355,7 +1348,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|5b1d916d71014784b1494826fa6012...
+  name: 113|291bb26bb203496b9b160a7d31981f...
   network: ws
   port: 443
   server: 172.67.131.108
@@ -1375,7 +1368,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_ZZ-🇩🇪DE_196 |22.16Mb
+  name: 113,235|Relay_🏁ZZ-🇩🇪DE_199 |22.16Mb
   network: ws
   port: 443
   server: 104.16.217.241
@@ -1393,7 +1386,7 @@ proxies:
   cipher: auto
   client-fingerprint: firefox
   fingerprint: ''
-  name: 113|39f9f47d89c543d0b6c5716968b987...
+  name: 113|547ce4fcec5d439085d47032cbf655...
   network: ws
   port: 443
   server: 172.67.196.110
@@ -1413,7 +1406,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_ZZ-🇬🇧GB_202 |36.11Mb
+  name: 113,235|Relay_🏁ZZ-🇬🇧GB_198 |36.11Mb
   network: ws
   port: 443
   server: maggiy.shop
@@ -1431,7 +1424,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|dd76230071414af097d1dee3569ffb...
+  name: 113|9ba826bbee9b4d7ea2f23425500d31...
   network: ws
   port: 443
   server: 104.21.32.223
@@ -1448,7 +1441,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|1de95eb6753646ab8aeae724c16a62...
+  name: 113|a4f1b3d9d67a4e61a0dd7b06ee8efd...
   network: ws
   port: 443
   server: maxin.beauty
@@ -1468,7 +1461,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🇺🇸US-🇬🇧GB_116 |35.91Mb
+  name: 113,235|Relay_🇺🇸US-🇧GB_102 |35.91Mb
   network: ws
   port: 443
   server: myrna.fun
@@ -1485,23 +1478,19 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  country: 🇨CO
   fingerprint: ''
-  h2-opts: {}
-  http-opts: {}
-  name: 113,229|Relay_🇨CO-ZZ_26 |43.49Mb
+  name: 113|a54656d7bfbb46068fe23504f2230f...
   network: ws
   port: 443
   server: nicola.pics
   servername: nicola.pics
-  skip-cert-verify: true
   tls: true
   type: vmess
   udp: false
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      HOST: nicola.pics
+      host: nicola.pics
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -1510,7 +1499,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🏁ZZ-🇧GB_193 |36.14Mb
+  name: 113,235|Relay_🏁ZZ-🇬🇧GB_220 |36.14Mb
   network: ws
   port: 443
   server: maureen.autos
@@ -1531,7 +1520,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🏁ZZ-🇬🇧GB_201 |36.30Mb
+  name: 113,235|Relay_🏁ZZ-🇧GB_200 |36.30Mb
   network: ws
   port: 443
   server: meroiy.icu
@@ -1549,7 +1538,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|e7a6f4deaae84c2e8e62fe7ff3d496...
+  name: 113|be780f9a64e74ba5af416c71a42b21...
   network: ws
   port: 443
   server: marien.motorcycles
@@ -1565,11 +1554,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  country: ZZ
+  country: 🏁ZZ
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🏁ZZ-🇸US_195 |53.55Mb
+  name: 113,235|Relay_🏁ZZ-🇺🇸US_210 |53.55Mb
   network: ws
   port: 443
   server: 104.21.44.64
@@ -1590,7 +1579,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🇺🇸US-🇺🇸US_150
+  name: 113,235|Relay_🇺🇸US-🇺🇸US_105
   network: ws
   port: 443
   server: 172.67.161.77
@@ -1611,7 +1600,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🇺🇸US-🇸US_160
+  name: 113,235|Relay_🇺🇸US-🇺🇸US_106
   network: ws
   port: 443
   server: linde06.indiavideo.sbs
@@ -1629,7 +1618,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|41e4966449404f34af2796485bb0a4...
+  name: 113|63fc11438442443487fe7b9b8e084d...
   network: ws
   port: 443
   server: 104.24.0.11
@@ -1645,25 +1634,29 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  country: 🏁ZZ
   fingerprint: ''
-  name: 113|1ef144ee26d34f4c89c9ca73df0a77...
+  h2-opts: {}
+  http-opts: {}
+  name: 113,235|🏁ZZ_204 |28.49Mb
   network: ws
   port: 443
   server: 104.21.25.94
   servername: de2-vmess.sshmax.xyz
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: false
   uuid: 4d74f126-0ef1-4579-b0a3-78e7b48ef067
   ws-opts:
     headers:
-      host: de2-vmess.sshmax.xyz
+      HOST: de2-vmess.sshmax.xyz
     path: /vmess
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|05f3ba6948194e1eb6fc3d4603afe1...
+  name: 113|1a54de33a5894e6896415ecd50bbf4...
   network: ws
   port: 443
   server: 172.67.170.103
@@ -1683,7 +1676,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 113,235|Relay_🏁ZZ-🇺🇸US_210 |34.68Mb
+  name: 113,235|Relay_🏁ZZ-🇺🇸US_214 |34.68Mb
   network: ws
   port: 443
   server: 104.21.51.208
@@ -1701,7 +1694,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|4638d74fa800445182cd31e2451bbc...
+  name: 113|dd9446511b9b4916aa6d4708aed87d...
   network: ws
   port: 2096
   server: 172.67.204.84
@@ -1718,7 +1711,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|45f8647ed23d42f2ad7435501becf3...
+  name: 113|7b201f678f80499faa4f8d20475d96...
   network: ws
   port: 443
   server: dl.game.rezashopparivate.sbs
@@ -1735,7 +1728,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|aacfe92c5e5c48d2a41672b5327098...
+  name: 113|1e9387598abd43beb5bc2bfcc5c7ea...
   network: ws
   port: 443
   server: 188.114.96.6
@@ -1752,7 +1745,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|7ee0018769864b7aba0526dd8b0f8c...
+  name: 113|83ffa7e598e542e28bbb099b59396d...
   network: ws
   port: 443
   server: 104.21.13.125
@@ -1769,7 +1762,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|eb7db41e8e2c4700ba2067e9ab75ab...
+  name: 113|4079db146aad4d6883f3ff4371ce75...
   network: ws
   port: 443
   server: 104.21.21.35
@@ -1786,7 +1779,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 113|98e254d05e4a48bda9ad76ded999f0...
+  name: 113|2a2b04d3b7ea4d6cb175194bb4f27b...
   network: ws
   port: 443
   server: 172.67.152.210
@@ -1801,407 +1794,24 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 114,279,384,484|未知_0408133
-  network: ws
-  port: '443'
-  server: auth.speedtest.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: nelly.homes
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 114,249,276,279,384,470,478,484|未知_0408123
-  network: ws
-  port: '443'
-  server: 104.21.4.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: glweidf.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 114,276,279,351,384,461,463,470,478,484|未知_0408129
-  network: ws
-  port: '443'
-  server: 104.21.15.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 114,249,279,351,384,463,484|美国_0408104
-  network: ws
-  port: '443'
-  server: 172.67.168.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: marien.motorcycles
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #80'
-  network: ws
-  port: '443'
-  server: 172.67.170.13
-  servername: glweidf.sbs
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: VPNHOMES
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #81'
-  network: grpc
-  port: '8443'
-  server: zula.ir
-  servername: fragment2.karop.homes
-  tls: true
-  type: vmess
-  uuid: a866d927-efd3-4caf-9333-28d7ce4db2fc
-- alterId: 0
-  cipher: auto
-  name: 114,279,484|美国_0408087
-  network: ws
-  port: '443'
-  server: 172.67.71.160
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: nelly.homes
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '114,276,279,351,384,463,470,478|رایگان | VMESS | @kingofilter ... #4'
-  network: ws
-  port: '443'
-  server: 172.67.152.214
-  servername: meroiy.icu
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: meroiy.icu
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '114,276,279,384,470,478|رایگان | VMESS | @ShadowProxy6... #19'
-  network: ws
-  port: '443'
-  server: 198.41.196.0
-  servername: nelly.homes
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: nelly.homes
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 114,149,279,407,484|未知_0408260
-  network: ws
-  port: '80'
-  server: 104.17.25.1
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 83c19463-f966-4adb-a7d8-b127825ffab2
-  ws-opts:
-    headers:
-      Host: kr.catnipballs.gay
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 114,149,279,407,484,512|🇯🇵日本高速接入点-04
-  network: ws
-  port: '80'
-  server: cfcdn3.sanfencdn9.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cd0a88d8-989b-4500-adb1-94889d6862c2
-  ws-opts:
-    headers:
-      Host: agzbjszujp4.yofnhkfc.xyz
-    path: /video/ibCT6z55
-- alterId: 0
-  cipher: auto
-  name: 114,149,279,407,484,512|🇸🇬新加坡高速接入点-01
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cd0a88d8-989b-4500-adb1-94889d6862c2
-  ws-opts:
-    headers:
-      Host: 7nAi74jJsg1.yofnhkfc.xyz
-    path: /video/c9efxRCi
-- alterId: 0
-  cipher: auto
-  name: '114,276,279,351,470,478|رایگان | VMESS | @eliya_chiter... #5'
-  network: ws
-  port: '443'
-  server: 172.67.71.160
-  servername: obdii.cfd
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: -1
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #89'
-  network: ws
-  port: '443'
-  server: 104.17.231.69
-  servername: ARCane.RadicalizatiON.IR
-  tls: true
-  type: vmess
-  uuid: 7fff5c98-b6ae-4081-92e0-3f510e256741
-  ws-opts:
-    headers:
-      Host: ARCane.RadicalizatiON.IR
-    path: /?ed=2048
-- alterId: -1
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #90'
-  network: ws
-  port: '443'
-  server: 104.21.95.137
-  servername: NGINX-a.pages.DEV
-  tls: true
-  type: vmess
-  uuid: 780c8b60-b213-47d6-9962-390c0b99e979
-  ws-opts:
-    headers:
-      Host: NGINX-a.pages.DEV
-    path: /?ed=2048
-- alterId: -1
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #91'
-  network: ws
-  port: '443'
-  server: 172.64.35.226
-  servername: ARCane.RadicalizatiON.IR
-  tls: true
-  type: vmess
-  uuid: 7fff5c98-b6ae-4081-92e0-3f510e256741
-  ws-opts:
-    headers:
-      Host: ARCane.RadicalizatiON.IR
-    path: /?ed=2048
-- alterId: -1
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #92'
-  network: ws
-  port: '443'
-  server: 104.22.75.105
-  servername: NGINX-a.pages.DEV
-  tls: true
-  type: vmess
-  uuid: 780c8b60-b213-47d6-9962-390c0b99e979
-  ws-opts:
-    headers:
-      Host: NGINX-a.pages.DEV
-    path: /?ed=2048
-- alterId: -1
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #93'
-  network: ws
-  port: '443'
-  server: 162.159.1.94
-  servername: ARCane.RadicalizatiON.IR
-  tls: true
-  type: vmess
-  uuid: 7fff5c98-b6ae-4081-92e0-3f510e256741
-  ws-opts:
-    headers:
-      Host: ARCane.RadicalizatiON.IR
-    path: /?ed=2048
-- alterId: -1
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #94'
-  network: ws
-  port: '443'
-  server: 104.21.101.2
-  servername: NGINX-a.pages.DEV
-  tls: true
-  type: vmess
-  uuid: 780c8b60-b213-47d6-9962-390c0b99e979
-  ws-opts:
-    headers:
-      Host: NGINX-a.pages.DEV
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '114,276,279,384,470,478|رایگان | VMESS | @ROMAX_VPN | ... #14'
-  network: ws
-  port: '443'
-  server: 104.21.15.212
-  servername: glweidf.sbs
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '114,276,279,470,478|رایگان | VMESS | @DailyV2RY | ... #8'
-  network: ws
-  port: '443'
-  server: 172.67.196.16
-  servername: kellie.makeup
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kellie.makeup
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 114,279,300,351|🔐FREENET37
-  network: ws
-  port: '443'
-  server: hms02opi.fxiaomi.sbs
-  servername: hms02.fxiaomi.sbs
-  tls: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      Host: hms02.fxiaomi.sbs
-    path: /link
-- alterId: 0
-  cipher: auto
-  name: 114,279,351,384|🇺🇸US_672
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: 113,235|Relay_🇺🇸US-🇺🇸US_84 |69.39Mb
   network: ws
   port: 443
-  server: 172.67.131.108
-  servername: glweidf.cfd
+  server: megaan.homes
+  servername: megaan.homes
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: glweidf.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '114,249,276,279,351,470,478|رایگان | VMESS | @DailyV2RY | ... #6'
-  network: ws
-  port: '443'
-  server: 172.67.201.200
-  servername: maggiy.shop
-  tls: true
-  type: vmess
+  udp: false
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: maggiy.shop
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '114,276,279,470,478|رایگان | VMESS | @DailyV2RY | ... #7'
-  network: ws
-  port: '443'
-  server: 172.67.131.108
-  servername: hms02.fxiaomi.sbs
-  tls: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      Host: hms02.fxiaomi.sbs
-    path: /link
-- alterId: 0
-  cipher: auto
-  name: 114,249,279,351,384,484|未知_0408122
-  network: ws
-  port: '443'
-  server: 104.16.217.241
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: nelly.homes
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '114,249,279|[🇨🇦]t.me/ConfigsHub #102'
-  network: ws
-  port: '443'
-  server: 172.67.196.110
-  servername: kellie.makeup
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kellie.makeup
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 114,279,351,384|🇺🇸 US_258
-  network: ws
-  port: 443
-  server: maggiy.shop
-  servername: maggiy.shop
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: maggiy.shop
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 114,249,279,351|🔐FREENET11
-  network: ws
-  port: '443'
-  server: 104.21.32.223
-  servername: muriel.makeup
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: muriel.makeup
+      HOST: megaan.homes
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -2233,9 +1843,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '114,244,245,278,279,283,306,384|美国 CloudFlare节点 #31'
+  name: 114,244,245,278,279,283,306,384,486|未知_0409012
   network: ws
-  port: 443
+  port: '443'
   server: nicola.pics
   servername: nicola.pics
   tls: true
@@ -2261,7 +1871,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '114,244,245,278,279|[🇨🇦]t.me/ConfigsHub #110'
+  name: '114,244,245,278,279|[🇨🇦]t.me/ConfigsHub #41'
   network: ws
   port: '443'
   server: marien.motorcycles
@@ -2289,7 +1899,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 114,244,245,276,278,279,351,384,438,470,478,484|美国_0408096
+  name: 114,244,245,276,278,279,351,384,470,478,484|美国_0408096
   network: ws
   port: '443'
   server: 172.67.161.77
@@ -2315,160 +1925,6 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '114,249,279|[🇨🇦]t.me/ConfigsHub #114'
-  network: ws
-  port: '443'
-  server: 104.24.0.11
-  servername: vip2323.cfd
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: vip2323.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 114,249,279,384|US_分享日记_239
-  network: ws
-  port: 443
-  server: 104.21.25.94
-  servername: de2-vmess.sshmax.xyz
-  tls: true
-  type: vmess
-  uuid: 4d74f126-0ef1-4579-b0a3-78e7b48ef067
-  ws-opts:
-    headers:
-      Host: de2-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #116'
-  network: ws
-  port: '443'
-  server: 172.67.170.103
-  servername: glweidf.sbs
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '114,279,384,461,463|🏁RELAY-104.21.51.208-0152 #1'
-  network: ws
-  port: 443
-  server: 104.21.51.208
-  servername: nina.bond
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: nina.bond
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '114,279,430,438|🔒 VM-WS-TLS 🇺🇸 US-172.67.204.8... #1'
-  network: ws
-  port: '2096'
-  server: 172.67.204.84
-  servername: nl1-vmess.sshmax.xyz
-  tls: true
-  type: vmess
-  uuid: 6a91ce2e-c570-4fa4-a497-c6386fb48a15
-  ws-opts:
-    headers:
-      Host: nl1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #119'
-  network: ws
-  port: '443'
-  server: dl.game.RezashoppaRIVATe.sbS
-  servername: dl.game.RezashoppaRIVATe.sbS
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: dl.game.RezashoppaRIVATe.sbS
-    path: /muriel.makeup/linkvws
-- alterId: 0
-  cipher: auto
-  name: 114,279,351|🔐FREENET10
-  network: ws
-  port: '443'
-  server: 188.114.96.6
-  servername: muriel.makeup
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: muriel.makeup
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #121'
-  network: ws
-  port: '443'
-  server: 104.21.13.125
-  servername: pl1-vmess.sshmax.xyz
-  tls: true
-  type: vmess
-  uuid: 33653184-91f3-4f3f-b707-2fc21e9adeb8
-  ws-opts:
-    headers:
-      Host: pl1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #122'
-  network: ws
-  port: '443'
-  server: 104.21.21.35
-  servername: hu2.xv2ray.net
-  tls: true
-  type: vmess
-  uuid: 757dc1d3-c0fd-456e-9426-2e9221584d40
-  ws-opts:
-    headers:
-      Host: hu2.xv2ray.net
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '114,279|[🇨🇦]t.me/ConfigsHub #123'
-  network: ws
-  port: '443'
-  server: 172.67.152.210
-  servername: meroiy.icu
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: meroiy.icu
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 114,279,384|美国-4.36MB/s
-  network: ws
-  port: 443
-  server: megaan.homes
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: megaan.homes
-    path: /linkvws
 - alterId: '0'
   cipher: auto
   name: 133|[🇨🇦]23.227.38.39:443(4612618c-...
@@ -2514,7 +1970,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: '187,188,212,252,253,283,285,301,305,306,381,382,397,430,438,450,461,463,484,486,555|🇺🇸_US_美国->🇫🇷_FR_法国
-    #6'
+    #5'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -2524,6 +1980,21 @@ proxies:
   tls: false
   type: vmess
   udp: true
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '187,188,212,285,397,463,484,486,541,553,555,587|美国【付费推荐：https://jdyvip.link/】4
+    #2'
+  network: ws
+  port: '2082'
+  server: 104.21.8.157
+  servername: ''
+  tls: false
+  type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -2606,27 +2077,10 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  country: 🇦CA
-  h2-opts: {}
-  http-opts: {}
-  name: 235|🇦CA_08 |12.40Mb
-  network: ws
-  port: 8080
-  server: 108.181.23.161
-  servername: internet.life.com.by
-  skip-cert-verify: true
-  type: vmess
-  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
-  ws-opts:
-    headers:
-      HOST: internet.life.com.by
-    path: /1IKYjV0r/
-- alterId: 0
-  cipher: auto
   country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 235,264,265,266,300,384|CA_分享日记
+  name: '235,264,265,266,300|PP|TG频道内随机时间更新订阅地址 #2'
   network: tcp
   port: 22324
   server: 198.57.27.212
@@ -2694,9 +2148,9 @@ proxies:
     path: /v149-dskds65
 - alterId: 0
   cipher: auto
-  name: '257,465|github.com/freefq - 美国CloudFla... #22'
+  name: 257,465,486|加拿大_0409001
   network: ws
-  port: 80
+  port: '80'
   server: shopify.com
   servername: ''
   tls: false
@@ -3074,7 +2528,35 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '276,470,478|رایگان | VMESS | @DeamNet_Prox... #14'
+  name: 276,470,478,512|🇺🇸美国高速接入点-01
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cd0a88d8-989b-4500-adb1-94889d6862c2
+  ws-opts:
+    headers:
+      Host: us1cPZiz8nb.fzbqfrse.xyz
+    path: /video/6VBhAkCtV4/
+- alterId: 0
+  cipher: auto
+  name: 276,285,470,484,512|🇸🇬新加坡高速接入点-03
+  network: ws
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cd0a88d8-989b-4500-adb1-94889d6862c2
+  ws-opts:
+    headers:
+      Host: jpafzyhfsg3.yofnhkfc.xyz
+    path: /video/u4eCZTxW
+- alterId: 0
+  cipher: auto
+  name: '276,470,478|رایگان | VMESS | @DeamNet_Prox... #15'
   network: ws
   port: '443'
   server: 104.21.28.62
@@ -3088,6 +2570,48 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  name: '276,470,478|رایگان | VMESS | @DeamNet_Prox... #18'
+  network: ws
+  port: '443'
+  server: 172.64.103.211
+  servername: glweidf.cfd
+  tls: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: glweidf.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '276,470,478|رایگان | VMESS | @oneclickvpnk... #15'
+  network: ws
+  port: '443'
+  server: cf.best.lafuseessub.uk
+  servername: us.lafuseessub.uk
+  tls: true
+  type: vmess
+  uuid: 629add44-33c3-417c-8e7d-e06ac1cec2cf
+  ws-opts:
+    headers:
+      Host: us.lafuseessub.uk
+    path: /lafusees
+- alterId: 0
+  cipher: auto
+  name: 276,384,463,470,478,484|美国_0408108
+  network: ws
+  port: '443'
+  server: 505.outline-vpn.cloud
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kellie.makeup
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 276,384,470,478,484|俄罗斯联邦_0408004
   network: ws
   port: '443'
@@ -3099,6 +2623,89 @@ proxies:
   ws-opts:
     headers:
       Host: kittiy.sbs
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '276,470,478|رایگان | VMESS | @ROMAX_VPN | ... #12'
+  network: ws
+  port: '443'
+  server: 104.21.15.212
+  servername: glweidf.sbs
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '276,384,470,478|رایگان | VMESS | @ShadowProxy6... #17'
+  network: ws
+  port: '443'
+  server: 198.41.196.0
+  servername: nelly.homes
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nelly.homes
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '276,470,478|رایگان | VMESS | @DailyV2RY | ... #7'
+  network: ws
+  port: '443'
+  server: 172.67.131.108
+  servername: hms02.fxiaomi.sbs
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      Host: hms02.fxiaomi.sbs
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: '276,470,478|رایگان | VMESS | @yaney_01 | U... #13'
+  network: ws
+  port: '443'
+  server: 104.26.8.210
+  tls: true
+  type: vmess
+  uuid: 206259fd-09af-46ee-ec6d-5ac8a8291d6d
+  ws-opts:
+    headers:
+      Host: uyhgiuyfewdrgf-to12345.xiaohhh.xyz
+    path: /66
+- alterId: 0
+  cipher: auto
+  name: '276,470,478|رایگان | VMESS | @v2Line | US🇺... #3'
+  network: ws
+  port: '443'
+  server: 173.245.58.37
+  servername: 7wih-darkness-f0af.jivegoh116.workers.dev
+  tls: true
+  type: vmess
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+  ws-opts:
+    headers:
+      Host: 7wih-darkness-f0af.jivegoh116.workers.dev
+    path: /afrhms07.xfixedfloat.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: '276,351,384,463,470,478|رایگان | VMESS | @kingofilter ... #4'
+  network: ws
+  port: '443'
+  server: 172.67.152.214
+  servername: meroiy.icu
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: meroiy.icu
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -3116,7 +2723,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '276,470,478|رایگان | VMESS | @ROMAX_VPN | ... #11'
+  name: '276,470,478|رایگان | VMESS | @ROMAX_VPN | ... #9'
   network: ws
   port: '443'
   server: 507.outline-vpn.cloud
@@ -3130,7 +2737,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '276,463,470,478|رایگان | VMESS | @ROMAX_VPN | ... #12'
+  name: '276,463,470,478|رایگان | VMESS | @ROMAX_VPN | ... #10'
   network: ws
   port: '443'
   server: 502.outline-vpn.cloud
@@ -3142,26 +2749,34 @@ proxies:
     headers:
       Host: glweidf.sbs
     path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '276,384,470,478|رایگان | VMESS | @OpenSSTPVpn ... #4'
+  network: ws
+  port: '443'
+  server: 172.67.155.82
+  servername: kristin.makeup
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kristin.makeup
+    path: /linkvws
 - cipher: aes-256-cfb
-  name: 282|🇨🇦 CA 1 → tg@nicevpn123
+  name: 282,340|🇸🇬-SG-006
   password: amazonskr05
   port: 443
   server: 47.128.77.190
   type: ss
   udp: true
-- name: 282|🇨🇦 CA 10 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
+- cipher: aes-256-gcm
+  name: 282|🇨🇦 CA 10 → tg@nicevpn123
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 198.57.27.218
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
 - name: 282|🇨🇦 CA 11 → tg@nicevpn123
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
@@ -3174,302 +2789,8 @@ proxies:
   ws-opts:
     headers:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- cipher: aes-256-cfb
-  name: 282,347|TG频道:@hkaa0|加
-  password: amazonskr05
-  port: 443
-  server: 47.128.72.85
-  type: ss
-  udp: true
-- name: 282|🇨🇦 CA 13 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 14 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 15 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 16 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 17 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- cipher: aes-256-gcm
-  name: 282|🇨🇦 CA 18 → tg@nicevpn123
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 198.57.27.218
-  type: ss
-  udp: true
-- name: 282|🇨🇦 CA 19 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 2 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 20 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 21 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 22 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- cipher: aes-256-cfb
-  name: 282|🇨🇦 CA 23 → tg@nicevpn123
-  password: amazonskr05
-  port: 443
-  server: 47.129.9.69
-  type: ss
-  udp: true
-- name: 282|🇨🇦 CA 24 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 25 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 26 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 27 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 28 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 29 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 3 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 30 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 31 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
     path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 32 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 33 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 34 → tg@nicevpn123
+- name: 282|🇨🇦 CA 12 → tg@nicevpn123
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
   port: 443
@@ -3482,215 +2803,7 @@ proxies:
     headers:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
     path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- alterId: 0
-  cipher: auto
-  name: 282|🇨🇦 CA 35 → tg@nicevpn123
-  network: ws
-  port: 8080
-  server: 23.227.38.44
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
-  ws-opts:
-    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
-- name: 282|🇨🇦 CA 36 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 37 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 38 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 39 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 4 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 40 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 41 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 43 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 44 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 45 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 46 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 47 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 48 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 5 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 6 → tg@nicevpn123
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 7 → tg@nicevpn123
+- name: 282|🇨🇦 CA 13 → tg@nicevpn123
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
   port: 443
@@ -3703,7 +2816,131 @@ proxies:
     headers:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
     path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 8 → tg@nicevpn123
+- name: 282|🇨🇦 CA 14 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 15 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- cipher: aes-256-cfb
+  name: 282,340|🇬-SG-011
+  password: amazonskr05
+  port: 443
+  server: 47.129.9.69
+  type: ss
+  udp: true
+- name: 282|🇨🇦 CA 17 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 18 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 19 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 2 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 20 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 21 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 22 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 23 → tg@nicevpn123
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
   port: 443
@@ -3716,7 +2953,46 @@ proxies:
     headers:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
     path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
-- name: 282|🇨🇦 CA 9 → tg@nicevpn123
+- name: 282|🇨🇦 CA 24 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 25 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 26 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 27 → tg@nicevpn123
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
   port: 443
@@ -3729,6 +3005,358 @@ proxies:
     headers:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
     path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 28 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- alterId: 0
+  cipher: auto
+  name: 282|🇨🇦 CA 29 → tg@nicevpn123
+  network: ws
+  port: 8080
+  server: 23.227.38.44
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
+  ws-opts:
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+- name: 282|🇨🇦 CA 3 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 30 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 31 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 32 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 33 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 34 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 35 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 36 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- cipher: aes-256-cfb
+  name: 282,340|🇬-SG-002
+  password: amazonskr05
+  port: 443
+  server: 47.128.64.71
+  type: ss
+  udp: true
+- name: 282|🇨🇦 CA 38 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 39 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- cipher: aes-256-cfb
+  name: 282,347|TG频道:@hkaa0|加
+  password: amazonskr05
+  port: 443
+  server: 47.128.72.85
+  type: ss
+  udp: true
+- name: 282|🇨🇦 CA 40 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 41 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 42 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 43 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 44 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 45 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 46 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 47 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 48 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 5 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 6 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 7 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 8 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
+- name: 282|🇨🇦 CA 9 → tg@nicevpn123
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fargox-tr'
 - alterId: 0
   cipher: auto
   name: '291,370,484,554|🇨🇦 _CA_加拿大 #2'
@@ -3919,7 +3547,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 72873a10-020a-45df-8d26-4f5074c74c4f
+  uuid: 0da0b866-d643-4865-8936-61bf152622bc
 - cipher: aes-256-gcm
   name: 312|VIP0.加拿大1.ChatGPT
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -4133,20 +3761,6 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 384,484|美国_0408098
-  network: ws
-  port: '443'
-  server: 172.67.152.200
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: meroiy.icu
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: '384|رایگان | VMESS | @v2ray_swhil ... #1'
   network: ws
   port: 443
@@ -4173,6 +3787,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 384,484|美国_0408098
+  network: ws
+  port: '443'
+  server: 172.67.152.200
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: meroiy.icu
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 387|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -4180,7 +3808,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b431faaa-7ef9-4e92-9be6-598d6570e3d7
+  uuid: 517cb022-f119-4d6d-9e57-ce6f61dbf219
 - alterId: 0
   cipher: auto
   name: 415|🇨🇦
@@ -4329,6 +3957,20 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
+  name: '470,478|رایگان | VMESS | @oneclickvpnk... #13'
+  network: ws
+  port: '8443'
+  server: cf.best.lafuseessub.uk
+  servername: jp.lafuseessub.uk
+  tls: true
+  type: vmess
+  uuid: 629add44-33c3-417c-8e7d-e06ac1cec2cf
+  ws-opts:
+    headers:
+      Host: jp.lafuseessub.uk
+    path: /lafusees
+- alterId: 0
+  cipher: auto
   name: 484|加拿大_0408007
   network: ws
   port: '443'
@@ -4351,6 +3993,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 484|加拿大_0408010
+  network: ws
+  port: '22751'
+  server: 108.181.200.220
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 09fb03a6-5e49-4a59-e268-dbd1720f5eb1
   ws-opts:
     headers:
       Host: ''
