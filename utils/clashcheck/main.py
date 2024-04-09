@@ -13,18 +13,18 @@ if __name__ == '__main__':
         clashname, operating_system = checkenv()
         checkuse(clashname[2::], operating_system)
         clash = subprocess.Popen([clashname, '-f', './temp/working.yaml', '-d', '.'])
-        processes =[]
-        sema = Semaphore(threads)
+        # processes =[]
+        # sema = Semaphore(threads)
+        # time.sleep(5)
+        # for i in tqdm(range(int(len(config['proxies']))), desc="Testing"):
+        #     sema.acquire()
+        #     p = Process(target=check, args=(alive,config['proxies'][i],apiurl,sema,timeout,testurl))
+        #     p.start()
+        #     processes.append(p)
+        # for p in processes:
+        #     p.join
         time.sleep(5)
-        for i in tqdm(range(int(len(config['proxies']))), desc="Testing"):
-            sema.acquire()
-            p = Process(target=check, args=(alive,config['proxies'][i],apiurl,sema,timeout,testurl))
-            p.start()
-            processes.append(p)
-        for p in processes:
-            p.join
-        time.sleep(5)
-        alive=list(alive)
+        alive=list(config['proxies'])
         push(alive,outfile)
         time.sleep(5)
         clean(clash)
