@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: 16| TW_13
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  skip-cert-verify: true
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 44|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 6122
@@ -131,6 +118,15 @@ proxies:
   protocol-param: 14299:BIfD8V
   server: specialcunicom.zifanr.net
   type: ssr
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 154|台湾-4.61MB/s
+  network: tcp
+  port: 4443
+  server: nb24.ntbq.dynu.net
+  tls: false
+  type: vmess
+  uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
 - alterId: 0
   cipher: auto
   name: 199|台湾-优化
@@ -262,7 +258,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '269,271,397|10|_121320001 #1'
+  name: '269,271,397|10|_121320001 #3'
   network: ws
   port: '31945'
   server: 103.159.206.35
@@ -276,7 +272,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 269,271,397|10|台湾_121320002
+  name: 269,271,397|10|湾_121320002
   network: ''
   port: '10001'
   server: 45.121.48.196
@@ -310,7 +306,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '269,271,305,397|10|_121320008 #1'
+  name: 269,271,305,397|10|台湾_121320008
   network: tcp
   port: '10001'
   server: 45.121.48.196
@@ -320,7 +316,7 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: 269,271,397|10|湾_121320011
+  name: 269,271,397|10|_121320011
   network: ''
   port: '19588'
   server: 152.32.167.166
@@ -540,20 +536,6 @@ proxies:
   network: ws
   port: '13080'
   server: 182.160.14.145
-  servername: tw.appleid.bf
-  tls: true
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      Host: tw.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 397,468|🇹🇼台湾 01
-  network: ws
-  port: '443'
-  server: cf.335570.xyz
   servername: tw.appleid.bf
   tls: true
   type: vmess
