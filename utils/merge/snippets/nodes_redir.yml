@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '142,388,422,432|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
+  name: '142,388,421,422,432|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: '80'
   server: 104.21.226.32
@@ -300,7 +300,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '142,221,223,388,421,422,432|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #23'
+  name: '142,221,223,388,421,422,432|21|🇺🇸 _US_美国->🇪_DE_德国 #23'
   network: ws
   port: '80'
   server: 104.21.225.126
@@ -417,7 +417,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 142,221,223,388,421,422,432|21|🇷 _CN_国->🇷_FR_国
+  name: 142,221,223,388,421,422,432|21|🇷 _CN_国->🇫🇷_FR_法国
   network: ws
   port: '16645'
   server: yes.cnmjcn.net
@@ -443,7 +443,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '142,221,223,388,421,422,432|21| _US_美国->_DE_国 #33'
+  name: '142,221,223,388,421,422,432|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #33'
   network: ws
   port: '80'
   server: 104.21.225.64
@@ -3458,19 +3458,18 @@ proxies:
   ws-path: /videos
 - alterId: 0
   cipher: auto
-  name: '371,447,480|V18-付费推荐:dlj.tf/ssrsub #1'
-  network: ws
-  port: '2086'
-  server: mizban.arzonhost.ir
-  servername: ''
+  grpc-opts:
+    grpc-service-name: 443trojan
+  name: 371,490|US
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: 172.67.204.84
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 372|🇺🇸_US_美国->_DE_国
