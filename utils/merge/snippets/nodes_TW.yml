@@ -258,7 +258,7 @@ proxies:
   ws-path: /2
 - alterId: 0
   cipher: auto
-  name: '302,304|台湾_121320001 #1'
+  name: 302,304,432|10|台湾_121320001
   network: ws
   port: '31945'
   server: 103.159.206.35
@@ -272,7 +272,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '302,304|台湾_121320002 #1'
+  name: 302,304,432|10|湾_121320002
   network: ''
   port: '10001'
   server: 45.121.48.196
@@ -282,9 +282,9 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: '302,304,338|PP|@Zyw_Channel #1'
+  name: 302,304,338,432|10|湾_121320006
   network: ws
-  port: 443
+  port: '443'
   server: 123.58.197.70
   servername: ''
   tls: false
@@ -296,7 +296,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '302,304|台湾_121320007 #1'
+  name: 302,304,432|10|湾_121320007
   network: tcp
   port: '19588'
   server: 152.32.167.166
@@ -306,9 +306,9 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '302,304,338|PP|@Zyw_Channel #4'
+  name: 302,304,338,432|10|台湾_121320008
   network: tcp
-  port: 10001
+  port: '10001'
   server: 45.121.48.196
   servername: ''
   tls: false
@@ -316,7 +316,7 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: '302,304|台湾_121320011 #1'
+  name: '302,304,432|10|_121320011 #1'
   network: ''
   port: '19588'
   server: 152.32.167.166
@@ -560,9 +560,37 @@ proxies:
   server: 52.78.184.192
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 432,504|🇹🇼台湾 01
+  network: ws
+  port: '443'
+  server: cf.335570.xyz
+  servername: tw.appleid.bf
+  tls: true
+  type: vmess
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  ws-opts:
+    headers:
+      Host: tw.appleid.bf
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 432,504|🇹🇼台湾 02
+  network: ws
+  port: '13080'
+  server: 182.160.14.145
+  servername: tw.appleid.bf
+  tls: true
+  type: vmess
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  ws-opts:
+    headers:
+      Host: tw.appleid.bf
+    path: /ws?ed=2048
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 444|🇹🇼 台湾2|@ripaojiedian
+  name: 432,444|🇹🇼 台湾2|@ripaojiedian
   password: passwd
   plugin: obfs
   plugin-opts:
@@ -591,7 +619,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 20b3ee54-cfc1-3a72-9d05-0b79a22c7c19
+  uuid: e3e18b30-ba2a-3bb8-af4a-28733efd84b0
 - alterId: 0
   cipher: auto
   name: 488|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -601,7 +629,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 20b3ee54-cfc1-3a72-9d05-0b79a22c7c19
+  uuid: e3e18b30-ba2a-3bb8-af4a-28733efd84b0
 - alterId: 0
   cipher: auto
   name: 488|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -611,7 +639,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 20b3ee54-cfc1-3a72-9d05-0b79a22c7c19
+  uuid: e3e18b30-ba2a-3bb8-af4a-28733efd84b0
 - cipher: aes-256-cfb
   name: 489|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -662,34 +690,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
-- alterId: 0
-  cipher: auto
-  name: 504|🇹🇼台湾 01
-  network: ws
-  port: '443'
-  server: cf.335570.xyz
-  servername: tw.appleid.bf
-  tls: true
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      Host: tw.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 504|🇹🇼台湾 02
-  network: ws
-  port: '13080'
-  server: 182.160.14.145
-  servername: tw.appleid.bf
-  tls: true
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      Host: tw.appleid.bf
-    path: /ws?ed=2048
 - alterId: 0
   cipher: auto
   name: 564|B台湾1
