@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 144,223,225,392,425,426,436|21|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: 144,223,225,392,425,426,436|21|🇸 _US_美国->🇩🇪_DE_德国
   network: ws
   port: '80'
   server: 104.21.225.104
@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '144,392,425,426,436|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
+  name: '144,392,425,426,436|21| _US_美国->_DE_国 #1'
   network: ws
   port: '80'
   server: 104.21.226.32
@@ -417,7 +417,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 144,223,225,392,425,426,436|21|🇷 _CN_国->🇫🇷_FR_法国
+  name: 144,223,225,392,425,426,436|21|🇫🇷 _CN_国->🇷_FR_法国
   network: ws
   port: '16645'
   server: yes.cnmjcn.net
@@ -508,7 +508,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '144,223,225,392,425,426,436|21| _US_美国->_DE_国 #38'
+  name: '144,223,225,392,425,426,436|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #38'
   network: ws
   port: '80'
   server: 104.21.233.46
@@ -3472,20 +3472,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 375,451|🇺🇸_US_美国->🇹🇷_TR_土耳其_2
-  network: ws
-  port: 2095
-  server: tu.mahilu.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      host: tu.mahilu.site
-    path: /
-- alterId: 0
-  cipher: auto
   name: 375,451|🇺🇸_US_美国->🇨🇦_CA_加拿大_2
   network: ws
   port: 8080
@@ -3851,6 +3837,38 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 436,441,448|🇫🇮 芬兰|@ripaojiedian
+  network: ws
+  port: 46085
+  server: mmfi85.micloud.buzz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3bfbc47b-cb43-46ec-8036-ff83560a8b0e
+  ws-opts:
+    headers:
+      Host: mmfi85.micloud.buzz
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 436,441,448|🇭🇺 匈牙利|@ripaojiedian
+  network: ws
+  port: 46082
+  server: mmhu82.micloud.buzz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3bfbc47b-cb43-46ec-8036-ff83560a8b0e
+  ws-opts:
+    headers:
+      Host: mmhu82.micloud.buzz
+    path: /zh-cn
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
