@@ -64,10 +64,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '90,138,144,275,321,324,327,428,474,482,529|香港_0422006 #1'
+  name: '90,138,144,321,324,327,428,474,482,529|香港_0422006 #1'
   network: ws
   port: '28681'
   server: 47.242.22.171
@@ -959,7 +956,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 144,324|🇺🇸 US 383 → tg@nicevpn123
+  name: 144,324|🇺🇸 US 503 → tg@nicevpn123
   network: ws
   port: 443
   server: n1709457297.aaigefm.cn
@@ -1009,13 +1006,17 @@ proxies:
   uuid: d5e16a28-afa8-4b64-a459-db32d14cd4d1
 - alterId: 0
   cipher: auto
-  name: '144,425,426|🇭🇰 香港(欢迎订阅Youtube破解资源君) #10'
+  name: '144,424,425,426|🇭🇰 香港(欢迎订阅Youtube破解资源君) #10'
   network: tcp
   port: '27442'
   server: 45.125.64.201
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3463f354-529a-4f40-9019-b9b10dc08233
+  ws-headers:
+    Host: 45.125.64.201
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '144,425,426|🇭🇰 香港(欢迎订阅Youtube破解资源君) #11'
@@ -1057,13 +1058,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '144,425,426|🇭🇰 香港(欢迎订阅Youtube破解资源君) #14'
+  name: '144,424,425,426|🇭🇰 香港(欢迎订阅Youtube破解资源君) #14'
   network: tcp
   port: '13324'
   server: 1.0-hk.a.bp2022.top
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 292c8c43-5234-4987-8466-b3b233533971
+  ws-headers:
+    Host: 1.0-hk.a.bp2022.top
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '144,324,482|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44... #1'
@@ -1082,7 +1087,21 @@ proxies:
     path: /cctv13/hd.m3u8/
 - alterId: 0
   cipher: auto
-  name: '144,307,474,482|🔒 VM-WS-NA 🇭🇰 HK-209.9.200.93:... #2'
+  name: '144,307,474,482|🔒 VM-WS-TLS 🇭🇰 HK-152.32.190.2... #2'
+  network: ws
+  port: '4431'
+  server: 152.32.190.239
+  servername: cfhk.393930.xyz
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '144,482|🔒 VM-WS-NA 🇭🇰 HK-209.9.200.93:... #1'
   network: ws
   port: '8300'
   server: 209.9.200.93
@@ -1271,6 +1290,17 @@ proxies:
     headers:
       Host: 706dc7c0280181c5816781dea5ae3d87.mobgslb.tbcache.com
     path: /
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 270,307,500|[02-24]-🇸-欧洲-096-150.107.46.21
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  protocol-param: ''
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   name: '280|🇨🇳中国【YouTube-由零開始】 #7'
@@ -1618,7 +1648,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 307|香港_042208021
+  name: 307|香港_042213019
   network: ''
   port: '49879'
   server: 206.237.31.203
@@ -1628,7 +1658,7 @@ proxies:
   uuid: 2aa1a094-8320-4567-b833-c0b4934eb7e2
 - alterId: 0
   cipher: auto
-  name: 307|香港_042208023
+  name: 307|香港_042213021
   network: ws
   port: '443'
   server: 47.76.186.215
@@ -1642,21 +1672,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 307|香港_042208024
-  network: ws
-  port: '4431'
-  server: 152.32.190.239
-  servername: cfhk.393930.xyz
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 307|香港_042208025
+  name: 307|香港_042213023
   network: ws
   port: '80'
   server: 47.243.162.49
@@ -1670,14 +1686,18 @@ proxies:
     path: /TG@dns68公益节点
 - alterId: 0
   cipher: auto
-  name: 307|香港_042208133
-  network: tcp
-  port: '443'
-  server: 220.246.94.249
+  name: 307|香港_042213179
+  network: ws
+  port: '80'
+  server: 8.218.207.169
   servername: ''
   tls: false
   type: vmess
-  uuid: 4664e760-f5f3-3cc2-8bb3-04f85aa7febb
+  uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
+  ws-opts:
+    headers:
+      Host: mix.tgdns68.vps666.onflashdrive.app
+    path: /TG@dns68公益节点
 - alterId: 0
   cipher: auto
   name: 312|🇭🇰8.210.128.146
@@ -1777,6 +1797,20 @@ proxies:
     headers:
       Host: needayhk1.renwox.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 327,529|香港_0422010
+  network: ws
+  port: '80'
+  server: 8.217.49.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 99376337-6500-40ae-8a3a-3d4eeccef4a1
+  ws-opts:
+    headers:
+      Host: needayhk1.renwox.xyz
+    path: /needay?ed=2048
 - alterId: 0
   cipher: auto
   name: '327,529|香港_0422004 #1'
@@ -2736,7 +2770,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '401,508,607|🇺🇸_US_美国 #68'
+  name: '401,508,607|🇺🇸_US_美国 #66'
   network: ws
   port: 2095
   server: 104.26.4.57
@@ -2840,7 +2874,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '401,508|美国 CloudFlare节点 #64'
+  name: '401,508|美国 CloudFlare节点 #59'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -3319,6 +3353,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 424|🇭🇰HK-103.152.221.199-066
+  network: ws
+  port: 15566
+  server: 103.152.221.199
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b5fca67d-9b52-415c-c2d1-8284b283ec6d
+  ws-headers:
+    Host: 103.152.221.199
+  ws-path: /anmbo
+- alterId: 0
+  cipher: auto
   name: 434|香港【YouTube @Play实验室】
   network: ws
   port: 63099
@@ -3363,6 +3410,14 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
+  name: 448|🇭🇰 香港3|@ripaojiedian
+  password: 4a6fd9d0-f724-4e1f-a92d-63f86778d379
+  port: 12042
+  server: rk.izoizoizo.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 448|🇭🇰 香港6|@ripaojiedian
   password: 38aa65c2-cb16-48a8-be74-163e45523a43
   port: 10002
@@ -3392,7 +3447,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: ba89e3f3-3d8a-321a-8617-588685e8cde0
+  uuid: a53096a9-1332-390d-bc63-52a056f4f8dc
 - alterId: 0
   cipher: auto
   name: 492|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -3402,7 +3457,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: ba89e3f3-3d8a-321a-8617-588685e8cde0
+  uuid: a53096a9-1332-390d-bc63-52a056f4f8dc
 - alterId: 0
   cipher: auto
   name: 492|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -3412,7 +3467,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: ba89e3f3-3d8a-321a-8617-588685e8cde0
+  uuid: a53096a9-1332-390d-bc63-52a056f4f8dc
 - cipher: aes-256-cfb
   name: 493|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
