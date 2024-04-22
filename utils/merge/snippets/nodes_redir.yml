@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 144,223,225,392,425,426,436|21|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: 144,223,225,392,425,426,436|21|🇸 _US_美国->🇩🇪_DE_德国
   network: ws
   port: '80'
   server: 104.21.225.104
@@ -235,7 +235,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '144,223,225,392,425,426,436|21| _US_国->_DE_国 #18'
+  name: '144,223,225,392,425,426,436|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #18'
   network: ws
   port: '80'
   server: 104.21.225.27
@@ -261,7 +261,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '144,223,225,392,425,426,436|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #20'
+  name: '144,223,225,392,425,426,436|21|🇸 _US_美国->🇩🇪_DE_德国 #20'
   network: ws
   port: '80'
   server: 104.21.237.65
@@ -339,7 +339,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '144,223,225,392,425,426,436|21|🇸 _US_美国->🇩🇪_DE_德国 #26'
+  name: '144,223,225,392,425,426,436|21|🇺🇸 _US_美国->🇩🇪_DE_德国 #26'
   network: ws
   port: '80'
   server: 104.21.228.21
@@ -417,7 +417,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 144,223,225,392,425,426,436|21|🇷 _CN_国->🇷_FR_国
+  name: 144,223,225,392,425,426,436|21|🇷 _CN_中->🇫🇷_FR_法国
   network: ws
   port: '16645'
   server: yes.cnmjcn.net
@@ -754,6 +754,19 @@ proxies:
   name: 197|🇭🇰 香港 02-中转
   network: ws
   port: '21031'
+  server: hk.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 0d67f300-bfd2-4e63-bb61-20ed80f88ebb
+  ws-opts:
+    headers:
+      Host: hk1.luodi.xyz
+    path: /hongkong
+- alterId: 0
+  cipher: auto
+  name: 197|🇭🇰 香港 03-中转
+  network: ws
+  port: '21032'
   server: hk.lianjianode.cc
   tls: false
   type: vmess
@@ -3453,20 +3466,6 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 375,451|🇺🇸_US_美国->🇧🇷_BR_巴西_3
-  network: ws
-  port: 2082
-  server: c2.v2raybrasil.cloud
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3d2944ae-a11c-46d8-9553-b9e83004d2dd
-  ws-opts:
-    headers:
-      host: s2.redbullplus.xyz
-    path: /t.me/xraybr
-- alterId: 0
-  cipher: auto
   name: '375,451,494|🇺🇸US美国5 #1'
   network: ws
   port: 2095
@@ -3479,34 +3478,6 @@ proxies:
     headers:
       host: tu.mahilu.site
     path: /
-- alterId: 0
-  cipher: auto
-  name: '375,451|🇺🇸_US_美国->🇩🇪_DE_德国_2 #1'
-  network: ws
-  port: 2052
-  server: 104.18.36.119
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
-  ws-opts:
-    headers:
-      host: helanv6cf.inekokkk.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 375,451|🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-  network: ws
-  port: 8080
-  server: yh5.dtku41.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
-  ws-opts:
-    headers:
-      host: fantastic-doe-bids-ended.trycloudflare.com
-    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
   name: 375,451|🇺🇸_US_美国->🇨🇦_CA_加拿大_3
@@ -3848,7 +3819,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 436|14|🇳_CN_中国->🇸_US_美国
+  name: 436|14|🇨_CN_国->🇸_US_美国
   network: ws
   port: 46037
   server: mmus37.micloud.buzz
