@@ -80,13 +80,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 90,144,307,324,327,428,529,531|美国_0421006
+  name: 90,144,307,324,327,428,529|美国_0422099
   network: ws
   port: '443'
   server: n1710825489.aaigefm.cn
   servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
   uuid: 0dd3ac59-78e9-43d5-bd3f-53f2863cffd7
@@ -956,7 +956,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 144,324|🇺🇸 US 787 → tg@nicevpn123
+  name: 144,324|🇺🇸 US 1135 → tg@nicevpn123
   network: ws
   port: 443
   server: n1709457297.aaigefm.cn
@@ -1071,33 +1071,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '144,482|🔒 VM-WS-NA 🇭🇰 HK-209.9.200.93:... #1'
-  network: ws
-  port: '8300'
-  server: 209.9.200.93
-  tls: false
-  type: vmess
-  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
-  ws-opts:
-    headers:
-      Host: hk3.grpc.stream
-    path: /event
-- alterId: 0
-  cipher: auto
-  name: '144,307,474,482|🔒 VM-WS-TLS 🇭🇰 HK-152.32.190.2... #3'
-  network: ws
-  port: '4431'
-  server: 152.32.190.239
-  servername: cfhk.393930.xyz
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: '144,324,482|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44... #1'
   network: ws
   port: 26639
@@ -1112,6 +1085,19 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8/
+- alterId: 0
+  cipher: auto
+  name: '144,482|🔒 VM-WS-NA 🇭🇰 HK-209.9.200.93:... #1'
+  network: ws
+  port: '8300'
+  server: 209.9.200.93
+  tls: false
+  type: vmess
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  ws-opts:
+    headers:
+      Host: hk3.grpc.stream
+    path: /event
 - alterId: 64
   cipher: auto
   name: 144,324,508|🇭🇰HK-182.16.1.194-8978
@@ -1304,6 +1290,24 @@ proxies:
   ws-opts:
     headers:
       Host: 706dc7c0280181c5816781dea5ae3d87.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 269|Relay_HK | 3.13Mb
+  network: ws
+  port: 4431
+  server: 152.32.190.239
+  servername: cfhk.393930.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      HOST: cfhk.393930.xyz
     path: /
 - cipher: aes-256-cfb
   country: 🇰HK
@@ -1692,6 +1696,21 @@ proxies:
   port: '80'
   server: 47.243.162.49
   servername: ''
+  tls: false
+  type: vmess
+  uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
+  ws-opts:
+    headers:
+      Host: mix.tgdns68.vps666.onflashdrive.app
+    path: /TG@dns68公益节点
+- alterId: 0
+  cipher: auto
+  name: 307,383,441|9|baipaovpn中国
+  network: ws
+  port: '80'
+  server: 8.218.207.169
+  servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
@@ -2606,6 +2625,20 @@ proxies:
     path: /path/1693018744512
 - alterId: 0
   cipher: auto
+  name: 383|🇰-HK-002
+  network: ws
+  port: 80
+  server: 8.217.147.230
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
+  ws-opts:
+    headers:
+      Host: mix.tgdns68.vps666.onflashdrive.app
+    path: /TG@dns68
+- alterId: 0
+  cipher: auto
   name: 387|香港_0306001
   network: ws
   port: '80'
@@ -2875,7 +2908,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '401,508|美国 CloudFlare节点 #59'
+  name: '401,508|美国 CloudFlare节点 #52'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -3409,22 +3442,36 @@ proxies:
   ws-headers:
     Host: vn3.thanhhaivpn.name.vn
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 448|🇭🇰 香港3|@ripaojiedian
-  password: 4a6fd9d0-f724-4e1f-a92d-63f86778d379
-  port: 12042
-  server: rk.izoizoizo.top
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 448|🇭🇰 香港6|@ripaojiedian
-  password: 38aa65c2-cb16-48a8-be74-163e45523a43
-  port: 10002
-  server: zjcm0328.sstr2024.cc
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 449|香港2|@ripaojiedian
+  network: tcp
+  port: '20000'
+  server: hkt.recloudnat.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 324aa1c5-7504-4893-82b4-1365596331e2
+- alterId: 0
+  cipher: auto
+  name: 449|香港3|@ripaojiedian
+  network: tcp
+  port: '39996'
+  server: hkt.miaoddns.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 324aa1c5-7504-4893-82b4-1365596331e2
+- alterId: 0
+  cipher: auto
+  name: 449|香港5|@ripaojiedian
+  network: tcp
+  port: '20000'
+  server: hkt.nat.01.mikunet.work
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 324aa1c5-7504-4893-82b4-1365596331e2
 - alterId: 0
   cipher: auto
   name: 466|香港(yudou66.com 玉豆免费节点)
@@ -3448,7 +3495,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4cd588e3-3a99-3494-a1b5-09a7aaca03dd
+  uuid: f3365222-cbdc-305a-a2f7-894ffe28fee3
 - alterId: 0
   cipher: auto
   name: 492|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -3458,7 +3505,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4cd588e3-3a99-3494-a1b5-09a7aaca03dd
+  uuid: f3365222-cbdc-305a-a2f7-894ffe28fee3
 - alterId: 0
   cipher: auto
   name: 492|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -3468,7 +3515,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4cd588e3-3a99-3494-a1b5-09a7aaca03dd
+  uuid: f3365222-cbdc-305a-a2f7-894ffe28fee3
 - cipher: aes-256-cfb
   name: 493|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -3601,7 +3648,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 508|香港2|@ripaojiedian
+  name: '508|香港2|@ripaojiedian #1'
   network: tcp
   port: '44805'
   server: hkjcdn03.dorabbb.top
@@ -3611,7 +3658,7 @@ proxies:
   uuid: 1528295e-c497-43ac-a08d-c040662b9344
 - alterId: 0
   cipher: auto
-  name: 508|香港5|@ripaojiedian
+  name: '508|香港5|@ripaojiedian #1'
   network: ws
   port: '26925'
   server: 38.207.164.31
@@ -3987,20 +4034,6 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
-  name: '647,648|下载专用 | 香港1 x0.8倍率 #1'
-  network: ws
-  port: 443
-  server: jsm-hk.lovehuawei.top
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d29227ac-4060-3736-9f88-e03af4198410
-  ws-opts:
-    headers:
-      Host: jsm-hk.lovehuawei.top
-    path: /jsm
 - alterId: 0
   cipher: auto
   name: 649|🇭🇰香港1丨白嫖机场.com
