@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: 17| TW_08
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  skip-cert-verify: true
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 48|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 6122
@@ -256,7 +243,7 @@ proxies:
   name: 255|台湾澎湖湾⚡️1X
   network: ws
   port: '80'
-  server: 8.210.107.246
+  server: 8.219.123.11
   tls: false
   type: vmess
   uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
@@ -264,23 +251,6 @@ proxies:
     headers:
       Host: tw1.renwox.xyz
     path: /needay?ed=2048
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 288|Relay_🏁ZZ-🇼TW_160 | 3.13Mb
-  network: ws
-  port: 8080
-  server: 104.19.172.163
-  servername: oiictw.yydsii.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    headers:
-      HOST: oiictw.yydsii.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 304|🇹🇼_TW_台湾
@@ -373,7 +343,7 @@ proxies:
   ws-path: /2
 - alterId: 0
   cipher: auto
-  name: 319,321,449|10|台湾_121320001
+  name: '319,321|台湾_121320001 #1'
   network: ws
   port: '31945'
   server: 103.159.206.35
@@ -387,7 +357,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '319,321,449|10|_121320002 #1'
+  name: '319,321|台湾_121320002 #1'
   network: ''
   port: '10001'
   server: 45.121.48.196
@@ -397,9 +367,9 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: 319,321,355,449|10|_121320006
+  name: '319,321,355|PP|@Zyw_Channel #1'
   network: ws
-  port: '443'
+  port: 443
   server: 123.58.197.70
   servername: ''
   tls: false
@@ -411,7 +381,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 319,321,449|10|_121320007
+  name: '319,321|台湾_121320007 #1'
   network: tcp
   port: '19588'
   server: 152.32.167.166
@@ -421,9 +391,9 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 319,321,355,449|10|_121320008
+  name: '319,321,355|PP|@Zyw_Channel #4'
   network: tcp
-  port: '10001'
+  port: 10001
   server: 45.121.48.196
   servername: ''
   tls: false
@@ -431,7 +401,7 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: 319,321,449|10|_121320011
+  name: '319,321|台湾_121320011 #1'
   network: ''
   port: '19588'
   server: 152.32.167.166
@@ -655,35 +625,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 449,521|🇹🇼台湾 02
-  network: ws
-  port: '13080'
-  server: 182.160.14.145
-  servername: tw.appleid.bf
-  tls: true
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      Host: tw.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 449,521|🇹🇼台湾 01
-  network: ws
-  port: '443'
-  server: cf.335570.xyz
-  servername: tw.appleid.bf
-  tls: true
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      Host: tw.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 449,454,462|台湾|@ripaojiedian
+  name: 454,462|台湾|@ripaojiedian
   network: tcp
   port: '32866'
   server: qsx5ff6ubid5.uxzbpycs.xyz
@@ -781,6 +723,34 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  cipher: auto
+  name: 521|🇹🇼台湾 01
+  network: ws
+  port: '443'
+  server: cf.335570.xyz
+  servername: tw.appleid.bf
+  tls: true
+  type: vmess
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  ws-opts:
+    headers:
+      Host: tw.appleid.bf
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 521|🇹🇼台湾 02
+  network: ws
+  port: '13080'
+  server: 182.160.14.145
+  servername: tw.appleid.bf
+  tls: true
+  type: vmess
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  ws-opts:
+    headers:
+      Host: tw.appleid.bf
+    path: /ws?ed=2048
 - alterId: 0
   cipher: auto
   name: 589|B台湾1
