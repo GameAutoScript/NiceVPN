@@ -80,13 +80,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
-- cipher: aes-256-gcm
-  country: US
-  name: '101|disney_netflix_HK #1'
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
 - alterId: 0
   cipher: auto
   name: 114|🇭🇰 香港 | V1 | 01
@@ -949,13 +942,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 164|🇭🇰HK | 🟢 | vmess | @mftizi | 5
+  name: 164,352|🇺🇸 US 110 → tg@nicevpn123
   network: ws
-  port: '443'
+  port: 443
   server: n1709457297.aaigefm.cn
   servername: n1709457297.aaigefm.cn
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 4cbaa418-9762-41d4-b144-835922d2deba
   ws-opts:
     headers:
@@ -963,17 +958,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 164|🇭🇰HK | 🟢 | vmess | @mftizi | 1...
+  name: 164,352|RO 4 → tg@nicevpn123
   network: ws
-  port: '8080'
+  port: 8080
   server: 185.244.208.61
   servername: hk-17.trollfunny.net
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1000,13 +995,15 @@ proxies:
     path: /needay?ed=2048
 - alterId: 0
   cipher: auto
-  name: '164,502,510|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.177... #2'
+  name: '164,352,502,510|🔒 VM-WS-NA 🇭🇰 HK-62.72.163.177... #2'
   network: ws
   port: '1273'
   server: 62.72.163.177
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: d008ad27-8a5b-4c79-aca2-cd80e8a4db10
   ws-opts:
     headers:
@@ -1014,13 +1011,15 @@ proxies:
     path: /hk.kejifan88.top
 - alterId: 64
   cipher: auto
-  name: 164,536|🇭🇰HK-182.16.1.194-8978
+  name: 164,352,536|🇭🇰HK-182.16.1.194-8978
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
@@ -1203,6 +1202,17 @@ proxies:
     headers:
       Host: 706dc7c0280181c5816781dea5ae3d87.mobgslb.tbcache.com
     path: /
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 298,335,528|[02-24]-🇸-欧洲-096-150.107.46.21
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  protocol-param: ''
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   name: '308|🇨🇳中国【YouTube-由零開始】 #7'
@@ -1564,13 +1574,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 335|香港_050218027
+  name: 335,352|🇺🇸 US 1203 → tg@nicevpn123
   network: ws
-  port: '443'
+  port: 443
   server: n1710825489.aaigefm.cn
   servername: 🇭🇰HK-47.76.186.215-0183 | 1.078MB
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 0dd3ac59-78e9-43d5-bd3f-53f2863cffd7
   ws-opts:
     headers:
@@ -1600,6 +1612,77 @@ proxies:
     headers:
       Host: internet.life.com.by
     path: /
+- cipher: aes-128-gcm
+  name: 352|🇭🇰 HK 1 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.223.223
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 352|🇭🇰 HK 4 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.139.54
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 352|🇭🇰 HK 5 → tg@nicevpn123
+  network: ws
+  port: 55576
+  server: 202.81.231.30
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 352|🇭🇰 HK 7 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: 352|🇭🇰 HK 8 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: 182.16.1.194
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 355,557|香港_0502086
@@ -2545,7 +2628,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '429,536,647|🇺🇸_US_美国 #78'
+  name: '429,536,648|🇺🇸_US_美国 #79'
   network: ws
   port: 2095
   server: 104.26.4.57
@@ -2649,7 +2732,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '429,536|美国 CloudFlare节点 #46'
+  name: '429,536|美国 CloudFlare节点 #36'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4495,22 +4578,6 @@ proxies:
   ws-headers:
     Host: vn3.thanhhaivpn.name.vn
   ws-path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 476|🇭🇰 香港KT|@ripaojiedian
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: h2.dspp.store
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 172.67.198.153
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 520|🇭🇰香港 | 101 | 负载优化 | 1x
@@ -4520,7 +4587,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 93c0bcf9-86fc-489f-a47e-c2db1c6384ab
+  uuid: b14c2df6-b54f-47d9-8f90-4aed4ccd8a24
 - alterId: 0
   cipher: auto
   name: 520|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4530,7 +4597,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 93c0bcf9-86fc-489f-a47e-c2db1c6384ab
+  uuid: b14c2df6-b54f-47d9-8f90-4aed4ccd8a24
 - alterId: 0
   cipher: auto
   name: 520|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4540,7 +4607,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 93c0bcf9-86fc-489f-a47e-c2db1c6384ab
+  uuid: b14c2df6-b54f-47d9-8f90-4aed4ccd8a24
 - cipher: aes-256-cfb
   name: 521|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4661,20 +4728,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 536|🇭🇰HK-47.76.35.246-0787
-  network: ws
-  port: 24101
-  server: 47.76.35.246
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 64
   cipher: auto
   name: '536|香港|@ripaojiedian #1'
@@ -4709,6 +4762,21 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
+- cipher: aes-128-gcm
+  name: 554|HK_speednode_0020
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.218.82.85
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 557|香港_0502004
@@ -4753,6 +4821,19 @@ proxies:
     path: /zh-cn/download
 - alterId: 0
   cipher: auto
+  name: 565|🇭🇰 HongKong A - Unlocked
+  network: ws
+  port: '80'
+  server: hk01.kingeldwin.online
+  tls: false
+  type: vmess
+  uuid: 9223aef7-642d-4047-8d3a-dd2bcb9e2e69
+  ws-opts:
+    headers:
+      Host: hk01.kingeldwin.online
+    path: /
+- alterId: 0
+  cipher: auto
   name: 565|🇭🇰 HongKong C - Unlocked
   network: ws
   port: '80'
@@ -4763,19 +4844,6 @@ proxies:
   ws-opts:
     headers:
       Host: hk03.kingeldwin.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 565|🇭🇰 HongKong D - Unlocked
-  network: ws
-  port: '80'
-  server: hk04.kingeldwin.online
-  tls: false
-  type: vmess
-  uuid: 9223aef7-642d-4047-8d3a-dd2bcb9e2e69
-  ws-opts:
-    headers:
-      Host: hk04.kingeldwin.online
     path: /
 - alterId: 0
   cipher: auto
@@ -4819,7 +4887,16 @@ proxies:
   uuid: 3b40af01-e7e5-3cf2-807d-3f6df986f34b
 - alterId: 0
   cipher: auto
-  name: 617|🇭🇰 香港｜HK- 11
+  name: 612|🇭🇰 香港 [Premium]
+  network: tcp
+  port: '14791'
+  server: prehk.capoonetwork.com
+  tls: false
+  type: vmess
+  uuid: 20ff026e-e9c7-4147-bf3c-d6e21063f92c
+- alterId: 0
+  cipher: auto
+  name: 618|🇭🇰 香港｜HK- 11
   network: ws
   port: '52465'
   server: vms.hk01.askingavengers.xyz
@@ -4832,7 +4909,7 @@ proxies:
     path: /profile
 - alterId: 0
   cipher: auto
-  name: 617|🇭🇰 香港｜HK- 12
+  name: 618|🇭🇰 香港｜HK- 12
   network: ws
   port: '52466'
   server: vms.hk02.askingavengers.xyz
@@ -4844,7 +4921,7 @@ proxies:
       Host: ''
     path: /profile
 - cipher: aes-128-gcm
-  name: 620|Manifold-香港01-原生
+  name: 621|Manifold-香港01-原生
   password: a212d
   plugin: obfs
   plugin-opts:
@@ -4855,7 +4932,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Game 香港01-标准
+  name: 621|Game 香港01-标准
   password: ayu1245
   plugin: obfs
   plugin-opts:
@@ -4866,7 +4943,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Game 香港02-标准
+  name: 621|Game 香港02-标准
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -4877,7 +4954,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Game 香港03-标准
+  name: 621|Game 香港03-标准
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -4888,7 +4965,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Game 香港04-国际
+  name: 621|Game 香港04-国际
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -4899,7 +4976,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Game 香港05-标准
+  name: 621|Game 香港05-标准
   password: ayucles1
   plugin: obfs
   plugin-opts:
@@ -4910,7 +4987,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Game 香港06-标准
+  name: 621|Game 香港06-标准
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -4921,7 +4998,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Video 香港A-解锁
+  name: 621|Video 香港A-解锁
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -4932,7 +5009,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Video 香港B-标准
+  name: 621|Video 香港B-标准
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -4943,7 +5020,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Video 香港C-标准
+  name: 621|Video 香港C-标准
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -4954,7 +5031,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Web 香港I-标准
+  name: 621|Web 香港I-标准
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -4965,7 +5042,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 620|Web 香港II-标准
+  name: 621|Web 香港II-标准
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -4977,7 +5054,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '651|香港01{优化1|V2ray} #1'
+  name: '652|香港01{优化1|V2ray} #1'
   network: ws
   port: '25242'
   server: hk1.awslcn.info
@@ -4990,7 +5067,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '651|香港02{优化2|V2ray} #1'
+  name: '652|香港02{优化2|V2ray} #1'
   network: ws
   port: '25242'
   server: hk2.awslcn.info
@@ -5003,7 +5080,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 651|香港03{优化1|V2ray}
+  name: 652|香港03{优化1|V2ray}
   network: ws
   port: '25248'
   server: hk1.awslcn.info
@@ -5016,7 +5093,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '651|香港04{优化1|V2ray} #1'
+  name: '652|香港04{优化1|V2ray} #1'
   network: ws
   port: '25250'
   server: hk1.awslcn.info
@@ -5029,7 +5106,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '651|香港05{优化1|V2ray} #1'
+  name: '652|香港05{优化1|V2ray} #1'
   network: ws
   port: '25244'
   server: hk1.awslcn.info
@@ -5041,7 +5118,7 @@ proxies:
       Host: ''
     path: ''
 - cipher: aes-256-cfb
-  name: 667|专线 香港 1
+  name: 668|专线 香港 1
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -5051,7 +5128,7 @@ proxies:
   server: pvt-hka.ginfe.me
   type: ssr
 - cipher: aes-256-cfb
-  name: 667|畅行 香港 1
+  name: 668|畅行 香港 1
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -5061,7 +5138,7 @@ proxies:
   server: pro-hka.ginfe.me
   type: ssr
 - cipher: aes-256-cfb
-  name: 667|畅行 香港 2
+  name: 668|畅行 香港 2
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -5072,7 +5149,7 @@ proxies:
   type: ssr
 - grpc-opts:
     grpc-service-name: hkvip102
-  name: '676,678|香港 101 #1'
+  name: '677,679|香港 101 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 12249
@@ -5083,7 +5160,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip102
-  name: '676,678|香港 102 #1'
+  name: '677,679|香港 102 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 22249
@@ -5094,7 +5171,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip102
-  name: '676,678|香港 103 #1'
+  name: '677,679|香港 103 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 32249
@@ -5105,7 +5182,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip102
-  name: '676,678|香港 104 #1'
+  name: '677,679|香港 104 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 42249
@@ -5116,7 +5193,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip102
-  name: '676,678|香港 105 #1'
+  name: '677,679|香港 105 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 52249
@@ -5127,7 +5204,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: '676,678|香港 106 #1'
+  name: '677,679|香港 106 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 11116
@@ -5138,7 +5215,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: '676,678|香港 107 #1'
+  name: '677,679|香港 107 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 21116
@@ -5149,7 +5226,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: '676,678|香港 108 #1'
+  name: '677,679|香港 108 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 31116
@@ -5160,7 +5237,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: '676,678|香港 109 #1'
+  name: '677,679|香港 109 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 41116
@@ -5171,7 +5248,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: '676,678|香港 110 #1'
+  name: '677,679|香港 110 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 51116
@@ -5182,10 +5259,49 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 687|🇭🇰香港电讯01| ✨全流媒体
+  name: 686|HK-香港 | CDN | 翻墙0.5×
   network: ws
-  port: '33001'
-  server: 112.29.226.3
+  port: '2086'
+  server: 104.19.32.226
+  tls: false
+  type: vmess
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
+  ws-opts:
+    headers:
+      Host: hkcdn.vbdf.lol
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 686|HK-香港 01 | 游戏节点 | 免流10x
+  network: ws
+  port: '80'
+  server: xgone.vbdf.lol
+  tls: false
+  type: vmess
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 686|HK-香港 03 | cn2直连 | 免流 1x
+  network: ws
+  port: '26489'
+  server: hdftcfgghjtw.vbdf.lol
+  tls: false
+  type: vmess
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 689|🇭🇰香港下载10G专线
+  network: ws
+  port: '31010'
+  server: 120.236.196.9
   tls: false
   type: vmess
   uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
@@ -5195,10 +5311,23 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: 687|🇭🇰香港电讯02| ✨全流媒体
+  name: 689|🇭🇰香港电讯01| ✨全流媒体
+  network: ws
+  port: '33001'
+  server: 120.236.196.9
+  tls: false
+  type: vmess
+  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /qwe123321ewq
+- alterId: 0
+  cipher: auto
+  name: 689|🇭🇰香港电讯02| ✨全流媒体
   network: ws
   port: '33002'
-  server: 112.29.226.3
+  server: 120.236.196.9
   tls: false
   type: vmess
   uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
@@ -5208,10 +5337,10 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 687|🇭🇰香港宽频-01| ✨全流媒体
+  name: 689|🇭🇰香港宽频-01| ✨全流媒体
   network: ws
   port: '33105'
-  server: 112.29.226.3
+  server: 120.236.196.9
   tls: false
   type: vmess
   uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
@@ -5221,10 +5350,10 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: 687|🇭🇰香港宽频-02| ✨全流媒体
+  name: 689|🇭🇰香港宽频-02| ✨全流媒体
   network: ws
   port: '33101'
-  server: 112.29.226.3
+  server: 120.236.196.9
   tls: false
   type: vmess
   uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
@@ -5234,10 +5363,10 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: 687|🇭🇰香港HGC-01| ✨全流媒体
+  name: 689|🇭🇰香港HGC-01| ✨全流媒体
   network: ws
   port: '33301'
-  server: 183.232.238.89
+  server: 120.236.196.9
   tls: false
   type: vmess
   uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
@@ -5247,7 +5376,7 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: '693,694|下载专用 | 香港1 x0.8倍率 #1'
+  name: '696,697|下载专用 | 香港1 x0.8倍率 #1'
   network: ws
   port: 443
   server: jsm-hk.lovehuawei.top
@@ -5261,7 +5390,7 @@ proxies:
     path: /jsm
 - alterId: 0
   cipher: auto
-  name: 695|🇭🇰香港1丨白嫖机场.com
+  name: 698|🇭🇰香港1丨白嫖机场.com
   network: ws
   port: '80'
   server: 104.19.173.68
@@ -5274,7 +5403,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 695|🇭🇰香港2丨白嫖机场.com
+  name: 698|🇭🇰香港2丨白嫖机场.com
   network: ws
   port: '80'
   server: 104.19.174.68
@@ -5287,7 +5416,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 695|🇭🇰香港3丨白嫖机场.com
+  name: 698|🇭🇰香港3丨白嫖机场.com
   network: ws
   port: '80'
   server: 104.18.154.42
@@ -5300,7 +5429,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 696|🇭🇰香港 Standard1 2x
+  name: 699|🇭🇰香港 Standard1 2x
   network: ws
   port: '1299'
   server: akhk.jiediandiqus.sbs
@@ -5313,7 +5442,7 @@ proxies:
     path: /akileipv6zhuyaoji
 - alterId: 0
   cipher: auto
-  name: 696|🇭🇰香港 快车道1 3x
+  name: 699|🇭🇰香港 快车道1 3x
   network: ws
   port: '9126'
   server: kcd.jiediandiqus.sbs
@@ -5326,7 +5455,7 @@ proxies:
     path: /awufgboawbf
 - alterId: 0
   cipher: auto
-  name: 696|🇭🇰香港 移动联通1 0.8x
+  name: 699|🇭🇰香港 移动联通1 0.8x
   network: ws
   port: '1221'
   server: duo.jiediandiqus.sbs
@@ -5339,7 +5468,7 @@ proxies:
     path: /aewpifghaowubgfiovw
 - alterId: 0
   cipher: auto
-  name: 696|🇭🇰香港 移动联通3 0.8x
+  name: 699|🇭🇰香港 移动联通3 0.8x
   network: ws
   port: '2937'
   server: duo2.jiediandiqus.sbs
