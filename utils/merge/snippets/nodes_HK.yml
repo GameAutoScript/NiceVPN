@@ -129,7 +129,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: '107,167,168,174,326,327,362,363,366,492,516,524|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171...
+  name: '107,167,168,174,326,327,362,363,492,516,524|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171...
     #2'
   network: ws
   port: 28681
@@ -138,7 +138,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
+  udp: false
   uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
   ws-opts:
     headers:
@@ -146,12 +146,11 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   country: US
-  name: 108,366|🇺🇸 US 196 → tg@nicevpn123
+  name: 108|netflix_HK
   password: iUB0923RBA
   port: 30067
   server: 154.3.8.151
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 121|🇭🇰 香港 | V1 | 01
@@ -215,11 +214,11 @@ proxies:
   tls: false
   type: vmess
   uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 165,360,492|HK_分享日记_15
+  name: '165,492,557|رایگان | VMESS | @DeamNet_Prox... #4'
   network: ws
-  port: 80
+  port: '80'
   server: hrgdvpn.flycdnedc55.vip
   skip-cert-verify: true
   tls: false
@@ -227,7 +226,7 @@ proxies:
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
-      host: hrgdvpn.flycdnedc55.vip
+      Host: ''
     path: /opt/video/images
 - alterId: 0
   cipher: auto
@@ -1014,15 +1013,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 174,366|🇺🇸 US 187 → tg@nicevpn123
+  name: 174|🇭🇰HK | 🟢 | vmess | @mftizi | 5
   network: ws
-  port: 443
+  port: '443'
   server: n1709457297.aaigefm.cn
   servername: n1709457297.aaigefm.cn
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 4cbaa418-9762-41d4-b144-835922d2deba
   ws-opts:
     headers:
@@ -1030,17 +1027,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 174,366|RO 4 → tg@nicevpn123
+  name: 174|🇭🇰HK | 🟢 | vmess | @mftizi | 1...
   network: ws
-  port: 8080
+  port: '8080'
   server: 185.244.208.61
   servername: hk-17.trollfunny.net
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1067,15 +1064,13 @@ proxies:
     path: /needay?ed=2048
 - alterId: 64
   cipher: auto
-  name: 174,366,550|🇭🇰HK-182.16.1.194-8978
+  name: 174,550|🇭🇰HK-182.16.1.194-8978
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
@@ -1309,6 +1304,17 @@ proxies:
       Host: cn.bing.com
     path: /
   ws-path: /
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 312,349,470,542|[02-24]-🇸-欧洲-096-150.107.46.21
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  protocol-param: ''
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   name: '322|🇨🇳中国【YouTube-由零開始】 #7'
@@ -1680,15 +1686,13 @@ proxies:
   uuid: dfc2b2af-deb2-4acf-9e8d-e226ab9fd2cb
 - alterId: 0
   cipher: auto
-  name: 349,366|🇺🇸 US 873 → tg@nicevpn123
+  name: 349|香港_050313058
   network: ws
-  port: 443
+  port: '443'
   server: n1710825489.aaigefm.cn
   servername: 🇭🇰HK-47.76.186.215-0183 | 1.078MB
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 0dd3ac59-78e9-43d5-bd3f-53f2863cffd7
   ws-opts:
     headers:
@@ -1738,77 +1742,6 @@ proxies:
     headers:
       Host: internet.life.com.by
     path: /
-- cipher: aes-128-gcm
-  name: 366|🇭🇰 HK 1 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.223.223
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 366|🇭🇰 HK 3 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.139.54
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 366|🇭🇰 HK 4 → tg@nicevpn123
-  network: ws
-  port: 55576
-  server: 202.81.231.30
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 366|🇭🇰 HK 6 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  name: 366|🇭🇰 HK 7 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: 182.16.1.194
-    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 369,571|香港_0502086
@@ -2858,7 +2791,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '443,550|美国 CloudFlare节点 #50'
+  name: '443,550|美国 CloudFlare节点 #52'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -3464,6 +3397,31 @@ proxies:
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 490|🇭🇰 香港KT|@ripaojiedian
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: h2.dspp.store
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 172.67.198.153
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '516,524|🔒 VM-TCP-NA 🇭🇰 HK-141.11.90.11... #27'
+  network: tcp
+  port: 47764
+  server: 141.11.90.115
+  tls: false
+  type: vmess
+  uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
   name: 534|🇭🇰香港 | 101 | 负载优化 | 1x
@@ -3473,7 +3431,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f3509e06-3812-4802-8f43-43b483412329
+  uuid: 3448a0ed-c778-4ab7-9413-781eaa3b4a8a
 - alterId: 0
   cipher: auto
   name: 534|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -3483,7 +3441,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f3509e06-3812-4802-8f43-43b483412329
+  uuid: 3448a0ed-c778-4ab7-9413-781eaa3b4a8a
 - alterId: 0
   cipher: auto
   name: 534|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -3493,7 +3451,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f3509e06-3812-4802-8f43-43b483412329
+  uuid: 3448a0ed-c778-4ab7-9413-781eaa3b4a8a
 - cipher: aes-256-cfb
   name: 535|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -3614,6 +3572,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 550|🇭🇰HK-47.76.35.246-0787
+  network: ws
+  port: 24101
+  server: 47.76.35.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 64
   cipher: auto
   name: '550|香港|@ripaojiedian #1'
