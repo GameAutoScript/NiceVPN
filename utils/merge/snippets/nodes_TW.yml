@@ -1,6 +1,19 @@
 proxies:
 - alterId: 0
   cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: 17| TW_10
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  skip-cert-verify: true
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 58|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 6122
@@ -225,7 +238,7 @@ proxies:
   country: 🇼TW
   h2-opts: {}
   http-opts: {}
-  name: 319,357|台湾_050523041
+  name: '319,343,344,357,393|🇨🇳 台湾省台南市 中华电信 #1'
   network: ws
   port: '443'
   server: 61.227.176.105
@@ -233,6 +246,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: f38e9da6-731f-46c5-90c0-e10349cdfb16
   ws-opts:
     headers:
@@ -396,6 +410,20 @@ proxies:
   tls: false
   type: vmess
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+- alterId: 0
+  cipher: auto
+  name: 375|台湾省台南市 中华电信
+  network: ws
+  port: '443'
+  server: 61.227.176.105
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f38e9da6-731f-46c5-90c0-e10349cdfb16
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 1
   cipher: auto
   name: 390|🇹🇼_TW_台湾_4@6
@@ -748,20 +776,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 491|9|baipaovpn台湾省台南市
-  network: ws
-  port: '443'
-  server: 61.227.176.105
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f38e9da6-731f-46c5-90c0-e10349cdfb16
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: '491|9|baipaovpn台湾省台南市 #1'
   network: ws
   port: '443'
@@ -770,20 +784,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f38e9da6-731f-46c5-90c0-e10349cdfb16
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 491|9|baipaovpn台湾省桃园市
-  network: ws
-  port: '80'
-  server: 1.162.144.124
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3ae2132f-bc69-4782-9a65-c7ad4002b5c2
   ws-opts:
     headers:
       Host: tms.dingtalk.com
@@ -815,7 +815,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7f365ab8-38a0-41b7-9508-c3fb6ac229ff
+  uuid: 9ba65ebc-88a9-4d42-904e-445c82a0cc0d
 - alterId: 0
   cipher: auto
   name: 542|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -825,7 +825,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7f365ab8-38a0-41b7-9508-c3fb6ac229ff
+  uuid: 9ba65ebc-88a9-4d42-904e-445c82a0cc0d
 - alterId: 0
   cipher: auto
   name: 542|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -835,7 +835,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7f365ab8-38a0-41b7-9508-c3fb6ac229ff
+  uuid: 9ba65ebc-88a9-4d42-904e-445c82a0cc0d
 - cipher: aes-256-cfb
   name: 543|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -923,6 +923,16 @@ proxies:
     mode: tls
   port: 2377
   server: 118.163.179.161
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 118.163.179.162
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 576|TW_speednode_0126
