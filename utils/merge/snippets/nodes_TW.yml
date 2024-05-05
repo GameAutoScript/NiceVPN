@@ -1,32 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 54|🇹🇼 台湾-1
-  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
-  port: 20701
-  server: tw01.jjjjjj.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 54|🇹🇼 台湾-2
-  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
-  port: 20702
-  server: tw02.jjjjjj.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 54|🇹🇼 台湾-3
-  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
-  port: 30401
-  server: tw03.jjjjjj.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 54|🇹🇼 台湾-4
-  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
-  port: 30499
-  server: nn.auozzjs.lol
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 58|台湾省 中华电信(HiNet)数据中心
@@ -196,7 +168,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 285|台湾 03 | tcp
+  name: '285,477|台湾 03 | tcp #1'
   network: tcp
   port: '80'
   server: 7a0add83-5270-1775-a87c-691656dba7c3.bugtik.ltd
@@ -632,12 +604,140 @@ proxies:
   sni: tls.yihaobao.xyz
   type: trojan
   udp: true
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 482|🇹🇼 TW,
-  password: amazonskr05
+  name: 482|🇹🇼 ~CF~TWˣ⁰˙⁰¹
+  network: ws
+  port: 80
+  server: ip.wvw.mom
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5dd37d4f-7726-40e8-9405-f80c702073be
+  ws-opts:
+    headers:
+      Host: cf.grpc.gay
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: none
+    grpc-service-name: yydsitw
+  name: 482|🇹🇼 ~NF~TWˣ⁰˙⁰¹
+  network: grpc
+  port: 3443
+  server: 47.75.101.0
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 5dd37d4f-7726-40e8-9405-f80c702073be
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 482|🇹🇼 TW 00
+  network: ws
   port: 443
-  server: 52.78.184.192
+  server: tw1g.xn--vhq70hxyat50h6wk.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: f38e9da6-731f-46c5-90c0-e10349cdfb16
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 482|🇹🇼 TW 01
+  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
+  port: 61005
+  server: 2.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 482|🇹🇼 TW 02
+  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
+  port: 61006
+  server: 2.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 482|🇹🇼 TW 03
+  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
+  port: 22302
+  server: 03.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 482|🇹🇼 TW 04
+  password: cf448056-b7c2-439d-b708-aaf5ff321052
+  port: 22302
+  server: 04.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 482|🇹🇼 Taiwan_1
+  password: 93ec2378-1151-4db5-9c56-d1387f36882d
+  port: 40006
+  server: tw01.mmyjiedian.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 482|🇹🇼 Taiwan_2
+  password: 93ec2378-1151-4db5-9c56-d1387f36882d
+  port: 40007
+  server: tw02.mmyjiedian.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 482|🇹🇼 Taiwan_3
+  password: 93ec2378-1151-4db5-9c56-d1387f36882d
+  port: 40008
+  server: tw03.mmyjiedian.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 482|🇹🇼 TW台湾-电信优化
+  password: 1cce1062-972c-4ac0-a511-b9168e761512
+  port: 27260
+  server: gtm1.ktmwan.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 482|🇹🇼 TW台湾2-电信优化
+  password: 1cce1062-972c-4ac0-a511-b9168e761512
+  port: 27279
+  server: gtm1.ktmwan.com
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 482|🇹🇼 台湾 01
+  password: 030741c1-8706-41f6-93ae-f97585365627
+  port: 22001
+  server: ununim.yangliq.com
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 482|🇹🇼 台湾 02
+  password: 030741c1-8706-41f6-93ae-f97585365627
+  port: 22002
+  server: ununim.yangliq.com
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -667,7 +767,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 49085dcd-c596-45f2-9956-340609d9e0b8
+  uuid: 557bbe93-830b-4d7e-b4f6-f7085d1056e2
 - alterId: 0
   cipher: auto
   name: 541|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -677,7 +777,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 49085dcd-c596-45f2-9956-340609d9e0b8
+  uuid: 557bbe93-830b-4d7e-b4f6-f7085d1056e2
 - alterId: 0
   cipher: auto
   name: 541|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -687,7 +787,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 49085dcd-c596-45f2-9956-340609d9e0b8
+  uuid: 557bbe93-830b-4d7e-b4f6-f7085d1056e2
 - cipher: aes-256-cfb
   name: 542|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
