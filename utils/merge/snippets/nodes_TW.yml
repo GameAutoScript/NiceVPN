@@ -656,38 +656,6 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 483|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 483|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 483|🇹🇼 TW 03
-  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
-  port: 22302
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 483|🇹🇼 TW 04
-  password: cf448056-b7c2-439d-b708-aaf5ff321052
-  port: 22302
-  server: 04.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 483|🇹🇼 Taiwan_1
   password: 93ec2378-1151-4db5-9c56-d1387f36882d
   port: 40006
@@ -744,20 +712,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 491|9|baipaovpn台湾省台南市
-  network: ws
-  port: '443'
-  server: 61.227.176.105
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f38e9da6-731f-46c5-90c0-e10349cdfb16
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: '491|9|baipaovpn台湾省台南市 #1'
   network: ws
   port: '443'
@@ -811,7 +765,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 0697093f-695a-4948-a879-4b0b6a20fcb8
+  uuid: 88d34e12-e59d-4b92-9d56-440610a52737
 - alterId: 0
   cipher: auto
   name: 542|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -821,7 +775,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 0697093f-695a-4948-a879-4b0b6a20fcb8
+  uuid: 88d34e12-e59d-4b92-9d56-440610a52737
 - alterId: 0
   cipher: auto
   name: 542|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -831,7 +785,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 0697093f-695a-4948-a879-4b0b6a20fcb8
+  uuid: 88d34e12-e59d-4b92-9d56-440610a52737
 - cipher: aes-256-cfb
   name: 543|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -921,6 +875,36 @@ proxies:
   server: 118.163.179.161
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 118.163.179.162
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0124
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 125.227.83.21
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0125
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 125.227.83.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 576|TW_speednode_0126
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
@@ -929,6 +913,26 @@ proxies:
     mode: tls
   port: 2377
   server: 125.227.83.24
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0127
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 125.227.83.25
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0128
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 125.227.83.26
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 576|TW_speednode_0129
@@ -979,6 +983,76 @@ proxies:
     mode: tls
   port: 2377
   server: 211.72.35.158
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0134
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 60.248.114.183
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0135
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 60.248.114.184
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0136
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 60.248.114.185
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0137
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 60.248.114.186
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0138
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)feec8af:29306
+    mode: tls
+  port: 2377
+  server: 60.248.114.187
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0139
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)c68b799:50307
+    mode: tls
+  port: 2377
+  server: 118.163.179.137
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 576|TW_speednode_0140
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)c68b799:50307
+    mode: tls
+  port: 2377
+  server: 118.163.179.138
   type: ss
 - alterId: 0
   cipher: auto
