@@ -31,9 +31,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,265,266,267,269,270,442,475,476|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  name: 0,3,265,266,267,269,270,442,475,476,491|10|🇺🇸_US_美国->🇨🇦_CA_加拿大_23
   network: ws
-  port: '8080'
+  port: 8080
   server: yh4.dtku41.xyz
   tls: false
   type: vmess
@@ -45,7 +45,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,174,180,265,266,267,269,270,334,335,343,344,370,371,375,377,393,397,398,442,475,476,491,579,581,657,671,716|美国【付费推荐：https://jdyvip.link/】1...
+  name: '0,3,174,180,265,266,267,269,270,334,335,370,371,377,397,398,442,475,476,491,579,581,657,671,716|美国【付费推荐：https://jdyvip.link/】1...
     #13'
   network: ws
   port: '2052'
@@ -98,14 +98,14 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: '1,2,173,374,425,501|🇺🇸_US_美国->🇩🇪_DE_德国_2 #1'
+  name: '1,2,173,425,501|🇺🇸_US_美国->🇩🇪_DE_德国_2 #1'
   network: ws
   port: 2052
   server: 104.19.250.15
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
+  udp: false
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -146,14 +146,14 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: '1,2,173,374,425,501|🇺🇸_US_美国->🇩🇪_DE_德国_3 #1'
+  name: '1,2,173,425,501|🇺🇸_US_美国->🇩🇪_DE_德国_3 #1'
   network: ws
   port: 2052
   server: 104.18.36.119
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
+  udp: false
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -178,14 +178,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,374,425,501|🇺🇸_US_美国->🇩🇪_DE_德国_1
+  name: 1,2,425,501|🇺🇸_US_美国->🇩🇪_DE_德国_1
   network: ws
   port: 2052
   server: 104.18.19.191
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -193,7 +192,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,425,544|未命名 #334'
+  name: '1,2,425,544|未命名 #346'
   network: tcp
   password: MyYoZhfX
   port: 40316
@@ -1234,15 +1233,13 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '298,300,340,374,451,557,558,673|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '298,300,340,451,557,558,673|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -3951,6 +3948,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 8478fdb2-e155-4800-dfc5-b1c8548fb6b7
+- alterId: 0
+  cipher: auto
+  name: 478|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
+  network: ws
+  port: 80
+  server: upload.ir
+  tls: false
+  type: vmess
+  uuid: 085f6281-5c4c-4a34-8b44-d65bc2e2b069
+  ws-opts:
+    headers:
+      Host: is3-vmess.sshmax.xyz
+    path: /vmess
 - alterId: 0
   cipher: auto
   name: 482|_SG_->🇺🇸_US_美国
