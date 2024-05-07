@@ -25,20 +25,6 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 184,396,399,539,565|🇹🇼TW-103.159.206.35-0342
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: '0'
   cipher: auto
   name: 197|[🇹🇼]103.131.189.212:56967(8110...
@@ -399,6 +385,20 @@ proxies:
     headers:
       Host: ''
     path: ''
+- alterId: 0
+  cipher: auto
+  name: 396,399,565|🇹🇼TW-103.159.206.35-0342
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 1
   cipher: auto
   name: 397|🇹🇼_TW_台湾_4@6
@@ -649,38 +649,6 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 490|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 490|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 490|🇹🇼 TW 03
-  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
-  port: 22302
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 490|🇹🇼 TW 04
-  password: cf448056-b7c2-439d-b708-aaf5ff321052
-  port: 22302
-  server: 04.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 490|🇹🇼 Taiwan_1
   password: 93ec2378-1151-4db5-9c56-d1387f36882d
   port: 40006
@@ -778,7 +746,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 9b272f9b-3718-4096-8e00-8d45f1e61908
+  uuid: 9be772a7-3b26-4c14-8a99-2a8e4a637d70
 - alterId: 0
   cipher: auto
   name: 549|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -788,7 +756,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 9b272f9b-3718-4096-8e00-8d45f1e61908
+  uuid: 9be772a7-3b26-4c14-8a99-2a8e4a637d70
 - alterId: 0
   cipher: auto
   name: 549|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -798,7 +766,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 9b272f9b-3718-4096-8e00-8d45f1e61908
+  uuid: 9be772a7-3b26-4c14-8a99-2a8e4a637d70
 - cipher: aes-256-cfb
   name: 550|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -877,6 +845,26 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: 583|TW_speednode_0062
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)c68b799:50307
+    mode: tls
+  port: 2377
+  server: 118.163.179.137
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 583|TW_speednode_0064
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)c68b799:50307
+    mode: tls
+  port: 2377
+  server: 118.163.179.138
+  type: ss
 - alterId: 0
   cipher: auto
   name: 633|TW2 夏洛特
