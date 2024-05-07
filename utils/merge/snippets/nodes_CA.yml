@@ -4,7 +4,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 0,1,2,3,186,276,277,279,280,335,388,400,436,453,486,487,489,512,590,592|未知_0507053
+  name: 0,1,2,3,186,275,276,277,279,280,329,335,388,400,436,453,486,487,489,512,590,592|未知_0507053
   network: ws
   port: '443'
   server: 23.162.200.227
@@ -535,7 +535,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '70,113,186,354,355,368,388,400,404,412,590,668,682,729|美国【付费推荐：https://jdyvip.link/】6
+  name: '70,113,354,355,368,388,400,404,412,590,668,682,729|美国【付费推荐：https://jdyvip.link/】6
     #2'
   network: ws
   port: '2095'
@@ -736,7 +736,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '70,180,186,354,355,368,379,382,388,400,404,412,576,584,590,668,682,729|美国【付费推荐：https://jdyvip.link/】2...
+  name: '70,180,186,354,355,368,379,382,386,388,400,404,412,576,584,590,668,682,729|美国【付费推荐：https://jdyvip.link/】2...
     #11'
   network: ws
   port: '2095'
@@ -1959,7 +1959,8 @@ proxies:
   server: 134.195.196.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 113|🇨🇦CA-134.195.196.178-0802 | 12...
+  country: 🇨🇦CA
+  name: 113,329|🇨🇦CA_11 |19.28Mb
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
@@ -1998,6 +1999,19 @@ proxies:
   tls: false
   type: vmess
   uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 157|CA_01
+  network: ws
+  port: 50613
+  server: 108.181.200.220
+  skip-cert-verify: true
+  type: vmess
+  uuid: 09e81eaa-d298-432c-e7b6-17add32d14fc
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 177|🆔@LuxyNet💎❖❖CA❖264
@@ -2087,20 +2101,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: auto
-  name: '186,379,576,584|رایگان | VMESS | @proxyymeliii... #7'
-  network: ws
-  port: '2096'
-  server: moji1.stablestates.ir
-  servername: moji1.stablestates.ir
-  tls: true
-  type: vmess
-  uuid: 93a4f202-2f5a-48b2-b989-ed9e032db368
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: '186,351,368,400,403,489|United States #147'
@@ -2201,13 +2201,16 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '186,388,400,556,590,592,668,682,729|美国【付费推荐：https://jdyvip.link/】9 #2'
+  name: '186,354,355,386,388,400,404,556,590,592,668,682,729|美国【付费推荐：https://jdyvip.link/】9
+    #2'
   network: ws
   port: '8080'
   server: 172.67.185.79
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts:
     headers:
@@ -2271,15 +2274,13 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '186,354,355,368,386,404,486,487|🇺🇸 美国 CloudFlare节点 #109'
+  name: '186,368,486,487|🇺🇸 美国 CloudFlare节点 #140'
   network: ws
   port: '2095'
   server: onea.flha.ru
   servername: onea.flha.ru
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   ws-opts:
     headers:
@@ -2319,20 +2320,29 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  country: 🇦CA
+  name: '186,351,368,535,543|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16... #2'
+  network: tcp
+  port: '47122'
+  server: 91.194.11.168
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dbda54b7-b273-491b-86d6-64e88d955672
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 186,335,400,489,502|0|-https://t.me/MrXbin-84
-  network: ws
-  port: 443
-  server: 158.51.121.36
+  name: '186,329,335,367,368,369,400,403,489,535,543|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
+    #2'
+  network: tcp
+  port: '22324'
+  server: 198.57.27.212
   servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: '186,351,373,400,489,535,543|🔒 VM-TCP-NA 🇨🇦 CA-142.93.144.9... #3'
@@ -2345,16 +2355,6 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '186,351,368,535,543|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16... #2'
-  network: tcp
-  port: '47122'
-  server: 91.194.11.168
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dbda54b7-b273-491b-86d6-64e88d955672
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: 23.227.39.47
   name: '186,535,543|🔒 VM-GRPC-TLS 🇨🇦 CA-23.227.39.... #2'
@@ -2365,6 +2365,23 @@ proxies:
   tls: true
   type: vmess
   uuid: c24f822f-8233-4996-9183-8caad5a3d19e
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 186,329,335,354,355,386,400,404,489,502|0|-https://t.me/MrXbin-84
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 197|🆗27@oneclickvpnkeys
@@ -2423,45 +2440,17 @@ proxies:
     path: /ECTCJ0DF
 - alterId: 0
   cipher: auto
-  name: '275,276,388,502,590,592,668,682,729|美国【付费推荐：https://jdyvip.link/】3 #2'
+  name: '275,276,368,400|United States #141'
   network: ws
   port: '2052'
-  server: cfcdn1.sanfencdn9.com
+  server: 104.17.229.133
   servername: ''
   tls: false
   type: vmess
-  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  uuid: 07a902d1-7c2d-47de-f2c5-c2236fc7cd46
   ws-opts:
     headers:
-      Host: helanv6cf.inekokkk.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 275,276,388,502,590,744|🇺🇸美国3-baipiaoyes.top
-  network: ws
-  port: '80'
-  server: 162.159.133.42
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c34d94d9-97d4-4496-9b7f-727dd678e1e0
-  ws-opts:
-    headers:
-      Host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 275,276,388,502,590,744|🇺🇸美国光速4
-  network: ws
-  port: '80'
-  server: 104.18.15.150
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c34d94d9-97d4-4496-9b7f-727dd678e1e0
-  ws-opts:
-    headers:
-      Host: us3.889611.com
+      Host: usxm.inekokkk.top
     path: /
 - alterId: 0
   cipher: auto
@@ -2550,12 +2539,36 @@ proxies:
     headers:
       Host: uh-lawyers-instruments-kernel.trycloudflare.com
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+- cipher: chacha20-ietf-poly1305
+  country: 🇦CA
+  name: 329|🇨CA_12 |19.94Mb
+  password: G!yBwPWH3Vao
+  port: 808
+  server: 134.195.196.178
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 335|Relay_🇦CA-🇨🇦CA_14 | 3.87Mb
+  network: ws
+  port: 8080
+  server: 23.227.39.84
+  servername: dongtaiwang13.dtku47.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
+  ws-opts:
+    headers:
+      HOST: dongtaiwang13.dtku47.xyz
+    path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
   country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 335|🇨🇦CA_13 |172.19Mb
+  name: 335|🇨🇦CA_16 |172.19Mb
   network: ws
   port: 2086
   server: 108.181.24.77
@@ -2572,15 +2585,18 @@ proxies:
   country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 335,367,368,369,400,403,489,535|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
-  network: tcp
-  port: '22324'
-  server: 198.57.27.212
-  servername: ''
+  name: 335|🇨🇦CA_18 | 3.50Mb
+  network: ws
+  port: 8080
+  server: 108.181.23.161
+  servername: internet.life.com.by
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
+  ws-opts:
+    headers:
+      HOST: internet.life.com.by
+    path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
   name: 341,368|加拿大_050718006
@@ -3096,18 +3112,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '388,400,489,590|加拿大_0506012 #1'
+  client-fingerprint: chrome
+  name: 388,400,544,545,590|加拿大_0506014
   network: ws
-  port: '2086'
-  server: 108.181.24.77
+  port: '50613'
+  server: 108.181.200.220
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  uuid: 09e81eaa-d298-432c-e7b6-17add32d14fc
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '388,590|加拿大_0506017 #1'
@@ -3545,7 +3564,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 76899518-a060-4d39-969c-7f676c292890
+  uuid: f668d3e8-b22a-49a1-a054-eba40f2f89f7
 - cipher: aes-256-gcm
   name: 415|VIP0.加拿大1.ChatGPT
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -3772,7 +3791,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 7181dab6-ee6a-447c-b7d0-2c3a81f4a47d
+  uuid: be9957fe-b05a-4ccf-8082-595b43f99383
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -3872,7 +3891,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 21b960c9-b81a-4172-8e02-1d152127794b
+  uuid: 85b7c5c2-6956-4541-b17d-799976787e49
 - alterId: 0
   cipher: auto
   name: 555|CA加大
@@ -3998,6 +4017,27 @@ proxies:
     mode: http
   port: '924'
   server: 231103level1.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 740|🇨🇦 加拿大 01
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20047
+  server: edge.node1link.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 740|🇨🇦 加拿大 02
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20048
+  server: edge.node1link.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 740|🇨🇦 加拿大 03
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20049
+  server: edge.node1link.xyz
   type: ss
   udp: true
 - alterId: 0
