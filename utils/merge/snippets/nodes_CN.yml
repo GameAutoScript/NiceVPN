@@ -1082,7 +1082,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 334,335|Relay_-CN_01
+  name: 334,335,341|Relay_-CN_02
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1277,13 +1277,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '359,360,390,391,409,414,561,674,688,738|中国【付费推荐：https://jdyvip.link/】4...
+  client-fingerprint: chrome
+  name: '359,360,390,391,409,413,414,561,674,688,738|中国【付费推荐：https://jdyvip.link/】4...
     #6'
   network: ws
   port: '20206'
   server: data-hk-v1.usabooks.com.cn
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   udp: true
