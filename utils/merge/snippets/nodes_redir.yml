@@ -46,14 +46,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,390,441,517|🇺🇸_US_美国->🇩🇪_DE_德国_3 #1'
+  name: '1,2,441,517|🇺🇸_US_美国->🇩🇪_DE_德国_3 #1'
   network: ws
   port: 2052
   server: 104.18.36.119
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -61,14 +60,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,390,441,517|🇺🇸_US_美国->🇩🇪_DE_德国_2 #1'
+  name: 1,2,441,517|🇺🇸_US_美国->🇩🇪_DE_德国_2
   network: ws
   port: 2052
   server: 104.19.250.15
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -76,14 +74,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,390,441,516,517|🇺🇸_US_美国->🇩🇪_DE_德国_1
+  name: 1,2,441,516,517|🇺🇸_US_美国->🇩🇪_DE_德国_1
   network: ws
   port: 2052
   server: 104.18.19.191
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -523,15 +520,13 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '312,315,390,467,573,574,690|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '312,315,467,573,574,690|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -3255,14 +3250,20 @@ proxies:
   ws-headers:
     Host: usys.qiutan.pw
   ws-path: /videos
-- name: 441|_CN_国->🇪_DE_德国
-  network: tcp
-  password: MyYoZhfX
-  port: 40316
-  server: 36.138.99.56
+- alterId: 0
+  cipher: auto
+  name: '441,516,517,560|🇳 #1'
+  network: ws
+  port: 16632
+  server: yes.cnmjcn.net
   skip-cert-verify: true
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 442|🇺🇸_US_美国->_DE_国
