@@ -1,6 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '17,187,242,347,377,385,387,406,475,492,591,608|日本_0508002 #1'
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  ws-path: /
+- alterId: 0
+  cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
@@ -16,26 +31,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: ' JP'
-  h2-opts: {}
-  http-opts: {}
-  name: 17| JP_06
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-path: /
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  country: 🇺🇸US
+  country: 🇷KR
   grpc-opts:
     grpc-service-name: 1654431
-  h2-opts: {}
-  http-opts: {}
-  name: 40,119,189,209,320,323,353,361,365,366,370,419,426,431,436,441,443,448,450,459,480,503,508,509,512,513,518,522,527,530,562,573,579,606,638|马来西亚TM1[x0.75|NF|V2Ray]@1Gbps
+  name: 40,119,189,209,320,323,347,361,365,366,370,372,419,426,431,436,441,443,448,450,459,480,503,508,509,512,513,518,522,527,530,562,573,579,606,638|马来西亚TM1[x0.75|NF|V2Ray]@1Gbps
   network: grpc
   password: bbab60b8-779f-31e2-916e-571f7d7023c4
   port: 25052
@@ -49,7 +49,7 @@ proxies:
   udp: true
   uuid: 054c21b4-5811-38c2-aa08-25874b8824a8
 - client-fingerprint: chrome
-  name: '71,430|日本 001 #1'
+  name: '71,372,430|日本 001 #1'
   network: ws
   password: CMLiu
   port: 21880
@@ -64,10 +64,12 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '71,430|日本 002 #1'
+  name: '71,372,373,422,430|日本 002 #1'
   network: ws
   port: 80
   server: jp5.jiedian.stream
+  skip-cert-verify: true
+  tls: false
   type: vmess
   udp: true
   uuid: ece6750e-df24-48c9-8007-34451285f57e
@@ -169,15 +171,15 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-128-gcm
-  name: 119|🇯🇵JP-154.47.20.240-0719 | 25.0...
+  country: 🇺🇸US
+  name: 119,347|🇺🇸US_115 |15.88Mb
   password: shadowsocks
   port: 443
   server: 154.47.20.240
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇯🇵JP
-  name: 119,353,527|🇯🇵 日本特殊|@ripaojiedian
+  name: 119,527|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 176.32.82.110
@@ -185,8 +187,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇵JP
-  name: 119,353,527|🇸🇬 狮城特殊|@ripaojiedian
+  name: 119,527|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 18.183.73.152
@@ -414,11 +415,8 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  country: 🇺🇸US
   fingerprint: ''
-  h2-opts: {}
-  http-opts: {}
-  name: 187,189,190,196,209,353,363,364,399,400,418,419,492,507,553,561,587|🇯🇵JP-152.69.197.74-3356
+  name: 187,189,190,196,209,363,364,399,400,418,419,492,507,553,561,587|🇯🇵JP-152.69.197.74-3356
   network: ws
   port: 12345
   server: 152.69.197.74
@@ -434,20 +432,6 @@ proxies:
     path: /bb
 - alterId: 0
   cipher: auto
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '187,242,348,377,385,387,406,475,492,591,608|日本_0508002 #1'
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
   name: 187|🆔@LuxyNet💎❖🇵❖JP❖1479
   network: tcp
   port: 31845
@@ -458,10 +442,7 @@ proxies:
   uuid: 323d8b87-345d-4065-b7df-2af764d2d1df
 - alterId: 64
   cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 187,353,418,421,492,507|🇯🇵_电报https://t.me/chykj_83
+  name: 187,418,421,492,507|🇯🇵_电报https://t.me/chykj_83
   network: tcp
   port: 24445
   server: 140.83.63.38
@@ -478,7 +459,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 196,386,404,418,512|🇯🇵 ~WS~JPˣ⁰
+  name: 196,386,418,512|🇯🇵 ~WS~JPˣ⁰
   network: ws
   port: 57557
   server: jp-tokyo-oracle-5a26da.ip1.shop
@@ -505,20 +486,6 @@ proxies:
     headers:
       Host: ''
     path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  name: 196|🔒 VM-WS-NA 🇯🇵 JP-168.138.214.1...
-  network: ws
-  port: 57557
-  server: 168.138.214.162
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
-  ws-opts:
-    headers:
-      Host: jp-tokyo-oracle-5a26da.ip1.shop
-    path: /rongseven?ed=2048
 - alterId: '0'
   cipher: auto
   name: 209|[🇯🇵]192.51.188.63:28494(26ae22...
@@ -767,25 +734,7 @@ proxies:
   country: 🇵JP
   h2-opts: {}
   http-opts: {}
-  name: '353,406,421,608|日本_0508005 #1'
-  network: ws
-  port: '41597'
-  server: 183.181.36.194
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 353,507|JP_分享日记_2
+  name: 347,507|JP_分享日记_2
   network: ws
   port: 57557
   server: jp-tokyo-oracle-5a26da.ip1.shop
@@ -893,7 +842,7 @@ proxies:
     path: /azjp.pengui.xyz
 - alterId: 0
   cipher: auto
-  name: '377,432|未命名 #240'
+  name: '377,432|未命名 #242'
   network: ws
   port: 80
   server: v116.v2dns.bar
@@ -1413,14 +1362,18 @@ proxies:
   uuid: 97700372-07d0-4e10-db96-937844f30a50
 - alterId: 0
   cipher: auto
-  name: 386|日本_050923004
-  network: ''
-  port: '14935'
-  server: 167.179.111.237
+  name: '406,421,608|日本_0508005 #1'
+  network: ws
+  port: '41597'
+  server: 183.181.36.194
   servername: ''
   tls: false
   type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '406,418,608|日本_0508006 #1'
@@ -2412,6 +2365,20 @@ proxies:
     headers:
       Host: jp06-vm0.entry.srthdw.art
     path: /
+- alterId: 64
+  cipher: auto
+  name: 507|GB_分享日记_16
+  network: ws
+  port: 30000
+  server: 51.89.2.48
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9f58234c-355b-4065-ae21-d4a63099aba5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/203113182529
 - alterId: 0
   cipher: auto
   name: 507|🇯🇵JP-183.181.36.194-0388
@@ -2439,7 +2406,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 3f82ed1a-29e3-4fb3-8cb4-874c8e00f518
+  uuid: ace015d0-a7e5-482f-a7ad-2afe0390a273
 - alterId: 0
   cipher: auto
   name: 510|【BGP】日本 05  | 1x JP
@@ -2449,7 +2416,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 3f82ed1a-29e3-4fb3-8cb4-874c8e00f518
+  uuid: ace015d0-a7e5-482f-a7ad-2afe0390a273
 - alterId: 0
   cipher: auto
   name: 510|【BGP】日本 06  | 1x JP
@@ -2459,7 +2426,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 3f82ed1a-29e3-4fb3-8cb4-874c8e00f518
+  uuid: ace015d0-a7e5-482f-a7ad-2afe0390a273
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -2849,6 +2816,20 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: auto
+  name: 561|🔒 VM-WS-NA 🇯🇵 JP-158.101.159.1...
+  network: ws
+  port: 57557
+  server: 158.101.159.179
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
+  ws-opts:
+    headers:
+      Host: jp-tokyo-oracle-5a26da.ip1.shop
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
   name: 571|🇯🇵日本[特殊地区直连]
   network: tcp
   port: '30101'
@@ -3115,16 +3096,6 @@ proxies:
     headers:
       Host: v6.583181.xyz
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 605|JP_speednode_0017
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)c68b799:50307
-    mode: tls
-  port: 2377
-  server: 18.176.215.63
-  type: ss
 - alterId: 0
   cipher: auto
   name: 650|🇯🇵日本高速接入点-01
@@ -3562,7 +3533,7 @@ proxies:
   cipher: auto
   name: 739|[vmess]🇯🇵Japan
   network: ws
-  port: '2087'
+  port: '2053'
   server: 47.243.107.148
   servername: jp.pddf.buzz
   tls: true
