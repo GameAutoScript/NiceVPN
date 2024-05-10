@@ -82,10 +82,12 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   country: 🇰HK
+  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 120,191,197,349,355,365,366,401,402,405,408,420,509,555,563,610|香港_0510008
+  name: 120,190,191,197,355,365,366,401,402,405,408,420,509,555,563,610|香港_0510008
   network: ws
   port: '28681'
   server: 47.242.22.171
@@ -1020,13 +1022,17 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 8
   cipher: auto
-  name: '197,506,507|🇭🇰 香港(欢迎订阅Youtube破解资源君) #7'
+  name: '197,505,506,507|🇭🇰 香港(欢迎订阅Youtube破解资源君) #7'
   network: tcp
   port: '553'
   server: 202.64.1.102
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 30ef0f29-da14-349d-9c49-728d5adc4ba8
+  ws-headers:
+    Host: 202.64.1.102
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '197,506,507|🇭🇰 香港(欢迎订阅Youtube破解资源君) #8'
@@ -1730,6 +1736,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 0
+  cipher: auto
+  name: 388|香港_051013223
+  network: tcp
+  port: '10010'
+  server: xg3.tcity8.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3e60492f-ab77-4544-8652-3b054c725903
+- alterId: 0
+  cipher: auto
+  name: 388|香港_051013224
+  network: tcp
+  port: '10010'
+  server: xg1.tcity8.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3e60492f-ab77-4544-8652-3b054c725903
 - alterId: 0
   cipher: auto
   name: 393|🇭🇰8.210.128.146
@@ -2801,7 +2827,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '482,589|美国 CloudFlare节点 #56'
+  name: '482,589|美国 CloudFlare节点 #57'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -3949,7 +3975,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 5343622b-ea07-47e5-8716-4a9fe400a3a5
+  uuid: 2f8e7ca6-69bc-4dae-b1d3-379af1a03a5e
 - alterId: 0
   cipher: auto
   name: 573|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -3959,7 +3985,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 5343622b-ea07-47e5-8716-4a9fe400a3a5
+  uuid: 2f8e7ca6-69bc-4dae-b1d3-379af1a03a5e
 - alterId: 0
   cipher: auto
   name: 573|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -3969,7 +3995,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 5343622b-ea07-47e5-8716-4a9fe400a3a5
+  uuid: 2f8e7ca6-69bc-4dae-b1d3-379af1a03a5e
 - cipher: aes-256-cfb
   name: 574|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4124,6 +4150,15 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
+- cipher: aes-256-cfb
+  name: 607|HK_speednode_0035
+  obfs: tls1.2_ticket_auth
+  obfs-param: cloudfront.net
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   name: '610|香港_0510001 #1'
@@ -4380,6 +4415,19 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 687|香港1
+  network: ws
+  port: '1094'
+  server: 43.248.96.173
+  tls: false
+  type: vmess
+  uuid: 12383be0-88d0-4f5b-b447-522502664882
+  ws-opts:
+    headers:
+      Host: taoyuan.love
+    path: /cctv15/hd.m3u8
+- alterId: 0
+  cipher: auto
   name: 714|香港01{优化1|V2ray}
   network: ws
   port: '25242'
@@ -4477,8 +4525,8 @@ proxies:
   cipher: auto
   name: 741|[vmess]🇭🇰Hong Kong
   network: ws
-  port: '2096'
-  server: 47.238.6.51
+  port: '28976'
+  server: 103.225.199.188
   servername: hkt.pddf.buzz
   tls: true
   type: vmess
@@ -4727,6 +4775,90 @@ proxies:
     headers:
       Host: hk2.wish.ml
     path: /
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港 01 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11001
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港 02 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11002
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港 03 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11003
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港 04 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11004
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港 05 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11005
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港 06 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11006
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港 07 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11007
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港 08 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11008
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港 IPLC 限速10Mbps
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 1024
+  server: 222909df61922934.cdn.jiashule.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港实验节点 NetflixAB 01
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11009
+  server: nf.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港实验节点 NetflixB 02
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11012
+  server: nf.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 768|🇭🇰 香港实验节点 Xvideos
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11013
+  server: nf.hkglink.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 772|🇭🇰香港1丨白嫖机场.com
