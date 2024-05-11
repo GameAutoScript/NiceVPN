@@ -1,16 +1,16 @@
 proxies:
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 17,354,355,359,361|FR_04
-  password: TEzjfAYq2IjtuoS
-  port: 6697
+  name: 17,354,355,361|🇫🇷FR_05
+  password: KixLvKzwjekG00rm
+  port: 8080
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 17,354,355,359,361|🇫🇷FR_05
-  password: KixLvKzwjekG00rm
-  port: 8080
+  name: 17,354,355,361|FR_04
+  password: TEzjfAYq2IjtuoS
+  port: 6697
   server: 149.202.82.172
   type: ss
 - alterId: 0
@@ -42,7 +42,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 28,71,301,379,380,413,429,437,537,569,615|美国_0510066
+  name: 28,71,301,379,380,393,413,429,437,537,569,615|美国_0510066
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -93,15 +93,15 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇫🇷FR
-  name: 120,189,355,359|🇫🇷FR_93
+  name: 120,189,355|🇫🇷FR_18
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇫🇷FR
-  name: 120,355,359,580|未知67 12.4MB/s
+  country: 🇷FR
+  name: 120,355,580|未知67 12.4MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -115,8 +115,8 @@ proxies:
   server: 51.15.27.48
   type: ss
 - cipher: aes-256-cfb
-  country: 🇷FR
-  name: 120,355,359|🇫🇷FR_77
+  country: 🇫🇷FR
+  name: 120,355|🇫🇷FR_17
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.111.208
@@ -150,18 +150,21 @@ proxies:
     headers:
       Host: www.gov.uk
     path: /
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   country: FR
-  name: 121,359|_38
-  password: KixLvKzwjekG00rm
-  port: 8000
+  name: 121,580|未知256 1.8MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 3389
   server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 121,354,359,360|🇫🇷FR_44
-  password: RexnBgU7EV5ADxG
-  port: 7002
+  country: FR
+  name: 121|FR_21
+  password: KixLvKzwjekG00rm
+  port: 8000
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
@@ -173,34 +176,40 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: FR
-  name: 121|FR_19
+  name: 121|FR_23
   password: KixLvKzwjekG00rm
   port: 5500
   server: 149.202.82.172
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: FR
-  name: 121,359,580|未知256 1.8MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3389
+- cipher: aes-256-gcm
+  country: 🇷FR
+  name: 121,354,360|FR_46
+  password: RexnBgU7EV5ADxG
+  port: 7002
   server: 149.202.82.172
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-gcm
   country: FR
-  name: 121,359|_34
+  name: 121|FR_25
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 149.202.82.172
   type: ss
 - country: FR
-  name: '121|netflix_FR #1'
+  name: '121|disney_netflix_FR #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 52.47.103.163
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: FR
+  name: 121|FR_27
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.136.180
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -209,7 +218,7 @@ proxies:
   country: NL
   h2-opts: {}
   http-opts: {}
-  name: '121|netflix_FR #2'
+  name: '121|disney_netflix_FR #2'
   network: ws
   port: 443
   server: 188.114.97.79
@@ -245,7 +254,7 @@ proxies:
   country: NL
   h2-opts: {}
   http-opts: {}
-  name: '121|netflix_FR #4'
+  name: '121|disney_netflix_FR #4'
   network: ws
   port: 443
   server: 188.114.99.205
@@ -278,13 +287,85 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 121,536|US_分享日记_50
+  network: ws
+  port: 443
+  server: 172.67.174.42
+  servername: gwdef.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      host: gwdef.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 121,360|Relay_🇸US-🇺🇸US_148 |21.86Mb
+  network: ws
+  port: 443
+  server: 172.67.74.4
+  servername: mikasa.yaemiko.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      HOST: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '121|netflix_FR #6'
+  name: 121,536|US_分享日记_61
   network: ws
   port: 443
-  server: caretaker.com
+  server: hms082.gwdef.sbs
+  servername: gwdef.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      host: gwdef.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '121|disney_netflix_FR #9'
+  network: ws
+  port: 443
+  server: 104.21.55.234
+  servername: gwdef.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      HOST: gwdef.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 121,360|Relay_🇺🇸US-🇸US_144 |28.17Mb
+  network: ws
+  port: 443
+  server: 104.26.6.65
   servername: mikasa.yaemiko.cloudns.org
   skip-cert-verify: true
   tls: true
@@ -311,42 +392,6 @@ proxies:
   ws-opts:
     headers:
       host: linde06.indiavideo.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 121,536|US_分享日记_61
-  network: ws
-  port: 443
-  server: hms082.gwdef.sbs
-  servername: gwdef.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
-  ws-opts:
-    headers:
-      host: gwdef.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '121|netflix_FR #9'
-  network: ws
-  port: 443
-  server: 104.21.55.234
-  servername: gwdef.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
-  ws-opts:
-    headers:
-      HOST: gwdef.sbs
     path: /linkws
 - alterId: 0
   cipher: auto
@@ -1041,15 +1086,47 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 354,359|🇫🇷FR_86
-  password: faBAoD54k87UJG7
-  port: 2375
+  name: 354|🇫🇷FR_54
+  password: pKEW8JPByTVTLtM
+  port: 443
   server: 149.202.82.172
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  country: 🇷FR
-  name: 354,359,360,580|未知219 1.8MB/s
+  country: 🇫🇷FR
+  name: 354,360,580|未知220 1.8MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 354,360|🇫🇷FR_49
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 354|🇫🇷FR_58
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 354,360|🇫🇷FR_51
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 149.202.82.172
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 354,360,580|未知219 1.8MB/s
   password: e4FCWrgpkji3QY
   port: 9101
   server: 149.202.82.172
@@ -1058,62 +1135,41 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 354,359|_01
-  password: pKEW8JPByTVTLtM
-  port: 443
+  name: 354,360|🇫🇷FR_48
+  password: e4FCWrgpkji3QY
+  port: 9102
   server: 149.202.82.172
   type: ss
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 354,359|🇫🇷FR_89
-  password: FoOiGlkAA9yPEGP
-  port: 7306
+  name: 354,360,580|未知323 1.8MB/s
+  password: XKFKl2rULjIp74
+  port: 8008
   server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 354,359,360|🇫🇷FR_46
+  name: 354,360|🇫🇷FR_52
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 354,359,360|🇫🇷FR_47
-  password: zDNVedRFPQexG9v
-  port: 6379
+  name: 354|🇫🇷FR_65
+  password: FoOiGlkAA9yPEGP
+  port: 7306
   server: 149.202.82.172
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 354,359,360|🇫🇷FR_49
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 354,359|_16
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 149.202.82.172
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 354,359,360,580|未知220 1.8MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 354,359,360,433,510,580|🇷FR国2 1.8MB/s
+  name: 354,360,433,510,580|🇷FR国2 1.8MB/s
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 149.202.82.172
@@ -1124,257 +1180,48 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 354,359,360|🇫🇷FR_48
-  password: e4FCWrgpkji3QY
-  port: 9102
+  name: 354|🇫🇷FR_67
+  password: g5MeD6Ft3CWlJId
+  port: 5003
   server: 149.202.82.172
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 354,359,360,580|未知323 1.8MB/s
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 354,360,536|US_分享日记_79
+  name: '354,570,592,594|美国 CloudFlare节点 #94'
   network: ws
-  port: 2082
-  server: 104.21.8.157
-  servername: s1c.v2.v001sss.xyz
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      host: s1c.v2.v001sss.xyz
+      Host: ''
     path: /
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 355,359|_39
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 54.36.174.181
+  name: 355|🇫🇷FR_16
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 355,359|🇫🇷 FR_69
+  country: 🇫🇷FR
+  name: 355|🇫🇷FR_20
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 355,359|🇫🇷FR_82
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇷 FR
-  name: 359| FR_63
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 359|🇫🇷 FR_64
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 359|🇫🇷 FR_65
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 359|🇫🇷 FR_66
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 359|🇫🇷 FR_67
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 359|🇫🇷 FR_68
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 359|🇫🇷 FR_70
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 359|🇫🇷 FR_71
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 54.36.174.181
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 359,479,580|未知242 1.7MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 54.36.174.181
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷 FR
-  name: 359|🇫🇷 FR_73
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_75
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_76
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇷FR_78
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_79
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_83
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_84
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_88
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 149.202.82.172
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359,580|未知312 1.8MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_92
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 149.202.82.172
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359,580|未知125 1.7MB/s
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 54.36.174.181
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_95
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_96
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_97
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_99
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359,479|TG@极客分享_8
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_101
+  name: 355|🇫🇷FR_21
   password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 359|🇫🇷FR_102
-  password: kDWvXYZoTBcGkC4
-  port: 8882
+  port: 8090
   server: 54.36.174.181
   type: ss
 - cipher: aes-256-cfb
@@ -2018,6 +1865,27 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- cipher: aes-128-gcm
+  name: 778|🇫🇷 法国 01
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20053
+  server: edge.node1link.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 778|🇫🇷 法国 02
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20054
+  server: edge.node1link.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 778|🇫🇷 法国 03
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20055
+  server: edge.node1link.xyz
+  type: ss
+  udp: true
 - alterId: 233
   cipher: auto
   name: '789|法国 #1'
