@@ -1,40 +1,44 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 13|新加坡|广州移动|Polo|1x
-  network: tcp
-  port: '17162'
-  server: gdcm.r1u.cn
-  tls: false
-  type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 17,363|🇸🇬SG_38
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: ' SG'
+  name: 17| SG_07 | 0.00Mb
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 103.172.116.103
+  type: ss
 - cipher: aes-256-cfb
   country: 🇬SG
   name: 17,363|🇬SG_29
-  password: KnJGad3FqTvjqbaX
-  port: 9014
+  password: rNBfNuuANFCAk7KB
+  port: 9056
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
   name: 17,363|🇸🇬SG_39
-  password: NvS8N4Vf8qAGPSCL
-  port: 9046
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 17,362,363|🇸🇬SG_38
-  password: fG2artUmHfNT2cX7
-  port: 9018
+  name: 17,363|🇸🇬SG_40
+  password: KnJGad3FqTvjqbaX
+  port: 9014
   server: 103.172.116.103
   type: ss
-  udp: true
 - cipher: aes-256-cfb
   country: ' SG'
-  name: 17| SG_07
-  password: rNBfNuuANFCAk7KB
-  port: 9056
+  name: 17| SG_11
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
   server: 103.172.116.103
   type: ss
 - alterId: 0
@@ -60,7 +64,7 @@ proxies:
       Host: ''
     path: /5gsieutocdo.club
 - client-fingerprint: chrome
-  name: '73,445|新加坡 001 #1'
+  name: '73,387,445|新加坡 001 #1'
   network: ws
   password: e81d213d-8dd5-4207-9445-24d8903ffe0c
   port: 2248
@@ -68,13 +72,14 @@ proxies:
   skip-cert-verify: false
   sni: lmtsg2.cfyun01.sbs
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: lmtsg2.cfyun01.sbs
     path: /CFYUN
 - alterId: 0
   cipher: auto
-  name: '73,445|新加坡 002 #1'
+  name: '73,388,437,445|新加坡 002 #1'
   network: tcp
   port: 50001
   server: 18.139.115.103
@@ -84,13 +89,15 @@ proxies:
   uuid: 6541d170-1507-45bc-9603-e8138a21b28c
 - alterId: 0
   cipher: auto
-  name: '73,421,445,623|新加坡_0512011 #1'
+  name: '73,387,388,421,437,445,623|新加坡_0512011 #1'
   network: ws
   port: '80'
   server: 172.104.190.235
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: f15831d2-461c-442e-a11b-9acee6dc5286
   ws-opts:
     headers:
@@ -187,7 +194,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: aes-256-gcm
-  name: 128,588|未知308 1.2MB/s
+  name: 128,588|未知218 615.8KB/s
   password: zBjmmIMfquzriST1
   port: 21592
   server: 139.59.123.43
@@ -196,7 +203,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 128,588|未知67
+  name: 128,588|未知310
   password: amazonskr05
   port: 443
   server: 47.129.9.69
@@ -846,11 +853,25 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '206,382,576|🔒 VM-TCP-TLS 🇸🇬 SG-31.192.234.... #1'
+  name: '206,568,576|🔒 VM-WS-NONE 🇸🇬 SG-18.143.130.... #2'
+  network: ws
+  port: 13192
+  server: 18.143.130.81
+  tls: false
+  type: vmess
+  uuid: 86bab23c-e10d-4766-a73f-763556668ee3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '206,382,576,588,589|未知187 #1'
   network: tcp
   port: '12954'
   server: 31.192.234.7
   servername: 64.lwdh.us
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
@@ -1047,46 +1068,66 @@ proxies:
   server: 13.250.35.165
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇸SG
-  name: 362|🇸SG_74 | 8.52Mb
-  password: amazonskr05
-  port: 443
-  server: 46.137.236.48
+- alterId: -1
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  customName: 4FreeIran-1123
+  name: 363,620|SG_speednode_0049
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
+  server: 103.172.116.103
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 363|🇸🇬SG_30
+  name: 363|🇸🇬SG_31
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 103.172.116.94
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 363|🇸🇬SG_31
+  name: 363|🇸🇬SG_32
   password: f8npKgNzdkss2ytn
   port: 9088
   server: 103.172.116.90
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 363|🇸🇬SG_35
-  password: BejrQvtu9sqUeNuZ
-  port: 9024
-  server: 103.172.116.94
+  name: 363|🇸🇬SG_33
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 363|🇸🇬SG_36
+  name: 363|🇸🇬SG_34
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
+  name: 363|🇸🇬SG_35
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 103.172.116.103
+  type: ss
+- alterId: -1
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  customName: 4FreeIran-1108
+  name: 363,620|SG_speednode_0051
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.103
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
   name: 363|🇸🇬SG_37
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
   server: 103.172.116.103
   type: ss
 - alterId: 0
@@ -2743,7 +2784,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 527,588|未知245
+  name: 527,588|未知255
   password: amazonskr05
   port: 443
   server: 13.214.212.171
@@ -3223,19 +3264,6 @@ proxies:
     path: /JAGOANSSH/
 - alterId: 0
   cipher: auto
-  name: '568,576|🔒 VM-WS-NONE 🇸🇬 SG-18.143.130.... #1'
-  network: ws
-  port: 13192
-  server: 18.143.130.81
-  tls: false
-  type: vmess
-  uuid: 86bab23c-e10d-4766-a73f-763556668ee3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 586|🇸🇬新加坡[特殊地区直连]
   network: tcp
   port: '30201'
@@ -3243,7 +3271,7 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 10c91d44-302b-40f7-afb9-337cfc6259ed
+  uuid: 62293bc9-9bcd-4e14-997a-72161e8c42f7
 - alterId: 0
   cipher: auto
   name: 586|🇸🇬新加坡 | 108 | 流媒体优化 | 1x
@@ -3253,7 +3281,7 @@ proxies:
   servername: sg08.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 10c91d44-302b-40f7-afb9-337cfc6259ed
+  uuid: 62293bc9-9bcd-4e14-997a-72161e8c42f7
 - alterId: 0
   cipher: auto
   name: 586|🇸🇬新加坡 | 109 | 负载优化 | 1x
@@ -3263,7 +3291,7 @@ proxies:
   servername: sg09.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 10c91d44-302b-40f7-afb9-337cfc6259ed
+  uuid: 62293bc9-9bcd-4e14-997a-72161e8c42f7
 - cipher: aes-256-cfb
   name: 587|TG频道@mfbpn-新加坡2 2
   obfs: tls1.2_ticket_auth
@@ -3517,12 +3545,40 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
+- alterId: -1
+  cipher: aes-256-cfb
+  customName: 4FreeIran-1263
+  name: 620|SG_speednode_0047
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 103.172.116.103
+  type: ss
+  udp: true
+- alterId: -1
+  cipher: aes-256-cfb
+  country: 🏁 ZZ
+  customName: ChatGPT 🏁 ZZ_586
+  name: 620|SG_speednode_0048
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 103.172.116.103
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 620|SG_speednode_0050
   password: 5cdf071a-eb8d-49fc-a2ab-6f61da948531
   port: 4852
   server: 154.90.63.202
   type: ss
+- alterId: -1
+  cipher: aes-256-cfb
+  customName: 4FreeIran-690
+  name: 620|SG_speednode_0052
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
+  server: 103.172.116.103
+  type: ss
+  udp: true
 - cipher: rc4-md5
   name: 624|6auY6ZuESGluZXQtZGlwQHZwbmhhdA
   obfs: tls1.2_ticket_auth
@@ -3533,45 +3589,6 @@ proxies:
   protocol-param: NDAwMjE4OnZDUUNFbA
   server: 120.232.126.108
   type: ssr
-- alterId: 0
-  cipher: auto
-  name: 629|🇸🇬 新加坡 - 1
-  network: ws
-  port: '80'
-  server: sg01.beautifulprimavera.online
-  tls: false
-  type: vmess
-  uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 629|🇸🇬 新加坡 - 2
-  network: ws
-  port: '80'
-  server: sg02.beautifulprimavera.online
-  tls: false
-  type: vmess
-  uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 629|🇸🇬 新加坡 - 3
-  network: ws
-  port: '80'
-  server: sg03.beautifulprimavera.online
-  tls: false
-  type: vmess
-  uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
-  ws-opts:
-    headers:
-      Host: sg03.beautifulprimavera.online
-    path: /
 - alterId: 0
   cipher: auto
   name: 641|🇻🇳 Network Singapore 2🔑
@@ -3955,8 +3972,8 @@ proxies:
   cipher: auto
   name: 763|[vmess]🇸🇬Singapore
   network: ws
-  port: '2096'
-  server: 8.218.158.94
+  port: '8443'
+  server: 47.243.27.217
   servername: sg.pddf.buzz
   tls: true
   type: vmess
