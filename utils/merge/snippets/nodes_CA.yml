@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '73,200,206,387,388,415,419,421,437,445,519,520,589,623|未知_0512147 #1'
+  name: '73,200,206,387,388,415,421,437,445,519,520,589,623|未知_0512147 #1'
   network: ws
   port: '2095'
   server: 104.19.45.235
@@ -1193,7 +1193,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '73,206,387,388,419,421,437,445,519,520,623|未知_0512216 #1'
+  name: '73,206,387,388,421,437,445,519,520,623|未知_0512216 #1'
   network: ws
   port: '8080'
   server: 104.19.172.136
@@ -1918,7 +1918,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '73,387,388,437,445,577,578|美国 CloudFlare节点 #20'
+  name: '73,387,388,437,445,577,578|美国 CloudFlare节点 #25'
   network: ws
   port: '2052'
   server: 104.18.242.177
@@ -2316,7 +2316,7 @@ proxies:
   delay: 965
   h2-opts: {}
   http-opts: {}
-  name: '73,362,387,388,421,437,445,544,623|荷兰_0512022 #1'
+  name: '73,387,388,421,437,445,544,623|荷兰_0512022 #1'
   network: ws
   port: '80'
   server: 188.114.97.3
@@ -2648,7 +2648,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 73,387,388,421,437,445,577,578,623|美国_0512135
+  name: 73,387,388,419,421,437,445,577,578,623|美国_0512135
   network: ws
   port: '8880'
   server: russia.com
@@ -3187,16 +3187,6 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: CA
-  name: 129,588|未知61 1.4MB/s
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 23.162.200.189
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: CA
   name: 129,588|未知57 1.9MB/s
   password: Y6R9pAtvxxzmGC
   port: 9090
@@ -3204,13 +3194,30 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-256-gcm
+  country: US
+  name: 129|netflix_CA
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 23.154.136.37
+  type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  country: CA
-  name: 129,588|未知390 1.9MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 23.162.200.239
+  country: US
+  name: 129,588|US71 1.8MB/s
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 23.154.136.218
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: US
+  name: 129,588|US39 2.0MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 23.154.136.103
   skip-cert-verify: true
   tls: true
   type: ss
@@ -3315,6 +3322,87 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '199,368,588|US59 836.8KB/s #1'
+  network: ws
+  port: 443
+  server: hms24.ivideos.sbs
+  servername: ivideos.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      host: ivideos.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '199,368,588|US122 68.2MB/s #1'
+  network: ws
+  port: 443
+  server: hms08.gwdef.sbs
+  servername: gwdef.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      host: gwdef.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '199,588|未知97 8.1MB/s #1'
+  network: ws
+  port: 443
+  server: 104.26.7.65
+  servername: mikasa.yaemiko.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      host: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '199,368,588|US27 175.2MB/s #1'
+  network: ws
+  port: 443
+  server: glweidf.cfd
+  servername: glweidf.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      host: glweidf.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: '200,206,412,415,433,522,589,609,617|رایگان | VMESS | @ShadowProxy6... #11'
@@ -3443,6 +3531,20 @@ proxies:
     path: /XSjeg73o6ZdsheahCb5JG
 - alterId: 0
   cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: '206,368,400,401,402,433,436,522,568,576,588,589|未知34 37.3MB/s #2'
+  network: tcp
+  port: '22324'
+  server: 198.57.27.212
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   country: ZZ
   h2-opts: {}
@@ -3463,7 +3565,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  country: 🇦CA
+  country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
   name: 206,368,433,522|🇨🇦 加拿大
@@ -3540,13 +3642,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '303,304,309,401,421,433,535,623,625|未知_0512013 #2'
+  name: '303,304,309,387,388,401,419,421,433,437,535,623,625|未知_0512013 #2'
   network: ws
   port: '2052'
   server: 104.18.36.119
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -3565,25 +3669,6 @@ proxies:
     headers:
       Host: freevpn878.hamidimorteza680.workers.dev
     path: /glweidf.cfd/linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '303,304,309,343,387,388,401,419,421,433,437,519,520,535,577,578,600,602,623,625,726|🇺🇸_US_美国->🇫🇷_FR_法国
-    #10'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: '309|加拿大_多伦多 #38'
@@ -4236,16 +4321,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '309,368,421,433,623,625,710,724,777|美国【付费推荐：https://jdyvip.link/】1... #40'
+  name: '309,421,433,623,625,710,724,777|美国【付费推荐：https://jdyvip.link/】1... #40'
   network: ws
   port: '8080'
   server: 172.67.199.185
   servername: ''
   tls: false
   type: vmess
-  udp: true
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts:
     headers:
@@ -5060,10 +5142,10 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  country: 🇨🇦CA
+  country: 🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 368|🇨🇦CA_19 |78.93Mb
+  name: 368|CA_15 |78.93Mb
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -5350,6 +5432,21 @@ proxies:
     headers:
       Host: 193.203.203.63
     path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '401,620,710,724,777|美国【付费推荐：https://jdyvip.link/】5... #17'
+  network: ws
+  port: '80'
+  server: 107.173.146.129
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  ws-opts:
+    headers:
+      Host: 107.173.146.129
+    path: /
 - alterId: 0
   cipher: auto
   name: 401,406|🇨🇦167.99.179.27
@@ -6072,7 +6169,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: b027caeb-81ce-4d0e-9d87-5bd2c1471ba0
+  uuid: 61d3b1e0-fc35-41df-994b-5f8dfaa975ee
 - cipher: aes-256-gcm
   name: 448|VIP0.加拿大1.ChatGPT
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -6244,7 +6341,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: e9949361-5f30-4541-8244-2469385d27bf
+  uuid: 3d3910a2-0ad9-4683-b650-106f0ffcb8c0
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -6344,7 +6441,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 379ae5ce-fd99-40c0-815e-a09c7b6010b4
+  uuid: 3f420a6c-643d-4d02-bb30-71896e824d9a
 - alterId: 0
   cipher: aes-256-gcm
   name: 588|CA
@@ -6467,6 +6564,12 @@ proxies:
     headers:
       Host: ''
     path: /ray
+- cipher: aes-256-gcm
+  name: 620|CA_speednode_0002
+  password: Y6R9pAtvxxzmGC
+  port: 9090
+  server: 23.162.200.215
+  type: ss
 - alterId: 0
   cipher: auto
   name: 623|加拿大_0512029
