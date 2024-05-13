@@ -163,7 +163,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 128,206,425,539,627|香港_0512021
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 128,199,206,425,539,627|香港_0512021
   network: ws
   port: '12909'
   server: 210.3.159.224
@@ -171,6 +173,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: false
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -1908,44 +1911,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
-- alterId: 0
-  cipher: auto
-  name: 405|香港_051323013
-  network: tcp
-  port: '41001'
-  server: 18.163.118.129
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
-- alterId: 0
-  cipher: auto
-  name: 405|香港_051323074
-  network: ws
-  port: '80'
-  server: hk03.beautifulprimavera.online
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 405|香港_051323075
-  network: ws
-  port: '80'
-  server: 43.199.61.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 410|🇭🇰8.210.128.146
@@ -4418,10 +4383,23 @@ proxies:
     path: /zh-cn/download
 - alterId: 0
   cipher: auto
-  name: 634|🇭🇰 香港 - 2
+  name: 634|🇭🇰 香港 - 1
   network: ws
   port: '80'
-  server: hk02.theodoralindsay.shop
+  server: hk01.theodoralindsay.shop
+  tls: false
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 634|🇭🇰 香港 - 3
+  network: ws
+  port: '80'
+  server: hk03.theodoralindsay.shop
   tls: false
   type: vmess
   uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
@@ -4849,8 +4827,8 @@ proxies:
   cipher: auto
   name: 768|[vmess]🇭🇰Hong Kong
   network: ws
-  port: '2053'
-  server: 8.217.147.230
+  port: '2096'
+  server: 47.76.146.1
   servername: hkt.pddf.buzz
   tls: true
   type: vmess
