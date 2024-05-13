@@ -1271,18 +1271,36 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '206,593|HK5 #2'
+  name: '206,422,593|HK5 #2'
   network: ws
   port: '443'
   server: n1709457297.aaigefm.cn
   servername: n1709457297.aaigefm.cn
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 4cbaa418-9762-41d4-b144-835922d2deba
   ws-opts:
     headers:
       Host: n1709457297.aaigefm.cn
     path: /
+- alterId: 0
+  cipher: auto
+  name: '206,422,437,572,580|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44... #2'
+  network: ws
+  port: 26639
+  server: 91.149.236.44
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
+  ws-opts:
+    headers:
+      Host: ''
+    path: /cctv13/hd.m3u8/
 - alterId: 0
   cipher: auto
   name: '206,572,580,593|HK2 #2'
@@ -1302,7 +1320,7 @@ proxies:
   country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 206,372,437,526,572,580,627|香港_0512008
+  name: 206,372,422,437,526,572,580,627|香港_0512008
   network: ws
   port: '28681'
   server: 47.242.22.171
@@ -1310,34 +1328,23 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
   ws-opts:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '206,437,580|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44... #1'
-  network: ws
-  port: 26639
-  server: 91.149.236.44
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
-  ws-opts:
-    headers:
-      Host: ''
-    path: /cctv13/hd.m3u8/
 - alterId: 64
   cipher: auto
-  name: 206,437,606|🇭🇰HK-182.16.1.194-8978
+  name: 206,422,437,606|🇭🇰HK-182.16.1.194-8978
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
@@ -1993,7 +2000,7 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 405|香港_051318081
+  name: 405|香港_051323013
   network: tcp
   port: '41001'
   server: 18.163.118.129
@@ -2001,6 +2008,34 @@ proxies:
   tls: false
   type: vmess
   uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+- alterId: 0
+  cipher: auto
+  name: 405|香港_051323074
+  network: ws
+  port: '80'
+  server: hk03.beautifulprimavera.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 405|香港_051323075
+  network: ws
+  port: '80'
+  server: 43.199.61.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 410|🇭🇰8.210.128.146
@@ -2015,6 +2050,77 @@ proxies:
     headers:
       Host: internet.life.com.by
     path: /
+- cipher: aes-128-gcm
+  name: 422|🇭🇰 HK 1 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.223.223
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 422|🇭🇰 HK 11 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: 182.16.1.194
+    path: /opt/video/images
+- cipher: aes-128-gcm
+  name: 422|🇭🇰 HK 3 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.139.54
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 422|🇭🇰 HK 4 → tg@nicevpn123
+  network: ws
+  port: 55576
+  server: 202.81.231.30
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 422|🇭🇰 HK 6 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 438|🇭🇰_HK_香港_2@54
@@ -3016,20 +3122,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: 499,606|TG频道:@hkaa0▓美国_3
-  network: ws
-  port: 8080
-  server: www.velvetmountain.shop
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.velvetmountain.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '499,606|美国 CloudFlare节点 #78'
+  name: '499,606|美国 CloudFlare节点 #75'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -3586,30 +3679,6 @@ proxies:
   server: iepl1.forlive.live
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 531|🇭🇰 HK 03
-  password: 1c00f6d6-d25b-43c2-b997-6a6a3c045fa8
-  port: 22261
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 531|🇭🇰 HK 04
-  password: 8c9af44c-7206-4bfc-b18b-699640a28625
-  port: 22261
-  server: 04.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 531|🇭🇰 HK 05
-  password: 3368714c-df00-4cc0-816a-a0f8715326b4
-  port: 61007
-  server: 1.forlive.live
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 531|🇭🇰 HK 00
@@ -4158,6 +4227,22 @@ proxies:
   ws-headers:
     Host: vn3.thanhhaivpn.name.vn
   ws-path: /
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 546|🇭🇰 香港KT|@ripaojiedian
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: h14.podds.store
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 8.210.229.184
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 546|🇭🇰 香港|@ripaojiedian
@@ -4175,7 +4260,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 9cbd3ab8-3810-429c-b5cf-0f26049fb715
+  uuid: 7f32e69c-0ecd-481c-b209-d84bb36f9f62
 - alterId: 0
   cipher: auto
   name: 590|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4185,7 +4270,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 9cbd3ab8-3810-429c-b5cf-0f26049fb715
+  uuid: 7f32e69c-0ecd-481c-b209-d84bb36f9f62
 - alterId: 0
   cipher: auto
   name: 590|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4195,7 +4280,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 9cbd3ab8-3810-429c-b5cf-0f26049fb715
+  uuid: 7f32e69c-0ecd-481c-b209-d84bb36f9f62
 - cipher: aes-256-cfb
   name: 591|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4307,15 +4392,6 @@ proxies:
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 592|HK
-  password: 7KfcNGkeJDjYIy5kYL7Wak
-  port: 16006
-  server: 46.226.164.2
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: 592|HK3
   network: grpc
@@ -4351,20 +4427,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 606|🇭🇰HK-47.76.35.246-0787
-  network: ws
-  port: 24101
-  server: 47.76.35.246
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 64
   cipher: auto
   name: 606|香港|@ripaojiedian
@@ -4471,6 +4533,19 @@ proxies:
     path: /zh-cn/download
 - alterId: 0
   cipher: auto
+  name: 634|🇭🇰 香港 - 1
+  network: ws
+  port: '80'
+  server: hk01.theodoralindsay.shop
+  tls: false
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 634|🇭🇰 香港 - 2
   network: ws
   port: '80'
@@ -4480,20 +4555,7 @@ proxies:
   uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
   ws-opts:
     headers:
-      Host: hk02.theodoralindsay.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 634|🇭🇰 香港 - 3
-  network: ws
-  port: '80'
-  server: hk03.theodoralindsay.shop
-  tls: false
-  type: vmess
-  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
-  ws-opts:
-    headers:
-      Host: hk03.theodoralindsay.shop
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -4506,7 +4568,7 @@ proxies:
   uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
   ws-opts:
     headers:
-      Host: hk04.theodoralindsay.shop
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -4915,8 +4977,8 @@ proxies:
   cipher: auto
   name: 768|[vmess]🇭🇰Hong Kong
   network: ws
-  port: '443'
-  server: 47.91.149.60
+  port: '2053'
+  server: 8.218.207.169
   servername: hkt.pddf.buzz
   tls: true
   type: vmess
