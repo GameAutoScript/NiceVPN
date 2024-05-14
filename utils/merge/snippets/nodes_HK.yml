@@ -167,10 +167,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇰HK
+  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: '128,206,374,439,528,574,582|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171... #3'
+  name: '128,206,374,424,439,528,574,582|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171... #3'
   network: ws
   port: 28681
   server: 47.242.22.171
@@ -178,11 +178,23 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
   ws-opts:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  country: US
+  name: 129,424,594|US27 27.0MB/s
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - cipher: rc4-md5
   name: '131,132|🇭🇰 IPLC｜冀港 [2.0][原生] #1'
   obfs: http_simple
@@ -1252,17 +1264,65 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '206,595|HK5 #2'
+  name: '206,424,595|HK5 #2'
   network: ws
   port: '443'
   server: n1709457297.aaigefm.cn
   servername: n1709457297.aaigefm.cn
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 4cbaa418-9762-41d4-b144-835922d2deba
   ws-opts:
     headers:
       Host: n1709457297.aaigefm.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '206,374,407,525,526|🇭🇰 香港 Amazon数据中心 #3'
+  network: ws
+  port: '80'
+  server: 18.162.130.128
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 206|🇭🇰HK-43.198.17.101-4403
+  network: ws
+  port: 80
+  server: 43.198.17.101
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 206|🇭🇰HK-18.166.64.121-4404
+  network: ws
+  port: 80
+  server: 18.166.64.121
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 219|[🇭🇰]a4a09ce.h1.glados-config.n...
@@ -1557,25 +1617,17 @@ proxies:
       Host: cn.bing.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-cfb
   country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '368,393,394,407,443,525,526|🇭🇰 香港 Amazon数据中心 #4'
-  network: ws
-  port: '80'
-  server: 18.162.130.128
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  name: 369,407,600|[02-24]-🇸-欧洲-096-150.107.46.21
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  protocol-param: ''
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   name: '380|🇨🇳中国【YouTube-由零開始】 #7'
@@ -1991,20 +2043,77 @@ proxies:
     headers:
       Host: internet.life.com.by
     path: /
+- cipher: aes-128-gcm
+  name: 424|🇭🇰 HK 1 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.223.223
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '425,541|9|baipaovpn香港 #1'
+  name: 424|🇭🇰 HK 11 → tg@nicevpn123
   network: ws
-  port: '80'
-  server: 18.162.130.128
-  servername: ''
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
-      Host: ''
+      Host: 182.16.1.194
+    path: /opt/video/images
+- cipher: aes-128-gcm
+  name: 424|🇭🇰 HK 3 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
     path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.139.54
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 424|🇭🇰 HK 4 → tg@nicevpn123
+  network: ws
+  port: 55576
+  server: 202.81.231.30
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 424|🇭🇰 HK 6 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 427|香港_0514088
@@ -3078,20 +3187,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: 501,608|TG频道:@hkaa0▓美国_3
-  network: ws
-  port: 8080
-  server: www.velvetmountain.shop
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.velvetmountain.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '501,608|美国 CloudFlare节点 #92'
+  name: '501,608|美国 CloudFlare节点 #89'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -3646,30 +3742,6 @@ proxies:
   password: d20ef6d0-1339-3970-9194-9726b5ee6224
   port: 50001
   server: iepl1.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 533|🇭🇰 HK 03
-  password: 1c00f6d6-d25b-43c2-b997-6a6a3c045fa8
-  port: 22261
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 533|🇭🇰 HK 04
-  password: 8c9af44c-7206-4bfc-b18b-699640a28625
-  port: 22261
-  server: 04.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 533|🇭🇰 HK 05
-  password: 3368714c-df00-4cc0-816a-a0f8715326b4
-  port: 61007
-  server: 1.forlive.live
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -4236,6 +4308,20 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
+  name: '541|9|baipaovpn香港 #1'
+  network: ws
+  port: '80'
+  server: 18.162.130.128
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
   name: 592|🇭🇰香港 | 101 | 负载优化 | 1x
   network: tcp
   port: '30701'
@@ -4243,7 +4329,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 8fb06ea5-0051-4806-9d0d-68208a3f35a3
+  uuid: 31735a66-8967-4c46-b9d0-8a572572d4de
 - alterId: 0
   cipher: auto
   name: 592|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4253,7 +4339,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 8fb06ea5-0051-4806-9d0d-68208a3f35a3
+  uuid: 31735a66-8967-4c46-b9d0-8a572572d4de
 - alterId: 0
   cipher: auto
   name: 592|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4263,7 +4349,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 8fb06ea5-0051-4806-9d0d-68208a3f35a3
+  uuid: 31735a66-8967-4c46-b9d0-8a572572d4de
 - cipher: aes-256-cfb
   name: 593|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4375,15 +4461,6 @@ proxies:
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 594|HK2
-  password: 7KfcNGkeJDjYIy5kYL7Wak
-  port: 16006
-  server: 46.226.164.2
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: '594|HK5 #1'
   network: ws
@@ -4407,20 +4484,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 608|🇭🇰HK-47.76.35.246-0787
-  network: ws
-  port: 24101
-  server: 47.76.35.246
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 64
   cipher: auto
   name: '608|香港|@ripaojiedian #2'
@@ -4918,8 +4981,8 @@ proxies:
   cipher: auto
   name: 772|[vmess]🇭🇰Hong Kong
   network: ws
-  port: '443'
-  server: 43.129.171.137
+  port: '2096'
+  server: 8.219.100.168
   servername: hkt.pddf.buzz
   tls: true
   type: vmess
