@@ -385,25 +385,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇼TW
-  h2-opts: {}
-  http-opts: {}
-  name: '373,392,393,406,426,442|🇨🇳 台湾省嘉义市 中华电信 #1'
-  network: ws
-  port: '443'
-  server: 61.227.237.70
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 70c6c253-0bf7-4c96-9770-e8ae9679fb8a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 390|🇹🇼_TW_台湾
   network: ws
   port: 888
@@ -562,7 +543,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 424,540|9|baipaovpn台湾省嘉义市
+  name: 406,426|台湾_0514010
   network: ws
   port: '443'
   server: 61.227.237.70
@@ -573,7 +554,7 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '438|Taiwan #1'
@@ -838,38 +819,6 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 532|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 532|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 532|🇹🇼 TW 03
-  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
-  port: 22302
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 532|🇹🇼 TW 04
-  password: cf448056-b7c2-439d-b708-aaf5ff321052
-  port: 22302
-  server: 04.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 532|🇹🇼 Taiwan_1
   password: 93ec2378-1151-4db5-9c56-d1387f36882d
   port: 40006
@@ -926,7 +875,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '540|9|baipaovpn台湾省嘉义市 #1'
+  name: 540,548|台湾3|@ripaojiedian
+  network: tcp
+  port: '443'
+  server: 15.220.83.78
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 80be0954-d4e3-4edf-bd4c-9f6c814c1d95
+- alterId: 0
+  cipher: auto
+  name: 540|9|baipaovpn台湾省嘉义市
   network: ws
   port: '443'
   server: 61.227.237.70
@@ -936,8 +895,8 @@ proxies:
   uuid: 70c6c253-0bf7-4c96-9770-e8ae9679fb8a
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /
+      Host: ''
+    path: ''
 - alterId: 0
   cipher: auto
   name: 558|v2cross.com - 台湾省花莲县中华电信 4
@@ -957,7 +916,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4050ba63-5850-4e2c-b0dc-924fdb103727
+  uuid: 2b752e5c-70db-4c06-8752-e1c71fb83569
 - alterId: 0
   cipher: auto
   name: 591|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -967,7 +926,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4050ba63-5850-4e2c-b0dc-924fdb103727
+  uuid: 2b752e5c-70db-4c06-8752-e1c71fb83569
 - alterId: 0
   cipher: auto
   name: 591|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -977,7 +936,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4050ba63-5850-4e2c-b0dc-924fdb103727
+  uuid: 2b752e5c-70db-4c06-8752-e1c71fb83569
 - cipher: aes-256-cfb
   name: 592|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -1094,7 +1053,7 @@ proxies:
   type: vmess
   uuid: 3b40af01-e7e5-3cf2-807d-3f6df986f34b
 - cipher: aes-128-gcm
-  name: 701|Manifold-台湾01-原生
+  name: 702|Manifold-台湾01-原生
   password: ayds232sffssd1
   plugin: obfs
   plugin-opts:
@@ -1105,7 +1064,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Manifold-台湾02-解锁
+  name: 702|Manifold-台湾02-解锁
   password: dajkl&dja*/?
   plugin: obfs
   plugin-opts:
@@ -1116,7 +1075,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Game 台湾01-标准
+  name: 702|Game 台湾01-标准
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -1127,7 +1086,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Game 台湾02-标准
+  name: 702|Game 台湾02-标准
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -1138,7 +1097,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Game 台湾03-专线
+  name: 702|Game 台湾03-专线
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -1149,7 +1108,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Game 台湾04-标准
+  name: 702|Game 台湾04-标准
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -1160,7 +1119,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Game 台湾05-标准
+  name: 702|Game 台湾05-标准
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -1171,7 +1130,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Game 台湾06-标准
+  name: 702|Game 台湾06-标准
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -1182,7 +1141,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Game 台湾07-标准
+  name: 702|Game 台湾07-标准
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -1193,7 +1152,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Game 台湾08-原生
+  name: 702|Game 台湾08-原生
   password: a12cloud1
   plugin: obfs
   plugin-opts:
@@ -1204,7 +1163,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Video 台湾A-标准
+  name: 702|Video 台湾A-标准
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -1215,7 +1174,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Video 台湾B-原生
+  name: 702|Video 台湾B-原生
   password: QHPy2u
   plugin: obfs
   plugin-opts:
@@ -1226,7 +1185,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Video 台湾C-原生
+  name: 702|Video 台湾C-原生
   password: fsfal2
   plugin: obfs
   plugin-opts:
@@ -1237,7 +1196,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Video 台湾D-标准
+  name: 702|Video 台湾D-标准
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -1248,7 +1207,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Video 台湾E-解锁
+  name: 702|Video 台湾E-解锁
   password: ayds23sd1
   plugin: obfs
   plugin-opts:
@@ -1259,7 +1218,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 701|Web 台湾I-标准
+  name: 702|Web 台湾I-标准
   password: ayucloud1
   plugin: obfs
   plugin-opts:
@@ -1270,7 +1229,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5aWl5Zyw5YipMDEt5Y... #1'
+  name: '703,704|TWFuaWZvbGQt5aWl5Zyw5YipMDEt5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dja*/?
@@ -1280,7 +1239,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5q-U5Yip5pe2MDEt5Y... #1'
+  name: '703,704|TWFuaWZvbGQt5q-U5Yip5pe2MDEt5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: 2sa2/321a
@@ -1290,7 +1249,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt55Ge5aOrMDEt5qCH5Y... #1'
+  name: '703,704|TWFuaWZvbGQt55Ge5aOrMDEt5qCH5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dja*/?
@@ -1300,7 +1259,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5b635Zu9MDEt5qCH5Y... #1'
+  name: '703,704|TWFuaWZvbGQt5b635Zu9MDEt5qCH5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: 2sa2/1a
@@ -1310,7 +1269,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5Y2w5bqm5bC86KW_5L... #1'
+  name: '703,704|TWFuaWZvbGQt5Y2w5bqm5bC86KW_5L... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dja*/?
@@ -1320,7 +1279,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5Lul6Imy5YiXMDEt5q... #1'
+  name: '703,704|TWFuaWZvbGQt5Lul6Imy5YiXMDEt5q... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&sdja*/?
@@ -1330,7 +1289,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5LyK5pyXMDEt5qCH5Y... #1'
+  name: '703,704|TWFuaWZvbGQt5LyK5pyXMDEt5qCH5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdessa&dja*/?
@@ -1340,7 +1299,7 @@ proxies:
   server: 231103levelx.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5oSP5aSn5YipMDEt5q... #1'
+  name: '703,704|TWFuaWZvbGQt5oSP5aSn5YipMDEt5q... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: 2sa2/321a
@@ -1350,7 +1309,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5pel5pysMDEt5Y6f55... #1'
+  name: '703,704|TWFuaWZvbGQt5pel5pysMDEt5Y6f55... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: ayds232sffssd1
@@ -1360,7 +1319,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQg6Z-p5Zu9MDEt5Y6f55... #1'
+  name: '703,704|TWFuaWZvbGQg6Z-p5Zu9MDEt5Y6f55... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: aa2sda31a
@@ -1370,7 +1329,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQg56uL6Zm25a6bMDEg5Y... #1'
+  name: '703,704|TWFuaWZvbGQg56uL6Zm25a6bMDEg5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: d1da&dja*/?
@@ -1380,7 +1339,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5aKo6KW_5ZOlMDEt5q... #1'
+  name: '703,704|TWFuaWZvbGQt5aKo6KW_5ZOlMDEt5q... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dj23gsa
@@ -1390,7 +1349,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt6ams5p2l6KW_5LqaMD... #1'
+  name: '703,704|TWFuaWZvbGQt6ams5p2l6KW_5LqaMD... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dj23gsa
@@ -1400,7 +1359,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt6I235YWwMDEt5Y6f55... #1'
+  name: '703,704|TWFuaWZvbGQt6I235YWwMDEt5Y6f55... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: 2sa2/1a
@@ -1410,7 +1369,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQg5be05Z-65pav5Z2mMD... #1'
+  name: '703,704|TWFuaWZvbGQg5be05Z-65pav5Z2mMD... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dja*/?
@@ -1420,7 +1379,7 @@ proxies:
   server: 231103levelx.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt55Ge5YW4MDEt5qCH5Y... #1'
+  name: '703,704|TWFuaWZvbGQt55Ge5YW4MDEt5qCH5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dja*/?
@@ -1430,7 +1389,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5paw5Yqg5Z2hMDIt5q... #1'
+  name: '703,704|TWFuaWZvbGQt5paw5Yqg5Z2hMDIt5q... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dj23gsa
@@ -1440,7 +1399,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQg5pav5rSb5paH5bC85L... #1'
+  name: '703,704|TWFuaWZvbGQg5pav5rSb5paH5bC85L... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: V2efNeJZr
@@ -1450,7 +1409,7 @@ proxies:
   server: 231103levelx.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5rOw5Zu9MDEt5qCH5Y... #1'
+  name: '703,704|TWFuaWZvbGQt5rOw5Zu9MDEt5qCH5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: aa2cs/1a
@@ -1460,7 +1419,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5Y-w5rm-MDEt5Y6f55... #1'
+  name: '703,704|TWFuaWZvbGQt5Y-w5rm-MDEt5Y6f55... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: ayds232sffssd1
@@ -1470,7 +1429,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5Y-w5rm-MDIt6Kej6Z... #1'
+  name: '703,704|TWFuaWZvbGQt5Y-w5rm-MDIt6Kej6Z... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkl&dja*/?
@@ -1480,7 +1439,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt6L-q5oucMDEt5qCH5Y... #1'
+  name: '703,704|TWFuaWZvbGQt6L-q5oucMDEt5qCH5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: aa2sda31a
@@ -1490,7 +1449,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5LmM5YWL5YWwMDEt5q... #1'
+  name: '703,704|TWFuaWZvbGQt5LmM5YWL5YWwMDEt5q... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dj23gsa
@@ -1500,7 +1459,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQg576O5Zu9MDIt5Y6f55... #1'
+  name: '703,704|TWFuaWZvbGQg576O5Zu9MDIt5Y6f55... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: ayds232112sffssd1
@@ -1510,7 +1469,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt6LaK5Y2XMDEt5qCH5Y... #1'
+  name: '703,704|TWFuaWZvbGQt6LaK5Y2XMDEt5qCH5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: aa2sacs/1a
@@ -1520,7 +1479,7 @@ proxies:
   server: 231103level4.unclemanco.com
   type: ssr
 - cipher: aes-256-cfb
-  name: '702,703|TWFuaWZvbGQt5Y2X6Z2eMDEt5qCH5Y... #1'
+  name: '703,704|TWFuaWZvbGQt5Y2X6Z2eMDEt5qCH5Y... #1'
   obfs: http_simple
   obfs-param: NjhlN2I2MTYxMC5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ
   password: dajkdkjda&dja*/?
@@ -1531,7 +1490,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 741|台湾①{移动|V2ray}
+  name: 742|台湾①{移动|V2ray}
   network: ws
   port: '25232'
   server: cm1.awslcn.info
@@ -1544,7 +1503,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 741|台湾②{移动|V2ray}
+  name: 742|台湾②{移动|V2ray}
   network: ws
   port: '25232'
   server: cm.awslcn.info
@@ -1557,7 +1516,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 741|台湾01{移动|V2ray}
+  name: 742|台湾01{移动|V2ray}
   network: ws
   port: '25233'
   server: cm1.awslcn.info
@@ -1570,7 +1529,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 741|台湾02{移动|V2ray}
+  name: 742|台湾02{移动|V2ray}
   network: ws
   port: '25233'
   server: cm.awslcn.info
@@ -1582,7 +1541,7 @@ proxies:
       Host: ''
     path: ''
 - cipher: aes-256-cfb
-  name: 758|畅行 台湾 1
+  name: 759|畅行 台湾 1
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -1592,7 +1551,7 @@ proxies:
   server: pro-twa.ginfe.me
   type: ssr
 - cipher: aes-256-cfb
-  name: 758|畅行 台湾 2
+  name: 759|畅行 台湾 2
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -1602,7 +1561,7 @@ proxies:
   server: pro-twb.ginfe.me
   type: ssr
 - cipher: rc4-md5
-  name: 768|[v1] 台湾・01
+  name: 769|[v1] 台湾・01
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1613,7 +1572,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 768|[v1] 台湾・02
+  name: 769|[v1] 台湾・02
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1624,7 +1583,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 768|[v1] 台湾・03
+  name: 769|[v1] 台湾・03
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1635,7 +1594,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 768|[v1] 台湾・04
+  name: 769|[v1] 台湾・04
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1646,7 +1605,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 768|[v1] 台湾・05
+  name: 769|[v1] 台湾・05
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1658,7 +1617,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 782|TW-台湾 | CDN | 翻墙0.5×
+  name: 783|TW-台湾 | CDN | 翻墙0.5×
   network: ws
   port: '2086'
   server: 104.18.23.195
@@ -1671,7 +1630,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 782|TW-台湾 加宽 | 原生IP | 免流 1x
+  name: 783|TW-台湾 加宽 | 原生IP | 免流 1x
   network: ws
   port: '20112'
   server: twriyfjh.vbdf.lol
@@ -1684,7 +1643,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 785|🇹🇼台湾 | ✨全流媒体
+  name: 786|🇹🇼台湾 | ✨全流媒体
   network: ws
   port: '42101'
   server: 112.29.226.3
@@ -1697,7 +1656,7 @@ proxies:
     path: /qwe123321ewq
 - alterId: 0
   cipher: auto
-  name: 785|🇹🇼台湾-Netflix专线
+  name: 786|🇹🇼台湾-Netflix专线
   network: ws
   port: '37105'
   server: 36.33.149.53
