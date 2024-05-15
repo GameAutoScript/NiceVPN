@@ -21,7 +21,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,207,310,311,312,314,315,394,395,426,428,440,444,493,526,527,542,584,585,630,632|未知_0514043
+  name: '0,3,207,310,311,312,314,315,428,440,493,526,527,542,584,585,630,632|未知_0514043
     #2'
   network: ws
   port: '2052'
@@ -31,7 +31,6 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -57,13 +56,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,595|未知308 #1'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '1,2,200,595|未知308 #1'
   network: ws
   port: 2082
   server: 172.67.204.84
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: false
   uuid: 7b39e430-e14d-4920-979b-aa7aa2f5010c
   ws-opts:
     headers:
@@ -101,7 +103,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,425,476,552,595|未知441 #1'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '1,2,200,425,476,552,595|未知441 #1'
   network: ws
   port: 2052
   server: 104.18.19.191
