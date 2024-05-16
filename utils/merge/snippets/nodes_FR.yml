@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 17,375,376,382|FR_04
+  name: 17,375,380|🇫🇷FR_85
   password: KixLvKzwjekG00rm
   port: 8080
   server: 149.202.82.172
@@ -9,7 +9,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 17,375,376,382,601|未知644 1.8MB/s
+  name: 17,375,380,601|未知644 1.8MB/s
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 149.202.82.172
@@ -86,7 +86,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-cfb
   country: 🇫🇷FR
-  name: 130,201,376,601|未知171 12.7MB/s
+  name: 130,201,380,601|未知171 12.7MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
@@ -95,8 +95,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇫🇷FR
-  name: 130,376,601|未知380 12.0MB/s
+  country: 🇷FR
+  name: 130,380,601|未知380 12.0MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -105,7 +105,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 130,601|未知241
+  country: 🇷🇺 RU
+  name: 130,380,601|未知241
   password: cGNYDN3mtfeQ42fBKDRuS6
   port: 45346
   server: 45.15.157.199
@@ -123,20 +124,47 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇫🇷FR
-  name: 130,376,601|未知450 11.9MB/s
+  country: 🇷FR
+  name: 130,380,601|未知450 11.9MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.111.208
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 131,375,380,601|🇫🇷FR法国5 1.8MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 131,375,380|_40
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 149.202.82.172
+  type: ss
 - cipher: aes-256-gcm
   country: FR
-  name: 131|FR_13
+  name: 131|FR_15
   password: KixLvKzwjekG00rm
   port: 5500
   server: 149.202.82.172
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: FR
+  name: 131,380,601|未知629 1.8MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -150,18 +178,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  country: FR
-  name: 131,601|未知629 1.8MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇷FR
-  name: 131,375,601|未知589 1.8MB/s
+  country: 🇫🇷FR
+  name: 131,375,380,601|未知589 1.8MB/s
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 149.202.82.172
@@ -169,22 +187,18 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 131,375,601|🇫🇷FR法国5 1.8MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 149.202.82.172
+  cipher: auto
+  country: FR
+  name: 131,601|未知462
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.36.88.185
   skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
   tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 131,375|🇫🇷FR_20
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 149.202.82.172
-  type: ss
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   country: FR
@@ -203,7 +217,7 @@ proxies:
   country: NL
   h2-opts: {}
   http-opts: {}
-  name: '131|netflix_FR #1'
+  name: '131|netflix_FR #2'
   network: ws
   port: 443
   server: 188.114.97.79
@@ -215,24 +229,6 @@ proxies:
   ws-opts:
     headers:
       HOST: linde06.indiavideo.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  country: NL
-  h2-opts: {}
-  http-opts: {}
-  name: '131|netflix_FR #2'
-  network: ws
-  port: 443
-  server: obdii.cfd
-  servername: obdii.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      HOST: obdii.cfd
     path: /linkws
 - alterId: 0
   cipher: auto
@@ -272,75 +268,28 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: US
-  fingerprint: ''
+  country: NL
   h2-opts: {}
   http-opts: {}
-  name: '131,203,601|未知302 13.6MB/s #1'
+  name: '131|netflix_FR #5'
   network: ws
   port: 443
-  server: 172.67.174.42
-  servername: gwdef.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: false
-  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
-  ws-opts:
-    headers:
-      host: gwdef.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  country: US
-  fingerprint: ''
-  h2-opts: {}
-  http-opts: {}
-  name: '131,203,601|未知615 9.7MB/s #1'
-  network: ws
-  port: 443
-  server: 172.67.71.160
+  server: obdii.cfd
   servername: obdii.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      host: obdii.cfd
+      HOST: obdii.cfd
     path: /linkws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   country: US
-  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: '131,203,601|未知403 #1'
-  network: ws
-  port: 443
-  server: 172.67.74.4
-  servername: mikasa.yaemiko.cloudns.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      host: mikasa.yaemiko.cloudns.org
-    path: /ivideos.sbs/linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  country: US
-  fingerprint: ''
-  h2-opts: {}
-  http-opts: {}
-  name: 131,203|95a8d9a9250947ddbb6dca5633a757...
+  name: '131|netflix_FR #6'
   network: ws
   port: 443
   server: 172.67.161.77
@@ -348,28 +297,24 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   ws-opts:
     headers:
-      host: linde06.indiavideo.sbs
+      HOST: linde06.indiavideo.sbs
     path: /linkws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: ZZ
-  fingerprint: ''
+  country: US
   h2-opts: {}
   http-opts: {}
-  name: 131,203|5da17b77d3bf4fcd933a03ee8f918b...
+  name: '131,601|未知403 #1'
   network: ws
   port: 443
-  server: caretaker.com
+  server: 172.67.74.4
   servername: mikasa.yaemiko.cloudns.org
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
   uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
   ws-opts:
     headers:
@@ -377,13 +322,13 @@ proxies:
     path: /ivideos.sbs/linkws
 - alterId: 0
   cipher: auto
-  country: ZZ
+  country: US
   h2-opts: {}
   http-opts: {}
-  name: '131|netflix_FR #10'
+  name: '131,601|未知302 13.6MB/s #1'
   network: ws
   port: 443
-  server: 104.21.55.234
+  server: 172.67.174.42
   servername: gwdef.sbs
   skip-cert-verify: true
   tls: true
@@ -391,35 +336,50 @@ proxies:
   uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
   ws-opts:
     headers:
-      HOST: gwdef.sbs
+      host: gwdef.sbs
     path: /linkws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: 🏁ZZ
-  fingerprint: ''
+  country: US
   h2-opts: {}
   http-opts: {}
-  name: 131,203,375|Relay_🏁ZZ-🇪DE_94 |65.83Mb
+  name: '131,601|未知615 9.7MB/s #1'
   network: ws
   port: 443
-  server: 104.21.44.106
-  servername: xmivideo.cfd
+  server: 172.67.71.160
+  servername: obdii.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      HOST: xmivideo.cfd
+      host: obdii.cfd
     path: /linkws
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '131|netflix_FR #12'
+  name: '131,601|未知147 182.1MB/s #1'
+  network: ws
+  port: 443
+  server: 104.21.15.36
+  servername: linde06.indiavideo.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '131|netflix_FR #11'
   network: ws
   port: 443
   server: 104.26.0.95
@@ -437,7 +397,7 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '131|netflix_FR #13'
+  name: '131|netflix_FR #12'
   network: ws
   port: 443
   server: hms082.gwdef.sbs
@@ -452,33 +412,64 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   country: ZZ
-  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: '131,203,601|未知147 182.1MB/s #1'
+  name: '131|netflix_FR #13'
   network: ws
   port: 443
-  server: 104.21.15.36
-  servername: linde06.indiavideo.sbs
+  server: caretaker.com
+  servername: mikasa.yaemiko.cloudns.org
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
   ws-opts:
     headers:
-      host: linde06.indiavideo.sbs
+      HOST: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '131|netflix_FR #14'
+  network: ws
+  port: 443
+  server: 104.21.55.234
+  servername: gwdef.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      HOST: gwdef.sbs
     path: /linkws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: ZZ
-  fingerprint: ''
+  country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: '131,203,601|未知481 10.2MB/s #1'
+  name: 131,375|Relay_🏁ZZ-🇪DE_89 |65.83Mb
+  network: ws
+  port: 443
+  server: 104.21.44.106
+  servername: xmivideo.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
+  ws-opts:
+    headers:
+      HOST: xmivideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '131,601|未知481 10.2MB/s #1'
   network: ws
   port: 443
   server: 104.26.6.65
@@ -486,7 +477,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
   uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
   ws-opts:
     headers:
@@ -494,12 +484,10 @@ proxies:
     path: /ivideos.sbs/linkws
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   country: ZZ
-  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 131,203|85b35ad75f184bb5b26e978678e2b1...
+  name: '131|netflix_FR #17'
   network: ws
   port: 443
   server: 104.26.7.65
@@ -507,11 +495,10 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
   uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
   ws-opts:
     headers:
-      host: mikasa.yaemiko.cloudns.org
+      HOST: mikasa.yaemiko.cloudns.org
     path: /ivideos.sbs/linkws
 - alterId: 0
   cipher: auto
@@ -1190,18 +1177,39 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 375,601|🇫🇷FR法国3 1.8MB/s
+  country: 🇷FR
+  name: 375,380,601|🇫🇷FR法国3 1.8MB/s
   password: zDNVedRFPQexG9v
   port: 6379
   server: 149.202.82.172
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 375,380|_36
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 375,380|_32
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 375,380|_33
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 149.202.82.172
+  type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 375,601|未知283 1.8MB/s
+  name: 375,380,601|未知283 1.8MB/s
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 149.202.82.172
@@ -1210,39 +1218,35 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 375|🇫🇷FR_14
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 375|🇫🇷FR_15
-  password: Y6R9pAtvxxzmGC
-  port: 5601
+  name: 375,380|_10
+  password: e4FCWrgpkji3QY
+  port: 9102
   server: 149.202.82.172
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 375,601|🇫🇷FR法国6 1.8MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8118
+  name: 375,380,601|未知230 1.8MB/s
+  password: e4FCWrgpkji3QY
+  port: 9101
   server: 149.202.82.172
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 375|🇫🇷FR_17
-  password: pKEW8JPByTVTLtM
-  port: 443
+  name: 375,380,601|未知357 1.8MB/s
+  password: FoOiGlkAA9yPEGP
+  port: 7307
   server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 375,601|🇷FR法国4 1.8MB/s
+  name: 375,380,601|🇷FR法国4 1.8MB/s
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 149.202.82.172
@@ -1252,7 +1256,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 375,601|未知272 1.8MB/s
+  name: 375,380,601|未知272 1.8MB/s
   password: XKFKl2rULjIp74
   port: 8008
   server: 149.202.82.172
@@ -1262,53 +1266,262 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 375,601|未知357 1.8MB/s
-  password: FoOiGlkAA9yPEGP
-  port: 7307
+  name: 375,380,601|🇫🇷FR法国6 1.8MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8118
   server: 149.202.82.172
   skip-cert-verify: true
   tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 375|🇫🇷FR_22
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 149.202.82.172
   type: ss
 - alterId: 0
-  cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 375,601|未知230 1.8MB/s
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 149.202.82.172
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 375|Relay_🏁ZZ-🇷FR_88
+  network: ws
+  port: 2082
+  server: 104.21.8.157
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
-  tls: true
-  type: ss
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      HOST: s1c.v2.v001sss.xyz
+    path: /
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: '376|🇫🇷FR_15 #1'
-  password: PCnnH6SQSnfoS27
-  port: 8090
+  country: 🇷 FR
+  name: 380| FR_59
+  password: e4FCWrgpkji3QY
+  port: 9102
   server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: '376|🇫🇷FR_18 #1'
+  country: 🇫🇷 FR
+  name: 380|🇫🇷 FR_60
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 54.36.174.181
   type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 380|🇫🇷 FR_61
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 380|🇫🇷 FR_62
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 380|🇫🇷 FR_63
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 380|🇫🇷 FR_64
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 54.36.174.181
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 380,500,601|未知405 1.8MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 380|🇫🇷 FR_66
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 54.36.174.181
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 380,601|未知251 1.7MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 380|🇫🇷 FR_68
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷 FR
+  name: 380|🇫🇷 FR_69
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 54.36.174.181
+  type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 376,601|未知223 1.8MB/s
+  name: 380,601|未知4 1.7MB/s
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380,601|未知223 1.8MB/s
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 217.182.198.219
   skip-cert-verify: true
   tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380|🇫🇷FR_75
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 54.36.174.181
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380,601|未知136 1.8MB/s
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380,601|未知479 1.8MB/s
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380,601|未知527 1.8MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380,601|未知237 1.8MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380|🇫🇷FR_82
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380|🇫🇷FR_86
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380|🇫🇷FR_87
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 54.36.174.181
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380,601|未知483 1.7MB/s
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380,601|未知451 1.7MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 54.36.174.181
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380|🇫🇷FR_92
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380|🇫🇷FR_93
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380|🇫🇷FR_94
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380|🇫🇷FR_95
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380|🇫🇷FR_97
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 380,500|TG@极客分享_8
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-cfb
   name: 400,483|_FR_国
@@ -1543,7 +1756,7 @@ proxies:
     path: /fastssh/43t34gt4/62d7cbc722cda/
 - alterId: 0
   cipher: auto
-  name: 494,619,636,638|法国_0515005
+  name: '494,619,636,638|法国_0516005 #1'
   network: ws
   port: '8443'
   server: 173.245.49.10
@@ -1557,7 +1770,7 @@ proxies:
     path: /8cda48b3
 - alterId: 0
   cipher: auto
-  name: 494,619,636,638|法国_0515006
+  name: '494,619,636,638|法国_0516006 #1'
   network: ws
   port: '8443'
   server: 173.245.49.23
@@ -1759,19 +1972,6 @@ proxies:
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
 - alterId: 0
   cipher: auto
-  name: '622,630|رایگان | VMESS | @DeamNet_Prox... #10'
-  network: ws
-  port: '80'
-  server: 172.64.199.171
-  tls: false
-  type: vmess
-  uuid: e8f5f189-97c7-4845-8cfa-08bf9836c1ce
-  ws-opts:
-    headers:
-      Host: fr2-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
   name: 636|法国_0516086
   network: ws
   port: '80'
@@ -1869,24 +2069,24 @@ proxies:
   type: trojan
   udp: true
 - grpc-opts:
-    grpc-service-name: fkvip101
+    grpc-service-name: fkvip102
   name: '782,784|德国 法兰克福104 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 41789
-  server: fkvip101.qlgq.fun
-  sni: fkvip101.qlgq.fun
+  server: fkvip102.qlgq.fun
+  sni: fkvip102.qlgq.fun
   tls: true
   type: trojan
   udp: true
 - grpc-opts:
-    grpc-service-name: fkvip101
+    grpc-service-name: fkvip102
   name: '782,784|德国 法兰克福105 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 51789
-  server: fkvip101.qlgq.fun
-  sni: fkvip101.qlgq.fun
+  server: fkvip102.qlgq.fun
+  sni: fkvip102.qlgq.fun
   tls: true
   type: trojan
   udp: true
@@ -1903,27 +2103,6 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
-- cipher: aes-128-gcm
-  name: 812|🇫🇷 法国 01
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20053
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 812|🇫🇷 法国 02
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20054
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 812|🇫🇷 法国 03
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20055
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
 - alterId: 233
   cipher: auto
   name: '823|法国 #1'
