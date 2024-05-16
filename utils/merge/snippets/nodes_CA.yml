@@ -817,7 +817,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 75,210,400,401,414,450,458,532,533,590,591,636|未知_0516107
+  name: 75,210,400,401,414,432,450,458,532,533,590,591,636|未知_0516107
   network: ws
   port: '8080'
   server: go.alipay.ovh
@@ -3524,7 +3524,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '75,458|加拿大 214 #1'
+  name: '75,400,401,450,458|加拿大 214 #1'
   network: ws
   port: 2083
   server: 104.19.53.74
@@ -3540,7 +3540,7 @@ proxies:
     path: /dabai.in104.19.53.74
 - alterId: 0
   cipher: auto
-  name: '75,458|加拿大 215 #1'
+  name: '75,400,401,450,458|加拿大 215 #1'
   network: ws
   port: 443
   server: 172.64.48.205
@@ -3556,7 +3556,7 @@ proxies:
     path: /dabai.in172.64.48.205
 - alterId: 0
   cipher: auto
-  name: '75,458|加拿大 216 #1'
+  name: '75,400,401,450,458|加拿大 216 #1'
   network: ws
   port: 2096
   server: 104.16.140.157
@@ -3572,7 +3572,7 @@ proxies:
     path: /dabai.in104.16.140.157
 - alterId: 0
   cipher: auto
-  name: '75,458|加拿大 217 #1'
+  name: '75,400,401,450,458|加拿大 217 #1'
   network: ws
   port: 443
   server: 104.20.42.163
@@ -3588,7 +3588,7 @@ proxies:
     path: /dabai.in104.20.42.163
 - alterId: 0
   cipher: auto
-  name: '75,458|加拿大 218 #1'
+  name: '75,400,401,450,458|加拿大 218 #1'
   network: ws
   port: 2096
   server: 172.67.112.128
@@ -3604,13 +3604,14 @@ proxies:
     path: /dabai.in172.67.112.128
 - alterId: 0
   cipher: auto
-  name: '75,119,458|加拿大 219 #1'
+  name: '75,119,400,401,450,458|加拿大 219 #1'
   network: ws
   port: 443
   server: www.okcupid.com
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 6c08df77-b99e-48e6-829d-2f4d423e7e60
   ws-opts:
     headers:
@@ -3636,15 +3637,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 130,601|未知333 15.3MB/s
-  password: G!yBwPWH3Vao
-  port: 803
-  server: 134.195.196.178
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: 130,601|未知443 18.3MB/s
   password: G!yBwPWH3Vao
   port: 811
@@ -3652,11 +3644,26 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 130,601|未知333 15.3MB/s
+  password: G!yBwPWH3Vao
+  port: 803
+  server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 130|🇨🇦CA-142.4.216.225-0685 | 5.21...
+  name: 130|🇨🇦CA-142.4.216.225-0657 | 27.8...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 130|🇨🇦CA-146.19.106.89-0677 | 6.16...
+  password: ZjNmOGE0
+  port: 8388
+  server: ca1.ssproxy.xyz
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -3684,7 +3691,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 130|🇨🇦CA-23.162.200.227-0462 | 33....
+  name: 130|🇨🇦CA-23.162.200.227-0459 | 59....
   network: ws
   port: 443
   server: 23.162.200.227
@@ -3922,11 +3929,15 @@ proxies:
     path: /MGNF44G
 - alterId: 0
   cipher: auto
-  name: 210,446,535|🇨🇦 加拿大
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 210,381,446,535|🇨🇦 加拿大
   network: ws
   port: 443
   server: 158.51.121.36
   servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3937,7 +3948,10 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '210,446,590,591|美国 V2CROSS.COM #1'
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '210,381,446,590,591|美国 V2CROSS.COM #1'
   network: ws
   port: '443'
   server: 23.162.200.227
@@ -4487,6 +4501,37 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
+  country: 🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 381|🇦CA_07 | 8.89Mb
+  network: ws
+  port: 8080
+  server: 108.181.23.161
+  servername: internet.life.com.by
+  skip-cert-verify: true
+  type: vmess
+  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
+  ws-opts:
+    headers:
+      HOST: internet.life.com.by
+    path: /1IKYjV0r/
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 381,413,414,415,446,449,535|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
+  network: tcp
+  port: '22324'
+  server: 198.57.27.212
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
   name: 387|🇨🇦CA加拿大(youtube阿伟科技)
   network: tcp
   port: '80'
@@ -4695,16 +4740,6 @@ proxies:
     headers:
       Host: 625tw02.fx6688.top
     path: /ray
-- alterId: 0
-  cipher: auto
-  name: 413,414,415,446,449,535|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
-  network: tcp
-  port: '22324'
-  server: 198.57.27.212
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: '413,414,415|加拿大_121320028 #1'
@@ -5023,16 +5058,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /awd
-- alterId: 0
-  cipher: auto
-  name: 446,535|US_分享日记_335
-  network: tcp
-  port: 18117
-  server: 107.172.25.132
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2cfd504-b51f-42a4-cc18-665f82f2549c
 - cipher: aes-256-cfb
   name: 447,536,537|1.59|httpsawkjcfky 注册体验流媒体机场yo...
   obfs: http_simple
@@ -5209,7 +5234,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a5377382-7d67-4157-ac5a-14258196e7cd
+  uuid: 01decbde-09b7-4a20-8550-2e5640971383
 - cipher: aes-256-gcm
   name: 461|VIP0.加拿大1.ChatGPT
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -5395,7 +5420,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ddae2682-0848-452d-95ac-8c59426d07af
+  uuid: ad325184-ab29-42a9-8daa-c243f0c5b4df
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -5495,7 +5520,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: db0cccff-a53d-425e-8abe-4300536d1b1e
+  uuid: fdd4183b-2b88-4e40-83cb-6d42ae95553a
 - cipher: aes-256-gcm
   name: 607|[02-24]-🇨🇦-加拿大多伦多-248-198.57.2...
   password: faBAoD54k87UJG7
@@ -5613,6 +5638,20 @@ proxies:
   ws-opts:
     headers:
       Host: ca-full.privateip.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 636|加拿大_0516010
+  network: ws
+  port: '2086'
+  server: 108.181.24.77
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
