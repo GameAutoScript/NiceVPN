@@ -1,6 +1,34 @@
 proxies:
 - alterId: 0
   cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 17,202,263,377,383,406,414,416,504,521,620,637|日本_0516004
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 17,381|_43
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 18|jp日本3
   network: ws
   port: '2086'
@@ -15,15 +43,17 @@ proxies:
 - alterId: 1
   cipher: auto
   client-fingerprint: chrome
-  country: 🇸US
+  country: 🇺🇸US
   grpc-opts:
     grpc-service-name: 1654431
-  name: '44,130,133,134,224,350,376,390,394,395,399,448,455,460,465,470,472,475,477,479,488,509,537,538,541,542,547,551,556,559,591,602,608,635,750|🇯🇵
+  h2-opts: {}
+  http-opts: {}
+  name: '44,130,133,134,224,347,350,376,381,382,390,394,395,399,401,448,455,460,465,470,472,475,477,479,488,509,537,538,541,542,547,551,556,559,591,602,608,635,750|🇯🇵
     免费-日本6-Ver.7 #1'
   network: grpc
   password: bbab60b8-779f-31e2-916e-571f7d7023c4
   port: 28785
-  server: nu5ia-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  server: esv2w-g03.jp06-7c5a-vm0.entry.fr0307a.art
   servername: 45.144.2.113
   skip-cert-verify: false
   sni: jd5.zahuopu.top
@@ -34,7 +64,7 @@ proxies:
   uuid: 90a6a221-9c3b-30e3-9d0e-e3089f21f6e6
 - alterId: 0
   cipher: auto
-  name: 75,459,637|美国_0516209
+  name: 75,401,402,451,459,637|美国_0516209
   network: ws
   port: '8080'
   server: kkyx.yydsii.com
@@ -50,12 +80,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '75,459|日本 002 #1'
+  name: '75,401,402,451,459|日本 002 #1'
   network: ws
   port: 80
   server: japanddns.baipiaoyumingjiexi.xyz
   skip-cert-verify: true
+  tls: false
   type: vmess
+  udp: true
   uuid: 2fd3c154-312b-4e37-b133-df9326022c98
   ws-opts:
     headers:
@@ -63,13 +95,14 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '75,182,459,795|JP-日本 02 | ws 80 | 免流 1x #1'
+  name: 75,401,402,451,459,795|JP-日本 02 | ws 80 | 免流 1x
   network: ws
   port: '80'
   server: 52.198.147.10
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
   ws-opts:
     headers:
@@ -558,32 +591,6 @@ proxies:
     headers:
       Host: jp.xlb8.eu.org
     path: /
-- alterId: 0
-  cipher: auto
-  name: '182,795|JP-日本 | CDN | 翻墙0.5× #1'
-  network: ws
-  port: '2052'
-  server: 104.19.76.230
-  tls: false
-  type: vmess
-  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
-  ws-opts:
-    headers:
-      Host: jpcdn.vbdf.lol
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: '182,795|JP-日本 01 | ws 80 | 免流 1x #1'
-  network: ws
-  port: '80'
-  server: 151.248.68.5
-  tls: false
-  type: vmess
-  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - name: 202|🆔@LuxyNet💎❖❖JP❖131
   network: tcp
   password: 254aa898-bc2a-4ec8-87d1-9f5d37658f6c
@@ -673,7 +680,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 202,205,211,224,426,429,447,448,521,536,582,590,602,603,616|🇯🇵JP-152.69.197.74-3356
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 202,205,211,224,382,429,447,448,521,536,582,590,602,603,616|🇯🇵JP-152.69.197.74-3356
   network: ws
   port: 12345
   server: 152.69.197.74
@@ -688,20 +698,6 @@ proxies:
     path: /bb
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 202,263,383,406,414,416,504,521,620,637|日本_0516004
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
   name: 202|🆔@LuxyNet💎❖🇵❖JP❖1479
   network: tcp
   port: 31845
@@ -712,7 +708,10 @@ proxies:
   uuid: 323d8b87-345d-4065-b7df-2af764d2d1df
 - alterId: 64
   cipher: auto
-  name: 202,447,450,521,536|🇯🇵_电报https://t.me/chykj_83
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 202,382,447,450,521,536|🇯🇵_电报https://t.me/chykj_83
   network: tcp
   port: 24445
   server: 140.83.63.38
@@ -903,21 +902,144 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 376|Relay_ZZ-🇵JP_91 |10.44Mb
+  name: 347|日本1—E3
   network: ws
-  port: 80
-  server: 104.16.45.180
-  servername: jp.xlb8.eu.org
-  skip-cert-verify: true
+  port: 30100
+  server: entrance3-100.jjsagcajvv.xyz
+  servername: cn.bing.com
   type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  udp: true
+  uuid: 93d95104-5892-352a-8093-982d983f6a4a
+  ws-headers:
+    Host: cn.bing.com
   ws-opts:
     headers:
-      HOST: jp.xlb8.eu.org
-    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+      Host: cn.bing.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 347|日本2—E2
+  network: ws
+  port: 30041
+  server: entrance2-41.jjsagcajvv.xyz
+  servername: cn.bing.com
+  type: vmess
+  udp: true
+  uuid: 93d95104-5892-352a-8093-982d983f6a4a
+  ws-headers:
+    Host: cn.bing.com
+  ws-opts:
+    headers:
+      Host: cn.bing.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 347|日本3—E1
+  network: ws
+  port: 30066
+  server: entrance1-86.jjsagcajvv.xyz
+  servername: cn.bing.com
+  type: vmess
+  udp: true
+  uuid: 93d95104-5892-352a-8093-982d983f6a4a
+  ws-headers:
+    Host: cn.bing.com
+  ws-opts:
+    headers:
+      Host: cn.bing.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '347|日本原生GMO—E3 '
+  network: ws
+  port: 30043
+  server: entrance3-43.jjsagcajvv.xyz
+  servername: cn.bing.com
+  type: vmess
+  udp: true
+  uuid: 93d95104-5892-352a-8093-982d983f6a4a
+  ws-headers:
+    Host: cn.bing.com
+  ws-opts:
+    headers:
+      Host: cn.bing.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 347|日本原生GMO—E1
+  network: ws
+  port: 30043
+  server: entrance1-81.jjsagcajvv.xyz
+  servername: cn.bing.com
+  type: vmess
+  udp: true
+  uuid: 93d95104-5892-352a-8093-982d983f6a4a
+  ws-headers:
+    Host: cn.bing.com
+  ws-opts:
+    headers:
+      Host: cn.bing.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 381| JP_111
+  network: ws
+  port: 80
+  server: 141.164.48.71
+  skip-cert-verify: true
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 381|🇺🇸US_275
+  network: tcp
+  port: 21581
+  server: jp03-alt-vm0.entry.srthdw.art
+  servername: jp03-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2d98a577-c108-3dfa-baeb-8d70819ec5b7
+  ws-path: /adobe
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 381|🇺🇸US_268
+  network: tcp
+  port: 11773
+  server: jp02-vm0.entry.srthdw.art
+  servername: jp02-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  type: vmess
+  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
+  ws-path: /path/040525210130
+- alterId: 0
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇵JP
+  name: 382,479,556,602|未知446
+  password: amazonskr05
+  port: 443
+  server: 18.182.6.181
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 400,537|0.55|JPhttpsawkjcfky 注册体验流媒体机场...
@@ -2322,18 +2444,6 @@ proxies:
   ws-headers:
     Host: 43.199.43.114
   ws-path: /
-- alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 479,556,602|未知446
-  password: amazonskr05
-  port: 443
-  server: 18.182.6.181
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 494|🇯🇵_JP_日本
   password: XKFKl2rULjIp74
@@ -2447,7 +2557,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 521|🇯🇵 日本 001
+  name: '521|🇯🇵 日本 001 #2'
   network: ws
   port: '22356'
   server: 002.AP.POP.node-for-smallairport.win
@@ -2534,34 +2644,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 536|JP_分享日记_2
-  network: ws
-  port: 57557
-  server: jp-tokyo-oracle-5a26da.ip1.shop
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /rongseven?ed=2048
-- alterId: 64
-  cipher: auto
-  name: 536|GB_分享日记_16
-  network: ws
-  port: 30000
-  server: 51.89.2.48
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9f58234c-355b-4065-ae21-d4a63099aba5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/203113182529
-- alterId: 0
-  cipher: auto
   name: 536|🇯🇵JP-183.181.36.194-0388
   network: ws
   port: 41597
@@ -2587,7 +2669,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ca4753d0-fdaf-4d94-90e7-678d08f15809
+  uuid: fecb2eff-f25f-4613-8e88-2d5bd246091a
 - alterId: 0
   cipher: auto
   name: 539|【BGP】日本 05  | 1x JP
@@ -2597,7 +2679,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ca4753d0-fdaf-4d94-90e7-678d08f15809
+  uuid: fecb2eff-f25f-4613-8e88-2d5bd246091a
 - alterId: 0
   cipher: auto
   name: 539|【BGP】日本 06  | 1x JP
@@ -2607,7 +2689,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ca4753d0-fdaf-4d94-90e7-678d08f15809
+  uuid: fecb2eff-f25f-4613-8e88-2d5bd246091a
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -2982,7 +3064,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f7f27c5d-cc5d-4e29-b7fa-6cb3e0d2c19f
+  uuid: 0f9816a0-bee2-4c34-abbd-4744ed583223
 - alterId: 0
   cipher: auto
   name: 600|🇯🇵日本 | 108 | 流媒体优化 | 1x
@@ -2992,7 +3074,7 @@ proxies:
   servername: jp08.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f7f27c5d-cc5d-4e29-b7fa-6cb3e0d2c19f
+  uuid: 0f9816a0-bee2-4c34-abbd-4744ed583223
 - alterId: 0
   cipher: auto
   name: 600|🇯🇵日本 | 109 | 负载优化 | 1x
@@ -3002,7 +3084,7 @@ proxies:
   servername: jp09.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f7f27c5d-cc5d-4e29-b7fa-6cb3e0d2c19f
+  uuid: 0f9816a0-bee2-4c34-abbd-4744ed583223
 - cipher: aes-256-cfb
   name: 601|TG频道@mfbpn-日本2
   obfs: tls1.2_ticket_auth
@@ -3255,6 +3337,45 @@ proxies:
     headers:
       Host: fullaccesstojapannetsubnode1.azurewebsites.net
     path: /ws
+- alterId: 0
+  cipher: auto
+  name: 644|🇯🇵 日本 - 2
+  network: ws
+  port: '80'
+  server: jp02.theodoralindsay.shop
+  tls: false
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 644|🇯🇵 日本 - 3
+  network: ws
+  port: '80'
+  server: jp03.theodoralindsay.shop
+  tls: false
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-opts:
+    headers:
+      Host: jp03.theodoralindsay.shop
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 644|🇯🇵 日本 - 4
+  network: ws
+  port: '80'
+  server: jp04.theodoralindsay.shop
+  tls: false
+  type: vmess
+  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
+  ws-opts:
+    headers:
+      Host: jp04.theodoralindsay.shop
+    path: /
 - alterId: 0
   cipher: auto
   name: 682|🇯🇵日本高速接入点-01
@@ -3669,8 +3790,8 @@ proxies:
   cipher: auto
   name: 781|[vmess]🇯🇵Japan
   network: ws
-  port: '2053'
-  server: 47.243.74.220
+  port: '2087'
+  server: 8.210.175.109
   servername: jp.pddf.buzz
   tls: true
   type: vmess
@@ -3822,6 +3943,32 @@ proxies:
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
 - alterId: 0
   cipher: auto
+  name: 795|JP-日本 | CDN | 翻墙0.5×
+  network: ws
+  port: '2052'
+  server: 104.19.76.230
+  tls: false
+  type: vmess
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
+  ws-opts:
+    headers:
+      Host: jpcdn.vbdf.lol
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 795|JP-日本 01 | ws 80 | 免流 1x
+  network: ws
+  port: '80'
+  server: 151.248.68.5
+  tls: false
+  type: vmess
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 798|🇯🇵日本01| ✨全流媒体
   network: ws
   port: '42001'
@@ -3885,6 +4032,62 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- cipher: aes-128-gcm
+  name: '814|🇯🇵 日本 01 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20841
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '814|🇯🇵 日本 02 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20842
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '814|🇯🇵 日本 03 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20843
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 814|🇯🇵 日本 04
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20844
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 814|🇯🇵 日本 05
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20845
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 814|🇯🇵 日本 06
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20846
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 814|🇯🇵 日本 07
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20847
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 814|🇯🇵 日本 08
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20848
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 818|🇯🇵日本S丨电报群@bp520
