@@ -171,17 +171,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 130,211,376,549,637|香港_0516008
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 130,204,211,549,637|香港_0516008
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
+  udp: false
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -189,7 +189,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 130,205,211,429,447,536,582,590,637|香港_0516007
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 130,204,205,211,429,447,536,582,590,637|香港_0516007
   network: ws
   port: '28681'
   server: 47.242.22.171
@@ -197,6 +199,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: false
   uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
   ws-opts:
     headers:
@@ -217,15 +220,12 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
   country: US
-  name: 131,602|US85
+  name: 131|netflix_HK
   password: iUB0923RBA
   port: 30067
   server: 154.3.8.151
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: rc4-md5
   name: '133,134|🇭🇰 IPLC｜冀港 [2.0][原生] #1'
@@ -1296,7 +1296,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '211,603|HK5 #2'
+  name: '211,603|HK9 #1'
   network: ws
   port: '443'
   server: n1709457297.aaigefm.cn
@@ -2697,7 +2697,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '477,602|HK9 #1'
+  name: 477|baipaovpn香港 4
   network: ws
   port: 12909
   server: 210.3.159.224
@@ -3130,7 +3130,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '509,616|美国 CloudFlare节点 #74'
+  name: '509,616|美国 CloudFlare节点 #64'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4278,7 +4278,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 742151b8-c08a-4d86-8658-81ef6a56cb83
+  uuid: 6c0b26cd-7174-43ff-bae1-123bc55c93f8
 - alterId: 0
   cipher: auto
   name: 600|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4288,7 +4288,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 742151b8-c08a-4d86-8658-81ef6a56cb83
+  uuid: 6c0b26cd-7174-43ff-bae1-123bc55c93f8
 - alterId: 0
   cipher: auto
   name: 600|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4298,7 +4298,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 742151b8-c08a-4d86-8658-81ef6a56cb83
+  uuid: 6c0b26cd-7174-43ff-bae1-123bc55c93f8
 - cipher: aes-256-cfb
   name: 601|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4409,50 +4409,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
-- alterId: 0
-  cipher: auto
-  name: 602|HK 2.4MB/s
-  network: tcp
-  password: 918eba0d3ff04abc803fb00e18d0fcb5
-  port: 443
-  server: 202.64.1.143
-  skip-cert-verify: true
-  sni: www.gpt123.one
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 602|HK4
-  password: a-wym4ovY4Yw
-  port: 443
-  server: 8.218.71.80
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '602|HK5 #1'
-  network: ws
-  port: 443
-  server: n1709457297.aaigefm.cn
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4cbaa418-9762-41d4-b144-835922d2deba
-  ws-opts:
-    headers:
-      host: n1709457297.aaigefm.cn
-    path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 602|HK12
-  password: 7KfcNGkeJDjYIy5kYL7Wak
-  port: 16006
-  server: 46.226.164.2
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 64
   cipher: auto
   name: '615,616|香港1|@ripaojiedian #1'
@@ -4595,19 +4551,6 @@ proxies:
     headers:
       Host: a.189.cn
     path: /zh-cn/download
-- alterId: 0
-  cipher: auto
-  name: 644|🇭🇰 香港 - 1
-  network: ws
-  port: '80'
-  server: hk01.theodoralindsay.shop
-  tls: false
-  type: vmess
-  uuid: b39a02bc-dec0-4964-b861-d89ffe42558a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 682|🇭🇰香港高速接入点-01
@@ -4950,8 +4893,8 @@ proxies:
   cipher: auto
   name: 781|[vmess]🇭🇰Hong Kong
   network: ws
-  port: '2053'
-  server: 8.217.232.246
+  port: '2096'
+  server: 8.217.121.207
   servername: hkt.pddf.buzz
   tls: true
   type: vmess
