@@ -987,15 +987,13 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 318,319,324,402,403,434,452,534,535,550|10|🇨🇳_CN_中国->🇱🇺_LU_卢森堡_由快嘴科技提供...
+  name: 318,319,324,534,535,550|10|🇨🇳_CN_中国->🇱🇺_LU_卢森堡_由快嘴科技提供...
   network: ws
   port: 16627
   server: 183.240.220.84
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts:
     headers:
@@ -1035,7 +1033,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 377,378,384|Relay_-CN_01
+  name: 378,384|Relay_-CN_01
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1060,22 +1058,22 @@ proxies:
   name: 378|Relay_🇨🇳CN-🇨🇳CN_09
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
-  password: dajkdkjd2a&dj23gsa
-  port: 37866
+  password: dajkdkjda&dj23gsa
+  port: 2212
   protocol: auth_aes128_md5
   protocol-param: 11275:KWQHheqWo8
-  server: 231103levelx.unclemanco.com
+  server: 231103.level3.sdl-sz.com
   type: ssr
 - cipher: aes-256-cfb
   country: 🇨🇳CN
   name: 378|Relay_🇨🇳CN-🇨🇳CN_10
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
-  password: dajkdkjda&dj23gsa
-  port: 2212
+  password: dajkdkjd2a&dj23gsa
+  port: 37866
   protocol: auth_aes128_md5
   protocol-param: 11275:KWQHheqWo8
-  server: 231103.level3.sdl-sz.com
+  server: 231103levelx.unclemanco.com
   type: ssr
 - alterId: 0
   cipher: auto
@@ -1261,6 +1259,64 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '402,403,434,452,592,593,635,729,743,798|中国【付费推荐：https://jdyvip.link/】3 #2'
+  network: ws
+  port: '20206'
+  server: data-hk-v1.usabooks.com.cn
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.usabooks.com.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: '402,403,434,452,457,534,535|🇨🇳 广东省 移动 #9'
+  network: ws
+  port: '20207'
+  server: 120.233.42.83
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.shwjfkw.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: 403,434,452,533,534,535,550,558|台湾|@ripaojiedian
+  network: tcp
+  port: '34998'
+  server: 879xhl1.hsspr5bu1-tw02.my777999.top
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dffc697a-2535-470c-bb6a-8157b6c157a7
+  ws-headers:
+    Host: 879xhl1.hsspr5bu1-tw02.my777999.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '403,434,452,550,558,593|广东省广州市 移动 #3'
+  network: tcp
+  port: '8443'
+  server: 120.232.240.38
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
 - alterId: 4
   cipher: auto
   name: '404,462|未命名 #189'
@@ -4774,6 +4830,18 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
+  name: 456,533,603|🇨🇳
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 456,533,603|🇨🇳3
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
@@ -4783,20 +4851,6 @@ proxies:
   tls: true
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '457,534,535|🇨🇳 广东省 移动 #9'
-  network: ws
-  port: '20207'
-  server: 120.233.42.83
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v1.shwjfkw.cn
-    path: /debian
 - cipher: aes-128-gcm
   name: 466|github.com/freefq-广东省移动28
   password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmNjY1YzVkMC03N2MwLTQxOTYtYmM4ZC1mMDQ1MGU5YzY2NWI
@@ -5549,20 +5603,6 @@ proxies:
   ws-path: /niuniu
 - alterId: 0
   cipher: auto
-  name: 533,534,535,550,558|台湾|@ripaojiedian
-  network: tcp
-  port: '34998'
-  server: 879xhl1.hsspr5bu1-tw02.my777999.top
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: dffc697a-2535-470c-bb6a-8157b6c157a7
-  ws-headers:
-    Host: 879xhl1.hsspr5bu1-tw02.my777999.top
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 533|🇳CN-120.233.42.83-164
   network: ws
   port: 20207
@@ -5847,23 +5887,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '592,593,635,729,743,798|中国【付费推荐：https://jdyvip.link/】3 #2'
-  network: ws
-  port: '20206'
-  server: data-hk-v1.usabooks.com.cn
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v1.usabooks.com.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
   name: '593,729,743,798|中国【付费推荐：https://jdyvip.link/】8 #2'
   network: tcp
   port: '21006'
@@ -5884,7 +5907,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 64
   cipher: auto
-  name: '593|广东省广州市 移动 #3'
+  name: '593|广东省广州市 移动 #4'
   network: tcp
   port: '41492'
   server: 120.232.242.117
