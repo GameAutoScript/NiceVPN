@@ -1,18 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|香港|广州移动|Neko|1.5x
-  network: tcp
-  port: 13337
-  server: gdcm.r1u.cn
-  tls: false
-  type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: '15,206,212,396,397,405,406,432,433,437,455,459,553,560,561,607,807|🇭🇰 香港1|
-    cf #1'
+  name: '15,206,396,397,432,433,459,553,560,561,607,807|🇭🇰 香港1| cf #1'
   network: ws
   port: '2052'
   server: hk.wish.ml
@@ -190,14 +180,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 130,212,641|香港_0516008
+  name: 130,405,406,437,455,641|香港_0516008
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -205,14 +196,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 130,212,451,540,586,594,641|香港_0516007
+  name: 130,436,451,540,586,594,641|香港_0516007
   network: ws
   port: '28681'
   server: 47.242.22.171
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
   ws-opts:
     headers:
@@ -1314,61 +1306,6 @@ proxies:
     headers:
       host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: '212,537,538|🇭🇰 香港(欢迎订阅Youtube破解资源君) #2'
-  network: ws
-  port: '2701'
-  server: hk2701.cloudmatrix.xyz
-  tls: false
-  type: vmess
-  uuid: a992be42-bed4-3037-8788-9e860cd635d3
-  ws-opts:
-    headers:
-      Host: hk2701.cloudmatrix.xyz
-    path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: '212,594,607|HK5 #2'
-  network: ws
-  port: '12909'
-  server: 210.3.159.224
-  servername: 19.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '212,607|HK #2'
-  network: ws
-  port: '443'
-  server: n1709457297.aaigefm.cn
-  servername: n1709457297.aaigefm.cn
-  tls: true
-  type: vmess
-  uuid: 4cbaa418-9762-41d4-b144-835922d2deba
-  ws-opts:
-    headers:
-      Host: n1709457297.aaigefm.cn
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '212,451|Hong Kong #2'
-  network: ws
-  port: 26639
-  server: 91.149.236.44
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
-  ws-opts:
-    headers:
-      Host: ''
-    path: /cctv13/hd.m3u8/
 - cipher: chacha20-ietf-poly1305
   name: 225|[🇭🇰]a4a09ce.h1.glados-config.n...
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -1677,8 +1614,8 @@ proxies:
     path: /
   ws-path: /
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 385,419,612|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 381,419,612|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -1687,19 +1624,6 @@ proxies:
   protocol-param: ''
   server: 150.107.46.21
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 385|🇭🇰HK_111
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: '392|🇨🇳中国【YouTube-由零開始】 #7'
@@ -2059,6 +1983,107 @@ proxies:
     headers:
       Host: internet.life.com.by
     path: /
+- cipher: aes-128-gcm
+  name: 436|🇭🇰 HK 1 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.223.223
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 436|🇭🇰 HK 11 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: 182.16.1.194
+    path: /opt/video/images
+- cipher: aes-128-gcm
+  name: 436|🇭🇰 HK 3 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.139.54
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 436|🇭🇰 HK 4 → tg@nicevpn123
+  network: ws
+  port: 55576
+  server: 202.81.231.30
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
+  ws-opts:
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 436,451,620|🇭🇰HK-182.16.1.194-8978
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: 436|🇭🇰 HK 6 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: 451,540|RU_分享日记_17
+  network: ws
+  port: 443
+  server: hk-full.privateip.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: f2c48b2f-c581-4d7d-846e-8bd97d93bd65
+  ws-opts:
+    headers:
+      Host: ''
+    path: /RACEVPN
 - alterId: 0
   cipher: auto
   name: 452|🇭🇰_HK_香港_2@54
@@ -2549,7 +2574,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 459|🇭🇰 香港 环球全域电讯
+  name: '459|🇭🇰 香港 环球全域电讯 #2'
   network: ws
   port: 12909
   server: 210.3.159.224
@@ -2715,7 +2740,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '481,606|HK5 #1'
+  name: 481,606|HK4
   network: ws
   port: 12909
   server: 210.3.159.224
@@ -3135,20 +3160,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: 513,620|TG频道:@hkaa0▓美国_3
-  network: ws
-  port: 8080
-  server: www.velvetmountain.shop
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.velvetmountain.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '513,620|美国 CloudFlare节点 #99'
+  name: '513,620|美国 CloudFlare节点 #85'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -3651,6 +3663,19 @@ proxies:
   ws-headers:
     Host: 43.154.109.219
   ws-path: /
+- alterId: 2
+  cipher: auto
+  name: '537,538|🇭🇰 香港(欢迎订阅Youtube破解资源君) #1'
+  network: ws
+  port: '2701'
+  server: hk2701.cloudmatrix.xyz
+  tls: false
+  type: vmess
+  uuid: a992be42-bed4-3037-8788-9e860cd635d3
+  ws-opts:
+    headers:
+      Host: hk2701.cloudmatrix.xyz
+    path: /hls/cctv5phd.m3u8
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 545|🇭🇰 ~ZF~HKˣ⁰˙¹
@@ -3729,30 +3754,6 @@ proxies:
   password: d20ef6d0-1339-3970-9194-9726b5ee6224
   port: 50001
   server: iepl1.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 545|🇭🇰 HK 03
-  password: 1c00f6d6-d25b-43c2-b997-6a6a3c045fa8
-  port: 22261
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 545|🇭🇰 HK 04
-  password: 8c9af44c-7206-4bfc-b18b-699640a28625
-  port: 22261
-  server: 04.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 545|🇭🇰 HK 05
-  password: 3368714c-df00-4cc0-816a-a0f8715326b4
-  port: 61007
-  server: 1.forlive.live
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -4305,16 +4306,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '553,561,596|广东省广州市 移动 #2'
-  network: tcp
-  port: '8443'
-  server: 120.232.240.38
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
   name: 553,560,561|香港9|@ripaojiedian
   network: ws
@@ -4332,6 +4323,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '594,607|HK4 #1'
+  network: ws
+  port: '12909'
+  server: 210.3.159.224
+  servername: 19.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
   name: 604|🇭🇰香港 | 101 | 负载优化 | 1x
   network: tcp
   port: '30701'
@@ -4339,7 +4344,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 656eff64-40b9-4053-ade0-828a9d9ad40c
+  uuid: f89a619f-bbad-424b-a656-b840e2884134
 - alterId: 0
   cipher: auto
   name: 604|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4349,7 +4354,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 656eff64-40b9-4053-ade0-828a9d9ad40c
+  uuid: f89a619f-bbad-424b-a656-b840e2884134
 - alterId: 0
   cipher: auto
   name: 604|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4359,7 +4364,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 656eff64-40b9-4053-ade0-828a9d9ad40c
+  uuid: f89a619f-bbad-424b-a656-b840e2884134
 - cipher: aes-256-cfb
   name: 605|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4471,31 +4476,8 @@ proxies:
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
-  cipher: auto
-  name: '606|HK #1'
-  network: ws
-  port: 443
-  server: n1709457297.aaigefm.cn
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4cbaa418-9762-41d4-b144-835922d2deba
-  ws-opts:
-    headers:
-      host: n1709457297.aaigefm.cn
-    path: /
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 606|HK2
-  password: a-wym4ovY4Yw
-  port: 443
-  server: 8.218.71.80
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 606|HK11 691.2KB/s
+  name: 606|HK7
   password: 2155145a-b1b5-443a-8977-670f6bd10f02
   port: 50001
   server: 18.167.68.164
@@ -4503,11 +4485,11 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 606|HK13 673.2KB/s
-  password: GbOH8XxdcQfKePP8gFvD2x
-  port: 16006
-  server: 46.226.164.2
+  cipher: aes-128-gcm
+  name: 606|HK10
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 8.218.71.80
   skip-cert-verify: true
   tls: true
   type: ss
@@ -4521,20 +4503,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 620|🇭🇰HK-47.76.35.246-0787
-  network: ws
-  port: 24101
-  server: 47.76.35.246
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 64
   cipher: auto
   name: '620|香港|@ripaojiedian #2'
@@ -4643,8 +4611,8 @@ proxies:
   cipher: auto
   name: '665,786|[vmess]🇭🇰Hong Kong #1'
   network: ws
-  port: '2096'
-  server: 8.210.156.6
+  port: '2087'
+  server: 8.218.53.110
   servername: hkt.pddf.buzz
   tls: true
   type: vmess
@@ -5135,45 +5103,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- alterId: 0
-  cipher: auto
-  name: 800|HK-香港 | CDN | 翻墙0.5×
-  network: ws
-  port: '2086'
-  server: 104.19.32.226
-  tls: false
-  type: vmess
-  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
-  ws-opts:
-    headers:
-      Host: hkcdn.vbdf.lol
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: 800|HK-香港 01 | 游戏节点 | 免流10x
-  network: ws
-  port: '80'
-  server: xgone.vbdf.lol
-  tls: false
-  type: vmess
-  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 800|HK-香港 03 | cn2直连 | 免流 1x
-  network: ws
-  port: '26489'
-  server: hdftcfgghjtw.vbdf.lol
-  tls: false
-  type: vmess
-  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 803|🇭🇰香港下载10G专线
