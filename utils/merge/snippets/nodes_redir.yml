@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,3,130,213,507,540,541,644|美国_0518060
+  name: '0,3,130,207,213,323,324,326,327,436,507,540,541,644,646|美国_0518050 #1'
   network: ws
   port: '80'
   server: 172.67.166.192
@@ -17,7 +17,8 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,15,130,213,323,507,540,541,556,563,564,644,810|🇮🇳 印度1|cf #1'
+  name: '0,3,15,130,213,323,324,326,327,507,540,541,556,563,564,644,646,810|🇮🇳 印度1|cf
+    #1'
   network: ws
   port: '2052'
   server: hk.wish.ml
@@ -33,10 +34,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,490,566|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #3'
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,383,490,566|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #3'
   network: ws
   port: 80
   server: 172.67.166.192
+  servername: ua1-vmess.sshmax.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
