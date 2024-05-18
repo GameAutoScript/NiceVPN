@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,130,207,213,324,325,327,328,400,401,434,436,437,508,541,542,631,639,645,647|美国_0518050
+  name: '0,3,130,207,213,323,324,325,327,328,400,401,434,436,437,508,541,542,631,639,645,647|美国_0518050
     #1'
   network: ws
   port: '80'
@@ -18,7 +18,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,15,130,213,324,325,327,328,423,508,541,542,557,564,565,645,647,812|🇮🇳
+  name: '0,3,15,130,213,323,324,325,327,328,423,508,541,542,557,564,565,645,647,812|🇮🇳
     印度1|cf #1'
   network: ws
   port: '2052'
@@ -35,13 +35,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,491,567|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #3'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '1,2,206,491,567|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #3'
   network: ws
   port: 80
   server: 172.67.166.192
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: cd1db809-2de0-409c-aef5-861e95eff53e
   ws-opts:
     headers:
@@ -57,13 +60,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,2,491,566,567,610|US214 128.0KB/s #1'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '1,2,206,491,566,567,610|US214 128.0KB/s #1'
   network: ws
   port: 2052
   server: hk.wish.ml
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: false
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
     headers:
@@ -3668,6 +3674,48 @@ proxies:
     headers:
       Host: sgf01.wumiyun.top
     path: /cctv5/hd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 566|🇺🇸_US_美国->🇩🇪_DE_德国_1
+  network: ws
+  port: 2052
+  server: 104.18.19.191
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  ws-opts:
+    headers:
+      host: helanv6cf.inekokkk.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  network: ws
+  port: 2052
+  server: 104.18.36.119
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  ws-opts:
+    headers:
+      host: helanv6cf.inekokkk.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇺🇸_US_美国->🇩🇪_DE_德国_3
+  network: ws
+  port: 2052
+  server: 104.19.250.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  ws-opts:
+    headers:
+      host: helanv6cf.inekokkk.top
+    path: /
 - alterId: 0
   cipher: auto
   country: mattkaydiary.com|中国香港/中国台湾(CN)China/Shenzhen/小东的程序未能精准识别(可能是中转节点)_3
