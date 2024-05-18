@@ -1,10 +1,19 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|日本|徐州移动|纸盒|1x
+  network: tcp
+  port: '26179'
+  server: jscm.r1u.cn
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 17,204,267,384,385,391,414,422,424,512,529,628,645|日本_0518002
+  name: 17,204,267,384,414,422,424,512,529,628,645|日本_0518002
   network: tcp
   port: '1069'
   server: 152.69.197.60
@@ -13,19 +22,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' JP'
-  h2-opts: {}
-  http-opts: {}
-  name: 17| JP_06
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -43,15 +39,17 @@ proxies:
 - alterId: 1
   cipher: auto
   client-fingerprint: chrome
-  country: 🇸US
+  country: 🇺🇸US
   grpc-opts:
     grpc-service-name: 1654431
-  name: '44,130,133,134,182,206,226,354,357,384,398,402,403,407,409,456,463,468,473,478,480,483,485,487,496,517,540,545,546,549,550,555,559,564,599,610,616,643,760|🇯🇵
+  h2-opts: {}
+  http-opts: {}
+  name: '44,130,133,134,206,226,354,357,384,390,398,402,403,407,409,456,463,468,473,478,480,483,485,487,496,517,540,545,546,549,550,555,559,564,599,610,616,643,760|🇯🇵
     免费-日本6-Ver.7 #1'
   network: grpc
   password: bbab60b8-779f-31e2-916e-571f7d7023c4
   port: 28785
-  server: g6o3l-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  server: bpysh-g03.jp06-7c5a-vm0.entry.fr0307a.art
   servername: 45.144.2.113
   skip-cert-verify: false
   sni: jd5.zahuopu.top
@@ -267,8 +265,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: aes-128-gcm
-  country: 🇺🇸US
-  name: 130,384,610|未知226 3.9MB/s
+  country: 🇺US
+  name: 130,384,390,610|未知226 3.9MB/s
   password: shadowsocks
   port: 443
   server: 154.47.20.240
@@ -759,7 +757,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 204,213,226,455,456,529,544,590,598,624|🇯🇵JP-152.69.197.74-3356
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 204,213,226,390,455,456,529,544,590,598,624|🇯🇵JP-152.69.197.74-3356
   network: ws
   port: 12345
   server: 152.69.197.74
@@ -784,7 +785,10 @@ proxies:
   uuid: 323d8b87-345d-4065-b7df-2af764d2d1df
 - alterId: 64
   cipher: auto
-  name: 204,455,458,529,544|🇯🇵_电报https://t.me/chykj_83
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 204,390,455,458,529,544|🇯🇵_电报https://t.me/chykj_83
   network: tcp
   port: 24445
   server: 140.83.63.38
@@ -798,22 +802,9 @@ proxies:
   port: 989
   server: 103.75.118.27
   type: ss
-- alterId: 64
-  cipher: auto
-  name: '213,541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #11'
-  network: ws
-  port: '443'
-  server: 43.154.109.219
-  tls: false
-  type: vmess
-  uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 2
   cipher: auto
-  name: '213,541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #10'
+  name: '213,541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #12'
   network: ws
   port: '443'
   server: 428sg2.fans8.xyz
@@ -824,19 +815,80 @@ proxies:
     headers:
       Host: 428sg2.fans8.xyz
     path: /ray
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: '213|🇺🇸 美国(欢迎订阅Youtube破解资源君) #3'
+  name: '213,541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #13'
   network: ws
-  port: '80'
-  server: 35.77.43.9
+  port: '443'
+  server: 43.154.109.219
   tls: false
   type: vmess
-  uuid: bda51582-46f7-410c-b267-30b7f3681ac0
+  uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb
   ws-opts:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '213,541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #14'
+  network: ws
+  port: '19255'
+  server: jp.dfnode.top
+  tls: false
+  type: vmess
+  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /v2ray
+- alterId: 2
+  cipher: auto
+  name: '213,541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #15'
+  network: ws
+  port: '15414'
+  server: jpaz5.xmrth-node.xyz
+  tls: false
+  type: vmess
+  uuid: 6f0349b2-7484-3b32-98a5-04f3a857dde0
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /index
+- alterId: 0
+  cipher: auto
+  name: '213,541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #16'
+  network: ws
+  port: '19307'
+  server: jpcu.dfnode.top
+  tls: false
+  type: vmess
+  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: '213,541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #17'
+  network: ws
+  port: '19304'
+  server: jpcu.dfnode.top
+  tls: false
+  type: vmess
+  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: '213,598|🔒 VM-TCP-NA 🇯🇵 JP-13.113.199.1... #1'
+  network: tcp
+  port: 11773
+  server: 13.113.199.156
+  tls: false
+  type: vmess
+  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
 - alterId: 0
   cipher: auto
   name: '213,590,598,610,611|未知98 1.3MB/s #2'
@@ -852,15 +904,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '213,598|🔒 VM-TCP-NA 🇯🇵 JP-13.113.199.1... #1'
-  network: tcp
-  port: 11773
-  server: 13.113.199.156
-  tls: false
-  type: vmess
-  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1136,7 +1179,7 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 384|Relay_🏁ZZ-🇵JP_144 |10.78Mb
+  name: 384|Relay_🏁ZZ-🇵JP_146 |10.78Mb
   network: ws
   port: 80
   server: 104.16.45.164
@@ -1148,6 +1191,24 @@ proxies:
     headers:
       HOST: jp.xlb8.eu.org
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 390,458,645|日本_0518006
+  network: ws
+  port: '41597'
+  server: 183.181.36.194
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 408,545|0.55|JPhttpsawkjcfky 注册体验流媒体机场...
@@ -2758,86 +2819,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #12'
-  network: ws
-  port: '19255'
-  server: jp.dfnode.top
-  tls: false
-  type: vmess
-  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /v2ray
-- alterId: 2
-  cipher: auto
-  name: '541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #13'
-  network: ws
-  port: '15414'
-  server: jpaz5.xmrth-node.xyz
-  tls: false
-  type: vmess
-  uuid: 6f0349b2-7484-3b32-98a5-04f3a857dde0
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: '541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #14'
-  network: ws
-  port: '19307'
-  server: jpcu.dfnode.top
-  tls: false
-  type: vmess
-  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: '541,542|🇯🇵 日本(欢迎订阅Youtube破解资源君) #15'
-  network: ws
-  port: '19304'
-  server: jpcu.dfnode.top
-  tls: false
-  type: vmess
-  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 544|JP_分享日记_2
-  network: ws
-  port: 57557
-  server: jp-tokyo-oracle-5a26da.ip1.shop
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /rongseven?ed=2048
-- alterId: 64
-  cipher: auto
-  name: 544|GB_分享日记_16
-  network: ws
-  port: 30000
-  server: 51.89.2.48
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9f58234c-355b-4065-ae21-d4a63099aba5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/203113182529
-- alterId: 0
-  cipher: auto
   name: 544|🇯🇵JP-183.181.36.194-0388
   network: ws
   port: 41597
@@ -2863,7 +2844,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 8844e718-8779-42d3-9d99-8ff794c2ed7d
+  uuid: dff737ac-0758-4cc1-8a75-8dd3c0f7f223
 - alterId: 0
   cipher: auto
   name: 547|【BGP】日本 05  | 1x JP
@@ -2873,7 +2854,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 8844e718-8779-42d3-9d99-8ff794c2ed7d
+  uuid: dff737ac-0758-4cc1-8a75-8dd3c0f7f223
 - alterId: 0
   cipher: auto
   name: 547|【BGP】日本 06  | 1x JP
@@ -2883,7 +2864,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 8844e718-8779-42d3-9d99-8ff794c2ed7d
+  uuid: dff737ac-0758-4cc1-8a75-8dd3c0f7f223
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -3268,7 +3249,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: bc48ee8c-fe1b-4580-9634-2858b4056694
+  uuid: f2fd2f24-d175-482a-a535-d6af2de64628
 - alterId: 0
   cipher: auto
   name: 608|🇯🇵日本 | 108 | 流媒体优化 | 1x
@@ -3278,7 +3259,7 @@ proxies:
   servername: jp08.tomoony.xyz
   tls: true
   type: vmess
-  uuid: bc48ee8c-fe1b-4580-9634-2858b4056694
+  uuid: f2fd2f24-d175-482a-a535-d6af2de64628
 - alterId: 0
   cipher: auto
   name: 608|🇯🇵日本 | 109 | 负载优化 | 1x
@@ -3288,7 +3269,7 @@ proxies:
   servername: jp09.tomoony.xyz
   tls: true
   type: vmess
-  uuid: bc48ee8c-fe1b-4580-9634-2858b4056694
+  uuid: f2fd2f24-d175-482a-a535-d6af2de64628
 - cipher: aes-256-cfb
   name: 609|TG频道@mfbpn-日本2
   obfs: tls1.2_ticket_auth
@@ -3545,8 +3526,8 @@ proxies:
   cipher: auto
   name: '669,791|[vmess]🇯🇵Japan #1'
   network: ws
-  port: '2087'
-  server: 8.218.3.12
+  port: '2083'
+  server: 47.76.204.76
   servername: jp.pddf.buzz
   tls: true
   type: vmess
