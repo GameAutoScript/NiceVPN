@@ -1049,7 +1049,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 389,396|Relay_-CN_02
+  name: '389,390,396|Relay_-CN_03 #1'
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1057,6 +1057,39 @@ proxies:
   protocol: auth_aes128_md5
   protocol-param: 105622:5EF7C3661EBC
   server: video23.cdn.globalnetworktraffic.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: 🇨CN
+  name: 390|Relay_🇨🇳CN-🇨🇳CN_08
+  obfs: http_simple
+  obfs-param: d300c11275.microsoft.com
+  password: dajkdkjda&dj23gsa
+  port: 19970
+  protocol: auth_aes128_md5
+  protocol-param: 11275:KWQHheqWo8
+  server: 231103.level3.sdl-sz.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: 🇨🇳CN
+  name: 390|Relay_🇨🇳CN-🇨🇳CN_09
+  obfs: http_simple
+  obfs-param: d300c11275.microsoft.com
+  password: dajkdkjd2a&dj23gsa
+  port: 37866
+  protocol: auth_aes128_md5
+  protocol-param: 11275:KWQHheqWo8
+  server: 231103levelx.unclemanco.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: 🇨🇳CN
+  name: 390|Relay_🇨🇳CN-🇨🇳CN_10
+  obfs: http_simple
+  obfs-param: d300c11275.microsoft.com
+  password: dajkdkjda&dj23gsa
+  port: 2212
+  protocol: auth_aes128_md5
+  protocol-param: 11275:KWQHheqWo8
+  server: 231103.level3.sdl-sz.com
   type: ssr
 - alterId: 0
   cipher: auto
@@ -1243,15 +1276,33 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 414,615|未知447
-  password: 99301d55-a41f-4919-986b-1435996533aa
-  port: 20003
-  server: 120.238.122.208
+  cipher: auto
+  name: '415,446,464,545,546,547,605|广东省佛山市 移动 #11'
+  network: tcp
+  port: '61001'
+  server: 183.232.199.61
+  servername: ''
   skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.232.199.61
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '415,446,464,545,546,547,605,743,757,812|中国【付费推荐：https://jdyvip.link/】3 #2'
+  network: tcp
+  port: '51707'
+  server: 183.236.51.59
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.59
+  ws-path: /
 - alterId: 4
   cipher: auto
   name: '416,474|未命名 #193'
@@ -4764,7 +4815,7 @@ proxies:
     path: /shirker
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 468,545|🇨🇳CN-120.238.122.159-133
+  name: 468,545|🇨🇳CN-120.238.122.159-181
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
@@ -4773,7 +4824,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 468,545|🇨🇳CN-120.238.122.159-136
+  name: 468,545|🇨🇳CN-120.238.122.160-184
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
@@ -5472,7 +5523,13 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-128-gcm
-  name: 545|🇨🇳CN-163.177.158.215-021
+  name: 545|🇨🇳CN-163.177.158.215-019
+  password: bzUdYJ4JzjGfIwhG
+  port: 26220
+  server: 163.177.158.215
+  type: ss
+- cipher: aes-128-gcm
+  name: 545|🇨🇳CN-163.177.158.215-020
   password: bzUdYJ4JzjGfIwhG
   port: 26230
   server: 163.177.158.215
@@ -5486,95 +5543,28 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 545,615|未知292
+- cipher: aes-128-gcm
+  name: 545|🇳CN-120.233.10.230-029
   password: b6040656-96c5-4748-a73c-5a8f15ed7531
-  port: 50200
+  port: 50700
   server: 120.233.10.230
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-128-gcm
-  name: 545|🇨🇳CN-163.177.158.215-025
-  password: bzUdYJ4JzjGfIwhG
-  port: 26220
-  server: 163.177.158.215
-  type: ss
-- cipher: aes-128-gcm
-  name: 545|🇨🇳CN-163.177.158.215-027
-  password: bzUdYJ4JzjGfIwhG
-  port: 26250
-  server: 163.177.158.215
   type: ss
 - alterId: 0
   cipher: auto
-  name: 545|🇨🇳CN-218.204.179.82-051
+  name: 545|🇨🇳CN-125.94.37.119-035
   network: ws
-  port: 19254
-  server: hkcm.dfnode.top
+  port: 2000
+  server: 125.94.37.119
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
+  uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf
   ws-headers:
-    Host: download.windowsupdate.com
-  ws-path: /v2ray
+    Host: 125.94.37.119
+  ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 545|🇨🇳CN-120.233.42.202-060
-  network: ws
-  port: 19307
-  server: jpcu.dfnode.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
-  ws-headers:
-    Host: download.windowsupdate.com
-  ws-path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 545|🇳CN-120.233.42.202-061
-  network: ws
-  port: 19304
-  server: jpcu.dfnode.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
-  ws-headers:
-    Host: download.windowsupdate.com
-  ws-path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 545|🇨🇳CN-218.204.179.82-067
-  network: ws
-  port: 19300
-  server: hkcm.dfnode.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
-  ws-headers:
-    Host: download.windowsupdate.com
-  ws-path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 545|🇳CN-120.233.42.202-068
-  network: ws
-  port: 19254
-  server: hkcu.dfnode.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: dc8b6a8b-af76-3294-93e4-634d6e1b24a7
-  ws-headers:
-    Host: download.windowsupdate.com
-  ws-path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 545|🇨🇳CN-120.233.42.83-132
+  name: 545|🇨CN-120.233.42.83-180
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -5586,14 +5576,14 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 545|🇳CN-117.149.247.11-092
+  name: 545|🇳CN-117.149.247.11-091
   password: 8e949d75-3510-4678-8593-3c5032dd931a
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
 - alterId: 0
   cipher: auto
-  name: 545|🇨🇳CN-122.191.111.85-097
+  name: 545|🇨🇳CN-120.233.42.83-101
   network: ws
   port: 20301
   server: data-jp-v1.usabooks.com.cn
@@ -5827,6 +5817,20 @@ proxies:
   ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7
 - alterId: 0
   cipher: auto
+  name: 562|9|baipaovpn广东省深圳市
+  network: ws
+  port: '16632'
+  server: 183.232.142.46
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 571|CN_youtube@资源分享师_15
   network: ws
   port: 16627
@@ -5879,7 +5883,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '605|广东省广州市 移动 #3'
+  name: '605|广东省广州市 移动 #4'
   network: tcp
   port: '41492'
   server: 120.232.242.117
@@ -5887,26 +5891,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '605,743,757,812|中国【付费推荐：https://jdyvip.link/】3 #2'
-  network: tcp
-  port: '51707'
-  server: 183.236.51.59
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '605|广东省佛山市 移动 #8'
-  network: tcp
-  port: '61001'
-  server: 183.232.199.61
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 647|CN_speednode_0002
@@ -6195,3 +6179,55 @@ proxies:
     headers:
       Host: backcn.rmanluo.top
     path: /hello
+- alterId: 0
+  cipher: auto
+  name: 811|CN-内蒙 01 | ws 4G  | 免流1x
+  network: ws
+  port: '80'
+  server: sddfs.mianliuyun.asia
+  tls: false
+  type: vmess
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 811|CN-内蒙 02 | ws 4G  | 免流1x
+  network: ws
+  port: '443'
+  server: sdgu.mianliuyun.asia
+  tls: false
+  type: vmess
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 811|CN-江苏BGP 01 | ws 5G | 免流1x
+  network: ws
+  port: '15759'
+  server: ygjg.dfsags.asia
+  tls: false
+  type: vmess
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 811|CN-江苏BGP 02 | ws 5G | 免流1x
+  network: ws
+  port: '15755'
+  server: fhyf.dfsags.asia
+  tls: false
+  type: vmess
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
