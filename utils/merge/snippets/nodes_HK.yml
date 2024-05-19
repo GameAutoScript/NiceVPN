@@ -210,14 +210,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 133,216,649|香港_0518008
+  name: 133,216,413,414,445,463,468,649|香港_0518008
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -1358,6 +1359,19 @@ proxies:
     headers:
       Host: hk10-vm5.entry.ikuuu.casa
     path: /hls/cctv5phd.m3u8
+- alterId: 1
+  cipher: auto
+  name: '216,545,546|🇭🇰 香港(欢迎订阅Youtube破解资源君) #18'
+  network: ws
+  port: '459'
+  server: hk11-vm5.entry.ikuuu.casa
+  tls: false
+  type: vmess
+  uuid: b3bc07e6-452a-36fd-8476-bd7aac00f265
+  ws-opts:
+    headers:
+      Host: hk11-vm5.entry.ikuuu.casa
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: '216,545,546|🇭🇰 香港(欢迎订阅Youtube破解资源君) #20'
@@ -1371,20 +1385,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 216,459,548,594,602,649|香港_0518007
-  network: ws
-  port: '28681'
-  server: 47.242.22.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: '216,602,615|HK #2'
@@ -1413,6 +1413,20 @@ proxies:
     headers:
       Host: hk3.grpc.stream
     path: /event
+- alterId: 0
+  cipher: auto
+  name: 216,459,548,594,602,649|香港_0518007
+  network: ws
+  port: '28681'
+  server: 47.242.22.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 216,649|美国_0518700
@@ -1799,8 +1813,8 @@ proxies:
     path: /
   ws-path: /
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 389,393,427,620|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 389,427,620|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -2156,7 +2170,7 @@ proxies:
     path: /skysinternet
 - alterId: 64
   cipher: auto
-  name: 427,561,646|HK_speednode_0110
+  name: 427,646|HK_speednode_0110
   network: ws
   port: 443
   server: 144.48.32.10
@@ -2699,7 +2713,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 467|🇭🇰 香港 环球全域电讯
+  name: '467|🇭🇰 香港 环球全域电讯 #2'
   network: ws
   port: 12909
   server: 210.3.159.224
@@ -3296,7 +3310,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '521,628|美国 CloudFlare节点 #72'
+  name: '521,628|美国 CloudFlare节点 #81'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4496,7 +4510,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 724bb5f4-3624-4f6e-989c-90a0c7e49fcf
+  uuid: 51a98f73-7d74-4d45-a359-06681b237cca
 - alterId: 0
   cipher: auto
   name: 612|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4506,7 +4520,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 724bb5f4-3624-4f6e-989c-90a0c7e49fcf
+  uuid: 51a98f73-7d74-4d45-a359-06681b237cca
 - alterId: 0
   cipher: auto
   name: 612|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4516,7 +4530,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 724bb5f4-3624-4f6e-989c-90a0c7e49fcf
+  uuid: 51a98f73-7d74-4d45-a359-06681b237cca
 - cipher: aes-256-cfb
   name: 613|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4798,8 +4812,8 @@ proxies:
   cipher: auto
   name: '673,796|[vmess]🇭🇰Hong Kong #1'
   network: ws
-  port: '8443'
-  server: 47.76.159.146
+  port: '10189'
+  server: 103.20.222.23
   servername: hkt.pddf.buzz
   tls: true
   type: vmess
