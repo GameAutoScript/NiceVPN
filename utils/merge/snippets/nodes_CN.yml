@@ -982,7 +982,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 394,395,401|Relay_-CN_03
+  name: 394,401|Relay_-CN_02
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -990,39 +990,6 @@ proxies:
   protocol: auth_aes128_md5
   protocol-param: 105622:5EF7C3661EBC
   server: video23.cdn.globalnetworktraffic.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: 🇨CN
-  name: 395|Relay_🇨🇳CN-🇨🇳CN_08
-  obfs: plain
-  obfs-param: 5d3ee46961.microsoft.com
-  password: jFa4F1
-  port: 2401
-  protocol: auth_aes128_sha1
-  protocol-param: 46961:1210-Tha
-  server: zx01.endhigh.xyz
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 395|Relay_🇨🇳CN-🇨🇳CN_09
-  obfs: http_simple
-  obfs-param: d300c11275.microsoft.com
-  password: dajkdkjda&dj23gsa
-  port: 2212
-  protocol: auth_aes128_md5
-  protocol-param: 11275:KWQHheqWo8
-  server: 231103.level3.sdl-sz.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 395|Relay_🇨🇳CN-🇨🇳CN_10
-  obfs: http_simple
-  obfs-param: d300c11275.microsoft.com
-  password: dajkdkjda&dj23gsa
-  port: 19970
-  protocol: auth_aes128_md5
-  protocol-param: 11275:KWQHheqWo8
-  server: 231103.level3.sdl-sz.com
   type: ssr
 - alterId: 0
   cipher: auto
@@ -1208,25 +1175,20 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 419,574|🇯🇵 日本2|@ripaojiedian
-  password: dffc697a-2535-470c-bb6a-8157b6c157a7
-  port: 38999
-  server: 8980k6.ceova9qgbqsqmfdy-jp01.my777999.top
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: '420,451,469,474,610|广东省佛山市 移动 #11'
+  name: 420,451,469,550,551,552,567|9|baipaovpn广东省江门市
   network: tcp
-  port: '61001'
-  server: 183.232.199.61
+  port: '35601'
+  server: 120.238.122.243
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.238.122.243
+  ws-path: /
 - alterId: 4
   cipher: auto
   name: '421,479|未命名 #189'
@@ -4737,33 +4699,38 @@ proxies:
     headers:
       Host: kh.sharecentre.online
     path: /shirker
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '473,567,574,575,609,610,748,762,817|节点日期：05-19 #2'
-  network: ws
-  port: '16632'
-  server: yes.cnmjcn.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 473,550|🇳CN-120.238.122.159-183
+  name: 473,550|🇨🇳CN-120.238.122.160-182
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   tfo: false
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 473,550|🇨🇳CN-120.238.122.159-185
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '474,550,551,552,610|广东省佛山市 移动 #8'
+  network: tcp
+  port: '61001'
+  server: 183.232.199.61
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.232.199.61
+  ws-path: /
 - cipher: aes-128-gcm
   name: 483|github.com/freefq-广东省移动28
   password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmNjY1YzVkMC03N2MwLTQxOTYtYmM4ZC1mMDQ1MGU5YzY2NWI
@@ -5500,7 +5467,7 @@ proxies:
   ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 550|🇨🇳CN-120.233.42.83-182
+  name: 550|🇨🇳CN-120.233.42.83-181
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -5518,29 +5485,26 @@ proxies:
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 550,609,620|🇨🇳广东2
-  password: a501c82c72d790b8
-  port: 8474
-  server: 119.23.104.213
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
-  name: 550|🇳CN-120.233.42.83-153
+  name: 550|🇨🇳CN-120.233.42.83-140
   network: ws
-  port: 20206
-  server: data-hk-v1.usabooks.com.cn
+  port: 20301
+  server: data-jp-v1.usabooks.com.cn
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b1478e24-4916-3abe-8f17-15931012ecbe
   ws-headers:
-    Host: data-hk-v1.usabooks.com.cn
+    Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 550,574|🇯🇵 日本2|@ripaojiedian
+  password: dffc697a-2535-470c-bb6a-8157b6c157a7
+  port: 38999
+  server: 8980k6.ceova9qgbqsqmfdy-jp01.my777999.top
+  tfo: false
+  type: ss
 - name: 556|3.35|CNyoutube155
   network: tcp
   origin: trojan://a3278882-3614-39cf-a3d6-faefa8c910ab@hnm.xiaohouzi.club:17113?type=tcp&security=tls&allowInsecure=1#CN_youtube%40%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB%E5%B8%88_155%0D
@@ -5770,16 +5734,6 @@ proxies:
   server: 183.236.51.59
   servername: ''
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 567|9|baipaovpn广东省江门市
-  network: tcp
-  port: '35601'
-  server: 120.238.122.243
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -6773,6 +6727,17 @@ proxies:
   port: 43430
   server: gd1-hk.fwcloud.cc
   tfo: false
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 609,620|🇨🇳广东2
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: ss
 - alterId: 64
   cipher: auto
