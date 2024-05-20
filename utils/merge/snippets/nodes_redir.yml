@@ -35,16 +35,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,135,215,333,334,335,337,419,420,447,451,469,474,518,551,552,567,655,657,748,762,817|美国【付费推荐：https://jdyvip.link/】3...
+  name: '0,3,135,215,334,335,337,447,474,518,551,552,567,655,657,748,762,817|美国【付费推荐：https://jdyvip.link/】3...
     #7'
   network: ws
   port: '80'
   server: 172.67.166.192
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: cd1db809-2de0-409c-aef5-861e95eff53e
   ws-opts:
     headers:
@@ -53,7 +52,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,333,334,335,337,518,551,552,567,609,610,655,657,748,762,817|美国【付费推荐：https://jdyvip.link/】3...
+  name: '0,3,334,335,337,518,551,552,567,609,610,655,657,748,762,817|美国【付费推荐：https://jdyvip.link/】3...
     #8'
   network: ws
   port: '2052'
@@ -88,13 +87,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,501,577|🇺🇸_US_美国->🇩🇪_DE_德国_3 #1'
+  name: '1,2,450,501,577|🇺🇸_US_美国->🇩🇪_DE_德国_3 #1'
   network: ws
   port: 2052
   server: 104.18.19.191
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -102,13 +102,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,501,577|🇺🇸_US_美国->🇩🇪_DE_德国_1
+  name: 1,2,450,501,577|🇺🇸_US_美国->🇩🇪_DE_德国_1
   network: ws
   port: 2052
   server: 104.18.36.119
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -116,12 +117,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: 🇸US
-  fingerprint: ''
+  country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 1,2,214,394|Relay_🇺🇸US-🇺UA_174 | 1.63Mb
+  name: 1,2,394|Relay_🇺🇸US-🇺UA_171 | 1.63Mb
   network: ws
   port: 80
   server: 172.67.166.192
@@ -129,7 +128,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: false
   uuid: cd1db809-2de0-409c-aef5-861e95eff53e
   ws-opts:
     headers:
@@ -151,13 +149,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,501,577|🇺🇸_US_美国->🇩🇪_DE_德国_2 #1'
+  name: '1,2,450,501,577|🇺🇸_US_美国->🇩🇪_DE_德国_2 #1'
   network: ws
   port: 2052
   server: 104.19.250.15
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
   ws-opts:
     headers:
@@ -622,13 +621,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '369,375,527,633,634,764|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '369,375,450,527,633,634,764|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -663,7 +664,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '375,465,609,610,634,655,764|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
+  name: '375,419,420,451,465,469,609,610,634,655,764|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -672,6 +673,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
