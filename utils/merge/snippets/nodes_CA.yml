@@ -803,7 +803,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '80,420,421,470,478|加拿大 046 #1'
+  name: '80,420,421,452,470,478|加拿大 046 #1'
   network: ws
   port: 80
   server: 172.66.40.173
@@ -1639,14 +1639,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 135,656|加拿大_0520006
+  name: 135,420,421,470,656|加拿大_0520006
   network: ws
   port: '443'
   server: 158.51.121.36
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1735,16 +1736,6 @@ proxies:
   password: 7gaTTlW73G
   port: 49602
   server: 51.222.157.179
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: CA
-  name: 136,621|未知408 1.1MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 23.162.200.28
   skip-cert-verify: true
   tls: true
   type: ss
@@ -1853,24 +1844,6 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 215,621|未知559 63.1MB/s
-  network: ws
-  port: 443
-  server: 104.21.44.106
-  servername: xmivideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-  ws-opts:
-    headers:
-      host: xmivideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
   name: 215,621|未知280
   network: grpc
   port: 2096
@@ -1913,7 +1886,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: Freevpnhomes
-  name: '216,445,448,601,622,642,650|رایگان | VMESS | @ShadowProxy6... #11'
+  name: '216,445,448,601,622,642,650|رایگان | VMESS | @ShadowProxy6... #12'
   network: grpc
   port: '2096'
   server: 172.67.204.84
@@ -1923,7 +1896,7 @@ proxies:
   uuid: 02b3ec8f-f568-47c8-9746-fa9a24e547d6
 - alterId: 0
   cipher: auto
-  name: '216,448,622,642,650|رایگان | VMESS | @ShadowProxy6... #9'
+  name: '216,445,448,622,642,650|رایگان | VMESS | @ShadowProxy6... #10'
   network: ws
   port: '443'
   server: 172.67.194.57
@@ -2189,6 +2162,20 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇦 CA
+  h2-opts: {}
+  http-opts: {}
+  name: 400|🇦 CA_51
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   name: 407|🇨🇦CA加拿大(youtube阿伟科技)
@@ -2963,7 +2950,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c27175dc-ce7b-428a-bb5c-8d09848cb7a0
+  uuid: 51eb64be-62a5-4cb1-bd22-aaa90096894e
 - cipher: aes-256-gcm
   name: 481|VIP0.加拿大1.ChatGPT
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -3177,7 +3164,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 63f235e2-57d8-451d-afa9-3c09a8e2e7f4
+  uuid: 338e3db3-9520-42c8-ab54-0b9bf5cd7734
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -3303,7 +3290,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 770ac0be-b26b-477e-a659-277f6b68664e
+  uuid: d82ef8e1-88f4-47c4-98df-ee83088b72ea
 - cipher: aes-256-gcm
   name: 627|[02-24]-🇨🇦-加拿大多伦多-248-198.57.2...
   password: faBAoD54k87UJG7
@@ -3513,24 +3500,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- cipher: aes-128-gcm
-  name: 836|🇨🇦 加拿大 01
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20047
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 836|🇨🇦 加拿大 02
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20048
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 836|🇨🇦 加拿大 03
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20049
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
