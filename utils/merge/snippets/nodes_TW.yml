@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: 17,398|_44
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  skip-cert-verify: true
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 69|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 6122
@@ -24,13 +11,15 @@ proxies:
   uuid: 8907aeec-189d-48d9-b557-fb242a4d8127
 - alterId: 64
   cipher: auto
-  name: 80,476,654|台湾_0520005
+  name: 80,418,419,468,476,654|台湾_0520005
   network: ws
   port: '30000'
   server: 103.177.33.20
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
@@ -398,6 +387,25 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: 🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 399,418,419,464,467,468,607,619,620,633|🇹🇼TW-103.159.206.35-0342
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 416|🇹🇼_TW_台湾
   network: ws
   port: 888
@@ -554,21 +562,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
-  name: 464,467,599,607,619,620,633|🇹🇼TW-103.159.206.35-0342
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: '464|Taiwan #1'
@@ -833,6 +826,38 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
+  name: 558|🇹🇼 TW 01
+  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
+  port: 61005
+  server: 2.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 558|🇹🇼 TW 02
+  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
+  port: 61006
+  server: 2.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 558|🇹🇼 TW 03
+  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
+  port: 22302
+  server: 03.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 558|🇹🇼 TW 04
+  password: cf448056-b7c2-439d-b708-aaf5ff321052
+  port: 22302
+  server: 04.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 558|🇹🇼 Taiwan_1
   password: 93ec2378-1151-4db5-9c56-d1387f36882d
   port: 40006
@@ -948,7 +973,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4ce1887c-804c-49d0-ba3a-0143833195fa
+  uuid: 00180856-1e88-4e04-a9ca-607140b7eff7
 - alterId: 0
   cipher: auto
   name: 617|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -958,7 +983,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4ce1887c-804c-49d0-ba3a-0143833195fa
+  uuid: 00180856-1e88-4e04-a9ca-607140b7eff7
 - alterId: 0
   cipher: auto
   name: 617|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -968,7 +993,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4ce1887c-804c-49d0-ba3a-0143833195fa
+  uuid: 00180856-1e88-4e04-a9ca-607140b7eff7
 - cipher: aes-256-cfb
   name: 618|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -1073,7 +1098,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: '654,747,761,816|台湾【付费推荐：https://jdyvip.link/】4... #4'
+  name: '654,656,747,761,816|台湾【付费推荐：https://jdyvip.link/】4... #4'
   network: ws
   port: '443'
   server: 61.227.234.222
