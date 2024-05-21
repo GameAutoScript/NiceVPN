@@ -1,6 +1,19 @@
 proxies:
 - alterId: 0
   cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: 17| TW_10
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  skip-cert-verify: true
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 69|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 6122
@@ -185,7 +198,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 226,237,473,476,628,629,642|🇹🇼TW-103.159.206.35-0342
+  name: 226,237,473,476,616,628,629,642|🇹🇼TW-103.159.206.35-0342
   network: ws
   port: 31945
   server: 103.159.206.35
@@ -492,6 +505,37 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: 🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 402|TW_60 | 8.92Mb
+  network: ws
+  port: 443
+  server: 61.227.204.69
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4ccc923e-8452-418c-9222-87ee8f295e14
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 402|Relay_🇼TW-🇹🇼TW_61 | 6.59Mb
+  network: ws
+  port: 443
+  server: tw1g.forlive.live
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4ccc923e-8452-418c-9222-87ee8f295e14
+  ws-opts:
+    headers:
+      HOST: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 425|🇹🇼_TW_台湾
   network: ws
   port: 888
@@ -650,7 +694,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '441,575|9|baipaovpn台湾省台南市 #1'
+  name: 441,575|9|baipaovpn台湾省台南市
   network: ws
   port: '443'
   server: 61.227.204.69
@@ -662,20 +706,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 459,575|9|baipaovpn台湾省台南市
-  network: ws
-  port: '443'
-  server: 61.227.204.69
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4ccc923e-8452-418c-9222-87ee8f295e14
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - alterId: 0
   cipher: auto
   name: '473|Taiwan #1'
@@ -940,38 +970,6 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 567|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 567|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 567|🇹🇼 TW 03
-  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
-  port: 22302
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 567|🇹🇼 TW 04
-  password: cf448056-b7c2-439d-b708-aaf5ff321052
-  port: 22302
-  server: 04.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 567|🇹🇼 Taiwan_1
   password: 93ec2378-1151-4db5-9c56-d1387f36882d
   port: 40006
@@ -1028,6 +1026,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: '575|9|baipaovpn台湾省台南市 #1'
+  network: ws
+  port: '443'
+  server: 61.227.204.69
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4ccc923e-8452-418c-9222-87ee8f295e14
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
   name: 584|台湾高速线路3
   network: tcp
   port: 21003
@@ -1055,7 +1067,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f7614ae0-2e1c-4f1f-a5ea-4dbcb17ff160
+  uuid: f7e098b9-8a57-4092-b7f9-a66033ad69fc
 - alterId: 0
   cipher: auto
   name: 626|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1065,7 +1077,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f7614ae0-2e1c-4f1f-a5ea-4dbcb17ff160
+  uuid: f7e098b9-8a57-4092-b7f9-a66033ad69fc
 - alterId: 0
   cipher: auto
   name: 626|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1075,7 +1087,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f7614ae0-2e1c-4f1f-a5ea-4dbcb17ff160
+  uuid: f7e098b9-8a57-4092-b7f9-a66033ad69fc
 - cipher: aes-256-cfb
   name: 627|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
