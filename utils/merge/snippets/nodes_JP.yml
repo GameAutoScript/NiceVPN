@@ -16,19 +16,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: ' JP'
-  h2-opts: {}
-  http-opts: {}
-  name: 17| JP_06
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: '18,19,20,503|jp日本3 #3'
   network: ws
   port: 2086
@@ -55,7 +42,7 @@ proxies:
   network: grpc
   password: bbab60b8-779f-31e2-916e-571f7d7023c4
   port: 28785
-  server: vvuv1-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  server: 7hh87-g03.jp06-7c5a-vm0.entry.fr0307a.art
   servername: 45.144.2.113
   skip-cert-verify: false
   sni: jd5.zahuopu.top
@@ -125,6 +112,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: '80,485|日本 012 #1'
+  network: tcp
+  password: 757b6db0-be90-40b1-8980-664bba40ae46
+  port: 443
+  server: sg.mjt000.com
+  skip-cert-verify: true
+  sni: sg.mjt000.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 92|🇯🇵日本01|1x
@@ -191,13 +187,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: aes-128-gcm
-  name: 135,628|未知562 1.3MB/s
+  country: 🇸US
+  name: 135,402,427,628|未知562 1.3MB/s
   password: shadowsocks
   port: 443
   server: 154.47.20.240
   skip-cert-verify: true
   tls: true
   type: ss
+  udp: true
 - alterId: 0
   cipher: aes-256-cfb
   name: 135,628|未知109
@@ -812,16 +810,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 226|🔒 VM-TCP-NA 🇯🇵 JP-18.183.44.62...
-  network: tcp
-  port: 11773
-  server: 18.183.44.62
-  tls: false
-  type: vmess
-  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
-- alterId: 0
-  cipher: auto
-  name: '226,441,608,616,628,629|未知465 71.8KB/s #1'
+  name: '226,441,608,616,628,629|未知465 71.8KB/s #2'
   network: tcp
   port: '32365'
   server: 158.51.111.114
@@ -830,9 +819,18 @@ proxies:
   tls: false
   type: vmess
   uuid: f956a5d9-1f30-4f89-adc8-4286f4a3eb16
+- alterId: 0
+  cipher: auto
+  name: 226|🔒 VM-TCP-NA 🇯🇵 JP-18.183.6.73:...
+  network: tcp
+  port: 11773
+  server: 18.183.6.73
+  tls: false
+  type: vmess
+  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
 - alterId: 2
   cipher: auto
-  name: '226,608,616,628,629|未知365 #1'
+  name: '226,608,616,628,629|未知365 #2'
   network: tcp
   port: '229'
   server: 154.31.112.51
@@ -2657,7 +2655,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0ffcf2b2-1626-4d37-be3e-30fc435d71d6
+  uuid: 26ad77c5-986a-4c40-ba12-9fd01bac7336
 - alterId: 0
   cipher: auto
   name: 565|【BGP】日本 05  | 1x JP
@@ -2667,7 +2665,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0ffcf2b2-1626-4d37-be3e-30fc435d71d6
+  uuid: 26ad77c5-986a-4c40-ba12-9fd01bac7336
 - alterId: 0
   cipher: auto
   name: 565|【BGP】日本 06  | 1x JP
@@ -2677,7 +2675,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0ffcf2b2-1626-4d37-be3e-30fc435d71d6
+  uuid: 26ad77c5-986a-4c40-ba12-9fd01bac7336
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -3042,7 +3040,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '584,618|广东省汕头市 移动 #10'
+  name: '584,618|广东省汕头市 移动 #7'
   network: tcp
   port: '61002'
   server: 183.240.179.195
@@ -3077,10 +3075,10 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: auto
-  name: 616|🔒 VM-TCP-NA 🇯🇵 JP-18.183.6.73:...
+  name: 616|🔒 VM-TCP-NA 🇯🇵 JP-13.115.192.9...
   network: tcp
   port: 11773
-  server: 18.183.6.73
+  server: 13.115.192.95
   tls: false
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
@@ -3426,8 +3424,8 @@ proxies:
   cipher: auto
   name: '687,811|[vmess]🇯🇵Japan #1'
   network: ws
-  port: '18936'
-  server: 45.11.104.211
+  port: '443'
+  server: 47.242.60.161
   servername: jp.pddf.buzz
   tls: true
   type: vmess
@@ -4023,3 +4021,59 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- cipher: aes-128-gcm
+  name: '844|🇯🇵 日本 01 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20841
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '844|🇯🇵 日本 02 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20842
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '844|🇯🇵 日本 03 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20843
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 844|🇯🇵 日本 04
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20844
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 844|🇯🇵 日本 05
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20845
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 844|🇯🇵 日本 06
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20846
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 844|🇯🇵 日本 07
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20847
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 844|🇯🇵 日本 08
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20848
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
