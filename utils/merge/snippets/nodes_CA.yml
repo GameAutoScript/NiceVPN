@@ -757,7 +757,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 135,628|未知403 31.4MB/s
+  name: 135,628|未知212 11.0MB/s
   password: G!yBwPWH3Vao
   port: 808
   server: 134.195.196.178
@@ -766,7 +766,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 135,628|未知363 29.0MB/s
+  name: 135,628|未知24 15.2MB/s
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
@@ -775,7 +775,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 135,628|未知536 29.2MB/s
+  name: 135,628|未知411 26.8MB/s
   password: G!yBwPWH3Vao
   port: 803
   server: 134.195.196.178
@@ -784,7 +784,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 135,628|未知155 24.6MB/s
+  name: 135,628|未知206 13.0MB/s
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
@@ -805,7 +805,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 135,628|未知481 5.5MB/s
+  name: 135,628|未知512 3.4MB/s
   password: Gyd5QnbPvzh8I89q
   port: 25717
   server: 149.56.95.135
@@ -841,10 +841,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: aes-256-gcm
-  name: 135,628|未知449 31.6MB/s
+  name: 135,628|未知485 20.8MB/s
   password: 7gaTTlW73G
   port: 49602
   server: 51.222.157.179
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: CA
+  name: 136,628|未知685 707.4KB/s
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 23.162.200.28
   skip-cert-verify: true
   tls: true
   type: ss
@@ -949,6 +959,56 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 219,628|未知745
+  network: grpc
+  port: 2096
+  server: 172.67.204.84
+  servername: fragment.mzolfaghari.homes
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 02b3ec8f-f568-47c8-9746-fa9a24e547d6
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 219,628|未知389
+  network: ws
+  port: 443
+  server: 172.67.194.57
+  servername: no1-vmess.sshmax.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 9aaceca0-bc5b-49e6-a83f-088e14d94434
+  ws-opts:
+    headers:
+      host: no1-vmess.sshmax.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 219,628|未知303 45.0KB/s
+  network: ws
+  port: 443
+  server: 188.114.97.3
+  servername: nl1-vmess.sshmax.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: c875aa67-e59f-4147-89c8-c0bf7b0e12bf
+  ws-opts:
+    headers:
+      host: nl1-vmess.sshmax.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 220,226,424,441,455,473,562,640,642,663|未知_0520090
@@ -1089,12 +1149,11 @@ proxies:
     path: /v118-fccxmxm35
 - alterId: 0
   cipher: auto
-  name: '226,441,452,628,629|US290 792.6KB/s #2'
+  name: 226,441|美国_052123070
   network: ws
   port: '8443'
   server: atlasnet1.myatlasnet.ir
   servername: ''
-  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 63e54742-a244-4bb0-c9cb-17a545f4ca3f
@@ -1177,7 +1236,8 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '338,339,382,441,473,575,617,618,642,663,665,773|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
+  name: '338,339,382,427,428,441,459,473,477,575,617,618,629,642,663,665,773|🇺🇸_US_美国->🇫🇷_FR_法国
+    #6'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -1186,6 +1246,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -1212,7 +1273,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '338,339,441,575,617,618,663,665,757,771,826|美国【付费推荐：https://jdyvip.link/】7
+  name: '338,339,441,575,617,618,629,663,665,757,771,826|美国【付费推荐：https://jdyvip.link/】7
     #2'
   network: ws
   port: '2095'
@@ -2075,7 +2136,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 431ba262-04d2-45c4-9d4a-221570d2e2a5
+  uuid: 6d67994c-9db0-4f0a-822d-e7f27e01cd04
 - cipher: aes-256-gcm
   name: 488|VIP0.加拿大1.ChatGPT
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -2240,7 +2301,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: aes-256-gcm
-  name: 558,628|未知629 1.9MB/s
+  name: 558,628|未知478 1.9MB/s
   password: e4FCWrgpkji3QY
   port: 9101
   server: 23.162.200.181
@@ -2258,7 +2319,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 558,628|未知359 1.9MB/s
+  name: 558,628|未知508 1.7MB/s
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 23.162.200.181
@@ -2267,7 +2328,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 558,628|未知550 2.0MB/s
+  name: 558,628|未知414 1.9MB/s
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 23.162.200.181
@@ -2297,7 +2358,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: f229286e-d181-45f6-a37a-fef3a194be1d
+  uuid: 0ffcf2b2-1626-4d37-be3e-30fc435d71d6
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -2417,7 +2478,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: b0098836-ef2d-4a90-b22e-fab17d8a490d
+  uuid: 9fa26ba6-fc26-44f7-b544-294261ee5f11
 - cipher: aes-256-gcm
   name: 634|[02-24]-🇨🇦-加拿大多伦多-248-198.57.2...
   password: faBAoD54k87UJG7
@@ -2641,24 +2702,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- cipher: aes-128-gcm
-  name: 844|🇨🇦 加拿大 01
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20047
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 844|🇨🇦 加拿大 02
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20048
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 844|🇨🇦 加拿大 03
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20049
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
