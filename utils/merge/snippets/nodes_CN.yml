@@ -518,20 +518,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 233|🔒 VM-WS-NA 🇨🇳 CN-117.149.198.4...
-  network: ws
-  port: '21004'
-  server: 117.149.198.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e472a610-a7de-4fce-befc-5c11c31a9246
-  ws-opts:
-    headers:
-      Host: hinet.luodi.xyz
-    path: /hinet
 - cipher: rc4-md5
   name: 246|[🇨🇳]zx01.endhigh.xyz:2413(2vzh...
   password: 2vzho5
@@ -1131,7 +1117,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 410,411|Relay_-CN_02
+  name: 411,417|Relay_-CN_03
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1145,52 +1131,19 @@ proxies:
   name: 411|Relay_🇨🇳CN-🇨🇳CN_08
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
-  password: dajkdkjd2a&dj23gsa
-  port: 37866
-  protocol: auth_aes128_md5
-  protocol-param: 11275:KWQHheqWo8
-  server: 231103levelx.unclemanco.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: 🇨🇳CN
-  name: 411|Relay_🇨🇳CN-🇨🇳CN_09
-  obfs: plain
-  obfs-param: 5d3ee46961.microsoft.com
-  password: jFa4F1
-  port: 2409
-  protocol: auth_aes128_sha1
-  protocol-param: 46961:1210-Tha
-  server: zx02.endhigh.xyz
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 411|Relay_🇨🇳CN-🇨🇳CN_10
-  obfs: http_simple
-  obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
-  port: 19970
+  port: 2212
   protocol: auth_aes128_md5
   protocol-param: 11275:KWQHheqWo8
   server: 231103.level3.sdl-sz.com
   type: ssr
-- cipher: chacha20-ietf
-  country: 🇨🇳CN
-  name: 411|Relay_🇨🇳CN-🇨🇳CN_11
-  obfs: plain
-  obfs-param: 5d3ee46961.microsoft.com
-  password: jFa4F1
-  port: 2404
-  protocol: auth_aes128_sha1
-  protocol-param: 46961:1210-Tha
-  server: zx01.endhigh.xyz
-  type: ssr
 - cipher: aes-256-cfb
   country: 🇨🇳CN
-  name: 411|Relay_🇨🇳CN-🇨🇳CN_12
+  name: 411|Relay_🇨🇳CN-🇨🇳CN_09
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
-  port: 2212
+  port: 19970
   protocol: auth_aes128_md5
   protocol-param: 11275:KWQHheqWo8
   server: 231103.level3.sdl-sz.com
@@ -1379,6 +1332,23 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 435|[SS] 广东省江门市 移动
+  password: 99301d55-a41f-4919-986b-1435996533aa
+  port: 20003
+  server: deepf.hjkdsak2.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '436,467,485,626,768,782,837|中国【付费推荐：https://jdyvip.link/】2... #8'
+  network: tcp
+  port: '21006'
+  server: 183.232.199.61
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 4
   cipher: auto
   name: '437,495|未命名 #193'
@@ -3199,33 +3169,6 @@ proxies:
   ws-headers:
     host: 2f36c18cfe75.sanfen001.pics
   ws-path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '467,625,626,668,768,782,837|中国【付费推荐：https://jdyvip.link/】1... #5'
-  network: ws
-  port: '20206'
-  server: data-hk-v1.usabooks.com.cn
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v1.usabooks.com.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: '467,626|广东省佛山市 移动 #8'
-  network: tcp
-  port: '61001'
-  server: 183.232.199.61
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 475|🇨🇳中国(欢迎订阅Youtube元亨利贞)
@@ -6088,14 +6031,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '626,768,782,837|中国【付费推荐：https://jdyvip.link/】2... #8'
-  network: tcp
-  port: '21006'
-  server: 183.232.199.61
+  client-fingerprint: chrome
+  name: '625,626,668,768,782,837|中国【付费推荐：https://jdyvip.link/】1... #5'
+  network: ws
+  port: '20206'
+  server: data-hk-v1.usabooks.com.cn
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.usabooks.com.cn
+    path: /debian
 - alterId: 64
   cipher: auto
   name: '626|广东省广州市 移动 #5'
@@ -6106,6 +6056,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '626|广东省佛山市 移动 #10'
+  network: tcp
+  port: '61001'
+  server: 183.232.199.61
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 668|CN_speednode_0012
