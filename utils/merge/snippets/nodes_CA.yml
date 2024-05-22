@@ -847,19 +847,16 @@ proxies:
     headers:
       Host: 100-100-17-309.db-link01.top
     path: /dabai.in104.20.81.242
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 83,493,636|US
+- client-fingerprint: chrome
+  name: '83,493|加拿大 128 #1'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
   server: 15.157.131.175
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
-  udp: true
+  udp: false
 - alterId: 0
   cipher: auto
   name: 83,435,436,485,493,671|未知_0522168
@@ -1019,7 +1016,7 @@ proxies:
     path: /dabai.in172.67.4.225
 - alterId: 0
   cipher: auto
-  name: '83,435,436,485,493|加拿大 139 #1'
+  name: '83,435,436,467,485,493|加拿大 139 #1'
   network: ws
   port: 80
   server: 104.18.5.191
@@ -1355,7 +1352,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 141,636|未知710 24.7MB/s
+  name: 141,636|未知262 15.6MB/s
   password: G!yBwPWH3Vao
   port: 803
   server: 134.195.196.178
@@ -1364,7 +1361,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 141,636|未知84 25.2MB/s
+  name: 141,636|未知574 23.5MB/s
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
@@ -1373,7 +1370,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 141,636|未知582 24.9MB/s
+  name: 141,636|未知172 15.6MB/s
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
@@ -1382,7 +1379,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 141,636|未知480 25.3MB/s
+  name: 141,636|未知191 16.9MB/s
   password: G!yBwPWH3Vao
   port: 808
   server: 134.195.196.178
@@ -1397,14 +1394,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 141,233,567,568,671|加拿大_0522006
+  name: 141,233,435,436,485,567,568,671|加拿大_0522006
   network: ws
   port: '443'
   server: 158.51.121.36
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1424,10 +1422,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: aes-256-gcm
-  name: 141,636|未知305 24.4MB/s
+  name: 141,636|未知204 24.6MB/s
   password: 7gaTTlW73G
   port: 49602
   server: 51.222.157.179
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: CA
+  name: 142,636|未知598 494.0KB/s
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 23.162.200.28
   skip-cert-verify: true
   tls: true
   type: ss
@@ -1579,9 +1587,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 233,432,449,481,650|🏁RELAY-172.67.166.192-3724
+  name: '233,432,449,481,650,657,665|رایگان | VMESS | @ROMAX_VPN | ... #11'
   network: ws
-  port: 80
+  port: '80'
   server: 172.67.166.192
   servername: ''
   tls: false
@@ -1642,10 +1650,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  country: 🇦CA
+  country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 233,410,481,570|🇨🇦 加拿大
+  name: 233,410,467,481,570,583|0|-https://t.me/MrXbin-72
   network: ws
   port: 443
   server: 158.51.121.36
@@ -1655,8 +1663,6 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      Host: ''
     path: /linkvws
 - alterId: '0'
   cipher: auto
@@ -1719,7 +1725,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '345,346,390,481,583,625,626,648,650,671,673,768,782,784,837|美国【付费推荐：https://jdyvip.link/】1...
+  name: '345,346,390,481,583,625,626,637,648,650,671,673,768,782,784,837|美国【付费推荐：https://jdyvip.link/】1...
     #4'
   network: ws
   port: '2082'
@@ -1823,10 +1829,10 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  country: 🇨🇦CA
+  country: 🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 410|🇨🇦CA_08 | 3.09Mb
+  name: 410|🇨CA_09 | 3.09Mb
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -1838,20 +1844,6 @@ proxies:
     headers:
       HOST: internet.life.com.by
     path: /1IKYjV0r/
-- alterId: 0
-  cipher: auto
-  country: 🇦 CA
-  h2-opts: {}
-  http-opts: {}
-  name: 415|🇦 CA_53
-  network: ws
-  port: 443
-  server: 158.51.121.36
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   name: 422|🇨🇦CA加拿大(youtube阿伟科技)
@@ -2655,7 +2647,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9c5fe153-28e1-43e8-86c0-7414b59d88fd
+  uuid: 3bd36a7b-a45d-4517-80e9-c0fa302748d2
 - cipher: aes-256-gcm
   name: 496|VIP0.加拿大1.ChatGPT
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -2841,7 +2833,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d50c3162-be61-42fd-a473-2658baaba406
+  uuid: 59f88366-805a-4588-a791-d0ba4d86fa5b
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -2941,7 +2933,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 222baa1c-e756-489e-92c2-8256692597bb
+  uuid: 6e12b557-7ad2-416d-bed6-a1730e66a1ec
 - cipher: aes-256-gcm
   name: 642|[02-24]-🇨🇦-加拿大多伦多-248-198.57.2...
   password: faBAoD54k87UJG7

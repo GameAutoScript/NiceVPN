@@ -217,15 +217,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 141,233,410,583,671|香港_0522008
+  name: 141,233,671|香港_0522008
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
@@ -1356,7 +1353,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '233,624,637|HK9 #2'
+  name: '233,624,637|HK15 #1'
   network: ws
   port: '12909'
   server: 210.3.159.224
@@ -1855,8 +1852,8 @@ proxies:
     path: /
   ws-path: /
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 411,415,449,642|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 411,449,642|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -1865,19 +1862,6 @@ proxies:
   protocol-param: ''
   server: 150.107.46.21
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 415|🇭🇰HK_113
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: '422|🇨🇳中国【YouTube-由零開始】 #7'
@@ -3222,7 +3206,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '543,650|美国 CloudFlare节点 #81'
+  name: '543,650|美国 CloudFlare节点 #86'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4386,7 +4370,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 222baa1c-e756-489e-92c2-8256692597bb
+  uuid: 6e12b557-7ad2-416d-bed6-a1730e66a1ec
 - alterId: 0
   cipher: auto
   name: 634|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4396,7 +4380,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 222baa1c-e756-489e-92c2-8256692597bb
+  uuid: 6e12b557-7ad2-416d-bed6-a1730e66a1ec
 - alterId: 0
   cipher: auto
   name: 634|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4406,7 +4390,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 222baa1c-e756-489e-92c2-8256692597bb
+  uuid: 6e12b557-7ad2-416d-bed6-a1730e66a1ec
 - cipher: aes-256-cfb
   name: 635|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4518,36 +4502,8 @@ proxies:
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 636|HK
-  password: a-wym4ovY4Yw
-  port: 443
-  server: 8.210.33.152
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 636|HK3
-  password: a-wym4ovY4Yw
-  port: 443
-  server: 8.218.71.80
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
-  name: '636|HK9 #1'
-  network: ws
-  port: 12909
-  server: 210.3.159.224
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-- alterId: 0
-  cipher: auto
-  name: 636|HK11
+  name: 636|HK6
   network: tcp
   password: 918eba0d3ff04abc803fb00e18d0fcb5
   port: 443
@@ -4559,13 +4515,41 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 636|HK15 626.4KB/s
+  name: 636|HK9 816.0KB/s
   password: sbt3tjcG0wnLI0bWoVXwTC
   port: 16006
   server: 46.226.164.2
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 636|HK10
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 8.210.33.152
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 636|HK13
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 8.218.71.80
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 636|HK15
+  network: ws
+  port: 12909
+  server: 210.3.159.224
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
 - alterId: 64
   cipher: auto
   name: '649,650|香港1|@ripaojiedian #1'
@@ -4696,14 +4680,14 @@ proxies:
     path: /zh-cn/download
 - alterId: 0
   cipher: auto
-  name: 698|[vmess]🇭🇰Hong Kong
+  name: '698,822|[vmess]🇭🇰Hong Kong #1'
   network: ws
   port: '2087'
-  server: 47.243.5.154
+  server: 47.76.32.108
   servername: hkt.pddf.buzz
   tls: true
   type: vmess
-  uuid: b90ea20b-c38b-4c29-aaae-7f4f042c7304
+  uuid: b3bb2518-1435-48e5-b01a-4f9f628baaf1
   ws-opts:
     headers:
       Host: hkt.pddf.buzz
@@ -5033,20 +5017,6 @@ proxies:
   server: yd-07.paofunlink.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '822|[vmess]🇭🇰Hong Kong #1'
-  network: ws
-  port: '2083'
-  server: 47.76.146.1
-  servername: hkt.pddf.buzz
-  tls: true
-  type: vmess
-  uuid: b3bb2518-1435-48e5-b01a-4f9f628baaf1
-  ws-opts:
-    headers:
-      Host: hkt.pddf.buzz
-    path: /pdd
 - grpc-opts:
     grpc-service-name: hkvip101
   name: '824,826|香港 101 #1'
