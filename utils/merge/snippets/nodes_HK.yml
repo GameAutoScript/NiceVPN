@@ -66,39 +66,39 @@ proxies:
   ws-path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 43|pq香港1
+  name: '43,859|pq香港1 #2'
   network: ws
   port: '2082'
   server: yx1.xsjhl.xyz
   tls: false
   type: vmess
-  uuid: e00ddecf-e088-483c-9a4d-b89ca00ef5d8
+  uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c
   ws-opts:
     headers:
       Host: pqhk.xsjhl.xyz
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 43|pq香港2
+  name: '43,859|pq香港2 #2'
   network: ws
   port: '2082'
   server: yx2.xsjhl.xyz
   tls: false
   type: vmess
-  uuid: e00ddecf-e088-483c-9a4d-b89ca00ef5d8
+  uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c
   ws-opts:
     headers:
       Host: pqhk.xsjhl.xyz
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 43|pq香港3
+  name: '43,859|pq香港3 #2'
   network: ws
   port: '2082'
   server: yx3.xsjhl.xyz
   tls: false
   type: vmess
-  uuid: e00ddecf-e088-483c-9a4d-b89ca00ef5d8
+  uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c
   ws-opts:
     headers:
       Host: pqhk.xsjhl.xyz
@@ -279,14 +279,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 143,235,676|香港_0522008
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 143,235,413,440,441,472,490,676|香港_0522008
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -2026,14 +2030,27 @@ proxies:
     path: /
   ws-path: /
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 414,647|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰 HK
+  name: 414,418,647|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
   protocol: origin
   server: 150.107.46.21
   type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 418|🇭🇰HK_113
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: '427|🇨🇳中国【YouTube-由零開始】 #7'
@@ -3377,7 +3394,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '548,655|美国 CloudFlare节点 #73'
+  name: '548,655|美国 CloudFlare节点 #82'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4527,6 +4544,23 @@ proxies:
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '588,595,596,630,631,774,788,843|节点日期：05-19 #2'
+  network: ws
+  port: '16632'
+  server: yes.cnmjcn.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 595|🇭🇰 香港KT|@ripaojiedian
@@ -4552,7 +4586,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: c2007f16-55c1-46e7-bd96-fcb8ada697fa
+  uuid: 1bf9ca48-39ca-466c-b0e1-d883b8048e60
 - alterId: 0
   cipher: auto
   name: 639|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4562,7 +4596,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: c2007f16-55c1-46e7-bd96-fcb8ada697fa
+  uuid: 1bf9ca48-39ca-466c-b0e1-d883b8048e60
 - alterId: 0
   cipher: auto
   name: 639|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4572,7 +4606,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: c2007f16-55c1-46e7-bd96-fcb8ada697fa
+  uuid: 1bf9ca48-39ca-466c-b0e1-d883b8048e60
 - cipher: aes-256-cfb
   name: 640|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4943,138 +4977,6 @@ proxies:
     headers:
       Host: ''
     path: /skysinternet
-- cipher: aes-128-gcm
-  name: 759|Manifold-香港01-原生
-  password: a212d
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '2120'
-  server: 231103level4.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Game 香港01-标准
-  password: ayu1245
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '824'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Game 香港02-标准
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '9054'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Game 香港03-标准
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '9063'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Game 香港04-国际
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '20012'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Game 香港05-标准
-  password: ayucles1
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '907'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Game 香港06-标准
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '823'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Video 香港A-解锁
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '9053'
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Video 香港B-标准
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '8001'
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Video 香港C-标准
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '9052'
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Web 香港I-标准
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '912'
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 759|Web 香港II-标准
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 68e7b61610.download.windowsupdate.com
-    mode: http
-  port: '840'
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 817|专线 香港 1
   obfs: tls1.2_ticket_auth
@@ -5492,3 +5394,87 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港 01 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11001
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港 02 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11002
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港 03 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11003
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港 04 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11004
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港 05 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11005
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港 06 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11006
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港 07 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11007
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港 08 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11008
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港 IPLC 限速10Mbps
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 1024
+  server: 222909df61922934.cdn.jiashule.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港实验节点 NetflixAB 01
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11009
+  server: nf.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港实验节点 NetflixB 02
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11012
+  server: nf.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 862|🇭🇰 香港实验节点 Xvideos
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11013
+  server: nf.hkglink.xyz
+  type: ss
+  udp: true
