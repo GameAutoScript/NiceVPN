@@ -1,14 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,3,143,235,348,349,350,352,353,539,572,573,588,676,678|美国_0523054
+  name: 0,3,143,235,348,349,350,352,353,440,441,472,490,539,572,573,588,676,678|美国_0523054
   network: ws
   port: '2052'
   server: 172.67.164.78
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
     headers:
@@ -17,7 +18,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,235,348,349,350,352,353,393,454,486,494,495,539,572,573,588,630,631,653,655,676,678,774,788,790,843|美国【付费推荐：https://jdyvip.link/】1...
+  name: '0,3,235,348,349,350,352,353,393,440,441,454,472,486,490,494,495,539,572,573,588,630,631,653,655,676,678,774,788,790,843|美国【付费推荐：https://jdyvip.link/】1...
     #4'
   network: ws
   port: '2082'
@@ -87,7 +88,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,1,2,3,235,348,349,350,352,353,522,539,572,573,588,598|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  name: 0,1,2,3,235,348,349,350,352,353,441,472,490,522,539,572,573,588,598|🇨🇳_CN_中国->🇺🇸_US_美国_2
   network: tcp
   port: 30013
   server: 183.240.179.207
@@ -116,7 +117,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,3,229,235,349,350,352,353,431,432,465,467,468,539,572,573,588,662,670,676|美国_0522197
+  name: 0,3,229,235,349,350,352,353,431,432,465,467,468,539,572,573,588,676|美国_0522197
   network: ws
   port: '2052'
   server: cdncdncdncdn.784654.xyz
@@ -130,10 +131,14 @@ proxies:
     path: /index?ed=20
 - alterId: 0
   cipher: auto
-  name: '1,2,522,598|🇺🇸_US_美国->🇮🇳_IN_印度 #7'
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,413,522,598|🇺🇸_US_美国->🇮🇳_IN_印度 #7'
   network: ws
   port: 2052
   server: 172.67.164.78
+  servername: in3.wish.ml
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -186,7 +191,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,522,598,631,653,655|美国 CloudFlare节点 #87'
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,413,522,598,631,653,655|美国 CloudFlare节点 #87'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -210,10 +218,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,2,522,598|🇺🇸_US_美国->🇫🇷_FR_法国_2 #1'
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,413,522,598|🇺🇸_US_美国->🇫🇷_FR_法国_2 #1'
   network: ws
   port: 2082
   server: 104.21.8.157
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -226,7 +238,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 1,2,228|a99a4c41fe7e4530a8b581c4e7d259...
+  name: 1,2,228|79406fdc6fc24d548657a78e27b9d4...
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
@@ -3363,12 +3375,6 @@ proxies:
   ws-headers:
     Host: usys.qiutan.pw
   ws-path: /videos
-- cipher: chacha20-ietf-poly1305
-  name: 522|🇳_CN_中国->🇺🇸_US_美国_3
-  password: 99301d55-a41f-4919-986b-1435996533aa
-  port: 20003
-  server: deepf.hjkdsak2.com
-  type: ss
 - alterId: 0
   cipher: auto
   name: 523|🇺🇸_US_美国->_DE_国
