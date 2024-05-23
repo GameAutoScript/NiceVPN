@@ -1,10 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: 🇦CA
-  h2-opts: {}
-  http-opts: {}
-  name: 0,1,2,3,235,349,350,352,353,413,486,539,572,573,575,588|0|-https://t.me/MrXbin-58
+  name: 0,1,2,3,235,349,350,352,353,440,441,472,486,490,539,572,573,575,588|0|-https://t.me/MrXbin-82
   network: ws
   port: 443
   server: 158.51.121.36
@@ -12,6 +9,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
@@ -205,13 +203,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '85,498|加拿大 030 #1'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '85,228,498|加拿大 030 #1'
   network: ws
   port: 80
   server: upload.ir
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: 085f6281-5c4c-4a34-8b44-d65bc2e2b069
   ws-opts:
     headers:
@@ -416,10 +417,13 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '85,440,441,490,498,641|未知637 2.1MB/s #1'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '85,228,440,441,490,498,641|未知637 2.1MB/s #1'
   network: ws
   port: 443
   server: 172.67.71.160
+  servername: obdii.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -431,10 +435,12 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   country: ZZ
+  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: '85,144,440,441,490,498,641|未知730 44.5MB/s #1'
+  name: '85,144,228,440,441,490,498,641|未知730 44.5MB/s #1'
   network: ws
   port: 443
   server: 104.21.15.212
@@ -773,7 +779,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '235,454,621,629|🔒 VM-TCP-NA 🇨🇦 CA-167.114.90.1... #2'
+  name: '235,441,454,472,490,572,573,621,629|🔒 VM-TCP-NA 🇨🇦 CA-167.114.90.1... #2'
   network: tcp
   port: '50577'
   server: 167.114.90.198
@@ -923,6 +929,20 @@ proxies:
     headers:
       Host: uh-lawyers-instruments-kernel.trycloudflare.com
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+- alterId: 0
+  cipher: auto
+  country: 🇦 CA
+  h2-opts: {}
+  http-opts: {}
+  name: 418|🇦 CA_51
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   name: 427|🇨🇦CA加拿大(youtube阿伟科技)
@@ -1647,7 +1667,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7aff2073-5328-4b34-9c3e-e6f9a9ce27a7
+  uuid: bce9930b-e89a-4775-bac6-56ade50a11d3
 - cipher: aes-256-gcm
   name: 501|VIP0.加拿大1.ChatGPT
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -1833,7 +1853,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: fc44a537-b770-4885-b660-b13c868c0f8a
+  uuid: 4ef96445-cebd-44e0-9c05-bac8c262bb6d
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1933,7 +1953,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 51a509f7-71b1-404e-8f82-8ed307f5a22e
+  uuid: b7f40612-c8aa-4dcc-bf9a-64ac6db635d1
 - cipher: aes-256-gcm
   name: 647|[02-24]-🇨🇦-加拿大多伦多-248-198.57.2...
   password: faBAoD54k87UJG7
@@ -2115,24 +2135,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- cipher: aes-128-gcm
-  name: 862|🇨🇦 加拿大 01
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20047
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 862|🇨🇦 加拿大 02
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20048
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 862|🇨🇦 加拿大 03
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20049
-  server: edge.node1link.xyz
-  type: ss
-  udp: true
