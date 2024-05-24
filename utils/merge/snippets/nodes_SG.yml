@@ -1,10 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|新加坡|湖南移动|Linode|1x
+  name: 13|新加坡|徐州移动|Linode|1x
   network: tcp
-  port: 39288
-  server: cs.guanguan.club
+  port: 39226
+  server: jscm.r1u.cn
   tls: false
   type: vmess
   uuid: f010dd01-c54a-3c03-95ce-0838214259c6
@@ -36,24 +36,24 @@ proxies:
       Host: sg2.wish.ml
     path: /
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 17,417|🇸🇬SG_34
+  country: ' SG'
+  name: 17| SG_08
   password: cp8pRSUAyLhTfVWH
   port: 9064
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 17,417|🇸🇬SG_37
+  name: 17,417|🇸🇬SG_33
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 17,144,417|🇸🇬SG_36
-  password: rNBfNuuANFCAk7KB
-  port: 9056
+  country: ' SG'
+  name: 17| SG_10
+  password: fG2artUmHfNT2cX7
+  port: 9018
   server: 103.172.116.103
   type: ss
 - alterId: 0
@@ -267,6 +267,12 @@ proxies:
   type: vmess
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - cipher: aes-256-cfb
+  name: 144|🇸🇬SG-103.172.116.103-0792 | 11...
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
   name: 144|🇸🇬SG-103.172.116.79-0132 | 5.8...
   password: NvS8N4Vf8qAGPSCL
   port: 9046
@@ -406,13 +412,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '144,237,624,632|🔒 VM-WS-NA 🇸🇬 SG-128.199.161.2... #3'
+  name: '144,237,443,444,493,624,632|🔒 VM-WS-NA 🇸🇬 SG-128.199.161.2... #3'
   network: ws
   port: '99'
   server: 128.199.161.230
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
   ws-opts:
     headers:
@@ -1210,11 +1217,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 237,457,489,578,679|新加坡_0524009
+  country: 🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 237,416,475,489,578,679|新加坡_0524009
   network: ws
   port: '99'
   server: 128.199.161.230
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
@@ -1263,7 +1274,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: '237,457,489,624,632|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
+  name: '237,489,624,632|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
   network: ws
   port: 23006
   server: 138.2.90.147
@@ -1594,19 +1605,36 @@ proxies:
   server: 13.250.35.165
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 416|🇬SG_47 |26.05Mb
+  network: ws
+  port: 80
+  server: 213.35.113.150
+  servername: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: eaf5e01b-f27d-44cf-94ae-87196143eef9
+  ws-opts:
+    headers:
+      HOST: dl.kgvn.garenanow.com
+    path: /
 - cipher: aes-256-cfb
   country: 🇬SG
   name: 417|🇬SG_28
-  password: UWZQeLRWnkqgkseq
-  port: 9032
-  server: 103.172.116.103
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.94
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
   name: 417|🇸🇬SG_29
-  password: f8npKgNzdkss2ytn
-  port: 9088
-  server: 103.172.116.90
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
@@ -1618,20 +1646,20 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇸🇬SG
   name: 417|🇸🇬SG_31
+  password: UWZQeLRWnkqgkseq
+  port: 9032
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 417|🇸🇬SG_32
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 417|🇸🇬SG_32
-  password: bf7v334KKDV3YDhH
-  port: 9070
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 417|🇸🇬SG_33
+  name: 417|🇸🇬SG_34
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 103.172.116.103
@@ -1639,9 +1667,16 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇸🇬SG
   name: 417|🇸🇬SG_35
-  password: fG2artUmHfNT2cX7
-  port: 9018
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
   server: 103.172.116.94
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 417|🇸🇬SG_36
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 103.172.116.90
   type: ss
 - alterId: 0
   cipher: auto
@@ -3178,8 +3213,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  country: 🇭🇰HK
-  name: 583,676|CN_speednode_0013
+  name: 583|🇸🇬 SG 02
   password: cb8bd04c-3e95-472c-bb3b-d0313def9d75
   port: 50006
   server: iepl2.forlive.live
@@ -3736,7 +3770,7 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7b82e7d5-ef0e-44fb-9e8f-9e837f957220
+  uuid: d6dbe93c-86d3-4055-abef-639068b169b8
 - alterId: 0
   cipher: auto
   name: 642|🇸🇬新加坡 | 108 | 流媒体优化 | 1x
@@ -3746,7 +3780,7 @@ proxies:
   servername: sg08.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7b82e7d5-ef0e-44fb-9e8f-9e837f957220
+  uuid: d6dbe93c-86d3-4055-abef-639068b169b8
 - alterId: 0
   cipher: auto
   name: 642|🇸🇬新加坡 | 109 | 负载优化 | 1x
@@ -3756,7 +3790,7 @@ proxies:
   servername: sg09.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7b82e7d5-ef0e-44fb-9e8f-9e837f957220
+  uuid: d6dbe93c-86d3-4055-abef-639068b169b8
 - cipher: aes-256-cfb
   name: 643|TG频道@mfbpn-新加坡2 2
   obfs: tls1.2_ticket_auth
@@ -4010,23 +4044,32 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
-- alterId: 0
+- alterId: 64
   cipher: auto
-  country: 🇸🇬SG
-  h2-opts: {}
-  http-opts: {}
-  name: 676|SG_speednode_0113
+  name: 676|SG_speednode_0091
   network: ws
-  port: 80
-  server: 213.35.113.150
-  servername: dl.kgvn.garenanow.com
-  skip-cert-verify: true
+  port: 443
+  server: 14.128.63.197
+  tls: true
   type: vmess
-  uuid: eaf5e01b-f27d-44cf-94ae-87196143eef9
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      HOST: dl.kgvn.garenanow.com
-    path: /
+      Host: www.91937386.xyz
+    path: /path/182320181512
+- name: 676|SG_speednode_0092
+  network: ws
+  password: b84d16a244460e09
+  port: 3306
+  server: 5.44.249.44
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: TG.WangCai_1
+    path: /gateway/connect
 - alterId: 0
   cipher: auto
   name: 679|新加坡_0524001
@@ -4552,3 +4595,59 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- cipher: aes-128-gcm
+  name: 866|🇸🇬 狮城 01
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20641
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 866|🇸🇬 狮城 02
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20642
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 866|🇸🇬 狮城 03
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20643
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 866|🇸🇬 狮城 04
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20644
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 866|🇸🇬 狮城 05
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20645
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 866|🇸🇬 狮城 06
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20646
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 866|🇸🇬 狮城 07
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20647
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 866|🇸🇬 狮城 08
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20648
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
