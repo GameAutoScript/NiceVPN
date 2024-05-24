@@ -294,15 +294,14 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: 144,236,442,443,474,492,590,678|香港_0524008
+  name: 144,236,590,678|香港_0524008
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -1992,6 +1991,26 @@ proxies:
       Host: cn.bing.com
     path: /
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: 🇭🇰HK
+  name: 415,582,675|CN_speednode_0013
+  password: cb8bd04c-3e95-472c-bb3b-d0313def9d75
+  port: 50006
+  server: iepl2.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 416,456,649|[02-24]-🇸-欧洲-096-150.107.46.21
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  protocol-param: ''
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   name: '429|🇨🇳中国【YouTube-由零開始】 #7'
@@ -3322,7 +3341,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '550,657|美国 CloudFlare节点 #88'
+  name: '550,657|美国 CloudFlare节点 #89'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4479,6 +4498,48 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: '599|香港WAP-优化 #4'
+  network: ws
+  port: 16622
+  server: yes.cnmjcn.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d562778b-8652-4492-8bf0-013e9468e119
+  ws-opts:
+    headers:
+      host: 3d215bd357220a933be1074ba73ecedd.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '599|香港WAP-优化2 #4'
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d562778b-8652-4492-8bf0-013e9468e119
+  ws-opts:
+    headers:
+      host: 3d215bd357220a933be1074ba73ecedd.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '599|香港HKT-优化2 #4'
+  network: ws
+  port: 16620
+  server: m.cnmjin.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d562778b-8652-4492-8bf0-013e9468e119
+  ws-opts:
+    headers:
+      host: 3d215bd357220a933be1074ba73ecedd.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 641|🇭🇰香港 | 101 | 负载优化 | 1x
   network: tcp
   port: '30701'
@@ -4486,7 +4547,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 1ecd0971-7ad7-4812-a1b0-79cf8115ca8c
+  uuid: 27a6bc7d-f854-42aa-b678-ceb27a0ee75b
 - alterId: 0
   cipher: auto
   name: 641|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4496,7 +4557,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 1ecd0971-7ad7-4812-a1b0-79cf8115ca8c
+  uuid: 27a6bc7d-f854-42aa-b678-ceb27a0ee75b
 - alterId: 0
   cipher: auto
   name: 641|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4506,7 +4567,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 1ecd0971-7ad7-4812-a1b0-79cf8115ca8c
+  uuid: 27a6bc7d-f854-42aa-b678-ceb27a0ee75b
 - cipher: aes-256-cfb
   name: 642|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
