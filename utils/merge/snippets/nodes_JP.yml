@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|日本|徐州移动|纸盒|1x
+  network: tcp
+  port: '26179'
+  server: jscm.r1u.cn
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: 16|JP-日本A1
   network: ws
   port: '8880'
@@ -38,6 +47,19 @@ proxies:
     headers:
       Host: lrb.sgjc.xyz
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 18| JP_04
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '19,20,21,522|jp日本3 #3'
@@ -97,14 +119,15 @@ proxies:
 - alterId: 1
   cipher: auto
   client-fingerprint: chrome
+  country: ZZ
   grpc-opts:
     grpc-service-name: 1654431
-  name: '53,146,151,252,387,390,435,439,440,444,493,500,505,510,515,517,520,533,554,582,583,586,587,592,596,601,604,636,647,653,680,757,805|🇯🇵
+  name: '53,146,151,252,387,390,419,435,439,440,444,446,493,500,505,510,515,517,520,533,554,582,583,586,587,592,596,601,604,636,647,653,680,805|🇯🇵
     免费-日本6-Ver.7 #1'
   network: grpc
   password: bbab60b8-779f-31e2-916e-571f7d7023c4
   port: 28785
-  server: u5335-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  server: rfiok-g03.jp06-7c5a-vm0.entry.fr0307a.art
   servername: 45.144.2.113
   skip-cert-verify: false
   sni: jd5.zahuopu.top
@@ -177,7 +200,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 88,447,496,504,679|JP_speednode_0067
+  name: 88,504,679|JP_speednode_0067
   network: http
   port: 32365
   server: 158.51.111.114
@@ -263,7 +286,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: '146,480,682|日本_0524004 #1'
+  name: 146,682|日本_0524004
   network: ws
   port: '12345'
   server: 152.69.197.74
@@ -890,10 +913,10 @@ proxies:
     path: /bb
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
+  country: 🇸US
   h2-opts: {}
   http-opts: {}
-  name: 230,295,426,451,459,461,480,549,566,665,682|日本_0524002
+  name: 230,295,419,420,451,459,461,549,566,665,682|日本_0524002
   network: tcp
   port: '1069'
   server: 152.69.197.60
@@ -930,7 +953,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '239,492|United States #33'
+  name: '239,492|United States #32'
   network: ws
   port: '443'
   server: jp-full.privateip.net
@@ -956,7 +979,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 239,480,495,627,635,647,648,682|日本_0524005
+  name: 239,495,627,635,647,648,682|日本_0524005
   network: ws
   port: '41597'
   server: 183.181.36.194
@@ -969,6 +992,17 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '239,460,627,635,647,648|未知143 257.4KB/s #2'
+  network: tcp
+  port: '32365'
+  server: 158.51.111.114
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f956a5d9-1f30-4f89-adc8-4286f4a3eb16
 - alterId: 2
   cipher: auto
   name: '239,627,635,647,648|未知49 #2'
@@ -982,15 +1016,13 @@ proxies:
   uuid: 40bc7b65-ec8a-3201-a646-c9d1b71091c6
 - alterId: 0
   cipher: auto
-  name: '239,460,627,635,647,648|未知143 257.4KB/s #2'
+  name: 239|🔒 VM-TCP-NA 🇯🇵 JP-13.231.160.4...
   network: tcp
-  port: '32365'
-  server: 158.51.111.114
-  servername: ''
-  skip-cert-verify: true
+  port: 11773
+  server: 13.231.160.40
   tls: false
   type: vmess
-  uuid: f956a5d9-1f30-4f89-adc8-4286f4a3eb16
+  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
 - alterId: '0'
   cipher: auto
   name: 252|[🇯🇵]192.51.188.63:28494(26ae22...
@@ -1969,63 +2001,6 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '480,682|日本_0524007 #1'
-  network: ws
-  port: '80'
-  server: 103.35.188.226
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 098e7cdd-03b4-435d-8c41-ea608fa637c2
-  ws-opts:
-    headers:
-      Host: 103.35.188.226
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '480,682|日本_0524008 #1'
-  network: ws
-  port: '443'
-  server: fullaccesstojapannetsubnode1.azurewebsites.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
-  ws-opts:
-    headers:
-      Host: fullaccesstojapannetsubnode1.azurewebsites.net
-    path: /ws
-- alterId: 0
-  cipher: auto
-  name: '480,566,682|日本_0524001 #1'
-  network: ws
-  port: '443'
-  server: suzhihan.eu.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0b873cff-11ab-4716-c41a-04f886135091
-  ws-opts:
-    headers:
-      Host: suzhihan.eu.org
-    path: /roewesu
-- alterId: 0
-  cipher: auto
-  name: '480,493,682|日本_0524011 #1'
-  network: ws
-  port: '443'
-  server: 172.104.78.98
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers:
-      Host: ''
-    path: /chat
-- alterId: 0
-  cipher: auto
   name: 492|Japan
   network: ws
   port: 2087
@@ -2257,6 +2232,21 @@ proxies:
   type: vmess
   uuid: 927094d3-d678-4763-8591-e240d0bcae87
   ws-opts:
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: 493,682|日本_0524011
+  network: ws
+  port: '443'
+  server: 172.104.78.98
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: ''
     path: /chat
 - cipher: aes-256-cfb
   name: 493|🇯🇵_JP_日本_11@19
@@ -2856,7 +2846,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '566|🇯🇵 日本 001 #2'
+  name: 566|🇯🇵 日本 001
   network: ws
   port: '22356'
   server: 002.AP.POP.node-for-smallairport.win
@@ -2980,6 +2970,22 @@ proxies:
   uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
   ws-opts:
     path: ''
+- alterId: 0
+  cipher: auto
+  name: 582,682|美国_0524200
+  network: ws
+  port: '443'
+  server: 172.67.132.15
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+  ws-opts:
+    headers:
+      Host: ming2.kiwireich.com
+    path: /ray
 - cipher: aes-256-gcm
   name: 583|2.13|JPyoutube资源分享师118
   origin: ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@85.208.108.60:8090#JP_youtube%40%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB%E5%B8%88_118%0D
@@ -2996,7 +3002,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 201a456f-9524-461e-bcc1-c947776f4c0c
+  uuid: e01a91fa-07ef-42f2-9811-6a4f5491945b
 - alterId: 0
   cipher: auto
   name: 584|【BGP】日本 05  | 1x JP
@@ -3006,7 +3012,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 201a456f-9524-461e-bcc1-c947776f4c0c
+  uuid: e01a91fa-07ef-42f2-9811-6a4f5491945b
 - alterId: 0
   cipher: auto
   name: 584|【BGP】日本 06  | 1x JP
@@ -3016,7 +3022,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 201a456f-9524-461e-bcc1-c947776f4c0c
+  uuid: e01a91fa-07ef-42f2-9811-6a4f5491945b
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -3406,10 +3412,10 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: auto
-  name: 635|🔒 VM-TCP-NA 🇯🇵 JP-13.231.160.4...
+  name: 635|🔒 VM-TCP-NA 🇯🇵 JP-35.77.218.21...
   network: tcp
   port: 11773
-  server: 13.231.160.40
+  server: 35.77.218.212
   tls: false
   type: vmess
   uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
@@ -3422,7 +3428,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: cf6e8f63-4fcd-4632-a9b2-d8c874dd5d62
+  uuid: 8dcaf74b-4063-4fe2-953b-de814785967f
 - alterId: 0
   cipher: auto
   name: 645|🇯🇵日本 | 108 | 流媒体优化 | 1x
@@ -3432,7 +3438,7 @@ proxies:
   servername: jp08.tomoony.xyz
   tls: true
   type: vmess
-  uuid: cf6e8f63-4fcd-4632-a9b2-d8c874dd5d62
+  uuid: 8dcaf74b-4063-4fe2-953b-de814785967f
 - alterId: 0
   cipher: auto
   name: 645|🇯🇵日本 | 109 | 负载优化 | 1x
@@ -3442,7 +3448,7 @@ proxies:
   servername: jp09.tomoony.xyz
   tls: true
   type: vmess
-  uuid: cf6e8f63-4fcd-4632-a9b2-d8c874dd5d62
+  uuid: 8dcaf74b-4063-4fe2-953b-de814785967f
 - cipher: aes-256-cfb
   name: 646|TG频道@mfbpn-日本2
   obfs: tls1.2_ticket_auth
@@ -3681,6 +3687,34 @@ proxies:
     headers:
       Host: v6.583181.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 682|日本_0524007
+  network: ws
+  port: '80'
+  server: 103.35.188.226
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 098e7cdd-03b4-435d-8c41-ea608fa637c2
+  ws-opts:
+    headers:
+      Host: 103.35.188.226
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 682|日本_0524008
+  network: ws
+  port: '443'
+  server: fullaccesstojapannetsubnode1.azurewebsites.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstojapannetsubnode1.azurewebsites.net
+    path: /ws
 - alterId: 0
   cipher: auto
   name: 734|🇯🇵日本高速接入点-02
