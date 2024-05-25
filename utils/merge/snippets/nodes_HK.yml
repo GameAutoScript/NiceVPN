@@ -200,13 +200,14 @@ proxies:
     path: /ssv
 - alterId: 64
   cipher: auto
-  name: 90,506,681|HK_speednode_0062
+  name: 90,448,449,498,506,681|HK_speednode_0062
   network: ws
   port: 443
   server: 118.107.245.22
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
@@ -214,12 +215,14 @@ proxies:
     path: /path/182320181512
 - alterId: 64
   cipher: auto
-  name: 90,506,681|SG_speednode_0091
+  name: 90,448,449,498,506,681|SG_speednode_0091
   network: ws
   port: 443
   server: 14.128.63.197
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
@@ -336,14 +339,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 148,241,480,580,581,684|香港_0524008
+  name: 148,241,448,449,480,498,580,581,684|香港_0524008
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -1604,20 +1608,6 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '241,637|🔒 VM-WS-TLS 🇭🇰 HK-210.3.159.22... #1'
-  network: ws
-  port: '12909'
-  server: 210.3.159.224
-  servername: 19.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
   name: '241,494,637|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44... #1'
   network: ws
   port: 26639
@@ -1630,6 +1620,20 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8/
+- alterId: 0
+  cipher: auto
+  name: '241,637|🔒 VM-WS-TLS 🇭🇰 HK-210.3.159.22... #1'
+  network: ws
+  port: '12909'
+  server: 210.3.159.224
+  servername: 19.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 64
   cipher: auto
   name: 241,494,663|🇭🇰HK-182.16.1.194-8978
@@ -3556,7 +3560,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '556,663|美国 CloudFlare节点 #90'
+  name: '556,663|美国 CloudFlare节点 #87'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4723,7 +4727,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d1930ab4-530c-4c2a-bede-dc41ae386fe9
+  uuid: 12b5301a-a22c-4c00-8e70-39466d3731fc
 - alterId: 0
   cipher: auto
   name: 647|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4733,7 +4737,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d1930ab4-530c-4c2a-bede-dc41ae386fe9
+  uuid: 12b5301a-a22c-4c00-8e70-39466d3731fc
 - alterId: 0
   cipher: auto
   name: 647|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4743,7 +4747,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: d1930ab4-530c-4c2a-bede-dc41ae386fe9
+  uuid: 12b5301a-a22c-4c00-8e70-39466d3731fc
 - cipher: aes-256-cfb
   name: 648|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -5578,84 +5582,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- alterId: 0
-  cipher: auto
-  name: 857|🇭🇰香港下载10G专线
-  network: ws
-  port: '31010'
-  server: 120.236.196.9
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
-  name: 857|🇭🇰香港电讯01| ✨全流媒体
-  network: ws
-  port: '33001'
-  server: 120.236.196.9
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
-  name: 857|🇭🇰香港电讯02| ✨全流媒体
-  network: ws
-  port: '33002'
-  server: 120.236.196.9
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 857|🇭🇰香港宽频-01| ✨全流媒体
-  network: ws
-  port: '33105'
-  server: 120.236.196.9
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
-  name: 857|🇭🇰香港宽频-02| ✨全流媒体
-  network: ws
-  port: '33101'
-  server: 120.236.196.9
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
-  name: 857|🇭🇰香港HGC-01| ✨全流媒体
-  network: ws
-  port: '33301'
-  server: 120.236.196.9
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
 - cipher: aes-128-gcm
   name: 874|🇭🇰 香港 01 SS
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
