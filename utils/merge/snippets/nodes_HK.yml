@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '15,238,244,479,482,602,609,610,656,867|🇭🇰 香港1| cf #1'
+  name: '15,238,244,454,455,482,486,504,602,609,610,656,867|🇭🇰 香港1| cf #1'
   network: ws
   port: '2052'
   server: hk.wish.ml
@@ -11,6 +11,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
     headers:
@@ -106,6 +107,33 @@ proxies:
     headers:
       Host: pqhk.xsjhl.xyz
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 63|香港02
+  network: tcp
+  port: '60102'
+  server: iepl.hongxing.pro
+  tls: false
+  type: vmess
+  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
+- alterId: 0
+  cipher: auto
+  name: 63|香港03
+  network: tcp
+  port: '60103'
+  server: iepl.hongxing.pro
+  tls: false
+  type: vmess
+  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
+- alterId: 0
+  cipher: auto
+  name: 63|香港04
+  network: tcp
+  port: '60104'
+  server: iepl.hongxing.pro
+  tls: false
+  type: vmess
+  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
 - alterId: 0
   cipher: auto
   name: 72|🇭🇰 香港Gcore-01
@@ -330,12 +358,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 149,244,586,587,690|香港_0526009
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 149,244,427,586,587,602,690|香港_0526009
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
@@ -1606,20 +1637,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '244,656|HK24 #2'
-  network: ws
-  port: '12909'
-  server: 210.3.159.224
-  servername: 19.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - alterId: 64
   cipher: auto
   name: 244,500,669|🇭🇰HK-182.16.1.194-8978
@@ -3558,7 +3575,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '562,669|美国 CloudFlare节点 #75'
+  name: '562,669|美国 CloudFlare节点 #79'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4037,7 +4054,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '585,655|HK24 #1'
+  name: 585|HK-210.3.159.224-162
   network: ws
   port: 12909
   server: 210.3.159.224
@@ -4702,21 +4719,25 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '602,609,610,644,645,792,806,861|中国【付费推荐：https://jdyvip.link/】4... #4'
-  network: ws
-  port: '16632'
-  server: yes.cnmjcn.net
+  name: '602,610,611,645,792,806,861|中国【付费推荐：https://jdyvip.link/】5... #14'
+  network: tcp
+  port: '15603'
+  server: 183.232.199.61
   servername: ''
-  skip-cert-verify: false
-  tfo: false
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: 602|9|baipaovpn香港
+  network: tcp
+  port: '41001'
+  server: 18.167.121.6
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 609|🇭🇰 香港KT|@ripaojiedian
@@ -4873,120 +4894,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 655|HK
-  password: AHyDyR
-  port: 56012
-  server: 38.150.12.188
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 655|HK5
-  password: AHyDyR
-  port: 56047
-  server: 38.150.12.187
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 655|HK6
-  network: tcp
-  password: 918eba0d3ff04abc803fb00e18d0fcb5
-  port: 443
-  server: 202.64.1.143
-  skip-cert-verify: true
-  sni: www.gpt123.one
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 655|HK8
-  password: a-wym4ovY4Yw
-  port: 443
-  server: 8.210.33.152
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 655|HK10
-  password: AHyDyR
-  port: 56032
-  server: 38.150.12.188
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 655|HK11
-  password: AHyDyR
-  port: 56026
-  server: 38.150.12.188
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 655|HK17
-  password: AHyDyR
-  port: 56026
-  server: 38.150.12.187
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 655|HK18
-  password: AHyDyR
-  port: 56012
-  server: 38.150.12.187
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 655|HK19
-  password: a-wym4ovY4Yw
-  port: 443
-  server: 8.218.71.80
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 655|HK20
-  password: AHyDyR
-  port: 56032
-  server: 38.150.12.187
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 655|HK23
-  network: ws
-  password: NISHIKUITAN222
-  port: 443
-  server: 47.76.178.146
-  skip-cert-verify: true
-  sni: t116.ylks.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 655|HK27
-  password: AHyDyR
-  port: 56047
-  server: 38.150.12.188
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 64
   cipher: auto
   name: '668,669|香港1|@ripaojiedian #1'
