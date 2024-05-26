@@ -357,14 +357,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 149,244,586,587,602,690|香港_0526009
+  name: 149,244,454,455,486,504,586,587,602,690|香港_0526009
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -2189,6 +2190,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 428,432,468,661|[02-24]-🇸-欧洲-096-150.107.46.21
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  protocol-param: ''
+  server: 150.107.46.21
+  type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 432|🇭🇰HK_120
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: '441|🇨🇳中国【YouTube-由零開始】 #7'
@@ -3519,7 +3544,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '562,669|美国 CloudFlare节点 #80'
+  name: '562,669|美国 CloudFlare节点 #81'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz

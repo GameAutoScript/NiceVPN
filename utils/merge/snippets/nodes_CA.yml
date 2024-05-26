@@ -964,7 +964,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '238,244,255,468,479,482,500,555,589,656,676,684|رایگان | VMESS | @ShadowProxy6...
-    #14'
+    #16'
   network: ws
   port: '443'
   server: 172.67.170.13
@@ -978,7 +978,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '238,244,468,479,482,555,656,676,684|رایگان | VMESS | @ShadowProxy6... #13'
+  name: '238,244,468,479,482,555,656,676,684|رایگان | VMESS | @ShadowProxy6... #15'
   network: ws
   port: '443'
   server: 172.67.175.56
@@ -1090,14 +1090,19 @@ proxies:
     path: /MGNF44G
 - alterId: 0
   cipher: auto
-  name: '244,468,635,643,656,692|加拿大_0526001 #1'
+  country: 🇦 CA
+  h2-opts: {}
+  http-opts: {}
+  name: '244,432,468,635,643,656,692|加拿大_0526001 #1'
   network: tcp
   port: '50577'
   server: 167.114.90.198
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 132b0296-e304-45a6-b045-4cdf0902e2b7
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1256,6 +1261,22 @@ proxies:
     headers:
       Host: uh-lawyers-instruments-kernel.trycloudflare.com
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+- alterId: 0
+  cipher: auto
+  country: 🇦 CA
+  h2-opts: {}
+  http-opts: {}
+  name: 432,585|🇨CA-158.51.121.36-018
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    Host: 158.51.121.36
+  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   name: 441|🇨🇦CA加拿大(youtube阿伟科技)
@@ -1915,18 +1936,6 @@ proxies:
   port: 800
   server: 51.161.118.38
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 501|🇨🇦_CA_加拿大_2_5@9
-  network: ws
-  port: 13724
-  server: 132.145.99.228
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 52768552-c2b2-4460-89f1-e740cc145b99
-  ws-opts:
-    path: /ws-path
 - name: 501|🇨🇦_CA_加拿大_1_7@1
   network: tcp
   password: telegram-id-directvpn
@@ -2157,19 +2166,6 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 585|🇨CA-158.51.121.36-018
-  network: ws
-  port: 443
-  server: 158.51.121.36
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    Host: 158.51.121.36
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 589|CA加拿大「TG：@ccbaohe〗免费机场分享
   network: ws
   port: 443
@@ -2219,7 +2215,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: bdc29667-4e2c-4812-9fd1-292601059c58
+  uuid: 429727fb-bbb4-4880-940f-b3cc869b9b54
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
