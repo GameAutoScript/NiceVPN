@@ -718,7 +718,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 249,457,506,595,696|未知_0526079
+  name: 249,457,506,595,682,690,696|未知_0526079
   network: ws
   port: '443'
   server: obdii.cfd
@@ -760,15 +760,13 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '249,460,461,474,485,492,510,641,682|رایگان | VMESS | @azadi_az_inj... #9'
+  name: '249,474,485,682|رایگان | VMESS | @azadi_az_inj... #9'
   network: ws
   port: '80'
   server: 188.114.96.3
   servername: ai.cloudflare.com
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: baec1a72-8a19-49c9-acb9-09db4f694311
   ws-opts:
     headers:
@@ -776,13 +774,15 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '249,474,485,682,690|رایگان | VMESS | @azadi_az_inj... #13'
+  name: '249,460,461,474,485,492,510,682,690|رایگان | VMESS | @azadi_az_inj... #13'
   network: ws
   port: '80'
   server: alice.developers.cloudflare.com
   servername: ai.cloudflare.com
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: baec1a72-8a19-49c9-acb9-09db4f694311
   ws-opts:
     headers:
@@ -804,7 +804,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 249,368,460,461,492,506,510,592,593,595,693,696|加拿大_0526006
+  name: 249,368,506,592,593,595,693,696|加拿大_0526006
   network: ws
   port: '443'
   server: 158.51.121.36
@@ -832,7 +832,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '249,506,650,651|美国 V2CROSS.COM #2'
+  name: '249,506,650,651|美国 V2CROSS.COM #1'
   network: ws
   port: '443'
   server: 23.162.200.227
@@ -2075,7 +2075,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: e0d9569f-28de-4c3a-93ae-5c608391b47e
+  uuid: 2af552df-5feb-481f-a9da-d24e075b8e6f
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -2175,7 +2175,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: a8ace113-fb7e-4c6e-82b1-7a77df152b1f
+  uuid: f0f249fa-fd4b-4451-ba9d-9a5ebcf79147
 - cipher: aes-256-gcm
   name: 667|[02-24]-🇨🇦-加拿大多伦多-248-198.57.2...
   password: faBAoD54k87UJG7
@@ -2357,3 +2357,24 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
+- cipher: aes-128-gcm
+  name: 893|🇨🇦 加拿大 01
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20047
+  server: edge.node1link.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇨🇦 加拿大 02
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20048
+  server: edge.node1link.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇨🇦 加拿大 03
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20049
+  server: edge.node1link.xyz
+  type: ss
+  udp: true
