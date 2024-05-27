@@ -232,14 +232,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '244,602,635,643|🔒 VM-WS-NA 🇹🇼 TW-61.227.230.17... #2'
+  name: '244,643,656|TW3 #1'
   network: ws
-  port: '443'
-  server: 61.227.230.17
-  servername: ''
-  tls: false
+  port: '12945'
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  tls: true
   type: vmess
-  uuid: 8a93a616-6042-49af-800b-dbe8690801b4
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
       Host: ''
@@ -260,14 +260,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '244,643,656|TW3 #1'
+  name: '244,602,635,643|🔒 VM-WS-NA 🇹🇼 TW-61.227.230.17... #2'
   network: ws
-  port: '12945'
-  server: 154.40.60.172
-  servername: 55.lwdh.us
-  tls: true
+  port: '443'
+  server: 61.227.230.17
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  uuid: 8a93a616-6042-49af-800b-dbe8690801b4
   ws-opts:
     headers:
       Host: ''
@@ -600,7 +600,7 @@ proxies:
   country: 🇼TW
   h2-opts: {}
   http-opts: {}
-  name: 427,454,455,486,504,509,602|9|baipaovpn台湾省高雄市
+  name: 427,509,602|9|baipaovpn台湾省高雄市
   network: ws
   port: '443'
   server: 61.227.230.17
@@ -608,7 +608,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 8a93a616-6042-49af-800b-dbe8690801b4
   ws-opts:
     headers:
@@ -619,10 +618,27 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 427|Relay_🏁ZZ-🇹🇼TW_219 | 5.48Mb
+  name: 427|Relay_🏁ZZ-🇼TW_213 | 5.48Mb
   network: ws
   port: 80
   server: 162.159.9.55
+  servername: hinet.alipay.ovh
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9133af1b-72e3-40b2-c811-45acaabd0ff0
+  ws-opts:
+    headers:
+      HOST: hinet.alipay.ovh
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 427|Relay_ZZ-🇹🇼TW_225 | 2.84Mb
+  network: ws
+  port: 80
+  server: go.alipay.ovh
   servername: hinet.alipay.ovh
   skip-cert-verify: true
   type: vmess
@@ -982,20 +998,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
-- client-fingerprint: chrome
-  name: 508|🇹🇼 台湾省 中华电信(HiNet)数据中心
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 508|🇹🇼 台湾省高雄市 中华电信
   network: ws
-  password: moist
-  port: 13688
-  server: 118.163.128.81
+  port: 443
+  server: 61.227.230.17
   skip-cert-verify: false
-  sni: trojan.freenods.sbs
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 8a93a616-6042-49af-800b-dbe8690801b4
   ws-opts:
     headers:
-      Host: trojan.freenods.sbs
-    path: /?ed=2560
+      Host: 61.227.230.17
+    path: /
 - alterId: 0
   cipher: auto
   name: 518|github.com/freefq-台湾省公司2222
@@ -1079,6 +1098,14 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 594,687|CN_speednode_0020
+  password: 256f9142-09e2-31f4-8b1b-8c8d0f4068b1
+  port: 61005
+  server: 2.forlive.live
+  tfo: false
+  type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 594|🇹🇼 TW 03
@@ -1836,29 +1863,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- alterId: 0
-  cipher: auto
-  name: 863|🇹🇼台湾 | ✨全流媒体
-  network: ws
-  port: '42101'
-  server: 112.29.226.3
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
-  name: 863|🇹🇼台湾-Netflix专线
-  network: ws
-  port: '37105'
-  server: 36.33.149.53
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
