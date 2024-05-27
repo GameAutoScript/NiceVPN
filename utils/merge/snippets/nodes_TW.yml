@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: 18| TW_11
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  skip-cert-verify: true
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 63|台湾01
   network: tcp
   port: '60201'
@@ -493,40 +480,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 401|台湾1—E1
-  network: ws
-  port: 30050
-  server: entrance1-50.jjsagcajvv.xyz
-  servername: cn.bing.com
-  type: vmess
-  udp: true
-  uuid: 93d95104-5892-352a-8093-982d983f6a4a
-  ws-headers:
-    Host: cn.bing.com
-  ws-opts:
-    headers:
-      Host: cn.bing.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 401|台湾2—E2
-  network: ws
-  port: 30050
-  server: entrance2-58.jjsagcajvv.xyz
-  servername: cn.bing.com
-  type: vmess
-  udp: true
-  uuid: 93d95104-5892-352a-8093-982d983f6a4a
-  ws-headers:
-    Host: cn.bing.com
-  ws-opts:
-    headers:
-      Host: cn.bing.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 408|Lv1 台湾1
   network: tcp
   port: '60247'
@@ -543,23 +496,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 433|Relay_🏁ZZ-🇼TW_188 | 5.25Mb
-  network: ws
-  port: 80
-  server: 162.159.9.55
-  servername: hinet.alipay.ovh
-  skip-cert-verify: true
-  type: vmess
-  uuid: 9133af1b-72e3-40b2-c811-45acaabd0ff0
-  ws-opts:
-    headers:
-      HOST: hinet.alipay.ovh
-    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 458|🇹🇼_TW_台湾
@@ -911,6 +847,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
+- client-fingerprint: chrome
+  name: 514|🇹🇼 台湾省 中华电信(HiNet)数据中心
+  network: ws
+  password: moist
+  port: 13688
+  server: 118.163.128.81
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /
 - alterId: 0
   cipher: auto
   name: 524|github.com/freefq-台湾省公司2222
@@ -1109,7 +1059,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 12072689-4e0d-48b9-8ad8-8a49d734bc6f
+  uuid: a8ace113-fb7e-4c6e-82b1-7a77df152b1f
 - alterId: 0
   cipher: auto
   name: 659|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1119,7 +1069,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 12072689-4e0d-48b9-8ad8-8a49d734bc6f
+  uuid: a8ace113-fb7e-4c6e-82b1-7a77df152b1f
 - alterId: 0
   cipher: auto
   name: 659|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1129,7 +1079,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 12072689-4e0d-48b9-8ad8-8a49d734bc6f
+  uuid: a8ace113-fb7e-4c6e-82b1-7a77df152b1f
 - cipher: aes-256-cfb
   name: 660|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
