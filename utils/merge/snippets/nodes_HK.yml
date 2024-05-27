@@ -1,13 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '15,249,662,879|🇭🇰 香港1| cf #1'
+  name: '15,249,460,461,492,510,662,879|🇭🇰 香港1| cf #1'
   network: ws
   port: '2052'
   server: hk.wish.ml
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
     headers:
@@ -1573,38 +1575,6 @@ proxies:
     headers:
       Host: 511hk.fans8.xyz
     path: /ray
-- alterId: 0
-  cipher: auto
-  name: '249,506,649|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44... #1'
-  network: ws
-  port: 26639
-  server: 91.149.236.44
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
-  ws-opts:
-    headers:
-      Host: ''
-    path: /cctv13/hd.m3u8/
-- alterId: 0
-  cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 249,433,506,595,649,696|香港_0526008
-  network: ws
-  port: '28681'
-  server: 47.242.22.171
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 262|[🇭🇰]a4a09ce.h1.glados-config.n...
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -2097,14 +2067,12 @@ proxies:
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 434,474,667|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰 HK
+  name: 434,438,667|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
-  obfs-param: ''
   password: iFqnzSscN
   port: 8083
   protocol: origin
-  protocol-param: ''
   server: 150.107.46.21
   type: ssr
 - alterId: 0
@@ -3437,7 +3405,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '568,675|美国 CloudFlare节点 #77'
+  name: '568,675|美国 CloudFlare节点 #74'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4265,6 +4233,38 @@ proxies:
   network: ws
   port: 80
   server: cf1.go-relay.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: dbfc85d7-a9e7-465a-ba53-3bf9f5e66ba5
+  ws-opts:
+    headers:
+      Host: cf1.go-relay.top
+    path: /ws?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 600|HKLite2
+  network: ws
+  port: 80
+  server: cf2.go-relay.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: dbfc85d7-a9e7-465a-ba53-3bf9f5e66ba5
+  ws-opts:
+    headers:
+      Host: cf1.go-relay.top
+    path: /ws?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 600|HKLite3
+  network: ws
+  port: 80
+  server: cf3.go-relay.top
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -5206,6 +5206,19 @@ proxies:
     path: /index?ed=2560
 - alterId: 0
   cipher: auto
+  name: 831|🇭🇰[直连]香港|广播|PCCWG
+  network: ws
+  port: '8080'
+  server: 154.16.183.18
+  tls: false
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
   name: 831|🇭🇰[CDN]香港|🍐
   network: ws
   port: '8443'
@@ -5610,3 +5623,66 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- cipher: aes-128-gcm
+  name: 893|🇭🇰 香港 01 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11001
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇭🇰 香港 02 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11002
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇭🇰 香港 03 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11003
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇭🇰 香港 04 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11004
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇭🇰 香港 05 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11005
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇭🇰 香港 06 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11006
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇭🇰 香港 07 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11007
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇭🇰 香港 08 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11008
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇭🇰 香港 IPLC 限速10Mbps
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 1024
+  server: 222909df61922934.cdn.jiashule.com
+  type: ss
+  udp: true
