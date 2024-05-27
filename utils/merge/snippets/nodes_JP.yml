@@ -40,23 +40,10 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  country: ' JP'
+  country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 18| JP_05
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 18,235,300,429,460,468,470,558,575,674,691|日本_0526002
+  name: 18,235,300,429,435,460,468,470,558,575,674,691|日本_0526002
   network: tcp
   port: '1069'
   server: 152.69.197.60
@@ -65,6 +52,19 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 18| JP_06
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -128,7 +128,7 @@ proxies:
   network: grpc
   password: bbab60b8-779f-31e2-916e-571f7d7023c4
   port: 28785
-  server: cpwpq-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  server: c4jig-g03.jp06-7c5a-vm0.entry.fr0307a.art
   servername: 45.144.2.113
   skip-cert-verify: false
   sni: jd5.zahuopu.top
@@ -304,82 +304,107 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 152|l日本-1
+  name: '152,469,531|l日本-1 #1'
   network: ws
-  port: '2052'
+  port: 2052
   server: yx1.gyyun.top
+  servername: ''
   tls: false
   type: vmess
+  udp: true
   uuid: 92956f18-b72f-474e-9ed4-233a637ca657
+  ws-headers:
+    Host: lrb1.gyyun.top
   ws-opts:
     headers:
       Host: lrb1.gyyun.top
     path: /?ed=2048
+  ws-path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 152|l日本-2
+  name: '152,531|l日本-2 #1'
   network: ws
-  port: '2052'
+  port: 2052
   server: yx2.gyyun.top
   tls: false
   type: vmess
+  udp: true
   uuid: 92956f18-b72f-474e-9ed4-233a637ca657
+  ws-headers:
+    Host: lrb1.gyyun.top
   ws-opts:
     headers:
       Host: lrb1.gyyun.top
     path: /?ed=2048
+  ws-path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 152|l日本-3
+  name: '152,531|l日本-3 #1'
   network: ws
-  port: '2052'
+  port: 2052
   server: yx3.gyyun.top
   tls: false
   type: vmess
+  udp: true
   uuid: 92956f18-b72f-474e-9ed4-233a637ca657
+  ws-headers:
+    Host: lrb1.gyyun.top
   ws-opts:
     headers:
       Host: lrb1.gyyun.top
     path: /?ed=2048
+  ws-path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 152|p日本-1
+  name: '152,531|p日本-1 #1'
   network: ws
-  port: '8880'
+  port: 8880
   server: yx1.gyyun.top
   tls: false
   type: vmess
+  udp: true
   uuid: 92956f18-b72f-474e-9ed4-233a637ca657
+  ws-headers:
+    Host: pqrb1.gyyun.top
   ws-opts:
     headers:
       Host: pqrb1.gyyun.top
     path: /?ed=2048
+  ws-path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 152|p日本-2
+  name: '152,531|p日本-2 #1'
   network: ws
-  port: '8880'
+  port: 8880
   server: yx2.gyyun.top
   tls: false
   type: vmess
+  udp: true
   uuid: 92956f18-b72f-474e-9ed4-233a637ca657
+  ws-headers:
+    Host: pqrb1.gyyun.top
   ws-opts:
     headers:
       Host: pqrb1.gyyun.top
     path: /?ed=2048
+  ws-path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 152|p日本-3
+  name: '152,531|p日本-3 #1'
   network: ws
-  port: '8880'
+  port: 8880
   server: yx3.gyyun.top
   tls: false
   type: vmess
+  udp: true
   uuid: 92956f18-b72f-474e-9ed4-233a637ca657
+  ws-headers:
+    Host: pqrb1.gyyun.top
   ws-opts:
     headers:
       Host: pqrb1.gyyun.top
     path: /?ed=2048
+  ws-path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: '153|pq日本1-解锁 #1'
@@ -1011,6 +1036,17 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
+  name: '244,469,636,644,656,657|未知329 97.5KB/s #2'
+  network: tcp
+  port: '32365'
+  server: 158.51.111.114
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f956a5d9-1f30-4f89-adc8-4286f4a3eb16
+- alterId: 0
+  cipher: auto
   name: 244,504,644,691|日本_0526005
   network: ws
   port: '41597'
@@ -1025,15 +1061,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '244,469,636,644,656,657|未知329 97.5KB/s #2'
+  name: 244,612|JP_youtube@资源分享师_53
   network: tcp
-  port: '32365'
-  server: 158.51.111.114
+  port: 39777
+  server: 210.230.206.18
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: f956a5d9-1f30-4f89-adc8-4286f4a3eb16
+  uuid: fc78cd01-99ac-a085-cb84-69a60920129d
 - alterId: 2
   cipher: auto
   name: '244,636,644,656,657|未知91 #2'
@@ -1362,6 +1398,37 @@ proxies:
     headers:
       Host: vjp1.0bad.com
     path: /chat
+- client-fingerprint: chrome
+  name: 455,610|🇰🇷 韩国|@ripaojiedian
+  network: ws
+  password: moist
+  port: 57770
+  server: 146.56.38.95
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '455,456,487,505,587,588,691,693,795,809,865|美国【付费推荐：https://jdyvip.link/】9...
+    #11'
+  network: ws
+  port: '80'
+  server: www.hkbu.edu.hk
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
+  ws-opts:
+    headers:
+      Host: nmsl.kp
+    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   name: 457|🇯🇵日本(绿头外网集团)(Public)
@@ -1960,19 +2027,8 @@ proxies:
   type: vmess
   uuid: 97700372-07d0-4e10-db96-937844f30a50
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 469,612,644|🔒 VM-TCP-NA 🇯🇵 JP-210.230.206....
-  network: tcp
-  port: '39777'
-  server: 210.230.206.18
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fc78cd01-99ac-a085-cb84-69a60920129d
-- alterId: 0
   cipher: auto
-  name: 469|日本_052708019
+  name: 469|日本_052713010
   network: ws
   port: '80'
   server: 45.66.217.101
@@ -2718,34 +2774,6 @@ proxies:
   server: proxy1.fanqiecloud.top
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '531|l日本-1 #1'
-  network: ws
-  port: 2052
-  server: yx1.gyyun.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 92956f18-b72f-474e-9ed4-233a637ca657
-  ws-headers:
-    Host: lrb1.gyyun.top
-  ws-path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '531|l日本-3 #1'
-  network: ws
-  port: 2052
-  server: yx3.gyyun.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 92956f18-b72f-474e-9ed4-233a637ca657
-  ws-headers:
-    Host: lrb1.gyyun.top
-  ws-path: /?ed=2048
 - cipher: aes-256-gcm
   name: 548|🇯🇵_JP_日本
   password: XKFKl2rULjIp74
@@ -3034,7 +3062,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cb7b21dc-dc0a-48e0-94fd-4b3a85887b71
+  uuid: 50c8cac7-c0ac-4f85-a241-badb8917613d
 - alterId: 0
   cipher: auto
   name: 593|【BGP】日本 05  | 1x JP
@@ -3044,7 +3072,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cb7b21dc-dc0a-48e0-94fd-4b3a85887b71
+  uuid: 50c8cac7-c0ac-4f85-a241-badb8917613d
 - alterId: 0
   cipher: auto
   name: 593|【BGP】日本 06  | 1x JP
@@ -3054,7 +3082,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cb7b21dc-dc0a-48e0-94fd-4b3a85887b71
+  uuid: 50c8cac7-c0ac-4f85-a241-badb8917613d
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -3406,6 +3434,14 @@ proxies:
   server: jp.securevpn.cc
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 610|🇯🇵 日本2|@ripaojiedian
+  password: 4c0df09f-e015-441c-a602-1b9d3a0fdded
+  port: 58527
+  server: mwksvfzza.suwas.xyz
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 610|🇯🇵 日本特殊|@ripaojiedian

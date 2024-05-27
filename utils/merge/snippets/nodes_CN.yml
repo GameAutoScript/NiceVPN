@@ -18,14 +18,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '149,244,469,603|9|baipaovpn广东省广州市 #1'
+  name: '149,244,455,456,487,505,587,588,603|9|baipaovpn广东省广州市 #1'
   network: ws
   port: '40396'
   server: 183.232.166.137
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 3d9bbb25-d1a9-42dd-b5db-bbd1effaf8da
   ws-opts:
     headers:
@@ -33,9 +34,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 149,244|🇨🇳CN-183.232.166.137-4335
+  name: 149,244,469|中国_052713001
   network: ws
-  port: 40396
+  port: '40396'
   server: 183.232.166.137
   servername: ''
   skip-cert-verify: false
@@ -468,7 +469,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '244,367,562,587,588,603,610,611,645,646,657,795,809,865|中国【付费推荐：https://jdyvip.link/】2...
+  name: '244,367,562,603,610,611,645,646,657,795,809,865|中国【付费推荐：https://jdyvip.link/】2...
     #8'
   network: ws
   port: '16632'
@@ -496,7 +497,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 64
   cipher: auto
-  name: '244,456,487,505,586,587,588,646,656,657|未知185 #2'
+  name: '244,646,656,657|未知185 #2'
   network: tcp
   port: '40259'
   server: 120.238.122.243
@@ -505,9 +506,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.238.122.243
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '244,480,677,685|رایگان | VMESS | @yaney_01 | U... #21'
@@ -535,18 +533,14 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '244,586,587,588,795,809,865|中国【付费推荐：https://jdyvip.link/】5... #15'
+  name: '244,795,809,865|中国【付费推荐：https://jdyvip.link/】5... #15'
   network: tcp
   port: '30038'
   server: 183.240.179.207
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
-  ws-headers:
-    Host: 183.240.179.207
-  ws-path: /
 - alterId: 64
   cipher: auto
   name: '244,510,586,587,588,646|广东省广州市 移动 #6'
@@ -564,7 +558,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '244,587,588,603,610,611,645,646,795,809,865|中国【付费推荐：https://jdyvip.link/】4...
+  name: '244,455,456,487,505,587,588,603,610,611,645,646,795,809,865|中国【付费推荐：https://jdyvip.link/】4...
     #4'
   network: ws
   port: '16632'
@@ -574,6 +568,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
     headers:
@@ -582,7 +577,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '244,587,588,645,646,670,795,809,865|中国【付费推荐：https://jdyvip.link/】6... #2'
+  name: '244,645,646,670,795,809,865|中国【付费推荐：https://jdyvip.link/】6... #2'
   network: ws
   port: '20301'
   server: data-jp-v1.usabooks.com.cn
@@ -609,7 +604,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '244,456,487,505,510,612,646,656,657,795,809,865|中国【付费推荐：https://jdyvip.link/】9...
+  name: '244,456,487,505,510,586,587,588,612,646,656,657,795,809,865|中国【付费推荐：https://jdyvip.link/】9...
     #4'
   network: tcp
   port: '61001'
@@ -619,16 +614,23 @@ proxies:
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.232.199.61
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: 244,456,487,505,510,688|CN_speednode_0039
+  name: 244,510,586,587,588,688|CN_speednode_0039
   network: tcp
   port: 35601
   server: 120.238.122.243
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.238.122.243
+  ws-path: /
 - cipher: rc4-md5
   name: 257|[🇨🇳]zx01.endhigh.xyz:2413(2vzh...
   password: 2vzho5
@@ -1284,7 +1286,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 429|Relay_-CN_02
+  name: 429,435|Relay_-CN_03
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1477,15 +1479,20 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 455,610|🇯🇵 日本2|@ripaojiedian
-  password: 4c0df09f-e015-441c-a602-1b9d3a0fdded
-  port: 58527
-  server: mwksvfzza.suwas.xyz
-  tfo: false
-  type: ss
-  udp: true
+- alterId: 64
+  cipher: auto
+  name: 456,487,505,586,587,588,603,611|美国3|@ripaojiedian
+  network: tcp
+  port: '34414'
+  server: 120.238.122.250
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.238.122.250
+  ws-path: /
 - alterId: 4
   cipher: auto
   name: '457,515|未命名 #193'
@@ -4998,7 +5005,7 @@ proxies:
     path: /shirker
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 509,586|🇨🇳CN-120.238.122.160-236
+  name: 509,586|🇳CN-120.238.122.159-253
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
@@ -5007,9 +5014,18 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 509,586|🇨🇳CN-120.238.122.160-239
+  name: 509,586|🇨🇳CN-120.238.122.160-256
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 509,586|🇨🇳CN-120.238.122.159-257
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
   server: service.ouluyun9803.com
   tfo: false
   type: ss
@@ -5706,14 +5722,14 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 586|🇳CN-120.238.122.207-017
+  name: 586|🇳CN-120.238.122.208-017
   password: 99301d55-a41f-4919-986b-1435996533aa
   port: 20003
   server: deepf.hjkdsak2.com
   type: ss
 - alterId: 0
   cipher: auto
-  name: 586|🇨🇳CN-120.233.42.83-235
+  name: 586|🇨🇳CN-120.233.42.83-252
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -5732,34 +5748,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '586,603,611,646,688,795,809,865|中国【付费推荐：https://jdyvip.link/】5... #14'
-  network: tcp
-  port: '15603'
-  server: 183.232.199.61
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.232.199.61
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 586|🇳CN-120.233.204.126-167
+  name: 586|🇨🇳CN-120.233.204.126-149
   network: ws
   port: 16632
-  server: m.cnmjin.net
+  server: 120.233.204.126
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  uuid: d9a9d508-67e1-4929-8bea-8733d5a30c93
   ws-headers:
-    Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    Host: ee1683cb66f83a1d45e5fdf2e7bdc7dd.mobgslb.tbcache.com
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 586|🇨🇳CN-116.162.172.160-171
+  name: 586|🇨🇳CN-116.162.172.120-157
   network: ws
   port: 16632
   server: yes.cnmjcn.net
@@ -5771,29 +5773,18 @@ proxies:
     Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
   ws-path: /
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 586,645,656|🇨🇳广东4
-  password: a501c82c72d790b8
-  port: 8474
-  server: 119.23.104.213
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
-  name: 586|🇨🇳CN-120.233.42.83-184
+  name: 586|🇨🇳CN-183.232.166.137-162
   network: ws
-  port: 20301
-  server: data-jp-v1.usabooks.com.cn
+  port: 40396
+  server: 183.232.166.137
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  uuid: 3d9bbb25-d1a9-42dd-b5db-bbd1effaf8da
   ws-headers:
-    Host: data-jp-v1.usabooks.com.cn
-  ws-path: /debian
+    Host: tms.dingtalk.com
+  ws-path: /
 - name: 592|3.35|CNyoutube155
   network: tcp
   origin: trojan://a3278882-3614-39cf-a3d6-faefa8c910ab@hnm.xiaohouzi.club:17113?type=tcp&security=tls&allowInsecure=1#CN_youtube%40%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB%E5%B8%88_155%0D
@@ -6131,6 +6122,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 612|Youtube顺丰资源  CN19
+  network: ws
+  port: 16632
+  server: 120.233.204.126
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 612,688|CN_speednode_0031
   network: tcp
   port: 15601
@@ -6179,6 +6184,17 @@ proxies:
   tfo: false
   type: ss
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 645,656|🇨🇳广东4
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: '645,646,795,809,865|中国【付费推荐：https://jdyvip.link/】2... #6'
@@ -6217,7 +6233,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '646|广东省汕头市 移动 #5'
+  name: '646|广东省汕头市 移动 #2'
   network: tcp
   port: '15601'
   server: 183.240.179.195
@@ -6237,7 +6253,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '646|广东省汕头市 移动 #6'
+  name: '646|广东省汕头市 移动 #3'
   network: tcp
   port: '61002'
   server: 183.240.179.195
