@@ -1,6 +1,19 @@
 proxies:
 - alterId: 0
   cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: 18| TW_11
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  skip-cert-verify: true
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 63|台湾01
   network: tcp
   port: '60201'
@@ -219,6 +232,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: '249,649,662|TW2 #2'
+  network: ws
+  port: '12945'
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
   name: 249,506,509,617,641,649,661,662,675|🇹🇼TW-103.159.206.35-0342
   network: ws
   port: 31945
@@ -233,20 +260,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '249,649,662|TW2 #2'
-  network: ws
-  port: '12945'
-  server: 154.40.60.172
-  servername: 55.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - alterId: '0'
   cipher: auto
   name: 262|[🇹🇼]103.131.189.212:56967(8110...
@@ -351,7 +364,7 @@ proxies:
   uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
 - alterId: 0
   cipher: auto
-  name: 310|[vmess]台湾1
+  name: 310|[vmess]台湾2
   network: ws
   port: '2052'
   server: jx.jixingnetwork.sbs
@@ -360,8 +373,8 @@ proxies:
   uuid: b835b05d-f9d1-4ba5-9c83-d80ac4e19f43
   ws-opts:
     headers:
-      Host: tw001.jixingnetwork.sbs
-    path: /
+      Host: tw102.polestar.lol
+    path: /a
 - alterId: 0
   cipher: auto
   name: 374|台湾-优化
@@ -481,6 +494,40 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 401|台湾1—E1
+  network: ws
+  port: 30050
+  server: entrance1-50.jjsagcajvv.xyz
+  servername: cn.bing.com
+  type: vmess
+  udp: true
+  uuid: 93d95104-5892-352a-8093-982d983f6a4a
+  ws-headers:
+    Host: cn.bing.com
+  ws-opts:
+    headers:
+      Host: cn.bing.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 401|台湾2—E2
+  network: ws
+  port: 30050
+  server: entrance2-58.jjsagcajvv.xyz
+  servername: cn.bing.com
+  type: vmess
+  udp: true
+  uuid: 93d95104-5892-352a-8093-982d983f6a4a
+  ws-headers:
+    Host: cn.bing.com
+  ws-opts:
+    headers:
+      Host: cn.bing.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 408|Lv1 台湾1
   network: tcp
   port: '60247'
@@ -497,6 +544,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 433|Relay_🏁ZZ-🇹🇼TW_224 | 4.03Mb
+  network: ws
+  port: 80
+  server: 162.159.9.55
+  servername: hinet.alipay.ovh
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9133af1b-72e3-40b2-c811-45acaabd0ff0
+  ws-opts:
+    headers:
+      HOST: hinet.alipay.ovh
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 458|🇹🇼_TW_台湾
@@ -848,6 +912,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
+- client-fingerprint: chrome
+  name: 514|🇹🇼 台湾省 中华电信(HiNet)数据中心
+  network: ws
+  password: moist
+  port: 13688
+  server: 118.163.128.81
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /
 - alterId: 0
   cipher: auto
   name: 524|github.com/freefq-台湾省公司2222
@@ -931,22 +1009,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 600|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 600|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 600|🇹🇼 TW 03
@@ -1019,6 +1081,16 @@ proxies:
   server: ununim.yangliq.com
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 608,616|台湾2|@ripaojiedian
+  network: tcp
+  port: '34999'
+  server: 90778990.okc94l-zleouxmco-tw01.my777999.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6f81fa0c-2ee2-43f0-adce-5d14a6643ed4
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 615|🇹🇼 台湾|@ripaojiedian
