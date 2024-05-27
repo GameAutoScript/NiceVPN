@@ -1,6 +1,19 @@
 proxies:
 - alterId: 0
   cipher: auto
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: 18| TW_15
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  skip-cert-verify: true
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 63|台湾01
   network: tcp
   port: '60201'
@@ -219,14 +232,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '244,643,656|TW3 #1'
+  name: '244,602,635,643|🔒 VM-WS-NA 🇹🇼 TW-61.227.230.17... #2'
   network: ws
-  port: '12945'
-  server: 154.40.60.172
-  servername: 55.lwdh.us
-  tls: true
+  port: '443'
+  server: 61.227.230.17
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  uuid: 8a93a616-6042-49af-800b-dbe8690801b4
   ws-opts:
     headers:
       Host: ''
@@ -245,6 +258,20 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '244,643,656|TW3 #1'
+  network: ws
+  port: '12945'
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: '0'
   cipher: auto
   name: 257|[🇹🇼]103.131.189.212:56967(8110...
@@ -570,6 +597,42 @@ proxies:
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - alterId: 0
   cipher: auto
+  country: 🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 427,454,455,486,504,509,602|9|baipaovpn台湾省高雄市
+  network: ws
+  port: '443'
+  server: 61.227.230.17
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8a93a616-6042-49af-800b-dbe8690801b4
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 427|Relay_🏁ZZ-🇹🇼TW_219 | 5.48Mb
+  network: ws
+  port: 80
+  server: 162.159.9.55
+  servername: hinet.alipay.ovh
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9133af1b-72e3-40b2-c811-45acaabd0ff0
+  ws-opts:
+    headers:
+      HOST: hinet.alipay.ovh
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
   name: 452|🇹🇼_TW_台湾
   network: ws
   port: 888
@@ -728,7 +791,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 468|台湾_052704004
+  name: 468|台湾_052708002
   network: ws
   port: '443'
   server: 61.227.230.17
@@ -740,20 +803,6 @@ proxies:
     headers:
       Host: tw1g.xn--vhq70hxyat50h6wk.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '486,602,635,643|🔒 VM-WS-NA 🇹🇼 TW-61.227.230.17... #1'
-  network: ws
-  port: '443'
-  server: 61.227.230.17
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8a93a616-6042-49af-800b-dbe8690801b4
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - alterId: 0
   cipher: auto
   name: '500|Taiwan #1'
@@ -934,7 +983,7 @@ proxies:
   type: vmess
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
 - client-fingerprint: chrome
-  name: 508,609|🇹🇼 台湾2|@ripaojiedian
+  name: 508|🇹🇼 台湾省 中华电信(HiNet)数据中心
   network: ws
   password: moist
   port: 13688
@@ -1030,22 +1079,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 594|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 594|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 594|🇹🇼 TW 03
@@ -1056,8 +1089,8 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 594|🇹🇼 TW 04
-  password: cf448056-b7c2-439d-b708-aaf5ff321052
+  name: 594,687|CN_speednode_0046
+  password: 5dc640e2-5f78-4e90-9fce-f21e1e62cc41
   port: 22302
   server: 04.forlive.live
   tfo: false
@@ -1116,6 +1149,24 @@ proxies:
   password: 030741c1-8706-41f6-93ae-f97585365627
   port: 22002
   server: ununim.yangliq.com
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 602,610|台湾2|@ripaojiedian
+  network: tcp
+  port: '34999'
+  server: 90778990.okc94l-zleouxmco-tw01.my777999.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6f81fa0c-2ee2-43f0-adce-5d14a6643ed4
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 609|🇹🇼 台湾|@ripaojiedian
+  password: 6ad6b840-da77-4981-bfe3-1faccd2f974d
+  port: 20007
+  server: chinact.one.edu.kg
   tfo: false
   type: ss
 - alterId: 0
