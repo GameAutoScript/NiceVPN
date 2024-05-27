@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|日本|湖南移动|纸盒|1x
+  network: tcp
+  port: 26181
+  server: cs.guanguan.club
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: 16|JP-日本A1
   network: ws
   port: '8880'
@@ -43,7 +52,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 18,240,305,434,440,465,473,475,563,580,679,696|日本_0526002
+  name: 18,240,305,440,465,473,475,563,580,679,696|日本_0526002
   network: tcp
   port: '1069'
   server: 152.69.197.60
@@ -52,19 +61,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' JP'
-  h2-opts: {}
-  http-opts: {}
-  name: 18| JP_06
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -121,14 +117,17 @@ proxies:
 - alterId: 1
   cipher: auto
   client-fingerprint: chrome
+  country: 🇺🇸US
   grpc-opts:
     grpc-service-name: 1654431
-  name: '54,149,154,262,401,404,449,453,454,458,460,507,514,519,524,529,531,534,547,568,591,596,597,600,601,606,610,615,618,650,661,667,694,824|🇯🇵
+  h2-opts: {}
+  http-opts: {}
+  name: '54,149,154,262,401,404,433,449,453,454,458,507,514,519,524,529,531,534,547,568,591,596,597,600,601,606,610,615,618,650,661,667,694,824|🇯🇵
     免费-日本6-Ver.7 #1'
   network: grpc
   password: bbab60b8-779f-31e2-916e-571f7d7023c4
   port: 28785
-  server: yjexn-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  server: hb0zk-g03.jp06-7c5a-vm0.entry.fr0307a.art
   servername: 45.144.2.113
   skip-cert-verify: false
   sni: jd5.zahuopu.top
@@ -178,7 +177,7 @@ proxies:
   cipher: auto
   name: 72|🇯🇵 日本AWS-01
   network: ws
-  port: '39003'
+  port: '33561'
   server: jsidcyd.kunkun.icu
   tls: false
   type: vmess
@@ -189,20 +188,9 @@ proxies:
     path: /ssv
 - alterId: 0
   cipher: auto
-  name: 78|🇯🇵日本A低速直连
-  network: ws
-  port: '80'
-  server: jpos01.housen.men
-  tls: false
-  type: vmess
-  uuid: 9ed92694-94ab-4cd0-8eac-be6c5bcbeb3c
-  ws-opts:
-    headers:
-      Host: jpos01.housen.men
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 91,461,510,518,696|美国_0526165
+  h2-opts: {}
+  http-opts: {}
+  name: 91,433,518,693,696|美国_0526165
   network: http
   port: '32365'
   server: 158.51.111.114
@@ -216,7 +204,7 @@ proxies:
   delay: 422
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇸🇬新加坡中转-01 x1
+  name: 91,474,518,752|🇸🇬新加坡中转-01 x1
   network: tcp
   port: '28288'
   server: 987116d5cc7b.uxzbpycs.xyz
@@ -230,7 +218,7 @@ proxies:
   delay: 1557
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇿🇦南非中转-01 x5
+  name: 91,474,518,752|🇿🇦南非中转-01 x5
   network: tcp
   port: '33092'
   server: hb81phfn4n03.uxzbpycs.xyz
@@ -244,7 +232,7 @@ proxies:
   delay: 1500
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇮🇳印度中转-01 x1
+  name: 91,474,518,752|🇮🇳印度中转-01 x1
   network: tcp
   port: '14760'
   server: f4kpmyf7h8sq.uxzbpycs.xyz
@@ -258,7 +246,7 @@ proxies:
   delay: 2028
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇧🇷巴西中转-01 x2
+  name: 91,474,518,752|🇧🇷巴西中转-01 x2
   network: tcp
   port: '11265'
   server: cwdy0ofei1fp.uxzbpycs.xyz
@@ -272,7 +260,7 @@ proxies:
   delay: 1259
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇩🇪德国中转-01 x1
+  name: 91,474,518,752|🇩🇪德国中转-01 x1
   network: tcp
   port: '17788'
   server: yxbtnfpm37fq.uxzbpycs.xyz
@@ -286,7 +274,7 @@ proxies:
   delay: 1009
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇯🇵日本中转-02 x1
+  name: 91,474,518,752|🇯🇵日本中转-02 x1
   network: tcp
   port: '16643'
   server: 71caa403a6f9.uxzbpycs.xyz
@@ -300,7 +288,7 @@ proxies:
   delay: 1397
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇯🇵日本中转-05 x1
+  name: 91,474,518,752|🇯🇵日本中转-05 x1
   network: tcp
   port: '52380'
   server: kcnc8rmix499.uxzbpycs.xyz
@@ -314,7 +302,7 @@ proxies:
   delay: 1404
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇯🇵日本中转-01 x1
+  name: 91,474,518,752|🇯🇵日本中转-01 x1
   network: tcp
   port: '33753'
   server: bfb686c9eded.uxzbpycs.xyz
@@ -328,7 +316,7 @@ proxies:
   delay: 913
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇯🇵日本中转-04 x1
+  name: 91,474,518,752|🇯🇵日本中转-04 x1
   network: tcp
   port: '48016'
   server: cd3fga73ruvv.uxzbpycs.xyz
@@ -342,7 +330,7 @@ proxies:
   delay: 1010
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇯🇵日本中转-03 x1
+  name: 91,474,518,752|🇯🇵日本中转-03 x1
   network: tcp
   port: '63494'
   server: 02a3li8gtko1.uxzbpycs.xyz
@@ -356,7 +344,7 @@ proxies:
   delay: 856
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇹🇭泰国中转-01 x1
+  name: 91,474,518,752|🇹🇭泰国中转-01 x1
   network: tcp
   port: '51603'
   server: p04m23m9nd46.uxzbpycs.xyz
@@ -370,7 +358,7 @@ proxies:
   delay: 1040
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇮🇪爱尔兰中转-01 x5
+  name: 91,474,518,752|🇮🇪爱尔兰中转-01 x5
   network: tcp
   port: '54944'
   server: pasqh2mj5hni.uxzbpycs.xyz
@@ -384,7 +372,7 @@ proxies:
   delay: 2151
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇺🇸美国中转-04 x1
+  name: 91,474,518,752|🇺🇸美国中转-04 x1
   network: tcp
   port: '23763'
   server: izr1cq8n0ji4.uxzbpycs.xyz
@@ -398,7 +386,7 @@ proxies:
   delay: 2156
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇺🇸美国中转-06 x1
+  name: 91,474,518,752|🇺🇸美国中转-06 x1
   network: tcp
   port: '28029'
   server: s3swr59k6uvg.uxzbpycs.xyz
@@ -412,7 +400,7 @@ proxies:
   delay: 2007
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇬🇧英国中转-01 x1
+  name: 91,474,518,752|🇬🇧英国中转-01 x1
   network: tcp
   port: '28166'
   server: hf2bu1m14orn.uxzbpycs.xyz
@@ -426,7 +414,7 @@ proxies:
   delay: 928
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇳🇱荷兰中转-01 x5
+  name: 91,474,518,752|🇳🇱荷兰中转-01 x5
   network: tcp
   port: '47974'
   server: ypoxbrs6txrq.uxzbpycs.xyz
@@ -440,7 +428,7 @@ proxies:
   delay: 895
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇰🇷韩国中转-01 x3
+  name: 91,474,518,752|🇰🇷韩国中转-01 x3
   network: tcp
   port: '62646'
   server: djew7tf6w3qa.uxzbpycs.xyz
@@ -454,7 +442,7 @@ proxies:
   delay: 1158
   h2-opts: {}
   http-opts: {}
-  name: 91,461,474,510,518,752|🇲🇽墨西哥中转-01 x3
+  name: 91,474,518,752|🇲🇽墨西哥中转-01 x3
   network: tcp
   port: '55570'
   server: wkv4nndu55t4.uxzbpycs.xyz
@@ -1288,20 +1276,6 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: '249,474,696,698,801,815,873|美国【付费推荐：https://jdyvip.link/】9... #11'
-  network: ws
-  port: '80'
-  server: www.hkbu.edu.hk
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
-  ws-opts:
-    headers:
-      Host: nmsl.kp
-    path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
   name: '249,474,641,649,661,662|未知66 55.9KB/s #2'
   network: tcp
   port: '32365'
@@ -1496,7 +1470,9 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 384,474,693|US_speednode_0092
+  h2-opts: {}
+  http-opts: {}
+  name: 384,433,474,693|US_speednode_0085
   network: ws
   port: 2086
   server: jp01.appleid.bf
@@ -3230,7 +3206,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '580|🇯🇵 日本 001 #2'
+  name: 580|🇯🇵 日本 001
   network: ws
   port: '22356'
   server: 002.AP.POP.node-for-smallairport.win
@@ -3243,7 +3219,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '580|🇯🇵 日本 007 #2'
+  name: 580|🇯🇵 日本 007
   network: ws
   port: '80'
   server: jp25.baf1.sbs
@@ -3256,7 +3232,7 @@ proxies:
     path: /aws-china-media/Y699Gjx2rNw.mp4
 - alterId: 0
   cipher: auto
-  name: '580|🇯🇵 日本 008 #2'
+  name: 580|🇯🇵 日本 008
   network: ws
   port: '23245'
   server: jp02.170203.xyz
@@ -3269,7 +3245,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '580|🇯🇵 日本 014 #2'
+  name: 580|🇯🇵 日本 014
   network: tcp
   port: '31311'
   server: 2d1t5w06.mcfront.xyz
@@ -3405,7 +3381,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 763ae368-9f40-4412-bb57-11998aa23e7c
+  uuid: d54dc6bb-d5e1-466e-b09b-c0cf4d974646
 - alterId: 0
   cipher: auto
   name: 598|【BGP】日本 05  | 1x JP
@@ -3415,7 +3391,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 763ae368-9f40-4412-bb57-11998aa23e7c
+  uuid: d54dc6bb-d5e1-466e-b09b-c0cf4d974646
 - alterId: 0
   cipher: auto
   name: 598|【BGP】日本 06  | 1x JP
@@ -3425,7 +3401,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 763ae368-9f40-4412-bb57-11998aa23e7c
+  uuid: d54dc6bb-d5e1-466e-b09b-c0cf4d974646
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -3492,16 +3468,8 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 600,693|CN_speednode_0004
-  password: 3644bf1f-a8be-3b00-b902-984dda5f75a0
-  port: 61001
-  server: 4.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 600,693|CN_speednode_0025
-  password: 84521966-3d29-3b68-b303-3c19f3533d18
+  name: 600|🇯🇵 JP 02
+  password: 491bec7d-e6cb-3799-9e9d-552493a500e0
   port: 61002
   server: 4.forlive.live
   tfo: false
@@ -3818,7 +3786,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 09c9531b-ba54-4127-b7f9-32bc70771fb4
+  uuid: 4d158ca7-28c5-466b-8243-57e649327e89
 - alterId: 0
   cipher: auto
   name: 659|🇯🇵日本 | 108 | 流媒体优化 | 1x
@@ -3828,7 +3796,7 @@ proxies:
   servername: jp08.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 09c9531b-ba54-4127-b7f9-32bc70771fb4
+  uuid: 4d158ca7-28c5-466b-8243-57e649327e89
 - alterId: 0
   cipher: auto
   name: 659|🇯🇵日本 | 109 | 负载优化 | 1x
@@ -3838,7 +3806,7 @@ proxies:
   servername: jp09.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 09c9531b-ba54-4127-b7f9-32bc70771fb4
+  uuid: 4d158ca7-28c5-466b-8243-57e649327e89
 - cipher: aes-256-cfb
   name: 660|TG频道@mfbpn-日本2
   obfs: tls1.2_ticket_auth
@@ -4143,84 +4111,6 @@ proxies:
     headers:
       Host: kvjqqknzjp6.yofnhkfc.xyz
     path: /video/Zo98PYfE
-- alterId: 0
-  cipher: auto
-  name: 759|🇯🇵日本S丨电报群@bp520
-  network: ws
-  port: '80'
-  server: 104.19.173.68
-  tls: false
-  type: vmess
-  uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6
-  ws-opts:
-    headers:
-      Host: jp3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 759|🇯🇵日本1丨电报群@bp520
-  network: ws
-  port: '80'
-  server: 104.18.15.147
-  tls: false
-  type: vmess
-  uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6
-  ws-opts:
-    headers:
-      Host: jp3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 759|🇯🇵日本2丨电报群@bp520
-  network: ws
-  port: '80'
-  server: 104.18.15.148
-  tls: false
-  type: vmess
-  uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6
-  ws-opts:
-    headers:
-      Host: jp3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 759|🇯🇵日本4丨电报群@bp520
-  network: ws
-  port: '80'
-  server: 104.19.175.68
-  tls: false
-  type: vmess
-  uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6
-  ws-opts:
-    headers:
-      Host: jp3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 759|🇯🇵日本5丨电报群@bp520
-  network: ws
-  port: '80'
-  server: 104.19.176.68
-  tls: false
-  type: vmess
-  uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6
-  ws-opts:
-    headers:
-      Host: jp3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 759|🇯🇵日本6丨电报群@bp520
-  network: ws
-  port: '80'
-  server: 162.159.136.16
-  tls: false
-  type: vmess
-  uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6
-  ws-opts:
-    headers:
-      Host: jp3.visaapp.top
-    path: /
 - alterId: 0
   cipher: auto
   name: 763|E日本1
@@ -4789,3 +4679,59 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- cipher: aes-128-gcm
+  name: '893|🇯🇵 日本 01 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20841
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '893|🇯🇵 日本 02 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20842
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '893|🇯🇵 日本 03 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20843
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇯🇵 日本 04
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20844
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇯🇵 日本 05
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20845
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇯🇵 日本 06
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20846
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇯🇵 日本 07
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20847
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 893|🇯🇵 日本 08
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20848
+  server: ss.jpnlink.xyz
+  type: ss
+  udp: true
