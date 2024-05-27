@@ -1,15 +1,13 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '15,249,460,461,492,510,662,879|🇭🇰 香港1| cf #1'
+  name: '15,249,662,879|🇭🇰 香港1| cf #1'
   network: ws
   port: '2052'
   server: hk.wish.ml
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
     headers:
@@ -296,15 +294,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 149,249,433,608,696|香港_0526009
+  name: 149,249,608,696|香港_0526009
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
@@ -2067,12 +2062,14 @@ proxies:
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 434,438,667|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 434,474,667|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
+  obfs-param: ''
   password: iFqnzSscN
   port: 8083
   protocol: origin
+  protocol-param: ''
   server: 150.107.46.21
   type: ssr
 - alterId: 0
@@ -3405,7 +3402,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '568,675|美国 CloudFlare节点 #74'
+  name: '568,675|美国 CloudFlare节点 #77'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4242,38 +4239,6 @@ proxies:
     headers:
       Host: cf1.go-relay.top
     path: /ws?ed=2560
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 600|HKLite2
-  network: ws
-  port: 80
-  server: cf2.go-relay.top
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: dbfc85d7-a9e7-465a-ba53-3bf9f5e66ba5
-  ws-opts:
-    headers:
-      Host: cf1.go-relay.top
-    path: /ws?ed=2560
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 600|HKLite3
-  network: ws
-  port: 80
-  server: cf3.go-relay.top
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: dbfc85d7-a9e7-465a-ba53-3bf9f5e66ba5
-  ws-opts:
-    headers:
-      Host: cf1.go-relay.top
-    path: /ws?ed=2560
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 600|🇭🇰 香港 01
@@ -4601,7 +4566,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3cdca866-a597-43d7-be85-2c8c4f460129
+  uuid: 2ee38174-f1c4-4590-8cb4-33aa2f6508b7
 - alterId: 0
   cipher: auto
   name: 659|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4611,7 +4576,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3cdca866-a597-43d7-be85-2c8c4f460129
+  uuid: 2ee38174-f1c4-4590-8cb4-33aa2f6508b7
 - alterId: 0
   cipher: auto
   name: 659|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4621,7 +4586,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 3cdca866-a597-43d7-be85-2c8c4f460129
+  uuid: 2ee38174-f1c4-4590-8cb4-33aa2f6508b7
 - cipher: aes-256-cfb
   name: 660|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4813,6 +4778,15 @@ proxies:
   password: AHyDyR
   port: 56047
   server: 38.150.12.187
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 661|HK18 777.2KB/s
+  password: 2H4UYkKDjiV9FbZMPE8c5z
+  port: 16006
+  server: 46.226.164.2
   skip-cert-verify: true
   tls: true
   type: ss
@@ -5197,19 +5171,6 @@ proxies:
   network: ws
   port: '50165'
   server: hkt1.hkg.hypernat.com
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /index?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 831|🇭🇰[直连]香港|广播|PCCWG
-  network: ws
-  port: '8080'
-  server: 154.16.183.18
   tls: false
   type: vmess
   uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
