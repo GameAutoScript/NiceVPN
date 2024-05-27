@@ -219,7 +219,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 249,506,509,641,649,661,662,675|🇹🇼TW-103.159.206.35-0342
+  name: 249,506,509,617,641,649,661,662,675|🇹🇼TW-103.159.206.35-0342
   network: ws
   port: 31945
   server: 103.159.206.35
@@ -227,6 +227,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-opts:
     headers:
@@ -352,14 +353,14 @@ proxies:
   cipher: auto
   name: 310|[vmess]台湾1
   network: ws
-  port: '8443'
+  port: '2052'
   server: jx.jixingnetwork.sbs
-  tls: true
+  tls: false
   type: vmess
   uuid: b835b05d-f9d1-4ba5-9c83-d80ac4e19f43
   ws-opts:
     headers:
-      Host: tw01.jixingnetwork.sbs
+      Host: tw001.jixingnetwork.sbs
     path: /
 - alterId: 0
   cipher: auto
@@ -478,40 +479,6 @@ proxies:
     headers:
       Host: ee1683cb66f83a1d45e5fdf2e7bdc7dd.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 401|台湾1—E1
-  network: ws
-  port: 30050
-  server: entrance1-50.jjsagcajvv.xyz
-  servername: cn.bing.com
-  type: vmess
-  udp: true
-  uuid: 93d95104-5892-352a-8093-982d983f6a4a
-  ws-headers:
-    Host: cn.bing.com
-  ws-opts:
-    headers:
-      Host: cn.bing.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 401|台湾2—E2
-  network: ws
-  port: 30050
-  server: entrance2-58.jjsagcajvv.xyz
-  servername: cn.bing.com
-  type: vmess
-  udp: true
-  uuid: 93d95104-5892-352a-8093-982d983f6a4a
-  ws-headers:
-    Host: cn.bing.com
-  ws-opts:
-    headers:
-      Host: cn.bing.com
-    path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 408|Lv1 台湾1
@@ -881,20 +848,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
-- client-fingerprint: chrome
-  name: 514|🇹🇼 台湾省 中华电信(HiNet)数据中心
-  network: ws
-  password: moist
-  port: 13688
-  server: 118.163.128.81
-  skip-cert-verify: false
-  sni: trojan.freenods.sbs
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.freenods.sbs
-    path: /
 - alterId: 0
   cipher: auto
   name: 524|github.com/freefq-台湾省公司2222
@@ -1093,7 +1046,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7f6a24e0-72f0-4cd4-adea-39c8d0157ca7
+  uuid: 3cdca866-a597-43d7-be85-2c8c4f460129
 - alterId: 0
   cipher: auto
   name: 659|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1103,7 +1056,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7f6a24e0-72f0-4cd4-adea-39c8d0157ca7
+  uuid: 3cdca866-a597-43d7-be85-2c8c4f460129
 - alterId: 0
   cipher: auto
   name: 659|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1113,7 +1066,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7f6a24e0-72f0-4cd4-adea-39c8d0157ca7
+  uuid: 3cdca866-a597-43d7-be85-2c8c4f460129
 - cipher: aes-256-cfb
   name: 660|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
