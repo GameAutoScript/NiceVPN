@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: 18| TW_15
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  skip-cert-verify: true
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 63|台湾01
   network: tcp
   port: '60201'
@@ -232,20 +219,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '248,648,661|TW2 #3'
-  network: ws
-  port: '12945'
-  server: 154.40.60.172
-  servername: 55.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
   name: 248,505,508,640,648,660,661,674|🇹🇼TW-103.159.206.35-0342
   network: ws
   port: 31945
@@ -259,6 +232,20 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '248,648,661|TW #2'
+  network: ws
+  port: '12945'
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: '0'
   cipher: auto
   name: 261|[🇹🇼]103.131.189.212:56967(8110...
@@ -703,6 +690,20 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
+  name: 473,828|🇹🇼[直连]台湾|家宽|HINET|4X
+  network: ws
+  port: '37902'
+  server: hinet-wap.myddns.me
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
   name: '505|Taiwan #1'
   network: ws
   port: 443
@@ -1118,7 +1119,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 18c8532d-20f1-49f4-8f57-e228acf0bb85
+  uuid: f29efce9-7a2a-41ee-a0e6-508506a7ae85
 - alterId: 0
   cipher: auto
   name: 658|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1128,7 +1129,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 18c8532d-20f1-49f4-8f57-e228acf0bb85
+  uuid: f29efce9-7a2a-41ee-a0e6-508506a7ae85
 - alterId: 0
   cipher: auto
   name: 658|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1138,7 +1139,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 18c8532d-20f1-49f4-8f57-e228acf0bb85
+  uuid: f29efce9-7a2a-41ee-a0e6-508506a7ae85
 - cipher: aes-256-cfb
   name: 659|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -1191,7 +1192,7 @@ proxies:
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
   cipher: auto
-  name: '660|TW2 #1'
+  name: 660|TW
   network: ws
   port: 12945
   server: 154.40.60.172
@@ -1199,6 +1200,18 @@ proxies:
   tls: true
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+- alterId: 0
+  cipher: auto
+  name: 660|TW3
+  network: ws
+  password: auto
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: true
+  sni: vip.123789.pp.ua
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 674|🇹🇼台湾 01
@@ -1681,19 +1694,6 @@ proxies:
   protocol-param: NjE2MTA6RzVnZHlw
   server: 231103level4.unclemanco.com
   type: ssr
-- alterId: 0
-  cipher: auto
-  name: 828|🇹🇼[直连]台湾|家宽|HINET|4X
-  network: ws
-  port: '37902'
-  server: hinet-wap.myddns.me
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /index?ed=2560
 - cipher: aes-256-cfb
   name: 844|畅行 台湾 1
   obfs: tls1.2_ticket_auth
