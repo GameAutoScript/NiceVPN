@@ -1,15 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|新加坡|广州移动|Polo|1x
-  network: tcp
-  port: '17162'
-  server: gdcm.r1u.cn
-  tls: false
-  type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
-- alterId: 0
-  cipher: auto
   name: '15,809,823,882,888|🇸🇬 新加坡1|cf #1'
   network: ws
   port: '2052'
@@ -37,8 +28,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: aes-256-cfb
-  country: ' SG'
-  name: 18,149,667|未知1036 1.3MB/s
+  country: 🇸🇬SG
+  name: 18,149,440,667|未知1036 1.3MB/s
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 103.172.116.103
@@ -47,8 +38,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: ' SG'
-  name: 18,667|未知477 1.2MB/s
+  country: 🇬SG
+  name: 18,440,667|未知477 1.2MB/s
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 103.172.116.103
@@ -57,8 +48,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: ' SG'
-  name: 18,667|未知189 1.3MB/s
+  country: 🇸🇬SG
+  name: 18,440,667|未知561
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 103.172.116.103
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 18,440,667|未知189 1.3MB/s
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 103.172.116.103
@@ -67,8 +68,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: ' SG'
-  name: 18,667|未知772 1.2MB/s
+  country: 🇸🇬SG
+  name: 18,440,667|未知772 1.2MB/s
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 103.172.116.103
@@ -435,7 +436,7 @@ proxies:
   tls: true
   type: ss
 - country: SG
-  name: 150|netflix_SG
+  name: 150|Relay_SG-SG_55
   network: ws
   password: NISHIKUITAN222
   port: 21737
@@ -1716,20 +1717,6 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '251,480,647,655|🔒 VM-WS-NONE 🇸🇬 SG-152.42.241.... #2'
-  network: ws
-  port: 45808
-  server: 152.42.241.39
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 09bdd071-475a-4dbe-dce3-48d1a2ef4746
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: '251,480,512,647,655|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
   network: ws
   port: 23006
@@ -1742,6 +1729,24 @@ proxies:
     headers:
       Host: ''
     path: /free
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '251,439,480,647,655|🔒 VM-WS-NONE 🇸🇬 SG-152.42.241.... #2'
+  network: ws
+  port: 45808
+  server: 152.42.241.39
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 09bdd071-475a-4dbe-dce3-48d1a2ef4746
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 251,480,512,601,702|新加坡_0528008
@@ -1991,6 +1996,40 @@ proxies:
   server: sgm1.cdn.housenetworkmp3.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 406|新加坡1—E1
+  network: ws
+  port: 30006
+  server: entrance1-87.jjsagcajvv.xyz
+  servername: cn.bing.com
+  type: vmess
+  udp: true
+  uuid: 93d95104-5892-352a-8093-982d983f6a4a
+  ws-headers:
+    Host: cn.bing.com
+  ws-opts:
+    headers:
+      Host: cn.bing.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 406|新加坡2—E2
+  network: ws
+  port: 30006
+  server: entrance2-6.jjsagcajvv.xyz
+  servername: cn.bing.com
+  type: vmess
+  udp: true
+  uuid: 93d95104-5892-352a-8093-982d983f6a4a
+  ws-headers:
+    Host: cn.bing.com
+  ws-opts:
+    headers:
+      Host: cn.bing.com
+    path: /
+  ws-path: /
 - cipher: aes-256-cfb
   name: 409,513,586,602,673|[02-24]-🇦🇶-本机地址-138-sg-am3.eqs...
   obfs: tls1.2_ticket_auth
@@ -2061,6 +2100,64 @@ proxies:
   tls: false
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 440|🇸🇬SG_26
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 103.172.116.90
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 440|🇸🇬SG_27
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 103.172.116.94
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 440,667|未知284 1.2MB/s
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 103.172.116.103
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 440,667|未知486 1.2MB/s
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
+  server: 103.172.116.103
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 440|🇸🇬SG_30
+  password: UWZQeLRWnkqgkseq
+  port: 9032
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 440|🇸🇬SG_31
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.103
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 440,667|未知837 1.2MB/s
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 103.172.116.103
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: 453|SG_youtube@资源分享师_38
@@ -2145,16 +2242,32 @@ proxies:
     headers:
       Host: ''
     path: /anti13.zingfast.vn
-- name: 466|[Trojan] 🇸🇬 新加坡 Amazon数据中心
+- name: 466,699|SG_speednode_0075
   network: ws
-  password: yGcJzk5XRZ
-  port: 48357
-  server: 18.141.137.36
+  password: b84d16a244460e09
+  port: 3306
+  server: 5.44.249.44
   skip-cert-verify: true
+  sni: n2.gladns.com
   type: trojan
   udp: true
   ws-opts:
-    path: /
+    headers:
+      Host: n2.gladns.com
+    path: /gateway/connect
+- name: 466|[Trojan] 🇸🇬 新加坡 DigitalOcean数据...
+  network: ws
+  password: cTlRMgn2nnDop0RaRR6yzw
+  port: 443
+  server: 159.65.8.60
+  skip-cert-verify: true
+  sni: android.googleapis.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: android.googleapis.com
+    path: ''
 - alterId: 0
   cipher: auto
   name: 468|🇸🇬新加坡(绿头外网集团)(Public)
@@ -4176,7 +4289,7 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6899b0d0-16eb-4c2f-916d-1bbb4f111c99
+  uuid: 84afa54b-95d1-4b39-a5de-c6ad37c40dda
 - alterId: 0
   cipher: auto
   name: 665|🇸🇬新加坡 | 108 | 流媒体优化 | 1x
@@ -4186,7 +4299,7 @@ proxies:
   servername: sg08.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6899b0d0-16eb-4c2f-916d-1bbb4f111c99
+  uuid: 84afa54b-95d1-4b39-a5de-c6ad37c40dda
 - alterId: 0
   cipher: auto
   name: 665|🇸🇬新加坡 | 109 | 负载优化 | 1x
@@ -4196,7 +4309,7 @@ proxies:
   servername: sg09.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6899b0d0-16eb-4c2f-916d-1bbb4f111c99
+  uuid: 84afa54b-95d1-4b39-a5de-c6ad37c40dda
 - cipher: aes-256-cfb
   name: 666|TG频道@mfbpn-新加坡2 2
   obfs: tls1.2_ticket_auth
