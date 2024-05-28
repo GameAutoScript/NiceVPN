@@ -1,17 +1,40 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: ' TW'
-  h2-opts: {}
-  http-opts: {}
-  name: 18| TW_12
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  skip-cert-verify: true
+  name: 63|台湾01
+  network: tcp
+  port: '60201'
+  server: iepl.hongxing.pro
+  tls: false
   type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-path: /
+  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
+- alterId: 0
+  cipher: auto
+  name: 63|台湾02
+  network: tcp
+  port: '60202'
+  server: iepl.hongxing.pro
+  tls: false
+  type: vmess
+  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
+- alterId: 0
+  cipher: auto
+  name: 63|台湾03
+  network: tcp
+  port: '60203'
+  server: iepl.hongxing.pro
+  tls: false
+  type: vmess
+  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
+- alterId: 0
+  cipher: auto
+  name: 63|台湾04
+  network: tcp
+  port: '60204'
+  server: iepl.hongxing.pro
+  tls: false
+  type: vmess
+  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
 - alterId: 0
   cipher: auto
   name: 72|🇹🇼 台湾wapkcd-02
@@ -183,6 +206,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 251,510,513,645,653,665,666,679|🇹🇼TW-103.159.206.35-0342
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: '251,653,666|TW4 #2'
   network: ws
   port: '12945'
@@ -197,19 +235,18 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 251,510,513,645,653,665,666,679|🇹🇼TW-103.159.206.35-0342
+  name: '251,645,653|🔒 VM-WS-NA 🇹🇼 TW-36.232.31.135... #2'
   network: ws
-  port: 31945
-  server: 103.159.206.35
+  port: '37902'
+  server: 36.232.31.135
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: hinet-wap.myddns.me
+    path: /index?ed=2560
 - alterId: '0'
   cipher: auto
   name: 264|[🇹🇼]103.131.189.212:56967(8110...
@@ -641,20 +678,6 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 478,835|🇹🇼[直连]台湾|家宽|HINET|4X
-  network: ws
-  port: '37902'
-  server: hinet-wap.myddns.me
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /index?ed=2560
-- alterId: 0
-  cipher: auto
   name: '510|Taiwan #1'
   network: ws
   port: 443
@@ -1033,20 +1056,6 @@ proxies:
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
 - alterId: 0
   cipher: auto
-  name: '645,653|🔒 VM-WS-NA 🇹🇼 TW-36.232.31.135... #1'
-  network: ws
-  port: '37902'
-  server: 36.232.31.135
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: hinet-wap.myddns.me
-    path: /index?ed=2560
-- alterId: 0
-  cipher: auto
   name: 663|🇹🇼台湾 | 101 | 原生 | 1x
   network: tcp
   port: '30301'
@@ -1054,7 +1063,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 447539fb-0b50-4b50-9b2a-a8481870d142
+  uuid: bc868395-065f-4636-b34a-6e0255d6214a
 - alterId: 0
   cipher: auto
   name: 663|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1064,7 +1073,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 447539fb-0b50-4b50-9b2a-a8481870d142
+  uuid: bc868395-065f-4636-b34a-6e0255d6214a
 - alterId: 0
   cipher: auto
   name: 663|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1074,7 +1083,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 447539fb-0b50-4b50-9b2a-a8481870d142
+  uuid: bc868395-065f-4636-b34a-6e0255d6214a
 - cipher: aes-256-cfb
   name: 664|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -1127,7 +1136,7 @@ proxies:
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
   cipher: auto
-  name: 665|TW3
+  name: 665|TW2
   network: ws
   password: auto
   port: 443
@@ -1629,6 +1638,19 @@ proxies:
   protocol-param: NjE2MTA6RzVnZHlw
   server: 231103level4.unclemanco.com
   type: ssr
+- alterId: 0
+  cipher: auto
+  name: 835|🇹🇼[直连]台湾|家宽|HINET|4X
+  network: ws
+  port: '37902'
+  server: hinet-wap.myddns.me
+  tls: false
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /index?ed=2560
 - cipher: aes-256-cfb
   name: 851|畅行 台湾 1
   obfs: tls1.2_ticket_auth
