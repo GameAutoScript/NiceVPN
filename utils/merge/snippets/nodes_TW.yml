@@ -1,53 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 63|台湾01
-  network: tcp
-  port: '60201'
-  server: iepl.hongxing.pro
-  tls: false
-  type: vmess
-  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
-- alterId: 0
-  cipher: auto
-  name: 63|台湾02
-  network: tcp
-  port: '60202'
-  server: iepl.hongxing.pro
-  tls: false
-  type: vmess
-  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
-- alterId: 0
-  cipher: auto
-  name: 63|台湾03
-  network: tcp
-  port: '60203'
-  server: iepl.hongxing.pro
-  tls: false
-  type: vmess
-  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
-- alterId: 0
-  cipher: auto
-  name: 63|台湾04
-  network: tcp
-  port: '60204'
-  server: iepl.hongxing.pro
-  tls: false
-  type: vmess
-  uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
-- alterId: 0
-  cipher: auto
-  name: 72|🇹🇼 台湾wapkcd-01
+  country: ' TW'
+  h2-opts: {}
+  http-opts: {}
+  name: 18| TW_12
   network: ws
-  port: '39011'
-  server: jsidcyd.kunkun.icu
-  tls: false
+  port: 31945
+  server: 103.159.206.35
+  skip-cert-verify: true
   type: vmess
-  uuid: 56cd731a-e615-4303-8867-f402dd6cb3bd
-  ws-opts:
-    headers:
-      Host: ''
-    path: /ssv
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 72|🇹🇼 台湾wapkcd-02
@@ -517,23 +481,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 437|Relay_🏁ZZ-🇹🇼TW_229 | 2.12Mb
-  network: ws
-  port: 80
-  server: 162.159.9.55
-  servername: hinet.alipay.ovh
-  skip-cert-verify: true
-  type: vmess
-  uuid: 9133af1b-72e3-40b2-c811-45acaabd0ff0
-  ws-opts:
-    headers:
-      HOST: hinet.alipay.ovh
-    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 462|🇹🇼_TW_台湾
@@ -1009,22 +956,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 604|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 604|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 604|🇹🇼 TW 03
@@ -1102,6 +1033,20 @@ proxies:
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
 - alterId: 0
   cipher: auto
+  name: '645,653|🔒 VM-WS-NA 🇹🇼 TW-36.232.31.135... #1'
+  network: ws
+  port: '37902'
+  server: 36.232.31.135
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      Host: hinet-wap.myddns.me
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
   name: 663|🇹🇼台湾 | 101 | 原生 | 1x
   network: tcp
   port: '30301'
@@ -1109,7 +1054,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 564f1d61-d1f8-4bcf-bb80-9bf7ad706f85
+  uuid: 447539fb-0b50-4b50-9b2a-a8481870d142
 - alterId: 0
   cipher: auto
   name: 663|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1119,7 +1064,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 564f1d61-d1f8-4bcf-bb80-9bf7ad706f85
+  uuid: 447539fb-0b50-4b50-9b2a-a8481870d142
 - alterId: 0
   cipher: auto
   name: 663|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1129,7 +1074,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 564f1d61-d1f8-4bcf-bb80-9bf7ad706f85
+  uuid: 447539fb-0b50-4b50-9b2a-a8481870d142
 - cipher: aes-256-cfb
   name: 664|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
