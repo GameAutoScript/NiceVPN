@@ -206,21 +206,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 251,510,513,645,653,665,666,679|🇹🇼TW-103.159.206.35-0342
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: '251,653,666|TW4 #2'
   network: ws
   port: '12945'
@@ -247,6 +232,21 @@ proxies:
     headers:
       Host: hinet-wap.myddns.me
     path: /index?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 251,510,513,645,653,665,666,679|🇹🇼TW-103.159.206.35-0342
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: '0'
   cipher: auto
   name: 264|[🇹🇼]103.131.189.212:56967(8110...
@@ -979,6 +979,22 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 604|🇹🇼 TW 01
+  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
+  port: 61005
+  server: 2.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 604|🇹🇼 TW 02
+  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
+  port: 61006
+  server: 2.forlive.live
+  tfo: false
+  type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 604|🇹🇼 TW 03
@@ -1063,7 +1079,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: bc868395-065f-4636-b34a-6e0255d6214a
+  uuid: 73a884ec-2b69-4c7d-aa6f-bdc3e9854400
 - alterId: 0
   cipher: auto
   name: 663|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1073,7 +1089,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: bc868395-065f-4636-b34a-6e0255d6214a
+  uuid: 73a884ec-2b69-4c7d-aa6f-bdc3e9854400
 - alterId: 0
   cipher: auto
   name: 663|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1083,7 +1099,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: bc868395-065f-4636-b34a-6e0255d6214a
+  uuid: 73a884ec-2b69-4c7d-aa6f-bdc3e9854400
 - cipher: aes-256-cfb
   name: 664|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
