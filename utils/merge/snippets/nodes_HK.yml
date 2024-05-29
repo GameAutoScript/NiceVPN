@@ -425,7 +425,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: HK
+  country: 🇰HK
   h2-opts: {}
   http-opts: {}
   name: 150,253,441,514,603,649,657,704|香港_0528008
@@ -1680,6 +1680,20 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8/
+- alterId: 64
+  cipher: auto
+  name: 253,514,683|🇭🇰HK-182.16.1.194-8978
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
 - cipher: chacha20-ietf-poly1305
   name: 266|[🇭🇰]a4a09ce.h1.glados-config.n...
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -2541,20 +2555,6 @@ proxies:
     headers:
       Host: internet.life.com.by
     path: /
-- alterId: 64
-  cipher: auto
-  name: 514,683|🇭🇰HK-182.16.1.194-8978
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 515|🇭🇰_HK_香港_2@54
@@ -3693,7 +3693,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '576,683|美国 CloudFlare节点 #78'
+  name: '576,683|美国 CloudFlare节点 #82'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4732,7 +4732,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 2f64aa73-a73d-4d6a-bbb6-fe9b6ed6ff28
+  uuid: ffc0394c-7f86-4510-b758-26a197c6862b
 - alterId: 0
   cipher: auto
   name: 667|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4742,7 +4742,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 2f64aa73-a73d-4d6a-bbb6-fe9b6ed6ff28
+  uuid: ffc0394c-7f86-4510-b758-26a197c6862b
 - alterId: 0
   cipher: auto
   name: 667|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4752,7 +4752,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 2f64aa73-a73d-4d6a-bbb6-fe9b6ed6ff28
+  uuid: ffc0394c-7f86-4510-b758-26a197c6862b
 - cipher: aes-256-cfb
   name: 668|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4864,8 +4864,44 @@ proxies:
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 669|HK
+  password: AHyDyR
+  port: 56032
+  server: 38.150.12.188
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 669|HK5
+  password: AHyDyR
+  port: 56047
+  server: 38.150.12.188
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 669|HK8
+  password: AHyDyR
+  port: 56032
+  server: 38.150.12.187
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 669|HK10
+  password: AHyDyR
+  port: 56047
+  server: 38.150.12.187
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 669|HK2
+  name: 669|HK11
   network: tcp
   password: 918eba0d3ff04abc803fb00e18d0fcb5
   port: 443
@@ -4877,36 +4913,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 669|HK3
-  password: AHyDyR
-  port: 56012
-  server: 38.150.12.188
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 669|HK5
-  password: AHyDyR
-  port: 56032
-  server: 38.150.12.188
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 669|HK6
+  name: 669|HK12
   password: AHyDyR
   port: 56026
-  server: 38.150.12.187
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 669|HK11
-  password: AHyDyR
-  port: 56047
   server: 38.150.12.187
   skip-cert-verify: true
   tls: true
@@ -4927,17 +4936,8 @@ proxies:
   cipher: chacha20-ietf-poly1305
   name: 669|HK15
   password: AHyDyR
-  port: 56047
+  port: 56012
   server: 38.150.12.188
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 669|HK16
-  password: AHyDyR
-  port: 56032
-  server: 38.150.12.187
   skip-cert-verify: true
   tls: true
   type: ss
@@ -4945,17 +4945,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   name: 669|HK17
   password: AHyDyR
-  port: 56026
-  server: 38.150.12.188
+  port: 56012
+  server: 38.150.12.187
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 669|HK21
+  name: 669|HK20
   password: AHyDyR
-  port: 56012
-  server: 38.150.12.187
+  port: 56026
+  server: 38.150.12.188
   skip-cert-verify: true
   tls: true
   type: ss
