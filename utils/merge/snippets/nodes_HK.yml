@@ -748,6 +748,45 @@ proxies:
   uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
 - alterId: 0
   cipher: auto
+  name: 180|香港 1 | CF优选
+  network: ws
+  port: '80'
+  server: hk-mg-1.cdn-yx.buzz
+  tls: false
+  type: vmess
+  uuid: 937436bc-3feb-40e9-8dda-1ec3bb958ef6
+  ws-opts:
+    headers:
+      Host: hk-mg-vl.sublam.lol
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 180|香港 2 | CF优选
+  network: ws
+  port: '80'
+  server: hk-mg-2.cdn-yx.buzz
+  tls: false
+  type: vmess
+  uuid: 937436bc-3feb-40e9-8dda-1ec3bb958ef6
+  ws-opts:
+    headers:
+      Host: hk-mg-vl.sublam.lol
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 180|香港 3 | CF优选
+  network: ws
+  port: '80'
+  server: hk-mg-3.cdn-yx.buzz
+  tls: false
+  type: vmess
+  uuid: 937436bc-3feb-40e9-8dda-1ec3bb958ef6
+  ws-opts:
+    headers:
+      Host: hk-mg-vl.sublam.lol
+    path: /
+- alterId: 0
+  cipher: auto
   name: 189|🇭🇰HK香港-t.me/Hikarimiko
   network: ws
   port: '80'
@@ -1596,13 +1635,15 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 257,605,606,709|香港_0528009
+  name: 257,473,474,505,523,605,606,709|香港_0528009
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -1732,14 +1773,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '373,374|香港-南方入口 #1'
-  password: 0eb8c32f-fb1c-4f40-a518-bc595de21bd3
+  password: c2599262-940a-40f4-ace0-365fd3856e26
   port: 30000
   server: hk1.zzjq.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '373,374|香港-北方入口 #1'
-  password: 0eb8c32f-fb1c-4f40-a518-bc595de21bd3
+  password: c2599262-940a-40f4-ace0-365fd3856e26
   port: 30000
   server: b-hk1.zzjq.xyz
   type: ss
@@ -2085,8 +2126,8 @@ proxies:
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 447,451,487,680|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 447,487,680|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -2095,19 +2136,6 @@ proxies:
   protocol-param: ''
   server: 150.107.46.21
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 451|🇭🇰HK_117
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: '460|🇨🇳中国【YouTube-由零開始】 #7'
@@ -3591,7 +3619,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '581,688|美国 CloudFlare节点 #66'
+  name: '581,688|美国 CloudFlare节点 #68'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4689,7 +4717,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4f1e6e25-55aa-4406-b33b-3e1400ba8377
+  uuid: c9dee731-0950-4046-9f50-ed87d4d99ec1
 - alterId: 0
   cipher: auto
   name: 672|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4699,7 +4727,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4f1e6e25-55aa-4406-b33b-3e1400ba8377
+  uuid: c9dee731-0950-4046-9f50-ed87d4d99ec1
 - alterId: 0
   cipher: auto
   name: 672|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4709,7 +4737,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4f1e6e25-55aa-4406-b33b-3e1400ba8377
+  uuid: c9dee731-0950-4046-9f50-ed87d4d99ec1
 - cipher: aes-256-cfb
   name: 673|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
