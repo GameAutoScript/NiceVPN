@@ -28,7 +28,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1017
-  name: 95,257,473,474,487,523,531,605,606,709|未知_0528136
+  name: 95,257,473,474,487,505,523,531,605,606,709|未知_0528136
   network: ws
   port: '80'
   server: 162.159.9.55
@@ -365,10 +365,14 @@ proxies:
     path: /hms02.fxiaomi.sbs/link
 - alterId: 0
   cipher: auto
-  name: '95,473,474,523,531|加拿大 029 #1'
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '95,446,473,474,523,531|加拿大 029 #1'
   network: ws
   port: 2052
   server: 104.17.156.224
+  servername: in4.wish.ml
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -465,14 +469,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 153,709|加拿大_0528008
+  name: 153,473,474,523,709|加拿大_0528008
   network: ws
   port: '443'
   server: 158.51.121.36
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -630,6 +635,20 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  name: 257,470,487,519,522,608|@DeamNet - Canada 7
+  network: ws
+  port: 443
+  server: hms02opi.fxiaomi.sbs
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      Host: hms02.fxiaomi.sbs
+    path: /link
+- alterId: 0
+  cipher: auto
   name: 257,314,621,629,631,709,764|🇸🇬新加坡高速接入点-01
   network: ws
   port: '2052'
@@ -717,7 +736,10 @@ proxies:
     path: /MGNF44G
 - alterId: 0
   cipher: auto
-  name: 257,473,474,505,519,523,528,605,606,608,706,711|加拿大_0529002
+  country: 🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 257,446,505,519,528,605,606,608,706,711|加拿大_0529002
   network: ws
   port: '443'
   server: 158.51.121.36
@@ -734,7 +756,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '257,519,663,664|美国 V2CROSS.COM #1'
+  name: '257,519,663,664|美国 V2CROSS.COM #2'
   network: ws
   port: '443'
   server: 23.162.200.227
@@ -1620,7 +1642,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 8452a4bf-c246-48ff-9138-a93960f09803
+  uuid: 2a518d42-2b75-4cd0-b7f8-fcbeaa3caecc
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1823,7 +1845,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 75ee89ec-2226-4d1e-9712-dae23f783aab
+  uuid: 46046524-1504-4f1a-b623-57ed2e9d46d6
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1923,7 +1945,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6a32b816-bed9-410e-a2cc-05853ee909d7
+  uuid: ef6c6207-1231-4ec2-b210-898fd49f44f7
 - cipher: aes-256-gcm
   name: 680|[02-24]-🇨🇦-加拿大多伦多-248-198.57.2...
   password: faBAoD54k87UJG7

@@ -407,12 +407,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 153,257,519,608,662,709|香港_0528008
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 153,257,446,519,608,662,709|香港_0528008
   network: ws
   port: '28681'
   server: 47.242.22.171
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
@@ -743,45 +746,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
-- alterId: 0
-  cipher: auto
-  name: 180|香港 1 | CF优选
-  network: ws
-  port: '80'
-  server: hk-mg-1.cdn-yx.buzz
-  tls: false
-  type: vmess
-  uuid: 937436bc-3feb-40e9-8dda-1ec3bb958ef6
-  ws-opts:
-    headers:
-      Host: hk-mg-vl.sublam.lol
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 180|香港 2 | CF优选
-  network: ws
-  port: '80'
-  server: hk-mg-2.cdn-yx.buzz
-  tls: false
-  type: vmess
-  uuid: 937436bc-3feb-40e9-8dda-1ec3bb958ef6
-  ws-opts:
-    headers:
-      Host: hk-mg-vl.sublam.lol
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 180|香港 3 | CF优选
-  network: ws
-  port: '80'
-  server: hk-mg-3.cdn-yx.buzz
-  tls: false
-  type: vmess
-  uuid: 937436bc-3feb-40e9-8dda-1ec3bb958ef6
-  ws-opts:
-    headers:
-      Host: hk-mg-vl.sublam.lol
-    path: /
 - alterId: 0
   cipher: auto
   name: 189|🇭🇰HK香港-t.me/Hikarimiko
@@ -1632,13 +1596,18 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 257,605,606,709|香港_0528009
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 257,446,473,474,505,523,605,606,709|香港_0528009
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -2144,19 +2113,6 @@ proxies:
   protocol-param: ''
   server: 150.107.46.21
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 451|🇭🇰HK_113
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: '460|🇨🇳中国【YouTube-由零開始】 #7'
@@ -3640,7 +3596,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '581,688|美国 CloudFlare节点 #70'
+  name: '581,688|美国 CloudFlare节点 #68'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4117,15 +4073,6 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 604,674|HK 3.2MB/s
-  password: 2H4UYkKDjiV9FbZMPE8c5z
-  port: 16006
-  server: 46.226.164.2
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: 604|🇭🇰HK-210.3.159.224-190
@@ -4747,7 +4694,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6a32b816-bed9-410e-a2cc-05853ee909d7
+  uuid: ef6c6207-1231-4ec2-b210-898fd49f44f7
 - alterId: 0
   cipher: auto
   name: 672|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4757,7 +4704,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6a32b816-bed9-410e-a2cc-05853ee909d7
+  uuid: ef6c6207-1231-4ec2-b210-898fd49f44f7
 - alterId: 0
   cipher: auto
   name: 672|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4767,7 +4714,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 6a32b816-bed9-410e-a2cc-05853ee909d7
+  uuid: ef6c6207-1231-4ec2-b210-898fd49f44f7
 - cipher: aes-256-cfb
   name: 673|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -5534,6 +5481,116 @@ proxies:
   port: 5989
   server: yd-07.paofunlink.com
   type: ss
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip101
+  name: '877,879|香港 101 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 12249
+  server: hkvip101.qlgq.fun
+  sni: hkvip101.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip101
+  name: '877,879|香港 102 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 22249
+  server: hkvip101.qlgq.fun
+  sni: hkvip101.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip102
+  name: '877,879|香港 103 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 32249
+  server: hkvip102.qlgq.fun
+  sni: hkvip102.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip102
+  name: '877,879|香港 104 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 42249
+  server: hkvip102.qlgq.fun
+  sni: hkvip102.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip103
+  name: '877,879|香港 105 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 52249
+  server: hkvip103.qlgq.fun
+  sni: hkvip103.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip103
+  name: '877,879|香港 106 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 11116
+  server: hkvip103.qlgq.fun
+  sni: hkvip103.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip104
+  name: '877,879|香港 107 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 21116
+  server: hkvip104.qlgq.fun
+  sni: hkvip104.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip104
+  name: '877,879|香港 108 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 31116
+  server: hkvip104.qlgq.fun
+  sni: hkvip104.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip105
+  name: '877,879|香港 109 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 41116
+  server: hkvip105.qlgq.fun
+  sni: hkvip105.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: hkvip105
+  name: '877,879|香港 110 #1'
+  network: grpc
+  password: 7aedfedc-3960-3382-a23a-c51811a70c45
+  port: 51116
+  server: hkvip105.qlgq.fun
+  sni: hkvip105.qlgq.fun
+  tls: true
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
