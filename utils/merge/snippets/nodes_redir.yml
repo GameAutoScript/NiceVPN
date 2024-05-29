@@ -1,13 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,3,41,256,570,603,604,619|9|baipaovpn亚太地区
+  name: 0,3,41,256,377,378,380,381,471,472,503,521,570,603,604,619,709|中国_0529001
   network: ws
   port: '2095'
   server: 103.184.45.191
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: b3c76f0e-f2c6-4518-9ddc-b21b3339d550
   ws-opts:
     headers:
@@ -16,7 +18,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,41,79,256,471,472,503,517,520,521,525,526,560,570,603,604,661,662,684,686,728,814,828,888|中国【付费推荐：https://jdyvip.link/】5...
+  name: '0,3,41,79,256,377,378,380,381,517,520,525,526,560,570,603,604,661,662,684,686,814,828,888|中国【付费推荐：https://jdyvip.link/】5...
     #14'
   network: ws
   port: '20401'
@@ -34,7 +36,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '0,1,2,3,256,376,382,526,553,570,602,603,604,629,672,673,814,828,888|中国【付费推荐：https://jdyvip.link/】5...
+  name: '0,1,2,3,256,376,377,378,380,381,382,526,553,570,602,603,604,629,672,673,814,828,888|中国【付费推荐：https://jdyvip.link/】5...
     #15'
   network: tcp
   port: '30013'
@@ -49,10 +51,14 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,553,629|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,444,553,629|🇨🇳_CN_中国->🇺🇸_US_美国_2
   network: ws
   port: 2095
   server: 103.184.45.191
+  servername: rn.yicanny.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -569,7 +575,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '424,517,661,662,684,686,707,709,830|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  name: '424,517,661,662,684,686,707,830|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
   network: ws
   port: 2082
   server: 172.67.130.140
