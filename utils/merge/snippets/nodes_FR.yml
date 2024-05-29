@@ -74,7 +74,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇷FR
+  country: 🇫🇷FR
   name: 153,248,447,674|未知267 4.3MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -136,7 +136,29 @@ proxies:
   server: 94.228.162.91
   type: ss
 - country: FR
-  name: 154|netflix_FR
+  name: 154|disney_netflix_FR
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.37.182.97
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: FR
+  name: 154,674|未知261
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.203.183
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- country: FR
+  name: 154|FR_05
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -146,17 +168,22 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: FR
-  name: 154,674|未知483 5.5MB/s
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.226.48
+  country: NL
+  h2-opts: {}
+  http-opts: {}
+  name: '154,674|未知931 4.8MB/s #1'
+  network: ws
+  port: 443
+  server: 188.114.97.79
+  servername: linde06.indiavideo.sbs
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
   country: NL
@@ -177,13 +204,13 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  country: NL
+  country: US
   h2-opts: {}
   http-opts: {}
-  name: '154,674|未知931 4.8MB/s #1'
+  name: '154,674|未知420 667.5KB/s #1'
   network: ws
   port: 443
-  server: 188.114.97.79
+  server: 172.67.196.112
   servername: linde06.indiavideo.sbs
   skip-cert-verify: true
   tls: true
@@ -216,7 +243,25 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '154|netflix_FR #4'
+  name: '154,674|未知572 2.5MB/s #1'
+  network: ws
+  port: 443
+  server: caretaker.com
+  servername: mikasa.yaemiko.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      host: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '154|disney_netflix_FR #6'
   network: ws
   port: 443
   server: 104.21.15.36
@@ -228,6 +273,24 @@ proxies:
   ws-opts:
     headers:
       HOST: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '154|disney_netflix_FR #7'
+  network: ws
+  port: 443
+  server: 104.21.4.6
+  servername: glweidf.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      HOST: glweidf.cfd
     path: /linkws
 - alterId: 0
   cipher: auto
@@ -816,6 +879,17 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: '257,486,488,674,675|未知282 #2'
+  network: tcp
+  port: '29776'
+  server: 146.59.147.250
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
+- alterId: 0
+  cipher: auto
   name: '257,662,674,675|未知338 3.2MB/s #2'
   network: tcp
   port: '58528'
@@ -880,20 +954,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
-- alterId: 0
-  cipher: auto
-  name: '257,498,695,703|رایگان | VMESS | @FreakConfig ... #15'
-  network: ws
-  port: '80'
-  server: 190.93.247.155
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9055a074-a533-4e90-840b-3004a92ae9c0
-  ws-opts:
-    headers:
-      Host: Fr2.vmess.site.
-    path: /vmess
 - alterId: '0'
   cipher: auto
   name: 270|[🇫🇷]141.11.45.101:23871(ce183e...
@@ -977,28 +1037,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 447,674|未知747 279.8KB/s
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 145.239.6.202
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 447|🇫🇷FR_13
+  name: 447|🇫🇷FR_10
   password: PCnnH6SQSnfoS27
   port: 8090
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 447|🇫🇷FR_14
-  password: Y6R9pAtvxxzmGC
-  port: 5001
   server: 54.36.174.181
   type: ss
 - alterId: 0
@@ -1008,6 +1051,23 @@ proxies:
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 217.182.198.219
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 447|🇫🇷FR_15
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 54.36.174.181
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 447,674|未知747 279.8KB/s
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 145.239.6.202
   skip-cert-verify: true
   tls: true
   type: ss
