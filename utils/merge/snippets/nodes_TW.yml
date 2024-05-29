@@ -517,7 +517,7 @@ proxies:
   country: 🇼TW
   h2-opts: {}
   http-opts: {}
-  name: 446|Relay_TW-🇹🇼TW_111 | 1.49Mb
+  name: 446|Relay_TW-🇹🇼TW_110 | 1.49Mb
   network: ws
   port: 80
   server: tw1g.forlive.live
@@ -534,7 +534,7 @@ proxies:
   country: 🇹🇼TW
   h2-opts: {}
   http-opts: {}
-  name: 446|🇼TW_112 | 1.86Mb
+  name: 446|🇼TW_111 | 1.86Mb
   network: ws
   port: 80
   server: 61.227.217.177
@@ -551,7 +551,24 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 446|Relay_🏁ZZ-🇼TW_248 | 3.44Mb
+  name: 446|Relay_ZZ-🇼TW_245 | 2.63Mb
+  network: ws
+  port: 80
+  server: go.alipay.ovh
+  servername: hinet.alipay.ovh
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9133af1b-72e3-40b2-c811-45acaabd0ff0
+  ws-opts:
+    headers:
+      HOST: hinet.alipay.ovh
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 446|Relay_🏁ZZ-🇹🇼TW_246 | 3.44Mb
   network: ws
   port: 8080
   server: 104.19.172.136
@@ -568,7 +585,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 446|Relay_🏁ZZ-🇼TW_257 | 0.32Mb
+  name: 446|Relay_🏁ZZ-🇼TW_250 | 0.32Mb
   network: ws
   port: 80
   server: 162.159.9.55
@@ -738,20 +755,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
-  name: 487,621|9|baipaovpn台湾省高雄市
-  network: ws
-  port: '80'
-  server: 61.227.217.177
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bb7d0ae0-85bd-4d9f-8391-b3d927ccb497
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '519|Taiwan #1'
@@ -1009,6 +1012,32 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 604|TW-61.227.217.177-217
+  network: ws
+  port: 80
+  server: tw1g.forlive.live
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bb7d0ae0-85bd-4d9f-8391-b3d927ccb497
+  ws-headers:
+    Host: tms.dingtalk.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 604|🇹🇼TW-61.227.217.177-231
+  network: ws
+  port: 80
+  server: 61.227.217.177
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bb7d0ae0-85bd-4d9f-8391-b3d927ccb497
+  ws-headers:
+    Host: tms.dingtalk.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 613|🇹🇼 ~CF~TWˣ⁰˙⁰¹
   network: ws
@@ -1060,6 +1089,14 @@ proxies:
   name: 613,706|CN_speednode_0018
   password: 256f9142-09e2-31f4-8b1b-8c8d0f4068b1
   port: 61005
+  server: 2.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 613,706|CN_speednode_0032
+  password: b9e6bb72-29a3-4bb9-b0c0-0baac8bfda30
+  port: 61006
   server: 2.forlive.live
   tfo: false
   type: ss
@@ -1127,7 +1164,7 @@ proxies:
     path: /index?ed=2560
 - alterId: 0
   cipher: auto
-  name: '621|9|baipaovpn台湾省高雄市 #1'
+  name: 621|9|baipaovpn台湾省高雄市
   network: ws
   port: '80'
   server: 61.227.217.177
@@ -1158,7 +1195,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: c9dee731-0950-4046-9f50-ed87d4d99ec1
+  uuid: 94c00195-1c7d-4021-9dea-5bebb7209c03
 - alterId: 0
   cipher: auto
   name: 672|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1168,7 +1205,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: c9dee731-0950-4046-9f50-ed87d4d99ec1
+  uuid: 94c00195-1c7d-4021-9dea-5bebb7209c03
 - alterId: 0
   cipher: auto
   name: 672|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1178,7 +1215,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: c9dee731-0950-4046-9f50-ed87d4d99ec1
+  uuid: 94c00195-1c7d-4021-9dea-5bebb7209c03
 - cipher: aes-256-cfb
   name: 673|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
