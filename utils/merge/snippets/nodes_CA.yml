@@ -1,7 +1,11 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,2,3,259,380,381,383,384,521,574,607,608,610,708,713|加拿大_0530003 #1'
+  country: 🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: '0,1,2,3,259,380,381,383,384,448,507,521,574,607,608,610,708,713|加拿大_0530003
+    #1'
   network: ws
   port: '443'
   server: 158.51.121.36
@@ -619,7 +623,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 154,676|未知39 6.4MB/s
+  country: 🇨🇦CA
+  name: 154,448,676|未知39 6.4MB/s
   password: G!yBwPWH3Vao
   port: 808
   server: 134.195.196.178
@@ -637,7 +642,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 154,606,676|CA2 5.2MB/s
+  country: 🇨🇦CA
+  name: 154,448,606,676|CA2 5.2MB/s
   password: G!yBwPWH3Vao
   port: 812
   server: 134.195.196.178
@@ -652,7 +658,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 154,676|未知709 11.4MB/s
+  country: 🇺🇸US
+  name: 154,448,676|未知709 11.4MB/s
   password: ZjNmOGE0
   port: 8388
   server: 146.19.106.89
@@ -667,14 +674,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 154,711|加拿大_0530011
+  name: 154,475,476,525,711|加拿大_0530011
   network: ws
   port: '443'
   server: 158.51.121.36
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1156,6 +1164,83 @@ proxies:
     headers:
       Host: uh-lawyers-instruments-kernel.trycloudflare.com
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+- cipher: aes-256-gcm
+  country: 🇦CA
+  name: 448|🇨CA_13 | 3.39Mb
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 38.111.114.133
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇨🇦CA
+  name: 448,676|未知869 1.9MB/s
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 38.111.114.133
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇨🇦CA
+  name: 448|🇨🇦CA_15 | 8.14Mb
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 38.111.114.133
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇨🇦CA
+  name: 448,676|未知985 1.9MB/s
+  password: lGqs95QkFHo2NV
+  port: 5498
+  server: 38.111.114.133
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇨🇦CA
+  name: 448|🇨🇦CA_19 | 3.44Mb
+  password: lGqs95QkFHo2NV
+  port: 5499
+  server: 38.111.114.133
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 448|Relay_ZZ-🇦CA_262 |32.47Mb
+  network: ws
+  port: 2087
+  server: 104.18.22.235
+  servername: yicanny.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e39e2bd5-9e09-497f-835b-c4b04b15da89
+  ws-opts:
+    headers:
+      HOST: yicanny.com
+    path: /znZWujHX/
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '448,676|未知1113 79.4MB/s #1'
+  network: ws
+  port: 2087
+  server: 104.18.23.235
+  servername: yicanny.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e39e2bd5-9e09-497f-835b-c4b04b15da89
+  ws-opts:
+    headers:
+      host: yicanny.com
+    path: /znZWujHX/
 - alterId: 0
   cipher: auto
   country: 🇦 CA
@@ -1281,16 +1366,6 @@ proxies:
     headers:
       Host: speed.cloudflare.com
     path: /glweidf.sbs/linkws
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 475,676|未知869 1.9MB/s
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 38.111.114.133
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '480,692,713|加拿大_0530004 #1'
@@ -1889,7 +1964,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a3a0d8a1-989d-4a9b-8062-a9bb09c0f6cf
+  uuid: 2278790c-0ed5-471e-bac4-8afc9a0d63c0
 - cipher: aes-256-gcm
   name: 536|VIP0.加拿大1.ChatGPT
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -2089,7 +2164,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: debc3fe7-66ac-4220-ad91-b3599c33e72c
+  uuid: a4e80888-b994-4267-8723-934b422aabdd
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -2199,7 +2274,7 @@ proxies:
   servername: ca07.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 351fc0ce-45ee-43f7-b64c-7e39abedd378
+  uuid: 534b3785-ba61-4075-9d04-e067612734cf
 - cipher: aes-256-gcm
   name: 682|[02-24]-🇨🇦-加拿大多伦多-248-198.57.2...
   password: faBAoD54k87UJG7
