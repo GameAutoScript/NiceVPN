@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|新加坡|广州移动|Polo|1x
+  network: tcp
+  port: '17162'
+  server: gdcm.r1u.cn
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: '15,817,831,891,897|🇸🇬 新加坡1|cf #1'
   network: ws
   port: '2052'
@@ -28,7 +37,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇸🇬SG
+  country: 🇬SG
   name: 18,153,448,675|未知488 1.0MB/s
   password: rNBfNuuANFCAk7KB
   port: 9056
@@ -38,10 +47,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇬SG
-  name: 18,153,448,675|未知700 1.3MB/s
-  password: fG2artUmHfNT2cX7
-  port: 9018
+  country: ' SG'
+  name: 18,153,675|未知1021 1.2MB/s
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 103.172.116.103
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 18,153,448,675|未知129 566.7KB/s
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
   server: 103.172.116.103
   skip-cert-verify: true
   tls: true
@@ -58,8 +77,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: ' SG'
-  name: 18,153,675|未知55 684.4KB/s
+  country: 🇸🇬SG
+  name: 18,153,448,675|未知55 684.4KB/s
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 103.172.116.103
@@ -153,76 +172,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
-- alterId: 0
-  cipher: auto
-  name: 63|🇸🇬SG1国际专用x1
-  network: ws
-  port: '2096'
-  server: sg1vm.fuckvps.top
-  servername: sg1vm.fuckvps.top
-  tls: true
-  type: vmess
-  uuid: bf71f462-77ea-4dd5-bda1-8d8eb9a4ed86
-  ws-opts:
-    headers:
-      Host: sg1vm.fuckvps.top
-    path: /sg1vm
-- alterId: 0
-  cipher: auto
-  name: 63|🇸🇬SG2国际专用x1
-  network: ws
-  port: '2096'
-  server: sg2vm.fuckvps.top
-  servername: sg2vm.fuckvps.top
-  tls: true
-  type: vmess
-  uuid: bf71f462-77ea-4dd5-bda1-8d8eb9a4ed86
-  ws-opts:
-    headers:
-      Host: sg2vm.fuckvps.top
-    path: /sg2vm
-- alterId: 0
-  cipher: auto
-  name: 63|🇸🇬SG3国际专用x0.8
-  network: ws
-  port: '2096'
-  server: sg3vm.fuckvps.top
-  servername: sg3vm.fuckvps.top
-  tls: true
-  type: vmess
-  uuid: bf71f462-77ea-4dd5-bda1-8d8eb9a4ed86
-  ws-opts:
-    headers:
-      Host: sg3vm.fuckvps.top
-    path: /sg3vm
-- alterId: 0
-  cipher: auto
-  name: 63|🇸🇬SG4国际专用x2
-  network: ws
-  port: '2096'
-  server: sg4vm.fuckvps.top
-  servername: sg4vm.fuckvps.top
-  tls: true
-  type: vmess
-  uuid: bf71f462-77ea-4dd5-bda1-8d8eb9a4ed86
-  ws-opts:
-    headers:
-      Host: sg4vm.fuckvps.top
-    path: /sg4vm
-- alterId: 0
-  cipher: auto
-  name: 63|🇸🇬SG5国际专用x0.5
-  network: ws
-  port: '2096'
-  server: sg5vm.fuckvps.top
-  servername: sg5vm.fuckvps.top
-  tls: true
-  type: vmess
-  uuid: bf71f462-77ea-4dd5-bda1-8d8eb9a4ed86
-  ws-opts:
-    headers:
-      Host: sg5vm.fuckvps.top
-    path: /sg5vm
 - alterId: 0
   cipher: auto
   name: 64|新加坡01
@@ -349,18 +298,9 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: aes-256-cfb
-  name: 153,675|未知1021 1.2MB/s
-  password: KnJGad3FqTvjqbaX
-  port: 9014
-  server: 103.172.116.103
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 153,675|未知129 566.7KB/s
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
+  name: 153,675|未知700 1.3MB/s
+  password: fG2artUmHfNT2cX7
+  port: 9018
   server: 103.172.116.103
   skip-cert-verify: true
   tls: true
@@ -1168,19 +1108,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '258,605,606,607|🇸🇬 新加坡(欢迎订阅Youtube破解资源君) #178'
-  network: tcp
-  port: '54592'
-  server: 129.226.93.47
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5b1e77bf-a73c-4756-e64a-4f02ac35ed43
-  ws-headers:
-    Host: 129.226.93.47
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: '258|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #2'
   network: ws
   port: '443'
@@ -1374,6 +1301,19 @@ proxies:
   ws-headers:
     Host: 129.226.94.134
   ws-path: /ws
+- alterId: 0
+  cipher: auto
+  name: '258,605,606,607|🇸🇬 新加坡(欢迎订阅Youtube破解资源君) #178'
+  network: tcp
+  port: '54592'
+  server: 129.226.93.47
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5b1e77bf-a73c-4756-e64a-4f02ac35ed43
+  ws-headers:
+    Host: 129.226.93.47
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '258,605,606,607|🇸🇬 新加坡(欢迎订阅Youtube破解资源君) #180'
@@ -1772,14 +1712,14 @@ proxies:
   uuid: d58f81a7-083a-4ff2-e50a-7078c58bbccf
 - cipher: chacha20-ietf-poly1305
   name: '374,375|新加坡-南方入口 #1'
-  password: b8544d1f-5eb7-45e3-b5bc-5bfd5904f17c
+  password: ffa9a2ee-eba5-4349-a431-205ed78c2241
   port: 30002
   server: sg1.zzjq.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '374,375|新加坡-北方入口 #1'
-  password: b8544d1f-5eb7-45e3-b5bc-5bfd5904f17c
+  password: ffa9a2ee-eba5-4349-a431-205ed78c2241
   port: 30002
   server: b-sg1.zzjq.xyz
   type: ss
@@ -2042,23 +1982,23 @@ proxies:
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 448|🇸🇬SG_26
-  password: UWZQeLRWnkqgkseq
-  port: 9032
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 448|🇸🇬SG_27
+  name: 448|🇸🇬SG_25
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 103.172.116.94
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 448|🇸🇬SG_28
+  name: 448|🇸🇬SG_26
   password: bf7v334KKDV3YDhH
   port: 9070
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 448|🇸🇬SG_28
+  password: UWZQeLRWnkqgkseq
+  port: 9032
   server: 103.172.116.103
   type: ss
 - alterId: 0
@@ -2067,16 +2007,6 @@ proxies:
   name: 448,675|未知678 1.3MB/s
   password: TN2YqghxeFDKZfLU
   port: 9037
-  server: 103.172.116.103
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 448,675|未知607 1.3MB/s
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
   server: 103.172.116.103
   skip-cert-verify: true
   tls: true
@@ -2165,6 +2095,19 @@ proxies:
     headers:
       Host: ''
     path: /anti13.zingfast.vn
+- name: 474|[Trojan] 🇸🇬 新加坡 001
+  network: ws
+  password: b84d16a244460e09
+  port: 3306
+  server: 5.44.249.44
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: n2.gladns.com
+    path: /gateway/connect
 - alterId: 0
   cipher: auto
   name: 476|🇸🇬新加坡(绿头外网集团)(Public)
@@ -2722,7 +2665,7 @@ proxies:
     path: /chami
 - alterId: 0
   cipher: auto
-  name: 488|新加坡_053013005
+  name: 488|新加坡_053018008
   network: ws
   port: '99'
   server: praiman.game.jandaspeed.cloud
@@ -2736,18 +2679,18 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 488,710|新加坡_0530003
+  name: 488|新加坡_053018057
   network: ws
   port: '80'
-  server: sg1.pkyun.website
+  server: sg4g.xn--vhq70hxyat50h6wk.com
   servername: ''
   tls: false
   type: vmess
-  uuid: abc032d7-ffc7-43bd-a905-c82b5f57c06a
+  uuid: 1f9b54af-3ab1-48c8-b58c-59d8d78277af
   ws-opts:
     headers:
-      Host: sg1.pkyun.website
-    path: /ray
+      Host: sg4g.xn--vhq70hxyat50h6wk.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 514|🇸🇬新加坡(欢迎订阅Youtube元亨利贞)
@@ -4212,7 +4155,7 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 1dcb05de-1e65-4e66-88c4-6ee7c84d3c13
+  uuid: 3b03a454-1c61-4ea6-ad03-df45ae7105da
 - alterId: 0
   cipher: auto
   name: 673|🇸🇬新加坡 | 108 | 流媒体优化 | 1x
@@ -4222,7 +4165,7 @@ proxies:
   servername: sg08.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 1dcb05de-1e65-4e66-88c4-6ee7c84d3c13
+  uuid: 3b03a454-1c61-4ea6-ad03-df45ae7105da
 - alterId: 0
   cipher: auto
   name: 673|🇸🇬新加坡 | 109 | 负载优化 | 1x
@@ -4232,7 +4175,7 @@ proxies:
   servername: sg09.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 1dcb05de-1e65-4e66-88c4-6ee7c84d3c13
+  uuid: 3b03a454-1c61-4ea6-ad03-df45ae7105da
 - cipher: aes-256-cfb
   name: 674|TG频道@mfbpn-新加坡2 2
   obfs: tls1.2_ticket_auth
@@ -4514,6 +4457,20 @@ proxies:
     headers:
       Host: www.60991390.xyz
     path: /path/341901080027
+- alterId: 0
+  cipher: auto
+  name: 710|新加坡_0530003
+  network: ws
+  port: '80'
+  server: sg1.pkyun.website
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: abc032d7-ffc7-43bd-a905-c82b5f57c06a
+  ws-opts:
+    headers:
+      Host: sg1.pkyun.website
+    path: /ray
 - alterId: 0
   cipher: auto
   name: 710|新加坡_0530012
