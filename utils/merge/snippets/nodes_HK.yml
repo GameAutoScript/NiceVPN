@@ -1,13 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '15,259,677,898|🇭🇰 香港1| cf #1'
+  name: '15,259,475,476,507,525,677,898|🇭🇰 香港1| cf #1'
   network: ws
   port: '2052'
   server: hk.wish.ml
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
   ws-opts:
     headers:
@@ -296,15 +298,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 154,259,448,521,610,664,711|香港_0530012
+  name: 154,259,521,610,664,711|香港_0530012
   network: ws
   port: '28681'
   server: 47.242.22.171
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
@@ -1609,14 +1608,14 @@ proxies:
   uuid: 508e3be6-3872-4a45-8a5f-0d6e42579eee
 - cipher: chacha20-ietf-poly1305
   name: '375,376|香港-南方入口 #1'
-  password: ffb736bb-1693-4c5c-b7bc-716834b2c540
+  password: d4ad4c0c-d1ce-4938-8eeb-4a50be098069
   port: 30000
   server: hk1.zzjq.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '375,376|香港-北方入口 #1'
-  password: ffb736bb-1693-4c5c-b7bc-716834b2c540
+  password: d4ad4c0c-d1ce-4938-8eeb-4a50be098069
   port: 30000
   server: b-hk1.zzjq.xyz
   type: ss
@@ -1757,6 +1756,19 @@ proxies:
   network: ws
   port: '16632'
   server: yes.cnmjcn.net
+  tls: false
+  type: vmess
+  uuid: d9a9d508-67e1-4929-8bea-8733d5a30c93
+  ws-opts:
+    headers:
+      Host: ee1683cb66f83a1d45e5fdf2e7bdc7dd.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '389|香港HY-优化2 #2'
+  network: ws
+  port: '16632'
+  server: m.cnmjin.net
   tls: false
   type: vmess
   uuid: d9a9d508-67e1-4929-8bea-8733d5a30c93
@@ -1961,6 +1973,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 449,453,489,682|[02-24]-🇸-欧洲-096-150.107.46.21
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  protocol-param: ''
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
   name: '462|🇨🇳中国【YouTube-由零開始】 #7'
@@ -3291,7 +3314,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '583,690|美国 CloudFlare节点 #64'
+  name: '583,690|美国 CloudFlare节点 #70'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
