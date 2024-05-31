@@ -281,15 +281,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 156,262,480,481,512,530,612,613,716|香港_0530013
+  name: 156,262,716|香港_0530013
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -1961,9 +1960,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   country: 🇰HK
-  name: 454,494,687|[02-24]-🇸-欧洲-096-150.107.46.21
+  name: 453|Relay_HK-🇭🇰HK_73 | 8.95Mb
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node4.s.nodelist-gfwairport2.top
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 454,458,494,687|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -3302,7 +3308,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '588,695|美国 CloudFlare节点 #57'
+  name: '588,695|美国 CloudFlare节点 #59'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -3779,19 +3785,6 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- alterId: 0
-  cipher: auto
-  name: 611|🇰HK-210.3.159.224-228
-  network: ws
-  port: 12909
-  server: 210.3.159.224
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-headers:
-    Host: 210.3.159.224
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 620|🇭🇰 ~ZF~HKˣ⁰˙¹
@@ -4481,7 +4474,7 @@ proxies:
   servername: hk01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: e18e8789-97cf-41ca-95f4-3532f44cdbaa
+  uuid: b3376acd-a2c9-4d72-95e3-324477c6c01a
 - alterId: 0
   cipher: auto
   name: 679|🇭🇰香港 | 102 | 流媒体优化 | 1x
@@ -4491,7 +4484,7 @@ proxies:
   servername: hk02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: e18e8789-97cf-41ca-95f4-3532f44cdbaa
+  uuid: b3376acd-a2c9-4d72-95e3-324477c6c01a
 - alterId: 0
   cipher: auto
   name: 679|🇭🇰香港 | 103 | 负载优化 | 1x
@@ -4501,7 +4494,7 @@ proxies:
   servername: hk03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: e18e8789-97cf-41ca-95f4-3532f44cdbaa
+  uuid: b3376acd-a2c9-4d72-95e3-324477c6c01a
 - cipher: aes-256-cfb
   name: 680|TG频道@mfbpn-香港2
   obfs: tls1.2_ticket_auth
@@ -4612,6 +4605,111 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 681|HK
+  password: AHyDyR
+  port: 56032
+  server: 38.150.12.187
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 681|HK4
+  password: AHyDyR
+  port: 56047
+  server: 38.150.12.187
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 681|HK8
+  password: AHyDyR
+  port: 56032
+  server: 38.150.12.188
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 681|HK14
+  password: AHyDyR
+  port: 56047
+  server: 38.150.12.188
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 681|HK16
+  network: ws
+  password: NISHIKUITAN222
+  port: 443
+  server: 47.76.178.146
+  skip-cert-verify: true
+  sni: t116.ylks.link
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 681|HK17
+  password: AHyDyR
+  port: 56012
+  server: 38.150.12.188
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 681|HK21 817.7KB/s
+  password: jRKQ1M8UsfkQh3s12XTsAt
+  port: 16006
+  server: 46.226.164.2
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 681|HK24
+  password: AHyDyR
+  port: 56012
+  server: 38.150.12.187
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 681|HK25
+  password: AHyDyR
+  port: 56026
+  server: 38.150.12.187
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 681|HK26
+  network: tcp
+  password: 918eba0d3ff04abc803fb00e18d0fcb5
+  port: 443
+  server: 202.64.1.143
+  skip-cert-verify: true
+  sni: www.gpt123.one
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 681|HK28
+  password: AHyDyR
+  port: 56026
+  server: 38.150.12.188
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 64
   cipher: auto
   name: '694,695|香港1|@ripaojiedian #1'

@@ -206,6 +206,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: '262,669,682|TW #2'
+  network: ws
+  port: '37902'
+  server: 36.233.66.195
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      Host: hinet-wap.myddns.me
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
   name: '262,669|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
   network: ws
   port: '12945'
@@ -220,11 +234,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 262,526,529,669,682,695|🇹🇼TW-103.159.206.35-0342
+  name: 262,526,529,669,681,682,695|🇹🇼TW-103.159.206.35-0342
   network: ws
   port: 31945
   server: 103.159.206.35
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
@@ -232,20 +247,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '262,669,682|TW #1'
-  network: ws
-  port: '37902'
-  server: 36.233.66.195
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: hinet-wap.myddns.me
-    path: /index?ed=2560
 - alterId: '0'
   cipher: auto
   name: 275|[🇹🇼]103.131.189.212:56967(8110...
@@ -502,7 +503,7 @@ proxies:
   country: 🇼TW
   h2-opts: {}
   http-opts: {}
-  name: 453|Relay_TW-🇹🇼TW_112 | 8.37Mb
+  name: 453|Relay_TW-🇹🇼TW_114 | 8.37Mb
   network: ws
   port: 80
   server: tw1g.forlive.live
@@ -1066,7 +1067,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: e18e8789-97cf-41ca-95f4-3532f44cdbaa
+  uuid: b3376acd-a2c9-4d72-95e3-324477c6c01a
 - alterId: 0
   cipher: auto
   name: 679|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1076,7 +1077,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: e18e8789-97cf-41ca-95f4-3532f44cdbaa
+  uuid: b3376acd-a2c9-4d72-95e3-324477c6c01a
 - alterId: 0
   cipher: auto
   name: 679|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1086,7 +1087,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: e18e8789-97cf-41ca-95f4-3532f44cdbaa
+  uuid: b3376acd-a2c9-4d72-95e3-324477c6c01a
 - cipher: aes-256-cfb
   name: 680|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -1137,6 +1138,32 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  cipher: auto
+  name: '681|TW #1'
+  network: ws
+  port: 37902
+  server: 36.233.66.195
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      host: hinet-wap.myddns.me
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 681|TW3
+  network: ws
+  password: auto
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: true
+  sni: vip.123789.pp.ua
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 695|🇹🇼台湾 01
