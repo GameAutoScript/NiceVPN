@@ -206,7 +206,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '264,671|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
+  name: '264,528,671|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
   network: ws
   port: '12945'
   server: 154.40.60.172
@@ -657,7 +657,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 496|台湾_060118006
+  name: 496|台湾_060123003
   network: ws
   port: '80'
   server: 61.227.164.69
@@ -671,18 +671,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '528|Taiwan #1'
+  name: 496,639|🇹🇼 Taiwan HiNet
   network: ws
-  port: 443
-  server: 61.227.176.105
+  port: 80
+  server: twx.n.optage.moe
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: f38e9da6-731f-46c5-90c0-e10349cdfb16
+  uuid: 755ec159-20c2-4fd3-8fdf-f59489018608
   ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
+    path: /aln/17?ed=2048
 - alterId: 1
   cipher: auto
   name: 529|🇹🇼_TW_台湾_4@6
@@ -1031,18 +1030,6 @@ proxies:
   uuid: a83fccdb-eeec-4dab-a8c9-a105acbd89e5
 - alterId: 0
   cipher: auto
-  name: 639|🇹🇼 Taiwan HiNet
-  network: ws
-  port: 80
-  server: twx.n.optage.moe
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 755ec159-20c2-4fd3-8fdf-f59489018608
-  ws-opts:
-    path: /aln/17?ed=2048
-- alterId: 0
-  cipher: auto
   name: 639|🇹🇼 [CDNMix]Taiwan HiNet
   network: ws
   port: 80
@@ -1063,19 +1050,20 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
-- client-fingerprint: chrome
-  name: 672|🇹🇼 台湾省+中华电信(HiNet)数据中心
+- alterId: 0
+  cipher: auto
+  name: '663,671|🔒 VM-WS-NA 🇹🇼 TW-34.81.192.70:... #1'
   network: ws
-  password: moist
-  port: 13688
-  server: 118.163.128.81
-  skip-cert-verify: false
-  sni: trojan.freenods.sbs
-  type: trojan
+  port: '38873'
+  server: 34.81.192.70
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 24714522-f4e9-45f5-e380-e453b2e63489
   ws-opts:
     headers:
-      Host: trojan.freenods.sbs
-    path: /
+      Host: ''
+    path: /24714522
 - cipher: aes-256-cfb
   name: 682|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
