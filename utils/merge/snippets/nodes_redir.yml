@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 0,3,256,262,480,481,505,508,512,530,535,579,612,613,628,635,636,638,670,671,682,702,710,716,772|🇸🇬新加坡高速接入点-02
+  name: 0,3,256,262,505,508,535,579,612,613,628,635,636,638,670,671,682,702,710,716,772|🇸🇬新加坡高速接入点-02
   network: ws
   port: '2052'
   server: cfcdn2.sanfencdn9.com
@@ -11,7 +11,6 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: cd0a88d8-989b-4500-adb1-94889d6862c2
   ws-opts:
     headers:
@@ -49,7 +48,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,2,3,579|🇨🇳_CN_中国->🇺🇸_US_美国 #5'
+  name: 0,1,2,3,579,611|🇨🇳CN-120.232.240.56-017
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -57,10 +56,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
+  ws-headers:
+    Host: vip3.niuniupremium.xyz
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,262,433,494,526,535,579,661,669,682,695,716,841|🇺🇸_US_美国->🇫🇷_FR_法国 #9'
+  name: '0,3,262,433,494,526,535,579,612,613,661,682,695,716,841|🇺🇸_US_美国->🇫🇷_FR_法国
+    #9'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -113,10 +116,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1,2,562,638|🇺🇸_US_美国->🇮🇳_IN_印度_1
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,157,562,638|🇺🇸_US_美国->🇮🇳_IN_印度_1
   network: ws
   port: 2052
   server: 172.67.164.78
+  servername: in3.wish.ml
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -135,14 +142,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '1,2,453,562,638,681|🇺🇸US美国36 30.4KB/s #1'
+  name: '1,2,562,638,681|🇺🇸US美国36 30.4KB/s #1'
   network: ws
   port: 2082
   server: 104.21.8.157
-  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -353,7 +356,7 @@ proxies:
     path: /hongkong
 - alterId: 0
   cipher: auto
-  name: '262,384,385,386,388,389,612,613,671,825,839,899|中国【付费推荐：https://jdyvip.link/】5...
+  name: '262,384,385,386,388,389,671,825,839,899|中国【付费推荐：https://jdyvip.link/】5...
     #15'
   network: tcp
   port: '30013'
@@ -628,13 +631,16 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '433,494,526,693,695,716,841|🇺🇸_US_美国->🇫🇷_FR_法国 #8'
+  name: '433,480,481,494,512,526,530,612,613,669,693,695,716,841|🇺🇸_US_美国->🇫🇷_FR_法国
+    #8'
   network: ws
   port: 2082
   server: 172.67.130.140
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -3334,7 +3340,7 @@ proxies:
   ws-path: /videos
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 562,620,713|CN_speednode_0026
+  name: 562,611,620,713|CN_speednode_0026
   password: 6a8bf2a8-f100-4428-ac3f-ad8ea07e1361
   port: 60033
   server: 5.forlive.live
@@ -3342,7 +3348,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '562,638,693,695|美国 CloudFlare节点 #69'
+  name: 562,638|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '562,638,693,695|美国 CloudFlare节点 #67'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -3644,6 +3664,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 8478fdb2-e155-4800-dfc5-b1c8548fb6b7
+- alterId: 0
+  cipher: auto
+  name: '612,613|🇺🇸 _CN_中国->🇺🇸_US_美国 #2'
+  network: ws
+  port: '16928'
+  server: vip3.niuniupremium.xyz
+  tls: false
+  type: vmess
+  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
+  ws-opts:
+    headers:
+      Host: vip3.niuniupremium.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 615,716|美国_0530162
