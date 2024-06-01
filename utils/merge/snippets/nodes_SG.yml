@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|新加坡|广州移动|Polo|1x
+  network: tcp
+  port: '17162'
+  server: gdcm.r1u.cn
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: '15,830,844,904,910|🇸🇬 新加坡1|cf #1'
   network: ws
   port: '2052'
@@ -27,23 +36,23 @@ proxies:
       Host: sg2.wish.ml
     path: /
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 18,458|🇸🇬SG_87
-  password: rNBfNuuANFCAk7KB
-  port: 9056
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: ' SG'
-  name: 18| SG_64
+  country: 🏁ZZ
+  name: 18,462|🏁ZZ_365
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 103.172.116.103
   type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 18,458,462|🏁ZZ_376
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 103.172.116.103
+  type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 18,458,685|未知423
+  country: 🏁ZZ
+  name: 18,458,462,685|未知423
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 103.172.116.103
@@ -51,11 +60,28 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 18,458|🇬SG_82
+  country: 🇬 SG
+  name: 18,458,462|🇬 SG_186
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 18,458,462|🏁ZZ_383
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.103
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 18,458,685|未知179
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 103.172.116.103
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -137,13 +163,18 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 63|Singapore V2 - B Group
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 63,462|🇺🇸 US_288
   network: tcp
-  port: '41001'
+  port: 41001
   server: bgroup.node3.v.nodelist-gfwairport2.top
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 67|新加坡01
@@ -1179,7 +1210,8 @@ proxies:
     path: /path/080712342310
 - alterId: 0
   cipher: aes-256-cfb
-  name: 257,685|未知1018 781.4KB/s
+  country: 🇬 SG
+  name: 257,462,685|未知1018 781.4KB/s
   password: KBGjZYcy4SyRShmA
   port: 9044
   server: 103.172.116.79
@@ -1338,15 +1370,6 @@ proxies:
   uuid: db312c19-1116-4656-d5d2-8b3adc21f117
 - alterId: 0
   cipher: auto
-  name: '266,616,617|🇸🇬 新加坡(欢迎订阅Youtube破解资源君) #121'
-  network: tcp
-  port: '14728'
-  server: 129.226.216.124
-  tls: false
-  type: vmess
-  uuid: eea3d090-e068-4b74-8039-91fd79218d1a
-- alterId: 0
-  cipher: auto
   name: '266,616,617|🇸🇬 新加坡(欢迎订阅Youtube破解资源君) #115'
   network: tcp
   port: '45381'
@@ -1464,20 +1487,6 @@ proxies:
   uuid: 71090d6b-ae98-4b7e-8367-bc1c700a75c2
 - alterId: 0
   cipher: auto
-  name: '266,665,673,686|未知177 #2'
-  network: ws
-  port: '56029'
-  server: 18.142.251.50
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 48c632ca-3d6e-42cb-bf37-c8dfced05c86
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: '266,498,530,673,685,686|未知67 80.4KB/s #2'
   network: ws
   port: '47632'
@@ -1490,6 +1499,20 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '266,665,673,686|未知177 #2'
+  network: ws
+  port: '56029'
+  server: 18.142.251.50
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48c632ca-3d6e-42cb-bf37-c8dfced05c86
+  ws-opts:
+    headers:
+      Host: store.steampowered.com
     path: /
 - alterId: 0
   cipher: auto
@@ -1832,16 +1855,16 @@ proxies:
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
-  country: 🇬SG
-  name: 458|🇬SG_81
+  country: 🏁ZZ
+  name: 458,462|🏁ZZ_371
   password: bf7v334KKDV3YDhH
   port: 9070
   server: 103.172.116.103
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 458,685|未知641 666.1KB/s
+  country: 🏁ZZ
+  name: 458,462,685|未知641 666.1KB/s
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 103.172.116.103
@@ -1849,15 +1872,15 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 458|🇸🇬SG_85
+  country: 🏁ZZ
+  name: 458,462|🏁ZZ_407
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  country: 🇬SG
-  name: 458|🇸🇬SG_86
+  country: 🇬 SG
+  name: 458,462| SG_184
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 103.172.116.94
@@ -1946,6 +1969,20 @@ proxies:
     headers:
       Host: ''
     path: /anti13.zingfast.vn
+- client-fingerprint: chrome
+  name: 484,674|🇬🇧 英国+V2CROSS.COM
+  network: ws
+  password: b84d16a244460e09
+  port: 3306
+  server: 5.44.249.44
+  skip-cert-verify: false
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: n2.gladns.com
+    path: /gateway/connect
 - alterId: 0
   cipher: auto
   name: 486|🇸🇬新加坡(绿头外网集团)(Public)
