@@ -220,20 +220,6 @@ proxies:
     path: /index?ed=2560
 - alterId: 0
   cipher: auto
-  name: '262,669|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
-  network: ws
-  port: '12945'
-  server: 154.40.60.172
-  servername: 55.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 262,526,529,669,681,682,695|🇹🇼TW-103.159.206.35-0342
   network: ws
   port: 31945
@@ -243,6 +229,20 @@ proxies:
   tls: false
   type: vmess
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '262,669|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
+  network: ws
+  port: '12945'
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
       Host: ''
@@ -498,23 +498,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
-- alterId: 0
-  cipher: auto
-  country: 🇼TW
-  h2-opts: {}
-  http-opts: {}
-  name: 453|Relay_TW-🇹🇼TW_120 | 8.82Mb
-  network: ws
-  port: 80
-  server: tw1g.forlive.live
-  servername: tms.dingtalk.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: bb7d0ae0-85bd-4d9f-8391-b3d927ccb497
-  ws-opts:
-    headers:
-      HOST: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 478|🇹🇼_TW_台湾
@@ -1025,18 +1008,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 637|台湾高速接入点-01
-  network: ws
-  port: 2052
-  server: cfcdn1.sanfencdn9.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 09708606-4cfb-457b-a03a-2e5500f84ea2
-  ws-opts:
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
   name: 646|v2cross.com - 台湾省花莲县中华电信 4
   network: tcp
   port: '39999'
@@ -1045,6 +1016,19 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
+- client-fingerprint: chrome
+  name: 670|🇹🇼 台湾省+中华电信(HiNet)数据中心
+  network: ws
+  password: moist
+  port: 13688
+  server: 118.163.128.81
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /
 - alterId: 0
   cipher: auto
   name: 679|🇹🇼台湾 | 101 | 原生 | 1x
@@ -1054,7 +1038,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: fe9cf734-1f0f-4ef9-9c9c-eda6d1ac22af
+  uuid: 823a6f87-6b94-481b-801f-6626d8c57c38
 - alterId: 0
   cipher: auto
   name: 679|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1064,7 +1048,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: fe9cf734-1f0f-4ef9-9c9c-eda6d1ac22af
+  uuid: 823a6f87-6b94-481b-801f-6626d8c57c38
 - alterId: 0
   cipher: auto
   name: 679|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1074,7 +1058,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: fe9cf734-1f0f-4ef9-9c9c-eda6d1ac22af
+  uuid: 823a6f87-6b94-481b-801f-6626d8c57c38
 - cipher: aes-256-cfb
   name: 680|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
