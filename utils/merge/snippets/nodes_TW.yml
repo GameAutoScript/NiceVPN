@@ -206,7 +206,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '263,670,683|TW3 #2'
+  name: 263,670,683|TW2
   network: ws
   port: '37902'
   server: 36.233.66.195
@@ -220,6 +220,20 @@ proxies:
     path: /index?ed=2560
 - alterId: 0
   cipher: auto
+  name: 263,527,530,670,696|🇹🇼TW-103.159.206.35-0342
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: '263,670|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
   network: ws
   port: '12945'
@@ -228,21 +242,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 263,527,530,670,682,683,696|🇹🇼TW-103.159.206.35-0342
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-opts:
     headers:
       Host: ''
@@ -658,6 +657,20 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
+  name: 495|台湾_060118006
+  network: ws
+  port: '80'
+  server: 61.227.164.69
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bb7d0ae0-85bd-4d9f-8391-b3d927ccb497
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: '527|Taiwan #1'
   network: ws
   port: 443
@@ -1016,6 +1029,19 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
+- client-fingerprint: chrome
+  name: 671|🇹🇼 台湾省+中华电信(HiNet)数据中心
+  network: ws
+  password: moist
+  port: 13688
+  server: 118.163.128.81
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /
 - alterId: 0
   cipher: auto
   name: 680|🇹🇼台湾 | 101 | 原生 | 1x
@@ -1025,7 +1051,7 @@ proxies:
   servername: tw01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: ffa53b7f-0393-4359-b467-10a600b130f6
+  uuid: 69972ffb-6b11-4964-8a05-dba5ebc3e112
 - alterId: 0
   cipher: auto
   name: 680|🇹🇼台湾 | 102 | 负载优化 | 1x
@@ -1035,7 +1061,7 @@ proxies:
   servername: tw02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: ffa53b7f-0393-4359-b467-10a600b130f6
+  uuid: 69972ffb-6b11-4964-8a05-dba5ebc3e112
 - alterId: 0
   cipher: auto
   name: 680|🇹🇼台湾 | 103 | 负载优化| 1x
@@ -1045,7 +1071,7 @@ proxies:
   servername: tw03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: ffa53b7f-0393-4359-b467-10a600b130f6
+  uuid: 69972ffb-6b11-4964-8a05-dba5ebc3e112
 - cipher: aes-256-cfb
   name: 681|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -1096,32 +1122,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
-- alterId: 0
-  cipher: auto
-  name: 682|TW2
-  network: ws
-  password: auto
-  port: 443
-  server: 35.201.203.106
-  skip-cert-verify: true
-  sni: vip.123789.pp.ua
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '682|TW3 #1'
-  network: ws
-  port: 37902
-  server: 36.233.66.195
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      host: hinet-wap.myddns.me
-    path: /index?ed=2560
 - alterId: 0
   cipher: auto
   name: 696|🇹🇼台湾 01
@@ -1787,19 +1787,6 @@ proxies:
   network: ws
   port: '42101'
   server: 112.16.228.105
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
-  name: 903|🇹🇼台湾-Netflix专线
-  network: ws
-  port: '37105'
-  server: 112.29.226.3
   tls: false
   type: vmess
   uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
