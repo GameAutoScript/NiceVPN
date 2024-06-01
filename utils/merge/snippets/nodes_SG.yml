@@ -36,6 +36,20 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- cipher: aes-256-cfb
+  country: ' SG'
+  name: 18| SG_66
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: ' SG'
+  name: 18| SG_67
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 103.172.116.103
+  type: ss
 - alterId: 0
   cipher: auto
   name: '19,20,22,24|sg新加坡1 #3'
@@ -1479,20 +1493,6 @@ proxies:
   ws-path: /ws
 - alterId: 0
   cipher: auto
-  name: '266,498,530,665,673|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
-  network: ws
-  port: 23006
-  server: 138.2.90.147
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5eea50d8-a816-48c7-bc35-0fde39e277b5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /free
-- alterId: 0
-  cipher: auto
   name: '266,665,673,686|未知177 #2'
   network: ws
   port: '56029'
@@ -1522,6 +1522,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '266,498,530,665,673|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
+  network: ws
+  port: 23006
+  server: 138.2.90.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5eea50d8-a816-48c7-bc35-0fde39e277b5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /free
+- alterId: 0
+  cipher: auto
   name: '266,530,673,686|未知973 1.7MB/s #2'
   network: ws
   port: '41917'
@@ -1536,7 +1550,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 266,530,619,720|新加坡_0530011
+  name: 266,498,530,619,720|新加坡_0530011
   network: ws
   port: '99'
   server: 128.199.161.230
@@ -1606,14 +1620,14 @@ proxies:
   uuid: d58f81a7-083a-4ff2-e50a-7078c58bbccf
 - cipher: chacha20-ietf-poly1305
   name: '383,384,385|新加坡-南方入口 #2'
-  password: 6080808d-70f2-4903-8b29-4fbaccdbd711
+  password: a26a5ae5-ff10-474a-8cb4-37cf56dd0405
   port: 30002
   server: sg1.zzjq.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '383,384,385|新加坡-北方入口 #2'
-  password: 6080808d-70f2-4903-8b29-4fbaccdbd711
+  password: a26a5ae5-ff10-474a-8cb4-37cf56dd0405
   port: 30002
   server: b-sg1.zzjq.xyz
   type: ss
@@ -1874,38 +1888,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 458,462|🏁ZZ_352
-  password: bf7v334KKDV3YDhH
-  port: 9070
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 458,462|🏁ZZ_375
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 458,462|🏁ZZ_356
-  password: rNBfNuuANFCAk7KB
-  port: 9056
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 458|🇸🇬SG_86
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 103.172.116.103
-  type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 458,462,685|未知641 666.1KB/s
+  country: 🇬SG
+  name: 458,685|未知641 666.1KB/s
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 103.172.116.103
@@ -1913,11 +1899,25 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-256-cfb
-  country: 🇬 SG
-  name: 458,462| SG_177
+  country: 🇸🇬SG
+  name: 458|🇬SG_83
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇬SG
+  name: 458|🇸🇬SG_85
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 103.172.116.94
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 458|🇸🇬SG_86
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.103
   type: ss
 - alterId: 0
   cipher: auto
@@ -2583,6 +2583,34 @@ proxies:
   tls: false
   type: vmess
   uuid: a83fccdb-eeec-4dab-a8c9-a105acbd89e5
+- alterId: 0
+  cipher: auto
+  name: 498,720|新加坡_0530013
+  network: ws
+  port: '2082'
+  server: 8.222.174.108
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 498|新加坡_060204056
+  network: ws
+  port: '99'
+  server: praiman.game.jandaspeed.cloud
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
+  ws-opts:
+    headers:
+      Host: praiman.game.jandaspeed.cloud
+    path: /v2ray
 - alterId: 0
   cipher: auto
   name: 524|🇸🇬新加坡(欢迎订阅Youtube元亨利贞)
@@ -4341,20 +4369,6 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 720|新加坡_0530013
-  network: ws
-  port: '2082'
-  server: 8.222.174.108
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 720|新加坡_0530026
   network: ws
   port: '443'
@@ -4405,6 +4419,32 @@ proxies:
   protocol-param: NDAwMjE4OnZDUUNFbA
   server: 120.232.126.108
   type: ssr
+- alterId: 0
+  cipher: auto
+  name: 744|?? Network Singapore ?
+  network: ws
+  port: '80'
+  server: sgb.sinhvien4g.com
+  tls: false
+  type: vmess
+  uuid: 926ffb58-04d7-4100-b5d5-d09f869c788f
+  ws-opts:
+    headers:
+      Host: m.tiktok.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 744|?? Network Singapore 2?
+  network: ws
+  port: '80'
+  server: sgb1.sinhvien4g.com
+  tls: false
+  type: vmess
+  uuid: 926ffb58-04d7-4100-b5d5-d09f869c788f
+  ws-opts:
+    headers:
+      Host: m.youtube.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 776|🇸🇬新加坡高速接入点-03
