@@ -188,47 +188,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '198,622|🇹🇼 Taiwan_1 #1'
-  password: 93ec2378-1151-4db5-9c56-d1387f36882d
-  port: 40006
-  server: tw01.mmyjiedian.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '198,622|🇹🇼 Taiwan_2 #1'
-  password: 93ec2378-1151-4db5-9c56-d1387f36882d
-  port: 40007
-  server: tw02.mmyjiedian.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '198,622|🇹🇼 Taiwan_3 #1'
-  password: 93ec2378-1151-4db5-9c56-d1387f36882d
-  port: 40008
-  server: tw03.mmyjiedian.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 198|🇹🇼 Taiwan_4
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 40009
-  server: tw04.mmyjiedian.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 198|🇹🇼 Taiwan_5
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 40010
-  server: tw05.mmyjiedian.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 255|🆔@LuxyNet💎❖❖TW❖311
@@ -1006,6 +965,30 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
+  name: 622|🇹🇼 Taiwan_1
+  password: 93ec2378-1151-4db5-9c56-d1387f36882d
+  port: 40006
+  server: tw01.mmyjiedian.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 622|🇹🇼 Taiwan_2
+  password: 93ec2378-1151-4db5-9c56-d1387f36882d
+  port: 40007
+  server: tw02.mmyjiedian.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 622|🇹🇼 Taiwan_3
+  password: 93ec2378-1151-4db5-9c56-d1387f36882d
+  port: 40008
+  server: tw03.mmyjiedian.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 622|🇹🇼 TW台湾-电信优化
   password: 1cce1062-972c-4ac0-a511-b9168e761512
   port: 27260
@@ -1038,6 +1021,40 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 639|TWN 01
+  network: ''
+  port: 65531
+  server: hinet.mmmmmmmmmm.cfd
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a83fccdb-eeec-4dab-a8c9-a105acbd89e5
+- alterId: 0
+  cipher: auto
+  name: 639|🇹🇼 Taiwan HiNet
+  network: ws
+  port: 80
+  server: twx.n.optage.moe
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 755ec159-20c2-4fd3-8fdf-f59489018608
+  ws-opts:
+    path: /aln/17?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 639|🇹🇼 [CDNMix]Taiwan HiNet
+  network: ws
+  port: 80
+  server: mixx.alidns.moe233.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 755ec159-20c2-4fd3-8fdf-f59489018608
+  ws-opts:
+    path: /aln/17?ed=2048
+- alterId: 0
+  cipher: auto
   name: 648|v2cross.com - 台湾省花莲县中华电信 4
   network: tcp
   port: '39999'
@@ -1046,36 +1063,19 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
-- alterId: 0
-  cipher: auto
-  name: 681|🇹🇼台湾 | 101 | 原生 | 1x
-  network: tcp
-  port: '30301'
-  server: free.6vczxw.xyz
-  servername: tw01.tomoony.xyz
-  tls: true
-  type: vmess
-  uuid: 65d7ecf7-d6ae-4b2a-997b-44f20356cdb5
-- alterId: 0
-  cipher: auto
-  name: 681|🇹🇼台湾 | 102 | 负载优化 | 1x
-  network: tcp
-  port: '30306'
-  server: free.6vczxw.xyz
-  servername: tw02.tomoony.xyz
-  tls: true
-  type: vmess
-  uuid: 65d7ecf7-d6ae-4b2a-997b-44f20356cdb5
-- alterId: 0
-  cipher: auto
-  name: 681|🇹🇼台湾 | 103 | 负载优化| 1x
-  network: tcp
-  port: '30311'
-  server: free.6vczxw.xyz
-  servername: tw03.tomoony.xyz
-  tls: true
-  type: vmess
-  uuid: 65d7ecf7-d6ae-4b2a-997b-44f20356cdb5
+- client-fingerprint: chrome
+  name: 672|🇹🇼 台湾省+中华电信(HiNet)数据中心
+  network: ws
+  password: moist
+  port: 13688
+  server: 118.163.128.81
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /
 - cipher: aes-256-cfb
   name: 682|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
