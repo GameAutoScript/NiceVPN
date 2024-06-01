@@ -48,7 +48,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,1,2,3,389,390,392,393,583,615|🇨🇳CN-120.232.240.56-017
+  name: '0,1,2,3,389,390,392,393,583|🇨🇳_CN_中国->🇺🇸_US_美国 #5'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -56,20 +56,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
-  ws-headers:
-    Host: vip3.niuniupremium.xyz
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,266,389,390,392,393,437,498,530,583,616,617,673,699,720,846|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: '0,3,266,389,390,392,393,437,484,485,498,516,530,534,583,616,617,699,720,846|🇺🇸_US_美国->🇫🇷_FR_法国
     #9'
   network: ws
   port: 2082
   server: 104.21.8.157
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -77,16 +76,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: '1,2,259,566,642|🇺🇸_US_美国->🇸🇬_SG_新加坡 #3'
+  name: '1,2,566,642|🇺🇸_US_美国->🇸🇬_SG_新加坡 #3'
   network: ws
   port: 2052
   server: cfcdn2.sanfencdn9.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: false
   uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f
   ws-opts:
     headers:
@@ -631,6 +627,20 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+- alterId: 0
+  cipher: auto
+  name: '437,498,530,673,697,699,720,846|🇺🇸_US_美国->🇫🇷_FR_法国 #8'
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 483,625|台湾【YouTube @Play实验室】
@@ -3325,27 +3335,12 @@ proxies:
   ws-path: /videos
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 566,615,624|🇺🇸 US 05
+  name: 566,624|🇺🇸 US 05
   password: 30a8576f-0e33-4715-bb9c-b2bde0d2742e
   port: 60033
   server: 5.forlive.live
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '566,642,697,699|美国 CloudFlare节点 #52'
-  network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 567|🇺🇸_US_美国->_DE_国
