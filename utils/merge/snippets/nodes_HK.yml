@@ -299,15 +299,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 157,266,484,485,516,518,530,534,720|香港_0602008
+  name: 157,266,518,530,720|香港_0602008
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -1682,14 +1681,14 @@ proxies:
   uuid: 508e3be6-3872-4a45-8a5f-0d6e42579eee
 - cipher: chacha20-ietf-poly1305
   name: '383,384,385|香港-南方入口 #2'
-  password: c71504ff-3fa7-405a-a783-0f74a35c973f
+  password: c75acfe4-a31a-4223-a396-176621a1e26b
   port: 30000
   server: hk1.zzjq.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '383,384,385|香港-北方入口 #2'
-  password: c71504ff-3fa7-405a-a783-0f74a35c973f
+  password: c75acfe4-a31a-4223-a396-176621a1e26b
   port: 30000
   server: b-hk1.zzjq.xyz
   type: ss
@@ -2048,8 +2047,8 @@ proxies:
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 458,498,691|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰 HK
+  name: 458,462,498,691|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -2058,6 +2057,19 @@ proxies:
   protocol-param: ''
   server: 150.107.46.21
   type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 462|🇭🇰HK_125
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: '471|🇨🇳中国【YouTube-由零開始】 #7'
@@ -3432,7 +3444,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '592,699|美国 CloudFlare节点 #58'
+  name: '592,699|美国 CloudFlare节点 #57'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4563,17 +4575,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 632,640,641|CN_youtube@资源分享师_233
-  network: tcp
-  port: 15606
-  server: 183.232.170.47
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
   name: '632,639,640,674,675,830,844,904|中国【付费推荐：https://jdyvip.link/】4... #5'
   network: ws
@@ -5583,3 +5584,66 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- cipher: aes-128-gcm
+  name: 925|🇭🇰 香港 01 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11001
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 925|🇭🇰 香港 02 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11002
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 925|🇭🇰 香港 03 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11003
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 925|🇭🇰 香港 04 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11004
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 925|🇭🇰 香港 05 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11005
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 925|🇭🇰 香港 06 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11006
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 925|🇭🇰 香港 07 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11007
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 925|🇭🇰 香港 08 SS
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 11008
+  server: ss.hkglink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 925|🇭🇰 香港 IPLC 限速10Mbps
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 1024
+  server: 222909df61922934.cdn.jiashule.com
+  type: ss
+  udp: true
