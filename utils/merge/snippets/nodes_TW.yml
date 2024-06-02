@@ -37,6 +37,32 @@ proxies:
   uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
 - alterId: 0
   cipher: auto
+  name: 76|🇹🇼 台湾Fixed Line-01
+  network: ws
+  port: '39026'
+  server: 183.232.142.140
+  tls: false
+  type: vmess
+  uuid: 56cd731a-e615-4303-8867-f402dd6cb3bd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /ssv
+- alterId: 0
+  cipher: auto
+  name: 76|🇹🇼 台湾Fixed Line-02
+  network: ws
+  port: '49026'
+  server: 183.232.142.140
+  tls: false
+  type: vmess
+  uuid: 56cd731a-e615-4303-8867-f402dd6cb3bd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /ssv
+- alterId: 0
+  cipher: auto
   name: 76|🇹🇼 台湾wapkcd-02
   network: ws
   port: '39011'
@@ -206,18 +232,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '266,530,673|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
+  name: '266,673,686|TW2 #3'
   network: ws
-  port: '12945'
-  server: 154.40.60.172
-  servername: 55.lwdh.us
-  tls: true
+  port: '37902'
+  server: 36.233.66.195
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: hinet-wap.myddns.me
+    path: /index?ed=2560
 - alterId: 0
   cipher: auto
   name: 266,530,533,673,685,686,699|🇹🇼TW-103.159.206.35-0342
@@ -235,18 +261,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '266,673,686|TW2 #3'
+  name: '266,530,673|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
   network: ws
-  port: '37902'
-  server: 36.233.66.195
-  servername: ''
-  tls: false
+  port: '12945'
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  tls: true
   type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
-      Host: hinet-wap.myddns.me
-    path: /index?ed=2560
+      Host: ''
+    path: /
 - alterId: '0'
   cipher: auto
   name: 279|[🇹🇼]103.131.189.212:56967(8110...
@@ -658,7 +684,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 498|台湾_060204003
+  name: 498|台湾_060208003
   network: ws
   port: '80'
   server: 61.227.164.69
@@ -672,16 +698,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 498,641|🇹🇼 Taiwan HiNet
+  name: 498|台湾_060208005
   network: ws
-  port: 80
+  port: '80'
   server: twx.n.optage.moe
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 755ec159-20c2-4fd3-8fdf-f59489018608
   ws-opts:
+    headers:
+      Host: ''
     path: /aln/17?ed=2048
 - alterId: 1
   cipher: auto
@@ -1021,26 +1048,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 641|TWN 01
-  network: ''
-  port: 65531
-  server: hinet.mmmmmmmmmm.cfd
-  skip-cert-verify: true
+  name: 632,640|台湾|@ripaojiedian
+  network: tcp
+  port: '34998'
+  server: 879xhl1.hsspr5bu1-tw02.my777999.top
+  servername: ''
   tls: false
   type: vmess
-  uuid: a83fccdb-eeec-4dab-a8c9-a105acbd89e5
-- alterId: 0
-  cipher: auto
-  name: 641|🇹🇼 [CDNMix]Taiwan HiNet
-  network: ws
-  port: 80
-  server: mixx.alidns.moe233.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 755ec159-20c2-4fd3-8fdf-f59489018608
-  ws-opts:
-    path: /aln/17?ed=2048
+  uuid: 33aefd89-3285-4347-9083-6249711f02e9
 - alterId: 0
   cipher: auto
   name: 650|v2cross.com - 台湾省花莲县中华电信 4
