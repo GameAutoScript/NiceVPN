@@ -1,7 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,2,3,266,583,615,616,617,665,673|🔒 VM-TCP-NONE 🇮🇷 IR-188.213.19... #2'
+  name: '0,1,2,3,260,266,512,583,615,616,617,665,673|🔒 VM-TCP-NONE 🇮🇷 IR-188.213.19...
+    #2'
   network: tcp
   port: 22452
   server: 188.213.197.27
@@ -14,15 +15,13 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,266,484,485,516,518,530,534,583,616,617,720|未知_0602049 #1'
+  name: '0,3,266,518,530,583,616,617,720|未知_0602049 #1'
   network: ws
   port: '8880'
   server: 104.19.40.237
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
   ws-opts:
     headers:
@@ -72,13 +71,16 @@ proxies:
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
 - alterId: 0
   cipher: none
-  name: '0,3,260,266,498,509,512,518,583,616,617,706,714,720|荷兰_0602001 #1'
+  name: '0,3,260,266,484,485,498,509,512,516,518,534,583,616,617,706,714,720|荷兰_0602001
+    #1'
   network: ws
   port: '80'
   server: 188.114.97.3
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: b25f8da6-54a2-49b3-bacf-8403b4c36556
   ws-opts:
     headers:
@@ -128,13 +130,15 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,44,266,394,518,530,583,616,617,720|美国_0602063 #1'
+  name: '0,3,44,266,394,484,485,516,518,530,534,583,616,617,720|美国_0602063 #1'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -159,15 +163,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,260,266,484,485,498,512,516,534,583,616,617|🇨🇷 _CR_哥斯达黎加->🇬🇧_GB_英国 #2'
+  name: '0,3,260,266,498,512,583,616,617|🇨🇷 _CR_哥斯达黎加->🇬🇧_GB_英国 #2'
   network: ws
   port: '80'
   server: 190.93.247.155
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: d9aaf6f8-0ef7-499c-830a-c7e5e56f3bd8
   ws-opts:
     headers:
@@ -175,16 +177,14 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  name: '0,3,266,389,390,392,393,437,484,485,516,518,530,534,583,616,617,673,699,720,846|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: '0,3,266,389,390,392,393,437,518,530,583,616,617,699,720,846|🇺🇸_US_美国->🇫🇷_FR_法国
     #15'
   network: ws
   port: 2082
   server: 104.21.8.157
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -257,8 +257,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  country: 🇴CO
   fingerprint: ''
-  name: '1,2,259,518,566,720|荷兰_0602018 #1'
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,259,457,518,566,720|荷兰_0602018 #1'
   network: ws
   port: '80'
   server: 188.114.97.3
@@ -290,7 +293,7 @@ proxies:
   cipher: none
   client-fingerprint: chrome
   fingerprint: ''
-  name: 1,2,259|cb5075058d3c41ee9a9abd24361b58...
+  name: 1,2,259|c610e97c7ef04dccb08dde652523e5...
   network: ws
   port: 80
   server: www.speedtest.net
@@ -303,7 +306,10 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  name: '1,2,566,642,697,699|美国 CloudFlare节点 #63'
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,457,566,642,697,699|美国 CloudFlare节点 #63'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -318,10 +324,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,566,641,642,685|未知419 85.0KB/s #1'
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,457,566,641,642,685|未知419 85.0KB/s #1'
   network: ws
   port: 2082
   server: 172.67.130.140
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -337,7 +347,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 1,2,259,457|Relay_🏁ZZ-🇺RU_110 |60.69Mb
+  name: 1,2,259,457|Relay_🏁ZZ-🇺RU_123 |60.69Mb
   network: ws
   port: 80
   server: 190.93.247.155
@@ -353,14 +363,10 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '1,2,457,566,642|🇺🇸_US_美国->🇫🇷_FR_法国_1 #1'
+  name: '1,2,566,642|🇺🇸_US_美国->🇫🇷_FR_法国_1 #1'
   network: ws
   port: 2082
   server: 104.21.8.157
-  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess

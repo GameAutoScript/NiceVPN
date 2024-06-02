@@ -1,15 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|台湾|广州移动|Polo|1x
-  network: tcp
-  port: 39872
-  server: gdcm.r1u.cn
-  tls: false
-  type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
-- alterId: 0
-  cipher: auto
   name: 67|台湾01
   network: tcp
   port: '60201'
@@ -222,47 +213,6 @@ proxies:
   sni: chimuni.com
   tls: true
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '200,624|🇹🇼 Taiwan_1 #1'
-  password: 93ec2378-1151-4db5-9c56-d1387f36882d
-  port: 40006
-  server: tw01.mmyjiedian.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '200,624|🇹🇼 Taiwan_2 #1'
-  password: 93ec2378-1151-4db5-9c56-d1387f36882d
-  port: 40007
-  server: tw02.mmyjiedian.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '200,624|🇹🇼 Taiwan_3 #1'
-  password: 93ec2378-1151-4db5-9c56-d1387f36882d
-  port: 40008
-  server: tw03.mmyjiedian.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 200|🇹🇼 Taiwan_4
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 40009
-  server: tw04.mmyjiedian.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 200|🇹🇼 Taiwan_5
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 40010
-  server: tw05.mmyjiedian.com
-  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -1027,6 +977,30 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
+  name: 624|🇹🇼 Taiwan_1
+  password: 93ec2378-1151-4db5-9c56-d1387f36882d
+  port: 40006
+  server: tw01.mmyjiedian.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 624|🇹🇼 Taiwan_2
+  password: 93ec2378-1151-4db5-9c56-d1387f36882d
+  port: 40007
+  server: tw02.mmyjiedian.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 624|🇹🇼 Taiwan_3
+  password: 93ec2378-1151-4db5-9c56-d1387f36882d
+  port: 40008
+  server: tw03.mmyjiedian.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 624|🇹🇼 TW台湾-电信优化
   password: 1cce1062-972c-4ac0-a511-b9168e761512
   port: 27260
@@ -1059,6 +1033,16 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 632,640|台湾|@ripaojiedian
+  network: tcp
+  port: '34998'
+  server: 879xhl1.hsspr5bu1-tw02.my777999.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 33aefd89-3285-4347-9083-6249711f02e9
+- alterId: 0
+  cipher: auto
   name: 650|v2cross.com - 台湾省花莲县中华电信 4
   network: tcp
   port: '39999'
@@ -1067,19 +1051,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
-- client-fingerprint: chrome
-  name: 674|🇹🇼 台湾省+中华电信(HiNet)数据中心
-  network: ws
-  password: moist
-  port: 13688
-  server: 118.163.128.81
-  skip-cert-verify: false
-  sni: trojan.freenods.sbs
-  type: trojan
-  ws-opts:
-    headers:
-      Host: trojan.freenods.sbs
-    path: /
 - cipher: aes-256-cfb
   name: 684|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
