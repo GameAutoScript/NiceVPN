@@ -1,10 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,2,3,260,266,389,390,392,393,512,583,615,616,617,665,673|🔒 VM-TCP-NA 🇮🇷
-    IR-188.213.197.... #1'
+  name: 0,1,2,3,98,260,266,389,390,392,393,512,542,583,615,616,617,665,673|🔒 VM-TCP-NONE
+    🇮🇷 IR-188.213.19...
   network: tcp
-  port: '22452'
+  port: 22452
   server: 188.213.197.27
   skip-cert-verify: true
   tls: false
@@ -15,16 +15,13 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,266,389,390,392,393,484,485,516,518,530,534,583,616,617,720,722|未知_0602039
-    #2'
+  name: '0,3,266,389,390,392,393,518,530,583,616,617,720,722|未知_0602039 #2'
   network: ws
   port: '8880'
   server: 104.19.40.237
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
   ws-opts:
     headers:
@@ -131,16 +128,13 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,44,266,389,390,392,393,394,484,485,516,518,530,534,583,616,617,720,722|未知_0602042
-    #2'
+  name: '0,3,44,266,389,390,392,393,394,518,530,583,616,617,720,722|未知_0602042 #2'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -148,14 +142,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,266,389,390,392,393,437,498,518,530,583,616,617,673,686,697,699,720,722,846|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: '0,3,266,389,390,392,393,437,484,485,498,516,518,530,534,583,616,617,686,697,699,720,722,846|🇺🇸_US_美国->🇫🇷_FR_法国
     #14'
   network: ws
   port: 2082
   server: 172.67.130.140
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -177,7 +173,7 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  name: '0,3,266,389,390,392,393,437,518,530,583,616,617,699,720,722,846|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: '0,3,266,389,390,392,393,437,518,530,583,616,617,673,699,720,722,846|🇺🇸_US_美国->🇫🇷_FR_法国
     #15'
   network: ws
   port: 2082
@@ -192,14 +188,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 1,2,457,566,641|🇺🇸_US_美国->🇬🇧_GB_英国_1
+  name: 1,2,566,641|🇺🇸_US_美国->🇬🇧_GB_英国_1
   network: ws
   port: 8880
   server: 104.19.40.237
-  servername: uk.moss.network
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -297,7 +289,7 @@ proxies:
   cipher: none
   client-fingerprint: chrome
   fingerprint: ''
-  name: 1,2,259|c610e97c7ef04dccb08dde652523e5...
+  name: 1,2,259|94be652f237c49969e528e9ff03e8b...
   network: ws
   port: 80
   server: www.speedtest.net
@@ -310,10 +302,7 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '1,2,457,566,642,697,699|美国 CloudFlare节点 #62'
+  name: '1,2,566,642,697,699|美国 CloudFlare节点 #63'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -328,12 +317,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,566,641,642,685|未知419 85.0KB/s #1'
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,457,566,641,642|🇺🇸_US_美国->🇫🇷_FR_法国_2 #1'
   network: ws
   port: 2082
   server: 172.67.130.140
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
@@ -347,7 +340,7 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 1,2,259,457|Relay_ZZ-🇷🇺RU_113 |60.69Mb
+  name: 1,2,259,457|Relay_🏁ZZ-🇺RU_125 |35.75Mb
   network: ws
   port: 80
   server: 190.93.247.155
@@ -363,10 +356,14 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  name: '1,2,566,642|🇺🇸_US_美国->🇫🇷_FR_法国_1 #1'
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,457,566,642|🇺🇸_US_美国->🇫🇷_FR_法国_1 #1'
   network: ws
   port: 2082
   server: 104.21.8.157
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -3476,7 +3473,7 @@ proxies:
   uuid: 8478fdb2-e155-4800-dfc5-b1c8548fb6b7
 - alterId: 0
   cipher: auto
-  name: 619|德国 -> 中国China Telecom
+  name: 619,665|🔒 VM-WS-NA 🇬🇧 GB-217.160.45.31...
   network: ws
   port: 8880
   server: 217.160.45.31
