@@ -456,11 +456,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '270,691|未知123 #1'
+  name: '270,690,691|未知123 #2'
   network: tcp
   port: '15603'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -477,28 +478,21 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 270|🔒 VM-TCP-NA 🇨🇳 CN-71.132.49.15...
-  network: tcp
-  port: '41999'
-  server: 71.132.49.156
-  tls: false
-  type: vmess
-  uuid: 22212159-1be2-4c81-afbb-6203b6a51739
 - alterId: 64
   cipher: auto
-  name: '270,670,678,691|未知1076 #1'
+  name: '270,670,678,690,691|未知1076 #2'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '270,646,680,691,839,853,913|中国【付费推荐：https://jdyvip.link/】9... #4'
+  name: '270,490,521,539,646,680,690,691,839,853,913|中国【付费推荐：https://jdyvip.link/】9...
+    #4'
   network: tcp
   port: '21006'
   server: 183.232.199.61
@@ -1078,7 +1072,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '399,680|广东省佛山市 移动 #1'
+  name: '399,680|广东省佛山市 移动 #4'
   network: tcp
   port: '15601'
   server: 183.232.199.28
@@ -1210,7 +1204,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 463,469|Relay_-CN_03
+  name: 462,463,469|Relay_-CN_03
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1219,6 +1213,33 @@ proxies:
   protocol-param: 105622:5EF7C3661EBC
   server: video23.cdn.globalnetworktraffic.com
   type: ssr
+- alterId: 64
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 462,467,535,590|Freenet 0005
+  network: tcp
+  port: '41911'
+  server: 107.148.192.153
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 462|🇳CN_10 |20.13Mb
+  network: tcp
+  port: 41911
+  server: 107.148.192.149
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '476|🇨🇳中国【YouTube-由零開始】 #5'
@@ -1403,17 +1424,6 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 490,521,539,637,645,646|CN_youtube@资源分享师_62
-  network: tcp
-  port: 37996
-  server: 9898.fz-6-0-kcet8y0fd-so04.my777999.top
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 33aefd89-3285-4347-9083-6249711f02e9
 - alterId: 4
   cipher: auto
   name: '491,549|未命名 #193'
@@ -4882,13 +4892,16 @@ proxies:
     headers:
       Host: kh.sharecentre.online
     path: /shirker
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 543,620,679|🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+  name: 543,620,679,690|KR3
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -5872,12 +5885,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 646|CN_youtube@资源分享师_14
+  name: 646,690|🇨
   network: ws
   port: 16632
   server: m.cnmjin.net
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
