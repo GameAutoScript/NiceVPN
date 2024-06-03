@@ -1,6 +1,19 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|Singapore01
+  network: ws
+  port: 8443
+  server: polosg.9x.cx
+  tls: true
+  type: vmess
+  uuid: a6dfb50f-75bb-48e0-b56a-1edeb62b5a49
+  ws-opts:
+    headers:
+      Host: ''
+    path: /boluosg
+- alterId: 0
+  cipher: auto
   name: 16|🇸🇬 新加坡1|cf
   network: ws
   port: '2052'
@@ -196,14 +209,19 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '66,536|Singapore #6'
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: '66,468,536|Singapore #6'
   network: tcp
   port: '41001'
   server: bgroup.node3.v.nodelist-gfwairport2.top
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 70|新加坡01
@@ -314,7 +332,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '101,490,548|新加坡 008 #1'
+  name: '101,548|新加坡 008 #1'
   network: http
   port: 54185
   server: 152.42.208.82
@@ -427,7 +445,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '160,270,671,679|🔒 VM-WS-NA 🇸🇬 SG-128.199.161.2... #2'
+  name: '160,270,671,679|🔒 VM-WS-NA 🇸🇬 SG-128.199.161.2... #3'
   network: ws
   port: '99'
   server: 128.199.161.230
@@ -471,7 +489,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: '161,270,487,536,625,679,691,692|US532 367.5KB/s #1'
+  name: '161,270,487,536,625,671,679,691,692|US532 367.5KB/s #2'
   network: tcp
   port: '31433'
   server: 205.234.231.35
@@ -1265,7 +1283,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '270,524,536,726|新加坡_0602008 #1'
+  name: '270,524,536,671,726|新加坡_0602008 #1'
   network: ws
   port: '99'
   server: 128.199.161.230
@@ -1319,11 +1337,15 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: '270,625|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #5'
+  country: 🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: '270,463,522,625|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #5'
   network: tcp
   port: '2083'
   server: sg2-v2ray.ipracevpn.com
   servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 7cc6a250-f767-4d4b-9421-03b1bbf23f88
@@ -1387,7 +1409,7 @@ proxies:
     path: /free
 - alterId: 0
   cipher: auto
-  name: '270,671,679,692|未知972 #1'
+  name: '270,671,679,692|未知972 #2'
   network: ws
   port: '56029'
   server: 18.142.251.50
@@ -1401,7 +1423,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '270,491,504,522,540,625,671,679|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #3'
+  name: '270,504,625,671,679|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #3'
   network: tcp
   port: 54185
   server: 152.42.208.82
@@ -1762,25 +1784,25 @@ proxies:
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 464,468|🏁ZZ_339
-  password: UWZQeLRWnkqgkseq
-  port: 9032
-  server: 103.172.116.103
+  country: 🇬 SG
+  name: 464,468| SG_174
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 103.172.116.94
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 464,468|🏁ZZ_343
+  name: 464,468|🏁ZZ_364
   password: bf7v334KKDV3YDhH
   port: 9070
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  country: 🇬 SG
-  name: 464,468| SG_170
-  password: BejrQvtu9sqUeNuZ
-  port: 9024
-  server: 103.172.116.94
+  country: 🏁ZZ
+  name: 464,468|🏁ZZ_360
+  password: UWZQeLRWnkqgkseq
+  port: 9032
+  server: 103.172.116.103
   type: ss
 - alterId: 0
   cipher: auto
@@ -1866,20 +1888,6 @@ proxies:
     headers:
       Host: ''
     path: /anti13.zingfast.vn
-- client-fingerprint: chrome
-  name: 490,680|🇬🇧 英国+V2CROSS.COM
-  network: ws
-  password: b84d16a244460e09
-  port: 3306
-  server: 5.44.249.44
-  skip-cert-verify: false
-  sni: n2.gladns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: n2.gladns.com
-    path: /gateway/connect
 - alterId: 0
   cipher: auto
   name: 492|🇸🇬新加坡(绿头外网集团)(Public)
