@@ -450,7 +450,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 270,599,682,683,694|未知287
+  name: '270,599,682,683,694|未知287 #2'
   network: ws
   port: '16632'
   server: m.cnmjin.net
@@ -466,11 +466,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 270,694|未知1213
+  name: '270,693,694|未知1213 #2'
   network: tcp
   port: '15603'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -489,11 +490,12 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 270,673,681,694|未知1120
+  name: '270,673,681,693,694|未知1120 #2'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1182,7 +1184,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 465,466,472|Relay_-CN_03
+  name: 465,472|Relay_-CN_03
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1196,7 +1198,7 @@ proxies:
   country: 🇨CN
   h2-opts: {}
   http-opts: {}
-  name: 465|🇨CN_21 |28.21Mb
+  name: 465|🇨🇳CN_20 |28.21Mb
   network: tcp
   port: 41911
   server: 107.148.192.149
@@ -4872,6 +4874,15 @@ proxies:
     path: /shirker
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
+  name: 546,682|🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 546,682|🇰🇷 韩国+KT电信
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
@@ -4879,13 +4890,16 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 546,682|🇰🇷 韩国+KT电信 2
+  name: 546,682,693|IT大利
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -5834,12 +5848,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 649|CN_youtube@资源分享师_14
+  name: '649,693|未知287 #1'
   network: ws
   port: 16632
   server: m.cnmjin.net
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
