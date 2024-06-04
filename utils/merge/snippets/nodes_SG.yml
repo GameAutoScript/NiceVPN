@@ -1,13 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|新加坡|徐州移动|Linode|1x
-  network: tcp
-  port: 39226
-  server: jscm.r1u.cn
-  tls: false
+  name: 13|Singapore01
+  network: ws
+  port: 8443
+  server: polosg.9x.cx
+  tls: true
   type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+  uuid: a6dfb50f-75bb-48e0-b56a-1edeb62b5a49
+  ws-opts:
+    headers:
+      Host: ''
+    path: /boluosg
 - alterId: 0
   cipher: auto
   name: 16|🇸🇬 新加坡1|cf
@@ -35,22 +39,15 @@ proxies:
       Host: sg2.wish.ml
     path: /
 - cipher: aes-256-cfb
-  country: ' SG'
-  name: 19| SG_64
+  country: 🇬 SG
+  name: 19,466,470|🇬 SG_174
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 19,466,470|🏁ZZ_352
-  password: KnJGad3FqTvjqbaX
-  port: 9014
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 19,466,470|🏁ZZ_351
+  name: 19,466,470|🏁ZZ_359
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 103.172.116.103
@@ -668,6 +665,60 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: '180,526,728|未知_0604107 #1'
+  network: ws
+  port: '80'
+  server: cf1.ftclashcloud.site
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 14391250-ec2a-4f8c-992a-9a0d6a30bb6f
+  ws-opts:
+    headers:
+      Host: shsg01.ftclashcloud.online
+    path: /ws?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '180,526,728|未知_0604100 #1'
+  network: ws
+  port: '80'
+  server: cf2.ftclashcloud.site
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 14391250-ec2a-4f8c-992a-9a0d6a30bb6f
+  ws-opts:
+    headers:
+      Host: shsg01.ftclashcloud.online
+    path: /ws?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 180|新加坡 SH 03
+  network: ws
+  port: '80'
+  server: cf3.ftclashcloud.site
+  tls: false
+  type: vmess
+  uuid: 14391250-ec2a-4f8c-992a-9a0d6a30bb6f
+  ws-opts:
+    headers:
+      Host: shsg01.ftclashcloud.online
+    path: /ws?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 180|新加坡 SH 04
+  network: ws
+  port: '80'
+  server: cf4.ftclashcloud.site
+  tls: false
+  type: vmess
+  uuid: 14391250-ec2a-4f8c-992a-9a0d6a30bb6f
+  ws-opts:
+    headers:
+      Host: shsg01.ftclashcloud.online
+    path: /ws?ed=2560
+- alterId: 0
+  cipher: auto
   name: 186|🇸🇬 新加坡 | V1 | 01
   network: tcp
   port: 11209
@@ -798,28 +849,28 @@ proxies:
   name: 231|🇸🇬 新加坡S01
   password: 942245f3-ac32-3198-b673-9ad861cf0d85
   port: 20004
-  server: 2s929-g06.sg01-ae5.entry.v50307shvkaa.art
+  server: llasu-g06.sg01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 231|🇸🇬 新加坡S02
   password: 942245f3-ac32-3198-b673-9ad861cf0d85
   port: 20079
-  server: thnwj-g06.sg02-ae5.entry.v50307shvkaa.art
+  server: 9f59e-g06.sg02-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: '232|🇸🇬 新加坡S01 #1'
   password: 942245f3-ac32-3198-b673-9ad861cf0d85
   port: 20004
-  server: msjkf-g06.sg01-ae5.entry.v50307shvkaa.art
+  server: gw0io-g06.sg01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: '232|🇸🇬 新加坡S02 #1'
   password: 942245f3-ac32-3198-b673-9ad861cf0d85
   port: 20079
-  server: xnu7o-g06.sg02-ae5.entry.v50307shvkaa.art
+  server: d3hox-g06.sg02-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - alterId: 0
@@ -1207,11 +1258,15 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 270,627|SG_youtube@资源分享师_3
+  country: 🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 270,465,627|SG_youtube@资源分享师_3
   network: tcp
   port: 2083
   server: sg2-v2ray.ipracevpn.com
   servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 7cc6a250-f767-4d4b-9421-03b1bbf23f88
@@ -1230,6 +1285,38 @@ proxies:
     path: /howdy
 - alterId: 0
   cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '270,465,526,627,673,681,728|美国_0604093 #1'
+  network: ws
+  port: '29320'
+  server: 152.42.164.199
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7fef9dc9-d6c2-459f-b60b-2bb2186081e4
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 270,538,673,681,694|未知1142
+  network: ws
+  port: '99'
+  server: 128.199.161.230
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /v2ray
+- alterId: 0
+  cipher: auto
   name: '270,538,673,681|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
   network: ws
   port: 23006
@@ -1244,7 +1331,7 @@ proxies:
     path: /free
 - alterId: 0
   cipher: auto
-  name: '270,673,681,694|未知1165 #1'
+  name: 270,673,681,694|未知1198
   network: ws
   port: '56029'
   server: 18.142.251.50
@@ -1255,34 +1342,6 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '270,538,673,681,694|未知252 #1'
-  network: ws
-  port: '99'
-  server: 128.199.161.230
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
-  ws-opts:
-    headers:
-      Host: ''
-    path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: '270,526,627,673,681,728|美国_0604093 #1'
-  network: ws
-  port: '29320'
-  server: 152.42.164.199
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7fef9dc9-d6c2-459f-b60b-2bb2186081e4
-  ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: '0'
   cipher: auto
@@ -1638,35 +1697,42 @@ proxies:
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
   country: 🇬 SG
-  name: 466,470| SG_171
+  name: 466,470| SG_173
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.94
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬 SG
+  name: 466,470|🇸🇬 SG_175
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 103.172.116.94
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 466,470|🏁ZZ_378
+  name: 466,470|🏁ZZ_358
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: ZZ
+  name: 466,470|ZZ_342
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 466,470|🏁ZZ_351
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 466,470|🏁ZZ_345
-  password: bf7v334KKDV3YDhH
-  port: 9070
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬 SG
-  name: 466,470|🇬 SG_172
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 103.172.116.94
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 466,470|🏁ZZ_350
+  name: 466,470|🏁ZZ_360
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.103
@@ -4418,3 +4484,59 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- cipher: aes-128-gcm
+  name: 938|🇸🇬 狮城 01
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20641
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 938|🇸🇬 狮城 02
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20642
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 938|🇸🇬 狮城 03
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20643
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 938|🇸🇬 狮城 04
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20644
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 938|🇸🇬 狮城 05
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20645
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 938|🇸🇬 狮城 06
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20646
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 938|🇸🇬 狮城 07
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20647
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 938|🇸🇬 狮城 08
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20648
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
