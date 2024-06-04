@@ -1,15 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|香港|广州移动|Neko|1.5x
-  network: tcp
-  port: 13337
-  server: gdcm.r1u.cn
-  tls: false
-  type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
-- alterId: 0
-  cipher: auto
   name: '16,271,698|US537 #1'
   network: ws
   port: '2052'
@@ -292,15 +283,14 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: 161,271,496,497,528,530,542,546,644,732|香港_0604009
+  name: 161,271,530,542,644,732|香港_0604009
   network: ws
   port: '12909'
   server: 210.3.159.224
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
@@ -1674,14 +1664,14 @@ proxies:
     path: /itdog?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: '395,396,397|香港-南方入口 #2'
-  password: 0d649d4c-4b88-472d-acf9-9dcdc54749ec
+  password: d6cca548-b192-45f1-bcf8-9691bc8c82a5
   port: 30000
   server: hk1.zzjq.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '395,396,397|香港-北方入口 #2'
-  password: 0d649d4c-4b88-472d-acf9-9dcdc54749ec
+  password: d6cca548-b192-45f1-bcf8-9691bc8c82a5
   port: 30000
   server: b-hk1.zzjq.xyz
   type: ss
@@ -2040,8 +2030,8 @@ proxies:
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 474,510,703|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 470,510,703|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -3464,7 +3454,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '604,711|美国 CloudFlare节点 #51'
+  name: '604,711|美国 CloudFlare节点 #46'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4599,6 +4589,16 @@ proxies:
   network: tcp
   port: '15604'
   server: 183.232.170.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: 644,652|香港5|@ripaojiedian
+  network: tcp
+  port: '15610'
+  server: 183.232.199.28
   servername: ''
   tls: false
   type: vmess
