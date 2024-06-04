@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,2,3,401,492,523,541,573|🇳_CN_中国->🇷_TR_
+  name: '0,1,2,3,401,492,523,541,573,590|🇨🇳_CN_中国->🇹🇷_TR_土耳其 #2'
   network: tcp
   port: 21991
   server: x.y49t1kh1.5ebf71z0-tro1.my777999.top
@@ -12,13 +12,15 @@ proxies:
   uuid: 33aefd89-3285-4347-9083-6249711f02e9
 - alterId: 0
   cipher: auto
-  name: '0,3,525,727|美国_0604062 #1'
+  name: '0,3,491,492,523,525,541,590,727|美国_0604062 #1'
   network: ws
   port: '2052'
   server: 172.67.159.232
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 8c8dabbc-93a6-44ad-b878-0d980fa249d1
   ws-opts:
     headers:
@@ -26,7 +28,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: none
-  name: 0,3,270,525,537,626,727,729|未知_0603008
+  name: 0,3,270,525,537,590,626,727,729|未知_0603008
   network: ws
   port: '80'
   server: www.speedtest.net
@@ -69,15 +71,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  country: 🏁ZZ
   fingerprint: ''
-  h2-opts: {}
-  http-opts: {}
-  name: 1,2,263,464,573|🇺🇸_US_美国->🇪_SE_瑞典
+  name: 1,2,263,573|🇺🇸_US_美国->🇪_SE_瑞典
   network: ws
   port: 80
   server: www.speedtest.net
-  servername: Se2.vmess.site.
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -89,7 +87,7 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  name: '1,2,573,649|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
+  name: '1,2,573,649|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
@@ -314,6 +312,20 @@ proxies:
     headers:
       Host: hk1.luodi.xyz
     path: /hongkong
+- alterId: 0
+  cipher: auto
+  name: 270,396,397,399,400,537,623,624,729|未知_0603040
+  network: ws
+  port: '2052'
+  server: 104.17.156.224
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: in4.wish.ml
+    path: /
 - alterId: 2
   cipher: aes-128-gcm
   name: 328|中转节点-1.47MB/s
@@ -514,7 +526,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '436,599,706,857|🇺🇸_US_美国 #74'
+  name: '436,599,706,857|🇺🇸_US_美国 #71'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -527,7 +539,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '436,599,706,857|🇺🇸_US_美国->🇨🇦_CA_加拿大 #18'
+  name: '436,599,706,857|🇺🇸_US_美国->🇨🇦_CA_加拿大 #19'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -540,13 +552,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '436,444,599,705,706,857|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '436,444,522,599,705,706,857|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -554,7 +568,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '436,444,599,705,706,857|🇺🇸_US_美国 #73'
+  name: '436,444,599,705,706,857|🇺🇸_US_美国 #70'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -567,7 +581,7 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: '436,444,704,705,706|🇺🇸_US_美国 #67'
+  name: '436,444,704,705,706|🇺🇸_US_美国 #64'
   network: ws
   port: 8080
   server: 162.159.5.6
@@ -3344,7 +3358,7 @@ proxies:
     path: /admin
 - alterId: 0
   cipher: auto
-  name: '649,704,706|美国 CloudFlare节点 #62'
+  name: '649,704,706|美国 CloudFlare节点 #61'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -3356,20 +3370,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '649|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      host: in3.wish.ml
     path: /
 - alterId: 0
   cipher: auto
