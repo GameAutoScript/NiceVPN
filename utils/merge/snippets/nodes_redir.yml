@@ -1,7 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,2,275,406,410,633,634,856,870,930|中国【付费推荐：https://jdyvip.link】42 #2'
+  name: '0,1,2,275,406,410,632,633,634,856,870,930|中国【付费推荐：https://jdyvip.link】42
+    #2'
   network: tcp
   port: '21991'
   server: x.y49t1kh1.5ebf71z0-tro1.my777999.top
@@ -10,6 +11,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 33aefd89-3285-4347-9083-6249711f02e9
+  ws-headers:
+    Host: x.y49t1kh1.5ebf71z0-tro1.my777999.top
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '0,275,406,535,633,634,737|美国_0604062 #1'
@@ -150,7 +154,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 3,275,405,408,555,556,600,633,634,682,690,739|美国_0605056
+  name: 3,275,405,408,555,556,600,633,634,682,739|美国_0605056
   network: ws
   port: '2095'
   server: 172.67.204.84
@@ -195,14 +199,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,46,405,408,410,515,535,600,737,739,856,870,930|美国【付费推荐：https://jdyvip.link】13
+  name: '3,46,405,408,410,501,502,515,533,535,551,600,633,634,737,739,856,870,930|美国【付费推荐：https://jdyvip.link】13
     #2'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -2853,20 +2859,23 @@ proxies:
     headers:
       host: Asdfghjkl10.unique69.com.
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 583|🇺🇸_US_美国->🇱_PL_波兰
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 583,702|HK18
   password: AHyDyR
   port: 56012
   server: 38.150.12.187
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
-  name: 583,659|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  name: '583,659,702|未知1119 176.0KB/s #1'
   network: ws
   port: 2082
   server: 104.21.8.157
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
@@ -3291,21 +3300,6 @@ proxies:
     headers:
       host: V104.bgpnet.top
     path: /admin
-- alterId: 0
-  cipher: auto
-  name: '659,714,716|美国 CloudFlare节点 #58'
-  network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: '659|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'

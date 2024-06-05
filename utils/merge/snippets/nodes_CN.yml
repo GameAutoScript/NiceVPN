@@ -439,21 +439,23 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '275,410,703|未知53 #1'
+  name: '275,410,702,703|未知53 #2'
   network: tcp
   port: '15607'
   server: 183.232.199.61
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '275,703|未知1134 #1'
+  name: '275,702,703|未知1134 #2'
   network: tcp
   port: '15603'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -472,11 +474,12 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '275,682,690,703|未知1063 #1'
+  name: '275,682,690,702,703|未知1063 #2'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1182,7 +1185,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 475,481|Relay_-CN_03
+  name: 474,475,481|Relay_-CN_03
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1375,6 +1378,20 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 502,533,551,632,633,634,649,657|日本5|@ripaojiedian
+  network: tcp
+  port: '38997'
+  server: 8987-3i640t6rlj4n.zpveerb-jp03.my777999.top
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 33aefd89-3285-4347-9083-6249711f02e9
+  ws-headers:
+    Host: 8987-3i640t6rlj4n.zpveerb-jp03.my777999.top
+  ws-path: /
 - alterId: 4
   cipher: auto
   name: '503,561|未命名 #193'
@@ -4845,7 +4862,7 @@ proxies:
     path: /shirker
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 555,691|🇰🇷 韩国+KT电信 2
+  name: 555,632,691|🇰🇷 韩国+KT电信 2
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -5543,6 +5560,19 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 632|🇨🇳CN-120.233.42.83-188
+  network: ws
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-us-v1.shwjfkw.cn
+  ws-path: /debian
 - name: 638|3.35|CNyoutube155
   network: tcp
   origin: trojan://a3278882-3614-39cf-a3d6-faefa8c910ab@hnm.xiaohouzi.club:17113?type=tcp&security=tls&allowInsecure=1#CN_youtube%40%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB%E5%B8%88_155%0D
@@ -5798,12 +5828,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 658|CN_youtube@资源分享师_14
+  name: '658,702|未知493 #1'
   network: ws
   port: 16632
   server: m.cnmjin.net
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
@@ -5993,6 +6023,20 @@ proxies:
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: 702|🇨🇳
+  network: ws
+  port: 16632
+  server: yes.cnmjcn.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '716|日本2|@ripaojiedian #1'
