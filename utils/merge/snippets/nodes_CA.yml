@@ -16,7 +16,9 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,1,2,271,401,402,404,405,531,543,629,630,632,645,687,688,730,733,735|加拿大_0604007
+  h2-opts: {}
+  http-opts: {}
+  name: '0,1,2,271,401,402,404,405,470,531,543,629,630,632,687,688,730,733,735|加拿大_0604007
     #2'
   network: ws
   port: '443'
@@ -577,15 +579,17 @@ proxies:
     headers:
       Host: tjjd.yzyx1.v6.army
     path: /?ed=2048
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: xw7uebRG4KlUXGGYTVEagC5V7fI
-  name: 101,497,555,687|🇺🇸 美国+CloudFlare节点 6
+  name: 101,497,555,687,698|未知710
   network: grpc
   password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
   port: 443
   server: 104.21.47.176
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: hdfyc1.achaemenidempireofpersia.uk
   tls: true
   type: trojan
@@ -694,7 +698,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '101,161,271,497,498,547,551,552,555,629,630|🇺🇸 美国 CloudFlare节点 #38'
+  name: '101,161,271,497,498,547,551,552,555,629,630|🇺🇸 美国 CloudFlare节点 #33'
   network: ws
   port: '2052'
   server: web.com
@@ -880,35 +884,50 @@ proxies:
     headers:
       Host: jnd.888553.xyz
     path: /cctv13.m3u8
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0759 | 17...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,698|未知558 18.7MB/s
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0760 | 15...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,698|未知1060 17.5MB/s
   password: G!yBwPWH3Vao
   port: 803
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0761 | 15...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,698|未知512 18.6MB/s
   password: G!yBwPWH3Vao
   port: 808
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0762 | 16...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,698|未知249 17.7MB/s
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0763 | 15...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,698|未知497 19.0MB/s
   password: G!yBwPWH3Vao
   port: 812
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -922,11 +941,14 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /
-- cipher: aes-256-gcm
-  name: 161|🇨🇦CA-51.222.157.179-0687 | 79....
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 161,698|未知605 20.1MB/s
   password: 7gaTTlW73G
   port: 49602
   server: 51.222.157.179
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -1101,7 +1123,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 271,511,531,686,733|未知_0604088
+  name: 271,511,531,733|未知_0604088
   network: ws
   port: '8880'
   server: 104.16.61.8
@@ -1115,7 +1137,7 @@ proxies:
     path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
-  name: '271,522,531,543,678,719,727,733|未知_0604109 #1'
+  name: '271,522,531,543,719,727,733|未知_0604109 #1'
   network: ws
   port: '80'
   server: 104.21.71.88
@@ -2721,10 +2743,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- cipher: aes-128-gcm
-  name: 946|🇨🇦 加拿大 01
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 22002
-  server: ens.node1link.xyz
-  type: ss
-  udp: true
