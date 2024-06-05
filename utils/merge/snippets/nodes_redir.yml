@@ -73,17 +73,18 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '1,2|_US_->_SE_ #1'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 1,2,264|99fdc3bd183b4d2cab3e20128d76ba...
   network: ws
   port: 80
   server: www.speedtest.net
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: 31488365-7b6a-434a-8b7b-8f35012c6a22
   ws-opts:
-    headers:
-      host: Se2.vmess.site.
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
@@ -114,13 +115,15 @@ proxies:
     path: /apple
 - alterId: 0
   cipher: auto
-  name: 3,271,401,404,596,735|美国_0605055
+  name: 3,401,404,497,498,529,547,596,735|美国_0605055
   network: ws
   port: '2095'
   server: zula.ir
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: edf2bc84-8723-4c98-82d3-52a3a59875a4
   ws-opts:
     headers:
@@ -140,13 +143,15 @@ proxies:
       Host: ybr.redbullplus.xyz
 - alterId: 0
   cipher: auto
-  name: 3,401,404,492,596,735|未知_0605035
+  name: 3,401,404,492,497,498,529,547,596,735|未知_0605035
   network: ws
   port: '2095'
   server: 104.18.202.232
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: edf2bc84-8723-4c98-82d3-52a3a59875a4
   ws-opts:
     headers:
@@ -2814,20 +2819,6 @@ proxies:
     path: /DDD
 - alterId: 0
   cipher: auto
-  name: 579|🇺🇸_US_美国->🇩🇪_DE_德国_2
-  network: ws
-  port: 2095
-  server: zula.ir
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: edf2bc84-8723-4c98-82d3-52a3a59875a4
-  ws-opts:
-    headers:
-      host: Asdfghjkl10.unique69.com.
-    path: /
-- alterId: 0
-  cipher: auto
   name: 579|🇺🇸_US_美国->🇩🇪_DE_德国_3
   network: ws
   port: 2095
@@ -2868,11 +2859,14 @@ proxies:
     headers:
       host: Asdfghjkl10.unique69.com.
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 579|🇺🇸_US_美国->🇱_PL_波兰
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 579,698|HK4
   password: AHyDyR
   port: 56012
   server: 38.150.12.187
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -3308,7 +3302,7 @@ proxies:
     path: /admin
 - alterId: 0
   cipher: auto
-  name: '655,710,712|美国 CloudFlare节点 #58'
+  name: '655,710,712|美国 CloudFlare节点 #59'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
