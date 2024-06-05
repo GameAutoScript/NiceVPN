@@ -285,34 +285,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '271,685,698|TW5 #1'
-  network: ws
-  port: '37902'
-  server: 36.232.18.42
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: hinet-wap.myddns.me
-    path: /index?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 271,530,542,545,631,685,698,711,732|台湾_0604003
-  network: ws
-  port: '31945'
-  server: 103.159.206.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: '271,542,685|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
   network: ws
   port: '12945'
@@ -325,6 +297,35 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 271,530,542,545,631,697,698,711,732|台湾_0604003
+  network: ws
+  port: '31945'
+  server: 103.159.206.35
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '271,685,698|TW5 #2'
+  network: ws
+  port: '37902'
+  server: 36.232.18.42
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      Host: hinet-wap.myddns.me
+    path: /index?ed=2560
 - alterId: '0'
   cipher: auto
   name: 284|[🇹🇼]103.131.189.212:56967(8110...
@@ -581,10 +582,10 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 469|Relay_🏁ZZ-🇼TW_243 | 2.22Mb
+  name: 469|Relay_🏁ZZ-🇼TW_222 | 2.41Mb
   network: ws
   port: 8080
-  server: 104.19.47.178
+  server: 104.19.47.180
   servername: oiictw.yydsii.com
   skip-cert-verify: true
   type: vmess
@@ -592,13 +593,13 @@ proxies:
   ws-opts:
     headers:
       HOST: oiictw.yydsii.com
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
+    path: /?ed=2048&Telegram🇳 @WangCai2
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 469|Relay_🏁ZZ-🇹🇼TW_245 | 2.49Mb
+  name: 469|Relay_🏁ZZ-🇹🇼TW_233 | 2.49Mb
   network: ws
   port: 8080
   server: 104.19.47.106
@@ -615,10 +616,10 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 469|Relay_🏁ZZ-🇼TW_246 | 2.32Mb
+  name: 469|Relay_🏁ZZ-🇹🇼TW_238 | 2.22Mb
   network: ws
   port: 8080
-  server: 104.19.47.150
+  server: 104.19.47.178
   servername: oiictw.yydsii.com
   skip-cert-verify: true
   type: vmess
@@ -632,10 +633,10 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 469|Relay_🏁ZZ-🇹🇼TW_248 | 2.41Mb
+  name: 469|Relay_🏁ZZ-🇹🇼TW_243 | 2.32Mb
   network: ws
   port: 8080
-  server: 104.19.47.180
+  server: 104.19.47.150
   servername: oiictw.yydsii.com
   skip-cert-verify: true
   type: vmess
@@ -1176,19 +1177,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
-- client-fingerprint: chrome
-  name: 686|🇹🇼 台湾省+中华电信(HiNet)数据中心
-  network: ws
-  password: moist
-  port: 13688
-  server: 118.163.128.81
-  skip-cert-verify: false
-  sni: trojan.freenods.sbs
-  type: trojan
-  ws-opts:
-    headers:
-      Host: trojan.freenods.sbs
-    path: /
 - cipher: aes-256-cfb
   name: 696|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
@@ -1239,6 +1227,44 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  cipher: auto
+  name: 697|TW2
+  network: ws
+  password: auto
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: true
+  sni: vip.123789.pp.ua
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '697|TW5 #1'
+  network: ws
+  port: 37902
+  server: 36.232.18.42
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      host: hinet-wap.myddns.me
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '697|TW #1'
+  network: ws
+  password: moist
+  port: 13688
+  server: 118.163.128.81
+  skip-cert-verify: true
+  sni: trojan.freenods.sbs
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 711|🇹🇼台湾 01
@@ -1299,7 +1325,7 @@ proxies:
       Host: tw01.susulian.cyou
     path: /
 - cipher: aes-256-cfb
-  name: 897|畅行 台湾 1
+  name: 898|畅行 台湾 1
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -1309,7 +1335,7 @@ proxies:
   server: pro-twa.ginfe.me
   type: ssr
 - cipher: aes-256-cfb
-  name: 897|畅行 台湾 2
+  name: 898|畅行 台湾 2
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -1319,7 +1345,7 @@ proxies:
   server: pro-twb.ginfe.me
   type: ssr
 - cipher: rc4-md5
-  name: 907|[v1] 台湾・01
+  name: 908|[v1] 台湾・01
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1330,7 +1356,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 907|[v1] 台湾・02
+  name: 908|[v1] 台湾・02
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1341,7 +1367,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 907|[v1] 台湾・03
+  name: 908|[v1] 台湾・03
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1352,7 +1378,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 907|[v1] 台湾・04
+  name: 908|[v1] 台湾・04
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1363,7 +1389,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 907|[v1] 台湾・05
+  name: 908|[v1] 台湾・05
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1375,7 +1401,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 917|🇹🇼 台湾A丨Wap丨流媒体
+  name: 918|🇹🇼 台湾A丨Wap丨流媒体
   network: tcp
   port: '62012'
   server: gy.zztannel.com
@@ -1385,7 +1411,7 @@ proxies:
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
 - alterId: 0
   cipher: auto
-  name: 917|🇹🇼 台湾B丨Wap丨流媒体
+  name: 918|🇹🇼 台湾B丨Wap丨流媒体
   network: tcp
   port: '62005'
   server: gy.zztannel.com

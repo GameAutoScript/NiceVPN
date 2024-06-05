@@ -4,7 +4,7 @@ proxies:
   country: 🇦CA
   h2-opts: {}
   http-opts: {}
-  name: '0,1,2,3,271,401,402,404,405,406,469,530,595,628,629,631,732,734|加拿大_0604006
+  name: '0,1,2,271,401,402,404,405,406,469,530,595,628,629,631,732,734|加拿大_0604006
     #2'
   network: tcp
   port: '443'
@@ -19,7 +19,7 @@ proxies:
   client-fingerprint: chrome
   h2-opts: {}
   http-opts: {}
-  name: '0,1,2,3,271,401,402,404,405,469,530,542,595,628,629,631,686,687,729,732,734|加拿大_0604007
+  name: '0,1,2,271,401,402,404,405,469,530,542,595,628,629,631,686,687,729,732,734|加拿大_0604007
     #2'
   network: ws
   port: '443'
@@ -37,10 +37,19 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: '3,271,631,685|🔒 VM-TCP-NA 🇺🇸 US-108.181.200.... #1'
+  network: ''
+  port: 17163
+  server: 108.181.200.220
+  tls: false
+  type: vmess
+  uuid: d54814a1-7a93-45f8-9117-db317a25d100
+- alterId: 0
+  cipher: auto
   country: 🇦 CA
   h2-opts: {}
   http-opts: {}
-  name: 19,474|🇦 CA_55
+  name: 19,239,474|🇦 CA_55
   network: ws
   port: 443
   server: 158.51.121.36
@@ -574,15 +583,17 @@ proxies:
     headers:
       Host: tjjd.yzyx1.v6.army
     path: /?ed=2048
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: xw7uebRG4KlUXGGYTVEagC5V7fI
-  name: 101,496,554,686|🇺🇸 美国+CloudFlare节点 6
+  name: 101,496,554,686,697|未知618
   network: grpc
   password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
   port: 443
   server: 104.21.47.176
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: hdfyc1.achaemenidempireofpersia.uk
   tls: true
   type: trojan
@@ -690,12 +701,14 @@ proxies:
     path: /hms02.fxiaomi.sbs/link
 - alterId: 0
   cipher: auto
-  name: '101,161,271,496,497,528,546,551,554,628,629|🇺🇸 美国 CloudFlare节点 #45'
+  client-fingerprint: chrome
+  name: '101,161,271,496,497,546,550,551,554,628,629|🇺🇸 美国 CloudFlare节点 #49'
   network: ws
   port: '2052'
   server: web.com
   servername: ''
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -836,7 +849,7 @@ proxies:
     path: /dabai.in104.25.82.84
 - alterId: 0
   cipher: auto
-  name: 101|加拿大 083
+  name: '101,496,497,546,554|加拿大 083 #1'
   network: ws
   port: 8080
   server: 104.19.47.178
@@ -849,7 +862,8 @@ proxies:
     headers:
       Host: oiictw.yydsii.com
     path: /?ed=2048
-- name: 101,496|[Trojan] 🇺🇸 美国 CloudFlare节点
+- client-fingerprint: chrome
+  name: '101,496,550,554|加拿大 084 #1'
   network: ws
   password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
@@ -875,35 +889,50 @@ proxies:
     headers:
       Host: jnd.888553.xyz
     path: /cctv13.m3u8
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0759 | 11...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,697|未知1249 16.6MB/s
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0760 | 9....
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,697|未知262 10.2MB/s
   password: G!yBwPWH3Vao
   port: 803
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0761 | 9....
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,697|未知1122 10.8MB/s
   password: G!yBwPWH3Vao
   port: 808
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0762 | 10...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,697|未知138 22.0MB/s
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 161|🇨🇦CA-134.195.196.178-0763 | 9....
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 161,697|未知227 12.9MB/s
   password: G!yBwPWH3Vao
   port: 812
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -917,11 +946,14 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /
-- cipher: aes-256-gcm
-  name: 161|🇨🇦CA-51.222.157.179-0687 | 51....
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 161,697|未知1239
   password: 7gaTTlW73G
   port: 49602
   server: 51.222.157.179
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -1038,6 +1070,369 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: chacha20-poly1305
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|2e7cb265a3a94f4f9347335cc1ce0e...
+  network: grpc
+  port: 443
+  server: w3.org
+  servername: hdfy4c2.freeairlaines.com
+  tls: true
+  type: vmess
+  udp: false
+  uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '264,697|未知172 #2'
+  network: ws
+  port: 443
+  server: 104.26.0.95
+  servername: obdii.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|37d86dcd8f6d42678ddc78b04f2c1a...
+  network: ws
+  port: 443
+  server: 188.114.97.210
+  servername: linde06.indiavideo.sbs
+  tls: true
+  type: vmess
+  udp: false
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|271bbff9cfb54de0843269f492cb70...
+  network: ws
+  port: 2095
+  server: www.speedtest.net
+  tls: false
+  type: vmess
+  udp: false
+  uuid: edf2bc84-8723-4c98-82d3-52a3a59875a4
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264,578|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  network: ws
+  port: 2095
+  server: zula.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: false
+  uuid: edf2bc84-8723-4c98-82d3-52a3a59875a4
+  ws-opts:
+    headers:
+      host: Asdfghjkl10.unique69.com.
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|50974ffdf51b4e56aa251813284617...
+  network: ws
+  port: 443
+  server: 172.67.161.77
+  servername: linde06.indiavideo.sbs
+  tls: true
+  type: vmess
+  udp: false
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇨CO
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: 264,469|🇨CO_20 | 4.12Mb
+  network: ws
+  port: 80
+  server: zula.ir
+  servername: Pl2.vmess.site.
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: false
+  uuid: 1886c4a7-c395-4aee-a1a2-a816722f5d29
+  ws-opts:
+    headers:
+      HOST: Pl2.vmess.site.
+    path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|db646d7bb8e4451296c907d62c2395...
+  network: grpc
+  port: 2087
+  server: elma.ns.cloudflare.com
+  servername: a8.feyzezolalahkammobashero-lmahdi.space
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
+- alterId: 0
+  cipher: none
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '264,469,697|🇺🇸US美国8 4.2MB/s #1'
+  network: ws
+  port: 80
+  server: 172.67.171.49
+  servername: No1.vmess.site.
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 10c580e4-f83b-42f1-8e6a-25fc8add4da7
+  ws-opts:
+    headers:
+      host: No1.vmess.site.
+    path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|2e62b17c05774101a752cc51f9c9c9...
+  network: ws
+  port: 443
+  server: 104.21.15.212
+  servername: glweidf.sbs
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '264,697|未知1181 720.3KB/s #1'
+  network: ws
+  port: 443
+  server: 172.67.175.56
+  servername: obdii.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|6f8f430fe53a42cca79c2fc2973278...
+  network: ws
+  port: 443
+  server: 104.26.7.65
+  servername: mikasa.yaemiko.cloudns.org
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      host: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|69cee87e49494c73a91b00129e0479...
+  network: ws
+  port: 443
+  server: speed.cloudflare.com
+  servername: us4e-20240111.v2freevpn.com
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  ws-opts:
+    headers:
+      host: us4e-20240111.v2freevpn.com
+    path: /v149-dskds65
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '264,697|未知297 5.0MB/s #1'
+  network: ws
+  port: 443
+  server: 172.67.170.13
+  servername: glweidf.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|2720aaf9ec6c45a3beea581cb80436...
+  network: ws
+  port: 443
+  server: 188.114.98.39
+  servername: mikasa.yaemiko.cloudns.org
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      host: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|bdb41028ed82419a9a4427c026d8ac...
+  network: ws
+  port: 8080
+  server: 104.19.47.106
+  tls: false
+  type: vmess
+  udp: false
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    path: /?ed=2048&Telegram🇨 @WangCai2
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|6e494f220b014040ace92eb667d4bf...
+  network: ws
+  port: 8080
+  server: 104.19.47.188
+  tls: false
+  type: vmess
+  udp: false
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    path: /?ed=2048&Telegram🇨🇳 @WangCai2
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '264,697|US93 #1'
+  network: ws
+  port: 443
+  server: obdii.cfd
+  servername: obdii.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '264,697|未知400 285.2KB/s #2'
+  network: ws
+  port: 443
+  server: 172.67.74.4
+  servername: mikasa.yaemiko.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      host: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: aes-128-gcm
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|b57e781894b14e7aa9abe33c0d4a80...
+  network: ws
+  port: 80
+  server: cfcdn3.sanfencdn9.com
+  tls: false
+  type: vmess
+  udp: false
+  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
+  ws-opts:
+    path: /video/ibCT6z55
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '264,560|github.com/freefq-美国CloudFlare... #10'
+  network: ws
+  port: 80
+  server: 104.17.25.1
+  tls: false
+  type: vmess
+  udp: false
+  uuid: 4e23bd4f-cc11-4ade-fbc1-fcaf245662bf
+  ws-opts:
+    headers:
+      host: lmnyvpn.catnipballs.gay
+    path: /
+- alterId: 0
+  cipher: aes-128-gcm
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 264|207d545c56f94fb59bf886cf07697f...
+  network: ws
+  port: 2052
+  server: cfcdn2.sanfencdn9.com
+  tls: false
+  type: vmess
+  udp: false
+  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
+  ws-opts:
+    path: /video/c9efxRCi
 - alterId: 0
   cipher: auto
   name: '271|%F0%9F%87%A8%F0%9F%87%A6%20Can... #14'
@@ -1212,23 +1607,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 406,530,542,686,687,732|美国_0604117
-  network: ws
-  port: '8080'
-  server: russia.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
-  ws-opts:
-    headers:
-      Host: sssub.v2.001.ssrsub.com
-    path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
   name: 439|_CA_加拿大
   network: ws
   port: 443
@@ -1244,7 +1622,7 @@ proxies:
     path: /dongtaiwang.com
 - alterId: 64
   cipher: auto
-  name: '440|🇨🇦_CA_加拿大 #4'
+  name: '440|🇨🇦_CA_加拿大 #3'
   network: ws
   port: 443
   server: 142.171.202.130
@@ -1255,7 +1633,7 @@ proxies:
     path: /path/1702650992491
 - alterId: 0
   cipher: auto
-  name: '441,710,711|🇨🇦_CA_加拿大 #20'
+  name: '441,710,711|🇨🇦_CA_加拿大 #19'
   network: ws
   port: 8080
   server: 23.227.39.24
@@ -1268,7 +1646,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '441,709,710,711,865|🇨🇦_CA_加拿大->🇺🇸_US_美国 #4'
+  name: '441,709,710,711,866|🇨🇦_CA_加拿大->🇺🇸_US_美国 #4'
   network: ws
   port: 8080
   server: 23.227.38.22
@@ -1281,7 +1659,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '441,449,711,865|🇨🇦_CA_加拿大 #23'
+  name: '441,449,711,866|🇨🇦_CA_加拿大 #22'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -1290,7 +1668,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '441,449,604,711|🇨🇦_CA_加拿大 #22'
+  name: '441,449,604,711|🇨🇦_CA_加拿大 #21'
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -1303,28 +1681,11 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - cipher: aes-256-gcm
   country: 🇦CA
-  name: 469|🇨CA_11 | 6.55Mb
+  name: 469|CA | 6.55Mb
   password: KixLvKzwjekG00rm
   port: 5500
   server: 38.111.114.133
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇦CA
-  h2-opts: {}
-  http-opts: {}
-  name: 469|🇨🇦CA_12 | 3.88Mb
-  network: ws
-  port: 8080
-  server: 108.181.23.161
-  servername: internet.life.com.by
-  skip-cert-verify: true
-  type: vmess
-  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
-  ws-opts:
-    headers:
-      HOST: internet.life.com.by
-    path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
   name: 483|🇨🇦CA加拿大(youtube阿伟科技)
@@ -1418,135 +1779,9 @@ proxies:
     headers:
       Host: speed.cloudflare.com
     path: /glweidf.sbs/linkws
-- name: 496|[Trojan] 🇨🇦 加拿大 065
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2053
-  server: 104.19.52.20
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 496|[Trojan] 🇨🇦 加拿大 067
-  network: ws
-  password: 50e10abd-3920-42a6-ad0c-6ec731d8c826
-  port: 443
-  server: 104.20.19.168
-  skip-cert-verify: true
-  sni: golinkwuxian.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: golinkwuxian.top
-    path: /apple
-- name: 496|[Trojan] 🇨🇦 加拿大 077
-  network: ws
-  password: NISHIKUITAN222
-  port: 443
-  server: t030.ylks.link
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /
-- name: 496|[Trojan] 🇨🇦 加拿大 079
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.52.142
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 496|[Trojan] 🇨🇦 加拿大 080
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 8443
-  server: 104.19.52.235
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 496|[Trojan] 🇨🇦 加拿大 081
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2096
-  server: 104.19.52.48
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 496|[Trojan] 🇨🇦 加拿大 083
-  network: ws
-  password: compassvpn-794T1C3EDa
-  port: 2083
-  server: 104.17.176.171
-  skip-cert-verify: true
-  sni: 147457129.19kala.co
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 147457129.19kala.co
-    path: /
-- name: 496|[Trojan] 🇨🇦 加拿大 084
-  network: ws
-  password: 2e3562a819634de686ade78e434c0963
-  port: 443
-  server: 104.16.192.148
-  skip-cert-verify: true
-  sni: jobscareerforstudent.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: jobscareerforstudent.com
-    path: /6b777a91
-- name: 496|[Trojan] 🇨🇦 加拿大 091
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: t400.ylks.link
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
-  name: '496,497,546|🇨🇦 加拿大 094 #1'
-  network: ws
-  port: '2052'
-  server: 162.159.143.17
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 958aff36-100b-4fa3-8a47-e8709a270f60
-  ws-opts:
-    headers:
-      Host: sjyhkap.mmaccc.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '496,497,546|🇨🇦 加拿大 098 #1'
+  name: '496,497,546|🇨🇦 加拿大 077 #1'
   network: ws
   port: '80'
   server: fbi.gov
@@ -1560,55 +1795,7 @@ proxies:
     headers:
       Host: fbi.gov
     path: /
-- alterId: 0
-  cipher: auto
-  name: '496,497,546|🇨🇦 加拿大 102 #1'
-  network: ws
-  port: '8080'
-  server: 23.227.39.11
-  servername: dongtaiwang15.dtku47.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /1IKYjV0r/
-- alterId: 0
-  cipher: auto
-  name: '496,497,546|🇨🇦 加拿大 103 #1'
-  network: ws
-  port: '8080'
-  server: 104.19.38.48
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      Host: ''
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-- alterId: 0
-  cipher: auto
-  name: '496,497,546|🇨🇦 加拿大 104 #1'
-  network: ws
-  port: '2052'
-  server: pt2.xyyjc.top
-  servername: ptdny.xyyjc.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1d95edba-c8c7-4f0e-be25-5503fa31b509
-  ws-opts:
-    headers:
-      Host: pt2.xyyjc.top
-    path: /?ed=2048
-- name: 496|[Trojan] 🇨🇦 加拿大 106
+- name: 496|[Trojan] 🇨🇦 加拿大 081
   network: ws
   password: 50e10abd-3920-42a6-ad0c-6ec731d8c826
   port: 443
@@ -2115,7 +2302,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 530,562,616,632,732,864|🇺🇸 _CA_加拿大->🇺🇸_US_美国
+  name: 530,562,616,632,732,865|🇺🇸 _CA_加拿大->🇺🇸_US_美国
   network: ws
   port: '443'
   server: 23.227.38.39
@@ -2143,7 +2330,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 530,562,632,732,864|🇨🇦 _CA_加拿大->🇫🇷_FR_法国
+  name: 530,562,632,732,865|🇨🇦 _CA_加拿大->🇫🇷_FR_法国
   network: ws
   port: '443'
   server: 23.227.38.40
@@ -2213,7 +2400,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '536,616,732,864|🇨🇦 _CA_加拿大 #8'
+  name: '536,616,732,865|🇨🇦 _CA_加拿大 #8'
   network: ws
   port: '443'
   server: 23.227.38.38
@@ -2541,7 +2728,7 @@ proxies:
     path: /bb2b34a1
 - alterId: 0
   cipher: auto
-  name: '580|🇨🇦_CA_加拿大 #11'
+  name: '580|🇨🇦_CA_加拿大 #10'
   network: ws
   port: 80
   server: 108.181.10.17
@@ -2883,7 +3070,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 917|🇨🇦 加拿大丨多伦多
+  name: 918|🇨🇦 加拿大丨多伦多
   network: tcp
   port: '62038'
   server: gy.zztannel.com
