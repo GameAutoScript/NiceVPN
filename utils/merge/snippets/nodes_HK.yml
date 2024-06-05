@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 3,161,271,530,542,644,732|香港_0604009
+  name: 3,161,271,530,542,732|香港_0604009
   network: ws
   port: '12909'
   server: 210.3.159.224
@@ -298,7 +298,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: 161,271,530,542,631,732|香港_0604011
+  name: 161,271,530,542,631,685,732|香港_0604011
   network: ws
   port: '28681'
   server: 47.242.22.171
@@ -310,6 +310,23 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 162|netflix_HK
+  network: ws
+  port: 2095
+  server: 104.19.45.17
+  servername: onea.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      HOST: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto
@@ -1524,6 +1541,20 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
+- alterId: 32
+  cipher: auto
+  name: '271,530,542,711,732|香港_0604047 #1'
+  network: ws
+  port: '80'
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
 - cipher: chacha20-ietf-poly1305
   name: 284|[🇭🇰]a4a09ce.h1.glados-config.n...
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -2013,8 +2044,8 @@ proxies:
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 470,474,510,703|[02-24]-🇸-欧洲-096-150.107.46.21
+  country: 🇰HK
+  name: 470,510,703|[02-24]-🇸-欧洲-096-150.107.46.21
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -2023,19 +2054,6 @@ proxies:
   protocol-param: ''
   server: 150.107.46.21
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 474|🇭🇰HK_128
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: '483|🇨🇳中国【YouTube-由零開始】 #7'
@@ -2409,20 +2427,6 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /
-- alterId: 32
-  cipher: auto
-  name: '530,542,711,732|香港_0604047 #1'
-  network: ws
-  port: '80'
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 530,732|香港_0604094
@@ -3450,7 +3454,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '604,711|美国 CloudFlare节点 #50'
+  name: '604,711|美国 CloudFlare节点 #48'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
