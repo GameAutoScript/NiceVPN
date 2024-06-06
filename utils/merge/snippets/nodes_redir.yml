@@ -30,7 +30,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,2,3,410,411,413,414,605|🇫🇮_FI_芬兰->🇩🇪_DE_德国 #2'
+  name: 0,1,2,3,410,411,413,414,605,637|🇫FI-135.181.109.197-145
   network: ws
   port: 80
   server: 135.181.109.197
@@ -38,7 +38,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 1b457053-80cc-4391-b2bf-badfd71ad8cd
+  ws-headers:
+    Host: 135.181.109.197
   ws-opts: {}
+  ws-path: /ZXzpLGLXPrYffqWUhE
 - alterId: 0
   cipher: auto
   name: '1,2|_NL_->_GI_ #1'
@@ -55,12 +58,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,664|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  name: '1,2,664,707|未知892 #1'
   network: ws
   port: 2082
   server: 104.21.8.157
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
@@ -3156,20 +3159,6 @@ proxies:
   ws-opts:
     headers:
       Host: vus2.0bad.com
-    path: /chat
-- alterId: 0
-  cipher: auto
-  name: 704|:美国-vmess-vus4.0bad.com:443-可用...
-  network: ws
-  port: '443'
-  server: vus4.0bad.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers:
-      Host: vus4.0bad.com
     path: /chat
 - alterId: 0
   cipher: auto
