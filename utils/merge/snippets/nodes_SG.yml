@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|新加坡|湖南移动|Linode|1x
+  network: tcp
+  port: 39288
+  server: cs.guanguan.club
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: 16|🇸🇬 新加坡1|cf
   network: ws
   port: '2052'
@@ -26,26 +35,16 @@ proxies:
       Host: sg2.wish.ml
     path: /
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 19,476|🇸🇬SG_84
+  country: 🇬SG
+  name: 19,476|🇬SG_76
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 103.172.116.103
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: ' SG'
-  name: 19,703|未知355
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 103.172.116.103
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 19,476,703|未知188 395.4KB/s
+  name: 19,163,476,703|未知188 395.4KB/s
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 103.172.116.103
@@ -394,12 +393,38 @@ proxies:
   tls: false
   type: vmess
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
-- cipher: aes-256-cfb
-  name: 163,267|🆔@LuxyNet💎❖❖SG❖2003
-  password: KBGjZYcy4SyRShmA
-  port: 9044
-  server: 103.172.116.79
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 163,703|未知911 395.8KB/s
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.103
+  skip-cert-verify: true
+  tls: true
   type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 163,703|未知170 265.4KB/s
+  password: amazonskr05
+  port: 443
+  server: 13.215.177.171
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 163|🇸🇬SG-139.162.36.248-0133 | 14....
+  network: ws
+  port: 443
+  server: sg-full.privateip.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: fa3c063e-a5eb-416b-882b-852d40a3ee09
+  ws-opts:
+    headers:
+      Host: sg-full.privateip.net
+    path: /
 - alterId: 0
   cipher: auto
   country: US
@@ -1206,9 +1231,15 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     path: /path/080712342310
+- cipher: aes-256-cfb
+  name: 267|🆔@LuxyNet💎❖❖SG❖2003
+  password: KBGjZYcy4SyRShmA
+  port: 9044
+  server: 103.172.116.79
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '276,683,691,703,704|未知595 #1'
+  name: '276,683,691,703,704|未知595 #2'
   network: ws
   port: '99'
   server: 128.199.161.230
@@ -1246,21 +1277,7 @@ proxies:
   uuid: 7cc6a250-f767-4d4b-9421-03b1bbf23f88
 - alterId: 0
   cipher: auto
-  name: '276,516,683,691|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
-  network: ws
-  port: 23006
-  server: 138.2.90.147
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5eea50d8-a816-48c7-bc35-0fde39e277b5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /free
-- alterId: 0
-  cipher: auto
-  name: '276,683,691,704|未知106 #1'
+  name: '276,683,691,704|未知106 #2'
   network: ws
   port: '14850'
   server: 54.169.158.106
@@ -1274,7 +1291,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '276,683,691,704|未知979 #1'
+  name: '276,683,691,704|未知979 #2'
   network: ws
   port: '56029'
   server: 18.142.251.50
@@ -1295,6 +1312,20 @@ proxies:
   tls: false
   type: vmess
   uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
+- alterId: 0
+  cipher: auto
+  name: '276,516,683,691|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
+  network: ws
+  port: 23006
+  server: 138.2.90.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5eea50d8-a816-48c7-bc35-0fde39e277b5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /free
 - alterId: 0
   cipher: auto
   name: 276|🇸🇬SG-139.162.36.248-0133
@@ -1636,21 +1667,18 @@ proxies:
   type: vmess
   uuid: 4770d44f-e799-4b4e-988d-b5ce56c4c3a0
 - cipher: aes-256-cfb
-  country: 🇬SG
+  country: 🇸🇬SG
   name: 476|🇬SG_77
+  password: UWZQeLRWnkqgkseq
+  port: 9032
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 476|🇸🇬SG_78
   password: bf7v334KKDV3YDhH
   port: 9070
   server: 103.172.116.103
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 476,703|未知687 396.6KB/s
-  password: c3NtHJ5ujV2tGDfj
-  port: 9084
-  server: 103.172.116.103
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
@@ -1658,6 +1686,20 @@ proxies:
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇬SG
+  name: 476|🇸🇬SG_80
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.94
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 476|🇸🇬SG_82
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 103.172.116.94
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
@@ -1672,26 +1714,12 @@ proxies:
 - alterId: 0
   cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 476,703|未知911 395.8KB/s
-  password: fG2artUmHfNT2cX7
-  port: 9018
+  name: 476,703|未知687 396.6KB/s
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
   server: 103.172.116.103
   skip-cert-verify: true
   tls: true
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 476|🇸🇬SG_83
-  password: UWZQeLRWnkqgkseq
-  port: 9032
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇬SG
-  name: 476|🇸🇬SG_85
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 103.172.116.94
   type: ss
 - alterId: 0
   cipher: auto
