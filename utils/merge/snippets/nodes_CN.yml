@@ -439,31 +439,34 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '277,705|未知277 #1'
+  name: '277,704,705|未知277 #2'
   network: tcp
   port: '15607'
   server: 183.232.199.61
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '277,694,705|未知317 #1'
+  name: '277,694,704,705|未知317 #2'
   network: tcp
   port: '15605'
   server: 183.232.199.28
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '277,705|未知769 #1'
+  name: '277,704,705|未知769 #2'
   network: tcp
   port: '15603'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -482,11 +485,12 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '277,692,705|未知207 #1'
+  name: '277,692,704,705|未知207 #2'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1099,7 +1103,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 483|Relay_-CN_03
+  name: 476,477,483|Relay_-CN_03
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1292,6 +1296,16 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
+- alterId: 64
+  cipher: auto
+  name: 504,535,553,651,659|香港2|@ripaojiedian
+  network: tcp
+  port: '51193'
+  server: 183.238.202.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 4
   cipher: auto
   name: '505,563|未命名 #193'
@@ -4760,13 +4774,16 @@ proxies:
     headers:
       Host: kh.sharecentre.online
     path: /shirker
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 557,693|🇰🇷 韩国+KT电信 2
+  name: 557,693,704|🇺🇸US美国3
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -5715,12 +5732,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 660|CN_youtube@资源分享师_14
+  name: '660,704|未知323 #1'
   network: ws
   port: 16632
   server: m.cnmjin.net
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
@@ -5850,7 +5867,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '693,694|广东省 移动 #3'
+  name: '693,694|广东省 移动 #6'
   network: ws
   port: '16632'
   server: 120.233.204.126
@@ -5872,13 +5889,16 @@ proxies:
   server: xiaonangua.lwjyj.com
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 693|🇨🇳 广东省深圳市+阿里云
+  name: 693,704|2
   password: a501c82c72d790b8
   port: 8474
   server: 119.23.104.213
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - alterId: 64
   cipher: auto
