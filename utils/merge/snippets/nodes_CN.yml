@@ -442,7 +442,7 @@ proxies:
   country: 🇼TW
   h2-opts: {}
   http-opts: {}
-  name: 295,504,662,663,664,666|TW_youtube@资源分享师_95
+  name: 295,504,532,563,581,662,663,664,666|TW_youtube@资源分享师_95
   network: tcp
   port: 61017
   server: in06.dns2024.org
@@ -455,21 +455,23 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '295,720,733|未知1073 #1'
+  name: '295,720,732,733|未知1073 #2'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '295,679,687,733|🇨🇳广东 #1'
+  name: '295,679,687,732,733|🇨🇳广东 #1'
   network: tcp
   port: '51193'
   server: 183.238.202.173
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1082,7 +1084,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 504,505,511|Relay_-CN_03
+  name: '504,505,511|Relay_-CN_02 #1'
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -4743,13 +4745,16 @@ proxies:
     headers:
       Host: kh.sharecentre.online
     path: /shirker
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 585,662|🇳CN-183.239.109.81-184
+  name: 585,662,732|2
   password: 4aa5bc5a-5574-4ec6-9c34-d2a5e9ee1d53
   port: 46091
   server: rk2.izoizoizo.top
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -5452,9 +5457,28 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 662|🇳CN-54.222.189.26-064
+  password: 9hPjFqGEHj7iN7NmvUF0J62v
+  port: 23034
+  server: mole-ho.i.sxldns.com
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: '662,663,664|🇺🇸 美国(油管:破解资源君2.0) #26'
+  network: tcp
+  port: '41203'
+  server: 139.217.229.103
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 039aeb43-a240-3208-a447-ca80be12a290
+  ws-headers:
+    Host: 139.217.229.103
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 662|🇳CN-120.241.118.28-211
+  name: 662|🇳CN-120.241.118.28-224
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -5720,12 +5744,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 688|CN_youtube@资源分享师_14
+  name: '688,732|未知932 #1'
   network: ws
   port: 16632
   server: m.cnmjin.net
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
