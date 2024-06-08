@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|新加坡|湖南移动|Linode|1x
+  network: tcp
+  port: 39288
+  server: cs.guanguan.club
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: 16|🇸🇬 新加坡1|cf
   network: ws
   port: '2052'
@@ -25,6 +34,13 @@ proxies:
     headers:
       Host: sg2.wish.ml
     path: /
+- cipher: aes-256-cfb
+  country: ' SG'
+  name: 19| SG_60
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 103.172.116.103
+  type: ss
 - alterId: 0
   cipher: auto
   name: '20,21,24,26|sg新加坡1 #3'
@@ -472,7 +488,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: '174,292,525,663,717,729,730|US61 1.3MB/s #3'
+  name: '174,292,525,663,709,717,730|US61 1.3MB/s #2'
   network: tcp
   port: '31433'
   server: 205.234.231.35
@@ -891,7 +907,7 @@ proxies:
   name: 266|🇸🇬狮城区域1自动运维节点
   network: tcp
   port: '20182'
-  server: oXV1Kn.gov.goldliond.top
+  server: FHk9fu.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -900,7 +916,7 @@ proxies:
   name: 266|🇸🇬狮城区域2自动运维节点
   network: tcp
   port: '20182'
-  server: Xfj3tW.gov.goldliond.top
+  server: XvgW7N.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -909,7 +925,7 @@ proxies:
   name: 266|🇸🇬狮城区域3自动运维节点
   network: tcp
   port: '20182'
-  server: 0oKORp.gov.goldliond.top
+  server: 24Zwyt.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -918,7 +934,7 @@ proxies:
   name: 266|🇸🇬狮城区域1-三网优化-解锁Netflix
   network: tcp
   port: '40184'
-  server: CFb9IR.gov.goldliond.top
+  server: aFQVwK.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1280,12 +1296,11 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: '292,562,709,717,729,730,764|新加坡_0608003 #1'
+  name: '292,562,709,717,730,764|新加坡_0608003 #1'
   network: ws
   port: '99'
   server: 128.199.161.230
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
@@ -1308,7 +1323,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: '292,663|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #8'
+  name: '292|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #6'
   network: tcp
   port: '2083'
   server: sg2-v2ray.ipracevpn.com
@@ -1318,18 +1333,13 @@ proxies:
   uuid: 610f3cbf-d441-46c2-9a84-572936fc1009
 - alterId: 0
   cipher: auto
-  name: '292,709,717,730|未知942 #2'
-  network: ws
-  port: '56029'
-  server: 18.142.251.50
-  servername: ''
+  name: '292,709,717|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #2'
+  network: tcp
+  port: 54185
+  server: 152.42.208.82
   tls: false
   type: vmess
-  uuid: 48c632ca-3d6e-42cb-bf37-c8dfced05c86
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
-    path: /
+  uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
 - alterId: 0
   cipher: auto
   name: '292,709,717|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
@@ -1346,13 +1356,18 @@ proxies:
     path: /free
 - alterId: 0
   cipher: auto
-  name: '292,709,717|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #2'
-  network: tcp
-  port: 54185
-  server: 152.42.208.82
+  name: '292,709,717,730|未知942 #1'
+  network: ws
+  port: '56029'
+  server: 18.142.251.50
+  servername: ''
   tls: false
   type: vmess
-  uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
+  uuid: 48c632ca-3d6e-42cb-bf37-c8dfced05c86
+  ws-opts:
+    headers:
+      Host: store.steampowered.com
+    path: /
 - alterId: '0'
   cipher: auto
   name: 305|[🇸🇬]43.156.76.54:43127(2d957a0...
@@ -1662,37 +1677,23 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇬SG
   name: 502|🇬SG_77
-  password: bf7v334KKDV3YDhH
-  port: 9070
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇬SG
-  name: 502|🇬SG_78
-  password: BejrQvtu9sqUeNuZ
-  port: 9024
-  server: 103.172.116.94
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 502|🇸🇬SG_79
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 103.172.116.94
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 502|🇸🇬SG_80
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 502|🇸🇬SG_81
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
+  name: 502|🇬SG_78
+  password: bf7v334KKDV3YDhH
+  port: 9070
   server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇬SG
+  name: 502|🇸🇬SG_79
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.94
   type: ss
 - alterId: 0
   cipher: auto
