@@ -1,30 +1,19 @@
 proxies:
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: '0,1,2,3,285,292,429,430,432,433,610,627,660,661|🇨🇳 _TW_台湾 #2'
+  name: '0,1,2,3,292,429,430,432,433,434,610,627,660,661|🇨🇳 _TW_台湾 #2'
   network: ws
   port: '12345'
   server: 35.229.236.201
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: false
   uuid: 957c0034-9066-48a8-b824-5f6203298746
   ws-opts:
     headers:
       Host: ''
     path: /957c0034
-- alterId: 0
-  cipher: auto
-  name: 13|台湾|广州移动|Polo|1x
-  network: tcp
-  port: 39872
-  server: gdcm.r1u.cn
-  tls: false
-  type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
 - alterId: 0
   cipher: auto
   name: 52|优化1|台湾|vmess
@@ -310,7 +299,7 @@ proxies:
   name: 266|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: pBrPNT.gov.goldliond.top
+  server: CuwImW.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -319,7 +308,7 @@ proxies:
   name: 266|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: wYzbXL.gov.goldliond.top
+  server: zCyQIf.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -341,14 +330,24 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '292,717|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
-  network: ws
-  port: '12945'
-  server: 154.40.60.172
-  servername: 55.lwdh.us
-  tls: true
+  name: '292,717|🔒 VM-TCP-NA 🇹🇼 TW-122.118.167.... #1'
+  network: tcp
+  port: 61017
+  server: 122.118.167.39
+  tls: false
   type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
+- alterId: 0
+  cipher: auto
+  name: 292,577,717,729,730,743|🇹🇼TW-103.159.206.35-0342
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-opts:
     headers:
       Host: ''
@@ -369,24 +368,14 @@ proxies:
     path: /index?ed=2560
 - alterId: 0
   cipher: auto
-  name: '292,717|🔒 VM-TCP-NA 🇹🇼 TW-122.118.167.... #1'
-  network: tcp
-  port: 61017
-  server: 122.118.167.39
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
-- alterId: 0
-  cipher: auto
-  name: 292,577,717,729,730,743|🇹🇼TW-103.159.206.35-0342
+  name: '292,717|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
   network: ws
-  port: 31945
-  server: 103.159.206.35
-  servername: ''
-  skip-cert-verify: true
-  tls: false
+  port: '12945'
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  tls: true
   type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
       Host: ''
@@ -1054,38 +1043,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 668|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 668|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 668|🇹🇼 TW 03
-  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
-  port: 22302
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 668|🇹🇼 TW 04
-  password: cf448056-b7c2-439d-b708-aaf5ff321052
-  port: 22302
-  server: 04.forlive.live
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 668|🇹🇼 Taiwan_1
