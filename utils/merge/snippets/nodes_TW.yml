@@ -1,18 +1,30 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,2,3,292,429,430,432,433,610,627,660,661|🇨🇳 _TW_台湾 #2'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '0,1,2,3,285,292,429,430,432,433,610,627,660,661|🇨🇳 _TW_台湾 #2'
   network: ws
   port: '12345'
   server: 35.229.236.201
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: 957c0034-9066-48a8-b824-5f6203298746
   ws-opts:
     headers:
       Host: ''
     path: /957c0034
+- alterId: 0
+  cipher: auto
+  name: 13|台湾|广州移动|Polo|1x
+  network: tcp
+  port: 39872
+  server: gdcm.r1u.cn
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
 - alterId: 0
   cipher: auto
   name: 52|优化1|台湾|vmess
@@ -298,7 +310,7 @@ proxies:
   name: 266|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: ur0w3q.gov.goldliond.top
+  server: pBrPNT.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -307,7 +319,7 @@ proxies:
   name: 266|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: Hzv1w2.gov.goldliond.top
+  server: wYzbXL.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -329,7 +341,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '292,717,730|TW2 #1'
+  name: '292,717|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
+  network: ws
+  port: '12945'
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '292,717,730|TW2 #2'
   network: ws
   port: '37902'
   server: 36.232.62.250
@@ -343,38 +369,24 @@ proxies:
     path: /index?ed=2560
 - alterId: 0
   cipher: auto
-  name: '292,542,663|🔒 VM-TCP-NA 🇹🇼 TW-61.224.103.7... #1'
+  name: '292,717|🔒 VM-TCP-NA 🇹🇼 TW-122.118.167.... #1'
   network: tcp
   port: 61017
-  server: 61.224.103.79
-  servername: ''
+  server: 122.118.167.39
   tls: false
   type: vmess
   uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
 - alterId: 0
   cipher: auto
-  name: 292,577,717,730,743|🇹🇼TW-103.159.206.35-0342
+  name: 292,577,717,729,730,743|🇹🇼TW-103.159.206.35-0342
   network: ws
   port: 31945
   server: 103.159.206.35
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '292,717|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
-  network: ws
-  port: '12945'
-  server: 154.40.60.172
-  servername: 55.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     headers:
       Host: ''
@@ -614,21 +626,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇨 CN
-  h2-opts: {}
-  http-opts: {}
-  name: 501,506,663|-0980-TW【ccbaohe.com〗 永久免费节点机场
-  network: tcp
-  port: 61017
-  server: in06.dns2024.org
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: '526|🇹🇼_TW_台湾 #2'
   network: ws
   port: 888
@@ -785,6 +782,16 @@ proxies:
   tls: false
   type: vmess
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+- alterId: 0
+  cipher: auto
+  name: 542,663|🔒 VM-TCP-NA 🇹🇼 TW-61.224.103.7...
+  network: tcp
+  port: 61017
+  server: 61.224.103.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
 - alterId: 1
   cipher: auto
   name: 575|🇹🇼_TW_台湾_4@6
@@ -1145,15 +1152,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
-- alterId: 0
-  cipher: auto
-  name: 717|🔒 VM-TCP-NA 🇹🇼 TW-122.118.167....
-  network: tcp
-  port: 61017
-  server: 122.118.167.39
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
 - client-fingerprint: chrome
   name: 718|🇹🇼 台湾省+中华电信(HiNet)数据中心
   network: ws
@@ -1217,6 +1215,44 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  cipher: auto
+  name: 729|TW
+  network: ws
+  password: auto
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: true
+  sni: vip.123789.pp.ua
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '729|TW2 #1'
+  network: ws
+  port: 37902
+  server: 36.232.62.250
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      host: hinet-wap.myddns.me
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 729|TW4 1.1MB/s
+  network: tcp
+  password: TaE3D3Yc9R2eCzl4OuCpgyCFy4OuCpgyCFy3SlRNY88SKanIejx37OAFZaXDx0anIejx3
+  port: 28332
+  server: 118.163.201.73
+  skip-cert-verify: true
+  sni: sohtsa.taiwanesefood.link
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 743|🇹🇼台湾 01
