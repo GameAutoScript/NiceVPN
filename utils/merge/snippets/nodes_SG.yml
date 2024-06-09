@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|新加坡|徐州移动|Linode|1x
+  network: tcp
+  port: 39226
+  server: jscm.r1u.cn
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: 16|🇸🇬 新加坡1|cf
   network: ws
   port: '2052'
@@ -32,12 +41,15 @@ proxies:
   port: 9014
   server: 103.172.116.103
   type: ss
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: aes-256-cfb
   country: ' SG'
-  name: 19| SG_58
-  password: fG2artUmHfNT2cX7
-  port: 9018
+  name: 19,732|未知719 379.5KB/s
+  password: rNBfNuuANFCAk7KB
+  port: 9056
   server: 103.172.116.103
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -268,28 +280,6 @@ proxies:
     path: /5gsieutocdo.club
 - alterId: 0
   cipher: auto
-  name: '94,213,217,218|新加坡 01 专线 （10倍率） #3'
-  network: tcp
-  port: '20002'
-  server: shdxus.aikunapp.com
-  tls: false
-  type: vmess
-  uuid: 99f495e8-87b6-4940-8339-2bc05af379ff
-- alterId: 0
-  cipher: auto
-  name: '94,213,217,218|新加坡 (01) #3'
-  network: ws
-  port: '2052'
-  server: cdncdncdncdn.784654.xyz
-  tls: false
-  type: vmess
-  uuid: 99f495e8-87b6-4940-8339-2bc05af379ff
-  ws-opts:
-    headers:
-      Host: cfxjp.981545.xyz
-    path: /index?ed=2048
-- alterId: 0
-  cipher: auto
   name: 99|新加坡1-1
   network: ws
   port: '2086'
@@ -512,11 +502,12 @@ proxies:
   server: 103.172.116.79
   type: ss
 - country: SG
-  name: 177|Relay_SG-SG_161
+  name: 177,531|[Trojan] 🇨🇳 中国 阿里云 4
   network: ws
   password: NISHIKUITAN222
   port: 8443
   server: 8.222.169.222
+  skip-cert-verify: true
   sni: t009.ylks.link
   type: trojan
   udp: true
@@ -525,7 +516,20 @@ proxies:
       Host: t009.ylks.link
     path: /
 - country: SG
-  name: 177|Relay_SG-SG_162
+  name: 177|Relay_SG-SG_156
+  network: ws
+  password: NISHIKUITAN222
+  port: 8443
+  server: 8.219.122.55
+  sni: t009.ylks.link
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: t009.ylks.link
+    path: /
+- country: SG
+  name: 177|Relay_SG-SG_157
   network: ws
   password: NISHIKUITAN222
   port: 8443
@@ -538,38 +542,24 @@ proxies:
       Host: t009.ylks.link
     path: /
 - country: SG
-  name: 177,531|[Trojan] 🇨🇳 中国 阿里云 9
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.219.122.55
-  skip-cert-verify: true
-  sni: t009.ylks.link
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: t009.ylks.link
-    path: /
-- country: SG
-  name: 177|Relay_SG-DE_164
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.222.214.231
-  sni: t009.ylks.link
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: t009.ylks.link
-    path: /
-- country: SG
-  name: 177|Relay_SG-SG_165
+  name: 177|Relay_SG-SG_158
   network: ws
   password: NISHIKUITAN222
   port: 8443
   server: 8.219.67.133
+  sni: t009.ylks.link
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: t009.ylks.link
+    path: /
+- country: SG
+  name: 177|Relay_SG-SG_159
+  network: ws
+  password: NISHIKUITAN222
+  port: 8443
+  server: 8.222.214.231
   sni: t009.ylks.link
   type: trojan
   udp: true
@@ -582,7 +572,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: '177,295,528,712,720,732,733|US272 4.7MB/s #2'
+  name: '177,295,528,720,732,733,753,761|رایگان | VMESS | @DeamNet_Prox... #8'
   network: tcp
   port: '31433'
   server: 205.234.231.35
@@ -985,6 +975,28 @@ proxies:
   uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
 - alterId: 0
   cipher: auto
+  name: '217,218|新加坡 01 专线 （10倍率） #1'
+  network: tcp
+  port: '20002'
+  server: shdxus.aikunapp.com
+  tls: false
+  type: vmess
+  uuid: 99f495e8-87b6-4940-8339-2bc05af379ff
+- alterId: 0
+  cipher: auto
+  name: '217,218|新加坡 (01) #1'
+  network: ws
+  port: '2052'
+  server: cdncdncdncdn.784654.xyz
+  tls: false
+  type: vmess
+  uuid: 99f495e8-87b6-4940-8339-2bc05af379ff
+  ws-opts:
+    headers:
+      Host: cfxjp.981545.xyz
+    path: /index?ed=2048
+- alterId: 0
+  cipher: auto
   name: 223|🇸🇬SG新加坡-t.me/Hikarimiko
   network: ws
   port: '80'
@@ -1001,7 +1013,7 @@ proxies:
   name: 269|🇸🇬狮城区域1自动运维节点
   network: tcp
   port: '20182'
-  server: oVhrFA.gov.goldliond.top
+  server: 4h9H4q.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1010,7 +1022,7 @@ proxies:
   name: 269|🇸🇬狮城区域2自动运维节点
   network: tcp
   port: '20182'
-  server: FzEVOk.gov.goldliond.top
+  server: zua91m.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1019,7 +1031,7 @@ proxies:
   name: 269|🇸🇬狮城区域3自动运维节点
   network: tcp
   port: '20182'
-  server: 5gayK7.gov.goldliond.top
+  server: 1yPHBE.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1028,7 +1040,7 @@ proxies:
   name: 269|🇸🇬狮城区域1-三网优化-解锁Netflix
   network: tcp
   port: '40184'
-  server: RpUpjR.gov.goldliond.top
+  server: qsJDSG.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1429,7 +1441,7 @@ proxies:
   uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
 - alterId: 0
   cipher: auto
-  name: '295,545,712,720|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
+  name: '295,712,720|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #2'
   network: ws
   port: 23006
   server: 138.2.90.147
@@ -1657,41 +1669,6 @@ proxies:
     headers:
       Host: ee1683cb66f83a1d45e5fdf2e7bdc7dd.mobgslb.tbcache.com
     path: /
-- cipher: aes-128-gcm
-  name: 448|🇸🇬 Singapore01
-  password: a4ada9c4-7c5d-5e4c-864e-9a6399ee0a82
-  port: 47121
-  server: sgm1.cdn.housenetworkmp3.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 448|🇸🇬 Singapore02
-  password: a4ada9c4-7c5d-5e4c-864e-9a6399ee0a82
-  port: 47122
-  server: sgm1.cdn.housenetworkmp3.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 448|🇸🇬 Singapore03
-  password: a4ada9c4-7c5d-5e4c-864e-9a6399ee0a82
-  port: 47123
-  server: sgm1.cdn.housenetworkmp3.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 448|🇸🇬 Singapore04
-  password: a4ada9c4-7c5d-5e4c-864e-9a6399ee0a82
-  port: 47124
-  server: sgm1.cdn.housenetworkmp3.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 448|🇸🇬 Singapore05
-  password: a4ada9c4-7c5d-5e4c-864e-9a6399ee0a82
-  port: 47125
-  server: sgm1.cdn.housenetworkmp3.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 469|新加坡1—E1
@@ -2392,7 +2369,7 @@ proxies:
     path: /chami
 - alterId: 64
   cipher: auto
-  name: 545|新加坡_060918006
+  name: 545|新加坡_060923010
   network: ws
   port: '443'
   server: 209.58.174.246
@@ -2404,20 +2381,6 @@ proxies:
     headers:
       Host: www.40587333.xyz
     path: /path/191019072927
-- alterId: 0
-  cipher: auto
-  name: 545|新加坡_060918034
-  network: ws
-  port: '2082'
-  server: 8.222.174.108
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: '565,767|新加坡_0608002 #1'
@@ -4487,59 +4450,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- cipher: aes-128-gcm
-  name: 989|🇸🇬 狮城 01
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20641
-  server: ss.sgplink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 989|🇸🇬 狮城 02
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20642
-  server: ss.sgplink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 989|🇸🇬 狮城 03
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20643
-  server: ss.sgplink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 989|🇸🇬 狮城 04
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20644
-  server: ss.sgplink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 989|🇸🇬 狮城 05
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20645
-  server: ss.sgplink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 989|🇸🇬 狮城 06
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20646
-  server: ss.sgplink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 989|🇸🇬 狮城 07
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20647
-  server: ss.sgplink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 989|🇸🇬 狮城 08
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 20648
-  server: ss.sgplink.xyz
-  type: ss
-  udp: true
