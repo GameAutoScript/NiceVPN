@@ -1,10 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|新加坡|广州移动|Polo|1x
+  name: 13|新加坡|湖南移动|Linode|1x
   network: tcp
-  port: '17162'
-  server: gdcm.r1u.cn
+  port: 39288
+  server: cs.guanguan.club
   tls: false
   type: vmess
   uuid: f010dd01-c54a-3c03-95ce-0838214259c6
@@ -36,7 +36,7 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 19,511|🇸🇬SG_77
+  name: 19,511|🇸🇬SG_80
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 103.172.116.103
@@ -547,11 +547,12 @@ proxies:
       Host: sg2-full.privateip.net
     path: /
 - country: SG
-  name: 180|Relay_SG-SG_159
+  name: 180,537|[Trojan] 🇨🇳 中国 阿里云
   network: ws
   password: NISHIKUITAN222
   port: 8443
   server: 8.222.169.222
+  skip-cert-verify: true
   sni: t009.ylks.link
   type: trojan
   udp: true
@@ -560,7 +561,7 @@ proxies:
       Host: t009.ylks.link
     path: /
 - country: SG
-  name: 180|Relay_SG-SG_160
+  name: 180|Relay_SG-SG_165
   network: ws
   password: NISHIKUITAN222
   port: 8443
@@ -573,12 +574,11 @@ proxies:
       Host: t009.ylks.link
     path: /
 - country: SG
-  name: 180,537|[Trojan] 🇺🇸 美国 阿里云 6
+  name: 180|Relay_SG-SG_166
   network: ws
   password: NISHIKUITAN222
   port: 8443
   server: 47.237.84.173
-  skip-cert-verify: true
   sni: t009.ylks.link
   type: trojan
   udp: true
@@ -587,7 +587,7 @@ proxies:
       Host: t009.ylks.link
     path: /
 - country: SG
-  name: 180|Relay_SG-SG_162
+  name: 180|Relay_SG-SG_168
   network: ws
   password: NISHIKUITAN222
   port: 8443
@@ -1045,7 +1045,7 @@ proxies:
   name: 273|🇸🇬狮城区域1自动运维节点
   network: tcp
   port: '20182'
-  server: 75v9UW.gov.goldliond.top
+  server: ixkrOi.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1054,7 +1054,7 @@ proxies:
   name: 273|🇸🇬狮城区域2自动运维节点
   network: tcp
   port: '20182'
-  server: QFhEl4.gov.goldliond.top
+  server: DGFt2C.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1063,7 +1063,7 @@ proxies:
   name: 273|🇸🇬狮城区域3自动运维节点
   network: tcp
   port: '20182'
-  server: r3c3ME.gov.goldliond.top
+  server: ou7Nio.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1072,7 +1072,7 @@ proxies:
   name: 273|🇸🇬狮城区域1-三网优化-解锁Netflix
   network: tcp
   port: '40184'
-  server: 0CU6iR.gov.goldliond.top
+  server: Q5QZdA.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1470,13 +1470,18 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: '299,718,726|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #2'
-  network: tcp
-  port: 54185
-  server: 152.42.208.82
+  name: '299,718,726,739|未知252 #2'
+  network: ws
+  port: '56029'
+  server: 18.142.251.50
+  servername: ''
   tls: false
   type: vmess
-  uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
+  uuid: 48c632ca-3d6e-42cb-bf37-c8dfced05c86
+  ws-opts:
+    headers:
+      Host: store.steampowered.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '299,551,571,718,726,738,739,773|新加坡_0608003 #1'
@@ -1494,18 +1499,13 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '299,718,726,739|未知252 #2'
-  network: ws
-  port: '56029'
-  server: 18.142.251.50
-  servername: ''
+  name: '299,718,726|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #2'
+  network: tcp
+  port: 54185
+  server: 152.42.208.82
   tls: false
   type: vmess
-  uuid: 48c632ca-3d6e-42cb-bf37-c8dfced05c86
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
-    path: /
+  uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
 - alterId: 0
   cipher: auto
   name: 299|🇸🇬SG-172.104.184.110-0111
@@ -1793,17 +1793,24 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇬SG
-  name: 511|🇬SG_75
-  password: bf7v334KKDV3YDhH
-  port: 9070
+  name: 511|🇬SG_77
+  password: UWZQeLRWnkqgkseq
+  port: 9032
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇬SG
-  name: 511|🇬SG_76
+  name: 511|🇬SG_78
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 103.172.116.94
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 511|🇸🇬SG_79
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.103
   type: ss
 - alterId: 0
   cipher: auto
@@ -4503,3 +4510,59 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
+- cipher: aes-128-gcm
+  name: 997|🇸🇬 狮城 01
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20641
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 997|🇸🇬 狮城 02
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20642
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 997|🇸🇬 狮城 03
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20643
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 997|🇸🇬 狮城 04
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20644
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 997|🇸🇬 狮城 05
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20645
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 997|🇸🇬 狮城 06
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20646
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 997|🇸🇬 狮城 07
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20647
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 997|🇸🇬 狮城 08
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20648
+  server: ss.sgplink.xyz
+  type: ss
+  udp: true
