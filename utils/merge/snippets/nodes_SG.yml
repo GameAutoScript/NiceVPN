@@ -27,14 +27,21 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 19,511|🇸🇬SG_81
+  name: 19,511|🇸🇬SG_85
   password: cp8pRSUAyLhTfVWH
   port: 9064
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
+  country: 🇬SG
+  name: 19,511|🇬SG_80
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 19,511|🇸🇬SG_82
+  name: 19,511|🇬SG_81
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 103.172.116.103
@@ -545,6 +552,33 @@ proxies:
       Host: sg2-full.privateip.net
     path: /
 - country: SG
+  name: 180|Relay_SG-SG_162
+  network: ws
+  password: NISHIKUITAN222
+  port: 8443
+  server: 8.219.122.55
+  sni: t009.ylks.link
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: t009.ylks.link
+    path: /
+- country: SG
+  name: 180,537|[Trojan] 🇺🇸 美国 阿里云 4
+  network: ws
+  password: NISHIKUITAN222
+  port: 8443
+  server: 47.237.84.173
+  skip-cert-verify: true
+  sni: t009.ylks.link
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: t009.ylks.link
+    path: /
+- country: SG
   name: 180|Relay_SG-SG_164
   network: ws
   password: NISHIKUITAN222
@@ -562,34 +596,7 @@ proxies:
   network: ws
   password: NISHIKUITAN222
   port: 8443
-  server: 8.219.122.55
-  sni: t009.ylks.link
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: t009.ylks.link
-    path: /
-- country: SG
-  name: 180|Relay_SG-SG_166
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 47.237.84.173
-  sni: t009.ylks.link
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: t009.ylks.link
-    path: /
-- country: SG
-  name: 180,537|[Trojan] 🇨🇳 中国 阿里云
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
   server: 8.219.67.133
-  skip-cert-verify: true
   sni: t009.ylks.link
   type: trojan
   udp: true
@@ -1043,7 +1050,7 @@ proxies:
   name: 273|🇸🇬狮城区域1自动运维节点
   network: tcp
   port: '20182'
-  server: 9Ihcl5.gov.goldliond.top
+  server: J8naAU.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1052,7 +1059,7 @@ proxies:
   name: 273|🇸🇬狮城区域2自动运维节点
   network: tcp
   port: '20182'
-  server: AQhtYA.gov.goldliond.top
+  server: cgbPiP.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1061,7 +1068,7 @@ proxies:
   name: 273|🇸🇬狮城区域3自动运维节点
   network: tcp
   port: '20182'
-  server: o4beCz.gov.goldliond.top
+  server: lym17N.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1070,7 +1077,7 @@ proxies:
   name: 273|🇸🇬狮城区域1-三网优化-解锁Netflix
   network: tcp
   port: '40184'
-  server: wYMmn9.gov.goldliond.top
+  server: 7cxHIh.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1468,15 +1475,6 @@ proxies:
   uuid: 610f3cbf-d441-46c2-9a84-572936fc1009
 - alterId: 0
   cipher: auto
-  name: '299,718,726|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #2'
-  network: tcp
-  port: 54185
-  server: 152.42.208.82
-  tls: false
-  type: vmess
-  uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
-- alterId: 0
-  cipher: auto
   name: '299,718,726,739|未知252 #2'
   network: ws
   port: '56029'
@@ -1504,6 +1502,29 @@ proxies:
     headers:
       Host: ''
     path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: '299,551,672,718,726|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:... #3'
+  network: ws
+  port: 23006
+  server: 138.2.90.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5eea50d8-a816-48c7-bc35-0fde39e277b5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /free
+- alterId: 0
+  cipher: auto
+  name: '299,718,726|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #2'
+  network: tcp
+  port: 54185
+  server: 152.42.208.82
+  tls: false
+  type: vmess
+  uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
 - alterId: 0
   cipher: auto
   name: 299|🇸🇬SG-172.104.184.110-0111
@@ -1790,25 +1811,25 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇬SG
-  name: 511|🇬SG_78
+  country: 🇸🇬SG
+  name: 511|🇸🇬SG_82
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 511|🇬SG_79
-  password: bf7v334KKDV3YDhH
-  port: 9070
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
   country: 🇬SG
-  name: 511|🇸🇬SG_80
+  name: 511|🇸🇬SG_83
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 103.172.116.94
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 511|🇸🇬SG_84
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.103
   type: ss
 - alterId: 0
   cipher: auto
