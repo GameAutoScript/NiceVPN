@@ -1,15 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|香港|广州移动|Neko|1.5x
-  network: tcp
-  port: 13337
-  server: gdcm.r1u.cn
-  tls: false
-  type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
-- alterId: 0
-  cipher: auto
   name: '20,21,25,27|hk香港1 #3'
   network: ws
   port: '2086'
@@ -2768,7 +2759,7 @@ proxies:
   name: 273|🇭🇰香港区域1-三网优化
   network: tcp
   port: '40181'
-  server: u3ilTQ.gov.goldliond.top
+  server: QmyY8B.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -2777,7 +2768,7 @@ proxies:
   name: 273|🇭🇰香港区域2-三网优化
   network: tcp
   port: '40181'
-  server: HdqHXT.gov.goldliond.top
+  server: XLWc2d.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -2786,7 +2777,7 @@ proxies:
   name: 273|🇭🇰香港区域3-三网优化
   network: tcp
   port: '40181'
-  server: ZK36Cu.gov.goldliond.top
+  server: 9HDbMy.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -3616,18 +3607,19 @@ proxies:
     path: /index
 - alterId: 0
   cipher: auto
-  name: '299,718,726|🔒 VM-WS-TLS 🇭🇰 HK-47.242.79.71... #2'
+  name: 299,672,726,738,739,773|香港_0608008
   network: ws
-  port: '2087'
-  server: 47.242.79.71
-  servername: sg.baijia.cfd
-  tls: true
+  port: '28681'
+  server: 47.242.22.171
+  servername: ''
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: b35a9c68-8406-4c6f-bb0d-2671d53e55eb
+  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
   ws-opts:
     headers:
-      Host: sg.baijia.cfd
-    path: /fdsffgfdgdfgdf
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '299,718,726,739|HK18 #2'
@@ -3644,19 +3636,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 299,672,726,738,739,773|香港_0608008
+  name: '299,718,726|🔒 VM-WS-TLS 🇭🇰 HK-47.242.79.71... #2'
   network: ws
-  port: '28681'
-  server: 47.242.22.171
-  servername: ''
-  skip-cert-verify: true
-  tls: false
+  port: '2087'
+  server: 47.242.79.71
+  servername: sg.baijia.cfd
+  tls: true
   type: vmess
-  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
+  uuid: b35a9c68-8406-4c6f-bb0d-2671d53e55eb
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: sg.baijia.cfd
+    path: /fdsffgfdgdfgdf
 - alterId: 0
   cipher: auto
   name: '299,718,739|HK24 #2'
@@ -4012,6 +4003,13 @@ proxies:
       Host: cn.bing.com
     path: /
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  country: 🇰HK
+  name: 510|Relay_HK-🇭🇰HK_61 | 8.79Mb
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node4.s.nodelist-gfwairport2.top
+  type: ss
 - cipher: aes-256-cfb
   country: 🇰HK
   name: 511,551,744|[02-24]-🇸-欧洲-096-150.107.46.21
@@ -4065,6 +4063,19 @@ proxies:
     headers:
       Host: hk80.6d83777c049c.sanfen004.me
     path: /zh-cn/
+- name: 537|[Trojan] 🇭🇰 香港 阿里云
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.210.85.222
+  skip-cert-verify: true
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   name: 539|🇭🇰香港(绿头外网集团)(Public)
@@ -4382,6 +4393,20 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 32
+  cipher: auto
+  name: '571,752,773|香港_0608056 #1'
+  network: ws
+  port: '80'
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 571,773|香港_0608103
@@ -5416,7 +5441,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '645,752|美国 CloudFlare节点 #45'
+  name: '645,752|美国 CloudFlare节点 #43'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -7570,66 +7595,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- cipher: aes-128-gcm
-  name: 997|🇭🇰 香港 01 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11001
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 997|🇭🇰 香港 02 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11002
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 997|🇭🇰 香港 03 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11003
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 997|🇭🇰 香港 04 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11004
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 997|🇭🇰 香港 05 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11005
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 997|🇭🇰 香港 06 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11006
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 997|🇭🇰 香港 07 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11007
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 997|🇭🇰 香港 08 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11008
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 997|🇭🇰 香港 IPLC 限速10Mbps
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 1024
-  server: 222909df61922934.cdn.jiashule.com
-  type: ss
-  udp: true
