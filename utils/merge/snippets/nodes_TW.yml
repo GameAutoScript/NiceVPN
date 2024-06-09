@@ -284,7 +284,7 @@ proxies:
   name: 269|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: ZDd2RQ.gov.goldliond.top
+  server: kqxsCq.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -293,7 +293,7 @@ proxies:
   name: 269|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: lUEHk9.gov.goldliond.top
+  server: Ri0r89.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -315,6 +315,23 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  country: 🇨 CN
+  h2-opts: {}
+  http-opts: {}
+  name: '295,509,662,663,664,666,732,733|TW5 419.1KB/s #1'
+  network: tcp
+  port: '61017'
+  server: in06.dns2024.org
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
+  ws-headers:
+    Host: in06.dns2024.org
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: '295,720|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #1'
   network: ws
   port: '12945'
@@ -327,6 +344,30 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '295,720,733|TW6 #2'
+  network: ws
+  port: '37902'
+  server: 36.232.62.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      Host: hinet-wap.myddns.me
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '295,720|🔒 VM-TCP-NA 🇹🇼 TW-61.224.70.13... #1'
+  network: tcp
+  port: '61017'
+  server: 61.224.70.138
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
 - alterId: 0
   cipher: auto
   name: 295,580,720,732,733,746|🇹🇼TW-103.159.206.35-0342
@@ -342,30 +383,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '295,720|🔒 VM-TCP-NA 🇹🇼 TW-61.224.70.13... #1'
-  network: tcp
-  port: '61017'
-  server: 61.224.70.138
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
-- alterId: 0
-  cipher: auto
-  name: '295,720,733|TW6 #2'
-  network: ws
-  port: '37902'
-  server: 36.232.62.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: hinet-wap.myddns.me
-    path: /index?ed=2560
 - alterId: '0'
   cipher: auto
   name: 308|[🇹🇼]103.131.189.212:56967(8110...
@@ -757,30 +774,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
-  name: 545|台湾_060913006
-  network: tcp
-  port: '61017'
-  server: 61.224.64.144
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
-- alterId: 64
-  cipher: auto
-  name: 545|台湾_060913019
-  network: ws
-  port: '443'
-  server: 103.137.23.251
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.86538404.xyz
-    path: /path/191019072927
 - alterId: 1
   cipher: auto
   name: 578|🇹🇼_TW_台湾_4@6
@@ -1203,38 +1196,35 @@ proxies:
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
-  cipher: auto
-  name: 732|TW 547.8KB/s
-  network: tcp
-  password: TaE3D3Yc9R2eCzl4OuCpgyCFy4OuCpgyCFy3SlRNY88SKanIejx37OAFZaXDx0anIejx3
-  port: 28332
-  server: 118.163.201.73
+  cipher: aes-128-gcm
+  name: 732|TW2
+  password: a-wym4ovY4Yw
+  port: 443
+  server: 118.170.99.195
   skip-cert-verify: true
-  sni: sohtsa.taiwanesefood.link
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 732|TW3
+  network: tcp
+  password: 49a2dd24-5edf-4dfa-b096-92814847f598
+  port: 27096
+  server: 111.246.8.216
+  skip-cert-verify: true
+  sni: oversea.hinetwork.tw
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 732|TW3
+  name: '732|TW4 #1'
   network: ws
   password: auto
   port: 443
   server: 35.201.203.106
   skip-cert-verify: true
   sni: vip.123789.pp.ua
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 732|TW5 929.7KB/s
-  network: tcp
-  password: 49a2dd24-5edf-4dfa-b096-92814847f598
-  port: 27096
-  server: 111.246.13.144
-  skip-cert-verify: true
-  sni: oversea.hinetwork.tw
   tls: true
   type: trojan
   udp: true
@@ -1252,6 +1242,18 @@ proxies:
     headers:
       host: hinet-wap.myddns.me
     path: /index?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 732|TW9 285.9KB/s
+  network: tcp
+  password: TaE3D3Yc9R2eCzl4OuCpgyCFy4OuCpgyCFy3SlRNY88SKanIejx37OAFZaXDx0anIejx3
+  port: 28332
+  server: 118.163.201.73
+  skip-cert-verify: true
+  sni: sohtsa.taiwanesefood.link
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 746|🇹🇼台湾 01
