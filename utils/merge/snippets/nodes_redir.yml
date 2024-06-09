@@ -29,7 +29,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 921
-  name: '0,3,111,299,438,439,441,442,537,538,587,595,636,669,670|🇺🇸 _US_美国->🇨🇦_CA_加拿大
+  name: '0,3,111,299,438,439,441,442,537,538,551,569,587,595,636,669,670|🇺🇸 _US_美国->🇨🇦_CA_加拿大
     #2'
   network: ws
   port: '8880'
@@ -116,10 +116,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1,2,619|🇸_US_美国->_CA__1
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,510,619|🇸_US_美国->_CA__1
   network: ws
   port: 8880
   server: 104.19.38.28
+  servername: funk-england-indirect-gospel.trycloudflare.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -130,7 +134,10 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: 1,2,619|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,510,619|🇺🇸_US_美国->🇩🇪_DE_德国_2
   network: ws
   port: 443
   server: cdnjs.com
@@ -369,15 +376,13 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '480,488,568,645,751,752,916|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '480,488,645,751,752,916|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -3231,6 +3236,20 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '695|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
+  network: ws
+  port: 2052
+  server: 172.67.164.78
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      host: in3.wish.ml
+    path: /
 - alterId: 0
   cipher: auto
   name: 735|:美国-vmess-arm.ptuu.gq:443-可用-中...
