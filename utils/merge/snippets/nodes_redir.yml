@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,2,3,301,541,572,590,622,639,671,672,673,675,688,696,741,742,776|俄罗斯联邦_0610003
+  name: 0,1,2,3,301,441,442,444,445,622,639,671,672,673,688,696,741,742,776|俄罗斯联邦_0610003
   network: tcp
   port: '12307'
   server: 5.182.86.28
@@ -15,15 +15,13 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,301,540,541,572,574,590,639,662,672,673,675,776|美国_0610056 #1'
+  name: '0,3,301,441,442,444,445,574,639,662,672,673,675,776,778|美国_0610046 #2'
   network: ws
   port: '80'
   server: 104.26.3.120
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: f94c274d-f9c5-4c47-a3f5-fa839d80bfb1
   ws-opts:
     headers:
@@ -31,7 +29,8 @@ proxies:
     path: /etc
 - alterId: 0
   cipher: auto
-  name: '0,3,301,491,554,574,639,662,672,673,721,755,776,919|🇺🇸_US_美国->🇫🇷_FR_法国 #9'
+  name: '0,3,301,441,442,444,445,491,554,574,639,662,672,673,721,729,755,776,778,919|🇺🇸_US_美国->🇫🇷_FR_法国
+    #9'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -61,12 +60,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  fingerprint: ''
-  h2-opts: {}
-  http-opts: {}
-  name: 1,2,294,513,622,662|🏁RELAY-104.26.3.120-1063
+  name: 1,2,622,662|🏁RELAY-104.26.3.120-1063
   network: ws
   port: 80
   server: 104.26.3.120
@@ -74,7 +68,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: false
   uuid: f94c274d-f9c5-4c47-a3f5-fa839d80bfb1
   ws-opts:
     headers:
@@ -120,12 +113,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   country: 🏁ZZ
-  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 1,2,294,513,571,622,662,698|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  name: 1,2,513,571,622,662,698|🇺🇸_US_美国->🇫🇷_FR_法国_2
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -415,13 +406,15 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '491,554,753,755,919|🇺🇸_US_美国->🇫🇷_FR_法国 #8'
+  name: '491,540,541,554,572,590,753,755,919|🇺🇸_US_美国->🇫🇷_FR_法国 #8'
   network: ws
   port: 2082
   server: 172.67.130.140
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:

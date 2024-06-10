@@ -494,31 +494,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 64
-  cipher: auto
-  name: '301,729,741,742|未知1347 #2'
-  network: tcp
-  port: '50002'
-  server: 120.210.205.82
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '301,729|🔒 VM-WS-NA 🇨🇳 CN-120.240.88.20... #3'
-  network: ws
-  port: '40396'
-  server: 120.240.88.208
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1b9745c-c302-4e31-81c3-db937dcecee7
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '301,729|🔒 VM-WS-NA 🇨🇳 CN-120.240.88.20... #2'
@@ -533,6 +508,31 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: '301,729|🔒 VM-WS-NA 🇨🇳 CN-120.240.88.20... #3'
+  network: ws
+  port: '40396'
+  server: 120.240.88.208
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1b9745c-c302-4e31-81c3-db937dcecee7
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: '301,729,741,742|未知1347 #2'
+  network: tcp
+  port: '50002'
+  server: 120.210.205.82
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   name: 314|[🇨🇳]zx01.endhigh.xyz:2413(2vzh...
   password: 2vzho5
@@ -1257,12 +1257,29 @@ proxies:
   protocol-param: 105622:5EF7C3661EBC
   server: video23.cdn.globalnetworktraffic.com
   type: ssr
-- alterId: 64
+- alterId: 0
   cipher: auto
   country: 🇨CN
   h2-opts: {}
   http-opts: {}
-  name: 513|Relay_🇨🇳CN-🇨🇳CN_14 | 8.65Mb
+  name: 513|Relay_🇨🇳CN-🇨CH_15 | 3.86Mb
+  network: ws
+  port: 40396
+  server: sui.forlive.live
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: f1b9745c-c302-4e31-81c3-db937dcecee7
+  ws-opts:
+    headers:
+      HOST: tms.dingtalk.com
+    path: /
+- alterId: 64
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 513|Relay_🇨🇳CN-🇨CN_17 | 8.65Mb
   network: ws
   port: 49997
   server: 107.148.255.228
@@ -1275,23 +1292,6 @@ proxies:
     headers:
       HOST: www.87077444.xyz
     path: /path/191019072927
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 513|Relay_🇨🇳CN-🇨CH_16 | 3.86Mb
-  network: ws
-  port: 40396
-  server: sui.forlive.live
-  servername: tms.dingtalk.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: f1b9745c-c302-4e31-81c3-db937dcecee7
-  ws-opts:
-    headers:
-      HOST: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '527|🇨🇳中国【YouTube-由零開始】 #5'
@@ -1476,18 +1476,20 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '540,571,730,741|未命名 #340'
-  password: a501c82c72d790b8
-  port: 8474
-  server: 119.23.104.213
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
+- client-fingerprint: chrome
+  name: 540,695|🇸🇬 新加坡2|@ripaojiedian
+  network: ws
+  password: moist
+  port: 2096
+  server: 8.219.126.240
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /?ed=2560
 - alterId: 4
   cipher: auto
   name: '542,600|未命名 #199'
@@ -4833,6 +4835,18 @@ proxies:
   password: 3bf7be43-e331-4dad-856c-8d312dedea90
   port: 31583
   server: rk.izoizoizo.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '571,730,741|未命名 #340'
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: ss
   udp: true
 - cipher: rc4-md5
@@ -8465,7 +8479,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 970|中国-国外回国内-v2ray
+  name: 971|中国-国外回国内-v2ray
   network: ws
   port: '443'
   server: backcn.rmanluo.top
