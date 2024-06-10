@@ -284,7 +284,7 @@ proxies:
   name: 275|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: 1kkkhg.gov.goldliond.top
+  server: NV7059.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -293,7 +293,7 @@ proxies:
   name: 275|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: 8jicjz.gov.goldliond.top
+  server: wEK5BG.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -315,14 +315,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 301|🔒 VM-TCP-NA 🇹🇼 TW-61.224.124.7...
-  network: tcp
-  port: '61017'
-  server: 61.224.124.70
-  servername: ''
+  name: '301,675,721,729|🔒 VM-WS-NONE 🇹🇼 TW-34.80.125.2... #3'
+  network: ws
+  port: 57257
+  server: 34.80.125.236
   tls: false
   type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
+  uuid: 3a368036-ff57-4141-827b-0156487add85
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 301,574,589,675,729,741,742,755,776|台湾_0610002
@@ -1018,38 +1021,6 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 680|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 680|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 680|🇹🇼 TW 03
-  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
-  port: 22302
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 680|🇹🇼 TW 04
-  password: cf448056-b7c2-439d-b708-aaf5ff321052
-  port: 22302
-  server: 04.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 680|🇹🇼 Taiwan_1
   password: 93ec2378-1151-4db5-9c56-d1387f36882d
   port: 40006
@@ -1114,6 +1085,16 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
+- alterId: 0
+  cipher: auto
+  name: 729|🔒 VM-TCP-NA 🇹🇼 TW-61.224.100.2...
+  network: tcp
+  port: '61017'
+  server: 61.224.100.238
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
 - client-fingerprint: chrome
   name: 730|🇹🇼 台湾省+中华电信(HiNet)数据中心
   network: ws
