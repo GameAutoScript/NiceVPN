@@ -437,7 +437,7 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: '301,541,572,590,688,696,741,742|未知64 #1'
+  name: '301,688,696,741,742|未知64 #2'
   network: tcp
   port: '51193'
   server: 183.238.202.173
@@ -448,7 +448,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '301,741,742|未知809 #1'
+  name: '301,741,742|未知809 #2'
   network: tcp
   port: '15607'
   server: 183.232.199.61
@@ -459,7 +459,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '301,731,741,742|未知407 #1'
+  name: '301,731,741,742|未知407 #2'
   network: tcp
   port: '15605'
   server: 183.232.199.28
@@ -470,7 +470,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '301,741,742|未知322 #1'
+  name: '301,741,742|未知322 #2'
   network: tcp
   port: '15603'
   server: 183.240.179.195
@@ -494,7 +494,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '301,729,741,742|未知400 #1'
+  name: '301,729,741,742|未知400 #2'
   network: tcp
   port: '50002'
   server: 120.210.205.82
@@ -505,21 +505,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '301,729|🔒 VM-WS-NA 🇨🇳 CN-120.240.88.20... #3'
-  network: ws
-  port: '40396'
-  server: 120.240.88.208
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f1b9745c-c302-4e31-81c3-db937dcecee7
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '301,729,742|未知350 #1'
+  name: '301,742|未知350 #2'
   network: ws
   port: '32460'
   server: 120.240.88.208
@@ -527,6 +513,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 6e6bd87c-eca6-48fd-9337-c4f8d075622d
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '301|🔒 VM-WS-NA 🇨🇳 CN-120.240.88.20... #1'
+  network: ws
+  port: '40396'
+  server: 120.240.88.208
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f1b9745c-c302-4e31-81c3-db937dcecee7
   ws-opts:
     headers:
       Host: tms.dingtalk.com
@@ -1439,19 +1439,15 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
-- name: 540|[Trojan] 🇨🇳 中国 阿里云
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.218.173.78
-  skip-cert-verify: true
-  sni: mfjd.591haoka.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 540,680|🇸🇬 SG 01
+  password: a4ac2592-28e7-4927-94b3-277edae0869a
+  port: 50105
+  server: iepl2.forlive.live
+  tfo: false
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560
 - alterId: 4
   cipher: auto
   name: '542,600|未命名 #199'
@@ -5949,7 +5945,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 697,741|未知603
+  name: '697,741|未知603 #1'
   network: ws
   port: 16632
   server: m.cnmjin.net
@@ -6124,7 +6120,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '730,731|广东省 移动 #6'
+  name: '730,731|广东省 移动 #3'
   network: ws
   port: '16632'
   server: 120.233.204.126
