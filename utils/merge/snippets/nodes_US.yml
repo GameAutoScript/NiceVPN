@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,2,3,48,303,446,447,449,450,451,628,645,678,679,681,784|美国_0611056
+  name: 0,1,2,3,48,303,446,447,449,450,451,628,645,678,679,681,768,776,784|美国_0611056
   network: ws
   port: '8080'
   server: 148.135.40.190
@@ -17,7 +17,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 0,3,48,303,446,447,449,450,451,580,600,645,678,679,736,737,748,782,784|美国_0611013
+  name: 0,3,48,303,446,447,449,450,451,580,645,678,679,736,737,748,782,784|美国_0611013
   network: ws
   port: '8080'
   server: russia.com
@@ -26,7 +26,6 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
   ws-opts:
     headers:
@@ -46,9 +45,10 @@ proxies:
     headers:
       host: sssub.v2.001.ssrsub.com
     path: /api/v3/download.getFile
-- grpc-opts:
+- client-fingerprint: chrome
+  grpc-opts:
     grpc-service-name: 443trojan
-  name: '1,2,628|🇺🇸_US_美国_2 #1'
+  name: '1,2,600,628|🇺🇸_US_美国_2 #1'
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -170,17 +170,13 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '16,119,303,600,678,679|🇺🇸 美国 CloudFlare节点 #40'
+  name: 16,119,303|🏁RELAY-104.16.255.227-0135
   network: ws
-  port: '2052'
+  port: 2052
   server: hk.wish.ml
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: cf8d5979-31a2-47a1-9075-f64ae5abea6e
   ws-opts:
     headers:
@@ -201,68 +197,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,520,526,736,747|US455 1.9MB/s
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 38.121.43.71
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 19,520,526,747|US275 1.9MB/s
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 38.68.135.18
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,181,520,526,736,747|US481 20.8MB/s
-  password: lWaGPVFjmnag
-  port: 443
-  server: 205.134.180.139
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
   country: ' US'
-  name: 19,181,747|US530 2.0MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 167.88.62.62
+  name: 19,747|US181 1.6MB/s
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.75.137.71
   skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: ' US'
-  name: 19,747|US321 1.6MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 169.197.142.216
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,181,520,526,736,747|US179 1.9MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.110.1.201
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: ss
 - alterId: 0
@@ -280,10 +220,59 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 19,181,520,526,747|US26 1.9MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8882
+  name: 19,520,526,747|US529 1.7MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 38.75.136.21
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: ' US'
+  name: 19,747|US154 1.7MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 169.197.142.216
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 19,520,526,736,747|US576 1.8MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 3306
   server: 38.121.43.71
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: ' US'
+  name: 19,181,747|US530 2.0MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 167.88.62.62
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: ' US'
+  name: 19| US_67
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 38.75.137.71
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: ' US'
+  name: 19,747|US569 1.8MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 142.202.48.105
   skip-cert-verify: true
   tls: true
   type: ss
@@ -305,6 +294,18 @@ proxies:
   password: KixLvKzwjekG00rm
   port: 8000
   server: 38.75.137.71
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 19,181,520,526,736,747|US179 1.9MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.110.1.201
   skip-cert-verify: true
   tfo: false
   tls: true
@@ -335,11 +336,11 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 19,520,526,747|US529 1.7MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 38.75.136.21
+  country: ' US'
+  name: 19,181,747|US353 2.0MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 167.88.62.62
   skip-cert-verify: true
   tls: true
   type: ss
@@ -407,12 +408,29 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇺🇸US
-  name: 19,520,526,736,747|US43 1.9MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8881
+  name: 19,520,526,736,747|US455 1.9MB/s
+  password: XKFKl2rULjIp74
+  port: 8009
   server: 38.121.43.71
   skip-cert-verify: true
   tfo: false
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: ' US'
+  name: 19| US_82
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 142.202.48.105
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: ' US'
+  name: 19,747|US321 1.6MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 169.197.142.216
+  skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
@@ -429,79 +447,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇸US
-  name: 19,520,526,736,747|US576 1.8MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 38.121.43.71
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: ' US'
-  name: 19| US_85
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 38.75.137.71
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: ' US'
-  name: 19,747|US154 1.7MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 169.197.142.216
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: ' US'
-  name: 19,747|US181 1.6MB/s
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 38.75.137.71
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: ' US'
-  name: 19| US_88
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 38.75.137.71
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: ' US'
-  name: 19,747|US569 1.8MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 142.202.48.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: ' US'
-  name: 19,181,747|US353 2.0MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 167.88.62.62
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: ' US'
-  name: 19| US_91
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 142.202.48.105
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
   country: ' US'
   name: 19,747|US606 1.6MB/s
   password: KixLvKzwjekG00rm
@@ -511,15 +456,13 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,181,520,526,736,747|US244 5.2MB/s
-  password: H5S0hvcxRi#YLmgU
-  port: 1230
-  server: 38.107.226.146
+  cipher: aes-256-gcm
+  country: 🇸US
+  name: 19,181,520,526,747|US26 1.9MB/s
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.121.43.71
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: ss
 - alterId: 0
@@ -544,6 +487,16 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 19,520,526,747|US275 1.9MB/s
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 38.68.135.18
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
   country: ' US'
   name: 19,747|US261 1.6MB/s
   password: Y6R9pAtvxxzmGC
@@ -552,12 +505,55 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 19,181,520,526,736,747|US244 5.2MB/s
+  password: H5S0hvcxRi#YLmgU
+  port: 1230
+  server: 38.107.226.146
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 19,181,268,520,736,747|US481 20.8MB/s
+  password: lWaGPVFjmnag
+  port: 443
+  server: 205.134.180.139
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: ' US'
+  name: 19| US_93
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 38.75.137.71
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 19,520,526,736,747|US43 1.9MB/s
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 38.121.43.71
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
 - alterId: 64
   cipher: auto
-  country: ' US'
+  country: 🇸US
   h2-opts: {}
   http-opts: {}
-  name: 19,681,727,735,737|美国加利福尼亚州洛杉矶 PetaExpress
+  name: 19,268,303,681,727,735,737|美国加利福尼亚州洛杉矶 PetaExpress
   network: tcp
   port: '41400'
   server: 198.2.218.102
@@ -1128,7 +1124,7 @@ proxies:
     headers:
       Host: sxus2.suixincloud.top
     path: /?ed=2048
-- name: '111,546,604|美国 044 #1'
+- name: '111,604|美国 044 #1'
   network: ws
   password: NISHIKUITAN222
   port: 8443
@@ -1141,7 +1137,7 @@ proxies:
     headers:
       Host: t009.ylks.link
     path: /
-- name: '111,546,604|美国 045 #1'
+- name: '111,604|美国 045 #1'
   network: ws
   password: NISHIKUITAN222
   port: 8443
@@ -1156,7 +1152,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '111,546,547,596,604|美国 050 #1'
+  name: '111,604|美国 050 #1'
   network: ws
   port: 8080
   server: 148.135.40.190
@@ -1169,8 +1165,7 @@ proxies:
     headers:
       Host: 148.135.40.190
     path: /index?ed=2560
-- client-fingerprint: chrome
-  name: '111,546,600,604|美国 053 #1'
+- name: '111,604|美国 053 #1'
   network: ws
   password: NISHIKUITAN222
   port: 8443
@@ -2008,20 +2003,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 182,559,561,595,727|🔒 VM-TCP-NA 🇺🇸 US-162.251.62.1...
-  network: tcp
-  port: '22324'
-  server: 162.251.62.115
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
   country: US
   fingerprint: ''
@@ -2041,20 +2022,20 @@ proxies:
     headers:
       host: obdii.cfd
     path: /linkws
-- country: US
-  fingerprint: chrome
-  name: '182|disney_netflix_US #2'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: cloudflare.cfgo.cc
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.multacom.fxxk.dedyn.io
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 182,559,561,595,727|🔒 VM-TCP-NA 🇺🇸 US-162.251.62.1...
+  network: tcp
+  port: '22324'
+  server: 162.251.62.115
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: 184|超级|美国1
@@ -2713,11 +2694,21 @@ proxies:
       Host: usakansas.xlb8.eu.org
     path: /?ed=2560
 - alterId: 0
+  cipher: aes-256-gcm
+  country: 🇸US
+  name: 268,747|US453 1.7MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.114.114.207
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   name: 277|🇺🇸美国区域1自动运维节点
   network: tcp
   port: '20183'
-  server: ntRJUA.gov.goldliond.top
+  server: TYIDN3.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -2726,7 +2717,7 @@ proxies:
   name: 277|🇺🇸美国区域2自动运维节点
   network: tcp
   port: '20183'
-  server: yE7gZB.gov.goldliond.top
+  server: gV7Ued.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -2735,7 +2726,7 @@ proxies:
   name: 277|🇺🇸美国区域3自动运维节点
   network: tcp
   port: '20183'
-  server: 0hOaEu.gov.goldliond.top
+  server: wcwJMQ.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -2744,7 +2735,7 @@ proxies:
   name: 277|🇺🇸美国区域1-三网优化-解锁Netflix/DisneyP...
   network: tcp
   port: '40185'
-  server: YUNdio.gov.goldliond.top
+  server: npTr8T.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -8863,7 +8854,7 @@ proxies:
     path: /pNV7izRFLO8rGCkIH66kMFPa
 - alterId: 0
   cipher: auto
-  name: '294,546,547,580,596,629,782|未知_0610392 #1'
+  name: '294,580,629,782|未知_0610392 #1'
   network: ws
   port: '80'
   server: 104.21.75.246
@@ -8871,7 +8862,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: d1fb628c-206e-42a7-837b-4147255fbaeb
   ws-opts:
     headers:
@@ -9703,7 +9693,7 @@ proxies:
     path: /path/040318142507
 - alterId: 0
   cipher: auto
-  name: '303,681,748|US543 2.7MB/s #2'
+  name: '303,681,748,768,776|رایگان | VMESS | @Hope_Net | U... #17'
   network: ws
   port: '443'
   server: hms182.glweidf.sbs
@@ -9958,33 +9948,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '303,560,600,678,679|🇺🇸 美国 CloudFlare节点 #41'
+  name: 303,560|美国_061118588
   network: ws
   port: '443'
   server: Averzio.rafalion.ir.
-  servername: Caetani.rafalion.ir.
-  skip-cert-verify: false
-  tfo: false
+  servername: ''
   tls: true
   type: vmess
-  udp: true
   uuid: 6d44da84-f815-411e-8f56-e6cfb3aea2ce
   ws-opts:
     headers:
       Host: Averzio.rafalion.ir.
     path: /
-- alterId: 0
-  cipher: auto
-  name: '303,559,561,681,727,735,747,748|US428 #2'
-  network: tcp
-  port: '42598'
-  server: 129.146.247.135
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
 - alterId: 0
   cipher: auto
   name: '303,543,727,735|🔒 VM-TCP-NA 🇺🇸 US-172.233.164.... #2'
@@ -9997,43 +9972,21 @@ proxies:
   uuid: 4242d74d-b748-4e74-a7c2-2bfb9d6ed121
 - alterId: 0
   cipher: auto
-  name: '303,681,735,747,748|US582 #2'
+  name: '303,559,561,681,727,735,747,748|US428 #2'
   network: tcp
-  port: '46628'
-  server: 2.58.87.221
+  port: '42598'
+  server: 129.146.247.135
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: f6ba9e5a-711c-496f-be60-ac5464dec2b8
+  uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
 - alterId: 64
   cipher: auto
   name: '303,647,681,727,735,747,748|US95 N/A/s #2'
   network: tcp
   port: '45017'
   server: 142.0.134.241
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '303,543,727,735,747,748|US201 2.7KB/s #2'
-  network: tcp
-  port: '39027'
-  server: 174.136.205.46
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 26419143-8a06-43ab-d58c-bea7b7da8203
-- alterId: 64
-  cipher: auto
-  name: '303,647,681,727,735,747,748|US596 9.7MB/s #2'
-  network: tcp
-  port: '41911'
-  server: 107.148.192.148
   servername: ''
   skip-cert-verify: true
   tls: false
@@ -10050,39 +10003,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 40bc7b65-ec8a-3201-a646-c9d1b71091c6
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '303,560,681|🔒 VM-TCP-NA 🇺🇸 US-198.2.218.10... #2'
+  name: '303,543,727,735,747,748|US201 2.7KB/s #2'
   network: tcp
-  port: '41400'
-  server: 198.2.218.108
+  port: '39027'
+  server: 174.136.205.46
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '303,314,541,543,727,735|🔒 VM-WS-TLS 🇺🇸 US-146.235.223.... #2'
-  network: ws
-  port: '25943'
-  server: 146.235.223.24
-  servername: oracle1.mysupp.com
-  tls: true
-  type: vmess
-  uuid: 520c82fe-3e74-43b9-9dfb-87cae71e8cc0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /canada
-- alterId: 0
-  cipher: auto
-  name: '303,727,735|🔒 VM-TCP-NONE 🇺🇸 US-45.55.201.... #2'
-  network: tcp
-  port: 28774
-  server: 45.55.201.210
-  tls: false
-  type: vmess
-  uuid: 49f275eb-bf50-40ce-b615-7c67cfac187e
+  uuid: 26419143-8a06-43ab-d58c-bea7b7da8203
 - alterId: 0
   cipher: auto
   name: '303,727,735|🔒 VM-WS-NA 🇺🇸 US-40.233.80.189... #2'
@@ -10099,15 +10030,35 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '303,559,561,595,681,727,735,747,748|US263 8.0MB/s #2'
+  name: '303,681,735,747,748|US582 #2'
   network: tcp
-  port: '22324'
-  server: 38.75.137.27
+  port: '46628'
+  server: 2.58.87.221
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: f6ba9e5a-711c-496f-be60-ac5464dec2b8
+- alterId: 64
+  cipher: auto
+  name: '303,647,681,727,735,747,748|US596 9.7MB/s #2'
+  network: tcp
+  port: '41911'
+  server: 107.148.192.148
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '303,735|🔒 VM-TCP-NA 🇺🇸 US-108.181.200.... #1'
+  network: ''
+  port: 17163
+  server: 108.181.200.220
+  tls: false
+  type: vmess
+  uuid: d54814a1-7a93-45f8-9117-db317a25d100
 - alterId: 0
   cipher: auto
   name: '303,735,747,748|US285 #2'
@@ -10119,6 +10070,143 @@ proxies:
   tls: false
   type: vmess
   uuid: b246e34d-bbd1-4016-8f74-ea461c37e411
+- alterId: 0
+  cipher: auto
+  name: '303,559,561,595,681,727,735,747,748|US263 8.0MB/s #2'
+  network: tcp
+  port: '22324'
+  server: 38.75.137.27
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '303,727,735|🔒 VM-TCP-NONE 🇺🇸 US-45.55.201.... #2'
+  network: tcp
+  port: 28774
+  server: 45.55.201.210
+  tls: false
+  type: vmess
+  uuid: 49f275eb-bf50-40ce-b615-7c67cfac187e
+- alterId: 0
+  cipher: auto
+  name: '303,314,541,543,727,735|🔒 VM-WS-TLS 🇺🇸 US-146.235.223.... #2'
+  network: ws
+  port: '25943'
+  server: 146.235.223.24
+  servername: oracle1.mysupp.com
+  tls: true
+  type: vmess
+  uuid: 520c82fe-3e74-43b9-9dfb-87cae71e8cc0
+  ws-opts:
+    headers:
+      Host: ''
+    path: /canada
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 303,560,600,601,678,679,681|美国|最低35%-aff招募进行中|共享 - 大白
+  network: ws
+  port: 2052
+  server: 172.67.75.25
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 13932f17-6d18-3254-8c8f-9de140c5a64c
+  ws-opts:
+    headers:
+      Host: 100-100-17-481.cn-db.top
+    path: /dabai.in172.67.75.25
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 303,600,601,678,679,681|美国|【使用前请更新订阅】每日会变更节点密码|GPT+流媒体...
+  network: ws
+  port: 2095
+  server: 104.21.200.220
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 13932f17-6d18-3254-8c8f-9de140c5a64c
+  ws-opts:
+    headers:
+      Host: 100-100-17-317.db-link01.top
+    path: /dabai.in104.21.200.220
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '303,600,601,678,679|🇺🇸 美国 CloudFlare节点 #32'
+  network: ws
+  port: '80'
+  server: 104.18.54.24
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 831201cc-07fb-44dd-a1cb-e70beee00268
+  ws-opts:
+    headers:
+      Host: dl2.mrarsha迪亞波利克.惡魔你是誰.diehart2.在良好的手中.mikolo.suonycars.buzz.
+    path: /etc
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 303,445,580,600,601,678,679,736,737,782,784|美国_0611058
+  network: ws
+  port: '2095'
+  server: russia.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
+  ws-opts:
+    headers:
+      Host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  name: 303,601,681|Relay_🏁ZZ-🇺🇸US_221 | 7.00Mb
+  network: ws
+  port: '80'
+  server: 104.19.33.224
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: sgv6.xlb8.eu.org
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '303,560,600,601,678,679|🇺🇸 美国 CloudFlare节点 #36'
+  network: ws
+  port: '80'
+  server: 104.21.69.44
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9b485f57-c54b-40d0-bee7-13cee16f1e42
+  ws-opts:
+    headers:
+      Host: De2.vmess.site.
+    path: /vmess
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -10204,24 +10292,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '303,571|رایگان | VMESS | @Hope_Net | U... #7'
-  network: ws
-  port: '80'
-  server: 93.123.11.13
-  servername: sanapardaz.onthewifi.com
-  tls: false
-  type: vmess
-  uuid: 3e57354f-ff12-4536-81f9-c6155ef18b69
-  ws-opts:
-    headers:
-      Host: sanapardaz.onthewifi.com
-    path: /@V2RAY_CONFIGS_POOL
-- alterId: 0
-  cipher: auto
   name: '303,571|رایگان | VMESS | @Hope_Net | U... #10'
   network: ws
   port: '80'
-  server: 92.223.76.24
+  server: 79.133.108.4
   servername: sanapardaz.onthewifi.com
   tls: false
   type: vmess
@@ -11220,65 +11294,139 @@ proxies:
     headers:
       Host: hxgmnz.freefly.pp.ua
     path: /
-- cipher: aes-256-gcm
-  country: 🇸US
-  name: 520|🇸US_83
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.75.136.33
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇸US_84
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 38.75.137.42
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇸US_85
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.75.137.42
-  type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US286 1.7MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
+  country: 🇸US
+  name: 520,747|US106 1.6MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
   server: 38.75.137.42
   skip-cert-verify: true
   tls: true
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇸US_87
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 38.75.136.33
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇸US_88
+  name: 520|🇸US_83
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 38.75.136.33
   type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US438 1.6MB/s
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.75.137.105
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇺🇸US_89
-  password: Y6R9pAtvxxzmGC
-  port: 3389
+  name: 520|🇸US_86
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.75.136.33
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US146 1.6MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.75.136.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇸US_88
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.75.137.42
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_92
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 38.75.137.42
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_93
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 38.75.137.93
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇸US_94
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 38.75.136.33
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_106
+  password: TEzjfAYq2IjtuoS
+  port: 6679
   server: 38.75.137.93
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520,747|US175 1.7MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5600
+  name: 520,747|US282 1.7MB/s
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 38.75.137.42
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_111
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.75.137.93
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US140 1.6MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 38.75.136.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US215 1.7MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.75.137.93
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US553 1.7MB/s
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 38.75.137.93
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US381 1.7MB/s
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 38.75.137.93
   skip-cert-verify: true
   tls: true
   type: ss
@@ -11294,50 +11442,26 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇺🇸US_106
+  name: 520|🇺🇸US_117
   password: KixLvKzwjekG00rm
-  port: 8000
+  port: 8080
+  server: 38.75.136.33
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US563 1.7MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5600
   server: 38.75.137.42
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇸US_107
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 38.75.136.33
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇺🇸US_108
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 38.75.137.93
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US146 1.6MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US310 1.6MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 38.75.137.105
   skip-cert-verify: true
   tls: true
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇺🇸US_111
-  password: kDWvXYZoTBcGkC4
-  port: 8881
+  name: 520|🇸US_119
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 38.75.137.42
   type: ss
 - alterId: 0
@@ -11349,6 +11473,50 @@ proxies:
   server: 38.75.137.105
   skip-cert-verify: true
   tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US287 1.7MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 38.75.137.93
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_122
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 38.75.137.42
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US111 1.7MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.75.137.105
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US233 1.6MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 38.75.136.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_125
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 38.75.137.93
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -11372,7 +11540,21 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇺🇸US_115
+  name: 520|🇺🇸US_128
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 38.75.137.93
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇸US_129
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.75.137.42
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_130
   password: e4FCWrgpkji3QY
   port: 9102
   server: 38.75.137.93
@@ -11380,40 +11562,10 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520,747|US233 1.6MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US287 1.7MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 38.75.137.93
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US111 1.7MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 38.75.137.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US438 1.6MB/s
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.75.137.105
+  name: 520,747|US286 1.7MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.75.137.42
   skip-cert-verify: true
   tls: true
   type: ss
@@ -11429,10 +11581,34 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇺🇸US_122
-  password: TEzjfAYq2IjtuoS
-  port: 6679
+  name: 520|🇺🇸US_133
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.75.136.33
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US175 1.7MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 38.75.136.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_135
+  password: zDNVedRFPQexG9v
+  port: 6379
   server: 38.75.137.93
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_136
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 38.75.137.105
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -11444,90 +11620,19 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US563 1.7MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 38.75.137.42
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇺🇸US_125
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 38.75.137.93
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇺🇸US_126
-  password: FoOiGlkAA9yPEGP
-  port: 7306
+  name: 520|🇺🇸US_139
+  password: cdBIDV42DCwnfIN
+  port: 8118
   server: 38.75.136.33
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US553 1.7MB/s
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 38.75.137.93
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US282 1.7MB/s
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 38.75.137.42
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇺🇸US_131
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 38.75.137.93
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US215 1.7MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.75.137.93
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇺🇸US_134
+  name: 520|🇺🇸US_140
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 38.75.137.93
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇺🇸US_135
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 38.75.137.105
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US140 1.6MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -11542,27 +11647,20 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520,747|US527 1.6MB/s
+  name: 520,747,753|[02-24]-🇺🇸-美国华盛顿-109-38.143.66...
   password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 38.75.136.33
+  port: 5000
+  server: 38.143.66.87
   skip-cert-verify: true
   tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇺🇸US_139
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.75.136.33
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520,747|US381 1.7MB/s
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 38.75.137.93
+  name: 520,747|US310 1.6MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.75.137.105
   skip-cert-verify: true
   tls: true
   type: ss
@@ -11579,6 +11677,26 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
+  name: 520,747|US320 1.6MB/s
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 38.75.137.105
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US527 1.6MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 38.75.136.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
   name: 520,747|US5 1.7MB/s
   password: cdBIDV42DCwnfIN
   port: 8119
@@ -11588,7 +11706,24 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇸US_143
+  name: 520|🇸US_148
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 38.75.137.93
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US448 1.7MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.75.137.93
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520|🇺🇸US_150
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 38.75.137.105
@@ -11605,78 +11740,10 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520|🇺🇸US_145
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.75.137.42
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US106 1.6MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.75.137.42
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US320 1.6MB/s
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 38.75.137.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇺🇸US_148
+  name: 520|🇺🇸US_152
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 38.75.137.42
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747,753|[02-24]-🇺🇸-美国华盛顿-109-38.143.66...
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 38.143.66.87
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520,747|US448 1.7MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.75.137.93
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇺🇸US_151
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 38.75.137.93
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇺🇸US_153
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 38.75.137.93
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 520|🇺🇸US_155
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 38.121.43.65
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -11698,15 +11765,12 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 520,747|US435 1.9MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 142.202.48.43
-  skip-cert-verify: true
-  tls: true
+  name: 520|🇸US_156
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 38.121.43.65
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -11714,6 +11778,16 @@ proxies:
   name: 520,747|US632 1.9MB/s
   password: PCnnH6SQSnfoS27
   port: 8090
+  server: 142.202.48.43
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 520,747|US435 1.9MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 142.202.48.43
   skip-cert-verify: true
   tls: true
@@ -11731,7 +11805,7 @@ proxies:
   type: ssr
 - cipher: aes-192-ctr
   country: 🇺🇸US
-  name: 520|Relay_🇸US-🇺🇸US_168
+  name: 520|Relay_🇺🇸US-🇺🇸US_167
   obfs: tls1.2_ticket_auth
   password: JUBXCP
   port: 19155
@@ -13010,491 +13084,6 @@ proxies:
     headers:
       Host: YTB-awkj
     path: /
-- alterId: 0
-  cipher: auto
-  name: '546,547,596,629,630|🇺🇸_US_美国 #30'
-  network: ws
-  port: 2082
-  server: 206.168.190.219
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e31ca750-71f7-11ee-b920-1239d0255272
-  ws-opts:
-    path: /vmws
-- alterId: 0
-  cipher: auto
-  name: '546,547,596,630|🇺🇸_US_美国 #31'
-  network: ws
-  port: 80
-  server: wnd2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: wnd2.shabijichang.com
-    path: /
-- alterId: 64
-  cipher: auto
-  name: '546,547,596,629|🇺🇸_US_美国_3 #1'
-  network: ws
-  port: 30000
-  server: 45.199.138.186
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
-  ws-opts:
-    headers:
-      host: www.19229362.xyz
-    path: /path/1696682720138
-- alterId: 0
-  cipher: auto
-  name: '546,547,580,596,630,782|未知_0610331 #1'
-  network: ws
-  port: '80'
-  server: wnd3.shabijichang.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: wnd3.shabijichang.com
-    path: /
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2087
-  server: 104.19.53.126
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 2
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.52.141
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 3
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.52.142
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 4
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2053
-  server: 104.19.53.74
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 5
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.52.179
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  name: 546,547,560,578,596,601,681|美国|最低35%-aff招募进行中|共享 - 大白
-  network: ws
-  port: 2052
-  server: 172.67.75.25
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 13932f17-6d18-3254-8c8f-9de140c5a64c
-  ws-opts:
-    headers:
-      Host: 100-100-17-481.cn-db.top
-    path: /dabai.in172.67.75.25
-- client-fingerprint: chrome
-  name: 546,600|🇺🇸 美国 CloudFlare节点 14
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2087
-  server: 104.19.53.215
-  skip-cert-verify: false
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 8
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2096
-  server: 104.19.52.230
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 9
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.52.232
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 10
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.52.66
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 13
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 443
-  server: 104.19.52.172
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 14
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2087
-  server: 104.19.53.105
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  name: 546,547,578,596,601,681|美国|【使用前请更新订阅】每日会变更节点密码|GPT+流媒体...
-  network: ws
-  port: 2095
-  server: 104.21.200.220
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 13932f17-6d18-3254-8c8f-9de140c5a64c
-  ws-opts:
-    headers:
-      Host: 100-100-17-317.db-link01.top
-    path: /dabai.in104.21.200.220
-- alterId: 0
-  cipher: auto
-  name: '546,547,578,596,601|美国 CloudFlare节点 #18'
-  network: ws
-  port: 80
-  server: 104.18.54.24
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 831201cc-07fb-44dd-a1cb-e70beee00268
-  ws-opts:
-    headers:
-      Host: dl2.mrarsha迪亞波利克.惡魔你是誰.diehart2.在良好的手中.mikolo.suonycars.buzz.
-    path: /etc
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 15
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 443
-  server: 104.19.52.144
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 17
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 443
-  server: 104.19.52.175
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 18
-  network: ws
-  password: auto
-  port: 2053
-  server: 104.18.12.229
-  skip-cert-verify: true
-  sni: e9464f45.trauma-2r4.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: e9464f45.trauma-2r4.pages.dev
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '546,547,596|🇺🇸 美国 CloudFlare节点 #33'
-  network: ws
-  port: '8080'
-  server: 104.26.9.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      Host: dual-nothing-prep-exit.trycloudflare.com
-    path: /
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 19
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2053
-  server: 104.19.52.137
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 20
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2087
-  server: 104.19.52.107
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 21
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2096
-  server: 104.19.52.213
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 22
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2087
-  server: 104.19.52.11
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 23
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 443
-  server: 104.19.52.181
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '546,547,596|🇺🇸 美国 CloudFlare节点 #34'
-  network: ws
-  port: '80'
-  server: 104.19.33.224
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: sgv6.xlb8.eu.org
-    path: /?ed=2048&Telegram🇨🇳
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 24
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.53.79
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 25
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2087
-  server: 104.19.52.71
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 26
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2096
-  server: 104.19.52.229
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 27
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.52.127
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  name: '546,547,560,578,596,601|美国 CloudFlare节点 #22'
-  network: ws
-  port: 80
-  server: 104.21.69.44
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9b485f57-c54b-40d0-bee7-13cee16f1e42
-  ws-opts:
-    headers:
-      Host: De2.vmess.site.
-    path: /vmess
-- name: 546|[Trojan] 🇺🇸 美国 CloudFlare节点 28
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2096
-  server: 104.19.52.67
-  skip-cert-verify: true
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 546,747|未知1302 1.8MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 9090
-  server: 23.162.200.215
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 546,747|US627 1.6MB/s
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 38.114.114.143
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 548|🇺🇸美国(绿头外网集团)(Public)
@@ -18092,6 +17681,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '560,681|🔒 VM-TCP-NA 🇺🇸 US-198.2.218.10... #2'
+  network: tcp
+  port: '41400'
+  server: 198.2.218.108
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 560,595,761|🏁RELAY-172.67.183.220-3842
@@ -19136,20 +18735,6 @@ proxies:
     path: /mePGXW6SFZZw2QyAqaYK
 - alterId: 0
   cipher: auto
-  name: 578,601,681|Relay_🏁ZZ-🇺🇸US_221 | 7.00Mb
-  network: ws
-  port: '80'
-  server: 104.19.33.224
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-  ws-opts:
-    headers:
-      Host: sgv6.xlb8.eu.org
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
   name: '580,782|亚美尼亚_0610002 #1'
   network: ws
   port: '443'
@@ -19886,6 +19471,20 @@ proxies:
     headers:
       Host: ''
     path: /sshkit/1350195536/63a625eb069d5/
+- alterId: 0
+  cipher: auto
+  name: '580,782|未知_0610172 #1'
+  network: ws
+  port: '2052'
+  server: yx3.gyyun.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 92956f18-b72f-474e-9ed4-233a637ca657
+  ws-opts:
+    headers:
+      Host: yx3.gyyun.top
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: '580,782|美国_0610212 #1'
@@ -21105,6 +20704,20 @@ proxies:
     path: /ECTCJ0DF
 - alterId: 0
   cipher: auto
+  name: '580,630,782|未知_0610331 #1'
+  network: ws
+  port: '80'
+  server: wnd3.shabijichang.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: wnd3.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 580,782|美国_0610330
   network: ws
   port: '80'
@@ -21133,6 +20746,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 580,630,782|美国_0610333
+  network: ws
+  port: '80'
+  server: ld2.shabijichang.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: ld2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: '580,782|美国_0610334 #1'
   network: ws
   port: '80'
@@ -21144,6 +20771,20 @@ proxies:
   ws-opts:
     headers:
       Host: asb2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '580,630,782|未知_0610335 #1'
+  network: ws
+  port: '80'
+  server: jd3.shabijichang.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: jd3.shabijichang.com
     path: /
 - alterId: 0
   cipher: auto
@@ -21369,7 +21010,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '591|美国 CloudFlare节点 #12'
+  name: '591|美国 CloudFlare节点 #9'
   network: ws
   port: 2095
   server: 172.64.194.234
@@ -21382,7 +21023,7 @@ proxies:
     path: /hgcefomn
 - alterId: 0
   cipher: auto
-  name: '591|美国 CloudFlare节点 #13'
+  name: '591|美国 CloudFlare节点 #10'
   network: ws
   port: 8880
   server: 141.101.123.18
@@ -21395,7 +21036,7 @@ proxies:
     path: /qwer
 - alterId: 0
   cipher: auto
-  name: '591|美国 CloudFlare节点 #14'
+  name: '591|美国 CloudFlare节点 #11'
   network: ws
   port: 8080
   server: 198.41.218.144
@@ -21409,7 +21050,7 @@ proxies:
     path: /qwer01
 - alterId: 0
   cipher: auto
-  name: '591|美国 CloudFlare节点 #15'
+  name: '591|美国 CloudFlare节点 #12'
   network: ws
   port: 8080
   server: 162.159.241.157
@@ -23057,7 +22698,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '594|🇺🇸 美国 CloudFlare节点 #28'
+  name: '594|🇺🇸 美国 CloudFlare节点 #21'
   network: ws
   port: '443'
   server: juziawsus.nmsl.pics
@@ -23499,11 +23140,11 @@ proxies:
       Host: xui.mycf.ml
     path: /
 - client-fingerprint: chrome
-  name: '600|🇺🇸 美国 CloudFlare节点 #36'
+  name: '600|🇺🇸 美国 CloudFlare节点 #22'
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2087
-  server: 104.19.52.4
+  server: 104.19.53.126
   skip-cert-verify: false
   sni: tjjd.yzyx1.v6.army
   type: trojan
@@ -23514,62 +23155,6 @@ proxies:
     path: /?ed=2048
 - client-fingerprint: chrome
   name: 600|🇺🇸 美国 CloudFlare节点 2
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2096
-  server: 104.19.53.246
-  skip-cert-verify: false
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 600|🇺🇸 美国 CloudFlare节点 3
-  network: ws
-  password: NISHIKUITAN222
-  port: 2053
-  server: 104.21.76.195
-  skip-cert-verify: false
-  sni: t111.ylks.link
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: t111.ylks.link
-    path: /
-- client-fingerprint: chrome
-  name: 600|🇺🇸 美国 CloudFlare节点 4
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.52.197
-  skip-cert-verify: false
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 600|🇺🇸 美国 CloudFlare节点 5
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 2083
-  server: 104.19.53.168
-  skip-cert-verify: false
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 600|🇺🇸 美国 CloudFlare节点 6
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2083
@@ -23583,51 +23168,94 @@ proxies:
       Host: tjjd.yzyx1.v6.army
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 600|🇺🇸 美国 阿里云
+  name: 600|🇺🇸 美国 CloudFlare节点 3
   network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 47.237.84.173
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2083
+  server: 104.19.52.142
   skip-cert-verify: false
-  sni: t111.ylks.link
+  sni: tjjd.yzyx1.v6.army
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: t111.ylks.link
-    path: /
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 4
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2053
+  server: 104.19.53.74
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 5
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2083
+  server: 104.19.52.179
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 600,677,747|🇺🇸US美国7
-  password: fLAIbz76BnOmJ6HNuK2qvm
-  port: 80
-  server: 172.233.51.128
+  name: 600,677,747|未知1302 1.8MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 9090
+  server: 23.162.200.215
   skip-cert-verify: true
   tfo: false
   tls: true
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 600|🇺🇸 美国 阿里云 2
+  name: 600|🇺🇸 美国 CloudFlare节点 7
   network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 47.237.95.13
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2087
+  server: 104.19.53.215
   skip-cert-verify: false
-  sni: t111.ylks.link
+  sni: tjjd.yzyx1.v6.army
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: t111.ylks.link
-    path: /
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: xw7uebRG4KlUXGGYTVEagC5V7fI
+  name: 600,736,747|未知1627
+  network: grpc
+  password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
+  port: 443
+  server: 104.21.47.176
+  skip-cert-verify: true
+  sni: hdfyc1.achaemenidempireofpersia.uk
+  tls: true
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: 600,736|🇺🇸 美国+CloudFlare节点 2
+  name: 600|🇺🇸 美国 CloudFlare节点 9
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2096
-  server: 104.19.52.250
+  server: 104.19.52.230
   skip-cert-verify: false
   sni: tjjd.yzyx1.v6.army
   type: trojan
@@ -23639,75 +23267,9 @@ proxies:
 - client-fingerprint: chrome
   name: 600|🇺🇸 美国 CloudFlare节点 10
   network: ws
-  password: NISHIKUITAN222
-  port: 2053
-  server: 104.26.13.31
-  skip-cert-verify: false
-  sni: t111.ylks.link
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: t111.ylks.link
-    path: /
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 600,677,747|🇺🇸US美国13 1.8MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 23.162.200.77
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 600|🇺🇸 美国 阿里云 3
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 47.236.170.225
-  skip-cert-verify: false
-  sni: t111.ylks.link
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: t111.ylks.link
-    path: /
-- client-fingerprint: chrome
-  name: 600|🇺🇸 美国 CloudFlare节点 13
-  network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 8443
-  server: 104.19.53.181
-  skip-cert-verify: false
-  sni: tjjd.yzyx1.v6.army
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /
-- alterId: 0
-  cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 600,677,747|🇺🇸US美国22
-  password: Yc2CtrIz8L
-  port: 30129
-  server: 172.245.205.50
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 600|🇺🇸 美国 CloudFlare节点 16
-  network: ws
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  port: 8443
-  server: 104.19.52.185
+  port: 2083
+  server: 104.19.52.232
   skip-cert-verify: false
   sni: tjjd.yzyx1.v6.army
   type: trojan
@@ -23717,11 +23279,94 @@ proxies:
       Host: tjjd.yzyx1.v6.army
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 600|🇺🇸 美国 CloudFlare节点 17
+  name: 600|🇺🇸 美国 CloudFlare节点 11
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2083
+  server: 104.19.52.66
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 600,747|未知1347
+  network: grpc
+  password: f85e2ad7-3e26-4589-b478-b0b15b9b5907
+  port: 2087
+  server: 104.21.20.148
+  skip-cert-verify: true
+  sni: us1.trojanvpn.de
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 600,677,747|US627 1.6MB/s
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 38.114.114.143
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 14
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 443
-  server: 104.19.52.13
+  server: 104.19.52.172
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 15
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2087
+  server: 104.19.53.105
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 18
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 443
+  server: 104.19.52.144
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 21
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 443
+  server: 104.19.52.175
   skip-cert-verify: false
   sni: tjjd.yzyx1.v6.army
   type: trojan
@@ -23731,11 +23376,157 @@ proxies:
       Host: tjjd.yzyx1.v6.army
     path: /
 - client-fingerprint: chrome
-  name: 600|🇺🇸 美国 CloudFlare节点 19
+  name: 600|🇺🇸 美国 CloudFlare节点 22
+  network: ws
+  password: auto
+  port: 2053
+  server: 104.18.12.229
+  skip-cert-verify: false
+  sni: e9464f45.trauma-2r4.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: e9464f45.trauma-2r4.pages.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '600,678,679|🇺🇸 美国 CloudFlare节点 #34'
+  network: ws
+  port: '8080'
+  server: 104.26.9.22
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  ws-opts:
+    headers:
+      Host: dual-nothing-prep-exit.trycloudflare.com
+    path: /
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 24
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2053
+  server: 104.19.52.137
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 25
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2087
+  server: 104.19.52.107
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 26
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2096
+  server: 104.19.52.213
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 27
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2087
+  server: 104.19.52.11
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 28
   network: ws
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 443
-  server: 104.19.52.108
+  server: 104.19.52.181
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 29
+  network: ws
+  port: 80
+  server: 104.19.33.224
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: sgv6.xlb8.eu.org
+    path: /?ed=2048&amp;Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 30
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2083
+  server: 104.19.53.79
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 31
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2087
+  server: 104.19.52.71
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 600|🇺🇸 美国 CloudFlare节点 32
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2096
+  server: 104.19.52.229
   skip-cert-verify: false
   sni: tjjd.yzyx1.v6.army
   type: trojan
@@ -24663,6 +24454,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: '629,630|🇺🇸_US_美国 #30'
+  network: ws
+  port: 2082
+  server: 206.168.190.219
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e31ca750-71f7-11ee-b920-1239d0255272
+  ws-opts:
+    path: /vmws
+- alterId: 0
+  cipher: auto
   name: '629|🇺🇸_US_美国_2 #2'
   network: ws
   port: 80
@@ -24675,6 +24478,20 @@ proxies:
     headers:
       host: wnd2.shabijichang.com
     path: /
+- alterId: 64
+  cipher: auto
+  name: '629|🇺🇸_US_美国_3 #1'
+  network: ws
+  port: 30000
+  server: 45.199.138.186
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  ws-opts:
+    headers:
+      host: www.19229362.xyz
+    path: /path/1696682720138
 - alterId: 0
   cipher: auto
   name: '629|🇺🇸_US_美国_4 #2'
@@ -24688,6 +24505,19 @@ proxies:
   ws-opts:
     headers:
       host: wnd3.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '630|🇺🇸_US_美国 #31'
+  network: ws
+  port: 80
+  server: wnd2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: wnd2.shabijichang.com
     path: /
 - alterId: 64
   cipher: auto
@@ -25880,7 +25710,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: '666|🇺🇸 _US_美国_5 #2'
+  name: 666|🇺🇸 _US_美国_5
   network: ws
   port: '80'
   server: no.aries.ovh
@@ -26348,7 +26178,7 @@ proxies:
     path: /tg:@hkaa0
 - alterId: 0
   cipher: auto
-  name: '666|🇺🇸 美国 050 #2'
+  name: 666|🇺🇸 美国 050
   network: ws
   port: '22356'
   server: 004.AP.POP.node-for-smallairport.win
@@ -26895,7 +26725,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '666|🇺🇸 _US_美国_4 #2'
+  name: 666|🇺🇸 _US_美国_4
   network: ws
   port: '80'
   server: 89.117.18.151
@@ -26908,7 +26738,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '666|🇺🇸 _US_美国_3 #2'
+  name: 666|🇺🇸 _US_美国_3
   network: ws
   port: '443'
   server: us1.wanwusheng.me
@@ -26973,7 +26803,7 @@ proxies:
   ws-path: /index?ed=2560
 - alterId: 0
   cipher: auto
-  name: 677|🇺🇸US-162.210.196.168-065
+  name: 677|🇺🇸US-69.162.95.3-065
   network: ws
   port: 52340
   server: gycd1.csccdd.xyz
@@ -26993,6 +26823,19 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '678,679|🇺🇸 美国 CloudFlare节点 #35'
+  network: ws
+  port: '80'
+  server: 104.19.33.224
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: sgv6.xlb8.eu.org
+    path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
   name: 681|美国|【付费用户】油管秒开4K/8K|更多地区接入|GPT+...
@@ -28878,17 +28721,8 @@ proxies:
     path: /dongtaiwang.com
 - alterId: 0
   cipher: auto
-  name: 735|🔒 VM-TCP-NA 🇺🇸 US-108.181.200....
-  network: ''
-  port: 17163
-  server: 108.181.200.220
-  tls: false
-  type: vmess
-  uuid: d54814a1-7a93-45f8-9117-db317a25d100
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: '736,737|美国 CloudFlare节点 #37'
+  name: '736,737|美国 CloudFlare节点 #34'
   network: ws
   port: '8880'
   server: 104.21.82.183
@@ -28922,7 +28756,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 736|🇺🇸 美国 CloudFlare节点 20
+  name: '736|🇺🇸 美国 CloudFlare节点 20 #1'
   network: ws
   port: 8880
   server: server31.beheshtbaneh.com
@@ -28938,7 +28772,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 736|🇺🇸 美国 Akamai科技公司CDN网络节点
+  name: '736|🇺🇸 美国 Akamai科技公司CDN网络节点 #1'
   network: ws
   port: 443
   server: fr2-full.privateip.net
@@ -28992,6 +28826,19 @@ proxies:
       Host: tjjd.yzyx1.v6.army
     path: /?ed=2048&Telegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
+  name: 736|🇺🇸 美国+CloudFlare节点 2
+  network: ws
+  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
+  port: 2096
+  server: 104.19.52.250
+  skip-cert-verify: false
+  sni: tjjd.yzyx1.v6.army
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tjjd.yzyx1.v6.army
+    path: /?ed=2048
+- client-fingerprint: chrome
   name: 736|🇺🇸 美国+CloudFlare节点 3
   network: ws
   password: cb1f26aa437d4bfa9b841d28503ce8cc
@@ -29017,21 +28864,6 @@ proxies:
     headers:
       Host: tjjd.yzyx1.v6.army
     path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: xw7uebRG4KlUXGGYTVEagC5V7fI
-  name: 736,747|未知1627
-  network: grpc
-  password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
-  port: 443
-  server: 104.21.47.176
-  skip-cert-verify: true
-  sni: hdfyc1.achaemenidempireofpersia.uk
-  tls: true
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: 736|🇺🇸 美国+CloudFlare节点 7
   network: ws
@@ -29099,7 +28931,7 @@ proxies:
     path: bolder-metal-comma.glitch.me
 - alterId: 0
   cipher: auto
-  name: '737|美国 CloudFlare节点 #24'
+  name: '737|美国 CloudFlare节点 #21'
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
@@ -29113,7 +28945,7 @@ proxies:
     path: GWYp69Yujp2.yofnhkfc.xyz
 - alterId: 0
   cipher: auto
-  name: '737|美国 CloudFlare节点 #42'
+  name: '737|美国 CloudFlare节点 #39'
   network: ws
   port: '8880'
   server: server31.beheshtbaneh.com
@@ -29661,6 +29493,15 @@ proxies:
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 38.86.135.117
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 747|🇺🇸US美国7
+  password: fLAIbz76BnOmJ6HNuK2qvm
+  port: 80
+  server: 172.233.51.128
   skip-cert-verify: true
   tls: true
   type: ss
@@ -30733,6 +30574,15 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
+  cipher: aes-256-gcm
+  name: 747|🇺🇸US美国13 1.8MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 23.162.200.77
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 747|US207 3.3MB/s
   password: 3days
@@ -31318,6 +31168,15 @@ proxies:
   password: Y6R9pAtvxxzmGC
   port: 8888
   server: 23.157.40.83
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 747|🇺🇸US美国22
+  password: Yc2CtrIz8L
+  port: 30129
+  server: 172.245.205.50
   skip-cert-verify: true
   tls: true
   type: ss
@@ -32502,15 +32361,6 @@ proxies:
   password: pKEW8JPByTVTLtM
   port: 443
   server: 169.197.141.52
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 747|US453 1.7MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 38.114.114.207
   skip-cert-verify: true
   tls: true
   type: ss
@@ -34091,7 +33941,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '759,761|美国 CloudFlare节点 #65'
+  name: '759,761|美国 CloudFlare节点 #62'
   network: ws
   port: 80
   server: 104.21.224.24
@@ -34104,7 +33954,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '759,761|美国 CloudFlare节点 #67'
+  name: '759,761|美国 CloudFlare节点 #64'
   network: ws
   port: 80
   server: 104.21.238.90
@@ -34131,7 +33981,7 @@ proxies:
     path: /CAT
 - alterId: 0
   cipher: auto
-  name: '759,761|美国 CloudFlare节点 #68'
+  name: '759,761|美国 CloudFlare节点 #65'
   network: ws
   port: 80
   server: 104.21.237.88
@@ -34145,7 +33995,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '760,761|美国 CloudFlare节点 #69'
+  name: '760,761|美国 CloudFlare节点 #66'
   network: ws
   port: 80
   server: 104.21.224.157
@@ -34159,7 +34009,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '760,761|美国 CloudFlare节点 #70'
+  name: '760,761|美国 CloudFlare节点 #67'
   network: ws
   port: '80'
   server: 104.21.237.65
@@ -34172,7 +34022,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: '760,761|美国 CloudFlare节点 #71'
+  name: '760,761|美国 CloudFlare节点 #68'
   network: ws
   port: 80
   server: 104.21.221.135
@@ -34186,7 +34036,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '760,761|美国 CloudFlare节点 #72'
+  name: '760,761|美国 CloudFlare节点 #69'
   network: ws
   port: 80
   server: 104.21.237.87
@@ -34200,7 +34050,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '760,761|美国 CloudFlare节点 #74'
+  name: '760,761|美国 CloudFlare节点 #71'
   network: ws
   port: 80
   server: 104.21.230.31
@@ -34214,7 +34064,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '760,761|美国 CloudFlare节点 #75'
+  name: '760,761|美国 CloudFlare节点 #72'
   network: ws
   port: '80'
   server: 104.21.224.23
@@ -34227,7 +34077,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #57'
+  name: '761|美国 CloudFlare节点 #54'
   network: ws
   port: '80'
   server: 104.21.224.8
@@ -34240,7 +34090,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #59'
+  name: '761|美国 CloudFlare节点 #56'
   network: ws
   port: 80
   server: 104.21.224.129
@@ -34253,7 +34103,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #60'
+  name: '761|美国 CloudFlare节点 #57'
   network: ws
   port: '80'
   server: 104.21.230.53
@@ -34267,7 +34117,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #61'
+  name: '761|美国 CloudFlare节点 #58'
   network: ws
   port: 80
   server: 104.21.224.56
@@ -34295,7 +34145,7 @@ proxies:
     path: /v118-fccxmxm35
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #62'
+  name: '761|美国 CloudFlare节点 #59'
   network: ws
   port: '80'
   server: 104.21.235.76
@@ -34308,7 +34158,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #76'
+  name: '761|美国 CloudFlare节点 #73'
   network: ws
   port: 80
   server: 104.21.239.76
@@ -34348,7 +34198,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #77'
+  name: '761|美国 CloudFlare节点 #74'
   network: ws
   port: 80
   server: 104.21.228.42
@@ -34362,7 +34212,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #78'
+  name: '761|美国 CloudFlare节点 #75'
   network: ws
   port: '80'
   server: 104.21.234.74
@@ -34388,7 +34238,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #79'
+  name: '761|美国 CloudFlare节点 #76'
   network: ws
   port: '80'
   server: 104.21.230.50
@@ -34402,7 +34252,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #80'
+  name: '761|美国 CloudFlare节点 #77'
   network: ws
   port: '80'
   server: 104.21.228.40
@@ -34416,7 +34266,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #81'
+  name: '761|美国 CloudFlare节点 #78'
   network: ws
   port: '80'
   server: 104.21.228.41
@@ -34429,7 +34279,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #82'
+  name: '761|美国 CloudFlare节点 #79'
   network: ws
   port: 80
   server: 104.21.234.72
@@ -34443,7 +34293,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #83'
+  name: '761|美国 CloudFlare节点 #80'
   network: ws
   port: '80'
   server: 104.21.232.63
@@ -34456,7 +34306,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #84'
+  name: '761|美国 CloudFlare节点 #81'
   network: ws
   port: 80
   server: 104.21.221.95
@@ -34469,7 +34319,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #85'
+  name: '761|美国 CloudFlare节点 #82'
   network: ws
   port: 80
   server: 104.21.224.16
@@ -34482,7 +34332,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #86'
+  name: '761|美国 CloudFlare节点 #83'
   network: ws
   port: 80
   server: 104.21.224.174
@@ -34496,7 +34346,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #87'
+  name: '761|美国 CloudFlare节点 #84'
   network: ws
   port: 80
   server: 104.21.221.215
@@ -34510,7 +34360,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #88'
+  name: '761|美国 CloudFlare节点 #85'
   network: ws
   port: 80
   server: 104.21.226.14
@@ -34523,7 +34373,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #89'
+  name: '761|美国 CloudFlare节点 #86'
   network: ws
   port: 80
   server: 104.21.235.57
@@ -34536,7 +34386,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #90'
+  name: '761|美国 CloudFlare节点 #87'
   network: ws
   port: 80
   server: 104.21.224.240
@@ -34563,7 +34413,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #91'
+  name: '761|美国 CloudFlare节点 #88'
   network: ws
   port: '80'
   server: 104.21.230.51
@@ -34577,7 +34427,7 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #92'
+  name: '761|美国 CloudFlare节点 #89'
   network: ws
   port: 80
   server: 104.21.231.59
@@ -34591,7 +34441,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #93'
+  name: '761|美国 CloudFlare节点 #90'
   network: ws
   port: 80
   server: 104.21.224.46
@@ -34605,7 +34455,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #94'
+  name: '761|美国 CloudFlare节点 #91'
   network: ws
   port: '80'
   server: 104.21.236.60
@@ -34618,7 +34468,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #95'
+  name: '761|美国 CloudFlare节点 #92'
   network: ws
   port: '80'
   server: 104.21.238.92
@@ -34631,7 +34481,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #96'
+  name: '761|美国 CloudFlare节点 #93'
   network: ws
   port: '80'
   server: 104.21.239.77
@@ -34644,7 +34494,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #97'
+  name: '761|美国 CloudFlare节点 #94'
   network: ws
   port: 8080
   server: 172.67.143.192
@@ -34658,7 +34508,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #98'
+  name: '761|美国 CloudFlare节点 #95'
   network: ws
   port: '80'
   server: 104.21.229.26
@@ -34684,7 +34534,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #99'
+  name: '761|美国 CloudFlare节点 #96'
   network: ws
   port: '80'
   server: 104.21.227.15
@@ -34697,7 +34547,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #100'
+  name: '761|美国 CloudFlare节点 #97'
   network: ws
   port: '80'
   server: 104.21.228.20
@@ -34720,7 +34570,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #101'
+  name: '761|美国 CloudFlare节点 #98'
   network: ws
   port: 80
   server: 104.21.231.57
@@ -34734,7 +34584,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '761|美国 CloudFlare节点 #102'
+  name: '761|美国 CloudFlare节点 #99'
   network: ws
   port: '80'
   server: 104.21.229.47
@@ -34885,18 +34735,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '768,776|رایگان | VMESS | @Hope_Net | U... #22'
+  name: '768|رایگان | VMESS | @DeamNet_Prox... #4'
   network: ws
-  port: '80'
-  server: 79.133.108.4
-  servername: sanapardaz.onthewifi.com
+  port: '8080'
+  server: 172.67.172.169
   tls: false
   type: vmess
-  uuid: 3e57354f-ff12-4536-81f9-c6155ef18b69
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts:
     headers:
-      Host: sanapardaz.onthewifi.com
-    path: /@V2RAY_CONFIGS_POOL
+      Host: oiictw.yydsii.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '780|github.com/freefq - 美国CloudFla... #37'
@@ -35479,7 +35328,7 @@ proxies:
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.195.169
+  server: 162.159.195.166
   type: wireguard
   udp: true
 - dns:
@@ -35487,38 +35336,51 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 886|US-CF-WARP-2
-  port: 8886
-  private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  remote-dns-resolve: true
-  server: 162.159.195.203
-  type: wireguard
-  udp: true
-- dns:
-  - 1.1.1.1
-  - 1.0.0.1
-  ip: 172.16.0.2
-  mtu: 1280
-  name: 886|US-CF-WARP-7
-  port: 8886
-  private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  remote-dns-resolve: true
-  server: 162.159.192.196
-  type: wireguard
-  udp: true
-- dns:
-  - 1.1.1.1
-  - 1.0.0.1
-  ip: 172.16.0.2
-  mtu: 1280
-  name: 886|US-CF-WARP-10
+  name: 886|US-CF-WARP-3
   port: 3854
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.195.243
+  server: 162.159.192.152
+  type: wireguard
+  udp: true
+- dns:
+  - 1.1.1.1
+  - 1.0.0.1
+  ip: 172.16.0.2
+  mtu: 1280
+  name: 886|US-CF-WARP-4
+  port: 3854
+  private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  remote-dns-resolve: true
+  server: 162.159.192.172
+  type: wireguard
+  udp: true
+- dns:
+  - 1.1.1.1
+  - 1.0.0.1
+  ip: 172.16.0.2
+  mtu: 1280
+  name: 886|US-CF-WARP-8
+  port: 3854
+  private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  remote-dns-resolve: true
+  server: 162.159.195.40
+  type: wireguard
+  udp: true
+- dns:
+  - 1.1.1.1
+  - 1.0.0.1
+  ip: 172.16.0.2
+  mtu: 1280
+  name: 886|US-CF-WARP-9
+  port: 8886
+  private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  remote-dns-resolve: true
+  server: 162.159.192.94
   type: wireguard
   udp: true
 - alterId: 0
@@ -35793,6 +35655,62 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
+- cipher: aes-128-gcm
+  name: '1013|🇺🇸 美国 01 #2'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20741
+  server: ss.usalink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '1013|🇺🇸 美国 02 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20742
+  server: ss.usalink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '1013|🇺🇸 美国 03 #1'
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20743
+  server: ss.usalink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 1013|🇺🇸 美国 04
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20744
+  server: ss.usalink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 1013|🇺🇸 美国 05
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20745
+  server: ss.usalink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 1013|🇺🇸 美国 06
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20746
+  server: ss.usalink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 1013|🇺🇸 美国 07
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20747
+  server: ss.usalink.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 1013|🇺🇸 美国 08
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 20748
+  server: ss.usalink.xyz
+  type: ss
+  udp: true
 - alterId: 233
   cipher: auto
   name: 1027|美国
