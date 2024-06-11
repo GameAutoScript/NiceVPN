@@ -1,8 +1,10 @@
 proxies:
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1,2,598,626|_US_->_DE_国_1
+  name: 1,2,598,626,745|US国
   network: grpc
   password: f91f38bb-72d5-4f3e-8311-1788986293f5
   port: 443
@@ -80,7 +82,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 302,448,643,675,676,677,780|俄罗斯联邦_0610003
+  name: 302,444,445,447,448,675,676,677,780|俄罗斯联邦_0610003
   network: tcp
   port: '12307'
   server: 5.182.86.28
@@ -94,13 +96,15 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '302,448,578,643,676,677,679,780,782|美国_0610046 #2'
+  name: '302,444,445,447,448,544,545,576,578,594,676,677,679,780,782|美国_0610046 #2'
   network: ws
   port: '80'
   server: 104.26.3.120
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: f94c274d-f9c5-4c47-a3f5-fa839d80bfb1
   ws-opts:
     headers:
@@ -108,8 +112,8 @@ proxies:
     path: /etc
 - alterId: 0
   cipher: auto
-  name: '302,448,495,558,578,643,676,677,679,725,759,780,782,925|🇺🇸_US_美国->🇫🇷_FR_法国
-    #7'
+  name: '302,444,445,447,448,495,558,578,676,677,679,725,759,780,782,925|🇺🇸_US_美国->🇫🇷_FR_法国
+    #6'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -3223,7 +3227,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '702,757,759|美国 CloudFlare节点 #58'
+  name: '702,757,759|美国 CloudFlare节点 #60'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
