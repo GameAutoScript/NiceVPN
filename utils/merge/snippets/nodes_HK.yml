@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|香港|广州移动|Neko|1.5x
+  network: tcp
+  port: 13337
+  server: gdcm.r1u.cn
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: '16,119,303,748|US350 #2'
   network: ws
   port: '2052'
@@ -1349,7 +1358,7 @@ proxies:
   name: 277|🇭🇰香港区域1-三网优化
   network: tcp
   port: '40181'
-  server: 7G2rbD.gov.goldliond.top
+  server: HHjHpv.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1358,7 +1367,7 @@ proxies:
   name: 277|🇭🇰香港区域2-三网优化
   network: tcp
   port: '40181'
-  server: KDtdX7.gov.goldliond.top
+  server: 1B2ov7.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1367,7 +1376,7 @@ proxies:
   name: 277|🇭🇰香港区域3-三网优化
   network: tcp
   port: '40181'
-  server: ogHGTA.gov.goldliond.top
+  server: tAuvxG.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -2197,31 +2206,6 @@ proxies:
     path: /index
 - alterId: 0
   cipher: auto
-  name: '303,727,735,748|HK48 #2'
-  network: ws
-  port: '4431'
-  server: 152.32.190.239
-  servername: cfhk.393930.xyz
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '303,681,735|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44... #2'
-  network: ws
-  port: 26639
-  server: 91.149.236.44
-  tls: false
-  type: vmess
-  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
-  ws-opts:
-    path: /cctv13/hd.m3u8/
-- alterId: 0
-  cipher: auto
   name: '303,727,735,748|HK19 #2'
   network: ws
   port: '2087'
@@ -2234,18 +2218,32 @@ proxies:
     headers:
       Host: sg.baijia.cfd
     path: /fdsffgfdgdfgdf
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '303,735|🔒 VM-WS-TLS 🇭🇰 HK-144.48.32.10... #1'
+  name: '303,681,735|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44... #2'
   network: ws
-  port: 30000
-  server: 144.48.32.10
-  servername: www.32011779.xyz
+  port: 26639
+  server: 91.149.236.44
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
+  ws-opts:
+    path: /cctv13/hd.m3u8/
+- alterId: 0
+  cipher: auto
+  name: '303,727,735,748|HK48 #2'
+  network: ws
+  port: '4431'
+  server: 152.32.190.239
+  servername: cfhk.393930.xyz
   tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
   ws-opts:
-    path: /path/191019072927
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 316|[🇭🇰]a4a09ce.h1.glados-config.n...
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -2330,26 +2328,26 @@ proxies:
   uuid: 508e3be6-3872-4a45-8a5f-0d6e42579eee
 - alterId: 0
   cipher: auto
-  name: '410,411|免费-香港/آزاد - هنگ کنگ #1'
+  name: 410|免费-香港/آزاد - هنگ کنگ
   network: ws
   port: '8080'
   server: cfd.ipa.monster
   tls: false
   type: vmess
-  uuid: 089b137d-3d04-46c0-b7f7-87bc7715f8ff
+  uuid: 057b0df4-d7e3-4e5f-aa6a-c25c1593bff1
   ws-opts:
     headers:
       Host: hkapper.a1t.top
     path: /itdog?ed=2560
 - alterId: 0
   cipher: auto
-  name: '410,411|免费-香港2/آزاد-هنگ کنگ 2 #1'
+  name: 410|免费-香港2/آزاد-هنگ کنگ 2
   network: ws
   port: '8080'
   server: cfd.ipa.monster
   tls: false
   type: vmess
-  uuid: 089b137d-3d04-46c0-b7f7-87bc7715f8ff
+  uuid: 057b0df4-d7e3-4e5f-aa6a-c25c1593bff1
   ws-opts:
     headers:
       Host: niubihk.a1t.top
@@ -6615,66 +6613,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- cipher: aes-128-gcm
-  name: 1013|🇭🇰 香港 01 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11001
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 1013|🇭🇰 香港 02 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11002
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 1013|🇭🇰 香港 03 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11003
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 1013|🇭🇰 香港 04 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11004
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 1013|🇭🇰 香港 05 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11005
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 1013|🇭🇰 香港 06 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11006
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 1013|🇭🇰 香港 07 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11007
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 1013|🇭🇰 香港 08 SS
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 11008
-  server: ss.hkglink.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 1013|🇭🇰 香港 IPLC 限速10Mbps
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 1024
-  server: 222909df61922934.cdn.jiashule.com
-  type: ss
-  udp: true
