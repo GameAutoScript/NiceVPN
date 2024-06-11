@@ -284,7 +284,7 @@ proxies:
   name: 276|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: kBVzue.gov.goldliond.top
+  server: 8OoWIW.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -293,7 +293,7 @@ proxies:
   name: 276|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: 6Z3H9y.gov.goldliond.top
+  server: 8thEFr.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -315,35 +315,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🇼TW
-  h2-opts: {}
-  http-opts: {}
-  name: '302,517,558,599,679,725,733|🔒 VM-WS-NONE 🇹🇼 TW-34.80.125.2... #3'
-  network: ws
-  port: 57257
-  server: 34.80.125.236
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3a368036-ff57-4141-827b-0156487add85
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 302|🔒 VM-TCP-NA 🇹🇼 TW-61.224.84.38...
-  network: tcp
-  port: '61017'
-  server: 61.224.84.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
-- alterId: 0
-  cipher: auto
-  name: '302,733,746|TW4 #1'
+  name: '302,733,746|TW4 #2'
   network: ws
   port: '37902'
   server: 118.170.98.92
@@ -357,11 +329,12 @@ proxies:
     path: /index?ed=2560
 - alterId: 0
   cipher: auto
-  name: 302,578,593,679,733,746,759,780|台湾_0610002
+  name: 302,578,593,679,733,745,746,759,780|台湾_0610002
   network: ws
   port: '31945'
   server: 103.159.206.35
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
@@ -369,6 +342,16 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '302,733|🔒 VM-TCP-NA 🇹🇼 TW-122.118.171.... #1'
+  network: tcp
+  port: '61017'
+  server: 122.118.171.114
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
 - alterId: '0'
   cipher: auto
   name: 315|[🇹🇼]103.131.189.212:56967(8110...
@@ -602,23 +585,6 @@ proxies:
       Host: cn.bing.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 517|Relay_🏁ZZ-🇼TW_130
-  network: ws
-  port: 8080
-  server: 104.19.47.153
-  servername: oiictw.yydsii.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    headers:
-      HOST: oiictw.yydsii.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 542|🇹🇼_TW_台湾
@@ -1130,16 +1096,6 @@ proxies:
   server: ununim.yangliq.com
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 692,700|台湾2|@ripaojiedian
-  network: tcp
-  port: '32012'
-  server: alm2.the-galgo.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a988367-5daa-4beb-be62-aaba3e79534a
 - client-fingerprint: chrome
   name: 699|🇹🇼 台湾|@ripaojiedian
   network: ws
@@ -1163,16 +1119,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
-- alterId: 0
-  cipher: auto
-  name: 733|🔒 VM-TCP-NA 🇹🇼 TW-122.118.171....
-  network: tcp
-  port: '61017'
-  server: 122.118.171.114
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
 - client-fingerprint: chrome
   name: 734|🇹🇼 台湾省+中华电信(HiNet)数据中心
   network: ws
@@ -1236,6 +1182,44 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  cipher: auto
+  name: '745|TW #1'
+  network: ws
+  password: moist
+  port: 12031
+  server: 60.248.63.88
+  skip-cert-verify: true
+  sni: trojan.freenods.sbs
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 745|TW3
+  network: ws
+  password: auto
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: true
+  sni: vip.123789.pp.ua
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '745|TW4 #1'
+  network: ws
+  port: 37902
+  server: 118.170.98.92
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      host: hinet-wap.myddns.me
+    path: /index?ed=2560
 - alterId: 0
   cipher: auto
   name: 759|🇹🇼台湾 01
