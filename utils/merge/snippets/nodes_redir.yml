@@ -1,8 +1,10 @@
 proxies:
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1,2,600,628|_US_->_DE_国_1
+  name: 1,2,600,628,747|🇺🇸US美国46
   network: grpc
   password: f91f38bb-72d5-4f3e-8311-1788986293f5
   port: 443
@@ -22,58 +24,58 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 1,2,677,686|🇺🇸 United States_1
+  name: 1,2,686|🇺🇸 United States_1
   password: 93ec2378-1151-4db5-9c56-d1387f36882d
   port: 50001
   server: us01.mmyjiedian.com
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 1,2,677|HK-46.232.123.37-007
+  name: '1,2|_CN_->_GB__1 #1'
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
   port: 40021
   server: gb01.mmyjiedian.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 1,2,677|🇭🇰HK-46.232.123.37-016
+  name: '1,2|_CN_->_CA__2 #1'
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
   port: 50002
   server: us02.mmyjiedian.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 1,2,677|🇬SG-54.179.4.150-022
+  name: '1,2|_CN_->_FI__1 #1'
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
   port: 40022
   server: de01.mmyjiedian.com
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 1,2,677,686|🇺🇸 United States_6
+  name: 1,2,686|🇺🇸 United States_6
   password: 93ec2378-1151-4db5-9c56-d1387f36882d
   port: 50006
   server: us06.mmyjiedian.com
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 1,2,677|🇬SG-54.179.4.150-036
+  name: '1,2|_CN_->_GB__2 #1'
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
   port: 40024
   server: nl01.mmyjiedian.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 1,2,677|🇸🇬SG-54.179.4.150-038
+  name: '1,2|_CN_->_US__2 #1'
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
   port: 40050
   server: se01.mmyjiedian.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 1,2,677|🇭🇰HK-46.232.123.37-040
+  name: '1,2|_CN_->_US__3 #1'
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
   port: 40026
   server: es01.mmyjiedian.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 1,2,677|🇰HK-46.232.123.37-041
+  name: '1,2|_CN_->_FI__2 #1'
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
   port: 40025
   server: it01.mmyjiedian.com
@@ -2705,20 +2707,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 628|🇸_US_美国->🇦_CA_加拿大_1
-  network: ws
-  port: 8880
-  server: 104.19.38.28
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
-  ws-opts:
-    headers:
-      host: funk-england-indirect-gospel.trycloudflare.com
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-- alterId: 0
-  cipher: auto
   name: 628|🇸_US_美国->🇨🇦_CA_加拿大_2
   network: ws
   port: 8443
@@ -2726,20 +2714,6 @@ proxies:
   servername: funk-england-indirect-gospel.trycloudflare.com
   skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
-  ws-opts:
-    headers:
-      host: funk-england-indirect-gospel.trycloudflare.com
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-- alterId: 0
-  cipher: auto
-  name: 628|🇸_US_美国->🇨🇦_CA_加拿大_3
-  network: ws
-  port: 8880
-  server: 104.19.21.24
-  skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
   ws-opts:
@@ -3208,7 +3182,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '704,759,761|美国 CloudFlare节点 #60'
+  name: '704,759,761|美国 CloudFlare节点 #67'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -3249,20 +3223,6 @@ proxies:
     headers:
       Host: arm.ptuu.gq
     path: /123
-- alterId: 0
-  cipher: auto
-  name: 744|:美国-vmess-vus4.0bad.com:443-可用...
-  network: ws
-  port: '443'
-  server: vus4.0bad.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers:
-      Host: vus4.0bad.com
-    path: /chat
 - alterId: 0
   cipher: auto
   name: 926|🇨🇳 _CN_中国->🇹🇼_TW_台湾
