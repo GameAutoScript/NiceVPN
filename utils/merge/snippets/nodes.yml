@@ -50,15 +50,13 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: 0,3,305,448,449,451,452,548,549,580,582,598,647,680,681,683,750,784,786|美国_0612055
+  name: 0,3,305,448,449,451,452,582,647,680,681,683,750,784,786|美国_0612055
   network: ws
   port: '80'
   server: 104.26.3.120
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: f94c274d-f9c5-4c47-a3f5-fa839d80bfb1
   ws-opts:
     headers:
@@ -359,25 +357,29 @@ proxies:
     path: /V2Ray.SeyYeDmt
 - alterId: 0
   cipher: auto
-  name: 13|新加坡|徐州移动|Linode|1x
+  name: 13|香港|广州移动|Neko|1.5x
   network: tcp
-  port: 39226
-  server: jscm.r1u.cn
+  port: 13337
+  server: gdcm.r1u.cn
   tls: false
   type: vmess
   uuid: f010dd01-c54a-3c03-95ce-0838214259c6
 - alterId: 0
   cipher: auto
-  name: 13|韩国|徐州移动|Oracle|1x
-  network: tcp
-  port: 41109
-  server: jscm.r1u.cn
-  tls: false
+  name: 13|136-vmess-ws
+  network: ws
+  port: 443
+  server: 13617517648.xhtk.cc
+  tls: true
   type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+  uuid: 3ce9ef38-9719-9798-95c4-a546f4236bf1
+  ws-opts:
+    headers:
+      Host: 13617517648.xhtk.cc
+    path: /kktlvws
 - alterId: 0
   cipher: auto
-  name: 16,120,305,750,770|رایگان | VMESS | @mftizi | HK🇭...
+  name: '16,120,305,573,750,770|رایگان | VMESS | @mftizi | HK🇭... #2'
   network: ws
   port: '2052'
   server: hk.wish.ml
@@ -528,10 +530,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: ' CA'
+  country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 19| CA_02
+  name: 19,270|CA_01
   network: ws
   port: 443
   server: 158.51.121.36
@@ -553,18 +555,6 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 19,522,528,738,749|🇫🇷FR法国31 1.8MB/s
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇫🇷FR
   name: 19,522,528,738,749|未知1560 611.9KB/s
   password: FoOiGlkAA9yPEGP
   port: 7307
@@ -577,9 +567,21 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 19,522,528,738,749|未知580 1.8MB/s
+  name: 19,522,528,738,749|未知1617 1.8MB/s
   password: Y6R9pAtvxxzmGC
-  port: 5601
+  port: 8888
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇫🇷FR
+  name: 19,522,528,738,749|🇫🇷FR法国25 548.9KB/s
+  password: FoOiGlkAA9yPEGP
+  port: 7306
   server: 149.202.82.172
   skip-cert-verify: true
   tfo: false
@@ -680,17 +682,14 @@ proxies:
   tfo: false
   tls: true
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 19,522,528,738,749|🇫🇷FR法国17 677.2KB/s
-  password: KixLvKzwjekG00rm
-  port: 8000
+  name: '19,522,528,738|🇫🇷 法国+OVH机房SAS硬盘BGP主机 4 #1'
+  password: faBAoD54k87UJG7
+  port: 2376
   server: 149.202.82.172
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -709,9 +708,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 19,183,522,528,738,749|未知1353 1.7MB/s
-  password: KixLvKzwjekG00rm
-  port: 5500
+  name: 19,522,528,738,749|未知580 1.8MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5601
   server: 149.202.82.172
   skip-cert-verify: true
   tfo: false
@@ -721,9 +720,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 19,522,528,738,749|🇫🇷FR法国25 548.9KB/s
-  password: FoOiGlkAA9yPEGP
-  port: 7306
+  name: 19,522,528,679,738,749|未知1631 1.8MB/s
+  password: kDWvXYZoTBcGkC4
+  port: 8881
   server: 149.202.82.172
   skip-cert-verify: true
   tfo: false
@@ -757,9 +756,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 19,522,528,738,749|未知1617 1.8MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 8888
+  name: 19,183,522,528,738,749|未知1353 1.7MB/s
+  password: KixLvKzwjekG00rm
+  port: 5500
   server: 149.202.82.172
   skip-cert-verify: true
   tfo: false
@@ -781,9 +780,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 19,522,528,679,738,749|未知1631 1.8MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8881
+  name: 19,522,528,738,749|未知554 1.5MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7001
   server: 149.202.82.172
   skip-cert-verify: true
   tfo: false
@@ -829,9 +828,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 19,522,528,738,749|未知554 1.5MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7001
+  name: 19,522,528,738,749|🇫🇷FR法国31 1.8MB/s
+  password: PCnnH6SQSnfoS27
+  port: 8091
   server: 149.202.82.172
   skip-cert-verify: true
   tfo: false
@@ -841,31 +840,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇫🇷FR
-  name: 19,522,528,602,679,738,749|未知876 223.3KB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 149.202.82.172
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇫🇷FR
-  name: '19,522,528,738|🇫🇷 法国+OVH机房SAS硬盘BGP主机 4 #1'
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 149.202.82.172
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇫🇷FR
-  name: 19,183,522,528,738,749|🇷FR法国24 1.8MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8119
+  name: 19,522,528,738,749|🇫🇷FR法国17 677.2KB/s
+  password: KixLvKzwjekG00rm
+  port: 8000
   server: 149.202.82.172
   skip-cert-verify: true
   tfo: false
@@ -875,19 +852,7 @@ proxies:
   cipher: aes-128-gcm
   client-fingerprint: chrome
   country: 🇧GB
-  name: 19,183,522,528,738,749|未知1639 1.6MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  client-fingerprint: chrome
-  country: 🇬🇧GB
-  name: 19,183,296,522,602,630,679,738,749|未知1296 1.2MB/s
+  name: 19,183,296,522,528,602,630,679,738,749|未知1296 1.2MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.80
@@ -897,11 +862,23 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
+  cipher: aes-128-gcm
+  client-fingerprint: chrome
+  country: 🇬🇧GB
+  name: 19,183,522,528,738,749|未知1639 1.6MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
-  country: 🇸US
+  country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: '19,296,364,522,553,561,563,582,651,668,767,784,786|日本_0612002 #2'
+  name: '19,296,364,522,528,553,561,563,582,651,668,767,784,786|日本_0612002 #2'
   network: tcp
   port: '1069'
   server: 152.69.197.60
@@ -914,10 +891,10 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
-  country: 🇱PL
-  name: 19,522,528,738,749|FR 1.8MB/s
-  password: PCnnH6SQSnfoS27
-  port: 8091
+  country: 🇵🇱PL
+  name: 19,522,528,738,749|未知380 1.7MB/s
+  password: KixLvKzwjekG00rm
+  port: 5500
   server: 51.77.53.200
   skip-cert-verify: true
   tfo: false
@@ -938,10 +915,22 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
+  country: 🇱PL
+  name: 19,522,528,738,749|FR 1.8MB/s
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 51.77.53.200
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
   country: 🇵🇱PL
-  name: 19,522,528,738,749|未知402 1.8MB/s
-  password: e4FCWrgpkji3QY
-  port: 9102
+  name: 19,522,528,630,679,738,749|🇵🇱PL波兰4 1.8MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8119
   server: 51.77.53.200
   skip-cert-verify: true
   tfo: false
@@ -975,9 +964,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇵🇱PL
-  name: 19,522,528,630,679,738,749|🇵🇱PL波兰4 1.8MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8119
+  name: 19,522,528,738,749|未知491 1.8MB/s
+  password: e4FCWrgpkji3QY
+  port: 9101
   server: 51.77.53.200
   skip-cert-verify: true
   tfo: false
@@ -987,9 +976,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇵🇱PL
-  name: 19,522,528,738,749|未知491 1.8MB/s
-  password: e4FCWrgpkji3QY
-  port: 9101
+  name: 19,522,528,630,738,749|未知62 1.7MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7001
   server: 51.77.53.200
   skip-cert-verify: true
   tfo: false
@@ -1011,9 +1000,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇵🇱PL
-  name: 19,522,528,630,738,749|未知62 1.7MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7001
+  name: 19,522,528,738,749|未知402 1.8MB/s
+  password: e4FCWrgpkji3QY
+  port: 9102
   server: 51.77.53.200
   skip-cert-verify: true
   tfo: false
@@ -1038,18 +1027,6 @@ proxies:
   name: 19,522,528,630,738,749|🇫🇷FR法国19 1.7MB/s
   password: g5MeD6Ft3CWlJId
   port: 5003
-  server: 51.77.53.200
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇵🇱PL
-  name: 19,522,528,738,749|未知380 1.7MB/s
-  password: KixLvKzwjekG00rm
-  port: 5500
   server: 51.77.53.200
   skip-cert-verify: true
   tfo: false
@@ -1227,7 +1204,7 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇵🇱PL
-  name: 19,522,528,738,749|🇷FR法国11 1.7MB/s
+  name: 19,270,522,528,738,749|🇷FR法国11 1.7MB/s
   password: Y6R9pAtvxxzmGC
   port: 8888
   server: 51.77.53.200
@@ -1236,52 +1213,18 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-256-cfb
-  country: ' SG'
-  name: 19| SG_61
+  country: 🇸🇬SG
+  name: 19,522|🇬SG_80
   password: rNBfNuuANFCAk7KB
   port: 9056
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 19,522|🇬SG_80
+  country: ' SG'
+  name: 19| SG_60
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 103.172.116.103
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,522,528,738,749|US600 2.0MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 38.121.43.71
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: ' US'
-  name: 19,749|US130 1.9MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.75.137.71
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,183,522,528,738,749|US532 54.6MB/s
-  password: lWaGPVFjmnag
-  port: 443
-  server: 205.134.180.139
-  skip-cert-verify: true
-  tfo: false
-  tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -1297,11 +1240,11 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  country: ' US'
-  name: 19,749|US182 1.9MB/s
+  country: 🇺🇸US
+  name: 19,522,528,749|US48 2.0MB/s
   password: KixLvKzwjekG00rm
-  port: 8080
-  server: 167.88.62.62
+  port: 5500
+  server: 38.68.135.18
   skip-cert-verify: true
   tls: true
   type: ss
@@ -1309,21 +1252,9 @@ proxies:
   cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇺🇸US
-  name: 19,522,528,738,749|US530 1.7MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.121.43.71
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,522,528,738,749|US191 2.0MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3306
+  name: 19,522,528,738,749|US559 1.7MB/s
+  password: kDWvXYZoTBcGkC4
+  port: 8881
   server: 38.121.43.71
   skip-cert-verify: true
   tfo: false
@@ -1343,12 +1274,48 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
+  client-fingerprint: chrome
   country: 🇺🇸US
-  name: 19,522,528,749|US48 2.0MB/s
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 38.68.135.18
+  name: 19,522,528,738,749|US141 2.0MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.110.1.201
   skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 19,522,528,749|US252 1.1MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.75.136.21
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 19,522,528,738,749|US133 2.0MB/s
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 38.121.43.71
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇸US
+  name: 19,522,528,738,749|US530 1.7MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.121.43.71
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: ss
 - alterId: 0
@@ -1464,27 +1431,25 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
+  cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇺🇸US
-  name: 19,522,528,738,749|US289
-  password: ..
-  port: 20001
-  server: 38.114.123.12
+  name: 19,522,528,738,749|US600 2.0MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 38.121.43.71
   skip-cert-verify: true
   tfo: false
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,522,528,738,749|US559 1.7MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.121.43.71
+  country: ' US'
+  name: 19,749|US182 1.9MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 167.88.62.62
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: ss
 - alterId: 0
@@ -1498,30 +1463,32 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-256-gcm
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  country: 🇸US
-  name: 19,522,528,738,749|US141 2.0MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.110.1.201
+  country: 🇺🇸US
+  name: 19,183,270,522,528,738,749|US532 54.6MB/s
+  password: lWaGPVFjmnag
+  port: 443
+  server: 205.134.180.139
   skip-cert-verify: true
   tfo: false
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
+  client-fingerprint: chrome
   country: 🇺🇸US
-  name: 19,522,528,749|US252 1.1MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.75.136.21
+  name: 19,522,528,738,749|US191 2.0MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 38.121.43.71
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: ss
 - cipher: aes-256-gcm
   country: ' US'
-  name: 19| US_87
+  name: 19| US_84
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 38.75.137.71
@@ -1548,7 +1515,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: ' US'
-  name: 19| US_90
+  name: 19| US_87
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 38.75.137.71
@@ -1575,21 +1542,19 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: ' US'
-  name: 19| US_93
+  name: 19| US_90
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 142.202.48.105
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,522,528,738,749|US133 2.0MB/s
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 38.121.43.71
+  country: ' US'
+  name: 19,749|US130 1.9MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.75.137.71
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: ss
 - alterId: 0
@@ -1634,6 +1599,21 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 64
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 19,739|美国加利福尼亚州洛杉矶 PetaExpress
+  network: tcp
+  port: '41400'
+  server: 198.2.218.102
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
@@ -1641,18 +1621,6 @@ proxies:
   name: 19,522,528,738,749|US433 1.9MB/s
   password: Y6R9pAtvxxzmGC
   port: 3306
-  server: 23.157.40.20
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 19,522,528,738,749|US421 1.9MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
   server: 23.157.40.20
   skip-cert-verify: true
   tfo: false
@@ -1671,11 +1639,23 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 19,522,528,738,749|US421 1.9MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 23.157.40.20
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
   cipher: auto
   country: ' ZZ'
   h2-opts: {}
   http-opts: {}
-  name: 19| ZZ_102
+  name: 19| ZZ_100
   network: ws
   port: 443
   server: 23.162.200.227
@@ -1686,10 +1666,10 @@ proxies:
   ws-path: /linkvws
 - alterId: 0
   cipher: auto
-  country: ' ZZ'
+  country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 19| ZZ_103
+  name: 19,270|ZZ_10
   network: ws
   port: 443
   server: 23.154.136.2
@@ -3341,7 +3321,7 @@ proxies:
   network: grpc
   password: bbab60b8-779f-31e2-916e-571f7d7023c4
   port: 28785
-  server: kqouc-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  server: ftspy-g03.jp06-7c5a-vm0.entry.fr0307a.art
   servername: 45.144.2.113
   skip-cert-verify: false
   sni: jd5.zahuopu.top
@@ -4814,36 +4794,37 @@ proxies:
   cipher: auto
   name: 104|账户已过期,〖dabai.in〗<<前往官网|重新订阅
   network: ws
-  port: '8880'
-  server: 104.18.63.2
+  port: '8080'
+  server: 172.67.125.45
   servername: ''
   tls: false
   type: vmess
   uuid: 621a845a-48ea-35f0-9b9a-ca499c647ade
   ws-opts:
     headers:
-      Host: 100-100-17-207.db-link02.top
-    path: /dabai.in104.18.63.2
+      Host: 100-100-17-96.db-link02.top
+    path: /dabai.in172.67.125.45
 - alterId: 0
   cipher: auto
   name: '104|账户已过期,〖dabai.in〗<<前往官网|重新订阅 #1'
   network: ws
-  port: '443'
-  server: 172.64.52.103
-  servername: 100-100-17-319.cn-db.top
-  tls: true
+  port: '8080'
+  server: 172.64.59.255
+  servername: ''
+  tls: false
   type: vmess
   uuid: 621a845a-48ea-35f0-9b9a-ca499c647ade
   ws-opts:
     headers:
-      Host: 100-100-17-319.cn-db.top
-    path: /dabai.in172.64.52.103
+      Host: 100-100-17-71.db-link02.top
+    path: /dabai.in172.64.59.255
 - alterId: 0
   cipher: auto
+  country: 🇺RU
   delay: 1453
   h2-opts: {}
   http-opts: {}
-  name: 112,549,598,606,683,739|俄罗斯 V2CROSS.COM
+  name: 112,270,549,598,606,683,739|俄罗斯 V2CROSS.COM
   network: tcp
   port: '12954'
   server: 31.192.234.7
@@ -4852,6 +4833,7 @@ proxies:
   tls: true
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-path: /
 - alterId: 0
   cipher: auto
   delay: 1373
@@ -6642,7 +6624,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '183,305,602,680,681|🇺🇸 美国 CloudFlare节点 #62'
+  name: '183,305,602,680,681|🇺🇸 美国 CloudFlare节点 #66'
   network: ws
   port: '8880'
   server: 104.19.21.24
@@ -6688,7 +6670,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '183,305,602,680,681|🇺🇸 美国 CloudFlare节点 #60'
+  name: '183,305,602,680,681|🇺🇸 美国 CloudFlare节点 #64'
   network: ws
   port: '8080'
   server: 104.19.47.153
@@ -6705,7 +6687,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '183,305,602,603,680,681|🇺🇸 美国 CloudFlare节点 #59'
+  name: '183,305,602,603,680,681|🇺🇸 美国 CloudFlare节点 #63'
   network: ws
   port: '8080'
   server: 104.19.47.186
@@ -6721,7 +6703,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '183,305,680,681|🇺🇸 美国 CloudFlare节点 #55'
+  name: '183,305,680,681|🇺🇸 美国 CloudFlare节点 #59'
   network: ws
   port: '8080'
   server: 104.19.47.238
@@ -7021,14 +7003,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '183,305,562,582,683,729,750,784|美国_0612105 #1'
+  name: '183,305,548,549,562,580,582,598,683,750,784|美国_0612105 #1'
   network: ws
   port: '80'
   server: 172.67.193.67
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 408438b0-fe40-44de-af19-0e5e6bb750ce
   ws-opts:
     headers:
@@ -7535,6 +7518,18 @@ proxies:
       Host: fr-full.privateip.net
     path: /
 - alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇫🇷FR
+  name: 183,522,528,738,749|🇷FR法国24 1.8MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+- alterId: 0
   cipher: aes-256-cfb
   country: 🇫🇷FR
   name: 183,296,522,749|未知1513 17.3MB/s
@@ -7546,7 +7541,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇫🇷FR
+  country: 🇷FR
   name: 183,522,749|未知1421 16.8MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -7565,7 +7560,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  country: 🇷FR
+  country: 🇫🇷FR
   name: 183,522,749|未知1107 15.2MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -7929,7 +7924,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '183,305,561,563,597,737,749,750|US517 19.8MB/s #2'
+  name: '183,305,561,563,597,729,737,749,750|US517 19.8MB/s #2'
   network: ws
   port: '55187'
   server: 107.182.189.201
@@ -8287,15 +8282,6 @@ proxies:
       Host: ''
     path: /
 - country: DE
-  name: 184|DE_02
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.59.139.89
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: DE
   name: 184|netflix_DE
   network: tcp
   password: telegram-id-privatevpns
@@ -8304,21 +8290,34 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- country: DE
+  name: '184|netflix_DE #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.59.139.89
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: FR
+  name: 184,749|未知641
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.37.0.245
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - country: FR
-  name: 184|FR_04
+  name: 184|disney_netflix_FR
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 13.38.145.18
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: GB
-  name: 184|GB_05
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.130.200.110
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -8335,27 +8334,26 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- country: HK
-  fingerprint: chrome
-  name: 184|netflix_HK
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 18.167.194.154
-  sni: mfjd.591haoka.com
+- alterId: 0
+  cipher: auto
+  country: GB
+  name: 184,749|未知637
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.9.98.116
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
   name: 184|Relay_HK-HK_08
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.76.77.103
+  port: 443
+  server: 16.162.152.191
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -8379,189 +8377,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_10
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.76.178.146
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #1'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.242.36.78
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_12
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.243.86.79
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #2'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.210.107.246
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_14
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 47.243.234.9
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_16
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.76.94.15
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_17
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.243.86.79
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_18
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.210.164.75
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_19
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.210.164.75
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #3'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 16.162.37.167
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_21
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.76.146.1
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #4'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.243.186.171
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #5'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.217.72.0
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #6'
+  name: 184|netflix_HK
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
@@ -8575,10 +8391,66 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '184|netflix_HK #7'
+  name: 184|Relay_HK-HK_11
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
+  port: 2083
+  server: 47.243.186.171
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_12
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2096
+  server: 47.242.174.27
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_13
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.76.178.146
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #1'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.243.234.9
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #2'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
   server: 8.210.21.65
   sni: mfjd.591haoka.com
   type: trojan
@@ -8589,105 +8461,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_26
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.210.107.246
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #8'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 47.243.91.58
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_28
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.217.164.10
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_29
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 47.243.86.79
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #9'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 8.210.85.222
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #10'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.242.59.216
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_32
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.210.89.245
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #11'
+  name: '184|netflix_HK #3'
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2087
@@ -8701,10 +8475,80 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '184|netflix_HK #12'
+  name: '184|netflix_HK #4'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.218.142.253
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_19
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.217.164.10
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #5'
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2096
+  server: 8.210.85.222
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_21
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.210.89.245
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #6'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.218.142.253
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #7'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
   server: 8.217.72.0
   sni: mfjd.591haoka.com
   type: trojan
@@ -8715,11 +8559,137 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_35
+  name: 184|Relay_HK-HK_24
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 16.162.152.191
+  port: 2053
+  server: 47.76.77.103
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_25
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.76.77.103
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_26
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.59.216
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #8'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.217.66.3
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #9'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.210.107.246
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #10'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 47.243.67.28
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_30
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 47.76.77.103
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #11'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 8.218.98.75
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_32
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.36.78
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #12'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 3443
+  server: 47.75.101.0
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -8732,8 +8702,8 @@ proxies:
   name: '184|netflix_HK #13'
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 16.162.37.123
+  port: 2053
+  server: 47.243.139.243
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -8744,6 +8714,34 @@ proxies:
 - country: HK
   fingerprint: chrome
   name: '184|netflix_HK #14'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.217.164.10
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_36
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 16.162.37.167
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_37
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 443
@@ -8760,50 +8758,8 @@ proxies:
   name: 184|Relay_HK-HK_38
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 47.76.94.15
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #15'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.217.66.3
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_40
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 16.162.56.233
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #16'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
-  server: 47.243.186.171
+  server: 47.243.86.79
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -8813,343 +8769,7 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '184|netflix_HK #17'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 16.162.10.198
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_43
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.210.21.65
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_44
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 43.154.96.33
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_45
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.217.221.165
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_46
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.217.72.0
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #18'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.218.65.171
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #19'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 18.167.208.181
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_49
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.210.164.75
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #20'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 36799
-  server: 43.224.50.213
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #21'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 8.218.98.75
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #22'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.217.123.243
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #23'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.218.173.78
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #24'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 8.210.85.222
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #25'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.242.119.104
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_56
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 8443
-  server: 8.218.204.128
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #26'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.218.142.253
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_58
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.243.139.243
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_59
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 8.217.164.10
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_60
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.210.43.213
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #27'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.76.37.57
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #28'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.243.67.28
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #29'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.217.164.10
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_64
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2096
-  server: 47.242.174.27
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: '184|netflix_HK #30'
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.218.142.253
-  sni: mfjd.591haoka.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
-- country: HK
-  fingerprint: chrome
-  name: 184|Relay_HK-HK_66
+  name: 184|Relay_HK-HK_39
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 38768
@@ -9163,11 +8783,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_67
+  name: 184|Relay_HK-HK_40
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 443
-  server: 43.155.22.176
+  port: 2083
+  server: 8.210.107.246
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -9177,7 +8797,119 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_68
+  name: 184|Relay_HK-HK_41
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 43.154.96.33
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #15'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.218.173.78
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_43
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 18.167.208.181
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_44
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.76.203.101
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_45
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 47.243.86.79
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_46
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 16.162.37.123
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_47
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 16.162.10.198
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_48
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 18.167.194.154
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_49
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
@@ -9191,7 +8923,91 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '184|netflix_HK #31'
+  name: 184|Relay_HK-HK_50
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2083
+  server: 8.217.164.10
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_51
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 47.76.94.15
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_52
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.76.37.57
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #16'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.119.104
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #17'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 47.242.60.161
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_55
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 8.218.204.128
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #18'
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
@@ -9205,10 +9021,24 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_70
+  name: 184|Relay_HK-HK_57
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
+  port: 443
+  server: 43.155.22.176
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #19'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
   server: 8.210.21.65
   sni: mfjd.591haoka.com
   type: trojan
@@ -9219,7 +9049,49 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_71
+  name: '184|netflix_HK #20'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2096
+  server: 47.243.91.58
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_60
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 16.162.56.233
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_61
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 8.210.85.222
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_62
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2083
@@ -9233,11 +9105,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_72
+  name: '184|netflix_HK #21'
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 29876
-  server: 154.204.60.218
+  port: 2083
+  server: 8.217.72.0
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -9247,7 +9119,21 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: '184|netflix_HK #32'
+  name: '184|netflix_HK #22'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 36799
+  server: 43.224.50.213
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_65
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 8443
@@ -9261,11 +9147,25 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_74
+  name: 184|Relay_HK-HK_66
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2083
-  server: 47.243.86.79
+  port: 2096
+  server: 47.76.178.146
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.vultr.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #23'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.210.21.65
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -9275,11 +9175,11 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
 - country: HK
   fingerprint: chrome
-  name: 184|Relay_HK-HK_75
+  name: 184|Relay_HK-HK_68
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.76.203.101
+  port: 2083
+  server: 8.218.65.171
   sni: mfjd.591haoka.com
   type: trojan
   udp: true
@@ -9287,6 +9187,145 @@ proxies:
     headers:
       Host: mfjd.591haoka.com
     path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #24'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.210.164.75
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #25'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 47.243.186.171
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #26'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.217.123.243
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #27'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.243.234.9
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #28'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 47.243.234.9
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #29'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.210.43.213
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #30'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 8443
+  server: 47.243.234.9
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: '184|netflix_HK #31'
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2096
+  server: 8.217.72.0
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- country: HK
+  fingerprint: chrome
+  name: 184|Relay_HK-HK_77
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 443
+  server: 159.138.131.240
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: /?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io
+- alterId: 0
+  cipher: auto
+  country: IE
+  name: 184,749|未知1120
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.34.51.113
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   country: IE
@@ -9298,15 +9337,6 @@ proxies:
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   tls: true
-  type: trojan
-  udp: true
-- country: IE
-  name: 184|netflix_IE
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 34.251.243.252
-  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - alterId: 0
@@ -9332,10 +9362,12 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   country: NL
+  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: '184|disney_netflix_FR #1'
+  name: 184,298|ee21d6917cec4aa8b2820f58805c3f...
   network: ws
   port: 443
   server: 188.114.97.210
@@ -9343,10 +9375,11 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: false
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   ws-opts:
     headers:
-      HOST: linde06.indiavideo.sbs
+      host: linde06.indiavideo.sbs
     path: /linkws
 - alterId: 0
   cipher: auto
@@ -9397,6 +9430,27 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  country: US
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: 184,298|b699eef59d3c4273bf28956da9038c...
+  network: ws
+  port: 443
+  server: 172.67.164.164
+  servername: afrhms07.xfixedfloat.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+  ws-opts:
+    headers:
+      host: afrhms07.xfixedfloat.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
   country: US
   h2-opts: {}
   http-opts: {}
@@ -9409,27 +9463,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: '184|disney_netflix_FR #2'
-  network: ws
-  port: 443
-  server: 172.67.164.164
-  servername: afrhms07.xfixedfloat.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
-  ws-opts:
-    headers:
-      HOST: afrhms07.xfixedfloat.cfd
-    path: /linkws
 - country: US
   fingerprint: chrome
-  name: '184|disney_netflix_FR #3'
+  name: '184|disney_netflix_FR #4'
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 443
@@ -9443,30 +9479,12 @@ proxies:
     path: /?ed=2560&proxyIP=proxyip.multacom.fxxk.dedyn.io
 - alterId: 0
   cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '184,749|未知781 13.1MB/s #1'
-  network: ws
-  port: 443
-  server: 104.21.55.234
-  servername: gwdef.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
-  ws-opts:
-    headers:
-      host: gwdef.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
   country: ZZ
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 184,298|2c4706cd6fc5419e9a85ada8fc6084...
+  name: 184,298|26b0811abd41468c99d1f38156c24d...
   network: ws
   port: 443
   server: 104.21.15.212
@@ -9480,9 +9498,30 @@ proxies:
     headers:
       host: glweidf.sbs
     path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: ZZ
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '184,298,749|未知781 13.1MB/s #1'
+  network: ws
+  port: 443
+  server: 104.21.55.234
+  servername: gwdef.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      host: gwdef.sbs
+    path: /linkws
 - country: ZZ
   fingerprint: chrome
-  name: '184|disney_netflix_FR #5'
+  name: '184|disney_netflix_FR #6'
   network: ws
   password: 0fd9b883-0551-4ed1-b978-528183b459a2
   port: 2053
@@ -12687,6 +12726,78 @@ proxies:
   ws-opts: null
 - alterId: 0
   cipher: auto
+  country: 🇷🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: 270|🇺RU_04
+  network: ws
+  port: 12910
+  server: 45.136.245.240
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇸US
+  name: 270,749|US226 1.9MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.114.114.207
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 270|Relay_🇺🇸US-TW_07
+  network: ws
+  port: 8080
+  server: 172.67.172.67
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-headers:
+    HOST: oiictw.yydsii.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 270|Relay_🇺🇸US-🇹🇼TW_08
+  network: ws
+  port: 8080
+  server: 172.67.185.79
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-headers:
+    HOST: oiictw.yydsii.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 270|Relay_🇺🇸US-🇹🇼TW_09
+  network: ws
+  port: 8080
+  server: 172.67.185.64
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-headers:
+    HOST: oiictw.yydsii.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 273|加群@freespeed6获取永久节点
   network: ws
   port: '39407'
@@ -12768,7 +12879,7 @@ proxies:
   name: 279|🇹🇼台湾区域1-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: M1H9UF.gov.goldliond.top
+  server: z18gCU.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12777,7 +12888,7 @@ proxies:
   name: 279|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: evpQhv.gov.goldliond.top
+  server: x1fceU.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12786,7 +12897,7 @@ proxies:
   name: 279|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: WSVprd.gov.goldliond.top
+  server: vwo2pf.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12795,7 +12906,7 @@ proxies:
   name: 279|🇭🇰香港区域1-三网优化
   network: tcp
   port: '40181'
-  server: PQRQO9.gov.goldliond.top
+  server: 5Tv1xN.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12804,7 +12915,7 @@ proxies:
   name: 279|🇭🇰香港区域2-三网优化
   network: tcp
   port: '40181'
-  server: tpk2UU.gov.goldliond.top
+  server: FjB8YH.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12813,7 +12924,7 @@ proxies:
   name: 279|🇭🇰香港区域3-三网优化
   network: tcp
   port: '40181'
-  server: 1kOEnx.gov.goldliond.top
+  server: DRfF8b.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12822,7 +12933,7 @@ proxies:
   name: 279|🇰🇷韩国/한국1/SK区域1节点
   network: tcp
   port: '20180'
-  server: RgTaI9.gov.goldliond.top
+  server: mkqeio.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12831,7 +12942,7 @@ proxies:
   name: 279|🇰🇷韩国/한국2/KT区域2节点
   network: tcp
   port: '20180'
-  server: 5C3oJD.gov.goldliond.top
+  server: iXD5Y4.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12840,7 +12951,7 @@ proxies:
   name: 279|🇰🇷韩国/한국3/KT区域3节点
   network: tcp
   port: '20180'
-  server: gxZkNQ.gov.goldliond.top
+  server: 5IoIf2.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12849,7 +12960,7 @@ proxies:
   name: 279|🇰🇷韩国/한국4/KT/Neflix区域4节点
   network: tcp
   port: '40182'
-  server: a0tEHm.gov.goldliond.top
+  server: 9IrBsM.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12858,7 +12969,7 @@ proxies:
   name: 279|🇯🇵日本区域1自动运维节点
   network: tcp
   port: '20181'
-  server: wIO29K.gov.goldliond.top
+  server: XbhVUt.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12867,7 +12978,7 @@ proxies:
   name: 279|🇯🇵日本区域2自动运维节点
   network: tcp
   port: '20181'
-  server: vvfwAS.gov.goldliond.top
+  server: KdypOn.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12876,7 +12987,7 @@ proxies:
   name: 279|🇯🇵日本区域3自动运维节点
   network: tcp
   port: '20181'
-  server: DSYMn0.gov.goldliond.top
+  server: H4EWu2.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12885,7 +12996,7 @@ proxies:
   name: 279|🇯🇵日本区域1-三网优化-解锁Netflix/DisneyP...
   network: tcp
   port: '40183'
-  server: wz4B9A.gov.goldliond.top
+  server: kYAmmc.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12894,7 +13005,7 @@ proxies:
   name: 279|🇸🇬狮城区域1自动运维节点
   network: tcp
   port: '20182'
-  server: Yqkxqp.gov.goldliond.top
+  server: 2tUgRB.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12903,7 +13014,7 @@ proxies:
   name: 279|🇸🇬狮城区域2自动运维节点
   network: tcp
   port: '20182'
-  server: ew4w93.gov.goldliond.top
+  server: 9840pB.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12912,7 +13023,7 @@ proxies:
   name: 279|🇸🇬狮城区域3自动运维节点
   network: tcp
   port: '20182'
-  server: meafzh.gov.goldliond.top
+  server: 3qR4ym.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12921,7 +13032,7 @@ proxies:
   name: 279|🇸🇬狮城区域1-三网优化-解锁Netflix
   network: tcp
   port: '40184'
-  server: 4bhVDe.gov.goldliond.top
+  server: tWOFrj.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12930,7 +13041,7 @@ proxies:
   name: 279|🇺🇸美国区域1自动运维节点
   network: tcp
   port: '20183'
-  server: I7A1Ye.gov.goldliond.top
+  server: af5FAE.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12939,7 +13050,7 @@ proxies:
   name: 279|🇺🇸美国区域2自动运维节点
   network: tcp
   port: '20183'
-  server: 1Hdbms.gov.goldliond.top
+  server: LYkUH1.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12948,7 +13059,7 @@ proxies:
   name: 279|🇺🇸美国区域3自动运维节点
   network: tcp
   port: '20183'
-  server: dEXZnZ.gov.goldliond.top
+  server: MK7nX3.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12957,7 +13068,7 @@ proxies:
   name: 279|🇺🇸美国区域1-三网优化-解锁Netflix/DisneyP...
   network: tcp
   port: '40185'
-  server: W1OLzZ.gov.goldliond.top
+  server: RUD2VH.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12966,7 +13077,7 @@ proxies:
   name: 279|🇦🇺澳洲区域1自动运维节点
   network: tcp
   port: '20184'
-  server: 1FdVpK.gov.goldliond.top
+  server: M8a4XJ.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12975,7 +13086,7 @@ proxies:
   name: 279|🇦🇺澳洲区域2自动运维节点
   network: tcp
   port: '20184'
-  server: CCZAuU.gov.goldliond.top
+  server: NFilQT.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12984,7 +13095,7 @@ proxies:
   name: 279|🇦🇺澳洲区域3自动运维节点
   network: tcp
   port: '20184'
-  server: wZucnn.gov.goldliond.top
+  server: HbOmNq.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -12993,7 +13104,7 @@ proxies:
   name: 279|🇨🇦加州区域1自动运维节点
   network: tcp
   port: '20185'
-  server: 0pH9N2.gov.goldliond.top
+  server: mR1STs.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13002,7 +13113,7 @@ proxies:
   name: 279|🇨🇦加州区域2自动运维节点
   network: tcp
   port: '20185'
-  server: nRtR92.gov.goldliond.top
+  server: gYYysC.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13011,7 +13122,7 @@ proxies:
   name: 279|🇨🇦加州区域3自动运维节点
   network: tcp
   port: '20185'
-  server: g3QIyD.gov.goldliond.top
+  server: TM8wWX.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13020,7 +13131,7 @@ proxies:
   name: 279|🇬🇧英国区域1自动运维节点
   network: tcp
   port: '20186'
-  server: nsBUHg.gov.goldliond.top
+  server: 6dU17f.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13029,7 +13140,7 @@ proxies:
   name: 279|🇬🇧英国区域2自动运维节点
   network: tcp
   port: '20186'
-  server: FjQtG4.gov.goldliond.top
+  server: VlYKDC.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13038,7 +13149,7 @@ proxies:
   name: 279|🇬🇧英国区域3自动运维节点
   network: tcp
   port: '20186'
-  server: 3kHu5z.gov.goldliond.top
+  server: HKT7BS.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13047,7 +13158,7 @@ proxies:
   name: 279|🇫🇷法国区域1自动运维节点
   network: tcp
   port: '20187'
-  server: L8OUb6.gov.goldliond.top
+  server: xehaZM.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13056,7 +13167,7 @@ proxies:
   name: 279|🇫🇷法国区域2自动运维节点
   network: tcp
   port: '20187'
-  server: yYFmc6.gov.goldliond.top
+  server: zmtIX1.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13065,7 +13176,7 @@ proxies:
   name: 279|🇫🇷法国区域3自动运维节点
   network: tcp
   port: '20187'
-  server: PfcOXI.gov.goldliond.top
+  server: yMaP1M.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13074,7 +13185,7 @@ proxies:
   name: 279|🇩🇪德国区域1自动运维节点
   network: tcp
   port: '20188'
-  server: a7fiXX.gov.goldliond.top
+  server: OSIxYy.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13083,7 +13194,7 @@ proxies:
   name: 279|🇩🇪德国区域2自动运维节点
   network: tcp
   port: '20188'
-  server: i8Khw6.gov.goldliond.top
+  server: CVOGNl.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13092,7 +13203,7 @@ proxies:
   name: 279|🇩🇪德国区域3自动运维节点
   network: tcp
   port: '20188'
-  server: 5yfD3d.gov.goldliond.top
+  server: HQUEAD.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13101,7 +13212,7 @@ proxies:
   name: 279|🇮🇳印度区域1自动运维节点
   network: tcp
   port: '20189'
-  server: yDTBIV.gov.goldliond.top
+  server: 2SAp3W.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13110,7 +13221,7 @@ proxies:
   name: 279|🇮🇳印度区域2自动运维节点
   network: tcp
   port: '20189'
-  server: vtIWdQ.gov.goldliond.top
+  server: 8a2EPS.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13119,7 +13230,7 @@ proxies:
   name: 279|🇮🇳印度区域3自动运维节点
   network: tcp
   port: '20189'
-  server: mvkXJH.gov.goldliond.top
+  server: 3DchRf.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -13162,20 +13273,6 @@ proxies:
     path: /speedtest
 - alterId: 0
   cipher: auto
-  name: 294|LosAngeles-GetAFreeNode.com
-  network: ws
-  port: 443
-  server: LosAngeles.fghgdddgvss.xyz
-  servername: LosAngeles.fghgdddgvss.xyz
-  tls: true
-  type: vmess
-  uuid: 5af5e263-f03e-4329-a4c5-9aac626efdc2
-  ws-opts:
-    headers:
-      Host: LosAngeles.fghgdddgvss.xyz
-    path: /speedtest
-- alterId: 0
-  cipher: auto
   name: 294|Moscow-GetAFreeNode.com
   network: ws
   port: 443
@@ -13187,6 +13284,20 @@ proxies:
   ws-opts:
     headers:
       Host: Moscow.fghgdddgvss.xyz
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 294|LosAngeles-GetAFreeNode.com
+  network: ws
+  port: 443
+  server: LosAngeles.fghgdddgvss.xyz
+  servername: LosAngeles.fghgdddgvss.xyz
+  tls: true
+  type: vmess
+  uuid: 5af5e263-f03e-4329-a4c5-9aac626efdc2
+  ws-opts:
+    headers:
+      Host: LosAngeles.fghgdddgvss.xyz
     path: /speedtest
 - cipher: chacha20-ietf
   name: '295,769|未命名 #347'
@@ -24891,7 +25002,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|0e02988012c8464eb2fdc3e24d6a97...
+  name: 298|623c667323514c5d8f4b14f9681989...
   network: ws
   port: 443
   server: mci.mosi.mosipro.ml
@@ -24899,7 +25010,7 @@ proxies:
   tls: true
   type: vmess
   udp: false
-  uuid: 38fc7abd-f083-451d-b60c-dc952c688592
+  uuid: 234c66bd-35ad-4e53-a91c-1e47792ba817
   ws-opts:
     headers:
       host: Dusseldorf.kotick.site
@@ -24908,7 +25019,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|f28b69234037474099cd3d472174c0...
+  name: 298|a18f6c6c20ec45ca961941446eb6a5...
   network: ws
   port: 443
   server: 147.185.161.125
@@ -24957,7 +25068,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|12eac800b08842e48c6a5c61a2a105...
+  name: 298|ebf2ed99f53a42f5bfabd7f9e35b26...
   network: ws
   port: 80
   server: 172.64.192.6
@@ -24974,7 +25085,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|7a26dae3186b427f9be1ec67fa0d1e...
+  name: 298|db7b173e3c1045f69381af832efdad...
   network: ws
   port: 80
   server: 104.16.16.44
@@ -24991,7 +25102,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|1b66621071fd464cabd8cf8c3ffe59...
+  name: 298|317441e3bb894fdab34088e12bdac0...
   network: ws
   port: 80
   server: 104.17.166.178
@@ -25008,7 +25119,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|f6a5bd8fa7794f8b8ffdf45a5c47bd...
+  name: 298|df3fc1460ca049bbb608999f8f4bc2...
   network: ws
   port: 80
   server: 172.67.6.3
@@ -25025,7 +25136,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|0c033b845be14f05b7108511f73e9c...
+  name: 298|212ca7a31be2480789be3de1b1d08a...
   network: ws
   port: 80
   server: 104.23.102.4
@@ -25042,7 +25153,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|264d70f2802644608469c7c3ed68e2...
+  name: 298|82e5808429204b93971622de707750...
   network: ws
   port: 443
   server: 170.178.179.190
@@ -25056,7 +25167,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|3e9690d5eb8d4a9f8f0e7dcce018fa...
+  name: 298|a03bc222bbe748a89e96310852df97...
   network: ws
   port: 443
   server: 104.26.0.95
@@ -25092,7 +25203,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|426ce46e40604c468ab79432a2fd0c...
+  name: 298|86926c45dcfa4b5684c5cdcf9adc96...
   network: ws
   port: 80
   server: 104.17.84.246
@@ -25109,7 +25220,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|de2dc42d2c7242e7a9335d66899b83...
+  name: 298|a888e1103e0f4f55b37d6bde7e906d...
   network: ws
   port: 80
   server: 104.17.66.57
@@ -25126,7 +25237,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|11cc70597a4640c18f0b7242fa86a6...
+  name: 298|ba822b1b0ff04637adc70b8a806bcd...
   network: ws
   port: 80
   server: 104.18.66.53
@@ -25143,7 +25254,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|3321f6b183774122947224fa13dd06...
+  name: 298|427865bcd5c943669736c4cb40e123...
   network: ws
   port: 80
   server: 104.16.148.251
@@ -25160,7 +25271,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|a6825d270ecc4365b092825d08cef6...
+  name: 298|de30481e756246edbfb65da3417826...
   network: ws
   port: 80
   server: 104.19.118.207
@@ -25177,7 +25288,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|06c1ca7185584f5d9e6a9d0772fa15...
+  name: 298|2343715d815446ff9afa97d8c17c71...
   network: ws
   port: 443
   server: 141.147.174.244
@@ -25191,7 +25302,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|d1ca9709158e4d21bd09280dc6c4a4...
+  name: 298|0807997187d34de5aabbfde8bb0bef...
   network: ws
   port: 443
   server: hms182.glweidf.sbs
@@ -25208,7 +25319,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|56397c7e76b24a1f8847690c5f7505...
+  name: 298|a3fc55a7ba1d4e3e994852bf0dbc4b...
   network: ws
   port: 443
   server: 104.21.21.88
@@ -25225,7 +25336,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|f0f60ac957c543fe941e1a17cb96e7...
+  name: 298|f77b91be62e84a1a8677179681a69c...
   network: ws
   port: 443
   server: 104.21.83.208
@@ -25242,7 +25353,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|6760db963ae042778700b0aeba5e15...
+  name: 298|17188a167aa54af1a89d703bb61b5a...
   network: ws
   port: 443
   server: 104.21.56.185
@@ -25277,7 +25388,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|f7b7e9ad933e4472a722e4836da070...
+  name: 298|1e1e3ec35c934751a1d475de1e5793...
   network: ws
   port: 443
   server: best-charm-pediatrician.glitch.me
@@ -25309,7 +25420,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|91f9cc155e99445f9ff4e1e96ef37e...
+  name: 298|fcb0d46811db4895a07e99062ac17e...
   network: ws
   port: 443
   server: 104.21.15.36
@@ -25326,7 +25437,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|1ccf41d10572400eaef0bd92cc41b5...
+  name: 298|eda6b1e126e84411b476a97616be98...
   network: ws
   port: 443
   server: 69.50.93.90
@@ -25443,7 +25554,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|2e51cb87194d43539770fcfe4ec5af...
+  name: 298|100b4d20904c483e863192e920e076...
   network: ws
   port: 443
   server: upload.ir
@@ -25460,7 +25571,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|941c0deb95f9429ea6e50ff5559f4a...
+  name: 298|bcf3363b54934346aa6bf4b3d22d55...
   network: ws
   port: 443
   server: 188.114.99.205
@@ -25477,7 +25588,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|876772a7b68149dc9ff869c1330f46...
+  name: 298|67ef6c577ca942bf90f1bcff5dc5be...
   network: ws
   port: 30000
   server: 51.89.2.48
@@ -25509,7 +25620,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|6d9db5c3f8a24f8c97bac3343a5867...
+  name: 298|81aec358ba3344769a33b4a52e7e82...
   network: ws
   port: 2082
   server: www.soccerstarss.ir
@@ -25538,7 +25649,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|de4f1ed5efa546bfa324bbd56e0b00...
+  name: 298|22036617c1a04c20a55e9df65c27a6...
   network: ws
   port: 8080
   server: 104.19.44.174
@@ -25552,7 +25663,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|49b6e55c24dd4b28b3d14150073949...
+  name: 298|165471b934bd48989cf8d3ddd9deb1...
   network: ws
   port: 8080
   server: 172.67.185.112
@@ -25566,7 +25677,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 298|57d90fa1e4554ac18dfdf09d7c3aca...
+  name: 298|7cac5d9e4c6f419fa543bc3ac667f0...
   network: ws
   port: 8080
   server: 172.67.199.143
@@ -25578,8 +25689,56 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '299,305,545,573,575,576,597,683,750,770,778|رایگان | VMESS | @Hope_Net |
-    U... #19'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 298|959ff4fe22ff47e3b94e0f169730a3...
+  network: ws
+  port: 8080
+  server: 104.19.44.174
+  tls: false
+  type: vmess
+  udp: false
+  uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5
+  ws-opts:
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 298|1bcfd3ddd8ab4120b8a2f8875474d2...
+  network: ws
+  port: 443
+  server: 172.67.170.13
+  servername: glweidf.sbs
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 298|934a60f2652b4008b95bf302cea7fc...
+  network: ws
+  port: 443
+  server: 172.67.161.77
+  servername: linde06.indiavideo.sbs
+  tls: true
+  type: vmess
+  udp: false
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '299,305,539,540,545,573,575,576,597,683,750,770,778|رایگان | VMESS | @Hope_Net
+    | U... #13'
   network: ws
   port: '443'
   server: linde06.indiavideo.sbs
@@ -25860,7 +26019,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '305,573,770,778|رایگان | VMESS | @DeamNet_Prox... #17'
+  name: '305,573|رایگان | VMESS | @DeamNet_Prox... #7'
   network: ws
   port: '8080'
   server: 172.67.199.143
@@ -25873,7 +26032,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '305,573,770,778|رایگان | VMESS | @DeamNet_Prox... #18'
+  name: '305,573|رایگان | VMESS | @DeamNet_Prox... #8'
   network: ws
   port: '8080'
   server: 172.67.185.112
@@ -25886,7 +26045,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '305,562,729,737,770,778|رایگان | VMESS | @DeamNet_Prox... #19'
+  name: '305,562,573,737|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.44.1... #1'
   network: ws
   port: '8080'
   server: 104.19.44.174
@@ -25898,23 +26057,6 @@ proxies:
     headers:
       Host: amd2.720208.xyz
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 305,573,582,738,739,784|美国_0612129
-  network: ws
-  port: '8080'
-  server: 172.67.185.79
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '305,545,562,573,582,683,770,778,784|美国_0612087 #1'
@@ -26001,7 +26143,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '305,562,582,683,729,750,784|美国_0612111 #1'
+  name: '305,562,582,683,750,784|美国_0612111 #1'
   network: ws
   port: '443'
   server: 172.67.170.11
@@ -26169,20 +26311,6 @@ proxies:
   uuid: d2c7b321-5e48-4d28-80e2-f64c6ddfad96
 - alterId: 0
   cipher: none
-  name: '305,573|رایگان | VMESS | @vless_vmess ... #3'
-  network: ws
-  port: '80'
-  server: 188.114.97.3
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b25f8da6-54a2-49b3-bacf-8403b4c36556
-  ws-opts:
-    headers:
-      Host: De1.vmess.site.
-    path: ''
-- alterId: 0
-  cipher: none
   name: '305,573,770,778|رایگان | VMESS | @vmess_vless_... #11'
   network: ws
   port: '80'
@@ -26195,6 +26323,41 @@ proxies:
     headers:
       Host: De1.vmess.site.
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+- alterId: 0
+  cipher: auto
+  name: 305,545|🇩🇪DE(AzadNet.t.me)_003
+  network: tcp
+  port: '46377'
+  server: 5.75.202.76
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0db30fb2-f972-4096-be43-9c01c2796150
+- alterId: 0
+  cipher: auto
+  name: '305,729,737,749,750|未知1076 13.2MB/s #2'
+  network: tcp
+  port: '8081'
+  server: 94.232.246.31
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fb53fae3-92a3-406c-97e8-73be9dc23365
+- alterId: 0
+  cipher: auto
+  name: 305,562,573,649|👉🆔 @v2ray_configs_pool (40)
+  network: ws
+  port: '443'
+  server: 104.21.83.208
+  servername: afrhms16v.bestxray.buzz
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /linkws
 - alterId: 64
   cipher: auto
   name: 305|🇳🇱NL | 🟢 | vmess | @yaney_01 |...
@@ -26258,7 +26421,7 @@ proxies:
     path: /66
 - alterId: 0
   cipher: auto
-  name: '305,562,573,597,683,750,770,778|رایگان | VMESS | @Hope_Net | U... #17'
+  name: '305,562,573,597,683,750,770,778|رایگان | VMESS | @Hope_Net | U... #14'
   network: ws
   port: '443'
   server: glweidf.cfd
@@ -26283,19 +26446,6 @@ proxies:
     headers:
       Host: v3.ssrsub.com
     path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  name: '305,573,680,681|🇪🇺 欧洲(油管:破解资源君2.0) #53'
-  network: ws
-  port: '443'
-  server: vjp3.0bad.com
-  tls: true
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers:
-      Host: vjp3.0bad.com
-    path: /chat
 - alterId: 0
   cipher: auto
   name: '305,573,750,763,770,778|رایگان | VMESS | @v2rayng_conf... #7'
@@ -26326,7 +26476,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '305,573,750,770,778|رایگان | VMESS | @v2Line | NL🇳... #2'
+  name: '305,573,750,770,778|رایگان | VMESS | @v2Line | DE🇩... #2'
   network: ws
   port: '443'
   server: caretaker.com
@@ -26340,7 +26490,7 @@ proxies:
     path: /ivideos.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: '305,545,573,750,770,778|رایگان | VMESS | @v2Line | NL🇳... #3'
+  name: '305,545,573,750,770,778|رایگان | VMESS | @v2Line | DE🇩... #3'
   network: ws
   port: '443'
   server: 104.26.6.65
@@ -26368,7 +26518,7 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: '305,573,749,750,770,778|رایگان | VMESS | @v2Line | IN🇮... #3'
+  name: '305,573,749,750|未知50 #2'
   network: ws
   port: '443'
   server: in-full.privateip.net
@@ -26927,7 +27077,7 @@ proxies:
     path: /racevpn
 - alterId: 0
   cipher: auto
-  name: '305|%F0%9F%87%B0%F0%9F%87%BF%20Kaz... #3'
+  name: '305,549,580,598|乌克兰 V2CROSS.COM #2'
   network: tcp
   port: '2083'
   server: kz-v2ray.ipracevpn.com
@@ -27173,6 +27323,19 @@ proxies:
   ws-opts:
     headers:
       Host: vus4.0bad.com
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: '305,680,681,770,778|رایگان | VMESS | @Hope_Net | A... #1'
+  network: ws
+  port: '443'
+  server: vjp3.0bad.com
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vjp3.0bad.com
     path: /chat
 - alterId: 0
   cipher: auto
@@ -27787,7 +27950,7 @@ proxies:
     path: /video/Zo98PYfE
 - alterId: 0
   cipher: auto
-  name: '305,680,681|🇺🇸 美国 CloudFlare节点 #51'
+  name: '305,680,681|🇺🇸 美国 CloudFlare节点 #55'
   network: ws
   port: '8080'
   server: 172.67.185.242
@@ -27843,7 +28006,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '305,680,681|🇺🇸 美国 CloudFlare节点 #54'
+  name: '305,680,681|🇺🇸 美国 CloudFlare节点 #58'
   network: ws
   port: '8080'
   server: 104.19.47.149
@@ -27889,12 +28052,71 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- alterId: 64
+  cipher: auto
+  name: '305,562,729,737,749,750|US29 #2'
+  network: tcp
+  port: '41400'
+  server: 198.2.218.108
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 305|🔒 VM-WS-NA 🏴‍☠️ NA-104.17.163....
+  name: '305,737,749,750|未知196 #2'
+  network: tcp
+  port: '28591'
+  server: 217.60.249.32
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 144a787a-7a69-44a8-904f-65e9c8bfd27a
+- alterId: 0
+  cipher: auto
+  name: '305,683,737,749,750|HK21 1.3MB/s #2'
+  network: ws
+  port: '28681'
+  server: 47.242.22.171
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '305,737,749,750|未知967 #2'
+  network: tcp
+  port: '5424'
+  server: 46.245.72.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
+- alterId: 0
+  cipher: auto
+  name: '305,737,749,750|未知1346 #2'
+  network: tcp
+  port: '5433'
+  server: 46.245.72.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
+- alterId: 0
+  cipher: auto
+  name: '305,737|🔒 VM-WS-NA 🏴‍☠️ NA-104.17.145.... #1'
   network: ws
   port: '2052'
-  server: 104.17.163.122
+  server: 104.17.145.42
   servername: ''
   tls: false
   type: vmess
@@ -27904,307 +28126,19 @@ proxies:
       Host: us6_0.wish.ml
     path: /
 - alterId: 0
-  cipher: auto
-  name: 305,582,729,737,784|未知_0612117
+  cipher: chacha20-poly1305
+  name: '305,729,737|🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.69.... #2'
   network: ws
-  port: '2086'
-  server: 104.16.60.8
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
-  ws-opts:
-    headers:
-      Host: vpnsupportfast.vpnsuortfast.workers.dev
-    path: /afrhms07.xfixedfloat.cfd/linkws
-- alterId: 0
-  cipher: auto
-  name: '305,316,729,737|🔒 VM-TCP-NONE 🇮🇷 IR-87.236.213... #2'
-  network: tcp
-  port: '8443'
-  server: 87.236.213.124
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4240b72c-b790-4bb0-93a0-c0f438a373a1
-- alterId: 0
-  cipher: auto
-  name: '305,737|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.214.... #1'
-  network: ws
-  port: '2095'
-  server: 172.67.214.33
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 305,562,582,683,784|荷兰_0612011
-  network: ws
-  port: '443'
-  server: 188.114.97.3
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '305,737,749,750|未知998 #2'
-  network: tcp
-  port: '5432'
-  server: 46.245.72.23
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
-- alterId: 0
-  cipher: auto
-  name: '305,729,749,750|未知973 #2'
-  network: tcp
-  port: '8442'
-  server: 141.94.237.81
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
-- alterId: 0
-  cipher: auto
-  name: '305,545,729,737,749,750|US495 #2'
-  network: tcp
-  port: '39841'
-  server: 172.233.164.32
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4242d74d-b748-4e74-a7c2-2bfb9d6ed121
-- alterId: 0
-  cipher: auto
-  name: 305|🔒 VM-WS-TLS 🏴‍☠️ NA-172.67.179...
-  network: ws
-  port: '2053'
-  server: 172.67.179.249
-  servername: usde2024ny.icu2rip.eu.org
+  port: 443
+  server: 104.21.69.44
+  servername: a1.wolf-shop.ir
   tls: true
   type: vmess
-  uuid: ed2bd5fa-4a82-4ceb-efa5-24ab3411aa57
+  uuid: c8554223-0ea5-4696-9f40-ed11501d7915
   ws-opts:
     headers:
-      Host: usde2024ny.icu2rip.eu.org
-    path: /freebaipiao
-- alterId: 0
-  cipher: auto
-  name: '305,562,683,729,737|🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.5... #3'
-  network: ws
-  port: 50000
-  server: 202.86.138.58
-  servername: cdn2.twitter.now.cc
-  tls: true
-  type: vmess
-  uuid: cab438c4-9c5a-43fd-a623-ce81cb93085c
-  ws-opts:
-    headers:
-      Host: hkv6.linyuch3.eu.org
-    path: /ikun
-- alterId: 0
-  cipher: auto
-  name: '305,737,750|TW2 #2'
-  network: ws
-  port: '37902'
-  server: 118.170.98.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: hinet-wap.myddns.me
-    path: /index?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '305,545,737,749,750|US26 3.8MB/s #2'
-  network: tcp
-  port: '31433'
-  server: 205.234.231.35
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 50e82581-bd14-4527-f7d6-e7824cd26f57
-- alterId: 0
-  cipher: auto
-  name: '305,729,737,750|HK57 #2'
-  network: ws
-  port: '4431'
-  server: 152.32.190.239
-  servername: cfhk.393930.xyz
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 305,562|美国_061223620
-  network: tcp
-  port: '41911'
-  server: 107.148.192.156
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '305,729,737|🔒 VM-TCP-NA 🇮🇷 IR-37.152.181.1... #2'
-  network: tcp
-  port: 433
-  server: 37.152.181.197
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 482a7b71-2483-4945-98d1-656196a6bcfb
-- alterId: 0
-  cipher: auto
-  name: '305,737|🔒 VM-WS-NA 🇺🇸 US-40.233.82.187... #1'
-  network: ws
-  port: '20043'
-  server: 40.233.82.187
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d14c6c23-b8f6-48ef-b03b-a557533e344d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '305,737|🔒 VM-WS-NONE 🏴‍☠️ NA-104.21.91... #1'
-  network: ws
-  port: '80'
-  server: 104.21.91.52
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dac9edf5-b4eb-489d-bb9c-8b94c761d2a9
-  ws-opts:
-    headers:
-      Host: se1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 64
-  cipher: auto
-  name: '305,737,749,750|未知881 #2'
-  network: tcp
-  port: '50002'
-  server: 120.210.205.82
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '305,737,749,750|未知1549 #2'
-  network: tcp
-  port: '5434'
-  server: 78.109.195.54
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
-- alterId: 0
-  cipher: auto
-  name: 305|🔒 VM-TCP-NA 🇯🇵 JP-35.78.124.15...
-  network: tcp
-  port: 11773
-  server: 35.78.124.157
-  tls: false
-  type: vmess
-  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
-- alterId: 0
-  cipher: auto
-  name: '305,729,737|🔒 VM-TCP-NA 🇩🇪 DE-91.107.247.1... #2'
-  network: tcp
-  port: '2222'
-  server: 91.107.247.152
-  tls: false
-  type: vmess
-  uuid: 154a3a61-4813-4e7d-b9d7-b5e98ef9d419
-- alterId: 0
-  cipher: auto
-  name: '305,545,729,737|🔒 VM-WS-TLS 🇺🇸 US-146.235.223.... #2'
-  network: ws
-  port: '25943'
-  server: 146.235.223.24
-  servername: oracle1.mysupp.com
-  tls: true
-  type: vmess
-  uuid: 520c82fe-3e74-43b9-9dfb-87cae71e8cc0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /canada
-- alterId: 0
-  cipher: auto
-  name: '305,729,737|🔒 VM-WS-TLS 🇭🇰 HK-47.242.79.71... #2'
-  network: ws
-  port: '2087'
-  server: 47.242.79.71
-  servername: sg.baijia.cfd
-  tls: true
-  type: vmess
-  uuid: b35a9c68-8406-4c6f-bb0d-2671d53e55eb
-  ws-opts:
-    headers:
-      Host: sg.baijia.cfd
-    path: /fdsffgfdgdfgdf
-- alterId: 0
-  cipher: auto
-  name: 305,582,729,737,784|日本_0612005
-  network: ws
-  port: '888'
-  server: 103.168.155.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
-  ws-opts:
-    headers:
-      Host: cdn.cjhh.lol
-    path: /je5x3pBN1vez3NQudNkB
-- alterId: 0
-  cipher: auto
-  name: '305,737|🔒 VM-TCP-NONE 🇮🇷 IR-85.9.99.24... #1'
-  network: tcp
-  port: 52065
-  server: 85.9.99.240
-  tls: false
-  type: vmess
-  uuid: f29ea77c-6842-4ee0-9fc1-9c7a871566b2
-- alterId: 0
-  cipher: auto
-  name: '305,562,683,729,737,749,750|未知844 4.5MB/s #2'
-  network: tcp
-  port: '54210'
-  server: 37.221.125.100
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5dd12298-3587-4db4-b8d5-9f2151888bfd
+      Host: a1.wolf-shop.ir
+    path: /6mHwql1HSSV5FOZe0UV1BYvuQ
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -28222,109 +28156,42 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '305,649,683,729,737,749,750|US160 N/A/s #2'
+  name: '305,561,563,683,729,737,749,750|US445 #2'
   network: tcp
-  port: '45017'
-  server: 142.0.134.241
+  port: '42598'
+  server: 129.146.247.135
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
 - alterId: 0
   cipher: auto
-  name: 305|🔒 VM-WS-NA 🏴‍☠️ NA-104.21.28.1...
+  name: '305,683,729,737|🔒 VM-WS-NA 🏴‍☠️ NA-188.114.96.... #3'
   network: ws
   port: '8880'
-  server: 104.21.28.188
+  server: 188.114.96.3
   servername: ''
   tls: false
   type: vmess
-  uuid: 82d2806a-ed23-4cab-8068-1b506b1680ff
+  uuid: e8ef1f51-3985-4d9b-bf29-46d26da65a4b
   ws-opts:
     headers:
-      Host: realpydar.banndedd.ir
-    path: ''
+      Host: SvnProBotV2rayNethOne6.9.6.9.ir.shop.com.xn--fhqpqv8rrth13sbaaac958pc94anf0d8gm.ayfadesigns.com.
+    path: /telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,Mmdv2rayng-V2rayngmmd-telegram-mehran-v2ray?ed=2056
 - alterId: 0
   cipher: auto
-  name: '305,737,749,750|未知1346 #2'
+  name: '305,737,749,750|未知1503 #2'
   network: tcp
-  port: '5433'
+  port: '5429'
   server: 46.245.72.23
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
-- alterId: 0
-  cipher: auto
-  name: '305,729,737|🔒 VM-TCP-NONE 🇮🇷 IR-31.14.113.... #2'
-  network: tcp
-  port: '47985'
-  server: 31.14.113.206
-  tls: false
-  type: vmess
-  uuid: 645ac419-df03-4074-ba09-56a943fcbbca
-- alterId: 0
-  cipher: auto
-  name: '305,683,737,749,750|US38 #3'
-  network: tcp
-  port: '46628'
-  server: 2.58.87.221
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f6ba9e5a-711c-496f-be60-ac5464dec2b8
-- alterId: 0
-  cipher: auto
-  name: '305,562,683,729,737,749,750|未知609 1.2MB/s #3'
-  network: tcp
-  port: '11005'
-  server: 192.248.190.110
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 67ddcdc0-eb50-11ee-a09c-3759ee9e5e87
-- alterId: 2
-  cipher: auto
-  name: '305,545,737,749,750|US579 #2'
-  network: tcp
-  port: '1233'
-  server: 154.17.2.168
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 40bc7b65-ec8a-3201-a646-c9d1b71091c6
-- alterId: 0
-  cipher: auto
-  name: '305,737,749,750|未知521 #2'
-  network: tcp
-  port: '11133'
-  server: 77.105.166.239
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3eda0ae3-1a36-42aa-8935-f0611d07c05e
-- alterId: 0
-  cipher: auto
-  name: '305,737,750|未知1499 #2'
-  network: ws
-  port: '54321'
-  server: 46.17.44.222
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae840eaa-21a3-462c-8dc8-f5eded625799
-  ws-opts:
-    headers:
-      Host: eedp257bubu2wefy3.lovebaipiao.net
-    path: /iphone
 - alterId: 0
   cipher: auto
   name: '305,737,749,750|未知572 #2'
@@ -28338,15 +28205,32 @@ proxies:
   uuid: 17d1c55c-1933-432f-9c2f-6e93d35ba342
 - alterId: 0
   cipher: auto
-  name: '305,737,749,750|未知855 #2'
-  network: tcp
-  port: '5435'
-  server: 31.14.118.226
-  servername: ''
-  skip-cert-verify: true
-  tls: false
+  name: '305,729,737|🔒 VM-WS-TLS 🇭🇰 HK-47.242.79.71... #2'
+  network: ws
+  port: '2087'
+  server: 47.242.79.71
+  servername: sg.baijia.cfd
+  tls: true
   type: vmess
-  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
+  uuid: b35a9c68-8406-4c6f-bb0d-2671d53e55eb
+  ws-opts:
+    headers:
+      Host: sg.baijia.cfd
+    path: /fdsffgfdgdfgdf
+- alterId: 0
+  cipher: auto
+  name: '305,562,683,729,737|🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.5... #3'
+  network: ws
+  port: 50000
+  server: 202.86.138.58
+  servername: cdn2.twitter.now.cc
+  tls: true
+  type: vmess
+  uuid: cab438c4-9c5a-43fd-a623-ce81cb93085c
+  ws-opts:
+    headers:
+      Host: hkv6.linyuch3.eu.org
+    path: /ikun
 - alterId: 0
   cipher: auto
   name: '305,729,737,750|未知193 #2'
@@ -28363,18 +28247,202 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 305,582,683,729,750,784|美国_0612088
+  name: '305,737,749,750|未知434 #2'
+  network: tcp
+  port: '5426'
+  server: 46.245.72.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
+- alterId: 0
+  cipher: auto
+  name: '305,737|🔒 VM-WS-NA 🇺🇸 US-40.233.82.187... #1'
   network: ws
-  port: '2082'
-  server: 162.251.82.187
+  port: '20043'
+  server: 40.233.82.187
   servername: ''
   tls: false
   type: vmess
-  uuid: d2c7b321-5e48-4d28-80e2-f64c6ddfad96
+  uuid: d14c6c23-b8f6-48ef-b03b-a557533e344d
   ws-opts:
     headers:
-      Host: telewebion.com.www.speedtest.net.google.com.speed.cloudflare.com.bmw.com.zula.ir.xbox.com.ßOTShop.irł😂☠️.2.mobilekiani.ir
-    path: /dashboard?ed=2048
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '305,737,749,750|未知855 #2'
+  network: tcp
+  port: '5435'
+  server: 31.14.118.226
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
+- alterId: 0
+  cipher: auto
+  name: '305,683,729,737|🔒 VM-TCP-NA 🇮🇱 IL-64.176.173.2... #3'
+  network: tcp
+  port: '3389'
+  server: 64.176.173.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  name: '305,737|🔒 VM-TCP-NA 🇳🇱 NL-176.126.113.... #1'
+  network: tcp
+  port: '8442'
+  server: 176.126.113.161
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7be5fa83-84c4-4105-a8f7-d880f5d91afc
+- alterId: 0
+  cipher: auto
+  name: '305,737|🔒 VM-WS-NONE 🏴‍☠️ NA-104.21.91... #1'
+  network: ws
+  port: '80'
+  server: 104.21.91.52
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dac9edf5-b4eb-489d-bb9c-8b94c761d2a9
+  ws-opts:
+    headers:
+      Host: se1-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '305,737|🔒 VM-WS-TLS 🏴‍☠️ NA-172.67.198... #1'
+  network: ws
+  port: '2053'
+  server: 172.67.198.207
+  servername: usde2024ny.icu2rip.eu.org
+  tls: true
+  type: vmess
+  uuid: ed2bd5fa-4a82-4ceb-efa5-24ab3411aa57
+  ws-opts:
+    headers:
+      Host: usde2024ny.icu2rip.eu.org
+    path: /freebaipiao
+- alterId: 0
+  cipher: auto
+  name: '305,562,683,737|🔒 VM-TCP-NONE 🇬🇧 GB-51.89.255.... #2'
+  network: tcp
+  port: 35517
+  server: 51.89.255.72
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8f69e529-6b00-4f06-b45f-40b31f7f8ca3
+- alterId: 0
+  cipher: auto
+  name: '305,737,750|TW2 #2'
+  network: ws
+  port: '37902'
+  server: 118.170.98.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      Host: hinet-wap.myddns.me
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '305,562,683,729,737,749,750|未知844 4.5MB/s #2'
+  network: tcp
+  port: '54210'
+  server: 37.221.125.100
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5dd12298-3587-4db4-b8d5-9f2151888bfd
+- alterId: 0
+  cipher: auto
+  name: '305,737,749,750|未知1017 #2'
+  network: tcp
+  port: '5427'
+  server: 46.245.72.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
+- alterId: 64
+  cipher: auto
+  name: '305,737,749,750|未知881 #2'
+  network: tcp
+  port: '50002'
+  server: 120.210.205.82
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '305,316,729,737|🔒 VM-TCP-NONE 🇮🇷 IR-87.236.213... #3'
+  network: tcp
+  port: '8443'
+  server: 87.236.213.124
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4240b72c-b790-4bb0-93a0-c0f438a373a1
+- alterId: 0
+  cipher: auto
+  name: '305,729,737|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #2'
+  network: tcp
+  port: 54185
+  server: 152.42.208.82
+  tls: false
+  type: vmess
+  uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
+- alterId: 0
+  cipher: auto
+  name: '305,597,737,749,750|未知325 #2'
+  network: ws
+  port: '41597'
+  server: 183.181.36.194
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '305,737|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.71.1... #1'
+  network: ws
+  port: '2082'
+  server: 172.67.71.168
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9ae13861-0a35-414a-ff49-a077e9eeedb4
+  ws-opts:
+    headers:
+      Host: kp.alipay.ovh
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '305,729,737|🔒 VM-TCP-NA 🇩🇪 DE-91.107.247.1... #2'
+  network: tcp
+  port: '2222'
+  server: 91.107.247.152
+  tls: false
+  type: vmess
+  uuid: 154a3a61-4813-4e7d-b9d7-b5e98ef9d419
 - alterId: 0
   cipher: auto
   name: '305,729,737|🔒 VM-TCP-NONE 🇺🇸 US-45.55.201.... #2'
@@ -28386,129 +28454,29 @@ proxies:
   uuid: 49f275eb-bf50-40ce-b615-7c67cfac187e
 - alterId: 0
   cipher: auto
-  name: '305,737,749,750|US137 #2'
-  network: tcp
-  port: '43834'
-  server: 50.114.243.61
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b246e34d-bbd1-4016-8f74-ea461c37e411
-- alterId: 0
-  cipher: auto
-  name: '305,729,737|🔒 VM-TCP-NA 🇮🇷 IR-46.36.102.5:... #2'
-  network: tcp
-  port: '55735'
-  server: 46.36.102.5
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 53ad7954-8705-4ecd-8ba3-aaeaa6913e97
-- alterId: 0
-  cipher: auto
-  name: '305,729,737,749,750|未知1076 13.2MB/s #2'
-  network: tcp
-  port: '8081'
-  server: 94.232.246.31
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fb53fae3-92a3-406c-97e8-73be9dc23365
-- alterId: 0
-  cipher: auto
-  name: 305|🔒 VM-TCP-NA 🇹🇼 TW-122.118.177....
-  network: tcp
-  port: '61017'
-  server: 122.118.177.87
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
-- alterId: 64
-  cipher: auto
-  name: '305,562,729,737,749,750|US29 #2'
-  network: tcp
-  port: '41400'
-  server: 198.2.218.108
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '305,545,683,729,737,749,750|US404 13.9KB/s #3'
-  network: tcp
-  port: '39027'
-  server: 174.136.205.46
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 26419143-8a06-43ab-d58c-bea7b7da8203
-- alterId: 0
-  cipher: auto
-  name: '305,750|未知121 #2'
+  name: '305,545,729,737|🔒 VM-WS-TLS 🇺🇸 US-146.235.223.... #2'
   network: ws
-  port: '11002'
-  server: 31.47.51.229
-  servername: ''
-  tls: false
+  port: '25943'
+  server: 146.235.223.24
+  servername: oracle1.mysupp.com
+  tls: true
   type: vmess
-  uuid: d2c7b321-5e48-4d28-80e2-f64c6ddfad96
+  uuid: 520c82fe-3e74-43b9-9dfb-87cae71e8cc0
   ws-opts:
     headers:
-      Host: google.com
-    path: /
+      Host: ''
+    path: /canada
 - alterId: 0
   cipher: auto
-  name: '305,737,749,750|未知967 #2'
+  name: '305,737,749,750|未知521 #2'
   network: tcp
-  port: '5424'
-  server: 46.245.72.23
+  port: '11133'
+  server: 77.105.166.239
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
-- alterId: 2
-  cipher: auto
-  name: '305,729,737,749,750|未知1169 #2'
-  network: tcp
-  port: '229'
-  server: 154.31.112.51
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 40bc7b65-ec8a-3201-a646-c9d1b71091c6
-- alterId: 0
-  cipher: auto
-  name: '305,737,749,750|未知607 #2'
-  network: tcp
-  port: '5422'
-  server: 79.175.157.75
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
-- alterId: 0
-  cipher: auto
-  name: '305,582,729,737,784|未知_0612125 #1'
-  network: ws
-  port: '2096'
-  server: 104.16.61.8
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
-  ws-opts:
-    headers:
-      Host: 7whrapid-river-a083.sisay70779.workers.dev
-    path: /afrhms07.xfixedfloat.cfd/linkws
+  uuid: 3eda0ae3-1a36-42aa-8935-f0611d07c05e
 - alterId: 0
   cipher: auto
   name: '305,561,562,563,597,683,729,737,749,750|US335 24.4MB/s #2'
@@ -28522,9 +28490,43 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '305,737,749,750|未知434 #2'
+  name: '305,737|🔒 VM-TCP-NA 🇯🇵 JP-35.78.239.11... #1'
   network: tcp
-  port: '5426'
+  port: 11773
+  server: 35.78.239.116
+  tls: false
+  type: vmess
+  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
+- alterId: 0
+  cipher: auto
+  name: '305,729,737,750|HK57 #2'
+  network: ws
+  port: '4431'
+  server: 152.32.190.239
+  servername: cfhk.393930.xyz
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '305,737,749,750|未知225 #2'
+  network: tcp
+  port: '21491'
+  server: 31.47.42.34
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ed17a08f-2294-46fd-8a27-225fed622087
+- alterId: 0
+  cipher: auto
+  name: '305,737,749,750|未知998 #2'
+  network: tcp
+  port: '5432'
   server: 46.245.72.23
   servername: ''
   skip-cert-verify: true
@@ -28533,46 +28535,49 @@ proxies:
   uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
 - alterId: 0
   cipher: auto
-  name: '305,729,737,749,750|未知109 #2'
+  name: '305,545,683,729,737,749,750|US404 13.9KB/s #3'
   network: tcp
-  port: '2083'
-  server: 172.104.98.218
-  servername: jp-v2ray.ipracevpn.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 745a1002-6136-4a61-b865-86e2e29bf8b6
-- alterId: 0
-  cipher: auto
-  name: '305,561,563,683,729,737,749,750|US445 #2'
-  network: tcp
-  port: '42598'
-  server: 129.146.247.135
+  port: '39027'
+  server: 174.136.205.46
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
+  uuid: 26419143-8a06-43ab-d58c-bea7b7da8203
 - alterId: 0
   cipher: auto
-  name: '305,562,683,737|🔒 VM-TCP-NONE 🇬🇧 GB-51.89.255.... #2'
+  name: '305,737,749,750|未知1552 #2'
   network: tcp
-  port: 35517
-  server: 51.89.255.72
+  port: '5423'
+  server: 31.14.122.91
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
+- alterId: 0
+  cipher: auto
+  name: '305,737|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.214.... #1'
+  network: ws
+  port: '2095'
+  server: 172.67.214.33
   servername: ''
   tls: false
   type: vmess
-  uuid: 8f69e529-6b00-4f06-b45f-40b31f7f8ca3
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 0
   cipher: auto
-  name: '305,683,729,737|🔒 VM-TCP-NA 🇮🇱 IL-64.176.173.2... #3'
-  network: tcp
-  port: '3389'
-  server: 64.176.173.234
-  servername: ''
+  name: '305,737|🔒 VM-TCP-NA 🇺🇸 US-108.181.200.... #1'
+  network: ''
+  port: 17163
+  server: 108.181.200.220
   tls: false
   type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  uuid: d54814a1-7a93-45f8-9117-db317a25d100
 - alterId: 0
   cipher: auto
   name: '305,737|🔒 VM-WS-NA 🇯🇵 JP-167.88.184.12... #1'
@@ -28589,17 +28594,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '305,737,749,750|未知1552 #2'
-  network: tcp
-  port: '5423'
-  server: 31.14.122.91
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
-- alterId: 0
-  cipher: auto
   name: '305,683,729,737,749,750|未知935 16.0MB/s #2'
   network: tcp
   port: '44513'
@@ -28611,35 +28605,136 @@ proxies:
   uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
 - alterId: 0
   cipher: auto
-  name: '305,729,737|🔒 VM-TCP-NONE 🇸🇬 SG-152.42.208... #2'
+  name: '305,545,729,737,749,750|US495 #2'
   network: tcp
-  port: 54185
-  server: 152.42.208.82
-  tls: false
-  type: vmess
-  uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
-- alterId: 0
-  cipher: auto
-  name: '305,737,749,750|未知196 #2'
-  network: tcp
-  port: '28591'
-  server: 217.60.249.32
+  port: '39841'
+  server: 172.233.164.32
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 144a787a-7a69-44a8-904f-65e9c8bfd27a
-- alterId: 0
+  uuid: 4242d74d-b748-4e74-a7c2-2bfb9d6ed121
+- alterId: 64
   cipher: auto
-  name: '305,737,749,750|未知225 #2'
+  name: '305,649,729,737,749,750|US595 518.4KB/s #2'
   network: tcp
-  port: '21491'
-  server: 31.47.42.34
+  port: '41911'
+  server: 107.148.192.148
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ed17a08f-2294-46fd-8a27-225fed622087
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 305,582,729,737,784|未知_0612117
+  network: ws
+  port: '2086'
+  server: 104.16.60.8
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+  ws-opts:
+    headers:
+      Host: vpnsupportfast.vpnsuortfast.workers.dev
+    path: /afrhms07.xfixedfloat.cfd/linkws
+- alterId: 64
+  cipher: auto
+  name: '305,649,683,729,737,749,750|US160 N/A/s #2'
+  network: tcp
+  port: '45017'
+  server: 142.0.134.241
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '305,737|🔒 VM-TCP-NONE 🇮🇷 IR-85.9.99.24... #1'
+  network: tcp
+  port: 52065
+  server: 85.9.99.240
+  tls: false
+  type: vmess
+  uuid: f29ea77c-6842-4ee0-9fc1-9c7a871566b2
+- alterId: 0
+  cipher: auto
+  name: '305,737,749,750|US137 #2'
+  network: tcp
+  port: '43834'
+  server: 50.114.243.61
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b246e34d-bbd1-4016-8f74-ea461c37e411
+- alterId: 0
+  cipher: auto
+  name: '305,729,737|🔒 VM-TCP-NA 🇮🇷 IR-37.152.181.1... #2'
+  network: tcp
+  port: 433
+  server: 37.152.181.197
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 482a7b71-2483-4945-98d1-656196a6bcfb
+- alterId: 0
+  cipher: auto
+  name: '305,737|🔒 VM-TCP-NA 🇹🇼 TW-61.224.100.1... #1'
+  network: tcp
+  port: '61017'
+  server: 61.224.100.172
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
+- alterId: 0
+  cipher: auto
+  name: '305,683,737,749,750|US38 #3'
+  network: tcp
+  port: '46628'
+  server: 2.58.87.221
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f6ba9e5a-711c-496f-be60-ac5464dec2b8
+- alterId: 0
+  cipher: auto
+  name: '305,737,750|未知1499 #2'
+  network: ws
+  port: '54321'
+  server: 46.17.44.222
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae840eaa-21a3-462c-8dc8-f5eded625799
+  ws-opts:
+    headers:
+      Host: eedp257bubu2wefy3.lovebaipiao.net
+    path: /iphone
+- alterId: 0
+  cipher: auto
+  name: '305,737,749,750|未知1549 #2'
+  network: tcp
+  port: '5434'
+  server: 78.109.195.54
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
+- alterId: 0
+  cipher: auto
+  name: '305,729,737|🔒 VM-TCP-NONE 🇮🇷 IR-31.14.113.... #2'
+  network: tcp
+  port: '47985'
+  server: 31.14.113.206
+  tls: false
+  type: vmess
+  uuid: 645ac419-df03-4074-ba09-56a943fcbbca
 - alterId: 0
   cipher: auto
   name: '305,737,750|未知559 #2'
@@ -28656,35 +28751,108 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: '305,737,749,750|未知1017 #2'
+  name: '305,737,749,750|未知607 #2'
   network: tcp
-  port: '5427'
-  server: 46.245.72.23
+  port: '5422'
+  server: 79.175.157.75
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: '305,737,749,750|未知1503 #2'
+  name: '305,729,737,749,750|未知1169 #2'
   network: tcp
-  port: '5429'
-  server: 46.245.72.23
+  port: '229'
+  server: 154.31.112.51
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: bf439e22-ba80-46e8-8d95-dd3f4ad926b0
-- alterId: 0
+  uuid: 40bc7b65-ec8a-3201-a646-c9d1b71091c6
+- alterId: 2
   cipher: auto
-  name: '305,737|🔒 VM-TCP-NA 🇺🇸 US-108.181.200.... #1'
-  network: ''
-  port: 17163
-  server: 108.181.200.220
+  name: '305,545,737,749,750|US579 #2'
+  network: tcp
+  port: '1233'
+  server: 154.17.2.168
+  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: d54814a1-7a93-45f8-9117-db317a25d100
+  uuid: 40bc7b65-ec8a-3201-a646-c9d1b71091c6
+- alterId: 0
+  cipher: auto
+  name: '305,582,729,737,784|未知_0612125 #1'
+  network: ws
+  port: '2096'
+  server: 104.16.61.8
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+  ws-opts:
+    headers:
+      Host: 7whrapid-river-a083.sisay70779.workers.dev
+    path: /afrhms07.xfixedfloat.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: '305,729,737,749,750|未知109 #2'
+  network: tcp
+  port: '2083'
+  server: 172.104.98.218
+  servername: jp-v2ray.ipracevpn.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 745a1002-6136-4a61-b865-86e2e29bf8b6
+- alterId: 0
+  cipher: auto
+  name: '305,545,737,749,750|US26 3.8MB/s #2'
+  network: tcp
+  port: '31433'
+  server: 205.234.231.35
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 50e82581-bd14-4527-f7d6-e7824cd26f57
+- alterId: 0
+  cipher: auto
+  name: '305,562,683,729,737,749,750|未知609 1.2MB/s #3'
+  network: tcp
+  port: '11005'
+  server: 192.248.190.110
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 67ddcdc0-eb50-11ee-a09c-3759ee9e5e87
+- alterId: 0
+  cipher: auto
+  name: '305,729,737|🔒 VM-TCP-NA 🇮🇷 IR-46.36.102.5:... #2'
+  network: tcp
+  port: '55735'
+  server: 46.36.102.5
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 53ad7954-8705-4ecd-8ba3-aaeaa6913e97
+- alterId: 0
+  cipher: auto
+  name: 305,582,729,737,784|日本_0612005
+  network: ws
+  port: '888'
+  server: 103.168.155.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8d994cc0-a8a7-4f66-b1e4-771c7e7c6ecd
+  ws-opts:
+    headers:
+      Host: cdn.cjhh.lol
+    path: /je5x3pBN1vez3NQudNkB
 - alterId: 0
   cipher: auto
   name: '305,750|更新于 06-12 18:39 by https://git... #1'
@@ -28697,15 +28865,13 @@ proxies:
   uuid: 602736e4-a2e8-4eb3-9fc9-7c7082925365
 - alterId: 0
   cipher: auto
-  name: '305,548,549,562,580,582,598,750,784|荷兰_0612007 #1'
+  name: '305,562,582,750,784|荷兰_0612007 #1'
   network: ws
   port: '80'
   server: 188.114.97.3
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: e0e2e209-6626-484b-8895-39202961ce90
   ws-opts:
     headers:
@@ -28730,6 +28896,20 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
+  name: '305,750|未知121 #2'
+  network: ws
+  port: '11002'
+  server: 31.47.51.229
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d2c7b321-5e48-4d28-80e2-f64c6ddfad96
+  ws-opts:
+    headers:
+      Host: google.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: '305,749,750|未知226 #2'
   network: tcp
   port: '55735'
@@ -28752,36 +28932,6 @@ proxies:
   ws-opts:
     headers:
       Host: us6_0.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '305,597,737,749,750|未知325 #2'
-  network: ws
-  port: '41597'
-  server: 183.181.36.194
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '305,683,737,749,750|HK21 1.3MB/s #2'
-  network: ws
-  port: '28681'
-  server: 47.242.22.171
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
-  ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -28836,6 +28986,17 @@ proxies:
     headers:
       Host: Asdfghjkl10.unique69.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: '305,729,749,750|未知973 #2'
+  network: tcp
+  port: '8442'
+  server: 141.94.237.81
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
 - alterId: 0
   cipher: auto
   name: '305,750|US403 #2'
@@ -28947,17 +29108,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '305,649,729,737,749,750|US595 518.4KB/s #2'
-  network: tcp
-  port: '41911'
-  server: 107.148.192.148
+  name: 305,582,683,729,750,784|美国_0612088
+  network: ws
+  port: '2082'
+  server: 162.251.82.187
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: d2c7b321-5e48-4d28-80e2-f64c6ddfad96
+  ws-opts:
+    headers:
+      Host: telewebion.com.www.speedtest.net.google.com.speed.cloudflare.com.bmw.com.zula.ir.xbox.com.ßOTShop.irł😂☠️.2.mobilekiani.ir
+    path: /dashboard?ed=2048
 - alterId: 0
   cipher: auto
   name: '305,582,603,637,763,784,786|卢森堡_0612001 #2'
@@ -29014,6 +29178,20 @@ proxies:
     headers:
       Host: us2-full.privateip.net
     path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  name: 305,562,582,683,784|荷兰_0612011
+  network: ws
+  port: '443'
+  server: 188.114.97.3
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 305,562,573,582,683,770,778,784|美国_0612118
@@ -29086,7 +29264,7 @@ proxies:
     path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
-  name: '305,562,582,683,784|未知_0612126 #1'
+  name: '305,562,580,582,683,784|未知_0612126 #1'
   network: ws
   port: '80'
   server: zula.ir
@@ -29229,20 +29407,6 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '305,573|رایگان | VMESS | @vless_vmess ... #2'
-  network: ws
-  port: '80'
-  server: 172.67.171.49
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 10c580e4-f83b-42f1-8e6a-25fc8add4da7
-  ws-opts:
-    headers:
-      Host: No1.vmess.site.
-    path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
-- alterId: 0
-  cipher: auto
   name: '305,573,770,778|رایگان | VMESS | @yaney_01 | U... #18'
   network: ws
   port: '80'
@@ -29295,7 +29459,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '305,562,573,683,770,778|رایگان | VMESS | @Hope_Net | U... #16'
+  name: '305,562,573,683|@Hope_Net-join-us-on-Telegram #7'
   network: ws
   port: '443'
   server: 172.67.174.42
@@ -31335,7 +31499,7 @@ proxies:
     path: /video/ibCT6z55
 - alterId: 0
   cipher: auto
-  name: '365,582,706,784|未知_0612244 #1'
+  name: '365,582,706,729,784|未知_0612244 #1'
   network: ws
   port: '80'
   server: 104.17.25.1
@@ -31378,30 +31542,30 @@ proxies:
   cipher: auto
   name: '403|账户已过期,〖dabai.in〗<<前往官网|重新订阅 #2'
   network: ws
-  port: '2082'
-  server: 172.67.91.86
+  port: '8880'
+  server: 104.18.72.105
   servername: ''
   tls: false
   type: vmess
   uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
   ws-opts:
     headers:
-      Host: 100-100-17-450.db-link02.top
-    path: /dabai.in172.67.91.86
+      Host: 100-100-17-202.db-link01.top
+    path: /dabai.in104.18.72.105
 - alterId: 0
   cipher: auto
   name: '403|账户已过期,〖dabai.in〗<<前往官网|重新订阅 #3'
   network: ws
   port: '2082'
-  server: 104.21.197.86
+  server: 104.21.136.170
   servername: ''
   tls: false
   type: vmess
   uuid: 6f317196-06c4-3b93-b99e-cbb0e85a9e0c
   ws-opts:
     headers:
-      Host: 100-100-17-139.cn-db.top
-    path: /dabai.in104.21.197.86
+      Host: 100-100-17-439.db-link01.top
+    path: /dabai.in104.21.136.170
 - alterId: 0
   cipher: auto
   name: 412|免费-日本/رایگان - ژاپن
@@ -35425,8 +35589,18 @@ proxies:
     headers:
       Host: zutyrd.freefly.pp.ua
     path: /
+- cipher: aes-256-cfb
+  name: 522,528|_01
+  obfs: plain
+  obfs-param: data.bilibili.com/ed5a2165400
+  password: http://cc.ax/
+  port: 41228
+  protocol: auth_aes128_md5
+  protocol-param: 165400:Hr2aXO
+  server: 222.186.20.102
+  type: ssr
 - cipher: rc4-md5
-  name: 522,528|Relay_-CN_02
+  name: '522,528|Relay_-CN_02 #1'
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -35436,17 +35610,7 @@ proxies:
   server: video23.cdn.globalnetworktraffic.com
   type: ssr
 - cipher: aes-256-cfb
-  name: 522,528|_03
-  obfs: plain
-  obfs-param: data.bilibili.com/ed5a2165400
-  password: http://cc.ax/
-  port: 41228
-  protocol: auth_aes128_md5
-  protocol-param: 165400:Hr2aXO
-  server: 222.186.20.102
-  type: ssr
-- cipher: aes-256-cfb
-  name: 522,528|Pool__01
+  name: 522|Pool__03
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -35481,6 +35645,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇫🇷FR
+  name: 522,528,602,679,738,749|未知876 223.3KB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 149.202.82.172
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 522,749|未知353 1.9MB/s
   password: pKEW8JPByTVTLtM
@@ -35492,16 +35669,16 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 522,749|未知1205 1.8MB/s
+  name: 522,749|未知600 1.9MB/s
   password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 54.36.174.181
+  port: 3389
+  server: 217.182.198.219
   skip-cert-verify: true
   tls: true
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 522|🇫🇷FR_33
+  name: 522|🇫🇷FR_34
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 54.36.174.181
@@ -35509,10 +35686,10 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 522,749|未知600 1.9MB/s
+  name: 522,749|未知1205 1.8MB/s
   password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 217.182.198.219
+  port: 5001
+  server: 54.36.174.181
   skip-cert-verify: true
   tls: true
   type: ss
@@ -35540,215 +35717,99 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇬SG
   name: 522|🇬SG_79
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.103
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 522|🇸🇬SG_81
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 522|🇸🇬SG_81
-  password: bf7v334KKDV3YDhH
-  port: 9070
-  server: 103.172.116.103
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇬SG
   name: 522|🇸🇬SG_82
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 103.172.116.94
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 522|🇸🇬SG_83
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 522|🇸🇬SG_84
+  name: 522|🇸🇬SG_83
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.103
   type: ss
 - cipher: aes-256-gcm
   country: 🇸US
+  name: 522|🇸US_84
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 38.75.137.93
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
   name: 522|🇸US_85
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.75.136.33
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇸US_86
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.75.137.42
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US132 1.9MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.75.136.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US284 1.9MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 38.75.137.93
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇸US_89
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 38.75.137.93
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇸US_90
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 38.75.137.105
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522|🇸US_86
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.75.136.33
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇸US_87
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 38.75.137.93
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇸US_88
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 38.75.136.33
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇸US_89
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 38.75.137.42
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_90
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 38.75.136.33
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US340 1.9MB/s
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.75.137.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US225 1.8MB/s
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US254 1.9MB/s
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 38.75.137.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇸US_96
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 38.75.137.93
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_97
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.75.137.42
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US281 1.9MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_102
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 38.75.137.93
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US543 1.9MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 38.75.137.42
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_104
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.75.137.42
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_105
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.75.136.33
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇸US_106
+  name: 522|🇺🇸US_91
   password: Y6R9pAtvxxzmGC
   port: 3389
-  server: 38.75.137.93
+  server: 38.75.137.105
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522,749|US473 1.9MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.75.137.93
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇸US_108
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 38.75.136.33
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US131 1.9MB/s
+  name: 522,749|US54 1.8MB/s
   password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US380 1.9MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US621 1.9MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6697
+  port: 5001
   server: 38.75.136.33
   skip-cert-verify: true
   tls: true
@@ -35766,27 +35827,30 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522,749|US89 1.9MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 38.75.137.42
+  name: 522,749|US276 1.9MB/s
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.75.137.105
   skip-cert-verify: true
   tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇸US_115
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.75.136.33
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522,749|US397 1.9MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 38.75.137.105
+  name: 522,749|US429 1.9MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.75.137.42
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US261 1.9MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 38.75.136.33
   skip-cert-verify: true
   tls: true
   type: ss
@@ -35800,39 +35864,77 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522,749|US315 1.9MB/s
-  password: KixLvKzwjekG00rm
-  port: 5500
+  name: 522|🇸US_101
+  password: e4FCWrgpkji3QY
+  port: 9102
   server: 38.75.137.93
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522,749|US496 1.9MB/s
+  name: 522,749|US89 1.9MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.75.137.42
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇸US_103
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 38.75.136.33
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US380 1.9MB/s
   password: Y6R9pAtvxxzmGC
   port: 5600
-  server: 38.75.137.42
+  server: 38.75.136.33
   skip-cert-verify: true
   tls: true
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522|🇺🇸US_127
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 38.75.137.42
+  name: 522|🇺🇸US_105
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.75.136.33
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522|🇺🇸US_128
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 38.75.137.93
+  name: 522|🇸US_106
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 38.75.136.33
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US340 1.9MB/s
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 38.75.137.105
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_115
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 38.75.136.33
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_122
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.75.137.42
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -35841,6 +35943,50 @@ proxies:
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 38.75.137.93
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US621 1.9MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.75.136.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_126
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 38.75.137.93
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US47 1.8MB/s
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 38.75.137.93
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_128
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 38.75.137.42
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US36 1.9MB/s
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.75.136.33
   skip-cert-verify: true
   tls: true
   type: ss
@@ -35857,19 +36003,175 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522,749|US54 1.8MB/s
+  name: 522,749|US473 1.9MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.75.137.93
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US496 1.9MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 38.75.137.42
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_133
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.75.136.33
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US167 1.9MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.75.137.105
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US254 1.9MB/s
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 38.75.137.105
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_136
   password: Y6R9pAtvxxzmGC
   port: 5001
+  server: 38.75.137.93
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US315 1.9MB/s
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 38.75.137.93
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US281 1.9MB/s
+  password: TEzjfAYq2IjtuoS
+  port: 6679
   server: 38.75.136.33
   skip-cert-verify: true
   tls: true
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522|🇺🇸US_132
-  password: TEzjfAYq2IjtuoS
-  port: 6679
+  name: 522|🇺🇸US_139
+  password: zDNVedRFPQexG9v
+  port: 6379
   server: 38.75.137.93
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US397 1.9MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.75.137.105
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US225 1.8MB/s
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 38.75.136.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_142
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 38.75.137.42
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US543 1.9MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.75.137.42
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_144
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.75.137.42
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_145
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.75.137.93
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_146
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 38.75.137.93
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749|US131 1.9MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 38.75.136.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_150
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.75.137.42
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇺🇸US_151
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 38.75.137.93
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522,749,755|[02-24]-🇺🇸-美国华盛顿-109-38.143.66...
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 38.143.66.87
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -35894,132 +36196,10 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 522,749|US167 1.9MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 38.75.137.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_142
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 38.75.137.42
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_143
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 38.75.137.105
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US47 1.8MB/s
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 38.75.137.93
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_145
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 38.75.137.93
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_146
+  name: 522,749|US409 1.7MB/s
   password: faBAoD54k87UJG7
   port: 2375
-  server: 38.75.137.42
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US36 1.9MB/s
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US429 1.9MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.75.137.42
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US276 1.9MB/s
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.75.137.105
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_151
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 38.75.137.93
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_152
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 38.75.137.93
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US261 1.9MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US284 1.9MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.75.137.93
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US132 1.9MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.75.136.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749,755|[02-24]-🇺🇸-美国华盛顿-109-38.143.66...
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 38.143.66.87
+  server: 38.121.43.65
   skip-cert-verify: true
   tls: true
   type: ss
@@ -36033,23 +36213,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522|🇺🇸US_158
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 38.121.43.65
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 522,749|US409 1.7MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.121.43.65
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇺🇸US
@@ -36059,6 +36222,13 @@ proxies:
   server: 38.121.43.65
   skip-cert-verify: true
   tls: true
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 522|🇸US_158
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 38.121.43.65
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
@@ -36093,13 +36263,25 @@ proxies:
   type: ssr
 - cipher: aes-192-ctr
   country: 🇺🇸US
-  name: 522|Relay_🇺🇸US-🇺🇸US_171
+  name: 522|Relay_🇺🇸US-🇺🇸US_169
   obfs: tls1.2_ticket_auth
   password: JUBXCP
   port: 19155
   protocol: auth_sha1_v4
   server: us.linode.rbqis.me
   type: ssr
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 528,738,749|US289
+  password: ..
+  port: 20001
+  server: 38.114.123.12
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: 535|US_youtube@资源分享师_148
@@ -37505,16 +37687,6 @@ proxies:
   uuid: e7e75749-9a57-4471-a9a7-5472be0a0cda
 - alterId: 0
   cipher: auto
-  name: 545|🇩🇪DE(AzadNet.t.me)_003
-  network: tcp
-  port: '46377'
-  server: 5.75.202.76
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0db30fb2-f972-4096-be43-9c01c2796150
-- alterId: 0
-  cipher: auto
   name: 545|🇩🇪DE(AzadNet.t.me)_004
   network: tcp
   port: '31418'
@@ -38804,20 +38976,41 @@ proxies:
     headers:
       host: br.gy.youxuan-1.66688888.xyz
     path: /tg@hkaa0
-- client-fingerprint: chrome
-  name: 548,703|🇹🇼 台湾|@ripaojiedian
+- name: 548|[Trojan] 🇨🇳 中国 阿里云
   network: ws
-  password: moist
-  port: 12031
-  server: 60.248.63.88
-  skip-cert-verify: false
-  sni: trojan.freenods.sbs
+  password: NISHIKUITAN222
+  port: 8443
+  server: 8.219.0.48
+  skip-cert-verify: true
+  sni: t221.ylks.link
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: trojan.freenods.sbs
-    path: /?ed=2560
+      Host: t221.ylks.link
+    path: /
+- name: 548|[Trojan] 🇨🇳 中国 阿里云 2
+  network: ws
+  password: NISHIKUITAN222
+  port: 8443
+  server: 8.219.6.150
+  skip-cert-verify: true
+  sni: t221.ylks.link
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: t221.ylks.link
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 548,688|🇸🇬 SG 01
+  password: a4ac2592-28e7-4927-94b3-277edae0869a
+  port: 50105
+  server: iepl2.forlive.live
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '548,549,598,632|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
@@ -38871,18 +39064,6 @@ proxies:
     headers:
       Host: ld2.shabijichang.com
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 548,602,679,749|未知893 19.0MB/s
-  password: JiRcBug3wO9r355wxzyqBB
-  port: 30945
-  server: 51.145.6.187
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 548,549,598,631|🇺🇸_US_美国->🇳_IN__1
@@ -38947,20 +39128,6 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 548,549,580,598,696|0|-https://t.me/MrXbin-84
-  network: ws
-  port: 443
-  server: 27.124.8.141
-  servername: www.34838646.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: c7e645be-1704-4f0a-afe9-8b21f9c711d6
-  ws-opts:
-    path: /path/191019072927
-- alterId: 64
-  cipher: auto
   name: 548,549,598,631|_US_->_NL_
   network: ws
   port: 30000
@@ -38974,6 +39141,13 @@ proxies:
     headers:
       host: www.42077230.xyz
     path: /path/1696251522438
+- cipher: aes-256-gcm
+  name: 548|[SS] 🇷🇺 俄罗斯 V2CROSS.COM
+  password: 57b9499f-d311-4ed6-9e5c-8ab71c3dc8bb
+  port: 8443
+  server: ca-full.privateip.net
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '548,549,582,598,632,784|未知_0612277 #1'
@@ -39050,15 +39224,49 @@ proxies:
       Host: wnd3.shabijichang.com
     path: /
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 548,749|US438 1.9MB/s
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 38.121.43.71
+  cipher: auto
+  name: '548,549,580,598|🇺🇸 美国 CloudFlare节点 #37'
+  network: ws
+  port: '8080'
+  server: 104.19.44.182
   skip-cert-verify: true
-  tls: true
-  type: ss
+  tls: false
+  type: vmess
   udp: true
+  uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5
+  ws-opts:
+    headers:
+      Host: amd2.720208.xyz
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: '548,549,598|🇺🇸 美国 CloudFlare节点 #39'
+  network: ws
+  port: '80'
+  server: zula.ir
+  servername: uk2.vmess.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
+  ws-opts:
+    headers:
+      Host: Uk2.vmess.site.
+    path: /
+- name: 548|[Trojan] 🇺🇸 美国 阿里云
+  network: ws
+  password: NISHIKUITAN222
+  port: 8443
+  server: 47.236.167.231
+  skip-cert-verify: true
+  sni: t221.ylks.link
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: t221.ylks.link
+    path: /
 - alterId: 4
   cipher: auto
   name: '550,608|未命名 #198'
@@ -51396,7 +51604,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: '562,683|美国 CloudFlare节点 #22'
+  name: '562,683|美国 CloudFlare节点 #24'
   network: ws
   port: '443'
   server: Sabina.rafalion.ir.
@@ -51492,20 +51700,6 @@ proxies:
     headers:
       Host: worker-mute-bar-1719.nifotok993.workers.dev
     path: /afrhms16v.bestxray.buzz/linkws
-- alterId: 0
-  cipher: auto
-  name: '562,649,770,778|رایگان | VMESS | @ConfigsHUB |... #1'
-  network: ws
-  port: '443'
-  server: 104.21.83.208
-  servername: afrhms16v.bestxray.buzz
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
 - alterId: 0
   cipher: auto
   name: 562|未知_061223767
@@ -51754,6 +51948,16 @@ proxies:
     headers:
       Host: gwdef.sbs
     path: /linkws
+- alterId: 64
+  cipher: auto
+  name: 562|美国_061223620
+  network: tcp
+  port: '41911'
+  server: 107.148.192.156
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 562,649|🐬 SERVER 05
@@ -58706,6 +58910,23 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 582,738,739,784|美国_0612129
+  network: ws
+  port: '8080'
+  server: 172.67.185.79
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 582,784|美国_0612131
   network: ws
   port: '443'
@@ -62549,7 +62770,7 @@ proxies:
   uuid: 8281ef00-51d7-3218-900e-383afb298521
 - alterId: 0
   cipher: auto
-  name: '593|美国 CloudFlare节点 #10'
+  name: '593|美国 CloudFlare节点 #12'
   network: ws
   port: 2095
   server: 172.64.194.234
@@ -62562,7 +62783,7 @@ proxies:
     path: /hgcefomn
 - alterId: 0
   cipher: auto
-  name: '593|美国 CloudFlare节点 #11'
+  name: '593|美国 CloudFlare节点 #13'
   network: ws
   port: 8880
   server: 141.101.123.18
@@ -62575,7 +62796,7 @@ proxies:
     path: /qwer
 - alterId: 0
   cipher: auto
-  name: '593|美国 CloudFlare节点 #12'
+  name: '593|美国 CloudFlare节点 #14'
   network: ws
   port: 8080
   server: 198.41.218.144
@@ -62603,7 +62824,7 @@ proxies:
     path: nl1.v2rayserv.com/vmess
 - alterId: 0
   cipher: auto
-  name: '593|美国 CloudFlare节点 #13'
+  name: '593|美国 CloudFlare节点 #15'
   network: ws
   port: 8080
   server: 162.159.241.157
@@ -69799,7 +70020,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '596|🇺🇸 美国 CloudFlare节点 #33'
+  name: '596|🇺🇸 美国 CloudFlare节点 #35'
   network: ws
   port: '443'
   server: juziawsus.nmsl.pics
@@ -73737,6 +73958,18 @@ proxies:
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 23.162.200.181
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 602,679,749|未知893 19.0MB/s
+  password: JiRcBug3wO9r355wxzyqBB
+  port: 30945
+  server: 51.145.6.187
   skip-cert-verify: true
   tfo: false
   tls: true
@@ -82762,7 +82995,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,763|美国 CloudFlare节点 #59'
+  name: '656,763|美国 CloudFlare节点 #61'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -86785,21 +87018,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '683,729,737|🔒 VM-WS-NA 🏴‍☠️ NA-188.114.96.... #2'
-  network: ws
-  port: '8880'
-  server: 188.114.96.3
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e8ef1f51-3985-4d9b-bf29-46d26da65a4b
-  ws-opts:
-    headers:
-      Host: SvnProBotV2rayNethOne6.9.6.9.ir.shop.com.xn--fhqpqv8rrth13sbaaac958pc94anf0d8gm.ayfadesigns.com.
-    path: /telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,telegram-Lookivpn,Mmdv2rayng-V2rayngmmd-telegram-mehran-v2ray?ed=2056
-- alterId: 0
-  cipher: auto
-  name: 683|👉🆔 @v2ray_configs_pool
+  name: '683,770,778|رایگان | VMESS | @Hope_Net | U... #15'
   network: ws
   port: '443'
   server: best-charm-pediatrician.glitch.me
@@ -88310,14 +88529,6 @@ proxies:
   password: fadb416c-09ba-4611-8156-ad2c8e33ba75
   port: 22259
   server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 688|🇸🇬 SG 01
-  password: a4ac2592-28e7-4927-94b3-277edae0869a
-  port: 50105
-  server: iepl2.forlive.live
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -91412,6 +91623,18 @@ proxies:
     path: /path/191019072927
 - alterId: 64
   cipher: auto
+  name: 696|0|-https://t.me/MrXbin-84
+  network: ws
+  port: 443
+  server: 27.124.8.141
+  servername: www.34838646.xyz
+  tls: true
+  type: vmess
+  uuid: c7e645be-1704-4f0a-afe9-8b21f9c711d6
+  ws-opts:
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
   name: 696|0|-https://t.me/MrXbin-88
   network: ws
   port: 443
@@ -92485,6 +92708,19 @@ proxies:
   server: 172.67.114.125
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 703|🇹🇼 台湾|@ripaojiedian
+  network: ws
+  password: moist
+  port: 12031
+  server: 60.248.63.88
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 703|🇯🇵 日本R|@ripaojiedian
@@ -92973,7 +93209,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '706,761,763|美国 CloudFlare节点 #64'
+  name: '706,761,763|美国 CloudFlare节点 #66'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -96645,33 +96881,6 @@ proxies:
   up: 11
 - alterId: 0
   cipher: auto
-  name: 729|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.151....
-  network: ws
-  port: 8880
-  server: 172.67.151.228
-  tls: false
-  type: vmess
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  ws-opts:
-    headers:
-      Host: ''
-    path: /doxwPZje9wMMZi4m9xY8GkU5zT3Hs4kRDL4W3nistSRmDw3x2
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: '729,737|🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.69.... #1'
-  network: ws
-  port: 443
-  server: 104.21.69.44
-  servername: a1.wolf-shop.ir
-  tls: true
-  type: vmess
-  uuid: c8554223-0ea5-4696-9f40-ed11501d7915
-  ws-opts:
-    headers:
-      Host: a1.wolf-shop.ir
-    path: /6mHwql1HSSV5FOZe0UV1BYvuQ
-- alterId: 0
-  cipher: auto
   name: 729|🔒 VM-WS-TLS 🏴‍☠️ NA-172.67.159...
   network: ws
   port: 2053
@@ -96685,76 +96894,31 @@ proxies:
       Host: qqkyhm.renwox.xyz
     path: /
 - alterId: 0
-  cipher: auto
-  name: 737|🔒 VM-WS-NA 🏴‍☠️ NA-104.17.145....
+  cipher: aes-128-gcm
+  name: 729|🔒 VM-WS-NONE 🏴‍☠️ NA-104.16.23...
   network: ws
-  port: '2052'
-  server: 104.17.145.42
-  servername: ''
+  port: 2052
+  server: 104.16.239.223
   tls: false
   type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
   ws-opts:
     headers:
-      Host: us6_0.wish.ml
-    path: /
+      Host: 7nAi74jJsg1.yofnhkfc.xyz
+    path: /video/c9efxRCi
 - alterId: 0
   cipher: auto
-  name: 737|🔒 VM-TCP-NA 🇳🇱 NL-176.126.113....
-  network: tcp
-  port: '8442'
-  server: 176.126.113.161
-  servername: ''
+  name: 729|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.151....
+  network: ws
+  port: 8880
+  server: 172.67.151.228
   tls: false
   type: vmess
-  uuid: 7be5fa83-84c4-4105-a8f7-d880f5d91afc
-- alterId: 0
-  cipher: auto
-  name: 737|🔒 VM-WS-TLS 🏴‍☠️ NA-172.67.198...
-  network: ws
-  port: '2053'
-  server: 172.67.198.207
-  servername: usde2024ny.icu2rip.eu.org
-  tls: true
-  type: vmess
-  uuid: ed2bd5fa-4a82-4ceb-efa5-24ab3411aa57
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
   ws-opts:
     headers:
-      Host: usde2024ny.icu2rip.eu.org
-    path: /freebaipiao
-- alterId: 0
-  cipher: auto
-  name: 737|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.71.1...
-  network: ws
-  port: '2082'
-  server: 172.67.71.168
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9ae13861-0a35-414a-ff49-a077e9eeedb4
-  ws-opts:
-    headers:
-      Host: kp.alipay.ovh
-    path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 737|🔒 VM-TCP-NA 🇯🇵 JP-35.78.239.11...
-  network: tcp
-  port: 11773
-  server: 35.78.239.116
-  tls: false
-  type: vmess
-  uuid: c2365e4e-3700-323a-b889-fea7677ef8d1
-- alterId: 0
-  cipher: auto
-  name: 737|🔒 VM-TCP-NA 🇹🇼 TW-61.224.100.1...
-  network: tcp
-  port: '61017'
-  server: 61.224.100.172
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
+      Host: ''
+    path: /doxwPZje9wMMZi4m9xY8GkU5zT3Hs4kRDL4W3nistSRmDw3x2
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -96809,7 +96973,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '738,739|美国 CloudFlare节点 #38'
+  name: '738,739|美国 CloudFlare节点 #40'
   network: ws
   port: '8880'
   server: 104.21.82.183
@@ -97193,16 +97357,6 @@ proxies:
     headers:
       Host: m.zoom.us
     path: /
-- alterId: 64
-  cipher: auto
-  name: 739|美国加利福尼亚州洛杉矶 PetaExpress
-  network: tcp
-  port: '41400'
-  server: 198.2.218.102
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 739|美国 华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
@@ -97219,7 +97373,7 @@ proxies:
     path: bolder-metal-comma.glitch.me
 - alterId: 0
   cipher: auto
-  name: '739|美国 CloudFlare节点 #25'
+  name: '739|美国 CloudFlare节点 #27'
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
@@ -97233,7 +97387,7 @@ proxies:
     path: GWYp69Yujp2.yofnhkfc.xyz
 - alterId: 0
   cipher: auto
-  name: '739|美国 CloudFlare节点 #43'
+  name: '739|美国 CloudFlare节点 #45'
   network: ws
   port: '8880'
   server: server31.beheshtbaneh.com
@@ -103854,15 +104008,6 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 749|US226 1.9MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 38.114.114.207
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: 749|未知606
   network: ws
@@ -104139,18 +104284,6 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: auto
-  name: 749|未知637
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.9.98.116
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   cipher: aes-256-gcm
   name: 749|未知640 1.9MB/s
   password: g5MeD6Ft3CWlJId
@@ -104159,18 +104292,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 749|未知641
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.37.0.245
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 749|未知642
@@ -108738,18 +108859,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: auto
-  name: 749|未知1120
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.34.51.113
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   cipher: aes-256-gcm
   name: 749|US434 1.7MB/s
   password: KixLvKzwjekG00rm
@@ -108818,6 +108927,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 749|US438 1.9MB/s
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 38.121.43.71
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: 749|未知1131
@@ -114716,7 +114834,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: '761,763|美国 CloudFlare节点 #66'
+  name: '761,763|美国 CloudFlare节点 #68'
   network: ws
   port: 80
   server: 104.21.224.24
@@ -114812,7 +114930,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '761,763|美国 CloudFlare节点 #68'
+  name: '761,763|美国 CloudFlare节点 #70'
   network: ws
   port: 80
   server: 104.21.238.90
@@ -114839,7 +114957,7 @@ proxies:
     path: /CAT
 - alterId: 0
   cipher: auto
-  name: '761,763|美国 CloudFlare节点 #69'
+  name: '761,763|美国 CloudFlare节点 #71'
   network: ws
   port: 80
   server: 104.21.237.88
@@ -114853,7 +114971,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '762,763|美国 CloudFlare节点 #70'
+  name: '762,763|美国 CloudFlare节点 #72'
   network: ws
   port: 80
   server: 104.21.224.157
@@ -114867,7 +114985,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '762,763|美国 CloudFlare节点 #71'
+  name: '762,763|美国 CloudFlare节点 #73'
   network: ws
   port: '80'
   server: 104.21.237.65
@@ -114894,7 +115012,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '762,763|美国 CloudFlare节点 #72'
+  name: '762,763|美国 CloudFlare节点 #74'
   network: ws
   port: 80
   server: 104.21.221.135
@@ -114908,7 +115026,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '762,763|美国 CloudFlare节点 #73'
+  name: '762,763|美国 CloudFlare节点 #75'
   network: ws
   port: 80
   server: 104.21.237.87
@@ -114932,7 +115050,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '762,763|美国 CloudFlare节点 #75'
+  name: '762,763|美国 CloudFlare节点 #77'
   network: ws
   port: 80
   server: 104.21.230.31
@@ -114960,7 +115078,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '762,763|美国 CloudFlare节点 #76'
+  name: '762,763|美国 CloudFlare节点 #78'
   network: ws
   port: '80'
   server: 104.21.224.23
@@ -114983,7 +115101,7 @@ proxies:
   uuid: afedd970-62a2-46f5-88c4-e1f5305d3758
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #58'
+  name: '763|美国 CloudFlare节点 #60'
   network: ws
   port: '80'
   server: 104.21.224.8
@@ -115076,7 +115194,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #60'
+  name: '763|美国 CloudFlare节点 #62'
   network: ws
   port: 80
   server: 104.21.224.129
@@ -115089,7 +115207,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #61'
+  name: '763|美国 CloudFlare节点 #63'
   network: ws
   port: '80'
   server: 104.21.230.53
@@ -115117,7 +115235,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #62'
+  name: '763|美国 CloudFlare节点 #64'
   network: ws
   port: 80
   server: 104.21.224.56
@@ -115145,7 +115263,7 @@ proxies:
     path: /v118-fccxmxm35
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #63'
+  name: '763|美国 CloudFlare节点 #65'
   network: ws
   port: '80'
   server: 104.21.235.76
@@ -115158,7 +115276,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #77'
+  name: '763|美国 CloudFlare节点 #79'
   network: ws
   port: 80
   server: 104.21.239.76
@@ -115212,7 +115330,7 @@ proxies:
     path: /xn--mes53ddysu0o3gl
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #78'
+  name: '763|美国 CloudFlare节点 #80'
   network: ws
   port: 80
   server: 104.21.228.42
@@ -115226,7 +115344,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #79'
+  name: '763|美国 CloudFlare节点 #81'
   network: ws
   port: '80'
   server: 104.21.234.74
@@ -115289,7 +115407,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #80'
+  name: '763|美国 CloudFlare节点 #82'
   network: ws
   port: '80'
   server: 104.21.230.50
@@ -115340,7 +115458,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #81'
+  name: '763|美国 CloudFlare节点 #83'
   network: ws
   port: '80'
   server: 104.21.228.40
@@ -115354,7 +115472,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #82'
+  name: '763|美国 CloudFlare节点 #84'
   network: ws
   port: '80'
   server: 104.21.228.41
@@ -115367,7 +115485,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #83'
+  name: '763|美国 CloudFlare节点 #85'
   network: ws
   port: 80
   server: 104.21.234.72
@@ -115395,7 +115513,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #84'
+  name: '763|美国 CloudFlare节点 #86'
   network: ws
   port: '80'
   server: 104.21.232.63
@@ -115408,7 +115526,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #85'
+  name: '763|美国 CloudFlare节点 #87'
   network: ws
   port: 80
   server: 104.21.221.95
@@ -115463,7 +115581,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #86'
+  name: '763|美国 CloudFlare节点 #88'
   network: ws
   port: 80
   server: 104.21.224.16
@@ -115489,7 +115607,7 @@ proxies:
     path: /CAT
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #87'
+  name: '763|美国 CloudFlare节点 #89'
   network: ws
   port: 80
   server: 104.21.224.174
@@ -115503,7 +115621,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #88'
+  name: '763|美国 CloudFlare节点 #90'
   network: ws
   port: 80
   server: 104.21.221.215
@@ -115572,7 +115690,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #89'
+  name: '763|美国 CloudFlare节点 #91'
   network: ws
   port: 80
   server: 104.21.226.14
@@ -115609,7 +115727,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #90'
+  name: '763|美国 CloudFlare节点 #92'
   network: ws
   port: 80
   server: 104.21.235.57
@@ -115622,7 +115740,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #91'
+  name: '763|美国 CloudFlare节点 #93'
   network: ws
   port: 80
   server: 104.21.224.240
@@ -115649,7 +115767,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #92'
+  name: '763|美国 CloudFlare节点 #94'
   network: ws
   port: '80'
   server: 104.21.230.51
@@ -115663,7 +115781,7 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #93'
+  name: '763|美国 CloudFlare节点 #95'
   network: ws
   port: 80
   server: 104.21.231.59
@@ -115690,7 +115808,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #94'
+  name: '763|美国 CloudFlare节点 #96'
   network: ws
   port: 80
   server: 104.21.224.46
@@ -115704,7 +115822,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #95'
+  name: '763|美国 CloudFlare节点 #97'
   network: ws
   port: '80'
   server: 104.21.236.60
@@ -115731,7 +115849,7 @@ proxies:
     path: /fws
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #96'
+  name: '763|美国 CloudFlare节点 #98'
   network: ws
   port: '80'
   server: 104.21.238.92
@@ -115744,7 +115862,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #97'
+  name: '763|美国 CloudFlare节点 #99'
   network: ws
   port: '80'
   server: 104.21.239.77
@@ -115784,7 +115902,7 @@ proxies:
     path: /github
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #98'
+  name: '763|美国 CloudFlare节点 #100'
   network: ws
   port: 8080
   server: 172.67.143.192
@@ -115808,7 +115926,7 @@ proxies:
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #99'
+  name: '763|美国 CloudFlare节点 #101'
   network: ws
   port: '80'
   server: 104.21.229.26
@@ -115834,7 +115952,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #100'
+  name: '763|美国 CloudFlare节点 #102'
   network: ws
   port: '80'
   server: 104.21.227.15
@@ -115847,7 +115965,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #101'
+  name: '763|美国 CloudFlare节点 #103'
   network: ws
   port: '80'
   server: 104.21.228.20
@@ -115953,7 +116071,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #102'
+  name: '763|美国 CloudFlare节点 #104'
   network: ws
   port: 80
   server: 104.21.231.57
@@ -115967,7 +116085,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '763|美国 CloudFlare节点 #103'
+  name: '763|美国 CloudFlare节点 #105'
   network: ws
   port: '80'
   server: 104.21.229.47
@@ -116600,6 +116718,32 @@ proxies:
     headers:
       Host: v6.583181.xyz
     path: /
+- alterId: 0
+  cipher: chacha20-poly1305
+  grpc-opts:
+    grpc-service-name: Nbs2DSTSkFWe4KVnk9AHQv
+  name: '770,778|رایگان | VMESS | @DeamNet_Prox... #13'
+  network: grpc
+  port: '443'
+  server: 104.16.61.8
+  servername: hdfy5.cpionline.co
+  tls: true
+  type: vmess
+  uuid: 251780c1-1501-43b3-be2a-d144a20d479a
+- alterId: 0
+  cipher: auto
+  name: '770,778|رایگان | VMESS | @DeamNet_Prox... #14'
+  network: ws
+  port: '443'
+  server: afrhms16v.bestxray.buzz
+  servername: afrhms16v.bestxray.buzz
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: '782|github.com/freefq - 美国CloudFla... #37'
@@ -118227,12 +118371,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 888|US-CF-WARP-1
-  port: 8886
+  name: 888|NL-CF-WARP-1
+  port: 3854
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.195.185
+  server: 188.114.98.14
   type: wireguard
   udp: true
 - dns:
@@ -118240,12 +118384,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 888|NL-CF-WARP-2
+  name: 888|US-CF-WARP-2
   port: 8886
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 188.114.99.148
+  server: 162.159.195.76
   type: wireguard
   udp: true
 - dns:
@@ -118254,11 +118398,11 @@ proxies:
   ip: 172.16.0.2
   mtu: 1280
   name: 888|NL-CF-WARP-3
-  port: 3854
+  port: 8886
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 188.114.97.90
+  server: 188.114.97.7
   type: wireguard
   udp: true
 - dns:
@@ -118266,12 +118410,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 888|US-CF-WARP-4
+  name: 888|NL-CF-WARP-4
   port: 3854
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.195.176
+  server: 188.114.99.8
   type: wireguard
   udp: true
 - dns:
@@ -118284,7 +118428,7 @@ proxies:
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 188.114.98.68
+  server: 188.114.98.75
   type: wireguard
   udp: true
 - dns:
@@ -118292,12 +118436,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 888|US-CF-WARP-6
+  name: 888|NL-CF-WARP-6
   port: 8886
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.192.31
+  server: 188.114.99.148
   type: wireguard
   udp: true
 - dns:
@@ -118310,7 +118454,7 @@ proxies:
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 188.114.98.208
+  server: 188.114.96.28
   type: wireguard
   udp: true
 - dns:
@@ -118318,12 +118462,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 888|NL-CF-WARP-8
+  name: 888|US-CF-WARP-8
   port: 8886
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 188.114.98.68
+  server: 162.159.192.94
   type: wireguard
   udp: true
 - dns:
@@ -118331,12 +118475,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 888|NL-CF-WARP-9
+  name: 888|US-CF-WARP-9
   port: 3854
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 188.114.99.253
+  server: 162.159.195.146
   type: wireguard
   udp: true
 - dns:
@@ -118344,12 +118488,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 888|NL-CF-WARP-10
-  port: 8886
+  name: 888|US-CF-WARP-10
+  port: 3854
   private-key: GHWDdDjaN5ZYAauOmchwexbAu17zOUY0Hu+8P0FLxls=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 188.114.96.211
+  server: 162.159.195.243
   type: wireguard
   udp: true
 - alterId: 0
