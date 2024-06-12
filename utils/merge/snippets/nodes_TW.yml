@@ -299,7 +299,7 @@ proxies:
   name: 278|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: eZegh3.gov.goldliond.top
+  server: 8gwmIU.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -308,7 +308,7 @@ proxies:
   name: 278|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: EfqCRd.gov.goldliond.top
+  server: heLduq.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -330,7 +330,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '304,736|🔒 VM-TCP-NA 🇹🇼 TW-61.224.77.10... #1'
+  name: 304|🔒 VM-TCP-NA 🇹🇼 TW-61.224.77.10...
   network: tcp
   port: '61017'
   server: 61.224.77.108
@@ -340,21 +340,7 @@ proxies:
   uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
 - alterId: 0
   cipher: auto
-  name: 304,561,682,728,736,785|台湾_0611001
-  network: ws
-  port: '57257'
-  server: 34.80.125.236
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a368036-ff57-4141-827b-0156487add85
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '304,736,749|TW #1'
+  name: '304,736,749|TW #3'
   network: ws
   port: '37902'
   server: 118.170.98.92
@@ -368,11 +354,26 @@ proxies:
     path: /index?ed=2560
 - alterId: 0
   cipher: auto
-  name: '304,749|TW2 #1'
+  name: 304,561,682,736,785|台湾_0611001
+  network: ws
+  port: '57257'
+  server: 34.80.125.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a368036-ff57-4141-827b-0156487add85
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '304,748,749|TW2 #2'
   network: tcp
   port: '61017'
   server: 122.118.168.103
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
@@ -609,6 +610,23 @@ proxies:
       Host: cn.bing.com
     path: /
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 520|Relay_ZZ-🇼TW_196 | 3.07Mb
+  network: ws
+  port: 8080
+  server: 104.19.47.150
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 545|🇹🇼_TW_台湾
@@ -932,20 +950,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
-- client-fingerprint: chrome
-  name: 601,702|🇹🇼 台湾|@ripaojiedian
-  network: ws
-  password: moist
-  port: 12031
-  server: 60.248.63.88
-  skip-cert-verify: false
-  sni: trojan.freenods.sbs
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.freenods.sbs
-    path: /?ed=2560
 - alterId: 0
   cipher: auto
   name: 611|github.com/freefq-台湾省公司2222
@@ -1095,6 +1099,16 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
+- alterId: 0
+  cipher: auto
+  name: 736|🔒 VM-TCP-NA 🇹🇼 TW-122.118.169....
+  network: tcp
+  port: '61017'
+  server: 122.118.169.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
 - client-fingerprint: chrome
   name: 737|🇹🇼 台湾省+中华电信(HiNet)数据中心
   network: ws
@@ -1158,6 +1172,44 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  cipher: auto
+  name: '748|TW #1'
+  network: ws
+  port: 37902
+  server: 118.170.98.92
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      host: hinet-wap.myddns.me
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '748|TW #2'
+  network: ws
+  password: moist
+  port: 12031
+  server: 60.248.63.88
+  skip-cert-verify: true
+  sni: trojan.freenods.sbs
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 748|TW6
+  network: ws
+  password: auto
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: true
+  sni: vip.123789.pp.ua
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 762|🇹🇼台湾 01
