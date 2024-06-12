@@ -1,16 +1,13 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,305,448,449,451,452,548,549,580,582,598,647,680,681,683,784,786|未知_0612032
-    #1'
+  name: '0,3,305,448,449,451,452,582,647,680,681,784,786|未知_0612032 #1'
   network: ws
   port: '80'
   server: 104.18.54.24
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 831201cc-07fb-44dd-a1cb-e70beee00268
   ws-opts:
     headers:
@@ -18,13 +15,15 @@ proxies:
     path: /etc
 - alterId: 0
   cipher: auto
-  name: 0,3,305,448,449,451,452,582,647,680,681,683,750,784,786|美国_0612055
+  name: 0,3,305,448,449,451,452,548,549,580,582,598,647,680,681,683,750,784,786|美国_0612055
   network: ws
   port: '80'
   server: 104.26.3.120
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: f94c274d-f9c5-4c47-a3f5-fa839d80bfb1
   ws-opts:
     headers:
@@ -46,7 +45,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,305,448,449,451,452,453,562,573,582,647,680,681,683,729,750,770,778,784,786|瑞典_0612002
+  name: '0,3,305,448,449,451,452,453,562,573,582,647,680,681,729,750,770,778,784,786|瑞典_0612002
     #2'
   network: ws
   port: '2052'
@@ -73,9 +72,11 @@ proxies:
     headers:
       host: dl2.mrarsha..diehart2..mikolo.suonycars.buzz.
     path: /etc
-- grpc-opts:
+- alterId: 0
+  cipher: auto
+  grpc-opts:
     grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1,2,630|🇪_SE_瑞典->🇩🇪_DE_德国_2
+  name: 1,2,630,749|未知1663
   network: grpc
   password: f91f38bb-72d5-4f3e-8311-1788986293f5
   port: 443
@@ -87,12 +88,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1,2,630|🇺🇸_US_美国->_PT_
+  name: '1,2,630,749|未知789 627.0KB/s #1'
   network: ws
   port: 80
   server: 104.26.3.120
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: f94c274d-f9c5-4c47-a3f5-fa839d80bfb1
   ws-opts:
@@ -115,9 +116,11 @@ proxies:
   udp: true
 - alpn:
   - h2http/1.1
+  alterId: 0
+  cipher: auto
   grpc-opts:
     grpc-service-name: trojan
-  name: 1,2,112,548,606,630|🇺🇸_US_美国->_DE_国_1
+  name: 1,2,112,548,606,630,749|🇺🇸US美国24
   network: grpc
   password: A9l6_eMgylRZu0YiSqunsQ
   port: 2096
@@ -157,13 +160,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1,2,630|🇪_SE_->🇩🇪_DE_德国_1
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '1,2,298,630,749|未知9 #1'
   network: ws
   port: 2052
   server: 185.146.173.185
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
+  udp: false
   uuid: 99f8410f-4f46-4f64-adc7-aa6a41dc9da4
   ws-opts:
     headers:
@@ -2772,28 +2778,6 @@ proxies:
   ws-headers:
     Host: usys.qiutan.pw
   ws-path: /videos
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 630,679,703|🇺🇸 美国R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 16058
-  server: 59.56.77.178
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 630,706|🇺🇸_US_美国->🇫🇷_FR_法国_2
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 631|🇺🇸_US_美国->_DE_国
@@ -3242,7 +3226,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '706,761,763|美国 CloudFlare节点 #67'
+  name: '706,761,763|美国 CloudFlare节点 #64'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
