@@ -43,7 +43,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,305,448,449,451,452,453,573,647,680,681,729,737,750,770,778,784,786|瑞典_0612002
+  name: '0,3,305,448,449,451,452,453,573,647,680,681,729,750,770,778,784,786|瑞典_0612002
     #1'
   network: ws
   port: '2052'
@@ -154,14 +154,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇸🇪SE
-  h2-opts: {}
-  http-opts: {}
-  name: 1,2,521,630|🇪_SE_->🇩🇪_DE_德国_1
+  name: 1,2,630|🇪_SE_->🇩🇪_DE_德国_1
   network: ws
   port: 2052
   server: 185.146.173.185
-  servername: seyyedmtsz.oduhiugdigoiejfioasfjejaspdjvcejhapsdakc.Blog.
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -396,13 +392,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '490,499,656,762,763,929|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '490,499,579,656,762,763,929|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -440,6 +438,20 @@ proxies:
   network: ws
   port: 2082
   server: 104.21.8.157
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '499,562,761,763,784,786,929|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  network: ws
+  port: 2082
+  server: 172.67.130.140
   servername: ''
   tls: false
   type: vmess
@@ -3588,7 +3600,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '706,761,763|美国 CloudFlare节点 #64'
+  name: '706,761,763|美国 CloudFlare节点 #68'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -3600,20 +3612,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '706|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      host: in3.wish.ml
     path: /
 - alterId: 0
   cipher: auto
@@ -3629,6 +3627,34 @@ proxies:
     headers:
       Host: arm.ptuu.gq
     path: /123
+- alterId: 0
+  cipher: auto
+  name: 746|:美国-vmess-vus2.0bad.com:443-可用...
+  network: ws
+  port: '443'
+  server: vus2.0bad.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vus2.0bad.com
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: 746|:美国-vmess-vus4.0bad.com:443-可用...
+  network: ws
+  port: '443'
+  server: vus4.0bad.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vus4.0bad.com
+    path: /chat
 - alterId: 0
   cipher: auto
   name: 928|🇨🇳 _CN_中国->🇹🇼_TW_台湾
