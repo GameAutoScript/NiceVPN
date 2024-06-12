@@ -2,8 +2,8 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '89,304,596,601,602,636,679,680,737,738,760,762|github.com/freefq - 广东省移动
-    7 #2'
+  name: '89,304,547,548,579,596,597,601,602,636,679,680,737,738,760,762|github.com/freefq
+    - 广东省移动 7 #2'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -439,7 +439,7 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: '304,695,703,749|未知164 #1'
+  name: '304,548,579,597,695,703,749|未知164 #1'
   network: tcp
   port: '51193'
   server: 183.238.202.173
@@ -1123,7 +1123,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 520,521,527|Relay_-CN_03
+  name: 521,527|Relay_-CN_03
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1316,63 +1316,38 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 547,548,579,597,695,702,703|韩国2|@ripaojiedian
-  network: ws
-  port: '32460'
-  server: sui.forlive.live
-  servername: ''
-  skip-cert-verify: false
+  name: 547,601,678,737|🇰🇷 韩国+KT电信 2
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
   tfo: false
-  tls: false
-  type: vmess
+  type: ss
   udp: true
-  uuid: aee1713b-54f6-4377-ab22-a2edf8de2d25
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- name: 547|[Trojan] 🇨🇳 中国 阿里云
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.217.123.243
-  skip-cert-verify: true
-  sni: mfjd.591haoka.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 547,601,678,737|🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: ''
-- name: 547|[Trojan] 🇨🇳 中国 阿里云 2
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.218.98.75
-  skip-cert-verify: true
-  sni: mfjd.591haoka.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 547|[SS] 🇨🇳 江苏省扬州市 电信
+  password: 0bf41810-5477-4940-9064-e37055cda6b1
+  port: 20647
+  server: ss.sgplink.xyz
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      Host: mfjd.591haoka.com
-    path: ''
-- name: 547|[Trojan] 🇨🇳 中国 阿里云 3
-  network: ws
-  password: NISHIKUITAN222
-  port: 443
-  server: 8.219.144.168
-  skip-cert-verify: true
-  sni: t222.ylks.link
-  type: trojan
+- cipher: aes-128-gcm
+  name: 547|[SS] 🇨🇳 江苏省扬州市 电信 2
+  password: 0bf41810-5477-4940-9064-e37055cda6b1
+  port: 20648
+  server: ss.sgplink.xyz
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      Host: t222.ylks.link
-    path: /
 - alterId: 4
   cipher: auto
   name: '549,607|未命名 #198'
@@ -5021,15 +4996,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 601,678,737|🇰🇷 韩国+KT电信 2
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20005
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
   name: 611|github.com/freefq-广东省移动28
   password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmNjY1YzVkMC03N2MwLTQxOTYtYmM4ZC1mMDQ1MGU5YzY2NWI
@@ -6190,7 +6156,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '737,738|广东省 移动 #3'
+  name: '737,738|广东省 移动 #9'
   network: ws
   port: '16632'
   server: 120.233.204.126
