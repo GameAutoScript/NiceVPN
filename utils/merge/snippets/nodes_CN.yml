@@ -439,45 +439,41 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: '304,548,579,597,695,703,748,749|未知164 #2'
+  name: '304,695,703,749|未知164 #1'
   network: tcp
   port: '51193'
   server: 183.238.202.173
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '304,748,749|未知1077 #2'
+  name: '304,749|未知1077 #1'
   network: tcp
   port: '15607'
   server: 183.232.199.61
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '304,738,748,749|未知923 #2'
+  name: '304,738,749|未知923 #1'
   network: tcp
   port: '15605'
   server: 183.232.199.28
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '304,748,749|未知1052 #2'
+  name: '304,749|未知1052 #1'
   network: tcp
   port: '15603'
   server: 183.240.179.195
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -496,7 +492,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 304,548,579,597,678,679,680,695,703|台湾2|@ripaojiedian
+  name: 304,678,679,680,695,703|台湾2|@ripaojiedian
   network: tcp
   port: '32012'
   server: alm2.the-galgo.top
@@ -510,12 +506,11 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '304,736,748,749|未知128 #2'
+  name: '304,736,749|未知128 #1'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1321,7 +1316,51 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 547,548,579,597,695,702,703|韩国2|@ripaojiedian
+  network: ws
+  port: '32460'
+  server: sui.forlive.live
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aee1713b-54f6-4377-ab22-a2edf8de2d25
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - name: 547|[Trojan] 🇨🇳 中国 阿里云
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.217.123.243
+  skip-cert-verify: true
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: ''
+- name: 547|[Trojan] 🇨🇳 中国 阿里云 2
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 8.218.98.75
+  skip-cert-verify: true
+  sni: mfjd.591haoka.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mfjd.591haoka.com
+    path: ''
+- name: 547|[Trojan] 🇨🇳 中国 阿里云 3
   network: ws
   password: NISHIKUITAN222
   port: 443
@@ -3194,6 +3233,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 561,695,703|香港|@ripaojiedian
+  network: tcp
+  port: '55908'
+  server: 183.240.235.164
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 587|🇨🇳中国(欢迎订阅Youtube元亨利贞)
@@ -4926,16 +4975,13 @@ proxies:
     headers:
       Host: t010.ylks.link
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 601,678,737,748|🇨
+  name: '601,678,737|🇨🇳 广东省深圳市+阿里云 #1'
   password: a501c82c72d790b8
   port: 8474
   server: 119.23.104.213
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -5969,12 +6015,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 704,748|🇨2
+  name: 704|CN_youtube@资源分享师_14
   network: ws
   port: 16632
   server: m.cnmjin.net
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
@@ -6144,7 +6190,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '737,738|广东省 移动 #6'
+  name: '737,738|广东省 移动 #3'
   network: ws
   port: '16632'
   server: 120.233.204.126
@@ -6256,137 +6302,6 @@ proxies:
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  name: 748|🇨🇳CN国2
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.219.248.47
-  skip-cert-verify: true
-  sni: t010.ylks.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|🇨🇳CN中国3
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.219.11.158
-  skip-cert-verify: true
-  sni: t010.ylks.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|🇨🇳CN中国4
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.218.98.75
-  skip-cert-verify: true
-  sni: mfjd.591haoka.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|🇨🇳
-  network: tcp
-  password: gkviEOYc
-  port: 23223
-  server: 223.113.54.160
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|🇨CN5
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.219.110.81
-  skip-cert-verify: true
-  sni: t010.ylks.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|🇨🇳CN中国6
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.219.194.170
-  skip-cert-verify: true
-  sni: t010.ylks.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|CN国7
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.219.104.37
-  skip-cert-verify: true
-  sni: t010.ylks.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|🇨🇳CN中国8
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.219.142.191
-  skip-cert-verify: true
-  sni: t010.ylks.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|🇨CN10
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.222.193.65
-  skip-cert-verify: true
-  sni: t010.ylks.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|🇨🇳CN中国11
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.219.177.205
-  skip-cert-verify: true
-  sni: t010.ylks.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 748|CN国15
-  network: ws
-  password: NISHIKUITAN222
-  port: 8443
-  server: 8.219.199.220
-  skip-cert-verify: true
-  sni: t010.ylks.link
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '762|日本2|@ripaojiedian #1'

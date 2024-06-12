@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 0,3,304,547,548,579,581,597,601,602,646,679,680,783|未知_0612071
+  name: '0,3,304,447,448,450,451,581,601,602,646,679,680,682,783,785|未知_0612032 #1'
   network: ws
   port: '80'
   server: 104.18.54.24
@@ -19,7 +19,7 @@ proxies:
     path: /etc
 - alterId: 0
   cipher: auto
-  name: 0,3,304,561,581,646,679,680,682,749,783|美国_0612057
+  name: 0,3,304,447,448,450,451,561,581,646,679,680,682,749,783,785|美国_0612055
   network: ws
   port: '80'
   server: 104.26.3.120
@@ -33,7 +33,7 @@ proxies:
     path: /etc
 - alterId: 0
   cipher: auto
-  name: 0,3,304,581,602,646,679,680,783|美国_0612056
+  name: '0,3,304,447,448,450,451,581,602,646,679,680,783,785|美国_0612003 #2'
   network: ws
   port: '8080'
   server: 104.26.9.22
@@ -47,8 +47,8 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,112,304,452,547,548,572,579,581,597,605,646,679,680,682,728,749,769,777,783|瑞典_0612002
-    #1'
+  name: '0,3,112,304,447,448,450,451,452,547,548,572,581,597,605,646,679,680,728,749,769,777,783,785|瑞典_0612002
+    #2'
   network: ws
   port: '2052'
   server: 185.146.173.185
@@ -65,11 +65,15 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  country: 🏁ZZ
   fingerprint: ''
-  name: 1,2,297,629|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,297,520,629|🇺🇸_US_美国->🇩🇪_DE_德国_2
   network: ws
   port: 80
   server: 104.18.54.24
+  servername: dl2.mrarsha..diehart2..mikolo.suonycars.buzz.
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -98,13 +102,13 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: '1,2,297,520,629,748|未知61 46.1KB/s #1'
+  name: 1,2,297,520,629|🇺🇸_US_美国->_PT_
   network: ws
   port: 80
   server: 104.26.3.120
   servername: dl3.mrarsha..iron..dog..suonycars.buzz.
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: false
   uuid: f94c274d-f9c5-4c47-a3f5-fa839d80bfb1
@@ -128,12 +132,10 @@ proxies:
   udp: true
 - alpn:
   - h2http/1.1
-  alterId: 0
-  cipher: auto
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: trojan
-  name: 1,2,112,547,601,605,629,748|🇺🇸US美国42
+  name: 1,2,112,547,601,605,629|🇺🇸_US_美国->_DE_国_1
   network: grpc
   password: A9l6_eMgylRZu0YiSqunsQ
   port: 2096
@@ -159,11 +161,9 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alpn:
   - h2
-  alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1,2,629,748|🇺🇸US美国10
+  name: 1,2,629|🇺🇸_US_美国->🇩🇪_DE_德国_3
   network: grpc
   password: f91f38bb-72d5-4f3e-8311-1788986293f5
   port: 443
@@ -177,12 +177,12 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: '1,2,297,629,748|未知1432 2.0MB/s #1'
+  name: 1,2,297,629|🇪_SE_->🇩🇪_DE_德国_1
   network: ws
   port: 2052
   server: 185.146.173.185
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: false
   uuid: 99f8410f-4f46-4f64-adc7-aa6a41dc9da4
@@ -456,13 +456,15 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '498,561,581,762,783,785,928|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
+  name: '498,547,548,561,579,581,597,762,783,785,928|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
   network: ws
   port: 2082
   server: 104.21.8.157
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -2801,20 +2803,6 @@ proxies:
   server: 59.56.77.178
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 629,705|🇺🇸_US_美国->🇫🇷_FR_法国_2
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 630|🇺🇸_US_美国->_DE_国
