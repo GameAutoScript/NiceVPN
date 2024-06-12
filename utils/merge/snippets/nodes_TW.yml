@@ -284,7 +284,7 @@ proxies:
   name: 278|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: b1wOMY.gov.goldliond.top
+  server: 2CwTn4.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -293,7 +293,7 @@ proxies:
   name: 278|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '40180'
-  server: hw3NuD.gov.goldliond.top
+  server: 7VlcNh.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -315,7 +315,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '304,736,749|TW5 #3'
+  name: '304,736|🔒 VM-TCP-NA 🇹🇼 TW-122.118.169.... #1'
+  network: tcp
+  port: '61017'
+  server: 122.118.169.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
+- alterId: 0
+  cipher: auto
+  name: '304,736,749|TW5 #1'
   network: ws
   port: '37902'
   server: 118.170.98.92
@@ -329,22 +339,11 @@ proxies:
     path: /index?ed=2560
 - alterId: 0
   cipher: auto
-  name: '304,736|🔒 VM-TCP-NA 🇹🇼 TW-122.118.169.... #1'
-  network: tcp
-  port: '61017'
-  server: 122.118.169.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
-- alterId: 0
-  cipher: auto
-  name: '304,748,749|TW2 #3'
+  name: '304,749|TW2 #1'
   network: tcp
   port: '61017'
   server: 61.224.77.108
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
@@ -739,20 +738,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
-  name: 561,682,785|台湾_0611001
-  network: ws
-  port: '57257'
-  server: 34.80.125.236
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a368036-ff57-4141-827b-0156487add85
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 64
   cipher: auto
   name: 581,783|台湾_0612003
@@ -1017,6 +1002,30 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
+  name: 687|🇹🇼 TW 02
+  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
+  port: 61006
+  server: 2.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 687|🇹🇼 TW 03
+  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
+  port: 22302
+  server: 03.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 687|🇹🇼 TW 04
+  password: cf448056-b7c2-439d-b708-aaf5ff321052
+  port: 22302
+  server: 04.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 687|🇹🇼 Taiwan_1
   password: 93ec2378-1151-4db5-9c56-d1387f36882d
   port: 40006
@@ -1159,44 +1168,6 @@ proxies:
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
   cipher: auto
-  name: 748|TW
-  network: ws
-  password: auto
-  port: 443
-  server: 35.201.203.106
-  skip-cert-verify: true
-  sni: vip.123789.pp.ua
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '748|TW5 #2'
-  network: ws
-  port: 37902
-  server: 118.170.98.92
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      host: hinet-wap.myddns.me
-    path: /index?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '748|TW2 #2'
-  network: ws
-  password: moist
-  port: 12031
-  server: 60.248.63.88
-  skip-cert-verify: true
-  sni: trojan.freenods.sbs
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
   name: 762|🇹🇼台湾 01
   network: ws
   port: '443'
@@ -1223,6 +1194,20 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 785|台湾_0611001
+  network: ws
+  port: '57257'
+  server: 34.80.125.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a368036-ff57-4141-827b-0156487add85
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 809|台湾1_GPT_NF_YTB
