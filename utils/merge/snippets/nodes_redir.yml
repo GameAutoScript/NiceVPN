@@ -41,22 +41,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,636|🇸_US_美国->_AT_
+  name: '1,2,636,755|未知482 81.7KB/s #1'
   network: ws
   port: 80
   server: 172.67.193.67
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 408438b0-fe40-44de-af19-0e5e6bb750ce
   ws-opts:
     headers:
       host: gulasch.online
     path: /
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1,2,608,636|🇸_US_美国->🇩🇪_DE_德国_3
+  name: 1,2,608,636,755|🇺🇸US美国36
   network: grpc
   password: f91f38bb-72d5-4f3e-8311-1788986293f5
   port: 443
@@ -68,14 +70,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '1,2,527,636,712|🇺🇸_US_美国_5 #2'
+  name: '1,2,636,712|🇺🇸_US_美国_5 #2'
   network: ws
   port: 2082
   server: 172.67.130.140
-  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -86,13 +84,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '310,505,588,686,687,769,790,792,937|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
+  name: '310,505,554,555,586,588,604,686,687,769,790,792,937|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
   network: ws
   port: 2082
   server: 104.21.8.157
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -2689,6 +2689,35 @@ proxies:
   ws-path: /videos
 - alterId: 0
   cipher: auto
+  name: '636,755|US179 692.4KB/s #1'
+  network: ws
+  port: 2052
+  server: www.speedtest.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cd5b9129-90cf-48ce-b00b-979f1c8681ce
+  ws-opts:
+    headers:
+      host: 2d.irvn.debian.6.6.1b71.8.fxp.debian.org.speedtest.net.列事列男.filter-nakon-madarj.cyou.
+    path: /@irvpnn,@irvpnn,@irvpnn,@irvpnn?ed=80
+- alterId: 0
+  cipher: auto
+  name: 636|🇸_US_美国->_GB_国
+  network: ws
+  port: 80
+  server: zula.ir
+  servername: uk2.vmess.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
+  ws-opts:
+    headers:
+      host: Uk2.vmess.site.
+    path: /vmess @hopev2ray
+- alterId: 0
+  cipher: auto
   name: 637|🇺🇸_US_美国->_DE_国
   network: ws
   port: 80
@@ -3135,7 +3164,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '712,767,769|美国 CloudFlare节点 #62'
+  name: '712,767,769|美国 CloudFlare节点 #70'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
