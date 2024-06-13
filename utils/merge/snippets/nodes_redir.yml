@@ -13,10 +13,12 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1,2,613,641|🇪_SE_->🇩🇪_DE_德国
+  name: 1,2,613,641,760|🇸SE
   network: grpc
   password: f91f38bb-72d5-4f3e-8311-1788986293f5
   port: 443
@@ -51,13 +53,13 @@ proxies:
   fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 1,2,307,532,641|🇸_US_美国->_AT_
+  name: 1,2,307,532,641,760|未知1193 8.7MB/s
   network: ws
   port: 80
   server: 172.67.193.67
   servername: gulasch.online
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: false
   uuid: 408438b0-fe40-44de-af19-0e5e6bb750ce
@@ -65,10 +67,12 @@ proxies:
     headers:
       host: gulasch.online
     path: /
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1,2,613,641|🇸_US_美国->🇩🇪_DE_德国_3
+  name: 1,2,613,641,760|🇺🇸US美国21
   network: grpc
   password: f91f38bb-72d5-4f3e-8311-1788986293f5
   port: 443
@@ -80,10 +84,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,2,641,717|🇺🇸_US_美国_5 #2'
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,532,641,717|🇺🇸_US_美国_5 #2'
   network: ws
   port: 2082
   server: 172.67.130.140
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -94,13 +102,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '314,510,593,691,692,774,795,797,943|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
+  name: '314,510,559,560,591,593,609,691,692,774,795,797,943|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
   network: ws
   port: 2082
   server: 104.21.8.157
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -552,22 +562,6 @@ proxies:
     headers:
       host: www.42077230.xyz
     path: /path/1696251522438
-- alterId: 0
-  cipher: auto
-  name: '559,560,593,609,643,795|未知_0612277 #1'
-  network: ws
-  port: '80'
-  server: jd3.shabijichang.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: jd3.shabijichang.com
-    path: /
 - name: 606|🇨🇳_CN_中国->🇭🇰_HK_香港_0@17
   network: tcp
   password: 61c6ceee-ee4f-475f-867d-dcfda15490fb
@@ -3143,7 +3137,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '717,772,774|美国 CloudFlare节点 #68'
+  name: '717,772,774|美国 CloudFlare节点 #64'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz

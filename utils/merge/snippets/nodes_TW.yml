@@ -258,7 +258,7 @@ proxies:
   name: 276|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: 1IHguh.gov.goldliond.top
+  server: b9m4rv.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -267,7 +267,7 @@ proxies:
   name: 276|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: w79Jam.gov.goldliond.top
+  server: W8mRGm.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -276,7 +276,7 @@ proxies:
   name: '288|🇹🇼台湾区域2-三网优化-解锁Netflix #1'
   network: tcp
   port: '40180'
-  server: Rv7haa.gov.goldliond.top
+  server: zyMRAC.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -285,7 +285,7 @@ proxies:
   name: '288|🇹🇼台湾区域3-三网优化-解锁Netflix #1'
   network: tcp
   port: '40180'
-  server: H5ygUc.gov.goldliond.top
+  server: 6vxx3f.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -307,20 +307,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '314,748,761|TW4 #1'
-  network: ws
-  port: '37902'
-  server: 118.170.74.73
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: hinet-wap.myddns.me
-    path: /index?ed=2560
-- alterId: 0
-  cipher: auto
   name: '314,740,748|🔒 VM-WS-TLS 🇹🇼 TW-154.40.60.17... #2'
   network: ws
   port: '12945'
@@ -333,6 +319,20 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '314,748,761|TW #2'
+  network: ws
+  port: '37902'
+  server: 118.170.74.73
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      Host: hinet-wap.myddns.me
+    path: /index?ed=2560
 - alterId: '0'
   cipher: auto
   name: 327|[🇹🇼]103.131.189.212:56967(8110...
@@ -610,7 +610,24 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 532|Relay_🏁ZZ-🇼TW_162 | 0.83Mb
+  name: 532|Relay_🏁ZZ-🇼TW_176 | 2.48Mb
+  network: ws
+  port: 8080
+  server: 104.19.47.153
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 532|Relay_🏁ZZ-🇹🇼TW_177 | 1.81Mb
   network: ws
   port: 8080
   server: 104.19.47.149
@@ -627,24 +644,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 532|Relay_🏁ZZ-🇹🇼TW_165 | 3.03Mb
-  network: ws
-  port: 8080
-  server: 104.19.47.153
-  servername: oiictw.yydsii.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    headers:
-      HOST: oiictw.yydsii.com
-    path: /
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 532|Relay_🏁ZZ-🇹🇼TW_166
+  name: 532|Relay_🏁ZZ-🇹🇼TW_181 | 4.05Mb
   network: ws
   port: 8080
   server: 104.19.47.238
@@ -1250,6 +1250,44 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  cipher: auto
+  name: 760|TW
+  network: ws
+  password: moist
+  port: 12031
+  server: 60.248.63.88
+  skip-cert-verify: true
+  sni: trojan.freenods.sbs
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '760|TW #1'
+  network: ws
+  port: 37902
+  server: 118.170.74.73
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
+  ws-opts:
+    headers:
+      host: hinet-wap.myddns.me
+    path: /index?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 760|TW3
+  network: ws
+  password: auto
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: true
+  sni: vip.123789.pp.ua
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 774|🇹🇼台湾 01

@@ -439,47 +439,51 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: '314,707,715,761,927,941,1006|中国【付费推荐：https://a0a.xyz】101 #2'
+  name: '314,707,715,760,761,927,941,1006|中国【付费推荐：https://a0a.xyz】101 #2'
   network: tcp
   port: '51193'
   server: 183.238.202.173
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '314,761|未知434 #1'
+  name: '314,760,761|未知1525 #1'
   network: tcp
   port: '15607'
   server: 183.232.199.61
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '314,750,761|未知1478 #1'
+  name: '314,750,760,761|未知1432 #1'
   network: tcp
   port: '15605'
   server: 183.232.199.28
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '314,761|未知1224 #1'
+  name: '314,760,761|未知612 #1'
   network: tcp
   port: '15603'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '314,584,781,789|رایگان | VMESS | @DeamNet_Prox... #19'
+  name: '314,584,781,789|رایگان | VMESS | @DeamNet_Prox... #18'
   network: ws
   port: '80'
   server: 47.106.112.114
@@ -505,11 +509,12 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '314,748,761|未知1652 #1'
+  name: '314,748,760,761|未知1577 #1'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1121,6 +1126,16 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- cipher: rc4-md5
+  name: 532,533,539|Relay_-CN_03
+  obfs: plain
+  obfs-param: 64334105622.www.gov.hk
+  password: di15PV
+  port: 555
+  protocol: auth_aes128_md5
+  protocol-param: 105622:5EF7C3661EBC
+  server: video23.cdn.globalnetworktraffic.com
+  type: ssr
 - alterId: 0
   cipher: auto
   name: '546|🇨🇳中国【YouTube-由零開始】 #5'
@@ -1305,6 +1320,27 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 559|[SS] 广东省 移动
+  password: JuCWZb
+  port: 56059
+  server: 7f3ccb38.n1b6u7w1e6-fb-us09.6pzfwf.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 559|[SS] 广东省 移动 2
+  password: JuCWZb
+  port: 56062
+  server: 7f3ccb38.n7y5v1s7m1-fb-uk02.6pzfwf.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 559|[SS] 广东省 移动 3
+  password: JuCWZb
+  port: 56036
+  server: 7f3ccb38.x0j0t7m4c2-fb-jp06.6pzfwf.com
+  type: ss
+  udp: true
 - name: 559|[Trojan] 🇨🇳 中国 阿里云
   network: ws
   password: NISHIKUITAN222
@@ -1318,6 +1354,27 @@ proxies:
     headers:
       Host: t221.ylks.link
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 559|[SS] 🇨🇳 广东省广州市 移动
+  password: JuCWZb
+  port: 56028
+  server: 7f3ccb38.w1q4y3g3y9-fb-tw08.6pzfwf.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 559|[SS] 🇨🇳 广东省广州市 移动 2
+  password: JuCWZb
+  port: 56025
+  server: 7f3ccb38.t3w5r6a5b6-fb-tw05.6pzfwf.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 559|[SS] 🇨🇳 广东省广州市 移动 3
+  password: JuCWZb
+  port: 56018
+  server: 7f3ccb38.b8z9y9a5g9-fb-hk18.6pzfwf.com
+  type: ss
+  udp: true
 - alterId: 4
   cipher: auto
   name: '561,619|未命名 #198'
@@ -5545,11 +5602,14 @@ proxies:
   port: 17207
   server: 36.133.220.204
   type: ss
-- cipher: aes-256-gcm
-  name: 690|🇨🇳CN-36.139.162.99-024
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 690,760|未知945
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 40010
   server: 36.139.162.99
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 690|🇨🇳CN-36.139.162.99-025
@@ -5631,29 +5691,41 @@ proxies:
   ws-headers:
     Host: tv.cctv.com
   ws-path: /hls/cctv5phd.m3u8
-- cipher: aes-128-gcm
-  name: 690|🇨🇳CN-36.139.162.99-039
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 690,760|未知376
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17202
   server: 36.139.162.99
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-256-gcm
-  name: 690|🇨🇳CN-36.139.162.99-040
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 690,760|未知103
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17200
   server: 36.139.162.99
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-256-gcm
-  name: 690|🇨🇳CN-36.133.220.204-041
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 690,760|未知61
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17206
   server: 36.133.220.204
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-128-gcm
-  name: 690|🇨🇳CN-36.133.220.204-042
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 690,760|未知1455
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17202
   server: 36.133.220.204
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 690|🇨🇳CN-36.133.220.204-043
@@ -5667,11 +5739,14 @@ proxies:
   port: 12581
   server: 36.139.162.99
   type: ss
-- cipher: aes-256-gcm
-  name: 690|🇨🇳CN-36.133.220.204-045
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 690,760|未知696
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17200
   server: 36.133.220.204
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 690|🇳CN-36.139.162.99-047
@@ -5679,11 +5754,14 @@ proxies:
   port: 40008
   server: 36.139.162.99
   type: ss
-- cipher: aes-256-gcm
-  name: 690|🇨🇳CN-36.139.162.99-050
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 690,760|未知1799
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17216
   server: 36.139.162.99
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 690|🇨🇳CN-36.133.220.204-052
@@ -5691,35 +5769,50 @@ proxies:
   port: 12581
   server: 36.133.220.204
   type: ss
-- cipher: aes-256-gcm
-  name: 690|🇨🇳CN-120.241.236.204-053
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 690,760|未知312
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 40010
   server: 120.241.236.204
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-128-gcm
-  name: 690|🇨🇳CN-120.241.236.204-054
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 690,760|未知1228
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17202
   server: 120.241.236.204
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-256-gcm
-  name: 690|🇨🇳CN-36.139.162.99-055
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 690,760|未知256
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17206
   server: 36.139.162.99
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-256-gcm
-  name: 690|🇨🇳CN-120.241.236.204-056
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 690,760|未知981
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17206
   server: 120.241.236.204
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-256-gcm
-  name: 690|🇨🇳CN-120.241.236.204-057
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 690,760|未知541
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17200
   server: 120.241.236.204
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 690|🇨🇳CN-120.241.236.204-058
@@ -5727,11 +5820,14 @@ proxies:
   port: 40008
   server: 120.241.236.204
   type: ss
-- cipher: aes-128-gcm
-  name: 690|🇨🇳CN-36.133.220.204-059
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 690,760|未知1070
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17219
   server: 36.133.220.204
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 690|🇳CN-120.241.236.204-062
@@ -5763,11 +5859,14 @@ proxies:
   port: 33400
   server: 36.139.162.99
   type: ss
-- cipher: aes-128-gcm
-  name: 690|🇨🇳CN-36.133.220.204-068
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 690,760|未知1619
   password: f65324a4-f64b-4f22-bf88-8a151db0909c
   port: 17218
   server: 36.133.220.204
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 1
   cipher: auto
@@ -6076,12 +6175,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 716|CN_youtube@资源分享师_14
+  name: '716,760|未命名 #339'
   network: ws
   port: 16632
   server: m.cnmjin.net
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
@@ -6371,6 +6470,18 @@ proxies:
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: 760|🇨🇳CN2
+  network: ws
+  password: NISHIKUITAN222
+  port: 8443
+  server: 8.219.194.170
+  skip-cert-verify: true
+  sni: t221.ylks.link
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '774|日本2|@ripaojiedian #1'
