@@ -1,16 +1,19 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 1,2,192,646|🇨_CA__1
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 1,2,192,646,765|未知1155
   password: qkotZ0f94vUH38YhrXGkUd
   port: 443
   server: ca.yangon.club
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
-  country: ' CA'
+  country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 21| CA_02
+  name: 21,281|CA_01
   network: ws
   port: 443
   server: 158.51.121.36
@@ -558,15 +561,13 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   delay: 921
-  name: '116,317,564,565,578,598,614,618,622,696,697,800,802|未知_0614012 #2'
+  name: '116,317,564,565,578,596,598,614,622,696,697,800,802|未知_0614012 #2'
   network: ws
   port: '8880'
   server: 104.19.38.28
   servername: ''
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -773,7 +774,7 @@ proxies:
   delay: 1503
   h2-opts: {}
   http-opts: {}
-  name: '116,317,564,565,598,614,622,696,697,800|未知_0614100 #1'
+  name: '116,317,564,565,598,614,622,800|未知_0614100 #1'
   network: ws
   port: '2052'
   server: 162.159.130.109
@@ -904,7 +905,7 @@ proxies:
   delay: 1065
   h2-opts: {}
   http-opts: {}
-  name: '116,317,564,565,614,622,696,697|🇺🇸 美国 CloudFlare节点 #62'
+  name: '116,317,564,565,596,614,622,696,697|🇺🇸 美国 CloudFlare节点 #66'
   network: ws
   port: '8080'
   server: 104.17.221.34
@@ -955,13 +956,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '116,192,317,564,565,614,618,622,696,697|🇺🇸 美国 CloudFlare节点 #74'
+  name: '116,192,317,564,565,614,622|加拿大 072 #1'
   network: ws
-  port: '2095'
+  port: 2095
   server: 104.26.14.85
   skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -1181,7 +1180,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '116,317,564,565,598,614,622,800|美国_0614125 #1'
+  name: '116,317,564,565,596,598,614,622,696,697,800|美国_0614125 #1'
   network: ws
   port: '8080'
   server: 172.67.199.143
@@ -1441,36 +1440,51 @@ proxies:
     headers:
       Host: jnd.888553.xyz
     path: /cctv13.m3u8
-- cipher: chacha20-ietf-poly1305
-  name: 192|🇨🇦CA-134.195.196.178-0880 | 19...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 192,765|未知1388 13.5MB/s
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 192|🇨🇦CA-134.195.196.178-0881 | 21...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 192,765|未知1214 21.0MB/s
   password: G!yBwPWH3Vao
   port: 803
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 192|🇨🇦CA-134.195.196.178-0884 | 22...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 192,765|未知1822 8.6MB/s
   password: G!yBwPWH3Vao
   port: 811
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 192,536|CA_08 |30.63Mb
+  name: 192,536,765|未知1656 17.9MB/s
   password: G!yBwPWH3Vao
   port: 808
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 192|🇨🇦CA-134.195.196.178-0896 | 22...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 192,765|未知1533 17.5MB/s
   password: G!yBwPWH3Vao
   port: 812
   server: 134.195.196.178
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -1487,11 +1501,14 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-256-gcm
-  name: 192|🇨🇦CA-51.222.157.179-0770 | 76....
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 192,765|未知1028 49.1MB/s
   password: 7gaTTlW73G
   port: 49602
   server: 51.222.157.179
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alpn:
   - h2
@@ -1520,7 +1537,7 @@ proxies:
   name: 277|🇨🇦加州区域1自动运维节点
   network: tcp
   port: '20185'
-  server: PPfXYx.gov.goldliond.top
+  server: FUXhcH.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -1529,7 +1546,7 @@ proxies:
   name: 277|🇨🇦加州区域2自动运维节点
   network: tcp
   port: '20185'
-  server: tsnBB7.gov.goldliond.top
+  server: GoqVlT.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -1538,7 +1555,7 @@ proxies:
   name: 277|🇨🇦加州区域3自动运维节点
   network: tcp
   port: '20185'
-  server: 9uaYYj.gov.goldliond.top
+  server: 0zU7DZ.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -1586,7 +1603,7 @@ proxies:
   name: '290|🇨🇦加州区域1自动运维节点 #1'
   network: tcp
   port: '20185'
-  server: A3bu3a.gov.goldliond.top
+  server: RtuuCO.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1595,7 +1612,7 @@ proxies:
   name: '290|🇨🇦加州区域2自动运维节点 #1'
   network: tcp
   port: '20185'
-  server: rfxprA.gov.goldliond.top
+  server: CHxV7F.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1604,7 +1621,7 @@ proxies:
   name: '290|🇨🇦加州区域3自动运维节点 #1'
   network: tcp
   port: '20185'
-  server: 7sFAvk.gov.goldliond.top
+  server: Yo7Hhn.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1689,7 +1706,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '317,699|%F0%9F%87%A8%F0%9F%87%A6%20Can... #19'
+  name: '317,699|%F0%9F%87%A8%F0%9F%87%A6%20Can... #14'
   network: ws
   port: '443'
   server: ca-full.privateip.net
@@ -1702,14 +1719,46 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: '317|%F0%9F%87%A8%F0%9F%87%A6%20Can... #17'
-  network: tcp
+  name: '317,561,598,613,699,786,794,800|未知_0614074 #1'
+  network: ws
   port: '443'
-  server: ca-v2ray.ipracevpn.com
+  server: linde06.indiavideo.sbs
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: f50c854e-4627-4229-b360-3f6565ced566
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '317,559,598,800,802|美国_0614024 #1'
+  network: ws
+  port: '2095'
+  server: 104.26.14.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3e540874-0730-452a-8b2e-e719b5d34470
+  ws-opts:
+    headers:
+      Host: Yakuza.unique69.com
+    path: /@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za
+- alterId: 0
+  cipher: auto
+  name: '317,589,786,794|رایگان | VMESS | @ROMAX_VPN | ... #12'
+  network: ws
+  port: '80'
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  ws-opts:
+    headers:
+      Host: us4e-20240111.v2freevpn.com
+    path: /v149-dskds65
 - alterId: 0
   cipher: auto
   name: '317,578,598,800|未知_0614076 #1'
@@ -1726,49 +1775,14 @@ proxies:
     path: /v149-dskds65
 - alterId: 0
   cipher: auto
-  name: '317,559,598,699,800,802|美国_0614069 #1'
-  network: ws
-  port: '2095'
-  server: Tgju.org
+  name: '317|%F0%9F%87%A8%F0%9F%87%A6%20Can... #12'
+  network: tcp
+  port: '443'
+  server: ca-v2ray.ipracevpn.com
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 3e540874-0730-452a-8b2e-e719b5d34470
-  ws-opts:
-    headers:
-      Host: Yakuza.unique69.com
-    path: /@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 317,699,712,719,720|美国2|@ripaojiedian
-  network: ws
-  port: '8080'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 3c5046b4-1a9c-427c-8a55-e355846a9e4a
-  ws-opts:
-    headers:
-      Host: us5PhAx6xsj.fzbqfrse.xyz
-    path: /video/f8ZKTGaGoC/
-- alterId: 0
-  cipher: auto
-  name: '317,589,786,794|رایگان | VMESS | @ROMAX_VPN | ... #12'
-  network: ws
-  port: '80'
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
-  ws-opts:
-    headers:
-      Host: us4e-20240111.v2freevpn.com
-    path: /v149-dskds65
+  uuid: f50c854e-4627-4229-b360-3f6565ced566
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -2071,12 +2085,15 @@ proxies:
     headers:
       Host: qqkyhm.freefly.pp.ua
     path: /
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   country: 🇨🇦CA
-  name: 536|🇨🇦CA_09 | 8.33Mb
+  name: 536,765|未知1843 1.9MB/s
   password: Y6R9pAtvxxzmGC
   port: 5600
   server: 38.111.114.133
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -3155,11 +3172,14 @@ proxies:
     headers:
       Host: www.ltzs.buzz
     path: /bb2b34a1
-- cipher: chacha20-ietf-poly1305
-  name: 646,695|🇨CA-162.221.207.62-168
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 646,765|CA
   password: qkotZ0f94vUH38YhrXGkUd
   port: 443
   server: 162.221.207.62
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -3408,3 +3428,10 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
+- cipher: aes-128-gcm
+  name: 1038|🇨🇦 加拿大 01
+  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
+  port: 22002
+  server: ens.node1link.xyz
+  type: ss
+  udp: true
