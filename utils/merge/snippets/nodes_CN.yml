@@ -450,41 +450,45 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: '317,712,720,766|未知1562 #1'
+  name: '317,712,720,765,766|未知1562 #2'
   network: tcp
   port: '51193'
   server: 183.238.202.173
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '317,766|未知1705 #1'
+  name: '317,765,766|未知1705 #2'
   network: tcp
   port: '15607'
   server: 183.232.199.61
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '317,755,766|未知1101 #1'
+  name: '317,755,765,766|未知1101 #2'
   network: tcp
   port: '15605'
   server: 183.232.199.28
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '317,766|未知1519 #1'
+  name: '317,765,766|未知1519 #2'
   network: tcp
   port: '15603'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -503,11 +507,12 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '317,753,766|未知1644 #1'
+  name: '317,753,765,766|未知1644 #2'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1119,22 +1124,21 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- cipher: rc4-md5
-  name: 536,537,544|Relay_-CN_03
-  obfs: plain
-  obfs-param: 64334105622.www.gov.hk
-  password: di15PV
-  port: 555
-  protocol: auth_aes128_md5
-  protocol-param: 105622:5EF7C3661EBC
-  server: video23.cdn.globalnetworktraffic.com
-  type: ssr
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  country: 🇨CN
-  name: 536,704|🇵🇭 PH菲律宾-电信优化
+  country: 🇨🇳CN
+  name: 536,704|🇹🇭 TH泰国-电信优化
   password: 1cce1062-972c-4ac0-a511-b9168e761512
-  port: 27274
+  port: 27275
+  server: gtm1.ktmwan.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: 🇨🇳CN
+  name: 536,704|🇮🇳 IN印度-电信优化
+  password: 1cce1062-972c-4ac0-a511-b9168e761512
+  port: 27252
   server: gtm1.ktmwan.com
   tfo: false
   type: ss
@@ -1324,11 +1328,23 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 564,754|🇨🇳 广东省深圳市+阿里云
+  name: 564,704|🇸🇬 SG 01
+  password: a4ac2592-28e7-4927-94b3-277edae0869a
+  port: 50105
+  server: iepl2.forlive.live
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '564,754,765|未命名 #339'
   password: a501c82c72d790b8
   port: 8474
   server: 119.23.104.213
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - alterId: 4
@@ -5874,12 +5890,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 721|CN_youtube@资源分享师_14
+  name: '721,765|未知1047 #1'
   network: ws
   port: 16632
   server: m.cnmjin.net
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
