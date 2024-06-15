@@ -45,7 +45,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,195,320,466,467,469,470,582,593,667,700,701,703|🇺🇸 _US_美国->🇬🇧_GB_英国 #3'
+  name: '0,3,195,320,466,467,469,470,582,667,700,701,703|🇺🇸 _US_美国->🇬🇧_GB_英国 #3'
   network: ws
   port: '80'
   server: zula.ir
@@ -79,7 +79,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 1,2,313|72af9ffc018740bc9a6672f18fa2ab...
+  name: 1,2,313|ed2b2311cded413cb50a4f4a34d0db...
   network: ws
   port: 2086
   server: 104.16.60.8
@@ -107,11 +107,15 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  country: 🇺🇸US
   fingerprint: ''
-  name: 1,2,313,650|🇺🇸_US_美国->_CA_
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,313,540,650|🇺🇸_US_美国->_CA_
   network: ws
   port: 8080
   server: 104.26.9.22
+  servername: dual-nothing-prep-exit.trycloudflare.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -123,26 +127,34 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '1,2|_US_->_GB_ #1'
+  country: 🇨CO
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,540|Relay_🇨CO-RU_26 |25.17Mb
   network: ws
   port: 80
   server: zula.ir
+  servername: Uk2.vmess.site.
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
-      host: Uk2.vmess.site.
+      HOST: Uk2.vmess.site.
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  country: 🇺🇸US
   fingerprint: ''
-  name: 1,2,313,650|🇺🇸_US_美国->_AT_
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,313,540,650|🇺🇸_US_美国->_AT_
   network: ws
   port: 80
   server: 172.67.193.67
+  servername: gulasch.online
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -154,12 +166,13 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 1,2,650,708|🇺🇸 US 05
+  name: 1,2,599,650,708|🇺🇸 US 05
   password: 30a8576f-0e33-4715-bb9c-b2bde0d2742e
   port: 60033
   server: 5.forlive.live
   tfo: false
   type: ss
+  udp: true
 - alterId: 2
   cipher: aes-128-gcm
   name: 381|中转节点-1.47MB/s
@@ -386,13 +399,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '509,518,676,782,783,954|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '509,518,599,676,782,783,954|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -3254,20 +3269,6 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '726|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      host: in3.wish.ml
-    path: /
 - alterId: 0
   cipher: auto
   name: 766|:美国-vmess-arm.ptuu.gq:443-可用-中...
