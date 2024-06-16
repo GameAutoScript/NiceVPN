@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,321,467,468,470,471,519,583,603,668,701,702,759,760,784,805,807,957|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: '0,3,321,467,468,470,471,519,569,570,583,601,603,619,668,701,702,704,759,760,784,805,807,957|🇺🇸_US_美国->🇫🇷_FR_法国
     #9'
   network: ws
   port: 2082
@@ -12,6 +12,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -20,7 +21,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,196,321,467,468,470,471,569,570,583,601,603,619,668,701,702,704,759,760,805,807|美国_0616053
+  name: '0,3,196,321,467,468,470,471,583,603,668,701,702,704,759,760,805,807|美国_0616053
     #1'
   network: ws
   port: '80'
@@ -30,7 +31,6 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: 408438b0-fe40-44de-af19-0e5e6bb750ce
   ws-opts:
     headers:
@@ -71,11 +71,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,321,467,468,470,471,603,668,701,702,805,807|未知_0616045 #2'
+  name: '0,3,118,321,467,468,470,471,603,627,668,701,702,805,807|未知_0616045 #2'
   network: ws
   port: '8880'
   server: 162.159.136.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
@@ -93,10 +94,12 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   country: 🏁ZZ
+  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 1,2,541,651,727|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  name: 1,2,314,541,651,727|🇺🇸_US_美国->🇫🇷_FR_法国_2
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -104,6 +107,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -119,10 +123,12 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   country: 🇺🇸US
+  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 1,2,541,651|🇸_US_美国->_AT_
+  name: 1,2,314,541,651|🇸_US_美国->_AT_
   network: ws
   port: 80
   server: 172.67.193.67
@@ -130,6 +136,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: 408438b0-fe40-44de-af19-0e5e6bb750ce
   ws-opts:
     headers:
@@ -137,13 +144,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,651|🇸_US_美国->_CA__1
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 1,2,314,651|🇸_US_美国->_CA__1
   network: ws
   port: 8880
   server: 104.19.38.112
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
   ws-opts:
     headers:
@@ -151,10 +161,12 @@ proxies:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   country: 🇨CO
+  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 1,2,541,651|🇸_US_美国->🇧_GB_英国
+  name: 1,2,314,541,651|🇸_US_美国->🇧_GB_英国
   network: ws
   port: 80
   server: zula.ir
@@ -162,6 +174,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
@@ -169,13 +182,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,651|🇸_US_美国->🇨🇦_CA_加拿大_2
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 1,2,314,651|🇸_US_美国->🇨🇦_CA_加拿大_2
   network: ws
   port: 8880
   server: 162.159.136.23
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
   ws-opts:
     headers:
