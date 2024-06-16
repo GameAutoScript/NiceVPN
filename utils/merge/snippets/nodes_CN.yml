@@ -438,14 +438,18 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: '328,725,733,768,779|未知429 #1'
+  name: '328,578,609,627,708,709,710,725,733,768,779|未知429 #1'
   network: tcp
   port: '51193'
   server: 183.238.202.173
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.238.202.173
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '328,779|未知1347 #1'
@@ -491,24 +495,32 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '328,632,709,710,725,733,768,779|🇨🇳北京 #1'
+  name: '328,632,708,709,710,725,733,768,779|🇨🇳北京 #1'
   network: tcp
   port: '48821'
   server: dxcdn02.dorabbb.top
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 404dea84-58af-4e6b-a11b-cbc10e97cf34
+  ws-headers:
+    Host: dxcdn02.dorabbb.top
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 328,632,709,710,725,733|香港|@ripaojiedian
+  name: 328,632,708,709,710,725,733|香港|@ripaojiedian
   network: tcp
   port: '32006'
   server: alm1.the-galgo.top
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 4fbc3eea-9b2d-4296-bf65-d9bfa0802958
+  ws-headers:
+    Host: alm1.the-galgo.top
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: '328,766,779|未知907 #1'
@@ -1141,7 +1153,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 549,550,557|Relay_-CN_03
+  name: 550|Relay_-CN_02
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1334,6 +1346,47 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 577,578,609,627,709,710,725,732,733|美国3|@ripaojiedian
+  network: ws
+  port: '16928'
+  server: 120.232.240.56
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  ws-opts:
+    headers:
+      Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
+    path: /v2ray
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 577,708,767|🇨🇳 广东省深圳市+阿里云
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 578,609,627,708,709,710,725,733|新加坡2|@ripaojiedian
+  network: tcp
+  port: '35014'
+  server: 120.232.153.86
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6844b3e1-7cf9-3b41-b80e-ee4632e63820
+  ws-headers:
+    Host: 120.232.153.86
+  ws-path: /
 - alterId: 4
   cipher: auto
   name: '579,637|未命名 #198'
@@ -4846,7 +4899,7 @@ proxies:
     path: /shirker
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 631|🇨🇳 广东省江门市移动 8
+  name: 631,708|🇨🇳CN-120.238.122.159-307
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
@@ -4855,7 +4908,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 631|🇨🇳 广东省江门市移动 11
+  name: 631,708|🇨🇳CN-120.238.122.159-310
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
@@ -4864,7 +4917,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 631|🇨🇳 广东省江门市移动 12
+  name: 631,708|🇨🇳CN-120.238.122.159-311
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -5562,6 +5615,95 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 1
+  cipher: auto
+  name: 708|🇨🇳CN-120.241.118.28-047
+  network: ws
+  port: 50207
+  server: data-hk-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-hk-v1.shwjfkw.cn
+  ws-path: /hls/cctv5phd.m3u8
+- alterId: 1
+  cipher: auto
+  name: 708|🇨CN-120.241.118.28-048
+  network: ws
+  port: 50206
+  server: data-hk-v2.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-hk-v2.shwjfkw.cn
+  ws-path: /hls/cctv5phd.m3u8
+- alterId: 1
+  cipher: auto
+  name: 708|🇨CN-120.241.118.28-050
+  network: ws
+  port: 50205
+  server: data-hk-v2.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-hk-v2.shwjfkw.cn
+  ws-path: /hls/cctv5phd.m3u8
+- cipher: aes-256-gcm
+  name: 708|🇨🇳CN-183.232.167.99-056
+  password: eb1d1231-a0ef-4ef6-be6c-6bd8f14c4ba4
+  port: 11087
+  server: test1.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 708|🇨🇳CN-183.232.167.99-055
+  password: 763d291b-90ac-49a2-90c5-12bd393d4f45
+  port: 31187
+  server: zh01lv5tw03.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 708|🇨🇳CN-218.204.179.114-057
+  password: 5094fb82-845e-4a36-9520-e1e9f917ca13
+  port: 33087
+  server: zh01lv5us04.feiguayun.xyz
+  type: ss
+- cipher: aes-128-gcm
+  name: 708|🇳CN-120.233.185.59-079
+  password: dbdc16e3-1f61-41bb-99a6-5f29d8b86f82
+  port: 20021
+  server: 120.233.185.59
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 708|🇨🇳CN-120.241.118.28-306
+  network: ws
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-us-v1.shwjfkw.cn
+  ws-path: /debian
+- alterId: 0
+  cipher: auto
+  name: 708|🇳CN-120.232.240.56-210
+  network: ws
+  port: 16928
+  server: 120.232.240.56
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  ws-headers:
+    Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
+  ws-path: /v2ray
 - name: 714|3.35|CNyoutube155
   network: tcp
   origin: trojan://a3278882-3614-39cf-a3d6-faefa8c910ab@hnm.xiaohouzi.club:17113?type=tcp&security=tls&allowInsecure=1#CN_youtube%40%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB%E5%B8%88_155%0D
@@ -5969,18 +6111,10 @@ proxies:
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 767|🇨🇳 广东省深圳市+阿里云
-  password: a501c82c72d790b8
-  port: 8474
-  server: 119.23.104.213
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 767,768|广东省广州市 移动
+  name: '767,768|广东省广州市 移动 #2'
   network: ws
   port: '16627'
   server: 120.232.240.46
