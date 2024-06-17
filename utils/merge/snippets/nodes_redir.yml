@@ -19,14 +19,16 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '0,3,62,335,482,483,485,486,487,600,611,620,685,718,719,721,808,816,822|未知_0616057
+  name: '0,3,62,335,482,483,485,486,487,586,587,600,611,618,620,636,685,718,719,721,808,816,822|未知_0616057
     #1'
   network: ws
   port: '80'
   server: zula.ir
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
@@ -42,13 +44,16 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 1,2,668|_CN_国->🇺🇸_US_美国_1
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 1,2,328,668|_CN_国->🇺🇸_US_美国_1
   network: ws
   port: 16928
   server: 120.232.240.56
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts:
     headers:
@@ -68,17 +73,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,2|_US_->_GB_ #1'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 1,2,328|82efb27ff8844710b2c0e59cb5a8e1...
   network: ws
   port: 80
   server: zula.ir
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
-    headers:
-      host: Uk2.vmess.site.
     path: /
 - alterId: 2
   cipher: aes-128-gcm
@@ -306,15 +312,13 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '527,536,617,694,800,801,979|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '527,536,694,800,801,979|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -3127,7 +3131,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '744,799,801|美国 CloudFlare节点 #81'
+  name: '744,799,801|美国 CloudFlare节点 #80'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -3139,6 +3143,34 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '744|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
+  network: ws
+  port: 2052
+  server: 172.67.164.78
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      host: in3.wish.ml
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 744|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  network: ws
+  port: 2082
+  server: 104.21.8.157
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
     path: /
 - alterId: 0
   cipher: auto
