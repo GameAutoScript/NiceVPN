@@ -43,7 +43,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,62,336,487,488,490,491,492,647,691,724,725,740,747,748,975,989,1057|中国【付费推荐：https://a0a.xyz】16
+  name: '0,3,62,336,487,488,490,491,492,592,593,624,642,647,691,724,725,740,747,748,975,989,1057|中国【付费推荐：https://a0a.xyz】16
     #2'
   network: ws
   port: '16928'
@@ -53,6 +53,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts:
     headers:
@@ -74,16 +75,13 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,336,487,488,490,491,592,593,606,624,626,642,691,724,725,727,828|未知_0618070
-    #1'
+  name: '0,3,336,487,488,490,491,606,626,691,724,725,727,828|未知_0618070 #1'
   network: ws
   port: '80'
   server: 104.21.69.44
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
@@ -91,17 +89,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2|_US_->_GB__1 #1'
+  country: 🇨CO
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,564|Relay_🇨CO-RU_08 |45.70Mb
   network: ws
   port: 80
   server: zula.ir
+  servername: Uk2.vmess.site.
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
-      host: Uk2.vmess.site.
+      HOST: Uk2.vmess.site.
     path: /
 - alterId: 0
   cipher: auto
@@ -149,17 +151,23 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  country: 🏁ZZ
   fingerprint: ''
-  name: 1,2,329|e2619085781d44e1929d58d1ef00a3...
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,329,564|Relay_🏁ZZ-🇺RU_252 |36.90Mb
   network: ws
   port: 80
   server: 104.21.69.44
+  servername: Uk2.vmess.site.
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: false
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
+    headers:
+      HOST: Uk2.vmess.site.
     path: /
 - alterId: 0
   cipher: auto
@@ -414,13 +422,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '532,541,700,806,807,991|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '532,541,623,700,806,807,991|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -2785,14 +2795,6 @@ proxies:
   server: 59.56.77.178
   tfo: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 674,732|🇺🇸 US 05
-  password: 30a8576f-0e33-4715-bb9c-b2bde0d2742e
-  port: 60033
-  server: 5.forlive.live
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 675|🇺🇸_US_美国->_DE_国
@@ -3241,7 +3243,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '750,805,807|美国 CloudFlare节点 #84'
+  name: '750,805,807|美国 CloudFlare节点 #80'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -3253,34 +3255,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '750|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      host: in3.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 750|🇺🇸_US_美国->🇫🇷_FR_法国_2
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
     path: /
 - alterId: 0
   cipher: auto
