@@ -29,7 +29,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '0,3,62,338,491,492,494,495,496,596,597,610,628,646,695,728,729,731|🇺🇸 美国
-    CloudFlare节点 #90'
+    CloudFlare节点 #98'
   network: ws
   port: '80'
   server: zula.ir
@@ -64,13 +64,15 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 0,3,338,491,492,494,495,610,630,695,728,729,832,834|美国_0618061
+  name: 0,3,338,491,492,494,495,596,597,610,628,630,646,695,728,729,832,834|美国_0618061
   network: ws
   port: '8080'
   server: 172.64.97.235
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
   ws-opts:
     headers:
@@ -78,13 +80,16 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,338,491,492,494,495,610,621,630,695,728,729,818,826,832|未知_0618070 #1'
+  name: '0,3,338,491,492,494,495,596,597,610,621,628,630,646,695,728,729,777,785,832|未知_0618070
+    #1'
   network: ws
   port: '80'
   server: 104.21.69.44
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
@@ -92,17 +97,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2|_US_->_GB__1 #1'
+  country: 🇨CO
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,568|Relay_🇨CO-RU_09 | 5.62Mb
   network: ws
   port: 80
   server: zula.ir
+  servername: Uk2.vmess.site.
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
-      host: Uk2.vmess.site.
+      HOST: Uk2.vmess.site.
     path: /
 - alterId: 0
   cipher: auto
@@ -146,17 +155,21 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,2|_US_->_GB__2 #1'
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,568|Relay_🏁ZZ-🇺RU_248 | 4.25Mb
   network: ws
   port: 80
   server: 104.21.69.44
+  servername: Uk2.vmess.site.
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
-      host: Uk2.vmess.site.
+      HOST: Uk2.vmess.site.
     path: /
 - alterId: 0
   cipher: auto
@@ -3232,7 +3245,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '754,809,811|美国 CloudFlare节点 #83'
+  name: '754,809,811|美国 CloudFlare节点 #87'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
