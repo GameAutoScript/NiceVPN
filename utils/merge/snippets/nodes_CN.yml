@@ -438,35 +438,31 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: '338,597,628,646,744,752,787,797,798,979,993,1061|中国【付费推荐：https://a0a.xyz】13
-    #2'
+  name: '338,744,752,787,798,979,993,1061|中国【付费推荐：https://a0a.xyz】13 #2'
   network: tcp
   port: '51193'
   server: 183.238.202.173
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '338,797,798|未知2012 #2'
+  name: '338,798|未知1262 #1'
   network: tcp
   port: '15607'
   server: 183.232.199.61
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '338,797,798|未知1574 #2'
+  name: '338,798|未知105 #1'
   network: tcp
   port: '15605'
   server: 183.232.199.28
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -486,7 +482,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '338,728,729,744,751,979,993,1061|中国【付费推荐：https://a0a.xyz】20 #2'
+  name: '338,728,729,744,751,798,979,993,1061|中国【付费推荐：https://a0a.xyz】20 #2'
   network: ws
   port: '16626'
   server: 116.162.172.120
@@ -502,12 +498,11 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '338,785,797,798|未知1851 #2'
+  name: '338,785,798|未知1293 #1'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1119,7 +1114,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: rc4-md5
-  name: 568,576|Relay_-CN_02
+  name: '569,576|Relay_-CN_02 #1'
   obfs: plain
   obfs-param: 64334105622.www.gov.hk
   password: di15PV
@@ -1128,20 +1123,6 @@ proxies:
   protocol-param: 105622:5EF7C3661EBC
   server: video23.cdn.globalnetworktraffic.com
   type: ssr
-- alterId: 64
-  cipher: auto
-  country: 🇨CN
-  h2-opts: {}
-  http-opts: {}
-  name: 568,610|美国_061823283
-  network: tcp
-  port: '41911'
-  server: 107.148.192.149
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '583|🇨🇳中国【YouTube-由零開始】 #5'
@@ -1324,6 +1305,15 @@ proxies:
   password: QazEdcTgb159@$*
   port: 24001
   server: 14.29.124.168
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 596,786|🇨🇳 广东省深圳市+阿里云
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
+  tfo: false
   type: ss
   udp: true
 - alterId: 4
@@ -5875,6 +5865,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 753|CN_youtube@资源分享师_14
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 753|CN_youtube@资源分享师_15
   network: tcp
   port: 61002
@@ -6034,16 +6038,34 @@ proxies:
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 786,797|🇨🇳2
-  password: a501c82c72d790b8
-  port: 8474
-  server: 119.23.104.213
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
+  cipher: auto
+  name: 785|🔒 VM-TCP-NA 🇨🇳 CN-120.232.153....
+  network: tcp
+  port: '35067'
+  server: 120.232.153.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9d7f5728-79f6-3948-ade3-806c55601bb6
+- alterId: 0
+  cipher: auto
+  name: 785|🔒 VM-TCP-NA 🇨🇳 CN-183.240.235....
+  network: tcp
+  port: '11022'
+  server: 183.240.235.141
+  tls: false
+  type: vmess
+  uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6
+- alterId: 0
+  cipher: auto
+  name: 785|🔒 VM-TCP-NA 🇨🇳 CN-36.138.227.6...
+  network: tcp
+  port: '48821'
+  server: 36.138.227.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 404dea84-58af-4e6b-a11b-cbc10e97cf34
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
