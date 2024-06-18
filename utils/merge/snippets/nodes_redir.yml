@@ -28,7 +28,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,62,338,491,492,494,495,496,610,695,728,729,731|🇺🇸 美国 CloudFlare节点 #100'
+  name: '0,3,62,338,491,492,494,495,496,610,695,728,729,731|🇺🇸 美国 CloudFlare节点 #90'
   network: ws
   port: '80'
   server: zula.ir
@@ -43,7 +43,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,62,338,491,492,494,495,496,650,651,695,728,729,744,751,752,979,993,1061|中国【付费推荐：https://a0a.xyz】16
+  name: '0,3,62,338,491,492,494,495,496,596,597,628,646,650,651,695,728,729,744,751,752,979,993,1061|中国【付费推荐：https://a0a.xyz】16
     #2'
   network: ws
   port: '16928'
@@ -75,16 +75,13 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,338,491,492,494,495,596,597,610,628,630,646,695,728,729,832|未知_0618070
-    #1'
+  name: '0,3,338,491,492,494,495,610,630,695,728,729,832|未知_0618070 #1'
   network: ws
   port: '80'
   server: 104.21.69.44
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
@@ -95,7 +92,7 @@ proxies:
   country: 🇨CO
   h2-opts: {}
   http-opts: {}
-  name: 1,2,568|Relay_CO-🇺RU_10 |23.12Mb
+  name: 1,2,568|Relay_CO-🇺RU_11 |24.43Mb
   network: ws
   port: 80
   server: zula.ir
@@ -110,13 +107,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,678|_CN_->_US_国_1
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 1,2,331,678|_CN_->_US_国_1
   network: ws
   port: 16928
   server: 120.232.240.56
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-opts:
     headers:
@@ -150,10 +150,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   country: 🏁ZZ
+  fingerprint: ''
   h2-opts: {}
   http-opts: {}
-  name: 1,2,568|Relay_🏁ZZ-🇺RU_255 |39.20Mb
+  name: 1,2,331,568|Relay_🏁ZZ-🇺RU_277 |12.60Mb
   network: ws
   port: 80
   server: 104.21.69.44
@@ -161,6 +163,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
   ws-opts:
     headers:
@@ -419,13 +422,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '536,545,704,810,811,995|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '536,545,627,704,810,811,995|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -2790,14 +2795,6 @@ proxies:
   server: 59.56.77.178
   tfo: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 678,736|🇺🇸 US 05
-  password: 30a8576f-0e33-4715-bb9c-b2bde0d2742e
-  port: 60033
-  server: 5.forlive.live
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 679|🇺🇸_US_美国->_DE_国
@@ -3246,7 +3243,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '754,809,811|美国 CloudFlare节点 #88'
+  name: '754,809,811|美国 CloudFlare节点 #86'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -3258,34 +3255,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '754|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      host: in3.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 754|🇺🇸_US_美国->🇫🇷_FR_法国_2
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
     path: /
 - alterId: 0
   cipher: auto
@@ -3301,6 +3270,20 @@ proxies:
     headers:
       Host: arm.ptuu.gq
     path: /123
+- alterId: 0
+  cipher: auto
+  name: 794|:美国-vmess-vus2.0bad.com:443-可用...
+  network: ws
+  port: '443'
+  server: vus2.0bad.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vus2.0bad.com
+    path: /chat
 - alterId: 0
   cipher: auto
   name: 794|:美国-vmess-vus4.0bad.com:443-可用...
