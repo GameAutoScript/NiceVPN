@@ -438,31 +438,35 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: '340,747,755,790,801,988,1002,1070|中国【付费推荐：https://a0a.xyz】13 #2'
+  name: '340,600,631,649,747,755,790,800,801,988,1002,1070|中国【付费推荐：https://a0a.xyz】13
+    #2'
   network: tcp
   port: '51193'
   server: 183.238.202.173
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '340,801|未知171 #1'
+  name: '340,800,801|未知171 #2'
   network: tcp
   port: '15607'
   server: 183.232.199.61
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '340,801|未知298 #1'
+  name: '340,800,801|未知298 #2'
   network: tcp
   port: '15605'
   server: 183.232.199.28
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
@@ -481,7 +485,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '340,654,730,731,732|🇨🇳 广东省 移动 #9'
+  name: '340,600,631,649,654,730,731,732|🇨🇳 广东省 移动 #9'
   network: tcp
   port: '31778'
   server: 183.240.235.166
@@ -494,7 +498,8 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '340,654,730,731,732,747,755,801,988,1002,1070|中国【付费推荐：https://a0a.xyz】2 #2'
+  name: '340,654,730,731,732,747,755,800,801,988,1002,1070|中国【付费推荐：https://a0a.xyz】2
+    #2'
   network: tcp
   port: '32011'
   server: alm1.the-galgo.top
@@ -508,11 +513,12 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '340,788,801|未知1999 #1'
+  name: '340,788,800,801|未知1999 #2'
   network: tcp
   port: '50002'
   server: 120.210.205.82
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -1123,20 +1129,16 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 64
-  cipher: auto
-  country: 🇨CN
-  h2-opts: {}
-  http-opts: {}
-  name: '571,600,613,631,649,734,788|🔒 VM-TCP-NA 🇺🇸 US-107.148.192.... #4'
-  network: tcp
-  port: '41911'
-  server: 107.148.192.156
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: rc4-md5
+  name: 572,579|Relay_-CN_03
+  obfs: plain
+  obfs-param: 64334105622.www.gov.hk
+  password: di15PV
+  port: 555
+  protocol: auth_aes128_md5
+  protocol-param: 105622:5EF7C3661EBC
+  server: video23.cdn.globalnetworktraffic.com
+  type: ssr
 - alterId: 0
   cipher: auto
   name: '586|🇨🇳中国【YouTube-由零開始】 #5'
@@ -3824,15 +3826,6 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 630,653,730|🇨🇳CN-120.238.122.159-219
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20005
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 630|🇨🇳 CN 250 → tg@nicevpn123
   password: d3c7f55f-e2af-4114-b0a3-058d219e2992
   port: 27274
@@ -4145,15 +4138,6 @@ proxies:
   password: dbEcUJ
   port: 24603
   server: 211.99.97.4
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 630,653,730|🇨🇳CN-120.238.122.159-215
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20003
-  server: service.ouluyun9803.com
-  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -4628,13 +4612,16 @@ proxies:
   server: rk.izoizoizo.top
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '630,653,730,789|🇨🇳 广东省深圳市+阿里云 #1'
+  name: 630,653,730,789,800|🇨🇳广东2
   password: a501c82c72d790b8
   port: 8474
   server: 119.23.104.213
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
   udp: true
 - cipher: rc4-md5
@@ -4884,15 +4871,6 @@ proxies:
   password: d3c7f55f-e2af-4114-b0a3-058d219e2992
   port: 27256
   server: 120.199.94.29
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 630,653,730|🇳CN-120.238.122.160-218
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
-  server: service.ouluyun9803.com
-  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -7473,11 +7451,14 @@ proxies:
   ws-headers:
     Host: data-hk-v2.shwjfkw.cn
   ws-path: /hls/cctv5phd.m3u8
-- cipher: aes-256-gcm
-  name: 730|🇨🇳CN-218.204.179.114-034
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 730,800|未知102
   password: 5094fb82-845e-4a36-9520-e1e9f917ca13
   port: 33087
   server: zh01lv5us04.feiguayun.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 1
   cipher: auto
@@ -7799,12 +7780,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 756|CN_youtube@资源分享师_14
+  name: 756,800|4
   network: ws
   port: 16632
   server: m.cnmjin.net
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
@@ -7973,8 +7954,17 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
+  name: 788|🔒 VM-TCP-NA 🇨🇳 CN-183.240.235....
+  network: tcp
+  port: '11022'
+  server: 183.240.235.141
+  tls: false
+  type: vmess
+  uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: '789,790|广东省广州市 移动 #2'
+  name: '789,790|广东省广州市 移动 #3'
   network: ws
   port: '16627'
   server: 120.232.240.46
