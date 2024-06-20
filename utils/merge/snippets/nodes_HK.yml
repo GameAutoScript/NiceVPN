@@ -119,7 +119,46 @@ proxies:
   uuid: f5daaaea-8f52-4b8b-a1da-2a2005bccd13
 - alterId: 0
   cipher: auto
-  name: '136,137,343,627,734,735,737,804|US375 #1'
+  name: 114|香港1
+  network: ws
+  port: '2086'
+  server: sx1.suixincloud.top
+  tls: false
+  type: vmess
+  uuid: 9eaec70a-4508-4b76-bef2-cb35427ff486
+  ws-opts:
+    headers:
+      Host: sxxg.suixincloud.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 114|香港2
+  network: ws
+  port: '2086'
+  server: sx2.suixincloud.top
+  tls: false
+  type: vmess
+  uuid: 9eaec70a-4508-4b76-bef2-cb35427ff486
+  ws-opts:
+    headers:
+      Host: sxxg.suixincloud.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 114|香港3
+  network: ws
+  port: '2086'
+  server: sx3.suixincloud.top
+  tls: false
+  type: vmess
+  uuid: 9eaec70a-4508-4b76-bef2-cb35427ff486
+  ws-opts:
+    headers:
+      Host: sxxg.suixincloud.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '136,137,343,737,804|US375 #1'
   network: ws
   port: '2052'
   server: hk.wish.ml
@@ -561,7 +600,7 @@ proxies:
   name: 303|🇭🇰香港区域1-三网优化
   network: tcp
   port: '60181'
-  server: 21Z0ux.gov.goldliond.top
+  server: f6NUy7.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -570,7 +609,7 @@ proxies:
   name: 303|🇭🇰香港区域2-三网优化
   network: tcp
   port: '60181'
-  server: olztPf.gov.goldliond.top
+  server: cPI6sl.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -579,7 +618,7 @@ proxies:
   name: 303|🇭🇰香港区域3-三网优化
   network: tcp
   port: '60181'
-  server: 0V5l8B.gov.goldliond.top
+  server: sq9C0N.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -588,7 +627,7 @@ proxies:
   name: '316|🇭🇰香港区域1-三网优化 #1'
   network: tcp
   port: '40181'
-  server: uT3zim.gov.goldliond.top
+  server: 6qEiCS.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -597,7 +636,7 @@ proxies:
   name: '316|🇭🇰香港区域2-三网优化 #1'
   network: tcp
   port: '40181'
-  server: YdlW8g.gov.goldliond.top
+  server: YVe4xr.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -606,7 +645,7 @@ proxies:
   name: '316|🇭🇰香港区域3-三网优化 #1'
   network: tcp
   port: '40181'
-  server: mNrhGz.gov.goldliond.top
+  server: uG7ZRW.gov.goldliond.top
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
@@ -1409,7 +1448,20 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '343,707,734,735|🇭🇰 香港(油管:破解资源君2.0) #4'
+  name: '343,734,735|🇭🇰 香港(油管:破解资源君2.0) #4'
+  network: ws
+  port: '38101'
+  server: ingress-i2.onebox6.org
+  tls: false
+  type: vmess
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers:
+      Host: ingress-i2.onebox6.org
+    path: /hls/cctv5phd.m3u8
+- alterId: 1
+  cipher: auto
+  name: '343,707,734,735|🇭🇰 香港(油管:破解资源君2.0) #5'
   network: ws
   port: '38101'
   server: ingress-i2.onebox6.org
@@ -1420,19 +1472,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.ivpnpro.net
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '343,734,735|🇭🇰 香港(油管:破解资源君2.0) #5'
-  network: ws
-  port: '38101'
-  server: ingress-i2.onebox6.org
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers:
-      Host: ingress-i2.onebox6.org
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
@@ -2334,93 +2373,6 @@ proxies:
     headers:
       Host: internet.life.com.by
     path: /
-- cipher: aes-128-gcm
-  name: 633|🇭🇰 HK 1 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.223.223
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 633|🇭🇰 HK 11 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: 182.16.1.194
-    path: /opt/video/images
-- cipher: aes-128-gcm
-  name: 633|🇭🇰 HK 3 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.139.54
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 633|🇭🇰 HK 4 → tg@nicevpn123
-  network: ws
-  port: 55576
-  server: 202.81.231.30
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
-  ws-opts:
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 633,817|🇭🇰HK-182.16.1.194-8978
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  name: 633|🇭🇰 HK 6 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 636,838|香港_0620076
@@ -2840,20 +2792,6 @@ proxies:
     headers:
       Host: hkbn03.tizi1.net
     path: /clientarea
-- alterId: 1
-  cipher: auto
-  name: 650,662,668,722|🇭🇰 香港(油管破解资源君2.0)
-  network: ws
-  port: '50205'
-  server: data-hk-v2.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v2.shwjfkw.cn
-    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: 650|🇭🇰 Hong Kong 22 TG:@nodpai
@@ -3407,7 +3345,20 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '710,817|美国 CloudFlare节点 #73'
+  name: 710,817|TG频道:@hkaa0▓美国_3
+  network: ws
+  port: 8080
+  server: www.velvetmountain.shop
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.velvetmountain.shop
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '710,817|美国 CloudFlare节点 #72'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -3962,6 +3913,30 @@ proxies:
   password: d20ef6d0-1339-3970-9194-9726b5ee6224
   port: 50001
   server: iepl1.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 742|🇭🇰 HK 03
+  password: 1c00f6d6-d25b-43c2-b997-6a6a3c045fa8
+  port: 22261
+  server: 03.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 742|🇭🇰 HK 04
+  password: 8c9af44c-7206-4bfc-b18b-699640a28625
+  port: 22261
+  server: 04.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 742|🇭🇰 HK 05
+  password: 3368714c-df00-4cc0-816a-a0f8715326b4
+  port: 61007
+  server: 1.forlive.live
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -4696,6 +4671,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 817|🇭🇰HK-47.76.35.246-0787
+  network: ws
+  port: 24101
+  server: 47.76.35.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 64
   cipher: auto
   name: 817|香港|@ripaojiedian
@@ -4730,6 +4719,20 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
+- alterId: 64
+  cipher: auto
+  name: 817|🇭🇰HK-182.16.1.194-8978
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 838|香港_0620001
