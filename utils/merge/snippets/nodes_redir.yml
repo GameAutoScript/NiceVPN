@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,63,340,494,495,497,498,499,653,698,731,732,747,754,755,988,1002,1070|中国【付费推荐：https://a0a.xyz】16
+  name: '0,3,63,340,494,495,497,498,499,599,600,631,649,698,731,732,747,754,755,988,1002,1070|中国【付费推荐：https://a0a.xyz】16
     #2'
   network: ws
   port: '16928'
@@ -21,7 +21,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,126,340,494,495,497,498,548,599,600,613,631,633,649,654,657,698,731,732,734,789,790,801,814,835,837,988,1002,1004,1070|美国【付费推荐：https://a0a.xyz】35
+  name: '0,3,126,340,494,495,497,498,548,599,600,613,631,633,649,653,654,657,698,731,732,734,789,790,801,814,835,837,988,1002,1004,1070|美国【付费推荐：https://a0a.xyz】35
     #2'
   network: ws
   port: '2082'
@@ -39,14 +39,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 0,3,63,126,340,494,495,497,498,499,599,600,613,633,649,653,657,698,731,732,835,837|未知_0619072
+  name: 0,3,63,126,340,494,495,497,498,499,599,600,613,630,633,649,657,698,731,732,835,837|未知_0619072
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
   servername: ''
   skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -58,7 +56,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,340,494,495,497,498,548,633,653,698,731,732,734,789,790,812,814,835,837,1004|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: '0,3,340,494,495,497,498,548,599,600,631,633,649,698,731,732,734,789,790,812,814,835,837,1004|🇺🇸_US_美国->🇫🇷_FR_法国
     #14'
   network: ws
   port: 2082
@@ -95,24 +93,27 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  country: 🏁ZZ
   fingerprint: ''
-  name: 1,2,333,681,757|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  h2-opts: {}
+  http-opts: {}
+  name: 1,2,333,571,630,681,757|🇺🇸_US_美国->🇫🇷_FR_法国_2
   network: ws
   port: 2082
   server: 104.21.8.157
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: false
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
       host: s1c.v2.v001sss.xyz
     path: /
-- client-fingerprint: chrome
-  grpc-opts:
+- grpc-opts:
     grpc-service-name: 443trojan
-  name: 1,2,653,681|🇺🇸_US_美国->🇺_RU_
+  name: 1,2,681|🇺🇸_US_美国->🇺_RU_
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -124,7 +125,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,2,681,757,812,814|美国 CloudFlare节点 #84'
+  name: '1,2,681,757,812,814|美国 CloudFlare节点 #92'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -140,15 +141,19 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  country: 🇺🇸US
   fingerprint: ''
-  name: '1,2,333,681,757|🇺🇸_US_美国_5 #2'
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,333,571,630,681,757|🇺🇸_US_美国_5 #2'
   network: ws
   port: 2082
   server: 172.67.130.140
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: false
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -380,13 +385,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '539,548,707,813,814,1004|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '539,548,630,707,813,814,1004|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -3197,20 +3204,6 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '757|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      host: in3.wish.ml
-    path: /
 - alterId: 0
   cipher: auto
   name: 797|:美国-vmess-arm.ptuu.gq:443-可用-中...
