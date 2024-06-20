@@ -1,13 +1,16 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,63,342,496,497,499,500,501,615,635,700,733,734,837,839|未知_0620045 #2'
+  name: '0,3,63,342,496,497,499,500,501,601,602,615,632,633,635,651,656,700,733,734,837,839|未知_0620045
+    #2'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -15,7 +18,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,3,342,496,497,499,500,615,635,700,733,734,736,782,837|芬兰_0620003
+  name: 0,3,342,496,497,499,500,615,635,700,733,734,736,782,790,837|芬兰_0620003
   network: ws
   port: '2053'
   server: 65.109.226.6
@@ -41,7 +44,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,2,683,759,814,816|美国 CloudFlare节点 #79'
+  client-fingerprint: chrome
+  country: 🏁ZZ
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '1,2,335,573,683,759,814,816|美国 CloudFlare节点 #81'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -49,6 +57,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: false
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -59,7 +68,7 @@ proxies:
   country: 🇪DE
   h2-opts: {}
   http-opts: {}
-  name: 1,2,573|DE_10 |56.19Mb
+  name: 1,2,573|DE_08 |56.19Mb
   network: ws
   port: 2053
   server: 65.109.226.6
@@ -306,13 +315,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '541,550,709,815,816,1007|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '541,550,632,709,815,816,1007|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -347,7 +358,8 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '550,615,635,791,792,814,816,837,839,1007|🇺🇸_US_美国->🇫🇷_FR_法国 #8'
+  name: '550,601,602,615,633,635,651,656,782,791,792,814,816,837,839,1007|🇺🇸_US_美国->🇫🇷_FR_法国
+    #8'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -356,6 +368,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -2688,34 +2701,6 @@ proxies:
   ws-path: /videos
 - alterId: 0
   cipher: auto
-  name: 683|🇺🇸_US_美国->_CA_
-  network: ws
-  port: 8080
-  server: 172.64.97.235
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-- alterId: 0
-  cipher: auto
-  name: '683,759|🇺🇸_US_美国_5 #2'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 684|🇺🇸_US_美国->_DE_国
   network: ws
   port: 80
@@ -3160,20 +3145,6 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '759|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      host: in3.wish.ml
-    path: /
 - alterId: 0
   cipher: auto
   name: 799|:美国-vmess-arm.ptuu.gq:443-可用-中...
