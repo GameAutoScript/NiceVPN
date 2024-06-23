@@ -1,15 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 15|香港|徐州移动|Neko|1.5x
-  network: tcp
-  port: '13335'
-  server: jscm.r1u.cn
-  tls: false
-  type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
-- alterId: 0
-  cipher: auto
   name: '18,19,20,21,23|🇭🇰 香港1 #4'
   network: ws
   port: '80'
@@ -606,7 +597,7 @@ proxies:
   tls: false
   type: vmess
   uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
-- alterId: 1
+- alterId: 0
   cipher: auto
   name: 253|🇭🇰 香港 | V1 | 02
   network: tcp
@@ -720,7 +711,7 @@ proxies:
   name: 317|🇭🇰香港区域1-三网优化
   network: tcp
   port: '60181'
-  server: Ax9KaN.gov.goldliond.top
+  server: kLzm6E.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -729,7 +720,7 @@ proxies:
   name: 317|🇭🇰香港区域2-三网优化
   network: tcp
   port: '60181'
-  server: xUrRnK.gov.goldliond.top
+  server: xhZsjL.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -738,7 +729,7 @@ proxies:
   name: 317|🇭🇰香港区域3-三网优化
   network: tcp
   port: '60181'
-  server: HhYqZH.gov.goldliond.top
+  server: ELAqcg.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -1581,20 +1572,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: '357,801,809|🔒 VM-WS-TLS 🇭🇰 HK-18.166.76.69... #2'
-  network: ws
-  port: '22352'
-  server: 18.166.76.69
-  servername: 0000000000000000000000000063.cgroup-node-for-bigairport.sbs
-  tls: true
-  type: vmess
-  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
   name: '357,809,822|HK135 #1'
   network: ws
   port: '4431'
@@ -1607,22 +1584,20 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 357,651,835|🇭🇰HK-182.16.1.194-8978
+  name: '357,801,809|🔒 VM-WS-TLS 🇭🇰 HK-18.166.76.69... #2'
   network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
-  skip-cert-verify: true
-  tls: false
+  port: '22352'
+  server: 18.166.76.69
+  servername: 0000000000000000000000000063.cgroup-node-for-bigairport.sbs
+  tls: true
   type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
   ws-opts:
     headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
+      Host: ''
+    path: ''
 - cipher: chacha20-ietf-poly1305
   name: 370|[🇭🇰]a4a09ce.h1.glados-config.n...
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -1718,6 +1693,19 @@ proxies:
     headers:
       Host: niubihk.a1t.top
     path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '484,485|香港 03 #1'
+  network: ws
+  port: '2095'
+  server: lzyjc.779917.xyz
+  tls: false
+  type: vmess
+  uuid: b6ce7f94-187e-4558-bf74-173ec7796379
+  ws-opts:
+    headers:
+      Host: hkk.779917.xyz
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 522|香港HY-优化
@@ -2521,77 +2509,6 @@ proxies:
     headers:
       Host: internet.life.com.by
     path: /
-- cipher: aes-128-gcm
-  name: 651|🇭🇰 HK 1 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.223.223
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 651|🇭🇰 HK 11 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: 182.16.1.194
-    path: /opt/video/images
-- cipher: aes-128-gcm
-  name: 651|🇭🇰 HK 3 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.139.54
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 651|🇭🇰 HK 4 → tg@nicevpn123
-  network: ws
-  port: 55576
-  server: 202.81.231.30
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 651|🇭🇰 HK 6 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 654,856|香港_0622075
@@ -3460,7 +3377,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '728,835,1030|🇺🇸_US_美国 #73'
+  name: '728,835,1031|🇺🇸_US_美国 #73'
   network: ws
   port: 2095
   server: 104.26.4.57
@@ -3564,7 +3481,20 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '728,835|美国 CloudFlare节点 #30'
+  name: 728,835|TG频道:@hkaa0▓美国_3
+  network: ws
+  port: 8080
+  server: www.velvetmountain.shop
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.velvetmountain.shop
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '728,835|美国 CloudFlare节点 #32'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4119,6 +4049,30 @@ proxies:
   password: d20ef6d0-1339-3970-9194-9726b5ee6224
   port: 50001
   server: iepl1.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 760|🇭🇰 HK 03
+  password: 1c00f6d6-d25b-43c2-b997-6a6a3c045fa8
+  port: 22261
+  server: 03.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 760|🇭🇰 HK 04
+  password: 8c9af44c-7206-4bfc-b18b-699640a28625
+  port: 22261
+  server: 04.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 760|🇭🇰 HK 05
+  password: 3368714c-df00-4cc0-816a-a0f8715326b4
+  port: 61007
+  server: 1.forlive.live
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -4845,6 +4799,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 835|🇭🇰HK-47.76.35.246-0787
+  network: ws
+  port: 24101
+  server: 47.76.35.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 64
   cipher: auto
   name: '835|香港|@ripaojiedian #1'
@@ -5055,7 +5023,7 @@ proxies:
   uuid: 3b40af01-e7e5-3cf2-807d-3f6df986f34b
 - alterId: 0
   cipher: auto
-  name: 1002|香港10极速节点|油管速度优化|奈非|速度非常快
+  name: 1003|香港10极速节点|油管速度优化|奈非|速度非常快
   network: ws
   port: '2052'
   server: yx.sulink.one
@@ -5068,7 +5036,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1002|香港07极速节点|油管速度优化
+  name: 1003|香港07极速节点|油管速度优化
   network: ws
   port: '2052'
   server: yx.sulink.one
@@ -5081,7 +5049,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1002|香港家宽-06-5倍率
+  name: 1003|香港家宽-06-5倍率
   network: ws
   port: '80'
   server: yx.sulink.one
@@ -5093,7 +5061,7 @@ proxies:
       Host: hk006.susulian.top
     path: /
 - cipher: aes-256-cfb
-  name: 1068|专线 香港 1
+  name: 1069|专线 香港 1
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -5103,7 +5071,7 @@ proxies:
   server: pvt-hka.ginfe.me
   type: ssr
 - cipher: aes-256-cfb
-  name: 1068|畅行 香港 1
+  name: 1069|畅行 香港 1
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -5113,7 +5081,7 @@ proxies:
   server: pro-hka.ginfe.me
   type: ssr
 - cipher: aes-256-cfb
-  name: 1068|畅行 香港 2
+  name: 1069|畅行 香港 2
   obfs: tls1.2_ticket_auth
   obfs-param: 03d6712819.ikea.com
   password: hrkycyiepu
@@ -5124,7 +5092,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 1072|香港01{优化1|V2ray}
+  name: 1073|香港01{优化1|V2ray}
   network: ws
   port: '25242'
   server: hk1.awslcn.info
@@ -5137,7 +5105,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 1072|香港02{优化2|V2ray}
+  name: 1073|香港02{优化2|V2ray}
   network: ws
   port: '25242'
   server: hk2.awslcn.info
@@ -5150,7 +5118,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 1072|香港03{优化1|V2ray}
+  name: 1073|香港03{优化1|V2ray}
   network: ws
   port: '25248'
   server: hk1.awslcn.info
@@ -5163,7 +5131,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 1072|香港04{优化1|V2ray}
+  name: 1073|香港04{优化1|V2ray}
   network: ws
   port: '25250'
   server: hk1.awslcn.info
@@ -5176,7 +5144,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 1072|香港05{优化1|V2ray}
+  name: 1073|香港05{优化1|V2ray}
   network: ws
   port: '25244'
   server: hk1.awslcn.info
@@ -5188,7 +5156,7 @@ proxies:
       Host: ''
     path: ''
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・01
+  name: 1081|[v1] 香港・01
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5199,7 +5167,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・02
+  name: 1081|[v1] 香港・02
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5210,7 +5178,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・03
+  name: 1081|[v1] 香港・03
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5221,7 +5189,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・04
+  name: 1081|[v1] 香港・04
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5232,7 +5200,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・05
+  name: 1081|[v1] 香港・05
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5243,7 +5211,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・06
+  name: 1081|[v1] 香港・06
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5254,7 +5222,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・07
+  name: 1081|[v1] 香港・07
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5265,7 +5233,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・08
+  name: 1081|[v1] 香港・08
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5276,7 +5244,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・09
+  name: 1081|[v1] 香港・09
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5287,7 +5255,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 1080|[v1] 香港・10
+  name: 1081|[v1] 香港・10
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -5299,7 +5267,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip101
-  name: '1083,1085|香港 101 #1'
+  name: '1084,1086|香港 101 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 12249
@@ -5310,7 +5278,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip101
-  name: '1083,1085|香港 102 #1'
+  name: '1084,1086|香港 102 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 22249
@@ -5321,7 +5289,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip102
-  name: '1083,1085|香港 103 #1'
+  name: '1084,1086|香港 103 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 32249
@@ -5332,7 +5300,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip102
-  name: '1083,1085|香港 104 #1'
+  name: '1084,1086|香港 104 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 42249
@@ -5343,7 +5311,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: '1083,1085|香港 105 #1'
+  name: '1084,1086|香港 105 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 52249
@@ -5354,7 +5322,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: '1083,1085|香港 106 #1'
+  name: '1084,1086|香港 106 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 11116
@@ -5365,7 +5333,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip104
-  name: '1083,1085|香港 107 #1'
+  name: '1084,1086|香港 107 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 45136
@@ -5376,7 +5344,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip104
-  name: '1083,1085|香港 108 #1'
+  name: '1084,1086|香港 108 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 46216
@@ -5387,7 +5355,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip105
-  name: '1083,1085|香港 109 #1'
+  name: '1084,1086|香港 109 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 41116
@@ -5398,7 +5366,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip105
-  name: '1083,1085|香港 110 #1'
+  name: '1084,1086|香港 110 #1'
   network: grpc
   password: 7aedfedc-3960-3382-a23a-c51811a70c45
   port: 51116
@@ -5409,7 +5377,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1091|🇭🇰 香港A丨BGP丨流媒体
+  name: 1092|🇭🇰 香港A丨BGP丨流媒体
   network: tcp
   port: '62021'
   server: gy.zztannel.com
@@ -5419,7 +5387,7 @@ proxies:
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
 - alterId: 0
   cipher: auto
-  name: 1091|🇭🇰 香港A丨HKBN丨流媒体
+  name: 1092|🇭🇰 香港A丨HKBN丨流媒体
   network: tcp
   port: '62016'
   server: gy.zztannel.com
@@ -5429,7 +5397,7 @@ proxies:
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
 - alterId: 0
   cipher: auto
-  name: 1091|🇭🇰 香港B丨BGP丨流媒体
+  name: 1092|🇭🇰 香港B丨BGP丨流媒体
   network: tcp
   port: '62003'
   server: zx.zztannel.com
@@ -5439,7 +5407,7 @@ proxies:
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
 - alterId: 0
   cipher: auto
-  name: 1091|🇭🇰 香港B丨HKBN丨流媒体
+  name: 1092|🇭🇰 香港B丨HKBN丨流媒体
   network: tcp
   port: '62010'
   server: zx.zztannel.com
@@ -5449,7 +5417,7 @@ proxies:
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
 - alterId: 0
   cipher: auto
-  name: 1091|🇭🇰 香港丨国际BGP
+  name: 1092|🇭🇰 香港丨国际BGP
   network: tcp
   port: '62013'
   server: zx.zztannel.com
@@ -5459,7 +5427,7 @@ proxies:
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
 - alterId: 0
   cipher: auto
-  name: '1119|pq香港1 #1'
+  name: '1120|pq香港1 #1'
   network: ws
   port: '2082'
   server: yx1.xsjhl.xyz
@@ -5472,7 +5440,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '1119|pq香港2 #1'
+  name: '1120|pq香港2 #1'
   network: ws
   port: '2082'
   server: yx2.xsjhl.xyz
@@ -5485,7 +5453,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '1119|pq香港3 #1'
+  name: '1120|pq香港3 #1'
   network: ws
   port: '2082'
   server: yx3.xsjhl.xyz
@@ -5497,63 +5465,63 @@ proxies:
       Host: pqhk.xsjhl.xyz
     path: /?ed=2048
 - cipher: aes-128-gcm
-  name: 1122|🇭🇰 香港 01 SS
+  name: 1123|🇭🇰 香港 01 SS
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
   port: 11001
   server: ss.hkglink.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 1122|🇭🇰 香港 02 SS
+  name: 1123|🇭🇰 香港 02 SS
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
   port: 11002
   server: ss.hkglink.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 1122|🇭🇰 香港 03 SS
+  name: 1123|🇭🇰 香港 03 SS
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
   port: 11003
   server: ss.hkglink.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 1122|🇭🇰 香港 04 SS
+  name: 1123|🇭🇰 香港 04 SS
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
   port: 11004
   server: ss.hkglink.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 1122|🇭🇰 香港 05 SS
+  name: 1123|🇭🇰 香港 05 SS
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
   port: 11005
   server: ss.hkglink.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 1122|🇭🇰 香港 06 SS
+  name: 1123|🇭🇰 香港 06 SS
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
   port: 11006
   server: ss.hkglink.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 1122|🇭🇰 香港 07 SS
+  name: 1123|🇭🇰 香港 07 SS
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
   port: 11007
   server: ss.hkglink.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 1122|🇭🇰 香港 08 SS
+  name: 1123|🇭🇰 香港 08 SS
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
   port: 11008
   server: ss.hkglink.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 1122|🇭🇰 香港 IPLC 限速10Mbps
+  name: 1123|🇭🇰 香港 IPLC 限速10Mbps
   password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
   port: 1024
   server: 222909df61922934.cdn.jiashule.com
