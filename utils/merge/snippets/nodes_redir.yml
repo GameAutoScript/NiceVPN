@@ -1,20 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,2,3,511,512,514,515,715,747|🏁RELAY-172.64.97.235-019
-  network: ws
-  port: 8080
-  server: 172.64.97.235
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-headers:
-    Host: 172.64.97.235
-  ws-opts: {}
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 0,1,2,3,511,512,514,515,715,747|🇨🇳CN-120.232.240.56-184
   network: ws
   port: 16928
@@ -27,31 +13,17 @@ proxies:
     Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
   ws-opts: {}
   ws-path: /v2ray
-- name: '1,2|_US_->_AT__1 #1'
+- alterId: 0
+  cipher: auto
+  name: '0,1,2,3|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
   network: ws
-  password: BO7e2KO_KlAjuJY-HYoabQ
   port: 443
-  server: 172.67.131.41
-  sni: n21-at.netzrun.com
-  type: trojan
-  udp: true
-- name: '1,2|_US_->_AT__2 #1'
-  network: ws
-  password: BO7e2KO_KlAjuJY-HYoabQ
-  port: 443
-  server: 104.21.3.201
-  sni: n37-at.netzrun.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 1,2,647,747,756|🇺🇸 US 05
-  password: 30a8576f-0e33-4715-bb9c-b2bde0d2742e
-  port: 60033
-  server: 5.forlive.live
-  tfo: false
-  type: ss
-  udp: true
+  server: hdfy1sub1.achaemenidempireofpersia.uk
+  servername: hdfy1sub1.achaemenidempireofpersia.uk
+  tls: true
+  type: vmess
+  uuid: 6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f
+  ws-opts: {}
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 443trojan
@@ -334,7 +306,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 555|🇺🇸_US_美国->🇩🇪_DE_德国
+  name: '555|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
   network: ws
   port: 80
   server: 104.21.91.52
@@ -382,7 +354,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '556,724,831,1025|🇺🇸_US_美国->🇨🇦_CA_加拿大 #16'
+  name: '556,724,831,1025|🇺🇸_US_美国->🇨🇦_CA_加拿大 #14'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -395,15 +367,13 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '556,565,647,724,830,831,1025|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '556,565,724,830,831,1025|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -411,7 +381,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '556,565,724,830,831,1025|🇺🇸_US_美国 #94'
+  name: '556,565,724,830,831,1025|🇺🇸_US_美国 #78'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -483,7 +453,7 @@ proxies:
     path: /tg@hkaa0
 - alterId: 0
   cipher: auto
-  name: '616,617,666,700|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
+  name: '616,617,666,700|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
   network: ws
   port: 80
   server: flkf2.shabijichang.com
@@ -2717,6 +2687,20 @@ proxies:
   ws-path: /videos
 - alterId: 0
   cipher: auto
+  name: 698,774|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  network: ws
+  port: 2082
+  server: 104.21.8.157
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
   name: '699|🇺🇸_US_美国->_DE_国 #1'
   network: ws
   port: 80
@@ -3006,19 +2990,6 @@ proxies:
   uuid: 8478fdb2-e155-4800-dfc5-b1c8548fb6b7
 - alterId: 0
   cipher: auto
-  name: '751|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
-  network: ws
-  port: 443
-  server: hdfy1sub1.achaemenidempireofpersia.uk
-  tls: true
-  type: vmess
-  uuid: 6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f
-  ws-opts:
-    headers:
-      Host: hdfy1sub1.achaemenidempireofpersia.uk
-    path: /QvtvPdDXXIlSdZMqnuxG
-- alterId: 0
-  cipher: auto
   name: 755|_SG_->🇺🇸_US_美国
   network: ws
   port: 80
@@ -3162,7 +3133,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '774|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
+  name: '774|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
   network: ws
   port: 2052
   server: cdncdncdncdn.784654.xyz
@@ -3174,6 +3145,35 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '774,829,831|美国 CloudFlare节点 #42'
+  network: ws
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '774|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
+  network: ws
+  port: 2052
+  server: 172.67.164.78
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      host: in3.wish.ml
+    path: /
 - alterId: 0
   cipher: auto
   name: 814|:美国-vmess-arm.ptuu.gq:443-可用-中...
