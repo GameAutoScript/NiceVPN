@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,2,3,516,517,519,520,721,753|🇨CN-120.232.240.56-010
+  name: 0,1,2,3,516,517,519,721,753|🇨CN-120.232.240.56-010
   network: ws
   port: 16928
   server: 120.232.240.56
@@ -15,7 +15,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0,1,2,516,517,519,520,753|🏁RELAY-172.67.218.206-014
+  name: 0,1,2,517,753|🏁RELAY-172.67.218.206-014
   network: ws
   port: 443
   server: hdfy1sub1.achaemenidempireofpersia.uk
@@ -43,7 +43,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 3,721,753|RELAY-104.21.8.157-162
+  name: 3,516,519,721,753|RELAY-104.21.8.157-162
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -57,7 +57,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 3,721,753|RELAY-172.67.130.140-184
+  name: 3,516,519,721,753|RELAY-172.67.130.140-184
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -160,71 +160,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 259|香港-CF中转-1
-  network: ws
-  port: '80'
-  server: duo-hk-v6.moshen.tech
-  tls: false
-  type: vmess
-  uuid: f4ae46f4-1c06-4a19-877e-e8cdce2a83ca
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '259,757|香港-CF中转-3 #1'
-  network: ws
-  port: '443'
-  server: wap-hk.skyorg.me
-  tls: true
-  type: vmess
-  uuid: f4ae46f4-1c06-4a19-877e-e8cdce2a83ca
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '259,757|香港-CF中转-2 #1'
-  network: ws
-  port: '80'
-  server: dci-hk.skygov.de
-  tls: false
-  type: vmess
-  uuid: f4ae46f4-1c06-4a19-877e-e8cdce2a83ca
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '259,757|美国-CF中转-2 #1'
-  network: ws
-  port: '443'
-  server: wawo-us.skyorg.me
-  tls: true
-  type: vmess
-  uuid: f4ae46f4-1c06-4a19-877e-e8cdce2a83ca
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '259,757|法国-CF中转-1 #1'
-  network: ws
-  port: '443'
-  server: faguo-kuxue.mjjloc.xyz
-  tls: true
-  type: vmess
-  uuid: f4ae46f4-1c06-4a19-877e-e8cdce2a83ca
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - alterId: 0
   cipher: auto
   name: '359,754,755|🇺🇸 _CN_中国->🇺🇸_US_美国 #2'
@@ -452,7 +387,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '561,656,730,837,858,1035|🇺🇸_US_美国 #79'
+  name: '561,656,730,837,858,1035|🇺🇸_US_美国 #81'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -479,13 +414,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '561,570,730,836,837,1035|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '561,570,653,730,836,837,1035|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -493,7 +430,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '561,570,730,836,837,1035|🇺🇸_US_美国 #78'
+  name: '561,570,730,836,837,1035|🇺🇸_US_美国 #80'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -2841,20 +2778,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '704,780|🇺🇸_US_美国_5 #3'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 704|🇺🇸_US_美国->🇦_CA_加拿大
   network: ws
   port: 80
@@ -3321,17 +3244,18 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '780|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
+  name: '780,835,837|美国 CloudFlare节点 #47'
   network: ws
-  port: 2052
-  server: 172.67.164.78
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      host: in3.wish.ml
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
