@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,2,3,515,516,518,519,720,752|🇨🇳CN-120.232.240.56-137
+  name: 0,1,2,3,515,516,518,519,720,752|🇨CN-120.232.240.56-010
   network: ws
   port: 16928
   server: 120.232.240.56
@@ -10,12 +10,12 @@ proxies:
   type: vmess
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   ws-headers:
-    Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
+    Host: 120.232.240.56
   ws-opts: {}
-  ws-path: /v2ray
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0,1,2,515,516,518,519,752|🏁RELAY-104.21.70.29-014
+  name: 0,1,2,515,516,518,519,752|🏁RELAY-172.67.218.206-014
   network: ws
   port: 443
   server: hdfy1sub1.achaemenidempireofpersia.uk
@@ -43,7 +43,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 3,720,752|🏁RELAY-172.67.130.140-153
+  name: 3,720,752|RELAY-104.21.8.157-162
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -57,14 +57,18 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '3,720,802,810|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.130.... #1'
+  name: 3,358,720,752|RELAY-172.67.130.140-184
   network: ws
   port: 2082
   server: 172.67.130.140
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-headers:
+    Host: s1c.v2.v001sss.xyz
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 250|RU-俄罗斯 02 | 隧道中转 | 免流 5x
@@ -171,7 +175,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 258|香港-CF中转-3
+  name: '258,756|香港-CF中转-3 #1'
   network: ws
   port: '443'
   server: wap-hk.skyorg.me
@@ -184,7 +188,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 258|香港-CF中转-2
+  name: '258,756|香港-CF中转-2 #1'
   network: ws
   port: '80'
   server: dci-hk.skygov.de
@@ -197,7 +201,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 258|美国-CF中转-2
+  name: '258,756|美国-CF中转-2 #1'
   network: ws
   port: '443'
   server: wawo-us.skyorg.me
@@ -210,7 +214,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 258|法国-CF中转-1
+  name: '258,756|法国-CF中转-1 #1'
   network: ws
   port: '443'
   server: faguo-kuxue.mjjloc.xyz
@@ -448,7 +452,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '560,655,729,836,857,1032|🇺🇸_US_美国 #82'
+  name: '560,655,729,836,857,1032|🇺🇸_US_美国 #79'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -475,13 +479,15 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '560,569,729,835,836,1032|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '560,569,652,729,835,836,1032|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -489,7 +495,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '560,569,729,835,836,1032|🇺🇸_US_美国 #81'
+  name: '560,569,729,835,836,1032|🇺🇸_US_美国 #78'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -2835,6 +2841,20 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 703|🇺🇸_US_美国->🇦_CA_加拿大
+  network: ws
+  port: 80
+  server: 104.19.38.10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
+  ws-opts:
+    headers:
+      host: doctor-granny-openings-br.trycloudflare.com
+    path: github.com/Alvin9999
 - cipher: aes-256-cfb
   name: 703|🇷_FR_法国->🇺_LU_
   password: f8f7aCzcPKbsF8p3
@@ -3289,17 +3309,18 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '779|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
+  name: '779,834,836|美国 CloudFlare节点 #53'
   network: ws
-  port: 2052
-  server: 172.67.164.78
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      host: in3.wish.ml
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto

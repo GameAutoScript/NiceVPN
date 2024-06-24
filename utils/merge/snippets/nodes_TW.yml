@@ -217,7 +217,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 258|台湾-1-三倍-三网
+  name: '258,756|台湾-1-三倍-三网 #1'
   network: ws
   port: '80'
   server: 35.187.147.204
@@ -230,7 +230,7 @@ proxies:
     path: /cdn
 - alterId: 0
   cipher: auto
-  name: 258|台湾-2-三倍-三网
+  name: '258,756|台湾-2-三倍-三网 #1'
   network: ws
   port: '80'
   server: 34.81.170.249
@@ -243,7 +243,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 258|台湾解锁
+  name: '258,756|台湾解锁 #1'
   network: ws
   port: '80'
   server: 108.165.144.158
@@ -269,7 +269,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 313|白羊座总线路:84个/TWA
+  name: 313|高速节点请购买射手座/TWA
   network: ws
   port: '443'
   server: cos-cdn-e.alicdn.win
@@ -283,10 +283,24 @@ proxies:
     path: /api/v1/serve
 - alterId: 0
   cipher: auto
+  name: 313|白羊座总线路:90个/TWA
+  network: ws
+  port: '443'
+  server: cos-cdn-h.alicdn.win
+  servername: aliyun-cos-cdn-twa.52edu.men
+  tls: true
+  type: vmess
+  uuid: f50d4527-7eb1-454d-a81d-9a6e20b4efd3
+  ws-opts:
+    headers:
+      Host: aliyun-cos-cdn-twa.52edu.men
+    path: /api/v1/serve
+- alterId: 0
+  cipher: auto
   name: 318|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: YpVaQO.gov.goldliond.top
+  server: 5DmZYZ.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -295,7 +309,7 @@ proxies:
   name: 318|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: 9PQHw1.gov.goldliond.top
+  server: 4i80Aa.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -317,24 +331,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 358,810,823|TW4
+  name: '358,810,823|TW4 #1'
   network: ws
   port: '37902'
   server: 36.232.26.219
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1057c0f5-8662-4902-8d2f-eb6e3ecdf5c5
-  ws-opts:
-    headers:
-      Host: hinet-wap.myddns.me
-    path: /index?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 358|TW5
-  network: ws
-  port: '37902'
-  server: 36.232.0.230
   servername: ''
   tls: false
   type: vmess
@@ -775,7 +775,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 635|台湾_062408002
+  name: 635|台湾_062413002
   network: ws
   port: '443'
   server: tw1g.forlive.live
@@ -783,6 +783,48 @@ proxies:
   tls: false
   type: vmess
   uuid: 4ccc923e-8452-418c-9222-87ee8f295e14
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 635|台湾_062413011
+  network: ws
+  port: '80'
+  server: 35.187.147.204
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f4ae46f4-1c06-4a19-877e-e8cdce2a83ca
+  ws-opts:
+    headers:
+      Host: ''
+    path: /cdn
+- alterId: 0
+  cipher: auto
+  name: 635|台湾_062413012
+  network: ws
+  port: '80'
+  server: 34.81.170.249
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f4ae46f4-1c06-4a19-877e-e8cdce2a83ca
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 635|台湾_062413013
+  network: ws
+  port: '80'
+  server: 108.165.144.158
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f4ae46f4-1c06-4a19-877e-e8cdce2a83ca
   ws-opts:
     headers:
       Host: ''
@@ -1049,38 +1091,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 761|🇹🇼 TW 01
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 761|🇹🇼 TW 02
-  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
-  port: 61006
-  server: 2.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 761|🇹🇼 TW 03
-  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
-  port: 22302
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 761|🇹🇼 TW 04
-  password: cf448056-b7c2-439d-b708-aaf5ff321052
-  port: 22302
-  server: 04.forlive.live
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 761|🇹🇼 Taiwan_1
