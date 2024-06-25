@@ -594,11 +594,10 @@ proxies:
   uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
 - alterId: 0
   cipher: auto
-  name: 257,639|日本_062508013
+  name: 257|🇭🇰 香港 | V1 | 直连
   network: tcp
-  port: '39589'
+  port: 39589
   server: line.acetace.com
-  servername: ''
   tls: false
   type: vmess
   uuid: f6195be4-37bc-3cc8-917e-50c704e2f974
@@ -690,7 +689,7 @@ proxies:
   name: 322|🇭🇰香港区域1-三网优化
   network: tcp
   port: '60181'
-  server: ykLRN8.gov.goldliond.top
+  server: RCPhr0.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -699,7 +698,7 @@ proxies:
   name: 322|🇭🇰香港区域2-三网优化
   network: tcp
   port: '60181'
-  server: CnUpWy.gov.goldliond.top
+  server: DZhTpm.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -708,7 +707,7 @@ proxies:
   name: 322|🇭🇰香港区域3-三网优化
   network: tcp
   port: '60181'
-  server: oWo4gy.gov.goldliond.top
+  server: XQJNMF.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -1511,7 +1510,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 362,814,827|HK47
+  name: '362,814,827|HK47 #1'
   network: ws
   port: '4431'
   server: 152.32.190.239
@@ -1525,11 +1524,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 362,639|香港_062508016
+  name: 362|🇭🇰HK-16.162.137.106-2861
   network: ws
-  port: '80'
+  port: 80
   server: hk5g.forlive.live
-  servername: ''
+  servername: hk5g.forlive.live
   tls: false
   type: vmess
   uuid: 5e48ff00-5af2-4d7d-8c7d-57ed72ad5a1a
@@ -1539,13 +1538,15 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 362,840|🇭🇰HK-182.16.1.194-8978
+  name: 362,656,840|🇭🇰HK-182.16.1.194-8978
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
@@ -2435,6 +2436,64 @@ proxies:
   ws-opts:
     headers:
       Host: internet.life.com.by
+    path: /
+- cipher: aes-128-gcm
+  name: 656|🇭🇰 HK 1 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.223.223
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 656|🇭🇰 HK 11 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: 182.16.1.194
+    path: /opt/video/images
+- cipher: aes-128-gcm
+  name: 656|🇭🇰 HK 3 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.139.54
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 656|🇭🇰 HK 4 → tg@nicevpn123
+  network: ws
+  port: 55576
+  server: 202.81.231.30
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
+  ws-opts:
     path: /
 - alterId: 0
   cipher: auto
@@ -3436,20 +3495,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: 733,840|TG频道:@hkaa0▓美国_3
-  network: ws
-  port: 8080
-  server: www.velvetmountain.shop
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.velvetmountain.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '733,840|美国 CloudFlare节点 #52'
+  name: '733,840|美国 CloudFlare节点 #49'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4004,30 +4050,6 @@ proxies:
   password: d20ef6d0-1339-3970-9194-9726b5ee6224
   port: 50001
   server: iepl1.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 765|🇭🇰 HK 03
-  password: 1c00f6d6-d25b-43c2-b997-6a6a3c045fa8
-  port: 22261
-  server: 03.forlive.live
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 765|🇭🇰 HK 04
-  password: 8c9af44c-7206-4bfc-b18b-699640a28625
-  port: 22261
-  server: 04.forlive.live
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 765|🇭🇰 HK 05
-  password: 3368714c-df00-4cc0-816a-a0f8715326b4
-  port: 61007
-  server: 1.forlive.live
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -4754,20 +4776,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 840|🇭🇰HK-47.76.35.246-0787
-  network: ws
-  port: 24101
-  server: 47.76.35.246
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 64
   cipher: auto
   name: '840|香港|@ripaojiedian #1'
