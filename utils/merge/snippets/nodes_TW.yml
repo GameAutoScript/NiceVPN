@@ -234,7 +234,7 @@ proxies:
   name: 350|🇹🇼台湾区域1-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: R4g8qr.gov.goldliond.top
+  server: Fmxzab.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -243,7 +243,7 @@ proxies:
   name: 350|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: fiLO6I.gov.goldliond.top
+  server: WjpYRn.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -252,7 +252,7 @@ proxies:
   name: 350|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: 4fefgX.gov.goldliond.top
+  server: USbXNA.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -274,32 +274,26 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 390|🔒 VM-TCP-NA 🇹🇼 TW-61.224.99.1:...
-  network: tcp
-  port: 61012
-  server: 61.224.99.1
-  tls: false
-  type: vmess
-  uuid: 4b804301-23ce-378f-87df-af85f73c611f
-- alterId: 0
-  cipher: auto
-  name: 390|🔒 VM-TCP-TLS 🇹🇼 TW-61.224.99.1...
+  name: '390,863|🔒 VM-TCP-TLS 🇹🇼 TW-61.224.95.8... #1'
   network: tcp
   port: 3231
-  server: 61.224.99.1
+  server: 61.224.95.89
   servername: pro01.dns2024.org
   tls: true
   type: vmess
   uuid: 4b804301-23ce-378f-87df-af85f73c611f
 - alterId: 0
   cipher: auto
-  name: '390,708,723,855,863,889,910,1078,1092,1164|未知【付费推荐：https://a0a.xyz】38 #2'
+  name: '390,674,675,706,708,723,724,855,863,889,910,1078,1092,1164|未知【付费推荐：https://a0a.xyz】38
+    #2'
   network: ws
   port: '31945'
   server: 103.159.206.35
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-opts:
     headers:
@@ -307,20 +301,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '390,855|🔒 VM-TCP-TLS 🇹🇼 TW-61.224.99.1... #2'
-  network: tcp
-  port: 3261
-  server: 61.224.99.1
-  servername: pro01.dns2024.org
-  tls: true
-  type: vmess
-  uuid: 4b804301-23ce-378f-87df-af85f73c611f
-- alterId: 0
-  cipher: auto
-  name: 390|🔒 VM-WS-TLS 🇹🇼 TW-61.224.99.1:...
+  name: '390,863|🔒 VM-WS-TLS 🇹🇼 TW-61.224.95.89... #1'
   network: ws
   port: 3041
-  server: 61.224.99.1
+  server: 61.224.95.89
   servername: pro01.dns2024.org
   tls: true
   type: vmess
@@ -329,6 +313,15 @@ proxies:
     headers:
       Host: sg03.li.nbsd.us
     path: /
+- alterId: 0
+  cipher: auto
+  name: '390,863|🔒 VM-TCP-NA 🇹🇼 TW-61.224.95.89... #1'
+  network: tcp
+  port: 61012
+  server: 61.224.95.89
+  tls: false
+  type: vmess
+  uuid: 4b804301-23ce-378f-87df-af85f73c611f
 - alterId: '0'
   cipher: auto
   name: 403|[🇹🇼]103.131.189.212:56967(8110...
@@ -527,6 +520,32 @@ proxies:
   ws-opts:
     headers:
       Host: ee1683cb66f83a1d45e5fdf2e7bdc7dd.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 601|🇹🇼台湾-01|1.0x
+  network: ws
+  port: '2052'
+  server: usus.diao.icu
+  tls: false
+  type: vmess
+  uuid: 6f00f5bb-90cd-41c3-8ab4-67dfe7ee7247
+  ws-opts:
+    headers:
+      Host: tw.niao.icu
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 601|🇹🇼台湾-02|1.0x
+  network: ws
+  port: '2052'
+  server: hkjpkrsg.diao.icu
+  tls: false
+  type: vmess
+  uuid: 6f00f5bb-90cd-41c3-8ab4-67dfe7ee7247
+  ws-opts:
+    headers:
+      Host: tw.niaoba.top
     path: /
 - cipher: rc4-md5
   name: 602|Premium|广台|IEPL|01
@@ -1142,39 +1161,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
-- alterId: 0
-  cipher: auto
-  name: 863|🔒 VM-TCP-TLS 🇹🇼 TW-61.224.95.8...
-  network: tcp
-  port: 3231
-  server: 61.224.95.89
-  servername: pro01.dns2024.org
-  tls: true
-  type: vmess
-  uuid: 4b804301-23ce-378f-87df-af85f73c611f
-- alterId: 0
-  cipher: auto
-  name: 863|🔒 VM-WS-TLS 🇹🇼 TW-61.224.95.89...
-  network: ws
-  port: 3041
-  server: 61.224.95.89
-  servername: pro01.dns2024.org
-  tls: true
-  type: vmess
-  uuid: 4b804301-23ce-378f-87df-af85f73c611f
-  ws-opts:
-    headers:
-      Host: sg03.li.nbsd.us
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 863|🔒 VM-TCP-NA 🇹🇼 TW-61.224.95.89...
-  network: tcp
-  port: 61012
-  server: 61.224.95.89
-  tls: false
-  type: vmess
-  uuid: 4b804301-23ce-378f-87df-af85f73c611f
 - cipher: aes-256-cfb
   name: 874|TG频道@mfbpn-台湾3
   obfs: tls1.2_ticket_auth
