@@ -54,7 +54,7 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: 0,1,2,3,70,392,562,563,565,566,761,778,811,812,870,912|CN_speednode_0009
+  name: 0,1,2,3,70,392,562,563,565,566,680,711,729,761,778,811,812,870,912|CN_speednode_0009
   network: tcp
   port: 54002
   server: 183.240.235.162
@@ -279,14 +279,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '392,710,781,811,812,837|🇺🇸_US_美国_5 #3'
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '392,651,781,811,812,837|🇺🇸_US_美国_5 #3'
   network: ws
   port: 2082
   server: 172.67.130.140
+  servername: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -531,15 +534,13 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '614,625,710,787,893,894,1099|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
+  name: '614,625,787,893,894,1099|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #3'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -3406,21 +3407,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '837|🇺🇸_US_美国->🇨🇦_CA_加拿大 #17'
-  network: ws
-  port: 2052
-  server: cdncdncdncdn.784654.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8c8dabbc-93a6-44ad-b878-0d980fa249d1
-  ws-opts:
-    headers:
-      host: ca-cfcdn.aikunapp.com
-    path: /index?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '837,892,894|美国 CloudFlare节点 #32'
+  name: '837,892,894|美国 CloudFlare节点 #34'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -3432,6 +3419,20 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '837|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
+  network: ws
+  port: 2052
+  server: 172.67.164.78
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      host: in3.wish.ml
     path: /
 - alterId: 0
   cipher: auto
