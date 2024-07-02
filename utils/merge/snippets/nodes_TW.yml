@@ -1,13 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 15|台湾|广州移动|Polo|1x
-  network: tcp
-  port: 39872
-  server: gdcm.r1u.cn
-  tls: false
+  name: '13,14,36|台湾01-Vmess #2'
+  network: ws
+  port: '443'
+  server: iplt.52pokemon.cc
+  tls: true
   type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+  uuid: e26385ec-04a2-4033-820b-ab11c799163b
+  ws-opts:
+    headers:
+      Host: tw01.52pokemon.cc
+    path: /52pokemon?ed=2560
 - alterId: 0
   cipher: auto
   name: '95,436|台湾01 #1'
@@ -230,7 +234,7 @@ proxies:
   name: 352|🇹🇼台湾区域1-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: 3fXzVW.gov.goldliond.top
+  server: gJEo7A.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -239,7 +243,7 @@ proxies:
   name: 352|🇹🇼台湾区域2-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: z4kOAD.gov.goldliond.top
+  server: 8ZEgDy.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -248,7 +252,7 @@ proxies:
   name: 352|🇹🇼台湾区域3-三网优化-解锁Netflix
   network: tcp
   port: '60180'
-  server: SmGLPv.gov.goldliond.top
+  server: ntUHuH.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -1043,6 +1047,38 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 819|🇹🇼 TW 01
+  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
+  port: 61005
+  server: 2.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 819|🇹🇼 TW 02
+  password: 7b13c412-f540-3e7d-8a5f-e94af4cb5f4b
+  port: 61006
+  server: 2.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 819|🇹🇼 TW 03
+  password: 30605f06-859f-4153-9bdd-b5ef0f03b777
+  port: 22302
+  server: 03.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 819|🇹🇼 TW 04
+  password: cf448056-b7c2-439d-b708-aaf5ff321052
+  port: 22302
+  server: 04.forlive.live
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 819|🇹🇼 Taiwan_1
