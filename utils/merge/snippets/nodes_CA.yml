@@ -35,13 +35,6 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 103|🇨🇦 加拿大
-  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
-  port: 40717
-  server: ca01.jjjjjj.icu
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '150,151|🇨🇦 加拿大1|cf #1'
@@ -130,7 +123,7 @@ proxies:
   - h2
   grpc-opts:
     grpc-service-name: mm_grpc
-  name: 249|🇨🇦 特殊｜加拿大-A [1.5][gRPC]
+  name: '249,250|🇨🇦 特殊｜加拿大-A [1.5][gRPC] #1'
   network: grpc
   password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
   port: 443
@@ -153,7 +146,7 @@ proxies:
   name: 352|🇨🇦加州区域1自动运维节点
   network: tcp
   port: '20185'
-  server: Jnl4Sj.gov.goldliond.top
+  server: jdTTnK.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -162,7 +155,7 @@ proxies:
   name: 352|🇨🇦加州区域2自动运维节点
   network: tcp
   port: '20185'
-  server: bHxFCw.gov.goldliond.top
+  server: Z7UTFK.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -171,7 +164,7 @@ proxies:
   name: 352|🇨🇦加州区域3自动运维节点
   network: tcp
   port: '20185'
-  server: fi8CwC.gov.goldliond.top
+  server: ULN7tc.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -251,6 +244,16 @@ proxies:
   port: 3389
   server: 159.203.9.214
   skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  name: '392,694,699,815|🔒 VM-TCP-NA 🇨🇦 CA-178.128.237.... #1'
+  network: tcp
+  port: '3389'
+  server: 178.128.237.6
+  servername: ''
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
@@ -454,7 +457,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '615,738,893,894,895,1101|🇨🇦_CA_加拿大->🇺🇸_US_美国 #4'
+  name: '615,738,893,894,895|🇨🇦_CA_加拿大 #12'
   network: ws
   port: 8080
   server: 23.227.38.22
@@ -484,7 +487,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '615,626,711,895,1101|🇨🇦_CA_加拿大 #16'
+  name: '615,626,711,895|🇨🇦_CA_加拿大 #14'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -766,16 +769,6 @@ proxies:
   network: tcp
   port: '3389'
   server: 167.99.179.27
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: auto
-  name: '694,699,815,869|🔒 VM-TCP-NA 🇨🇦 CA-178.128.237.... #1'
-  network: tcp
-  port: '3389'
-  server: 178.128.237.6
   servername: ''
   tls: false
   type: vmess
@@ -2077,7 +2070,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 714,746,800,816,916,1100|🇺🇸 _CA_加拿大->🇺🇸_US_美国
+  name: '714,746,800,816,916|加拿大_0702005 #1'
   network: ws
   port: '443'
   server: 23.227.38.39
@@ -2105,12 +2098,12 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 714,746,816,916,1100|🇨🇦 _CA_加拿大->🇫🇷_FR_法国
+  name: '714,746,816,916|加拿大_0702024 #1'
   network: ws
   port: '443'
   server: 23.227.38.40
   servername: ''
-  tls: true
+  tls: false
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
   ws-opts:
@@ -2187,20 +2180,6 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 720,800,916,1100|🇨🇦 _CA_加拿大
-  network: ws
-  port: '443'
-  server: 23.227.38.38
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-  ws-opts:
-    headers:
-      Host: lg1.trump2023.us
-    path: /ECTCJ0DF
 - cipher: aes-256-cfb
   name: 727,816,817|1.59|httpsawkjcfky 注册体验流媒体机场yo...
   obfs: http_simple
@@ -2885,7 +2864,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '820|🇨🇦 加拿大 #1'
+  name: 820|🇨🇦 加拿大
   password: 030741c1-8706-41f6-93ae-f97585365627
   port: 27014
   server: ununim.yangliq.com
@@ -3208,10 +3187,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d3a515b4-6fcb-38c8-93d3-2c17da360f89
-- cipher: aes-128-gcm
-  name: 1199|🇨🇦 加拿大 01
-  password: 7f1ab4bf-f28c-405b-afcc-0bc780358c2a
-  port: 22002
-  server: ens.node1link.xyz
-  type: ss
-  udp: true
