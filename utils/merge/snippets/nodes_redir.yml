@@ -101,13 +101,15 @@ proxies:
   uuid: 229ccd44-c56c-3947-88de-849dd70c180d
 - alterId: 0
   cipher: auto
-  name: '632,794,900,901|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #1'
+  name: '632,717,794,900,901|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #1'
   network: ws
   port: 8880
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -128,7 +130,7 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: '632,700,901|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  name: '632,700,718,818,819,901|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -156,8 +158,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '632,700,718,720,899,901,922,924,1092,1106,1180|美国【付费推荐：https://a0a.xyz】46
-    #2'
+  name: '632,700,720,899,901,922,924,1092,1106,1180|美国【付费推荐：https://a0a.xyz】46 #2'
   network: ws
   port: '2082'
   server: 172.67.130.140
@@ -2342,13 +2343,18 @@ proxies:
   ws-path: /videos
 - alterId: 0
   cipher: auto
-  name: 768|_US_->_CA__1
+  name: 768,817|🏁RELAY-172.64.175.213-126
   network: ws
   port: 2086
   server: 172.64.175.213
+  skip-cert-verify: true
   sni: ''
+  tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-headers:
+    Host: ip1.1457230.xyz
+  ws-path: /
 - cipher: aes-256-cfb
   name: 768|_SG_加->_unKnow_未知
   password: amazonskr05
@@ -2357,7 +2363,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 768,817|🏁RELAY-104.18.57.111-083
+  name: 768,817|🏁RELAY-104.18.57.111-161
   network: ws
   port: 2086
   server: 104.18.57.111
@@ -2920,20 +2926,6 @@ proxies:
     headers:
       host: ca-cfcdn.aikunapp.com
     path: /index?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '844|🇺🇸_US_美国->🇮🇳_IN_印度_2 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      host: in3.wish.ml
-    path: /
 - alterId: 0
   cipher: auto
   name: 884|:美国-vmess-arm.ptuu.gq:443-可用-中...
