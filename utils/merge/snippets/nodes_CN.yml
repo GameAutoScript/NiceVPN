@@ -512,11 +512,12 @@ proxies:
     path: /blue
 - alterId: 64
   cipher: auto
-  name: 403,842,850|香港|@ripaojiedian
+  name: '403,842,850,895,896|未知103 #2'
   network: tcp
   port: '45602'
   server: 183.240.235.170
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -635,6 +636,26 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
+  name: '403,883|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205.... #1'
+  network: tcp
+  port: '50002'
+  server: 120.210.205.82
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 403,708|中国_070623061
+  network: tcp
+  port: '55218'
+  server: 103.85.25.134
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3827a5c8-c031-46cf-848d-e890d0ead803
+- alterId: 64
+  cipher: auto
   name: '403,842,850,875,883|🔒 VM-TCP-NA 🇨🇳 CN-112.132.212.... #2'
   network: tcp
   port: '50004'
@@ -643,33 +664,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '403,708,883|🔒 VM-TCP-NA 🇨🇳 CN-103.85.25.13... #1'
-  network: tcp
-  port: '55218'
-  server: 103.85.25.134
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3827a5c8-c031-46cf-848d-e890d0ead803
-- alterId: 0
-  cipher: auto
-  name: 403|🔒 VM-TCP-NA 🇨🇳 CN-120.232.153....
-  network: tcp
-  port: '35072'
-  server: 120.232.153.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6844b3e1-7cf9-3b41-b80e-ee4632e63820
 - alterId: 64
   cipher: auto
-  name: '403,883|🔒 VM-TCP-NA 🇨🇳 CN-120.210.205.... #1'
+  name: '403,885,895,896|🇨🇳广东 #1'
   network: tcp
-  port: '50002'
-  server: 120.210.205.82
+  port: '41490'
+  server: 183.240.235.166
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -7654,14 +7656,11 @@ proxies:
   port: 11087
   server: test3.feiguayun.xyz
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 825,895|未知53
+- cipher: aes-256-gcm
+  name: 825|🇨🇳CN-183.232.167.99-048
   password: 203a6578-5876-4a86-992d-262952d8b084
   port: 11087
   server: test1.feiguayun.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: 825|🇳CN-218.204.179.114-049
@@ -7729,11 +7728,14 @@ proxies:
   port: 31087
   server: zh01lv5hk06.feiguayun.xyz
   type: ss
-- cipher: aes-256-gcm
-  name: 825|🇳CN-218.204.179.114-070
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 825,895|🇺🇸US美国4
   password: 203a6578-5876-4a86-992d-262952d8b084
   port: 33087
   server: zh01lv5us05.feiguayun.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: 825|🇳CN-218.204.179.114-072
@@ -7789,14 +7791,11 @@ proxies:
   port: 50011
   server: zh01lv3uk01.feiguayun.xyz
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 825,895|🇬🇧GB英国2
+- cipher: aes-256-gcm
+  name: 825|🇨🇳CN-183.232.167.99-084
   password: 203a6578-5876-4a86-992d-262952d8b084
   port: 35087
   server: zh01lv5uk01.feiguayun.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: 825|🇨🇳CN-218.204.179.114-088
@@ -7828,14 +7827,11 @@ proxies:
   port: 31087
   server: zh01lv5hk10.feiguayun.xyz
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 825,895|GB国
+- cipher: aes-256-gcm
+  name: 825|🇳CN-183.232.167.99-106
   password: 203a6578-5876-4a86-992d-262952d8b084
   port: 35087
   server: zh01lv5uk02.feiguayun.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: 825|🇨🇳CN-183.232.167.99-108
@@ -7855,23 +7851,17 @@ proxies:
   port: 31087
   server: zh01lv5hk09.feiguayun.xyz
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 825,895|🇮🇳IN印度2
+- cipher: aes-256-gcm
+  name: 825|🇨🇳CN-218.204.179.114-128
   password: 203a6578-5876-4a86-992d-262952d8b084
   port: 38087
   server: zh01lv5in01.feiguayun.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 825,895|IN
+- cipher: aes-256-gcm
+  name: 825|🇨🇳CN-218.204.179.114-129
   password: 203a6578-5876-4a86-992d-262952d8b084
   port: 38087
   server: zh01lv5in02.feiguayun.xyz
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: 825|🇨🇳CN-183.232.167.99-130
@@ -8327,6 +8317,15 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
+  name: 883|🔒 VM-TCP-NA 🇨🇳 CN-183.240.235....
+  network: tcp
+  port: '11022'
+  server: 183.240.235.142
+  tls: false
+  type: vmess
+  uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: '884,885|🇨🇳 CN😈SSRSUB_905747790 #1'
   network: ws
@@ -8384,16 +8383,6 @@ proxies:
   network: tcp
   port: '34414'
   server: 120.232.153.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '885|UM😈SSRSUB_-1044557709 #1'
-  network: tcp
-  port: '41490'
-  server: 183.240.235.166
   servername: ''
   tls: false
   type: vmess
@@ -8660,6 +8649,16 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
+  name: '1101,1115,1190|中国【付费推荐：https://a0a.xyz】5 #2'
+  network: tcp
+  port: '53516'
+  server: 103.61.139.150
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ee342ad5-0353-49e5-f81b-863b179d3600
+- alterId: 0
+  cipher: auto
   name: '1101,1115,1190|中国【付费推荐：https://a0a.xyz】346 #2'
   network: tcp
   port: '56582'
@@ -8698,6 +8697,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 600e5c4a-2124-4f7e-ad99-b8e99c93bbdd
+- alterId: 0
+  cipher: auto
+  name: '1101,1115,1190|中国【付费推荐：https://a0a.xyz】172 #2'
+  network: tcp
+  port: '24232'
+  server: 103.61.139.150
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ffbdc137-fe50-4a96-f073-9c0db323d988
 - alterId: 0
   cipher: auto
   name: '1101,1115,1190|中国【付费推荐：https://a0a.xyz】201 #2'
