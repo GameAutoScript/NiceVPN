@@ -1,15 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 15|香港|广州移动|Neko|1.5x
-  network: tcp
-  port: 13337
-  server: gdcm.r1u.cn
-  tls: false
-  type: vmess
-  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
-- alterId: 0
-  cipher: auto
   name: '18,19,20,21,23|🇭🇰 香港1 #4'
   network: ws
   port: '80'
@@ -711,7 +702,7 @@ proxies:
   name: 363|🇭🇰香港区域1-三网优化
   network: tcp
   port: '60181'
-  server: GheLmj.gov.goldliond.top
+  server: bhYy30.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -720,7 +711,7 @@ proxies:
   name: 363|🇭🇰香港区域2-三网优化
   network: tcp
   port: '60181'
-  server: jTrKxf.gov.goldliond.top
+  server: LWmpUL.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -729,7 +720,7 @@ proxies:
   name: 363|🇭🇰香港区域3-三网优化
   network: tcp
   port: '60181'
-  server: LD0iHj.gov.goldliond.top
+  server: baCOk6.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -1584,11 +1575,12 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: '403,876,884|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.19... #2'
+  name: '403,876,884,896,897|HK15 #2'
   network: tcp
   port: '10010'
   server: 163.53.18.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a58a91d7-6c29-40b8-bf0a-c231aa37932f
@@ -1606,17 +1598,6 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: '403,896,897|HK7 #2'
-  network: tcp
-  port: '23129'
-  server: 42.3.135.173
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a83fccdb-eeec-4dab-a8c9-a105acbd89e5
 - cipher: chacha20-ietf-poly1305
   name: 416|[🇭🇰]a4a09ce.h1.glados-config.n...
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -2282,92 +2263,19 @@ proxies:
     headers:
       Host: internet.life.com.by
     path: /
-- cipher: aes-128-gcm
-  name: 726|🇭🇰 HK 1 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.223.223
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 726|🇭🇰 HK 11 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: 182.16.1.194
-    path: /opt/video/images
-- cipher: aes-128-gcm
-  name: 726|🇭🇰 HK 3 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.139.54
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 726|🇭🇰 HK 4 → tg@nicevpn123
-  network: ws
-  port: 55576
-  server: 202.81.231.30
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
-  ws-opts:
-    path: /
 - alterId: 32
   cipher: auto
-  name: '726,729,910,931|香港_0706021 #1'
+  name: '729,910,931|香港_0706021 #1'
   network: ws
   port: '80'
   server: hrgdvpn.flycdnedc55.vip
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  name: 726|🇭🇰 HK 6 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
@@ -3498,6 +3406,19 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
+  name: 803,910|TG频道:@hkaa0▓美国_3
+  network: ws
+  port: 8080
+  server: www.velvetmountain.shop
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.velvetmountain.shop
+    path: /
+- alterId: 0
+  cipher: auto
   name: '803,910|美国 CloudFlare节点 #179'
   network: ws
   port: '8080'
@@ -4066,6 +3987,30 @@ proxies:
   password: d20ef6d0-1339-3970-9194-9726b5ee6224
   port: 50001
   server: iepl1.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 835|🇭🇰 HK 03
+  password: 1c00f6d6-d25b-43c2-b997-6a6a3c045fa8
+  port: 22261
+  server: 03.forlive.live
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 835|🇭🇰 HK 04
+  password: 8c9af44c-7206-4bfc-b18b-699640a28625
+  port: 22261
+  server: 04.forlive.live
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 835|🇭🇰 HK 05
+  password: 3368714c-df00-4cc0-816a-a0f8715326b4
+  port: 61007
+  server: 1.forlive.live
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -4765,66 +4710,79 @@ proxies:
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '896|HK #1'
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 10015
-  server: 46.232.123.37
+  name: 896|HK
+  network: grpc
+  password: fdc65525-e161-3356-9992-f0446eff60fc
+  port: 11116
+  server: 47.243.130.39
   skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 896|HK2
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 30009
-  server: 46.232.123.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 896|HK3
-  password: d31534ff-83a3-4137-91b7-79e144489643
-  port: 50223
-  server: 46.232.123.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 896|HK4
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 50002
-  server: 46.232.123.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 896|HK5
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 8.218.98.75
-  skip-cert-verify: true
-  sni: mfjd.591haoka.com
+  sni: hkvip103.qlgq.fun
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 896|HK6
+  name: 896|HK2
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 10016
+  port: 50004
+  server: 46.232.123.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 896|HK3
+  network: ws
+  password: moist
+  port: 2087
+  server: 8.210.203.7
+  skip-cert-verify: true
+  sni: trojan.freenods.sbs
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 896|HK4
+  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
+  port: 50005
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
+  name: 896|HK5
+  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
+  port: 40722
+  server: 38.207.154.30
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 896|HK6
+  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
+  port: 10012
+  server: 46.232.123.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 896|HK7
+  network: grpc
+  password: fdc65525-e161-3356-9992-f0446eff60fc
+  port: 52249
+  server: 47.243.130.39
+  skip-cert-verify: true
+  sni: hkvip103.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 896|HK8
-  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
-  port: 50211
+  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
+  port: 20005
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
@@ -4833,7 +4791,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   name: 896|HK9
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 40020
+  port: 40026
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
@@ -4841,8 +4799,8 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 896|HK10
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 30002
+  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
+  port: 50219
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
@@ -4850,66 +4808,24 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 896|HK11
-  password: AHyDyR
-  port: 56047
-  server: 38.150.12.187
+  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
+  port: 10005
+  server: 46.232.123.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 896|HK12
+  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
+  port: 40703
+  server: 38.207.154.30
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 896|HK13
-  password: AHyDyR
-  port: 56032
-  server: 38.150.12.187
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 896|HK14
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2087
-  server: 8.217.50.252
-  skip-cert-verify: true
-  sni: mfjd.591haoka.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 896|HK15
-  network: tcp
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  port: 20897
-  server: 8.217.193.174
-  skip-cert-verify: true
-  sni: hkhe02.bcloudv.cyou
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 896|HK16
-  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
-  port: 50226
-  server: 46.232.123.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 896|HK17
-  network: ws
-  password: 0fd9b883-0551-4ed1-b978-528183b459a2
-  port: 2053
-  server: 47.242.183.7
-  skip-cert-verify: true
-  sni: mfjd.591haoka.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 896|HK18
   password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1
   port: 58456
   server: 46.232.123.37
@@ -4918,9 +4834,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 896|HK19
+  name: 896|HK14
+  password: d31534ff-83a3-4137-91b7-79e144489643
+  port: 50245
+  server: 46.232.123.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 896|HK16
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 30017
+  port: 40023
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
@@ -4935,6 +4860,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 910|🇭🇰HK-47.76.35.246-0787
+  network: ws
+  port: 24101
+  server: 47.76.35.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 64
   cipher: auto
   name: 910|香港|@ripaojiedian
