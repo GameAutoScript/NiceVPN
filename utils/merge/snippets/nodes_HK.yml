@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 15|香港|广州移动|Neko|1.5x
+  network: tcp
+  port: 13337
+  server: gdcm.r1u.cn
+  tls: false
+  type: vmess
+  uuid: f010dd01-c54a-3c03-95ce-0838214259c6
+- alterId: 0
+  cipher: auto
   name: '18,19,20,21,22,24|🇭🇰 香港1 #5'
   network: ws
   port: '80'
@@ -1879,13 +1888,6 @@ proxies:
       Host: cn.bing.com
     path: /
   ws-path: /
-- cipher: aes-256-gcm
-  country: 🇰HK
-  name: 671|HK_27 |32.77Mb
-  password: Yubw8d6sag@31@
-  port: 13223
-  server: 103.242.3.130
-  type: ss
 - cipher: aes-256-cfb
   country: 🇰HK
   name: 672,906|[02-24]-🇸-欧洲-096-150.107.46.21
@@ -3390,7 +3392,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '807,914|美国 CloudFlare节点 #234'
+  name: '807,914|美国 CloudFlare节点 #197'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -4681,28 +4683,32 @@ proxies:
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '900|HK #1'
-  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
-  port: 30203
-  server: 38.207.154.30
+  name: 900|HK
+  network: grpc
+  password: fdc65525-e161-3356-9992-f0446eff60fc
+  port: 42249
+  server: 8.217.209.197
   skip-cert-verify: true
+  sni: hkvip102.qlgq.fun
   tls: true
-  type: ss
+  type: trojan
+  udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: 900|HK2
-  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 10005
-  server: 46.232.123.37
+  network: ws
+  password: moist
+  port: 2096
+  server: 47.238.0.114
   skip-cert-verify: true
+  sni: trojan.freenods.sbs
   tls: true
-  type: ss
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 900|HK3
-  password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1
-  port: 50238
+  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
+  port: 30002
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
@@ -4710,44 +4716,88 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 900|HK4
-  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
-  port: 40601
-  server: 38.207.154.30
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 900|HK5
-  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
-  port: 50226
-  server: 46.232.123.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 900|HK6
   password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
-  port: 20005
+  port: 40020
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 900|HK7
-  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
-  port: 40722
-  server: 38.207.154.30
+  name: 900|HK5 1.0MB/s
+  password: 3pURuTUf-lFgg5qWg8euFA
+  port: 1080
+  server: 141.98.234.8
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  name: 900|HK7
+  network: tcp
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  port: 20897
+  server: 8.217.193.174
+  skip-cert-verify: true
+  sni: hkhe02.bcloudv.cyou
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 900|HK8
-  password: d31534ff-83a3-4137-91b7-79e144489643
-  port: 50208
+  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
+  port: 20003
+  server: 46.232.123.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 900|HK9
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2053
+  server: 47.242.183.7
+  skip-cert-verify: true
+  sni: mfjd.591haoka.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 900|HK10
+  password: 5ddbeb21-15fb-4aa5-8cc3-34df601c1f02
+  port: 50206
+  server: 46.232.123.37
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 900|HK11
+  network: ws
+  password: 0fd9b883-0551-4ed1-b978-528183b459a2
+  port: 2087
+  server: 8.217.50.252
+  skip-cert-verify: true
+  sni: mfjd.591haoka.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 900|HK12
+  network: ws
+  password: NISHIKUITAN222
+  port: 443
+  server: 47.242.202.230
+  skip-cert-verify: true
+  sni: t667.ylks.link
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 900|HK13
+  password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2
+  port: 10014
   server: 46.232.123.37
   skip-cert-verify: true
   tls: true
